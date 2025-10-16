@@ -1,0 +1,1751 @@
+html {
+    background-color: #040605;
+}
+
+.highlight {
+    color: blue;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: "Header";
+    src: url(/evolved/Style/HEADER.ttf);
+}
+
+@font-face {
+    font-family: "Number";
+    src: url(/evolved/Style/NUMBER.ttf);
+}
+
+@font-face {
+    font-family: "Decorative";
+    src: url(/evolved/Style/DECORATIVE.otf);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(/evolved/Style/MinionPro/MINIONPRO-MEDIUM.OTF);
+}
+
+body {
+    font-family: "Regular", sans-serif;
+}
+
+th {
+    min-width: 320px;
+    max-width: 320px;
+    height: 25px;
+    color: #f0f8ff;
+}
+
+td {
+    min-width: 320px;
+    max-width: 900px;
+    height: 90px;
+    color: #f0f8ff;
+}
+
+.endtd {
+    width: 500px;
+
+    height: 90px;
+    color: #f0f8ff;
+}
+
+.endtr {
+    min-width: 320px;
+    max-width: 4000px;
+    height: 120px;
+    color: #f0f8ff;
+}
+
+.hometd {
+    min-width: 400px;
+    max-width: 400px;
+    height: 90px;
+    color: #f0f8ff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #040605;
+}
+
+.homebullet {
+    margin-top: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+.togglelink {
+    padding: 10px;
+}
+
+.homelink {
+    text-decoration: underline;
+    color: aqua;
+    font-size: 16px;
+}
+
+.item_card {
+    background-image: url(/evolved/Icons/tooltipBG.png);
+    font-size: 13px;
+    color: #bbcdf6;
+    width: 450px;
+    height: auto;
+    min-height: 400px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.textblocktitle {
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/Interface/panel_name_border.png);
+    border-image-slice: 50 fill;
+    border-image-repeat: stretch;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: beige;
+    overflow: hidden;
+    padding-top: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.textblock {
+    width: 300px;
+    height: auto;
+    border-width: 10px;
+    border-top-width: 0;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slice.png);
+    border-image-slice: 30 fill;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: aquamarine;
+    font-family: "Regular";
+    font-size: 14px;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+#topButtonContainer {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(/evolved/Icons/9slicetooltip%20-%20Copy.png);
+    z-index: 999;
+    /* keeps it above other elements */
+}
+
+.spinner {
+    border: 6px solid #00f5cf;
+    border-top: 6px solid #0a363f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#myCenteredButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#menu {
+    background: black;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    border-style: solid;
+    height: 35px;
+    min-width: 1200px;
+    margin-top: -32px;
+}
+
+#menu ul,
+#menu li {
+    list-style: none;
+
+    z-index: 1000;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Regular", sans-serif;
+}
+
+#menu ul {
+    height: auto;
+    background: black;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    border-style: solid;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    font-family: "Regular", sans-serif;
+    font-size: 12px;
+    text-shadow: 0 -1px 0 #000;
+
+    text-transform: uppercase;
+}
+
+#menu li:first-child {
+    border-left: none;
+}
+
+#menu a {
+    display: block;
+    line-height: 35px;
+    padding: 0 6px;
+    text-decoration: none;
+    color: #eee;
+}
+
+#menu li:hover > a,
+#menu li a:hover {
+    background: #111;
+}
+
+#menu input {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu label {
+    font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+#menu label span {
+    font-size: 12px;
+    position: absolute;
+    left: 35px;
+}
+
+#menu ul.menus {
+    height: auto;
+    width: 180px;
+    background: black;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    border-style: solid;
+    position: absolute;
+
+    z-index: 99;
+    display: none;
+}
+
+#menu ul.menus li {
+    display: block;
+    width: 100%;
+    font: 12px Arial;
+    text-transform: uppercase;
+}
+
+#menu li:hover ul.menus {
+    display: block;
+}
+
+#menu a.home {
+    background: #c00;
+}
+
+#menu a.prett {
+    padding: 0 14px 0 7px;
+}
+
+#menu a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 15px;
+    right: 9px;
+}
+
+#menu ul.menus a:hover {
+    background: #333;
+}
+
+#menu ul.menus .submenu {
+    display: none;
+    position: absolute;
+    left: 180px;
+    background: #111;
+    top: 0;
+    width: 180px;
+}
+
+#menu ul.menus .submenu li {
+    background: #111;
+}
+
+#menu ul.menus .has-submenu:hover .submenu {
+    display: block;
+}
+
+.collapsible {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collapsible:after {
+    content: "▼";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsibleLevelup {
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 170px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.collapsibleLevelup:after {
+    content: "▼";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.active:after {
+    content: "▲";
+}
+
+.active,
+.collapsibleLevelup:hover {
+    background-color: #4b1d63;
+}
+
+.contentLevelup {
+    display: none;
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 40px;
+}
+
+.contentLevelup::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+    border-radius: 10px;
+    background-color: black;
+}
+
+.contentLevelup::-webkit-scrollbar {
+    width: 12px;
+    background-color: black;
+}
+
+.contentLevelup::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #225246;
+}
+
+p {
+    font-family: "Regular", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.techbackground {
+    position: relative;
+    display: contents;
+    width: inherit;
+}
+
+.endbackground {
+    position: relative;
+    display: contents;
+    width: 3000px;
+}
+
+.subCultureName {
+    text-align: center;
+    color: white;
+    font-size: 11px;
+}
+
+.modunlock_icon {
+    padding-top: 10px;
+
+    display: table;
+    margin: 0 auto;
+}
+
+.modunlock_icon2 {
+    padding-top: 15px;
+
+    display: table;
+    margin: 0 auto;
+    margin-left: -5px;
+}
+
+.buttons {
+    display: table;
+    margin: 0 auto;
+}
+
+.mod_description {
+    position: relative;
+    float: right;
+    font-size: 15px;
+    padding: 10px;
+
+    padding-top: 15px;
+    max-width: 360px;
+}
+
+.tome_description {
+    position: relative;
+    float: right;
+    font-size: 13px;
+    padding: 10px;
+    color: darkgray;
+    text-align: center;
+    padding-top: 15px;
+    max-width: 600px;
+}
+
+.mod_image_holder {
+    position: relative;
+    width: 500px;
+    min-width: 400px;
+    float: left;
+    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-size: cover;
+    font-size: 15px;
+    color: #bbcdf6;
+    text-align: left;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+
+    padding: 10px;
+    margin: 5px;
+}
+
+.structure_image_holder {
+    position: relative;
+    width: 800px;
+    min-width: 400px;
+    float: left;
+    background-image: url(/evolved/Icons/tooltipBG.png);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+
+    padding: 10px;
+    margin: 5px;
+}
+
+.cosmicHappeningPic {
+    height: 250px;
+    float: right;
+    background-size: contain;
+    mask-image: url(/evolved/Icons/Interface/CosmicHappeningPortal.png);
+    /* The image with alpha channel that will act as a mask */
+    mask-size: cover;
+    /* Adjust the mask size to fit the element */
+    -webkit-mask-image: url(/evolved/Icons/Interface/CosmicHappeningPortal.png);
+    /* Ensures compatibility with WebKit browsers */
+    -webkit-mask-size: cover;
+}
+
+.unit_description {
+    font-family: "Custom";
+    color: #fff4ad;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: -20px;
+}
+
+.w3-container {
+    display: grid;
+}
+
+.w3-containerBlock {
+    display: block;
+}
+
+.w3-bar {
+    overflow-y: auto;
+    width: 200px;
+    max-height: 800px;
+    display: grid;
+    grid-auto-columns: auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.w3-bar .w3-button {
+    white-space: normal;
+}
+
+.w3-bar .w3-bar-item {
+    padding: 8px 8px;
+    float: left;
+    position: relative;
+    height: 45px;
+    font-size: 12px;
+    border: none;
+    display: block;
+    outline: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: rgb(0, 0, 0);
+    border-image-repeat: stretch;
+}
+
+.collapsibleUnits {
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    text-align: left;
+    outline: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: black;
+    border-image-repeat: stretch;
+}
+
+.active,
+.collapsibleUnits:hover {
+    background-color: darkslategray;
+}
+
+.collapsibleUnits:after {
+    content: "▼";
+}
+
+.contentUnits {
+    grid-auto-columns: auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    text-shadow: 2px 2px 3px black;
+    z-index: 2;
+}
+
+.w3-red,
+.w3-hover-red:hover {
+    color: #fff !important;
+    background-color: #4b1d63 !important;
+}
+
+.w3-btn,
+.w3-button:hover {
+    background-color: darkslategrey;
+    filter: brightness(150%);
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Regular", sans-serif;
+    color: #deb887;
+
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mod_image {
+    float: left;
+    padding: 10px;
+    width: 76px;
+    background: url(/evolved/Icons/Interface/spellbackground_enchantment.png);
+    overflow: visible;
+    background-size: 156px;
+    background-repeat: no-repeat;
+    background-position: center top -42px;
+}
+
+.smallerIcon {
+    left: -106px;
+    position: relative;
+    /* float: left; */
+    padding: 5px;
+    width: 90px;
+    overflow: visible;
+}
+
+.tome_image {
+    float: left;
+    padding: 10px;
+    width: 150px;
+    overflow: visible;
+}
+
+.corner_icon {
+    float: left;
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 30px;
+    max-width: 20px;
+}
+
+.unit_image {
+    float: left;
+    padding-bottom: 10px;
+}
+
+tab {
+    padding-left: 15px;
+}
+
+.unit_image_holder {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-top: -20px;
+    background-size: 400px;
+    display: table;
+}
+
+.mod_card {
+    background-color: rgb(25, 49, 61, 0);
+    color: white;
+    width: auto;
+    padding: 5px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.InitialBonus {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    padding: 15px;
+    color: #362314;
+    border-style: solid;
+    border-image: url(/evolved/Icons/Interface/parchment2.png);
+    border-image-slice: 2 fill;
+}
+    .initialBonusHeaderText,
+    .initialBonusCastingPoints {
+        margin: 0 auto;
+    }
+
+
+.tome_card {
+    color: white;
+    width: 1075px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/Interface/Background_Unitpanel.png);
+    border-image-slice: 2;
+    border-width: 4px;
+    background-image: url(/evolved/Icons/Interface/Background_Unitpanel.png);
+    background-size: cover;
+    padding: 5px;
+    display: table;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unit_card {
+    background-color: rgb(5, 30, 45, 1);
+    color: white;
+    width: 840px;
+    height: auto;
+    padding: 15px;
+    display: table;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 6 4 6;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.generic-center {
+    height: auto;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.unit_elite_skill {
+    overflow: hidden;
+    width: 328px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(50, 50, 20, 0.8);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.unit_passiveslot {
+    overflow: hidden;
+    width: 328px;
+    height: 40px;
+    margin: 1px;
+}
+
+.unit_resistanceslot {
+    height: 40px;
+    position: relative;
+    width: auto;
+}
+
+/*  list stuff                                  */
+.list_abilityslot {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 2px;
+    display: flex;
+    border-style: solid;
+    border-width: 5px;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: #0e0f0e;
+}
+
+.list_abilityslotfilter {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    display: flex;
+}
+
+/* Change the color of links on hover */
+.list_abilityslot:hover {
+    background-color: darkslategray;
+}
+
+.initialBonusText:hover {
+    filter: brightness(150%);
+}
+
+.unit_abilityslot {
+    position: relative;
+    width: 310px;
+    margin: 1px;
+    display: flex;
+    min-height: 40px;
+    max-height: 100px;
+}
+
+.origin_icon:hover {
+    border: 1px solid aqua;
+}
+
+/* Change the color of links on hover */
+.unit_abilityslot:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 162, 100, 0),
+        rgba(47, 162, 100, 0.2),
+        rgb(57 255 148 / 30%),
+        rgba(47, 162, 100, 0.2),
+        rgba(47, 162, 100, 0)
+    );
+    filter: brightness(150%);
+}
+
+/* Change the color of links on hover */
+.unit_passiveslot:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 162, 100, 0),
+        rgba(47, 162, 100, 0.2),
+        rgb(57 255 148 / 30%),
+        rgba(47, 162, 100, 0.2),
+        rgba(47, 162, 100, 0)
+    );
+    filter: brightness(150%);
+}
+
+/* Change the color of links on hover */
+.unit_elite_skill:hover {
+    background-color: darkslateblue;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 34px;
+}
+
+/* Change the color of links on hover */
+.unit_resistanceslot:hover {
+    background-color: darkolivegreen;
+    filter: brightness(150%);
+}
+
+.unit_ability_holder {
+    width: 310px;
+    height: auto;
+    border-width: 30px;
+    margin: 10px;
+    margin-top: 0;
+    border-top-width: 0;
+    float: right;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slice.png);
+    border-image-slice: 30 fill;
+    border-image-repeat: stretch;
+}
+
+.unit_stats {
+    height: 40px;
+    top: 0;
+    left: -16px;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    margin-top: 5px;
+    padding-left: 25px;
+    position: relative;
+    border-top: 1px solid rgba(47, 162, 100, 0.2);
+    border-bottom: 1px solid rgba(47, 162, 100, 0.2);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 162, 100, 0),
+        rgba(47, 162, 100, 0.2),
+        rgba(47, 162, 100, 0.3),
+        rgba(47, 162, 100, 0.2),
+        rgba(47, 162, 100, 0)
+    );
+}
+
+.unit_types {
+    min-height: 40px;
+    position: relative;
+    clear: left;
+    width: auto;
+    text-align: center;
+}
+
+.unit_ability_icon {
+    float: left;
+    width: auto;
+}
+
+.unit_stat_icon {
+    position: relative;
+    align-content: left;
+    padding-right: 5px;
+    float: left;
+    left: 5%;
+}
+
+.unit_stat_icon:hover {
+    filter: brightness(150%);
+}
+
+.unit_prod {
+    color: bisque;
+    font-size: 14px;
+    position: absolute;
+    top: -1px;
+    background-color: #15242e;
+    text-align: left;
+}
+
+.ability_damage {
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    text-shadow: 2px 2px 3px black;
+    min-width: 50px;
+}
+
+.subcultureHolder {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    align-items: center;
+    /* Center the buttons vertically */
+    gap: 10px;
+    /* Space between buttons */
+    padding: 10px;
+    color: white;
+}
+
+.subscultureButton {
+    background-color: transparent;
+    border: none;
+}
+
+.subscultureButton:hover {
+    filter: brightness(150%);
+}
+
+.unit_name {
+    border-width: 20px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/Interface/panel_name_border.png);
+    border-image-slice: 20 fill;
+    float: right;
+    border-image-repeat: stretch;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: beige;
+    overflow: hidden;
+    margin: -10px;
+    margin-right: 8px;
+    margin-bottom: -5px;
+    width: 325px;
+    height: auto;
+    text-align: center;
+}
+
+.tome_name {
+    font-size: 28px;
+    width: auto;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 1px blue;
+    font-family: "Decorative";
+    text-align: center;
+    padding-left: 10px;
+}
+
+.abilityHighLighter {
+    height: auto;
+    /* top: 0; */
+    margin-top: -10px;
+    padding-bottom: 8px;
+    margin-bottom: -5px;
+    padding-top: 14px;
+    position: relative;
+    border-top: 1px solid rgb(47 134 162 / 20%);
+    border-bottom: 1px solid rgb(11 13 2 / 20%);
+    background-image: linear-gradient(
+        to right,
+        rgb(72 67 238 / 0%),
+        rgb(77 65 149 / 20%),
+        rgb(47 102 162 / 30%),
+        rgb(40 42 162 / 20%),
+        rgba(47, 162, 100, 0)
+    );
+}
+
+.spellStatsHighLighter {
+    margin-top: -15px;
+    margin-bottom: -20px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    position: relative;
+    border-top: 1px solid rgb(47 134 162 / 20%);
+    border-bottom: 1px solid rgb(11 13 2 / 20%);
+    background-image: linear-gradient(
+        to right,
+        rgb(72 67 238 / 0%),
+        rgb(77 65 149 / 20%),
+        rgb(47 102 162 / 30%),
+        rgb(40 42 162 / 20%),
+        rgba(47, 162, 100, 0)
+    );
+    width: auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.mod_name {
+    font-size: 18px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    color: #deb887;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.loreText {
+    color: #ffe6c6;
+    font-size: 14px;
+}
+
+.togglelink2 {
+    font-family: "Duru Sans", sans-serif;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #051221;
+    padding: 5px;
+}
+
+.togglelink3 {
+    font-family: "Duru Sans", sans-serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #030c29;
+    padding: 5px;
+}
+
+.togglelink {
+    font-family: "Duru Sans", sans-serif;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px 2px rgba(0, 100, 100, 0.3);
+    background-color: #051221;
+    padding: 5px;
+}
+
+.tech_name {
+    font-size: 15px;
+    position: relative;
+    color: #f0f8ff;
+    text-align: center;
+    padding-left: 10px;
+    font-family: "Duru Sans", sans-serif;
+}
+
+.tooltip {
+    color: #aadb9c;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 26px 26px rgb(5, 30, 45, 1);
+    top: 0;
+    left: 0;
+}
+
+.preview_image {
+    float: right;
+    max-height: 200px;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-style: solid;
+    border-image-slice: 5 fill;
+}
+
+.tomeUnlock {
+    background-color: rgb(5, 40, 60, 0.4);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 4 500 4 10 fill;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    padding: 25px;
+}
+
+.itemAbility {
+    padding-top: 10px;
+    font-size: 15px;
+    color: #bbcdf6;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #262a3c, rgba(0, 0, 0, 0));
+    width: 450px;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+hr {
+    border: 0;
+    margin: 10px;
+    margin-top: 5px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #987e5c, rgba(0, 0, 0, 0));
+}
+
+.leftAbility {
+    position: relative;
+    float: left;
+}
+
+.rightAbility {
+    float: right;
+}
+
+.productionCost {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+.medals {
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    right: -60px;
+    float: right;
+}
+
+.searchbar {
+    width: 300px;
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: black;
+    color: #f0f8ff;
+}
+
+.resistanceNumber {
+    float: right;
+    margin-top: 1px;
+    font-family: "Number";
+    text-shadow: 2px 2px 3px black;
+}
+
+.levelup_medal {
+    position: relative;
+    cursor: pointer;
+    color: beige;
+    display: inline-block;
+    max-width: auto;
+    font-size: 12px;
+}
+
+.unittype_icon {
+    position: relative;
+    display: inline-block;
+    max-width: 40px;
+    z-index: 2;
+}
+
+.unittype_icon:hover {
+    filter: brightness(150%);
+}
+
+.resistance_icon {
+    position: relative;
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px;
+    padding-top: 6px;
+}
+
+.resistance_icon:hover {
+    filter: brightness(150%);
+}
+
+.button-overview {
+    background-color: #1d6360;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+}
+
+.button-random {
+    background-color: #4b1d63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+}
+
+.dlc-toggle {
+    background-color: #4b1d63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+}
+.dlc-toggle.enabled {
+    background-color: #210a2a;
+    color: #dd69fc;
+}
+
+.button-random:active {
+    background-color: black;
+}
+
+.inputfield {
+    /* width: 300px; */
+    width: auto;
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: black;
+    color: #f0f8ff;
+}
+
+.statusEffectHandler:hover {
+    color: #ffff79;
+}
+
+.tooltiptextnew {
+    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-size: auto;
+    font-size: 15px;
+    color: #bbcdf6;
+    text-align: left;
+    padding: 5px;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 8 8 10 10;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    z-index: 1000;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 40px;
+
+    margin-left: 0;
+    font-weight: lighter;
+}
+.tooltiptextnew.wide {
+    max-width: 500px;
+}
+
+hyperlink {
+    color: beige;
+}
+
+helpcolor {
+    color: lightgrey;
+}
+
+.stat_num {
+    font-size: 18px;
+    font-family: "Number";
+    text-shadow: 2px 2px 3px black;
+    position: relative;
+    float: left;
+    left: 5%;
+}
+
+.enchantButton {
+    padding: 8px 8px;
+    float: left;
+    display: flex;
+    font-family: "Regular", sans-serif;
+    color: #deb887;
+    border: none;
+    width: 100%;
+    outline: 0;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 2 5 2 5 fill;
+    background-color: black;
+    border-image-repeat: stretch;
+}
+
+.enchantButton:hover {
+    background-color: darkslategrey;
+    filter: brightness(150%);
+}
+
+.sortingButton {
+    padding: 8px 8px;
+    float: left;
+    font-family: "Regular", sans-serif;
+    color: #deb887;
+    border: none;
+    display: block;
+    outline: 0;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 2 5 2 5 fill;
+    background-color: black;
+    border-image-repeat: stretch;
+}
+
+.requisiteSlot {
+    position: relative;
+    display: inline-block;
+    max-width: 1000px;
+    margin: 3px;
+    margin-bottom: 0;
+    padding: 4px;
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image-slice: 1 1 1 1;
+}
+
+.abilityLineSlot {
+    position: relative;
+    display: inline-block;
+    max-width: 1000px;
+    text-align: end;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.activeDown:after {
+    content: "▼";
+    font-size: 8px;
+    font-weight: bold;
+    float: right;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.activeUp:after {
+    content: "▲";
+    font-size: 8px;
+    font-weight: bold;
+    float: right;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+popUpHeader2 {
+    padding: 10px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+bullet:before {
+    content: "\25C6";
+    padding-right: 5px;
+}
+
+bulletlist {
+    text-indent: -2px;
+}
+
+bulletlist:after {
+    text-indent: -2px;
+}
+
+.bulletlist .bulletlist {
+    text-indent: -2px;
+}
+
+bulletlist bulletlist bullet::before {
+    content: "⬦";
+    /* Different bullet icon for nested bullets */
+}
+
+bullet {
+    display: list-item;
+    list-style-type: none;
+    padding-left: 12px;
+}
+
+xpCol {
+    color: lawngreen;
+}
+
+spacedline {
+    display: flex;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+popUpHeader3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+titleBrown {
+    color: rgb(255, 255, 102);
+    font-weight: 350;
+}
+
+titleBrownBig {
+    color: rgb(255, 255, 102);
+    font-weight: 350;
+    font-size: 18px;
+}
+
+abilityred {
+    color: rgb(224, 34, 69);
+    font-weight: 400px;
+}
+
+actionblue {
+    color: rgb(102, 204, 255);
+}
+
+popUpDesc {
+    text-align: left;
+}
+
+HelpText {
+    color: grey;
+    font-size: 14px;
+}
+
+yellowText {
+    color: gold;
+    font-size: 14px;
+}
+
+greenText {
+    color: palegreen;
+    font-size: 15px;
+}
+
+highlight {
+    background-color: aqua;
+    color: bisque;
+}
+
+fireCol {
+    color: red;
+}
+
+silver {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.header-img {
+    width: 100%;
+    height: 150px;
+}
+
+.EMPIRESANDASHEStriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -19px;
+    right: -18px;
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #584e08;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, #bfbf10 70%, #947c08);
+}
+
+.WAYSOFWARtriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -20px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #fab5b5;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, red 100%, #947c08);
+}
+
+.GIANTKINGStriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -20px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #faf5b5;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, green 100%, #947c08);
+}
+
+.DRAGONLORDStriangle {
+    position: absolute;
+    top: -19px;
+    right: -18px;
+    z-index: 0;
+
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, #f46733 70%, #f1ea95);
+}
+
+.PRIMALFURYtriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -19px;
+    right: -18px;
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3dff00;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, #7ff433 70%, #f1ea95);
+}
+
+.ELDRITCHREALMStriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -22px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #490d82;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, purple 50%, #65aadf);
+}
+
+.ARCHONPROPHECYtriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -22px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #f5f100;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, #1adff2 50%, #65aadf);
+}
+
+.header-img::after {
+    content: "";
+    height: 150px;
+    background: url(/evolved/Icons/Interface/library_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.mid-text {
+    text-align: center;
+    position: relative;
+
+    font-size: 17px;
+    top: -30%;
+    margin: -15px;
+    text-shadow: 2px 2px 5px black;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        2px 2px 5px black,
+        -2px -2px 5px black,
+        1px 1px 0 #000;
+    color: #ffee64;
+    opacity: 2;
+}
+
+.hero-text {
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    font-family: "Decorative", sans-serif;
+    font-size: 35px;
+   
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-shadow: 2px 2px 5px black;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        2px 2px 5px black,
+        -2px -2px 5px black,
+        1px 1px 0 #000;
+    color: whitesmoke;
+}
+
+.current-version {
+   
+  
+    text-align: left;
+    width: fit-content;
+    position: relative;
+    font-family: "Regular", sans-serif;
+    font-size: 14px;
+    top: 2%;
+    left: 1%;
+    color: whitesmoke;
+    opacity: 2;
+}
+
+.content {
+    float: right;
+    grid-template-columns: 180px 180px;
+    font-size: 12px;
+    padding: 0 0;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+}
+
+.combatEnchantment {
+    font-size: 12px;
+    padding: 0 0;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+}
+
+span.number-highlight {
+    color: #f3d451;
+    /* Example: gold color */
+}
+
+/* Basic spoiler style */
+.spoiler {
+  background-color: #2a2551;     /* hidden background */
+  color: transparent;         /* text hidden */
+  border-radius: 4px;
+  padding: 2px 4px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* When revealed */
+.spoiler.revealed {
+  color: inherit;             /* normal text color */
+  background-color: transparent;
+}

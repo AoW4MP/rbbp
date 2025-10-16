@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        var unitarray = ["spirit_tracker", "protector", "primal_darter", "primal_charger", "animist", "ancestral_warden"];
+        // var unitarray2 = ["lesser_stone_spirit"];
+
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            SetButtonsAndDivs(unitarray, "buttonHolder1", "unit", "dataHolder1", "Ash Sabertooth");
+            SetButtonsAndDivs(unitarray, "buttonHolder2", "unit", "dataHolder2", "Dune Serpent");
+            SetButtonsAndDivs(unitarray, "buttonHolder3", "unit", "dataHolder3", "Glacial Mammoth");
+            SetButtonsAndDivs(unitarray, "buttonHolder4", "unit", "dataHolder4", "Mire Crocodile");
+            SetButtonsAndDivs(unitarray, "buttonHolder5", "unit", "dataHolder5", "Storm Crow");
+            SetButtonsAndDivs(unitarray, "buttonHolder6", "unit", "dataHolder6", "Sylvan Wolf");
+            SetButtonsAndDivs(unitarray, "buttonHolder7", "unit", "dataHolder7", "Tunneling Spider");
+            SetLevelUpStuff();
+            SetUpCombatEnc();
+        }
+
+    </script>
+
+
+    <title>Age of Wonders 4 Evolved - Primal Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+
+    <div class="textblocktitle">
+        <img src="/evolved/Icons/Text/primal.png" height="20px"> Primal Culture Units <img src="/evolved/Icons/Text/primal.png" height="20px">
+
+    </div>
+  
+    <div class="subcultureHolder">
+        <button onclick="showSubDiv(event,'Ash Sabertooth')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_ash_sabertooth.png width="50px">
+            <p class="subCultureName" id="subCultureNameAsh Sabertooth">Ash Sabertooth</p>
+        </button>
+        <button onclick="showSubDiv(event,'Dune Serpent')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_dune_serpent.png width="50px">
+            <p class="subCultureName" id="subCultureNameDune Serpent">Dune Serpent</p>
+        </button>
+        <button onclick="showSubDiv(event,'Glacial Mammoth')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_glacial_mammoth.png width="50px">
+            <p class="subCultureName" id="subCultureNameGlacial Mammoth">Glacial Mammoth</p>
+        </button>
+        <button onclick="showSubDiv(event,'Mire Crocodile')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_mire_crocodile.png width="50px">
+            <p class="subCultureName" id="subCultureNameMire Crocodile">Mire Crocodile</p>
+        </button>
+        <button onclick="showSubDiv(event,'Storm Crow')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_storm_crow.png width="50px">
+            <p class="subCultureName" id="subCultureNameStorm Crow">Storm Crow</p>
+        </button>
+        <button onclick="showSubDiv(event,'Sylvan Wolf')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_sylvan_wolf.png width="50px">
+            <p class="subCultureName" id="subCultureNameSylvan Wolf">Sylvan Wolf</p>
+        </button>
+        <button onclick="showSubDiv(event,'Tunneling Spider')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/primal_tunneling_spider.png width="50px">
+            <p class="subCultureName" id="subCultureNameTunneling Spider">Tunneling Spider</p>
+        </button>
+
+    </div>
+
+    <div class="subDiv" id="Ash Sabertooth">
+        <div class="w3-container">
+            <div id="buttonHolder1" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder1" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Dune Serpent">
+        <div class="w3-container">
+            <div id="buttonHolder2" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder2" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Glacial Mammoth">
+        <div class="w3-container">
+            <div id="buttonHolder3" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder3" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Mire Crocodile">
+        <div class="w3-container">
+            <div id="buttonHolder4" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder4" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="subDiv" id="Storm Crow">
+        <div class="w3-container">
+            <div id="buttonHolder5" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder5" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Sylvan Wolf">
+        <div class="w3-container">
+            <div id="buttonHolder6" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder6" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Tunneling Spider">
+        <div class="w3-container">
+            <div id="buttonHolder7" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder7" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+
+</script>
+
+</body></html>
+</html>
+<footer>
+    <br>
+    <br>
+</footer>

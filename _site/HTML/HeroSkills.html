@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script>
+            $("#body").ready(function () {
+                $("#header").load("/evolved/HTML/header.html", function () {
+                    CheckData();
+                });
+            });
+
+            function HandlePage() {
+                //  showSkillsWithArgument("sig", "", "Hero Signature Skills");
+
+                showSkillsWithArgument("pantheon", "", "Pantheon Ascended Hero Skills");
+                //showSkillsWithArgument("pantheon_weapon", "", "Pantheon Origin Weapon Skills");
+                //  showSkillsWithArgument("", "Support", "Hero Skills - Support");
+                //showSkillsWithArgument("", "Warfare", "Hero Skills - Warfare");
+                //showSkillsWithArgument("", "Battle", "Hero Skills - Battle Magic");
+                //showSkillsWithArgument("", "Feudal Lord", "Hero Skills - Feudal Lord");
+                //showSkillsWithArgument("", "Dragon Lord", "Hero Skills - Dragon Lord");
+                //showSkillsWithArgument("", "Eldritch Sovereign", "Hero Skills - Eldritch Sovereign");
+
+                SetLevelUpStuff();
+                SetCollapsibleStuff();
+            }
+        </script>
+
+        <title>Age of Wonders 4 Database - Hero Ascended Skills</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">Hero Ascended Skills</div>
+
+     <!--   <div style="display: table; margin: 5px; margin-left: auto; margin-right: auto">
+            <button class="sortingButton" id="name-button" onclick="sortDivs('name')">Name</button>
+        </div>-->
+
+        <div class="w3-container">
+            <div class="w3-bar w3-black" id="buttonHolder"></div>
+            <div id="dataHolder"></div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

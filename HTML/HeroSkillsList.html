@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-CC3NE8PT7K");
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+       <script src="/evolved/Data/Init.js"></script>
+        <script>
+            let selectedTreeFilter = "all";
+            let selectedSubTreeFilter = "all";
+
+            function HandlePage() {
+                CreateAllHeroSkills();
+                SetLevelUpStuff();
+                $("#filterInput").on("change input", function () {
+                    ShowAllAbilitiesWithFilters();
+                    SetLevelUpStuff();
+                });
+
+                document.querySelectorAll(".treeFilterButton").forEach((button) => {
+                    button.addEventListener("click", () => {
+                        // Remove active state from all buttons
+                        document.querySelectorAll(".treeFilterButton").forEach((btn) => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        // Update selected filter and refresh view
+                        selectedTreeFilter = button.dataset.tree;
+                        CreateAllHeroSkills();
+                    });
+                });
+
+                document.querySelectorAll(".treeFilterButtonSub").forEach((button) => {
+                    button.addEventListener("click", () => {
+                        document
+                            .querySelectorAll(".treeFilterButtonSub")
+                            .forEach((btn) => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        selectedSubTreeFilter = button.dataset.tree;
+                        CreateAllHeroSkills(); // refresh on subfilter change
+                    });
+                });
+            }
+
+            // Utility function to create elements
+            function createElement(tag, className, attrs = {}) {
+                const el = document.createElement(tag);
+                if (className) el.className = className;
+                Object.entries(attrs).forEach(([key, value]) => el.setAttribute(key, value));
+                return el;
+            }
+
+            function CreateAllHeroSkills() {
+                document.getElementById("dataHolder").innerHTML = ""; // Clear existing
+
+                jsonHeroSkillsLocalized.forEach((skill) => {
+                  //  if (!("tree_pos_y" in skill || skill.type === "signature")  || skill.type === "signature")) return;
+
+                    var treeName = skill.tree_name?.toLowerCase() || "";
+                    
+                    // check if its actually passive or not
+                             
+                    var skillType = Array.isArray(skill.abilities) ? "active" : "passive";
+                    if(skillType == "active"){
+                         var skillFound = jsonUnitAbilities.find((entry)=> entry.slug == skill.abilities[0].slug);
+                      
+                     skillType = ("actionPoints" in skillFound) ? "active" : "passive";
+                    }
+                   
+                    if(selectedTreeFilter == "Signature"){
+                        treeName = skill.type == "signature" ? "signature" : "";
+                        
+                    } 
+                    if( selectedTreeFilter == "Affinity" && ("group_name" in skill)){
+                        console.log(skill.group_name.indexOf("Affinity"));
+                         treeName = (skill.group_name.indexOf("Affinity") != -1) ? "affinity" : "";
+                    }
+                   // skillType = skill.type === "signature" ? "signature" : skillType;
+
+                    // Main tree filter
+                    if (selectedTreeFilter !== "all" && !treeName.includes(selectedTreeFilter.toLowerCase())) return;
+
+                    // Sub-type filter
+                    if (selectedSubTreeFilter !== "all" && skillType !== selectedSubTreeFilter.toLowerCase()) return;
+
+                    // Add skill: either with abilities or standalone
+                    if (Array.isArray(skill.abilities) && skill.abilities.length > 0) {
+                        skill.abilities.forEach(({ slug }) => {
+                            addHeroSkillAbility(slug, skill);
+                        });
+                    } else {
+                        addStandaloneHeroSkill(skill);
+                    }
+                });
+            }
+            function GetSimpleHeroSkillTooltip(name, description) {
+                const wrapper = document.createElement("div");
+                wrapper.innerHTML = `<h3>${name}</h3><p>${description}</p>`;
+                return wrapper;
+            }
+
+            function HideAll() {
+                document.querySelectorAll(".list_abilityslot").forEach((div) => (div.style.display = "none"));
+            }
+
+            function ShowAllAbilitiesWithFilters() {
+                HideAll();
+                const filterText = document.getElementById("filterInput").value.toLowerCase();
+                const list = [];
+
+                jsonUnitAbilitiesLocalized.forEach((ability) => {
+                    if (!filterText || matchesFilter(ability, filterText)) {
+                        if (!list.includes(ability.slug)) list.push(ability.slug);
+                    }
+                });
+                
+                 const listHero = [];
+
+                
+                 jsonHeroSkillsLocalized.forEach((ability) => {
+                    if (!filterText || matchesFilter(ability, filterText)) {
+                        if (!listHero.includes(ability.id)) listHero.push(ability.id);
+                    }
+                });
+
+                ProcessList(list, listHero);
+            }
+
+            function matchesFilter(ability, filterText) {
+                const fieldsToCheck = ["name", "accuracy", "range", "description", "actionPoints", "damage"];
+                for (const field of fieldsToCheck) {
+                    if (field in ability && ability[field].toLowerCase().includes(filterText)) return true;
+                }
+                if ("modifiers" in ability) {
+                    for (const mod of ability.modifiers) {
+                        if (
+                            mod.description.toLowerCase().includes(filterText) ||
+                            mod.name.toLowerCase().includes(filterText)
+                        ) {
+                            return true;
+                        }
+                    }
+                }
+                if ("requisites" in ability) {
+                    for (const req of ability.requisites) {
+                        if (req.requisite.toLowerCase().includes(filterText)) return true;
+                    }
+                }
+                return false;
+            }
+
+            function ProcessList(list, listHero) {
+                list.forEach((slug) => {
+                    const abilityDiv = document.getElementById(`${slug}btn`);
+                    if (abilityDiv) abilityDiv.style.display = "flex";
+                });
+                
+                 listHero.forEach((id) => {
+                    const abilityDiv = document.getElementById(`${id}btn`);
+                    if (abilityDiv) abilityDiv.style.display = "flex";
+                });
+            }
+
+            function findSource(slug) {
+                for (const unit of jsonUnitsLocalized) {
+                    if (unit.abilities?.[0]?.slug === slug) return unit.name;
+                }
+                return slug;
+            }
+
+            function sortDivsList(sortType) {
+                const currentbutton = document.getElementById(`${sortType}-button`);
+                const ascendingOrder = !currentbutton.classList.contains("activeDown");
+
+                document.querySelectorAll(".sortingButton").forEach((btn) => (btn.className = "sortingButton"));
+                currentbutton.classList.add(ascendingOrder ? "activeDown" : "activeUp");
+
+                const container = document.getElementById(currentView || "dataHolder");
+                const elements = Array.from(container.querySelectorAll(".list_abilityslot"));
+
+                const selectorMap = {
+                    range: (el) => el.querySelector(".list_range")?.innerHTML,
+                    accuracy: (el) => el.querySelector(".list_accuracy")?.innerHTML,
+                    damage: (el) => el.querySelector(".ability_damage")?.innerHTML,
+                    action: (el) => el.querySelector(".list_action")?.innerHTML,
+                    type: (el) => el.querySelector(".list_types")?.innerHTML,
+                     depth: (el) => el.querySelector(".list_depth")?.innerHTML,
+                    default: (el) => el.querySelector(".tooltip")?.innerHTML
+                };
+
+                const selector = selectorMap[sortType] || selectorMap.default;
+                const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+
+                elements
+                    .sort((a, b) => {
+                        let valA = selector(a);
+                        let valB = selector(b);
+
+                        if (sortType === "tier") {
+                            valA = deromanize(valA.split("Tier ")[1]);
+                            valB = deromanize(valB.split("Tier ")[1]);
+                        }
+
+                        return collator.compare(ascendingOrder ? valA : valB, ascendingOrder ? valB : valA);
+                    })
+                    .forEach((el) => container.appendChild(el));
+
+                sorting = `${sortType}:${ascendingOrder}`;
+            }
+
+            function addHeroSkillAbility(slug, skillMeta) {
+                const holder = document.getElementById("dataHolder");
+
+                const abilityData = jsonUnitAbilities.find((item) => item.slug === slug);
+                if (!abilityData) return;
+
+                const {
+                  
+                    name = "",
+                    icon = "",
+                    description = "",
+                    damage = "",
+                    accuracy = "",
+                    range = "",
+                    actionPoints = "",
+                    modifiers = [],
+                    requisites = [],
+                    notes = []
+                } = abilityData;
+
+                let abilityMod = "";
+                let abilityName = name;
+
+                if (modifiers.length > 0) {
+                    modifiers.forEach((mod) => {
+                        abilityName += "&#11049";
+                        abilityMod += `<bullet>${AddTagIconsForStatusEffects(mod.name)}<br>${mod.description}</bullet><br>`;
+                    });
+                }
+
+                let abilityNote = "",
+                    Cooldown = "",
+                    Once = "";
+                notes.forEach(({ note }) => {
+                    if (!note) return;
+                    if (note.includes("Cooldown")) Cooldown = note;
+                    else if (note.includes("once per")) Once = note;
+                    else abilityNote += "<br>" + note;
+                });
+
+                let requisitesDisplay = "";
+                if (requisites.length > 0) {
+                    requisitesDisplay = "(" + requisites.map((r) => r.requisite).join(", ") + ")";
+                }
+
+                const btn = createElement("div", "list_abilityslot", { id: `${slug}btn` });
+
+                const img = createElement("img", "unit_ability_icon");
+                const iconType = GetAbilityBackground(damage);
+                img.src = `/evolved/Icons/UnitIcons/${skillMeta.icon}.png`;
+                img.onerror = function () {
+                    this.src = "/evolved/Icons/Text/mp.png";
+                };
+                img.width = 64;
+                img.height = 64;
+                img.style.backgroundImage = `url("/evolved/Icons/Interface/${iconType}.png")`;
+                img.style.backgroundRepeat = "no-repeat";
+                img.style.backgroundSize = "64px 64px";
+
+                const tooltipText = createElement("div", "tooltip");
+                tooltipText.innerHTML = abilityName;
+                tooltipText.style.color = "white";
+                tooltipText.style.width = "500px";
+
+                    if("actionPoints" in abilityData){
+                          let spa = GetAbilityToolTip(
+                    abilityData
+                );
+
+                addTooltipListeners(tooltipText, spa);
+                    } else{
+                            const descr = document.createElement("Div");
+                descr.innerHTML = AddTagIconsForStatusEffects(description);
+                descr.style.color = "#bbcdf6";
+                descr.style.fontSize = "12px";
+                descr.style.width = "500px";
+
+                // add small description
+                tooltipText.append(descr);
+                    }
+            
+
+               
+
+                const colStyle = "color:white;";
+                const appendCol = (text, className, width) => {
+                    const col = createElement("div", className);
+                    col.innerHTML = text;
+                    col.style = `${colStyle} width:${width}`;
+                    btn.append(col);
+                };
+
+                // Add Hero Skill Info
+                  const DepthDiv = createElement("div", "list_depth");
+                if ("tree_pos_y" in skillMeta) {
+                    DepthDiv.innerHTML = `<span style="font-size:12px; color:lightgray;">[${skillMeta.tree_pos_y / 50}]</span>`;
+                      
+                    }
+                DepthDiv.style.width = "50px";
+                    btn.append(DepthDiv);
+
+                btn.append(img);
+                btn.append(tooltipText);
+                appendCol(range, "list_range", "70px");
+                appendCol(accuracy, "list_accuracy", "150px");
+                appendCol(damage, "ability_damage", "150px");
+                appendCol(actionPoints, "list_action", "100px");
+
+                if (requisites.length > 0) {
+                    const reqDiv = createElement("div", "list_types");
+                    reqDiv.innerHTML = requisitesDisplay;
+                    reqDiv.style = `${colStyle} width:200px; font-size:12px`;
+                    btn.append(reqDiv);
+                }
+
+                // Add Hero Skill Info
+                const skillMetaDiv = createElement("div", "skill_metadata");
+                skillMetaDiv.innerHTML = `<span style="font-size:12px; color:lightgray;">[${skillMeta.tree_name}] ${skillMeta.name}</span>`;
+                btn.append(skillMetaDiv);
+
+                holder.append(btn);
+            }
+
+            function addStandaloneHeroSkill(skill) {
+                const { name = "Unknown Skill", icon = "mp", description = "No description available." } = skill;
+
+                const holder = document.getElementById("dataHolder");
+                const btn = createElement("div", "list_abilityslot", { id: `${skill.id}btn` });
+                
+              
+
+                const img = createElement("img", "unit_ability_icon");
+                img.src = `/evolved/Icons/UnitIcons/${icon}.png`;
+                img.onerror = function () {
+                    this.src = "/evolved/Icons/Text/mp.png";
+                };
+                img.width = 64;
+                img.height = 64;
+                img.style.backgroundImage = `url("/evolved/Icons/Interface/hero_skill.png")`;
+                img.style.backgroundRepeat = "no-repeat";
+                img.style.backgroundSize = "64px 64px";
+
+                const tooltipText = createElement("div", "tooltip");
+                tooltipText.innerHTML = name;
+                tooltipText.style.color = "white";
+                tooltipText.style.width = "500px";
+
+                const descr = document.createElement("Div");
+
+                descr.innerHTML = AddTagIconsForStatusEffects(description);
+                descr.style.color = "#bbcdf6";
+                descr.style.fontSize = "12px";
+                descr.style.width = "500px";
+
+                tooltipText.append(descr);
+                //  const tooltipContent = GetSimpleHeroSkillTooltip(name, description); // You can define this function or inline it.
+                //   addTooltipListeners(tooltipText, tooltipContent);
+
+                // Add Hero Skill Info
+                
+                   const DepthDiv = createElement("div", "list_depth");
+                if ("tree_pos_y" in skill) {
+                    DepthDiv.innerHTML = `<span style="font-size:12px; color:lightgray;">[${skill.tree_pos_y / 50}]</span>`;
+                      
+                    }
+                DepthDiv.style.width = "50px";
+                    btn.append(DepthDiv);
+                   
+                
+
+                btn.append(img);
+                btn.append(tooltipText);
+                // add filler
+                // 
+                  const filler = document.createElement("Div");
+               // descr.innerHTML = AddTagIconsForStatusEffects(description);
+                filler.style.width = "669px";
+               btn.append(filler);
+                    // Add Hero Skill Info
+                const skillMetaDiv = createElement("div", "skill_metadata");
+                skillMetaDiv.innerHTML = `<span style="font-size:12px; color:lightgray;"> ${skill.name}</span>`;
+                btn.append(skillMetaDiv);
+
+                holder.append(btn);
+            }
+        </script>
+
+        <title>Age of Wonders 4 Evolved - Hero Skills List</title>
+    </head>
+
+    <body>
+        <div class="textblocktitle">Hero Skills List</div>
+        <div style="height: auto; color: white; text-align: center">
+           <a href="/evolved/HTML/HeroBuilder.html">Skill Trees View</a>
+            <br>
+            <br />
+            Filter<br />
+            <div style="margin-right: auto; margin-left: auto; width: 500px">
+                <input type="text" class="searchbar" id="filterInput" />
+            </div>
+        </div>
+
+        <div id="treeFilterGroup" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButton active" data-tree="all">All</button>
+            <button class="treeFilterButton" data-tree="Champion">Champion</button>
+            <button class="treeFilterButton" data-tree="Wizard King">Wizard King</button>
+            <button class="treeFilterButton" data-tree="Dragon Lord">Dragon Lord</button>
+            <button class="treeFilterButton" data-tree="Eldritch Sovereign">Eldritch Sovereign</button>
+            <button class="treeFilterButton" data-tree="Giant King">Giant King</button>
+            <div>Spacer</div>
+            <button class="treeFilterButton" data-tree="Warrior"><classWarrior></classWarrior>Warrior</button>
+            <button class="treeFilterButton" data-tree="Defender"><classDefender></classDefender>Defender</button>
+            <button class="treeFilterButton" data-tree="Mage"><classMage></classMage>Elementalist</button>
+            <button class="treeFilterButton" data-tree="Warlock"><classWarlock></classWarlock>Warlock</button>
+               <button class="treeFilterButton" data-tree="Ranger"><classRanger></classRanger>Ranger</button>
+            <button class="treeFilterButton" data-tree="Ritualist"><classRitualist></classRitualist>Ritualist</button>
+           
+            <button class="treeFilterButton" data-tree="Spellblade">
+                <classSpellblade></classSpellblade>Spellblade
+            </button>
+            <button class="treeFilterButton" data-tree="Death Knight">
+                <classDeathKnight></classDeathKnight>Death Knight
+            </button>
+              <button class="treeFilterButton" data-tree="BattleSaint"><classBattlesaint></classBattlesaint>Battlesaint</button>
+              <div>Spacer</div>
+            <button class="treeFilterButton" data-tree="Signature">Signature</button>
+              <button class="treeFilterButton" data-tree="Affinity">Affinity</button>
+          
+            <!-- Add more as needed -->
+        </div>
+
+        <div id="treeFilterGroupSub" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButtonSub active" data-tree="all">All</button>
+            <button class="treeFilterButtonSub" data-tree="Active">Active</button>
+            <button class="treeFilterButtonSub" data-tree="Passive">Passive</button>
+            <!-- Add more as needed -->
+        </div>
+        
+           <!--<div id="treeFilterGroupSub2" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButtonSub active" data-tree="all">Champion/Wizard King</button>
+               <button class="treeFilterButtonSub" data-tree="Passive">Dragon Lord</button>
+               
+            <button class="treeFilterButtonSub" data-tree="Passive">Eldritch</button>
+            <button class="treeFilterButtonSub" data-tree="Active">Giant King</button>
+            <!-- Add more as needed 
+        </div> -->
+
+        <div class="w3-container" style="justify-content: center">
+            <div class="w3-bar w3-black" id="buttonHolder"></div>
+            <div class="list_abilityslotfilter">
+                <button style="width: 50px" class="sortingButton" id="depth-button" onclick="sortDivsList('depth')">
+                    Depth
+                </button>
+                <button style="width: 565px" class="sortingButton" id="name-button" onclick="sortDivsList('name')">
+                    Name
+                </button>
+                <button style="width: 80px" class="sortingButton" id="range-button" onclick="sortDivsList('range')">
+                    Range <range></range>
+                </button>
+                <button
+                    style="width: 150px"
+                    class="sortingButton"
+                    id="accuracy-button"
+                    onclick="sortDivsList('accuracy')">
+                    Acc.<br />
+                    <accuracy></accuracy>
+                </button>
+                <button style="width: 150px" class="sortingButton" id="damage-button" onclick="sortDivsList('damage')">
+                    Damage<br />
+                    <damageblight></damageblight>
+                </button>
+                <button style="width: 100px" class="sortingButton" id="action-button" onclick="sortDivsList('action')">
+                    Action <repeatingAction></repeatingAction>
+                </button>
+                <button style="width: 500px" class="sortingButton" id="type-button" onclick="sortDivsList('type')">
+                    Type
+                </button>
+            </div>
+            <div id="dataHolder" class="divContainer"></div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        var unitarray = ["mystic_projection", "arcane_guard", "arcanist", "soother", "spellshield", "spellbreaker"];
+        var unitarray2 = ["mystic_projection", "arcane_guard", "arcanist", "soother", "spellshield", "spellweaver"];
+        var unitarray3 = ["mystic_projection", "arcane_guard", "arcanist", "soother", "spellshield", "summoner"];
+
+
+
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            SetButtonsAndDivs(unitarray, "buttonHolder1", "unit", "dataHolder1", "Attunement");
+            SetButtonsAndDivs(unitarray2, "buttonHolder2", "unit", "dataHolder2", "Potential");
+            SetButtonsAndDivs(unitarray3, "buttonHolder3", "unit", "dataHolder3", "Summoning");
+            SetLevelUpStuff();
+        }
+
+    </script>
+
+
+    <title>Age of Wonders 4 Evolved - Mystic Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="textblocktitle">
+        <img src="/evolved/Icons/Text/mystic.png" height="20px"> Mystic Culture Units <img src="/evolved/Icons/Text/mystic.png" height="20px">
+    </div>
+
+
+    <div class="subcultureHolder">
+        <button onclick="showSubDiv(event,'Attunement')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_attunement.png width="50px">
+            <p class="subCultureName" id="subCultureNameAttunement">School of Attunement</p>
+        </button>
+        <button onclick="showSubDiv(event,'Potential')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_potential.png width="50px">
+            <p class="subCultureName" id="subCultureNamePotential">School of Potential</p>
+        </button>
+        <button onclick="showSubDiv(event,'Summoning')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_summoning.png width="50px">
+            <p class="subCultureName" id="subCultureNameSummoning">School of Summoning</p>
+        </button>
+
+
+    </div>
+
+    <div class="subDiv" id="Attunement">
+        <div class="w3-container">
+            <div id="buttonHolder1" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder1" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Potential">
+        <div class="w3-container">
+            <div id="buttonHolder2" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder2" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="subDiv" id="Summoning">
+        <div class="w3-container">
+            <div id="buttonHolder3" class="w3-bar w3-black">
+
+            </div>
+            <div id="dataHolder3" class="dataholder" style="margin-top:-250px">
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+</html>
+<footer>
+    <br>
+    <br>
+</footer>

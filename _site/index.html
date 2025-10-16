@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/home.style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            SetLevelUpStuff();
+        }
+
+    </script>
+
+
+    <title>Age of Wonders 4 Wiki - Evolved Mod</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="textblocktitle">
+        <img src="/evolved/Icons/Text/feudal.png" height="40px"> Evolved Mod <img src="/evolved/Icons/Text/feudal.png" height="40px">
+    </div>
+
+    <div class="home-container">
+        <div id="buttonHolder" class="loreText">
+            <div class="paragraph-box">
+                <p>
+                <span style="font-size: 16px;">
+                AoW 4 Evolved is a balance mod aimed at simultaneous turn multiplayer.<br>
+                However, the mod can also be applied to single player games to shake things up and experience a more rounded game.<br><br>
+                This mod makes a lot of tweaks to all aspects of the game, from Units to City Structures to the Empire Tree.<br>
+                It also includes some major mechanic overhauls such as reworking how (Signature) Hero Skills and Friendly Domain features work.<br><br>
+                The goal of the mod is to expand the game with more viable gameplay options and strategies (looking at you Order and Nature affinities).<br>
+                This is mainly achieved by buffing underperforming options, but there are also times where something is so blatantly overpowered that it must be nerfed or risk always being a must-pick.<br><br>
+                However, balance can only take us so far. Therefore a few key mechanics have been overhauled and are now more reminiscent of previous AoW games.<br>
+                Of course this doesn't come without its own risks and the mod will be continually evaluated and iterated upon over time.<br>
+                <br>
+                Aside from general balance, the most impactful changes are as follows:
+                </span>
+                </p>
+            </div>
+
+            <div class="paragraph-box">
+                <p>
+                <ul style="padding-left: 20px;">
+                    <li style="font-size: 16px;">All map sizes have been increased by 10-20%.</li>
+                    <li style="font-size: 16px;">A new Extra Large map size has been added for 1v1.</li>
+                    <li style="font-size: 16px;">Land now spawns less mountains and has small lakes.</li>
+                    <li style="font-size: 16px;">Pangea has been edited to spawn 30% less water.</li>
+                    <li style="font-size: 16px;">Form Traits now work based on a 10 point system, for better balance.</li>
+                    <li style="font-size: 16px;">Most of the mounted traits have gained additional abilities or stats.</li>
+                    <li style="font-size: 16px;">Society Traits no longer grant bonus ranks to specific units.</li>
+                    <li style="font-size: 16px;">Increasing the City Cap scales with +200 instead of +300 per use.</li>
+                    <li style="font-size: 16px;">Free Cities are always of a different race (like Reaver has).</li>
+                    <li style="font-size: 16px;">Combat morale has been reworked to be less punishing overall.</li>
+                    <li style="font-size: 16px;">All T1 tomes now always unlock their summon as the initial spell.</li>
+                    <li style="font-size: 16px;">All unit types are now less weak to certain damage channels.</li>
+                    <li style="font-size: 16px;">Chaplain, Afflictor and Transmuter can now be mounted.</li>
+                    <li style="font-size: 16px;">Skald once again has Hastened on Song of Revelry.</li>
+                    <li style="font-size: 16px;">Skald once again has range on both Song abilities.</li>
+                    <li style="font-size: 16px;">Transmuter now deals damage with Petrify, like a true Battle Mage.</li>
+                    <li style="font-size: 16px;">Reaver Culture War Spoils have been entirely reworked.</li>
+                    <li style="font-size: 16px;">Dark Culture has a new economical passive (Stability Agenda).</li>
+                    <li style="font-size: 16px;">High Culture's Alignment Agenda has been fully reworked.</li>
+                    <li style="font-size: 16px;">All 2-Handed Hero weapons now grant Heavy Charge Strike.</li>
+                    <li style="font-size: 16px;">Friendly Domain movement discount has been removed.</li>
+                    <li style="font-size: 16px;">Advanced Logistics grants Fast instead of Very Fast Movement in water.</li>
+                    <li style="font-size: 16px;">HP Regeneration has been lowered from 25 to 15 in Friendly Domain.</li>
+                    <li style="font-size: 16px;">Banner XP Pickups have been removed from the map entirely.</li>
+                    <li style="font-size: 16px;">Outposts can no longer build Stone Walls and be unsiegable.</li>
+                    <li style="font-size: 16px;">XP gained from combat is now always divided by 6, instead of 4.</li>
+                    <li style="font-size: 16px;">Town Hall boost has been lowered from 5/10/15 to 4/8/12.</li>
+                    <li style="font-size: 16px;">Wizard's Tower boosts have been removed entirely.</li>
+                    <li style="font-size: 16px;">All resource structures are locked behind Town Hall tiers.</li>
+                    <li style="font-size: 16px;">All buffs and all debuffs now stack up to 3 times, down from 5.</li>
+                    <li style="font-size: 16px;">All Guilds now provide unique effects to their cities.</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="paragraph-box">
+                <p>
+                    <span style="font-size: 16px;">
+                        For the full patch notes of the current version please see this changelog:
+                    <a href="https://docs.google.com/spreadsheets/d/1-1Ti86cvkHfi7wdHqubFNoJtLWm1XIM20jUeR3-gla0/edit#gid=1580229590">Google Doc</a>
+                </span>
+                </p>
+            </div>
+
+            <div class="paragraph-box">
+                <p>
+                    <span style="font-size: 16px;">
+                        For questions, feel free to reach out to me via DM or the multiplayer Discord:
+                    <a href="https://discord.gg/wXvfEsmdv9">Discord</a>
+                </span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<footer>
+    <br>
+    <br>
+</footer>

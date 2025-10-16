@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+                 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CC3NE8PT7K');
+</script>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="/evolved/Data/Init.js"></script>
+        <script>
+            var unitarray = [
+                "monk:tome_of_discipline",
+                "shade:tome_of_shades",  "blessed_dragon:tome_of_prosperity",  "radiant_guardian:tome_of_prosperity",  "righteous_judge:tome_of_prosperity","accursed_ogre:tome_of_calamity","accursed_blade:tome_of_calamity","accursed_trickster:tome_of_calamity",
+                "prosperity_dragon:tome_of_prosperity",
+                "calamity_dragon:tome_of_calamity"
+            ];
+
+            function HandlePage() {
+                showUnitsWithIcon(unitarray);
+                SetLevelUpStuff();
+                SetCollapsibleStuff();
+            }
+        </script>
+
+        <title>Age of Wonders 4 Evolved - Ways of War Tome Units</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">
+            <img src="/evolved/Icons/Text/waysofwar.png" height="40px" /> Ways of War Tome Units
+            <img src="/evolved/Icons/Text/waysofwar.png" height="40px" />
+        </div>
+
+        <div class="w3-container">
+            <div class="w3-bar w3-black" id="buttonHolder" style="width: 240px"></div>
+            <div id="dataHolder"></div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

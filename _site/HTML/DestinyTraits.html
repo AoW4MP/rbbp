@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script>
+            $("#body").ready(function () {
+                $("#header").load("/evolved/HTML/header.html", function () {
+                    CheckData();
+                });
+            });
+
+            function HandlePage() {
+                showTraitsWithArgument("Destiny", "Destiny Trait", "");
+            }
+        </script>
+
+        <title>Age of Wonders 4 Database - Destiny Traits</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">Destiny Traits</div>
+        <br /><br />
+        <div class="w3-container">
+            <div class="w3-bar w3-black" id="buttonHolder"></div>
+            <div id="dataHolder"></div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

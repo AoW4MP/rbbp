@@ -1,0 +1,425 @@
+[
+    {
+        "id": "rainbow_clover",
+        "name": "Rainbow Clover",
+        "type": "plant",
+        "extraLookup": "MAGICMATERIALS@RAINBOW_CLOVER"
+    },
+    {
+        "id": "silvertongue_fruit",
+        "name": "SilverTongue Fruit",
+        "type": "plant",
+        "extraLookup": "MAGICMATERIALS@SILVERTONGUE_FRUIT"
+    },
+    {
+        "id": "haste_berries",
+        "name": "Haste Berries",
+        "type": "plant",
+        "extraLookup": "MAGICMATERIALS@HASTE_BERRIES"
+    },
+    {
+        "id": "tranquility_pool",
+        "name": "Tranquility Pool",
+        "type": "liquid",
+        "extraLookup": "MAGICMATERIALS@TRANQUILITY_POOL"
+    },
+    {
+        "id": "astral_dew",
+        "name": "Astral Dew",
+        "type": "liquid",
+        "extraLookup": "MAGICMATERIALS@ASTRAL_DEW"
+    },
+    {
+        "id": "archon_blood",
+        "name": "Archon Blood",
+        "type": "liquid",
+        "extraLookup": "MAGICMATERIALS@ARCHON_BLOOD"
+    },
+    {
+        "id": "fireforge_stone",
+        "name": "Fireforge Stone",
+        "type": "ore",
+        "extraLookup": "MAGICMATERIALS@FIREFORGE_STONE"
+    },
+    {
+        "id": "focus_crystals",
+        "name": "Focus Crystals",
+        "type": "ore",
+        "extraLookup": "MAGICMATERIALS@FOCUS_CRYSTALS"
+    },
+    {
+        "id": "arcanium_ore",
+        "name": "Arcanium Ore",
+        "type": "ore",
+        "extraLookup": "MAGICMATERIALS@ARCANIUM_ORE"
+    },
+    {
+        "id": "void_stones",
+        "name": "Void Stones",
+        "DLC": "ELDRITCHREALMS ",
+        "type": "void_stones",
+        "extraLookup": "DLC@ELDRITCHREALMS@NODES_STRATEGIC@VOID_STONES"
+    },
+    {
+        "id": "world_tree",
+        "name": "World Tree",
+        "nodeType": "forester&+15<food></food> +15<production></production>",
+        "unit_unlocks": [
+            {
+                "slug": "entwined_thrall"
+            },
+            {
+                "slug": "entwined_protector"
+            },
+            {
+                "slug": "entwined_scourge"
+            }
+        ],
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_ANCIENT_TREE",
+        "type": "<goldwonder></goldwonder> Gold Ancient Wonder"
+    },
+    {
+        "id": "secret_temple",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_FORBIDDEN_TEMPLE",
+        "nodeType": "conduit&+25 <mana></mana>",
+        "name": "Secret Temple",
+        "unit_unlocks": [
+            {
+                "slug": "blessed_soul"
+            }
+        ],
+        "type": "<silverwonder></silverwonder> Silver Ancient Wonder"
+    },
+    {
+        "id": "magma_forge",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_MAGMA_FORGE",
+        "nodeType": "mine&+15 <draft></draft> 10<gold></gold>",
+        "name": "Magma Forge",
+        "unit_unlocks": [
+            {
+                "slug": "fire_giant"
+            }
+        ],
+        "type": "<silverwonder></silverwonder> Silver Ancient Wonder"
+    },
+    {
+        "id": "archon_observatory",
+        "extraLookup": "DLC@ARCHONPROPHECY@EXPLORATIONSITES_STRATEGIC@ARCHON_OBSERVATORY",
+        "nodeType": "research_post&+25<knowledge></knowledge>",
+        "name": "Archon Observatory",
+        "unit_unlocks": [
+            {
+                "slug": "lesser_light_spirit"
+            },
+            {
+                "slug": "light_spirit"
+            }
+        ],
+        "DLC": "ARCHONPROPHECY",
+        "type": "<silverwonder></silverwonder> Silver Ancient Wonder"
+    },
+    {
+        "id": "lost_wizard_tower",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_WIZARD_TOWER",
+        "nodeType": "conduit&+15 <mana></mana> 15<knowledge></knowledge>",
+        "name": "Lost Wizard Tower",
+        "unit_unlocks": [
+            {
+                "slug": "bone_dragon"
+            }
+        ],
+        "type": "<goldwonder></goldwonder> Gold Ancient Wonder"
+    },
+    {
+        "id": "lost_tomb",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_FORBIDDEN_CRYPT",
+        "nodeType": "research_post&+25 <knowledge></knowledge>",
+        "name": "Lost Tomb",
+        "unit_unlocks": [
+            {
+                "slug": "corrupt_soul"
+            }
+        ],
+        "type": "<silverwonder></silverwonder> Silver Ancient Wonder"
+    },
+    {
+        "id": "lava_prison",
+        "extraLookup": "DLC@GIANTKINGS@EXPLORATIONSITE_STRATEGIC@MAGMAPRISON",
+        "nodeType": "research_post&+20 <knowledge></knowledge>",
+        "name": "Lava Prison",
+        "other_unlock": "true",
+        "unit_unlocks": [
+            {
+                "slug": "primordial_basilisk"
+            },
+            {
+                "slug": "primordial_bloodback"
+            },
+            {
+                "slug": "primordial_pyremoth"
+            }
+        ],
+        "type": "<silverwonder></silverwonder> Silver Ancient Wonder",
+        "DLC": "GIANTKINGS "
+    },
+    {
+        "id": "hidden_wellspring",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_ANCIENT_WELLSPRING",
+        "nodeType": "farm&+20 <food></food>",
+        "name": "Hidden Wellspring",
+        "unit_unlocks": [
+            {
+                "slug": "spring_fairy"
+            },
+            {
+                "slug": "summer_fairy"
+            },
+            {
+                "slug": "autumn_fairy"
+            },
+            {
+                "slug": "winter_fairy"
+            }
+        ],
+        "type": "<bronzewonder></bronzewonder> Bronze Ancient Wonder"
+    },
+    {
+        "id": "golden_ziggurat",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_GOLDEN_ZIGGURAT",
+        "nodeType": "mine&+30 <gold></gold>",
+        "name": "Golden Ziggurat",
+        "unit_unlocks": [
+            {
+                "slug": "phoenix"
+            }
+        ],
+        "type": "<goldwonder></goldwonder> Gold Ancient Wonder"
+    },
+    {
+        "id": "giants_throne",
+        "extraLookup": "DLC@GIANTKINGS@EXPLORATIONSITE_STRATEGIC@GIANTSTHRONE",
+        "nodeType": "mine&+30 <gold></gold>",
+        "description": "When annexed:<bulletlist><bullet>Counts as a <mine></mine>Mine +5<influence></influence> +30<gold></gold> -5<happiness></happiness>.</bullet><bullet>All owned Provinces adjacent to this Ancient Wonder gain +2<influence></influence> Imperium additional income.</bullet></bulletlist>",
+        "name": "Giant's Throne",
+        "unit_unlocks": [
+            {
+                "slug": "rock_giant"
+            },
+            {
+                "slug": "storm_giant"
+            }
+        ],
+        "type": "<goldwonder></goldwonder> Gold Ancient Wonder",
+        "DLC": "GIANTKINGS"
+    },
+    {
+        "id": "crystal_forest",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_CRYSTAL_FOREST",
+        "nodeType": "conduit&+20 <mana></mana>",
+        "name": "Crystal Forest",
+        "unit_unlocks": [
+            {
+                "slug": "astral_keeper"
+            }
+        ],
+        "type": "<bronzewonder></bronzewonder> Bronze Ancient Wonder"
+    },
+    {
+        "id": "castle_ruins",
+        "name": "Castle Ruins",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_ARCHON_RUINS",
+        "nodeType": "research_post&+20 <draft></draft>",
+        "unit_unlocks": [
+            {
+                "slug": "brewer_ogre"
+            },
+            {
+                "slug": "butcher_ogre"
+            }
+        ],
+        "type": "<bronzewonder></bronzewonder> Bronze Ancient Wonder"
+    },
+    {
+        "id": "ancient_cave",
+        "extraLookup": "EXPLORATIONSITES_STRATEGIC@STRUCTURE_ENCHANTED_CAVE",
+        "nodeType": "quarry&+20 <production></production>",
+        "name": "Ancient Cave",
+        "unit_unlocks": [
+            {
+                "slug": "stormscale_serpent"
+            },
+            {
+                "slug": "plague_serpent"
+            }
+        ],
+        "type": "<bronzewonder></bronzewonder> Bronze Ancient Wonder"
+    },
+    {
+        "id": "vaultsphere",
+        "extraLookup": "DLC@EMPIRESANDASHES@EXPLORATIONSITES_STRATEGIC@ STRUCTURE_VAULTSPHERE",
+        "nodeType": "research_post&+30 <knowledge></knowledge>",
+        "DLC": "EMPIRESANDASHES ",
+        "name": "Vaultsphere",
+        "type": "<goldwonder></goldwonder> Gold Ancient Wonder"
+    },
+    {
+        "id": "volcano",
+        "DLC": "GIANTKINGS ",
+        "name": "Volcano",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@RAGING_VOLCANO",
+        "type": "Landmark",
+        "spell_unlocks": "Volcanic Eruptions",
+        "unit_unlocks": [
+            {
+                "slug": "magma_spirit"
+            },
+            {
+                "slug": "lesser_magma_spirit"
+            },
+            {
+                "slug": "inferno_hound"
+            },
+            {
+                "slug": "inferno_puppy"
+            },
+            {
+                "slug": "gremlin"
+            },
+            {
+                "slug": "skald"
+            },
+            {
+                "slug": "nightmare"
+            },
+            {
+                "slug": "infernal_juggernaut"
+            },
+            {
+                "slug": "chaos_eater"
+            }
+        ]
+    },
+    {
+        "id": "subterreanean_passage",
+        "DLC": "GIANTKINGS ",
+        "name": "Subterreanean Mines",
+        "type": "Landmark",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@SUBTERRANEAN_MONUMENTS"
+    },
+    {
+        "id": "waterfalls",
+        "DLC": "GIANTKINGS ",
+        "name": "Cascade Falls",
+        "type": "Landmark",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@CASCADE_FALLS",
+        "unit_unlocks": [
+            {
+                "slug": "lesser_tide_spirit"
+            },
+            {
+                "slug": "tide_spirit"
+            }
+        ]
+    },
+    {
+        "id": "lithorine_peak",
+        "DLC": "GIANTKINGS ",
+        "name": "Lithorine Peak",
+        "type": "Landmark",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@LITHORITE_PEAKS",
+        "spell_unlocks": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@ELEMENTAL_ATTUNEMENT",
+        "unit_unlocks": [
+            {
+                "slug": "lithorine_core"
+            },
+            {
+                "slug": "lithorine_needler"
+            },
+            {
+                "slug": "lithorine_shardlancer"
+            },
+            {
+                "slug": "lithorine_gemcaster"
+            },
+            {
+                "slug": "lithorine_simulacrum"
+            }
+        ]
+    },
+    {
+        "id": "ancient_dragon_hoard",
+        "DLC": "GIANTKINGS ",
+        "name": "Ancient Dragon Hoard",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@DRAGON_REMAINS",
+        "type": "Landmark",
+        "spell_unlocks": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@ANCIENT_DRACONIC_INSTINCT",
+        "unit_unlocks": [
+            {
+                "slug": "bone_dragon"
+            },
+            {
+                "slug": "fire_dragon"
+            },
+            {
+                "slug": "frost_dragon"
+            },
+            {
+                "slug": "golden_dragon"
+            },
+            {
+                "slug": "obsidian_dragon"
+            },
+            {
+                "slug": "prosperity_dragon"
+            },
+            {
+                "slug": "calamity_dragon"
+            }
+        ]
+    },
+    {
+        "id": "haunted_battlefield",
+        "DLC": "GIANTKINGS ",
+        "name": "Haunted Battlefield",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@ANCIENT_BATTLEFIELD",
+        "type": "Landmark",
+        "spell_unlocks": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@UNDYING_BATTLEFIELD",
+        "unit_unlocks": [
+            {
+                "slug": "skeleton_mage"
+            },
+            {
+                "slug": "skeleton_warrior"
+            },
+            {
+                "slug": "skeleton_polearm"
+            },
+            {
+                "slug": "skeleton_archer"
+            }
+        ]
+    },
+    {
+        "id": "giant_steps",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@GRAND_STATUARY",
+        "name": "Grand Statuary",
+        "type": "Landmark"
+    },
+    {
+        "id": "trapped_behemoth",
+        "DLC": "GIANTKINGS ",
+        "name": "Icebound Behemoth",
+        "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@ICEBOUND_BEHEMOTH",
+        "type": "Landmark",
+        "spell_unlocks": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@BEHEMOTHS_DREADFUL_PRESENCE"
+    },
+    {
+        "id": "fountain_of_creation",
+        "DLC": "ARCHONPROPHECY ",
+        "name": "Fountain of Creation",
+        "extraLookup": "DLC@ARCHONPROPHECY@MEGAWONDERS_STRATEGIC@FOUNTAIN_OF_CREATION",
+        "type": "Landmark",
+        "spell_unlocks": "DLC@ARCHONPROPHECY@COMBATPROPERTIES_TACTICAL@CELESTIAL_RAIN"
+    }
+]

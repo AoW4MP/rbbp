@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            showTraitsWithArgument("Form", "Form Trait", "");
+            showTraitsWithArgument("society", "Order Society Traits", "order");
+            showTraitsWithArgument("society", "Chaos Society Traits", "chaos");
+            showTraitsWithArgument("society", "Nature Society Traits", "nature");
+            showTraitsWithArgument("society", "Shadow Society Traits", "shadow");
+            showTraitsWithArgument("society", "Materium Society Traits", "matter");
+            showTraitsWithArgument("society", "Astral Society Traits", "arcana");
+            showTraitsWithArgument("Ruler Origin", "Ruler Origins", "");
+            showTraitsWithArgument("Culture", "Cultures", "");
+            SetLevelUpStuff();
+            SetCollapsibleStuff();
+        }
+
+    </script>
+
+
+
+    <title>Age of Wonders 4 Evolved - Faction Creation</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="textblocktitle">
+        Faction Creation
+    </div>
+
+    <div style="
+    display: table;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;">
+        <button class="sortingButton" id="name-button" onclick="sortDivs('name')">Name</button>
+    </div>
+
+    <div class="w3-container">
+        <div class="w3-bar w3-black" id="buttonHolder">
+
+        </div>
+        <div id="dataHolder">
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+<script>
+
+</script>
+
+</html>
+<footer>
+    <br>
+    <br>
+</footer>

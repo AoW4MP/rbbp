@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="/evolved/Data/Init.js"></script>
+      <script src="/evolved/Data/Forge.js"></script>
+        <script>
+      
+
+        function HandlePage() {
+            GenerateAllIconTypes();
+        }
+
+
+
+    </script>
+
+
+    <title>Age of Wonders 4 Evolved - Item Forge</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="textblocktitle">
+        Item Forge
+    </div>
+
+
+    <div class="w3-container">
+      
+           
+
+
+        </div>
+        <div class="itemforgeBG" >
+            <div id="Selections" class="backdrop">Options
+                <div id="SelectionsHolder" class="selections"></div>
+            </div>
+
+            <div>Infusions
+                <div class="grid" id="itemTypeHolder"></div>
+                <div class="infusionsHolder">
+                    <button onclick="showInfusionType('damage')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_attunement.png width="100px">
+                        <span class="subCultureName" id="subCultureNameAttunement">Damage</span>
+                    </button>
+                    <div id="points">Points 0/5</div><div><input type="checkbox" onchange="swapPointMax(this)">+1 Giant</div> 
+                    <button onclick="showInfusionType('ability')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_potential.png width="100px">
+                        <span class="subCultureName" id="subCultureNamePotential">Ability</span>
+                    </button>
+                </div>
+                <div class="infusionsHolder">
+                    <button onclick="showInfusionType('passive')" class="subscultureButton"><img src=/evolved/Icons/FactionCreation/mystic_school_of_attunement.png width="50px">
+                        <span class="subCultureName" id="subCultureNameAttunement1">Passive</span>
+                    </button>
+                  
+
+                </div>
+            </div>
+
+            <div id="Selections2" class="backdrop">Results
+                <div id="ResultsHolder" class="selections"></div>
+            </div>
+
+
+
+        
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<style>
+    
+    .grid{
+       
+    display: grid
+;
+    grid: 80px / 80px 80px 80px 80px 80px 80px;
+    grid-gap: 10px;
+    padding: 10px;
+    }
+    .backdrop {
+        color: white;
+      
+    border-style: solid;
+    border-image: url(/evolved/Icons/9slice.png);
+    border-image-slice: 30 fill;
+    border-image-repeat: stretch;
+    }
+
+    .infusionsHolder {
+        color: white;
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+    
+    .itemforgeBG{
+        display: flex;
+        background-image: url(/evolved/Icons/ItemForge/ItemForgeBG.png);
+    }
+    .itemSelectionButton{
+        
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    }
+    
+    .itemSelectionButton:hover{
+        filter: brightness(2);
+    }
+
+    .selections {
+        color: white;
+        width: 400px;
+        min-width: 400px;
+        min-height: 1000px;
+    }
+    .itemSlotName{
+        position: relative;
+        top: -40px;
+        color: white;
+    }
+
+    .list-button {
+        border-width: 3px;
+        border-style: solid;
+        border-image: url(/evolved/Icons/9slicetooltip.png);
+        border-image-slice: 10 10 10 10;
+        border-image-repeat: stretch;
+        width: 100%;
+        background-color: #111;
+        color: #fff;
+        /* border: none; */
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: normal;
+    }
+    .list-button:disabled{
+        color:red;
+    }
+
+</style>
+<footer>
+    <br>
+    <br>
+</footer>

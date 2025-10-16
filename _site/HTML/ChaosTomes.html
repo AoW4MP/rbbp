@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        var tomeArray = ["tome_of_pyromancy", "tome_of_the_horde", "tome_of_revelry", "tome_of_mayhem", "tome_of_pandemonium", "tome_of_devastation", "tome_of_the_demon_gate", "tome_of_chaos_channeling", "tome_of_the_chaos_lord"];
+
+
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            SetButtonsAndDivs(tomeArray, undefined, "tome");
+            SetLevelUpStuff();
+        }
+
+    </script>
+
+
+    <title>Age of Wonders 4 Evolved - Chaos Tomes</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="textblocktitle">
+        <img src="/evolved/Icons/Text/chaos.png" height="20px"> Chaos Tomes <img src="/evolved/Icons/Text/chaos.png" height="20px">
+    </div>
+
+
+
+
+
+
+    <div class="w3-container">
+        <div class="w3-bar w3-black" id="buttonHolder">
+
+        </div>
+        <div id="dataHolder">
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+<footer>
+    <br>
+    <br>
+</footer>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+                 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CC3NE8PT7K');
+</script>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+         <script src="/evolved/Data/Init.js"></script>
+        <script>
+            function HandlePage() {
+                unitarray = FindUnitsWithSecondaryPassive("ranged_unit");
+                console.log(unitarray);
+
+                if (unitarray.length > 1) {
+                    for (i in unitarray) {
+                        showUnitsFromList(unitarray[i], "Ranged Tier " + romanize(parseInt(parseInt(i) + 1)) + " ");
+                    }
+                } else {
+                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
+                }
+
+                SetLevelUpStuff();
+                SetCollapsibleStuff();
+            }
+        </script>
+
+        <title>Age of Wonders 4 Evolved - Ranged Units</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">
+            <img src="/evolved/Icons/UnitIcons/ranged_unit.png" height="40px" /> Ranged Units
+            <img src="/evolved/Icons/UnitIcons/ranged_unit.png" height="40px" />
+        </div>
+        <div class="w3-container">
+            <div class="w3-bar w3-black" id="buttonHolder"></div>
+            <div id="dataHolder"></div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

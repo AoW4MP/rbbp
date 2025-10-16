@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-CC3NE8PT7K");
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="/evolved/Data/Init.js"></script>
+        <script>
+
+                        function HandlePage() {
+                           function getCenter(el) {
+                               const rect = el.getBoundingClientRect();
+                               return {
+                                   x: rect.left + rect.width / 2,
+                                   y: rect.top + rect.height / 2
+                               };
+                           }
+
+                           function generatePathSettings(entry1, entry2, offset) {
+                                const p1 = getCenter(entry1);
+                               const p2 = getCenter(entry2);
+                               // Example: simple "elbow" path (horizontal then vertical)
+                               const midX = p1.x + offset;
+                               const path = `
+               M ${p1.x},${p1.y}
+               H ${midX}
+               V ${p2.y}
+               H ${p2.x}
+             `;
+                               return path;
+                           }
+
+                           function updateConnector() {
+
+                               const holder = document.getElementById("holder");
+                                 const holderSVG = document.getElementById("holderSVG");
+                                for (let i = 0; i < jsonCityTreeNodes.length; i++) {
+                             
+                                   const newDiv = document.createElement("div");
+                                   newDiv.className = "box";
+                                   newDiv.innerHTML = jsonCityTreeNodes[i].id;
+                                   newDiv.setAttribute("id", jsonCityTreeNodes[i].id);
+                                  for (let j = 0; j < jsonCityTreeNodes[i].connectTo.length; j++) {
+                                        const path = document.createElement("path");
+                                       const div = document.getElementById(jsonCityTreeNodes[i].connectTo[j].id)
+                                          path.setAttribute("d", generatePathSettings(div, newDiv, 100));
+                          holderSVG.appendChild(path);
+                                       
+                                   }
+                                   
+                                   holder.appendChild(newDiv);
+                                  
+                                  
+                                   
+
+                               }
+                           }
+
+                           // Initial render
+                           updateConnector();
+
+                           // Recompute on resize or scroll
+                          // window.addEventListener("resize", updateConnector);
+                          // window.addEventListener("scroll", updateConnector);
+                       }
+        </script>
+
+        <title>Age of Wonders 4 Evolved - Abilities List</title>
+    </head>
+
+    <body>
+        <div id="holder"></div>
+      
+        <svg id="holderSVG" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+             </svg>
+
+        <style>
+            .box {
+                position: relative;
+                width: 100px;
+                height: 50px;
+                background: lightblue;
+                border: 1px solid #333;
+                text-align: center;
+                line-height: 50px;
+            }
+        </style>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

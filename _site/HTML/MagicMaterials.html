@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        var oreArray = ["arcanium_ore", "focus_crystals", "fireforge_stone"];
+        var liquidArray = ["archon_blood", "astral_dew", "tranquility_pool"];
+        var plantArray = ["haste_berries", "silvertongue_fruit", "rainbow_clover"];
+        var voidArray = ["void_stones"];
+
+
+        $("#body").ready(function() {
+
+            $("#header").load("/evolved/HTML/header.html", function() {
+                CheckData();
+            });
+        });
+
+        function HandlePage() {
+            showWorldStructuresWithArgument("Void Stones", "void_stones", voidArray, "Void Stones");
+            showWorldStructuresWithArgument("Ores", "ore", oreArray, "Ores");
+            showWorldStructuresWithArgument("Liquids", "liquid", liquidArray, "Liquids");
+            showWorldStructuresWithArgument("Plants", "plant", plantArray, "Plants");
+            SetLevelUpStuff();
+        }
+
+    </script>
+
+
+
+    <title>Age of Wonders 4 Evolved - Magic Materials</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="textblocktitle">
+        Magic Materials
+    </div>
+
+
+    <div class="w3-container">
+        <div class="w3-bar w3-black" id="buttonHolder">
+
+        </div>
+        
+        <div class="mod_card">
+            <div class="structure_image_holder" style="align-content: center">
+                <div class="mod_name">
+                    VOID STONES (Needs 3)</div>
+                <div class="mod_description" style="float:left">
+
+                    Collection Effect:<br>
+                    <div class="mod_name">
+                        Void Ink:
+                    </div>
+                    <br>
+
+                    <bulletlist>
+
+                        <bullet>Umbral Dwellings with an Eldritch Pact grant +30 <knowledge></knowledge> Knowledge.
+                        </bullet>
+                        <bullet>Vassals grant +30 <knowledge></knowledge> Knowledge.
+                        </bullet>
+                    </bulletlist>
+                </div>
+            </div>
+        </div>
+        <div id="Void Stones">
+
+        </div>
+
+        <div class="mod_card">
+            <div class="structure_image_holder" style="align-content: center">
+                <div class="mod_name">
+                    ORES</div>
+                <div class="mod_description" style="float:left">
+
+                    Collection Effect:<br>
+                    <div class="mod_name">
+                        Rings of Binding:
+                    </div>
+                    <br>
+
+                    <bulletlist>
+                        Heroes gain:
+                        <bullet>+1 <defense></defense> Defense
+                        </bullet>
+                        <bullet>+1 <resistance></resistance> Resistance
+                        </bullet>
+                        <bullet>+10% Bonus Damage
+                        </bullet>
+                    </bulletlist>
+                </div>
+            </div>
+        </div>
+
+        <div id="Ores">
+
+        </div>
+        <div class="mod_card">
+            <div class="structure_image_holder" style="align-content: center">
+                <div class="mod_name">
+                    LIQUIDS</div>
+                <div class="mod_description" style="float:left">
+
+                    Collection Effect:<br>
+                    <div class="mod_name">
+                        Cosmuflux Elixir:
+                    </div>
+                    <bulletlist>
+                        <bullet>Mana Resource Nodes grant +10 <knowledge></knowledge>
+                            <hyperlink>Knowledge</hyperlink> and +10 <mana></mana><hyperlink>Mana</hyperlink> income
+                        </bullet>
+                    </bulletlist>
+                </div>
+            </div>
+        </div>
+
+        <div id="Liquids">
+
+        </div>
+        <div class="mod_card">
+            <div class="structure_image_holder" style="align-content: center">
+                <div class="mod_name">
+                    PLANTS</div>
+                <div class="mod_description" style="float:left">
+
+                    Collection Effect:<br>
+                    <div class="mod_name">
+                        Imperial Essence:
+                    </div>
+
+                    <bulletlist>
+                        <bullet>+10 <influence></influence>
+                            <hyperlink>Imperium</hyperlink> income
+                        </bullet>
+                    </bulletlist>
+                </div>
+            </div>
+        </div>
+        <div id="Plants">
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+<script>
+
+</script>
+
+</html>
+<footer>
+    <br>
+    <br>
+</footer>
