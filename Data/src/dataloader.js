@@ -184,53 +184,53 @@ var jsonSiegeProjects;
 
 const dlcMap = {
     EMPIRESANDASHES: {
-        src: "/evolved/Icons/Text/EmpiresAshes.png",
+        src: "/rbbp/Icons/Text/EmpiresAshes.png",
         text: "Part of the Empires & Ashes DLC"
     },
     DRAGONLORDS: {
-        src: "/evolved/Icons/Text/DragonDawn.png",
+        src: "/rbbp/Icons/Text/DragonDawn.png",
         text: "Part of the Dragon Dawn DLC"
     },
     PRIMALFURY: {
-        src: "/evolved/Icons/Text/PrimalFury.png",
+        src: "/rbbp/Icons/Text/PrimalFury.png",
         text: "Part of the Primal Fury DLC"
     },
     ELDRITCHREALMS: {
-        src: "/evolved/Icons/Text/EldritchRealms.png",
+        src: "/rbbp/Icons/Text/EldritchRealms.png",
         text: "Part of the Eldritch Realms DLC"
     },
     HERALDOFGLORY: {
-        src: "/evolved/Icons/Text/herald_of_glory.png",
+        src: "/rbbp/Icons/Text/herald_of_glory.png",
         text: "Part of the Herald of Glory DLC"
     },
     WAYSOFWAR: {
-        src: "/evolved/Icons/Text/waysofwar.png",
+        src: "/rbbp/Icons/Text/waysofwar.png",
         text: "Part of the Ways of War DLC"
     },
     GIANTKINGS: {
-        src: "/evolved/Icons/Text/GKLogo.png",
+        src: "/rbbp/Icons/Text/GKLogo.png",
         text: "Part of the Giant Kings DLC"
     },
     ARCHONPROPHECY: {
-        src: "/evolved/Icons/Text/ArchonProphecy.png",
+        src: "/rbbp/Icons/Text/ArchonProphecy.png",
         text: "Part of the Archon Prophecy DLC"
     }, COSMICWANDERER: {
-        src: "/evolved/Icons/Text/CosmicWanderer.png",
+        src: "/rbbp/Icons/Text/CosmicWanderer.png",
         text: "Part of the Cosmic Wanderer DLC"
     }
 };
 
 async function GetAllData(selectedLang) {
-    const basePathEN = `/evolved/Data/EN/`;
+    const basePathEN = `/rbbp/Data/EN/`;
 
     //if(selectedLang == "Beta"){
-    //         basePathEN = `/evolved/Data/Beta/`;
+    //         basePathEN = `/rbbp/Data/Beta/`;
     //  }else{
 
-    const basePathGen = `/evolved/Data/GEN/`;
+    const basePathGen = `/rbbp/Data/GEN/`;
     // }
-    //  const basePathEN = `/evolved/Data/EN/`;
-    const basePathLocal = `/evolved/Data/${selectedLang}/`;
+    //  const basePathEN = `/rbbp/Data/EN/`;
+    const basePathLocal = `/rbbp/Data/${selectedLang}/`;
 
     const fileNamesGeneric = [
         "EnchantmentTables.json",
@@ -281,7 +281,7 @@ async function GetAllData(selectedLang) {
             fetchJsonFiles(filesToFetchGeneric),
             fetchJsonFiles(filesToFetchEN),
             fetchJsonFiles(filesToFetchLocal),
-            fetch("/evolved/HTML/templates.html").then((res) => res.text())
+            fetch("/rbbp/HTML/templates.html").then((res) => res.text())
         ]);
 
         const genericTargets = [

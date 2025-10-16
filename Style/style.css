@@ -9,22 +9,22 @@ html {
 
 @font-face {
     font-family: "Header";
-    src: url(/evolved/Style/HEADER.ttf);
+    src: url(/rbbp/Style/HEADER.ttf);
 }
 
 @font-face {
     font-family: "Number";
-    src: url(/evolved/Style/NUMBER.ttf);
+    src: url(/rbbp/Style/NUMBER.ttf);
 }
 
 @font-face {
     font-family: "Decorative";
-    src: url(/evolved/Style/DECORATIVE.otf);
+    src: url(/rbbp/Style/DECORATIVE.otf);
 }
 
 @font-face {
     font-family: "Regular";
-    src: url(/evolved/Style/MinionPro/MINIONPRO-MEDIUM.OTF);
+    src: url(/rbbp/Style/MinionPro/MINIONPRO-MEDIUM.OTF);
 }
 
 body {
@@ -88,7 +88,7 @@ ul {
 }
 
 .item_card {
-    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-image: url(/rbbp/Icons/tooltipBG.png);
     font-size: 13px;
     color: #bbcdf6;
     width: 450px;
@@ -98,7 +98,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -107,7 +107,7 @@ ul {
 .textblocktitle {
     border-width: 5px;
     border-style: solid;
-    border-image: url(/evolved/Icons/Interface/panel_name_border.png);
+    border-image: url(/rbbp/Icons/Interface/panel_name_border.png);
     border-image-slice: 50 fill;
     border-image-repeat: stretch;
     text-transform: uppercase;
@@ -126,7 +126,7 @@ ul {
     border-width: 10px;
     border-top-width: 0;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slice.png);
+    border-image: url(/rbbp/Icons/9slice.png);
     border-image-slice: 30 fill;
 }
 
@@ -148,7 +148,7 @@ a:hover {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(/evolved/Icons/9slicetooltip%20-%20Copy.png);
+    background-image: url(/rbbp/Icons/9slicetooltip%20-%20Copy.png);
     z-index: 999;
     /* keeps it above other elements */
 }
@@ -178,7 +178,7 @@ a:hover {
 
 #menu {
     background: black;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
     height: 35px;
@@ -199,7 +199,7 @@ a:hover {
 #menu ul {
     height: auto;
     background: black;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
 }
@@ -261,7 +261,7 @@ a:hover {
     height: auto;
     width: 180px;
     background: black;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
     position: absolute;
@@ -390,7 +390,7 @@ a:hover {
     text-align: left;
     border-style: solid;
     border-width: 10px;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -491,14 +491,14 @@ p {
     width: 500px;
     min-width: 400px;
     float: left;
-    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-image: url(/rbbp/Icons/tooltipBG.png);
     background-size: cover;
     font-size: 15px;
     color: #bbcdf6;
     text-align: left;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -512,13 +512,13 @@ p {
     width: 800px;
     min-width: 400px;
     float: left;
-    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-image: url(/rbbp/Icons/tooltipBG.png);
     font-size: 13px;
     color: #bbcdf6;
     text-align: left;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -531,11 +531,11 @@ p {
     height: 250px;
     float: right;
     background-size: contain;
-    mask-image: url(/evolved/Icons/Interface/CosmicHappeningPortal.png);
+    mask-image: url(/rbbp/Icons/Interface/CosmicHappeningPortal.png);
     /* The image with alpha channel that will act as a mask */
     mask-size: cover;
     /* Adjust the mask size to fit the element */
-    -webkit-mask-image: url(/evolved/Icons/Interface/CosmicHappeningPortal.png);
+    -webkit-mask-image: url(/rbbp/Icons/Interface/CosmicHappeningPortal.png);
     /* Ensures compatibility with WebKit browsers */
     -webkit-mask-size: cover;
 }
@@ -583,7 +583,7 @@ p {
     outline: 0;
     border-width: 3px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: rgb(0, 0, 0);
     border-image-repeat: stretch;
@@ -598,7 +598,7 @@ p {
     outline: 0;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     border-image-repeat: stretch;
@@ -621,7 +621,7 @@ p {
     color: #bbcdf6;
     text-align: left;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     text-shadow: 2px 2px 3px black;
     z-index: 2;
@@ -660,7 +660,7 @@ p {
     float: left;
     padding: 10px;
     width: 76px;
-    background: url(/evolved/Icons/Interface/spellbackground_enchantment.png);
+    background: url(/rbbp/Icons/Interface/spellbackground_enchantment.png);
     overflow: visible;
     background-size: 156px;
     background-repeat: no-repeat;
@@ -727,7 +727,7 @@ tab {
     padding: 15px;
     color: #362314;
     border-style: solid;
-    border-image: url(/evolved/Icons/Interface/parchment2.png);
+    border-image: url(/rbbp/Icons/Interface/parchment2.png);
     border-image-slice: 2 fill;
 }
     .initialBonusHeaderText,
@@ -740,10 +740,10 @@ tab {
     color: white;
     width: 1075px;
     border-style: solid;
-    border-image: url(/evolved/Icons/Interface/Background_Unitpanel.png);
+    border-image: url(/rbbp/Icons/Interface/Background_Unitpanel.png);
     border-image-slice: 2;
     border-width: 4px;
-    background-image: url(/evolved/Icons/Interface/Background_Unitpanel.png);
+    background-image: url(/rbbp/Icons/Interface/Background_Unitpanel.png);
     background-size: cover;
     padding: 5px;
     display: table;
@@ -760,7 +760,7 @@ tab {
     padding: 15px;
     display: table;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 6 4 6;
     margin-bottom: 20px;
     margin-left: auto;
@@ -809,7 +809,7 @@ tab {
     display: flex;
     border-style: solid;
     border-width: 5px;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: #0e0f0e;
 }
@@ -897,7 +897,7 @@ tab {
     border-top-width: 0;
     float: right;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slice.png);
+    border-image: url(/rbbp/Icons/9slice.png);
     border-image-slice: 30 fill;
     border-image-repeat: stretch;
 }
@@ -992,7 +992,7 @@ tab {
 .unit_name {
     border-width: 20px;
     border-style: solid;
-    border-image: url(/evolved/Icons/Interface/panel_name_border.png);
+    border-image: url(/rbbp/Icons/Interface/panel_name_border.png);
     border-image-slice: 20 fill;
     float: right;
     border-image-repeat: stretch;
@@ -1135,7 +1135,7 @@ tab {
 .preview_image {
     float: right;
     max-height: 200px;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-style: solid;
     border-image-slice: 5 fill;
 }
@@ -1146,7 +1146,7 @@ tab {
     color: #bbcdf6;
     text-align: left;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 500 4 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -1201,7 +1201,7 @@ hr {
     width: 300px;
     border-style: solid;
     border-width: 10px;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     color: #f0f8ff;
@@ -1255,7 +1255,7 @@ hr {
     height: 30px;
     border-width: 5px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
 }
 
@@ -1268,7 +1268,7 @@ hr {
     height: 30px;
     border-width: 5px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
 }
 
@@ -1281,7 +1281,7 @@ hr {
     height: 30px;
     border-width: 5px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
 }
 .dlc-toggle.enabled {
@@ -1298,7 +1298,7 @@ hr {
     width: auto;
     border-style: solid;
     border-width: 10px;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     color: #f0f8ff;
@@ -1309,7 +1309,7 @@ hr {
 }
 
 .tooltiptextnew {
-    background-image: url(/evolved/Icons/tooltipBG.png);
+    background-image: url(/rbbp/Icons/tooltipBG.png);
     background-size: auto;
     font-size: 15px;
     color: #bbcdf6;
@@ -1317,7 +1317,7 @@ hr {
     padding: 5px;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 8 8 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -1363,7 +1363,7 @@ helpcolor {
     width: 100%;
     outline: 0;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 2 5 2 5 fill;
     background-color: black;
     border-image-repeat: stretch;
@@ -1383,7 +1383,7 @@ helpcolor {
     display: block;
     outline: 0;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 2 5 2 5 fill;
     background-color: black;
     border-image-repeat: stretch;
@@ -1397,7 +1397,7 @@ helpcolor {
     margin-bottom: 0;
     padding: 4px;
     border-style: solid;
-    border-image: url(/evolved/Icons/9slicetooltip.png);
+    border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 1 1 1 1;
 }
 
@@ -1645,7 +1645,7 @@ silver {
 .header-img::after {
     content: "";
     height: 150px;
-    background: url(/evolved/Icons/Interface/library_hero.jpg);
+    background: url(/rbbp/Icons/Interface/library_hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

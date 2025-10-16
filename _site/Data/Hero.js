@@ -439,11 +439,11 @@ function SetSkillData(nodeElement, skill) {
     img.className = "empireNodeIcon";
     nodeElement.append(img);
     if (skill == undefined) {
-        img.setAttribute("src", "/evolved/Icons/Interface/skill_unassigned.png");
+        img.setAttribute("src", "/rbbp/Icons/Interface/skill_unassigned.png");
         img.setAttribute("height", "80px");
         return;
     } else {
-        img.setAttribute("src", "/evolved/Icons/UnitIcons/" + skill.icon + ".png");
+        img.setAttribute("src", "/rbbp/Icons/UnitIcons/" + skill.icon + ".png");
     }
 
     if (skill.type == "signature") {
@@ -848,7 +848,7 @@ function BuildSkillTreeEntry(currentSkill, row, holder, treespace, extraOffset) 
     newNode.className = `unittype_ic shape-${form}`;
 
     if (abilityIconType != "") {
-        newNode.style.backgroundImage = "url('/evolved/Icons/Interface/" + abilityIconType + ".png";
+        newNode.style.backgroundImage = "url('/rbbp/Icons/Interface/" + abilityIconType + ".png";
     }
 
     SetSkillData(newNode, currentSkill);

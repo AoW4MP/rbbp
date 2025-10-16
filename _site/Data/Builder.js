@@ -75,28 +75,28 @@ var jsonSiegeProjects,
 
 async function GetAllData() {
     const jsonFilePaths = [
-        "/evolved/Data/HeroItems.json",
-        "/evolved/Data/HeroSkills.json",
-        "/evolved/Data/SiegeProjects.json",
-        "/evolved/Data/Units.json",
-        "/evolved/Data/Traits.json",
-        "/evolved/Data/Tomes.json",
-        "/evolved/Data/Abilities.json",
-        "/evolved/Data/EmpireProgression.json",
-        "/evolved/Data/Spells.json",
-        "/evolved/Data/StructureUpgrades.json",
-        "/evolved/Data/CombatEnchantments.json",
-        "/evolved/Data/WorldStructures.json",
-        "/evolved/Data/EnchantmentTables.json",
-        "/evolved/Data/SpawnTables.json",
-        "/evolved/Data/FactionCreation.json",
-        "/evolved/Data/Destinies.json",
-        "/evolved/Data/BuilderLookup.json",
-        "/evolved/Data/AscendedInfo.json",
-        "/evolved/Data/ItemForge.json",
-        "/evolved/Data/CosmicHappenings.json",
-        "/evolved/Data/BuilderLookupHero.json",
-        "/evolved/Data/Governance.json"
+        "/rbbp/Data/HeroItems.json",
+        "/rbbp/Data/HeroSkills.json",
+        "/rbbp/Data/SiegeProjects.json",
+        "/rbbp/Data/Units.json",
+        "/rbbp/Data/Traits.json",
+        "/rbbp/Data/Tomes.json",
+        "/rbbp/Data/Abilities.json",
+        "/rbbp/Data/EmpireProgression.json",
+        "/rbbp/Data/Spells.json",
+        "/rbbp/Data/StructureUpgrades.json",
+        "/rbbp/Data/CombatEnchantments.json",
+        "/rbbp/Data/WorldStructures.json",
+        "/rbbp/Data/EnchantmentTables.json",
+        "/rbbp/Data/SpawnTables.json",
+        "/rbbp/Data/FactionCreation.json",
+        "/rbbp/Data/Destinies.json",
+        "/rbbp/Data/BuilderLookup.json",
+        "/rbbp/Data/AscendedInfo.json",
+        "/rbbp/Data/ItemForge.json",
+        "/rbbp/Data/CosmicHappenings.json",
+        "/rbbp/Data/BuilderLookupHero.json",
+        "/rbbp/Data/Governance.json"
     ];
     await fetchJsonFiles(jsonFilePaths)
         .then((dataArray) => {
@@ -508,7 +508,7 @@ function SetButtonsAndDivs(list, parent, cardType, otherParent, subcultureCheck)
                 div.setAttribute("id", splitIcon[0]);
                 btn.setAttribute("id", splitIcon[0] + "-button");
                 btn.innerHTML =
-                    '<img style="float:left;" src="/evolved/Icons/TomeIcons/' +
+                    '<img style="float:left;" src="/rbbp/Icons/TomeIcons/' +
                     splitIcon[1] +
                     ".png\" width='25px'\">" +
                     GetUnitTierAndName(splitIcon[0]);
@@ -820,13 +820,13 @@ function addUnitTypeIcon(a, holder, origin) {
             btn.className = "unittype_icon";
             imag = document.createElement("IMG");
             spa = document.createElement("SPAN");
-            imag.setAttribute("src", "/evolved/Icons/UnitIcons/" + iconsrc + ".png");
-            imag.setAttribute("onerror", "this.setAttribute('src','/evolved/Icons/Text/mp.png')");
+            imag.setAttribute("src", "/rbbp/Icons/UnitIcons/" + iconsrc + ".png");
+            imag.setAttribute("onerror", "this.setAttribute('src','/rbbp/Icons/Text/mp.png')");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
             spa.innerHTML =
-                '<img style="float:left; height:30px; width:30px" src="/evolved/Icons/UnitIcons/' +
+                '<img style="float:left; height:30px; width:30px" src="/rbbp/Icons/UnitIcons/' +
                 iconsrc +
                 '.png"><p class="abilityHighLighter" style="color: #d7c297;>' +
                 '<span  style="font-size=20px;">' +
@@ -854,7 +854,7 @@ function addUnitTypeIcon(a, holder, origin) {
                 ) {
                     unitRole = origin.querySelectorAll("img#unit_role")[0];
                     unitType = iconsrc;
-                    unitRole.setAttribute("src", "/evolved/Icons/Text/" + iconsrc + ".png");
+                    unitRole.setAttribute("src", "/rbbp/Icons/Text/" + iconsrc + ".png");
                 }
             }
             holder.appendChild(btn);
@@ -945,7 +945,7 @@ function addAbilityslot(a, holder, list, enchant) {
                                         ) {
                                             abilityName += '<span style="color:#aa84f6;font-size: 20px">*</span>';
                                             abilityEncht +=
-                                                '<bullet><img src="/evolved/Icons/SpellIcons/' +
+                                                '<bullet><img src="/rbbp/Icons/SpellIcons/' +
                                                 jsonEnchantments[k].id +
                                                 ".png\" height='20px'>" +
                                                 jsonEnchantments[k].attack[t].description +
@@ -965,7 +965,7 @@ function addAbilityslot(a, holder, list, enchant) {
                                         ) {
                                             abilityName += '<span style="color:#aa84f6;font-size: 20px">*</span>';
                                             abilityEncht +=
-                                                '<bullet><img src="/evolved/Icons/SpellIcons/' +
+                                                '<bullet><img src="/rbbp/Icons/SpellIcons/' +
                                                 jsonEnchantments[k].id +
                                                 ".png\" height='20px'>" +
                                                 jsonEnchantments[k].attack[t].description +
@@ -981,7 +981,7 @@ function addAbilityslot(a, holder, list, enchant) {
                                     if (combinedReq.indexOf(jsonEnchantments[k].attack[t].type) != -1) {
                                         abilityName += '<span style="color:#aa84f6;font-size: 20px">*</span>';
                                         abilityEncht +=
-                                            '<bullet><img src="/evolved/Icons/SpellIcons/' +
+                                            '<bullet><img src="/rbbp/Icons/SpellIcons/' +
                                             jsonEnchantments[k].id +
                                             ".png\" height='20px'>" +
                                             jsonEnchantments[k].attack[t].description +
@@ -1109,30 +1109,30 @@ function addAbilityslot(a, holder, list, enchant) {
             abilityDescr = abilityDescr.replaceAll("</br>", "");
 
             var abilityIconType = "";
-            imag.setAttribute("src", "/evolved/Icons/UnitIcons/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/rbbp/Icons/UnitIcons/" + abilityIcon + ".png");
 
             var abilityIconType = GetAbilityBackground(abilityDam);
 
             imag.setAttribute(
                 "style",
-                'background-image: url("/evolved/Icons/Interface/' +
+                'background-image: url("/rbbp/Icons/Interface/' +
                 abilityIconType +
                 '.png");background-repeat: no-repeat;background-size: 40px 40px'
             );
 
-            imag.setAttribute("onerror", "this.setAttribute('src','/evolved/Icons/Text/mp.png')");
+            imag.setAttribute("onerror", "this.setAttribute('src','/rbbp/Icons/Text/mp.png')");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
             if (Cooldown != "") {
                 var imageExtra = document.createElement("IMG");
-                imageExtra.setAttribute("src", "/evolved/Icons/Text/turn.png");
+                imageExtra.setAttribute("src", "/rbbp/Icons/Text/turn.png");
                 imageExtra.setAttribute("style", " position: absolute; height: 18px; left: 0px;bottom: 4px;");
                 btn.append(imageExtra);
             }
 
             if (Once != "") {
                 var imageExtra = document.createElement("IMG");
-                imageExtra.setAttribute("src", "/evolved/Icons/Text/once.png");
+                imageExtra.setAttribute("src", "/rbbp/Icons/Text/once.png");
                 imageExtra.setAttribute("style", " position: absolute; height: 18px; left: 0px;bottom: 4px;");
                 btn.append(imageExtra);
             }
@@ -1356,9 +1356,9 @@ function GetAbilityToolTip(
     var abilityHighlighter = document.createElement("DIV");
     abilityHighlighter.className = "abilityHighLighter";
     abilityHighlighter.innerHTML =
-        "<img style=\"float:left; height:50px; width:50px; background-image:url('/evolved/Icons/Interface/" +
+        "<img style=\"float:left; height:50px; width:50px; background-image:url('/rbbp/Icons/Interface/" +
         abilityIconType +
-        '.png\');background-repeat: no-repeat;background-size: 50px" src="/evolved/Icons/UnitIcons/' +
+        '.png\');background-repeat: no-repeat;background-size: 50px" src="/rbbp/Icons/UnitIcons/' +
         ability.icon +
         '.png">';
 
@@ -1530,8 +1530,8 @@ function addPassiveslot(a, div, enchant) {
             tex.setAttribute("onclick", "");
             tex.innerHTML = abilityName;
 
-            imag.setAttribute("src", "/evolved/Icons/UnitIcons/" + abilityIcon + ".png");
-            imag.setAttribute("onerror", "this.setAttribute('src','/evolved/Icons/Text/mp.png')");
+            imag.setAttribute("src", "/rbbp/Icons/UnitIcons/" + abilityIcon + ".png");
+            imag.setAttribute("onerror", "this.setAttribute('src','/rbbp/Icons/Text/mp.png')");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -1580,8 +1580,8 @@ function addUniquePassiveSlot(enchantment, descr, div, overwrite) {
     tex.setAttribute("onclick", "");
     tex.innerHTML = abilityName;
 
-    imag.setAttribute("src", "/evolved/Icons/SpellIcons/" + abilityIcon + ".png");
-    imag.setAttribute("onerror", "this.setAttribute('src','/evolved/Icons/Text/mp.png')");
+    imag.setAttribute("src", "/rbbp/Icons/SpellIcons/" + abilityIcon + ".png");
+    imag.setAttribute("onerror", "this.setAttribute('src','/rbbp/Icons/Text/mp.png')");
     imag.setAttribute("width", "40");
     imag.setAttribute("height", "40");
 
@@ -1605,7 +1605,7 @@ function CreateUniquePassiveSlotToolTip(abilityIcon, abilityName, abilityDescr) 
     var spa = document.createElement("SPAN");
 
     spa.innerHTML =
-        '<img style="float:left; height:30px; width:30px" src="/evolved/Icons/SpellIcons/' +
+        '<img style="float:left; height:30px; width:30px" src="/rbbp/Icons/SpellIcons/' +
         abilityIcon +
         '.png"><p style="color: #d7c297;>' +
         '<span style="font-size=20px;">' +
@@ -1625,7 +1625,7 @@ function CreatePassiveSlotToolTip(abilityIcon, abilityName, abilityDescr) {
     abilityDescr = abilityDescr.replaceAll("<br></br>", "<br>");
 
     spa.innerHTML =
-        '<div class="abilityHighLighter"><img style="float:left; height:30px; width:30px" src="/evolved/Icons/UnitIcons/' +
+        '<div class="abilityHighLighter"><img style="float:left; height:30px; width:30px" src="/rbbp/Icons/UnitIcons/' +
         abilityIcon +
         '.png"><p style="color: #d7c297;>' +
         '<span style="font-size=20px;">' +
@@ -1752,23 +1752,23 @@ function addResistanceSlot(a, resistance, holder) {
             imag.setAttribute("height", "25");
 
             if (a.indexOf("frost") !== -1) {
-                imag.setAttribute("src", "/evolved/Icons/Text/frost_resistance.png");
+                imag.setAttribute("src", "/rbbp/Icons/Text/frost_resistance.png");
                 spa.innerHTML += "<defensefrost></defensefrost>";
             }
             if (a.indexOf("blight") !== -1) {
-                imag.setAttribute("src", "/evolved/Icons/Text/blight_resistance.png");
+                imag.setAttribute("src", "/rbbp/Icons/Text/blight_resistance.png");
                 spa.innerHTML += "<defenseblight></defenseblight>";
             }
             if (a.indexOf("fire") !== -1) {
-                imag.setAttribute("src", "/evolved/Icons/Text/fire_resistance.png");
+                imag.setAttribute("src", "/rbbp/Icons/Text/fire_resistance.png");
                 spa.innerHTML += "<defensefire></defensefire>";
             }
             if (a.indexOf("spirit") !== -1) {
-                imag.setAttribute("src", "/evolved/Icons/Text/spirit_resistance.png");
+                imag.setAttribute("src", "/rbbp/Icons/Text/spirit_resistance.png");
                 spa.innerHTML += "<defensespirit></defensespirit>";
             }
             if (a.indexOf("lightning") !== -1) {
-                imag.setAttribute("src", "/evolved/Icons/Text/lightning_resistance.png");
+                imag.setAttribute("src", "/rbbp/Icons/Text/lightning_resistance.png");
                 spa.innerHTML += "<defenselightning></defenselightning>";
             }
 
@@ -1826,7 +1826,7 @@ function addstatusResistanceSlot(a, holder) {
     imag.setAttribute("width", "25");
     imag.setAttribute("height", "25");
 
-    imag.setAttribute("src", "/evolved/Icons/Text/status_resistance.png");
+    imag.setAttribute("src", "/rbbp/Icons/Text/status_resistance.png");
 
     abilityDam = a;
 
@@ -2904,14 +2904,14 @@ function showUnit(a, subcultureCheck, resID) {
                     unitCard = document.getElementById("unitCard" + a);
                 } else {
                     // imagelink = unitCard.querySelectorAll('video#vid')[0];
-                    //imagelink.setAttribute('src', "/evolved/Previews/" + jsonUnits[i].id + ".mp4");
-                    //if (imagelink.getAttribute('src') === "/evolved/Previews/undefined") {
-                    //  imagelink.setAttribute('src', "/evolved/Previews/placeholder.mp4");
+                    //imagelink.setAttribute('src', "/rbbp/Previews/" + jsonUnits[i].id + ".mp4");
+                    //if (imagelink.getAttribute('src') === "/rbbp/Previews/undefined") {
+                    //  imagelink.setAttribute('src', "/rbbp/Previews/placeholder.mp4");
                     //}
                     imagelink = unitCard.querySelectorAll("img#vid")[0];
-                    imagelink.setAttribute("src", "/evolved/PreviewsAvif/" + jsonUnits[i].id + ".avif");
-                    if (imagelink.getAttribute("src") === "/evolved/PreviewsAvif/undefined") {
-                        imagelink.setAttribute("src", "/evolved/PreviewsAvif/abductor.avif");
+                    imagelink.setAttribute("src", "/rbbp/PreviewsAvif/" + jsonUnits[i].id + ".avif");
+                    if (imagelink.getAttribute("src") === "/rbbp/PreviewsAvif/undefined") {
+                        imagelink.setAttribute("src", "/rbbp/PreviewsAvif/abductor.avif");
                     }
                 }
                 if (subcultureCheck == undefined) {
@@ -2944,7 +2944,7 @@ function showUnit(a, subcultureCheck, resID) {
                     newDivForMount.className = "mountToolTip";
 
                     imag = document.createElement("IMG");
-                    imag.setAttribute("src", "/evolved/Icons/Text/MountInteraction.png");
+                    imag.setAttribute("src", "/rbbp/Icons/Text/MountInteraction.png");
                     imag.setAttribute("height", "35px");
 
                     spa = document.createElement("SPAN");
@@ -3056,13 +3056,13 @@ function showUnit(a, subcultureCheck, resID) {
                     btn.className = "unittype_icon";
                     imag = document.createElement("IMG");
                     span = document.createElement("SPAN");
-                    imag.setAttribute("src", "/evolved/Icons/FactionCreation/human.png");
+                    imag.setAttribute("src", "/rbbp/Icons/FactionCreation/human.png");
 
                     imag.setAttribute("width", "40");
                     imag.setAttribute("height", "40");
 
                     span.innerHTML =
-                        '<img style="float:left; height:30px; width:30px" src="/evolved/Icons/FactionCreation/human.png"><p style="color: #d7c297" class="abilityHighLighter">' +
+                        '<img style="float:left; height:30px; width:30px" src="/rbbp/Icons/FactionCreation/human.png"><p style="color: #d7c297" class="abilityHighLighter">' +
                         '<span style="font-size=20px;">FORM UNIT</span></p>' +
                         "<br> This unit will use a Form and Form Traits";
 
@@ -3549,9 +3549,9 @@ function backtrackUnitOrigins(unitData, name, holder) {
     if (culture != "thing") {
         const capitalized = culture.charAt(0).toUpperCase() + culture.slice(1);
         const tooltipText = `Culture Unit from <hyperlink>${capitalized}</hyperlink>`;
-        const imgSrc = `/evolved/Icons/Text/${culture}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/${capitalized}Units.html`;
+        const imgSrc = `/rbbp/Icons/Text/${culture}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/${capitalized}Units.html`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
@@ -3565,18 +3565,18 @@ function backtrackUnitOrigins(unitData, name, holder) {
     if (subculture != "") {
         const capitalized = subculture.charAt(0).toUpperCase() + subculture.slice(1);
         const tooltipText = `Subculture Unit from <hyperlink>${capitalized}</hyperlink>`;
-        const imgSrc = `/evolved/Icons/Text/${subculture}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        //  const link = `/evolved/HTML/${capitalized}Units.html`;
+        const imgSrc = `/rbbp/Icons/Text/${subculture}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        //  const link = `/rbbp/HTML/${capitalized}Units.html`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, null, tooltipText);
     }
 
     var tomes = CheckIfInTomes(unitData.id);
     if (tomes != "") {
         const tooltipText = `Unit production unlocked from Tier <hyperlink>${romanize(tomes.tier)} - ${showAffinitySymbols(tomes)} ${tomes.name}</<hyperlink>`;
-        const imgSrc = `/evolved/Icons/TomeIcons/${tomes.id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?tome=${tomes.id}`;
+        const imgSrc = `/rbbp/Icons/TomeIcons/${tomes.id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?tome=${tomes.id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
@@ -3588,45 +3588,45 @@ function backtrackUnitOrigins(unitData, name, holder) {
             tierandnameoftome != ""
                 ? `Unit mentioned in Spell: <hyperlink>${spells[x].name}</hyperlink> <br>in Tier <hyperlink>${romanize(tierandnameoftome.tier)} - ${showAffinitySymbols(tierandnameoftome)} ${tierandnameoftome.name}</hyperlink>`
                 : `Unit mentioned in Spell: <hyperlink>${spells[x].name}</<hyperlink>`;
-        const imgSrc = `/evolved/Icons/SpellIcons/${spells[x].id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?spell=${spells[x].id}`;
+        const imgSrc = `/rbbp/Icons/SpellIcons/${spells[x].id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?spell=${spells[x].id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
     var siege = CheckIfInSiege(name);
     if (siege != "") {
         const tooltipText = `Unit mentioned in Siege Project <hyperlink>${siege.name}</hyperlink>`;
-        const imgSrc = `/evolved/Icons/SiegeIcons/${siege.id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?siege=${siege.id}`;
+        const imgSrc = `/rbbp/Icons/SiegeIcons/${siege.id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?siege=${siege.id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
     var struc = CheckIfInStructure(name);
     if (struc != "") {
         const tooltipText = `Unit mentioned in Structure <hyperlink>${struc.name}</hyperlink>`;
-        const imgSrc = `/evolved/Icons/UpgradeIcons/${struc.id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?structure=${struc.id}`;
+        const imgSrc = `/rbbp/Icons/UpgradeIcons/${struc.id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?structure=${struc.id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
     var wonder = CheckIfInAncientWonder(unitData.id);
     if (wonder != "") {
         const tooltipText = `Rally Unit unlocked from <hyperlink>${wonder.type}</<hyperlink> : <hyperlink>${wonder.name}</<hyperlink>`;
-        const imgSrc = `/evolved/Icons/StructurePics/${wonder.id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?wonder=${wonder.id}`;
+        const imgSrc = `/rbbp/Icons/StructurePics/${wonder.id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?wonder=${wonder.id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
     var tree = CheckIfInEmpireTree(name);
     if (tree != "") {
         const tooltipText = `Unit mentioned in <hyperlink>${tree.category} ${tree.required_level}</<hyperlink> : <hyperlink>${tree.name}</<hyperlink>`;
-        const imgSrc = `/evolved/Icons/EmpireProgressionIcons/${tree.id}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/EmpireTree.html`;
+        const imgSrc = `/rbbp/Icons/EmpireProgressionIcons/${tree.id}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/EmpireTree.html`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
@@ -3635,10 +3635,10 @@ function backtrackUnitOrigins(unitData, name, holder) {
         const tooltipText = `Unit mentioned in Ability <hyperlink>${unitAbility[1].name}</hyperlink> of Unit <hyperlink>${unitAbility[0].name}</hyperlink>`;
         const imgSrc =
             unitAbility[0] != ""
-                ? `/evolved/Icons/UnitIcons/${unitAbility[1].icon}.png`
-                : `/evolved/Icons/HeroSkillIcons/${unitAbility[1].icon}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Units.html?unit=${unitAbility[0].id}`;
+                ? `/rbbp/Icons/UnitIcons/${unitAbility[1].icon}.png`
+                : `/rbbp/Icons/HeroSkillIcons/${unitAbility[1].icon}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Units.html?unit=${unitAbility[0].id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
@@ -3647,19 +3647,19 @@ function backtrackUnitOrigins(unitData, name, holder) {
         const tooltipText = `Unit mentioned in Hero Skill <hyperlink>${heroSkill[1].name}</hyperlink>`;
         const imgSrc =
             heroSkill[0] != ""
-                ? `/evolved/Icons/UnitIcons/${heroSkill[0].icon}.png`
-                : `/evolved/Icons/HeroSkillIcons/${heroSkill[1].icon}.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Spells.html?skill=${heroSkill[1].id}`;
+                ? `/rbbp/Icons/UnitIcons/${heroSkill[0].icon}.png`
+                : `/rbbp/Icons/HeroSkillIcons/${heroSkill[1].icon}.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Spells.html?skill=${heroSkill[1].id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 
     var evolve = CheckIfEvolveTarget(unitData.id);
     if (evolve != "") {
         const tooltipText = `Evolved from Unit <hyperlink>${evolve.name}</<hyperlink>`;
-        const imgSrc = `/evolved/Icons/UnitIcons/evolve.png`;
-        const imgFallbackSrc = `/evolved/Icons/Text/mp.png`;
-        const link = `/evolved/HTML/Units.html?unit=${evolve.id}`;
+        const imgSrc = `/rbbp/Icons/UnitIcons/evolve.png`;
+        const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
+        const link = `/rbbp/HTML/Units.html?unit=${evolve.id}`;
         createUnitTypeIcon(holderOrigin, imgSrc, imgFallbackSrc, link, tooltipText);
     }
 }
@@ -4020,7 +4020,7 @@ function addLevelUpInfo(units, a, holder) {
         levelup.append(NewLevelUpEntry(levelText));
 
         levelText =
-            '<bullet> Evolves into <hyperlink> <a href="/evolved/HTML/Units.html?unit=' +
+            '<bullet> Evolves into <hyperlink> <a href="/rbbp/HTML/Units.html?unit=' +
             evolveTarget +
             '" target="_blank">' +
             lookupUnit(evolveTarget) +
@@ -4184,7 +4184,7 @@ function showSiegeProject(id, showOrigin) {
             unitTypesDiv = document.getElementById("affectUnitTypes");
             unitTypesDiv.setAttribute("id", "affectUnitTypes" + jsonSiegeProjects[i].name);
 
-            imagelink.setAttribute("src", "/evolved/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
             imagelink.setAttribute("id", "modicon" + jsonSiegeProjects[i].name);
             descriptionDiv.innerHTML = description;
             descriptionDiv.setAttribute("id", "moddescription" + jsonSiegeProjects[i].name);
@@ -4241,7 +4241,7 @@ function showSiegeProject(id, showOrigin) {
             unitTypesDiv = document.getElementById("affectUnitTypes");
             unitTypesDiv.setAttribute("id", "affectUnitTypes" + jsonSiegeProjects[i].name);
 
-            imagelink.setAttribute("src", "/evolved/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
             imagelink.setAttribute("id", "modicon" + jsonSiegeProjects[i].name);
             descriptionDiv.innerHTML = description;
             descriptionDiv.setAttribute("id", "modicon" + jsonSiegeProjects[i].name);
@@ -4309,7 +4309,7 @@ function showEmpireUpgrade(skill, showOrigin) {
     unitTypesDiv.setAttribute("id", "affectUnitTypes" + skill.name);
 
     var imageLinkName = skill.name.replaceAll(" ", "_").toLowerCase();
-    imagelink.setAttribute("src", "/evolved/Icons/SpellIcons/" + imageLinkName + ".png");
+    imagelink.setAttribute("src", "/rbbp/Icons/SpellIcons/" + imageLinkName + ".png");
     imagelink.setAttribute("id", "modicon" + skill.name);
     descriptionDiv.innerHTML = description;
     descriptionDiv.setAttribute("id", "modicon" + skill.name);
@@ -4546,7 +4546,7 @@ function showTome(a, div) {
             skillHolder.setAttribute("id", "tome_unlocks" + a);
 
             imagelink = document.getElementById("tomeicon");
-            imagelink.setAttribute("src", "/evolved/Icons/TomeIcons/" + a + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/TomeIcons/" + a + ".png");
             imagelink.setAttribute("id", "tomeicon" + a);
 
             // backtraceTomeOriginAndTier(jsonSpells[j].id);
@@ -4758,7 +4758,7 @@ function createTooltipForEnchant(item) {
     var text = document.createElement("div");
     image.setAttribute("width", "20");
     image.setAttribute("height", "20");
-    image.setAttribute("src", "/evolved/Icons/SpellIcons/" + item.icon + ".png");
+    image.setAttribute("src", "/rbbp/Icons/SpellIcons/" + item.icon + ".png");
     text.textContent = item.name;
     text.className = "tooltip";
     text.setAttribute("style", "padding:0px");
@@ -4784,7 +4784,7 @@ function SetEnchantment(evt) {
 
         image.setAttribute("width", "40");
         image.setAttribute("height", "40");
-        image.setAttribute("src", "/evolved/Icons/SpellIcons/" + evt.currentTarget.enchant.icon + ".png");
+        image.setAttribute("src", "/rbbp/Icons/SpellIcons/" + evt.currentTarget.enchant.icon + ".png");
 
         activeEnch.className = "tooltip";
         activeEnch.setAttribute("style", "padding: 0px");
@@ -4994,7 +4994,7 @@ function showStructure(a, showOrigin) {
                 a = a.replace("_", "");
             }
 
-            imagelink.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + a + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + a + ".png");
             if (a.indexOf("town_hall_iii_") != -1) {
                 description += "<br><br> Unlocks T3 Culture Units";
             }
@@ -5051,7 +5051,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "goretusk_piglet" +
                     '" target="_blank">' +
                     GetUnitTierAndName("goretusk_piglet") +
@@ -5061,7 +5061,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "dread_spider_hatchling" +
                     '" target="_blank">' +
                     GetUnitTierAndName("dread_spider_hatchling") +
@@ -5071,7 +5071,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "vampire_spider_hatchling" +
                     '" target="_blank">' +
                     GetUnitTierAndName("vampire_spider_hatchling") +
@@ -5081,7 +5081,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "razorback" +
                     '" target="_blank">' +
                     GetUnitTierAndName("razorback") +
@@ -5091,7 +5091,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "warg" +
                     '" target="_blank">' +
                     GetUnitTierAndName("warg") +
@@ -5101,7 +5101,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML = 
                     "<bullet>" +
-                    '<a href=\"/evolved/HTML/Units.html?unit=' +
+                    '<a href=\"/rbbp/HTML/Units.html?unit=' +
                     "dire_penguin" +
                     '"\" target=\"_blank\">"' +
                     GetUnitTierAndName("dire_penguin") +
@@ -5111,7 +5111,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML = 
                     "<bullet>" +
-                    '<a href=\"/evolved/HTML/Units.html?unit=' +
+                    '<a href=\"/rbbp/HTML/Units.html?unit=' +
                     "brown_bear" +
                     '"\" target=\"_blank\">"' +
                     GetUnitTierAndName("brown_bear") +
@@ -5121,7 +5121,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML = 
                     "<bullet>" +
-                    '<a href=\"/evolved/HTML/Units.html?unit=' +
+                    '<a href=\"/rbbp/HTML/Units.html?unit=' +
                     "polar_bear" +
                     '"\" target=\"_blank\">"' +
                     GetUnitTierAndName("polar_bear") +
@@ -5131,7 +5131,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML = 
                     "<bullet>" +
-                    '<a href=\"/evolved/HTML/Units.html?unit=' +
+                    '<a href=\"/rbbp/HTML/Units.html?unit=' +
                     "death_beetle" +
                     '"\" target=\"_blank\">"' +
                     GetUnitTierAndName("death_beetle") +
@@ -5141,7 +5141,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML = 
                     "<bullet>" +
-                    '<a href=\"/evolved/HTML/Units.html?unit=' +
+                    '<a href=\"/rbbp/HTML/Units.html?unit=' +
                     "elephant" +
                     '"\" target=\"_blank\">"' +
                     GetUnitTierAndName("elephant") +
@@ -5155,7 +5155,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "inferno_puppy" +
                     '" target="_blank">' +
                     GetUnitTierAndName("inferno_puppy") +
@@ -5165,7 +5165,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "gremlin" +
                     '" target="_blank">' +
                     GetUnitTierAndName("gremlin") +
@@ -5175,7 +5175,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "inferno_hound" +
                     '" target="_blank">' +
                     GetUnitTierAndName("inferno_hound") +
@@ -5185,7 +5185,7 @@ function showStructure(a, showOrigin) {
                     var div = document.createElement("DIV");
                     div.innerHTML =
                         "<bullet>" +
-                        '<a href="/evolved/HTML/Units.html?unit=' +
+                        '<a href="/rbbp/HTML/Units.html?unit=' +
                         "nightmare" +
                         '" target="_blank">' +
                         GetUnitTierAndName("nightmare") +
@@ -5195,7 +5195,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "chaos_eater" +
                     '" target="_blank">' +
                     GetUnitTierAndName("chaos_eater") +
@@ -5205,7 +5205,7 @@ function showStructure(a, showOrigin) {
                 var div = document.createElement("DIV");
                 div.innerHTML =
                     "<bullet>" +
-                    '<a href="/evolved/HTML/Units.html?unit=' +
+                    '<a href="/rbbp/HTML/Units.html?unit=' +
                     "infernal_juggernaut" +
                     '" target="_blank">' +
                     GetUnitTierAndName("infernal_juggernaut") +
@@ -5262,7 +5262,7 @@ function showCosmicHappening(a) {
             imagelink.setAttribute("id", "img" + a);
             var categoryLink = jsonCosmicHappenings[j].category.replaceAll(" ", "");
             categoryLink = categoryLink.replaceAll("of", "Of");
-            imagelink.setAttribute("src", "/evolved/Icons/CosmicHappenings/category_icon_" + categoryLink + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/CosmicHappenings/category_icon_" + categoryLink + ".png");
 
 
             var preview = document.getElementById("structurepreview");
@@ -5271,9 +5271,9 @@ function showCosmicHappening(a) {
 
             preview.setAttribute("id", "img" + a);
             preview.className = "cosmicHappeningPic";
-            preview.setAttribute("style", 'background-image: url("/evolved/Icons/CosmicHappenings/' + imagePos);
+            preview.setAttribute("style", 'background-image: url("/rbbp/Icons/CosmicHappenings/' + imagePos);
 
-            preview.setAttribute("src", "/evolved/Icons/Interface/Runecircle.png");
+            preview.setAttribute("src", "/rbbp/Icons/Interface/Runecircle.png");
 
             var modtier = document.getElementById("modtier");
             modtier.innerHTML = "Category: " + jsonCosmicHappenings[j].category;
@@ -5355,7 +5355,7 @@ function showWorldStructure(a) {
     if (structure.type.indexOf("wonder") != -1) {
         imagelink.remove();
     } else {
-        imagelink.setAttribute("src", "/evolved/Icons/WorldStructures/" + a + ".png");
+        imagelink.setAttribute("src", "/rbbp/Icons/WorldStructures/" + a + ".png");
         imagelink.setAttribute("id", "modicon" + a);
         imagelink.setAttribute("style", "background-image: none");
     }
@@ -5375,7 +5375,7 @@ function showWorldStructure(a) {
             var div = document.createElement("DIV");
             div.setAttribute("style", "margin-right: 20px;");
             div.innerHTML =
-                '<a href="/evolved/HTML/Units.html?unit=' +
+                '<a href="/rbbp/HTML/Units.html?unit=' +
                 structure.unit_unlocks[x].slug +
                 '" target="_blank">' +
                 GetUnitTierAndName(structure.unit_unlocks[x].slug) +
@@ -5391,7 +5391,7 @@ function showWorldStructure(a) {
     descriptionDiv.setAttribute("id", "modicon" + a);
 
     preview = document.getElementById("structurepreview");
-    preview.setAttribute("src", "/evolved/Icons/StructurePics/" + a + ".png");
+    preview.setAttribute("src", "/rbbp/Icons/StructurePics/" + a + ".png");
     preview.setAttribute("id", "structurepreview" + a);
 
     tier = document.getElementById("modtier");
@@ -5425,7 +5425,7 @@ function FindCombatEnchantment(id) {
 
             var div = document.createElement("DIV");
             div.innerHTML =
-                '<img style="float:left; height:80px; padding:10px" src="/evolved/Icons/CombatEnchantments/' +
+                '<img style="float:left; height:80px; padding:10px" src="/rbbp/Icons/CombatEnchantments/' +
                 jsonCombatEnchantments[i].id +
                 '.png"><p style="color: #aa84f6;>' +
                 '<span style="font-size=20px;">' +
@@ -5478,7 +5478,7 @@ function ShowDestinyTraits() {
             a = a.replace("_", "");
         }
 
-        imagelink.setAttribute("src", "/evolved/Icons/EmpireProgressionIcons/" + a + ".png");
+        imagelink.setAttribute("src", "/rbbp/Icons/EmpireProgressionIcons/" + a + ".png");
         imagelink.setAttribute("id", "modicon" + a);
         imagelink.setAttribute("style", "background-image: none");
         descriptionDiv.innerHTML = description;
@@ -5546,7 +5546,7 @@ function showDestinyTrait(trait) {
                 a = a.replace("_", "");
             }
 
-            imagelink.setAttribute("src", "/evolved/Icons/EmpireProgressionIcons/" + a + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/EmpireProgressionIcons/" + a + ".png");
             imagelink.setAttribute("id", "modicon" + a);
             imagelink.setAttribute("style", "background-image: none");
             descriptionDiv.innerHTML = description;
@@ -5612,7 +5612,7 @@ function showEmpireTree(a) {
                 a = a.replace("_", "");
             }
 
-            imagelink.setAttribute("src", "/evolved/Icons/EmpireProgressionIcons/" + a + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/EmpireProgressionIcons/" + a + ".png");
             imagelink.setAttribute("id", "modicon" + a);
             descriptionDiv.innerHTML = description;
             descriptionDiv.setAttribute("id", "modicon" + a);
@@ -5674,7 +5674,7 @@ function showUnitUnlock(a) {
             var div = document.createElement("DIV");
             div.innerHTML =
                 "<bullet>" +
-                '<a href="/evolved/HTML/Units.html?unit=' +
+                '<a href="/rbbp/HTML/Units.html?unit=' +
                 alldragons[i] +
                 '" target="_blank">' +
                 GetUnitTierAndName(alldragons[i]) +
@@ -5687,7 +5687,7 @@ function showUnitUnlock(a) {
     } else {
         var div = document.createElement("DIV");
         div.innerHTML =
-            '<a href ="/evolved/HTML/Units.html?unit=' +
+            '<a href ="/rbbp/HTML/Units.html?unit=' +
             a.unit_slug +
             '" target="_blank">' +
             GetUnitTierAndName(a.unit_slug) +
@@ -5698,7 +5698,7 @@ function showUnitUnlock(a) {
         unitTypesDiv.setAttribute("id", "affectUnitTypes" + a);
     }
 
-    imagelink.setAttribute("src", "/evolved/Icons/SpellIcons/" + a.unit_slug + ".png");
+    imagelink.setAttribute("src", "/rbbp/Icons/SpellIcons/" + a.unit_slug + ".png");
     imagelink.setAttribute("id", "modicon" + a);
     descriptionDiv.innerHTML = description;
     descriptionDiv.setAttribute("id", "modicon" + a);
@@ -5773,7 +5773,7 @@ function showSpell(a, showOrigin) {
                     var div = document.createElement("DIV");
                     div.setAttribute("style", "margin-right: 20px;");
                     div.innerHTML =
-                        '<a href="/evolved/HTML/Units.html?unit=' +
+                        '<a href="/rbbp/HTML/Units.html?unit=' +
                         jsonSpells[j].summoned_units[x].slug +
                         '" target="_blank">' +
                         GetUnitTierAndName(jsonSpells[j].summoned_units[x].slug) +
@@ -5843,7 +5843,7 @@ function showSpell(a, showOrigin) {
             if (incorrectIconOverrideList.includes(jsonSpells[j].id)) {
                 imageLinkName += "2";
             }
-            imagelink.setAttribute("src", "/evolved/Icons/SpellIcons/" + imageLinkName + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/SpellIcons/" + imageLinkName + ".png");
             imagelink.setAttribute("id", "modicon" + a);
             var tierSpell = backtraceTomeOriginAndTier(jsonSpells[j].id, showOrigin);
 
@@ -6198,7 +6198,7 @@ function showItem(a) {
     imagelink.remove();
 
     var tomeOriginIcon = document.getElementById("originTomeIcon");
-    tomeOriginIcon.setAttribute("src", "/evolved/Icons/UnitIcons/" + a.icon + ".png");
+    tomeOriginIcon.setAttribute("src", "/rbbp/Icons/UnitIcons/" + a.icon + ".png");
     // tomeOriginIcon.setAttribute("height", "130px");
     //  tomeOriginIcon.setAttribute("style", "margin-left:40px");
     tomeOriginIcon.setAttribute("id", "modicon" + a.id);
@@ -6221,22 +6221,22 @@ function showTraitSetup(currentTrait) {
         spa = document.createElement("SPAN");
 
         if (currentTrait.DLC == "EMPIRESANDASHES ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/EmpiresAshes.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/EmpiresAshes.png");
             spa.innerHTML = "Part of the Empires & Ashes DLC";
         } else if (currentTrait.DLC == "DRAGONLORDS ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/DragonDawn.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/DragonDawn.png");
             spa.innerHTML = "Part of the Dragon Dawn DLC";
         } else if (currentTrait.DLC == "PRIMALFURY ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/PrimalFury.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/PrimalFury.png");
             spa.innerHTML = "Part of the Primal Fury DLC";
         } else if (currentTrait.DLC == "ELDRITCHREALMS ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/EldritchRealms.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/EldritchRealms.png");
             spa.innerHTML = "Part of the Eldritch Realms DLC";
         } else if (currentTrait.DLC == "HERALDOFGLORY ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/herald_of_glory.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/herald_of_glory.png");
             spa.innerHTML = "Part of the Herald of Glory DLC";
         } else if (currentTrait.DLC == "WAYSOFWAR ") {
-            imag.setAttribute("src", "/evolved/Icons/Text/waysofwar.png");
+            imag.setAttribute("src", "/rbbp/Icons/Text/waysofwar.png");
             spa.innerHTML = "Part of the Ways of War DLC";
         }
 
@@ -6335,7 +6335,7 @@ function showTraitSetup(currentTrait) {
         iconLink = iconLink.split("_").slice(1).join("_");
     }
 
-    imagelink.setAttribute("src", "/evolved/Icons/FactionCreation/" + iconLink + ".png");
+    imagelink.setAttribute("src", "/rbbp/Icons/FactionCreation/" + iconLink + ".png");
     imagelink.setAttribute("style", "background-image:none");
     imagelink.setAttribute("id", "modicon" + currentTrait.id);
 
@@ -6404,7 +6404,7 @@ function showHeroTrait(a) {
             cost.setAttribute("id", "modcost" + a);
 
             imagelink = document.getElementById("modicon");
-            imagelink.setAttribute("src", "/evolved/Icons/AmbitionIcons/" + thisAmbition.icon + ".png");
+            imagelink.setAttribute("src", "/rbbp/Icons/AmbitionIcons/" + thisAmbition.icon + ".png");
             imagelink.setAttribute("style", "background-image:none");
             imagelink.setAttribute("id", "modicon" + a);
 
@@ -6501,7 +6501,7 @@ function showHeroGov(a) {
             imagelink = document.getElementById("modicon");
             imagelink.setAttribute(
                 "src",
-                "/evolved/Icons/GovernanceIcons/" + thisGovernance.icon.toLowerCase() + ".png"
+                "/rbbp/Icons/GovernanceIcons/" + thisGovernance.icon.toLowerCase() + ".png"
             );
             imagelink.setAttribute("style", "background-image:none");
             imagelink.setAttribute("id", "modicon" + a);
@@ -6574,7 +6574,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "tide_spirit" +
             '" target="_blank">' +
             GetUnitTierAndName("tide_spirit") +
@@ -6584,7 +6584,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "storm_spirit" +
             '" target="_blank">' +
             GetUnitTierAndName("storm_spirit") +
@@ -6594,7 +6594,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "magma_spirit" +
             '" target="_blank">' +
             GetUnitTierAndName("magma_spirit") +
@@ -6604,7 +6604,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "snow_spirit" +
             '" target="_blank">' +
             GetUnitTierAndName("snow_spirit") +
@@ -6614,7 +6614,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "stone_spirit" +
             '" target="_blank">' +
             GetUnitTierAndName("stone_spirit") +
@@ -6628,7 +6628,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "unicorn" +
             '" target="_blank">' +
             GetUnitTierAndName("unicorn") +
@@ -6638,7 +6638,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "nightmare" +
             '" target="_blank">' +
             GetUnitTierAndName("nightmare") +
@@ -6648,7 +6648,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "thunderbird" +
             '" target="_blank">' +
             GetUnitTierAndName("thunderbird") +
@@ -6658,7 +6658,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "goretusk_matriarch" +
             '" target="_blank">' +
             GetUnitTierAndName("goretusk_matriarch") +
@@ -6668,7 +6668,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "caustic_worm" +
             '" target="_blank">' +
             GetUnitTierAndName("caustic_worm") +
@@ -6683,7 +6683,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "corrupt_soul" +
             '" target="_blank">' +
             GetUnitTierAndName("corrupt_soul") +
@@ -6694,7 +6694,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
         var div = document.createElement("DIV");
         div.innerHTML =
             "<bullet>" +
-            '<a href="/evolved/HTML/Units.html?unit=' +
+            '<a href="/rbbp/HTML/Units.html?unit=' +
             "banshee" +
             '" target="_blank">' +
             GetUnitTierAndName("banshee") +
@@ -6722,7 +6722,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name) 
     imagelink = document.getElementById("modicon");
     if (a.type === "signature") {
         imagelink.className = "smallerIcon";
-        imagelink.setAttribute("src", "/evolved/Icons/UnitIcons/" + icon_slug + ".png");
+        imagelink.setAttribute("src", "/rbbp/Icons/UnitIcons/" + icon_slug + ".png");
         imagelink.setAttribute("id", "modicon" + a.id);
 
         cost.innerHTML = transformString(a.hero_property);
@@ -6879,27 +6879,27 @@ function AddDLCTag(dlcname) {
 
     spa = document.createElement("SPAN");
     if (dlcname == "DRAGONLORDS ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/DragonDawn.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/DragonDawn.png");
         spa.innerHTML = "Part of the Dragon Dawn DLC";
     }
     if (dlcname == "EMPIRESANDASHES ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/EmpiresAshes.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/EmpiresAshes.png");
         spa.innerHTML = "Part of the Empires & Ashes DLC";
     }
     if (dlcname == "PRIMALFURY ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/PrimalFury.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/PrimalFury.png");
         spa.innerHTML = "Part of the Primal Fury DLC";
     }
     if (dlcname == "ELDRITCHREALMS ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/EldritchRealms.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/EldritchRealms.png");
         spa.innerHTML = "Part of the Eldritch Realms DLC";
     }
     if (dlcname == "WAYSOFWAR ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/waysofwar.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/waysofwar.png");
         spa.innerHTML = "Part of the Ways of War DLC";
     }
     if (dlcname == "HERALDOFGLORY ") {
-        imag.setAttribute("src", "/evolved/Icons/Text/heraldofglory.png");
+        imag.setAttribute("src", "/rbbp/Icons/Text/heraldofglory.png");
         spa.innerHTML = "Part of the Herald of Glory DLC";
     }
     newDivForMount.appendChild(imag);
@@ -6926,10 +6926,10 @@ function FindHeroSkillOrigin(id) {
                         }
                         tomeOrigin.innerHTML += romanize(jsonTomes[j].tier) + " - " + jsonTomes[j].name;
                         var tomeOriginIcon = document.getElementById("originTomeIcon");
-                        tomeOriginIcon.setAttribute("src", "/evolved/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
+                        tomeOriginIcon.setAttribute("src", "/rbbp/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
                         var wrap = tomeOrigin.innerHTML;
                         tomeOrigin.innerHTML =
-                            '<a href="/evolved/HTML/Spells.html?tome=' +
+                            '<a href="/rbbp/HTML/Spells.html?tome=' +
                             jsonTomes[j].id +
                             '" target="_blank">' +
                             wrap +
@@ -6958,10 +6958,10 @@ function backtraceTomeOriginAndTierForStructure(structure, showorigin) {
                     }
                     tomeOrigin.innerHTML += romanize(jsonTomes[j].tier) + " - " + jsonTomes[j].name;
                     var tomeOriginIcon = document.getElementById("originTomeIcon");
-                    tomeOriginIcon.setAttribute("src", "/evolved/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
+                    tomeOriginIcon.setAttribute("src", "/rbbp/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
                     var wrap = tomeOrigin.innerHTML;
                     tomeOrigin.innerHTML =
-                        '<a href="/evolved/HTML/Spells.html?tome=' +
+                        '<a href="/rbbp/HTML/Spells.html?tome=' +
                         jsonTomes[j].id +
                         '" target="_blank">' +
                         wrap +
@@ -7079,9 +7079,9 @@ function backtraceTomeOriginAndTier(spell, showorigin) {
         tomeOrigin.innerHTML = "<empireshadow></empireshadow><empireshadow></empireshadow> <br> II - Tome of Souls";
 
         var tomeOriginIcon = document.getElementById("originTomeIcon");
-        tomeOriginIcon.setAttribute("src", "/evolved/Icons/TomeIcons/tome_of_souls.png");
+        tomeOriginIcon.setAttribute("src", "/rbbp/Icons/TomeIcons/tome_of_souls.png");
         var wrap = tomeOrigin.innerHTML;
-        tomeOrigin.innerHTML = '<a href="/evolved/HTML/Spells.html?tome=tome_of_souls" target="_blank">' + wrap + "</a>";
+        tomeOrigin.innerHTML = '<a href="/rbbp/HTML/Spells.html?tome=tome_of_souls" target="_blank">' + wrap + "</a>";
     } else {
         var j = 0;
         for (j in jsonTomes) {
@@ -7100,10 +7100,10 @@ function backtraceTomeOriginAndTier(spell, showorigin) {
                             tomeOrigin.innerHTML += romanize(jsonTomes[j].tier) + " - " + jsonTomes[j].name;
 
                             var tomeOriginIcon = document.getElementById("originTomeIcon");
-                            tomeOriginIcon.setAttribute("src", "/evolved/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
+                            tomeOriginIcon.setAttribute("src", "/rbbp/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
                             var wrap = tomeOrigin.innerHTML;
                             tomeOrigin.innerHTML =
-                                '<a href="/evolved/HTML/Spells.html?tome=' +
+                                '<a href="/rbbp/HTML/Spells.html?tome=' +
                                 jsonTomes[j].id +
                                 '" target="_blank">' +
                                 wrap +
@@ -7135,10 +7135,10 @@ function backtraceTomeOriginAndTier(spell, showorigin) {
 
                             tomeOrigin.innerHTML += romanize(jsonTomes[j].tier) + " - " + jsonTomes[j].name;
                             var tomeOriginIcon = document.getElementById("originTomeIcon");
-                            tomeOriginIcon.setAttribute("src", "/evolved/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
+                            tomeOriginIcon.setAttribute("src", "/rbbp/Icons/TomeIcons/" + jsonTomes[j].id + ".png");
                             var wrap = tomeOrigin.innerHTML;
                             tomeOrigin.innerHTML =
-                                '<a href="/evolved/HTML/Spells.html?tome=' +
+                                '<a href="/rbbp/HTML/Spells.html?tome=' +
                                 jsonTomes[j].id +
                                 '" target="_blank">' +
                                 wrap +

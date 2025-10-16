@@ -11,11 +11,11 @@
             gtag("js", new Date());
             gtag("config", "G-CC3NE8PT7K");
         </script>
-        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
         <meta charset="UTF-8" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-       <script src="/evolved/Data/Init.js"></script>
+       <script src="/rbbp/Data/Init.js"></script>
         <script>
             let selectedTreeFilter = "all";
             let selectedSubTreeFilter = "all";
@@ -268,13 +268,13 @@
 
                 const img = createElement("img", "unit_ability_icon");
                 const iconType = GetAbilityBackground(damage);
-                img.src = `/evolved/Icons/UnitIcons/${skillMeta.icon}.png`;
+                img.src = `/rbbp/Icons/UnitIcons/${skillMeta.icon}.png`;
                 img.onerror = function () {
-                    this.src = "/evolved/Icons/Text/mp.png";
+                    this.src = "/rbbp/Icons/Text/mp.png";
                 };
                 img.width = 64;
                 img.height = 64;
-                img.style.backgroundImage = `url("/evolved/Icons/Interface/${iconType}.png")`;
+                img.style.backgroundImage = `url("/rbbp/Icons/Interface/${iconType}.png")`;
                 img.style.backgroundRepeat = "no-repeat";
                 img.style.backgroundSize = "64px 64px";
 
@@ -351,13 +351,13 @@
               
 
                 const img = createElement("img", "unit_ability_icon");
-                img.src = `/evolved/Icons/UnitIcons/${icon}.png`;
+                img.src = `/rbbp/Icons/UnitIcons/${icon}.png`;
                 img.onerror = function () {
-                    this.src = "/evolved/Icons/Text/mp.png";
+                    this.src = "/rbbp/Icons/Text/mp.png";
                 };
                 img.width = 64;
                 img.height = 64;
-                img.style.backgroundImage = `url("/evolved/Icons/Interface/hero_skill.png")`;
+                img.style.backgroundImage = `url("/rbbp/Icons/Interface/hero_skill.png")`;
                 img.style.backgroundRepeat = "no-repeat";
                 img.style.backgroundSize = "64px 64px";
 
@@ -412,7 +412,7 @@
     <body>
         <div class="textblocktitle">Hero Skills List</div>
         <div style="height: auto; color: white; text-align: center">
-           <a href="/evolved/HTML/HeroBuilder.html">Skill Trees View</a>
+           <a href="/rbbp/HTML/HeroBuilder.html">Skill Trees View</a>
             <br>
             <br />
             Filter<br />

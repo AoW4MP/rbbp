@@ -100,7 +100,7 @@ function GetRandomSymbol() {
     //     numb += 1;
     //     numb = "0" + numb.toString();
     // }
-    // symbolElement.setAttribute("src", "/evolved/Icons/Symbols/SigilIcons_" + numb + ".gif");
+    // symbolElement.setAttribute("src", "/rbbp/Icons/Symbols/SigilIcons_" + numb + ".gif");
 }
 
 function AddExtra(type, add) {
@@ -389,7 +389,7 @@ function SelectSymbol(origin) {
         origin = 138;
     }
 
-    symbolElement.setAttribute("src", "/evolved/Icons/Symbols/SigilIcons_" + origin + ".gif");
+    symbolElement.setAttribute("src", "/rbbp/Icons/Symbols/SigilIcons_" + origin + ".gif");
 
     tintImage(symbolElement, getRandomColor(), "myCanvas2");
 
@@ -567,7 +567,7 @@ function SetSkillPathInfoSmall(buttonHolder, origin) {
     image.setAttribute("height", "60");
     image.style = "position: relative; top: 10px;";
 
-    image.src = "/evolved/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -615,7 +615,7 @@ function SetTomePathInfoSmall(buttonHolder, origin) {
     image.setAttribute("height", "60");
     image.style = "position: relative; top: 10px;";
 
-    image.src = "/evolved/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -723,7 +723,7 @@ function SetTomePathInfo(button, origin) {
     image.setAttribute("width", "50");
     image.setAttribute("height", "50");
 
-    image.src = "/evolved/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -772,7 +772,7 @@ function SetSkillPathInfo(button, origin) {
     image.setAttribute("width", "50");
     image.setAttribute("height", "50");
 
-    image.src = "/evolved/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -1203,7 +1203,7 @@ function SetButtonInfo(button, origin, type, color) {
     image.setAttribute("height", "40");
 
     if (type === "Tome") {
-        image.src = "/evolved/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+        image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
     } else if (type === "FormTrait") {
         image.setAttribute("width", "22");
         image.setAttribute("height", "22");
@@ -1211,9 +1211,9 @@ function SetButtonInfo(button, origin, type, color) {
             var iconLink = origin.id;
 
             iconLink = iconLink.split("_").slice(1).join("_");
-            image.src = "/evolved/Icons/FactionCreation/" + iconLink + ".png";
+            image.src = "/rbbp/Icons/FactionCreation/" + iconLink + ".png";
         } else {
-            image.src = "/evolved/Icons/FactionCreation/" + origin.id + ".png"; // Set the image source to your image file
+            image.src = "/rbbp/Icons/FactionCreation/" + origin.id + ".png"; // Set the image source to your image file
         }
     } else if (
         type === "Culture" ||
@@ -1225,14 +1225,14 @@ function SetButtonInfo(button, origin, type, color) {
         if (origin.id.startsWith("_")) {
             var iconLink = origin.id;
             iconLink = iconLink.split("_").slice(1).join("_");
-            image.src = "/evolved/Icons/FactionCreation/" + iconLink + ".png";
+            image.src = "/rbbp/Icons/FactionCreation/" + iconLink + ".png";
         } else {
-            image.src = "/evolved/Icons/FactionCreation/" + origin.id + ".png"; // Set the image source to your image file
+            image.src = "/rbbp/Icons/FactionCreation/" + origin.id + ".png"; // Set the image source to your image file
         }
     } else if (type === "Loadout") {
-        image.src = "/evolved/Icons/UnitIcons/" + origin.id + ".png"; // Set the image source to your image file
+        image.src = "/rbbp/Icons/UnitIcons/" + origin.id + ".png"; // Set the image source to your image file
     } else if (type === "Signature" || type == "Ascension") {
-        image.src = "/evolved/Icons/UnitIcons/" + origin.icon + ".png";
+        image.src = "/rbbp/Icons/UnitIcons/" + origin.icon + ".png";
     } else if (type === "Symbol") {
         if (origin < 10 && origin > 0) {
             origin = "0" + origin.toString();
@@ -1240,7 +1240,7 @@ function SetButtonInfo(button, origin, type, color) {
         if (origin === 0) {
             origin += 138;
         }
-        image.src = "/evolved/Icons/Symbols/SigilIcons_" + origin + ".gif"; // Set the image source to your image file
+        image.src = "/rbbp/Icons/Symbols/SigilIcons_" + origin + ".gif"; // Set the image source to your image file
     }
     if (type != "Symbol") {
         // Create a span element to hold the button text
@@ -1406,7 +1406,7 @@ function SetLoadoutPreview(span, origin) {
                 if (origin.items[index].slug == test.id) {
                     span.innerHTML +=
                         '<p class ="abilityHighLighter" style="color: #97d7a2;>' +
-                        '<span style="font-size=20px;"> ITEM: <img style="margin-top:-10px" src="/evolved/Icons/UnitIcons/' +
+                        '<span style="font-size=20px;"> ITEM: <img style="margin-top:-10px" src="/rbbp/Icons/UnitIcons/' +
                         test.icon +
                         ".png\" height='30px'>" +
                         test.name.toUpperCase() +
@@ -1418,7 +1418,7 @@ function SetLoadoutPreview(span, origin) {
             if (origin.items[index].slug == "hero_mount") {
                 span.innerHTML +=
                     '<p class ="abilityHighLighter" style="color: #97d7a2;>' +
-                    '<span style="font-size=20px;"> ITEM: <img style="margin-top:-10px" src="/evolved/Icons/UnitIcons/white_horse.png" height=\'30px\'>HERO MOUNT</p>' +
+                    '<span style="font-size=20px;"> ITEM: <img style="margin-top:-10px" src="/rbbp/Icons/UnitIcons/white_horse.png" height=\'30px\'>HERO MOUNT</p>' +
                     "<br>";
             }
         }
@@ -1560,7 +1560,7 @@ function SetTomePreview(span, origin) {
 
         for (let index = 0; index < origin.initial_upgrades.length; index++) {
             span.innerHTML +=
-                '<bullet> <img width="20px" src="/evolved/Icons/UpgradeIcons/' +
+                '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                 origin.initial_upgrades[index].upgrade_slug +
                 '.png">' +
                 GetStructureName(origin.initial_upgrades[index].upgrade_slug) +
@@ -1579,14 +1579,14 @@ function SetTomePreview(span, origin) {
                 // can be summon as well
                 if ("spell_slug" in origin.skills[index]) {
                     span.innerHTML +=
-                        '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                         origin.skills[index].spell_slug +
                         '.png">' +
                         GetSpellTierAndName(origin.skills[index].spell_slug) +
                         "</bullet>";
                 } else {
                     span.innerHTML +=
-                        '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                         origin.skills[index].unit_slug +
                         '.png">' +
                         GetUnitNamePlain(origin.skills[index].unit_slug) +
@@ -1602,7 +1602,7 @@ function SetTomePreview(span, origin) {
                     slug = origin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 }
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SiegeIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SiegeIcons/' +
                     slug +
                     '.png">' +
                     GetSiegeProjectName(slug) +
@@ -1611,7 +1611,7 @@ function SetTomePreview(span, origin) {
             // city structure
             else if (origin.skills[index].type.indexOf("Structure") != -1) {
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/UpgradeIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                     origin.skills[index].upgrade_slug +
                     '.png">' +
                     GetStructureName(origin.skills[index].upgrade_slug) +
@@ -1621,7 +1621,7 @@ function SetTomePreview(span, origin) {
             else if (origin.skills[index].type.indexOf("Empire") != -1) {
                 var imageLinkName = origin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                     imageLinkName +
                     '.png">' +
                     origin.skills[index].name +
@@ -1630,7 +1630,7 @@ function SetTomePreview(span, origin) {
             // normal spell
             else {
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                     origin.skills[index].spell_slug +
                     '.png">' +
                     GetSpellTierAndName(origin.skills[index].spell_slug) +
@@ -1883,7 +1883,7 @@ function CreateSpellIcon(listEntry, colorEntry) {
     //tier.setAttribute("style", " top: 50%;left: 50%;");
 
     var smallIcon = document.createElement("img");
-    smallIcon.setAttribute("src", "/evolved/Icons/SpellIcons/" + listEntry.spell_slug + ".png");
+    smallIcon.setAttribute("src", "/rbbp/Icons/SpellIcons/" + listEntry.spell_slug + ".png");
     smallIcon.setAttribute("width", "20px");
     spell.appendChild(tier);
     spell.appendChild(smallIcon);
@@ -1938,7 +1938,7 @@ function CreateUnitIcon(listEntry, colorEntry) {
     text.innerHTML =
         romanize(listEntry.tier) + " " + getUnitTypeTag(listEntry.secondary_passives) + " " + listEntry.name;
     //var smallIcon = document.createElement("img");
-    // smallIcon.setAttribute("src", "/evolved/Icons/SpellIcons/" + listEntry.id + ".png");
+    // smallIcon.setAttribute("src", "/rbbp/Icons/SpellIcons/" + listEntry.id + ".png");
     // smallIcon.setAttribute("width", "20px");
     // spell.appendChild(smallIcon);
     // var iDiv = spell_card_template.content.cloneNode(true);
@@ -1950,13 +1950,13 @@ function CreateUnitIcon(listEntry, colorEntry) {
     allAbilities.innerHTML +=
         '<span style="font-size: 16px;text-align:center"> ' + listEntry.name.toUpperCase() + " <br></span> ";
     allAbilities.innerHTML +=
-        '<span style="font-size: 20px ;display:flex" ><img  src="/evolved/Icons/Text/health.png" width="25 " height="25 ">' +
+        '<span style="font-size: 20px ;display:flex" ><img  src="/rbbp/Icons/Text/health.png" width="25 " height="25 ">' +
         listEntry.hp +
-        '<img src="/evolved/Icons/Text/mp.png" width="25 " height="25 ">' +
+        '<img src="/rbbp/Icons/Text/mp.png" width="25 " height="25 ">' +
         listEntry.mp +
-        '<img src="/evolved/Icons/Text/resistance.png" width="25 " height="25 ">' +
+        '<img src="/rbbp/Icons/Text/resistance.png" width="25 " height="25 ">' +
         listEntry.resistance +
-        '<img  src="/evolved/Icons/Text/armor.png" width="25 " height="25 ">' +
+        '<img  src="/rbbp/Icons/Text/armor.png" width="25 " height="25 ">' +
         listEntry.armor +
         "</span><hr>";
     if ("secondary_passives" in listEntry) {
@@ -2029,7 +2029,7 @@ function ShowUpgradesOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = " " + list[index].name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2069,7 +2069,7 @@ function ShowHeroSkillsOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = jsonHeroSkills[i].name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UnitIcons/" + jsonHeroSkills[i].icon + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UnitIcons/" + jsonHeroSkills[i].icon + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2135,7 +2135,7 @@ function ShowPassivesOverview(list) {
         var text = document.createElement("div");
         text.innerHTML = list[index].name;
         // var smallIcon = document.createElement("img");
-        // smallIcon.setAttribute("src", "/evolved/Icons/UnitIcons/" + jsonHeroSkills[index].icon + ".png");
+        // smallIcon.setAttribute("src", "/rbbp/Icons/UnitIcons/" + jsonHeroSkills[index].icon + ".png");
         // smallIcon.setAttribute("width", "20px");
         //    spell.appendChild(smallIcon);
         spell.appendChild(text);
@@ -2172,7 +2172,7 @@ function ShowSPIOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = jsonStructureUpgrades[i].name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2226,7 +2226,7 @@ function ShowSiegeProjectsOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = jsonSiegeProjects[i].name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/SiegeIcons/" + jsonSiegeProjects[i].id + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);

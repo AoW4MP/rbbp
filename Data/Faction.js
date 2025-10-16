@@ -480,7 +480,7 @@ function SelectSymbol(origin) {
         origin = 138;
     }
 
-    symbolElement.setAttribute("src", "/evolved/Icons/Symbols/SigilIcons_" + origin + ".gif");
+    symbolElement.setAttribute("src", "/rbbp/Icons/Symbols/SigilIcons_" + origin + ".gif");
 
     tintImage(symbolElement, getRandomColor(), "myCanvas2");
 
@@ -633,7 +633,7 @@ function SetSkillPathInfoSmall(buttonHolder, origin) {
     image.setAttribute("height", "60");
     image.style = "position: relative; top: 10px;";
 
-    image.src = "/evolved/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -681,7 +681,7 @@ function SetTomePathInfoSmall(buttonHolder, origin) {
     image.setAttribute("height", "60");
     image.style = "position: relative; top: 10px;";
 
-    image.src = "/evolved/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -778,7 +778,7 @@ function SetTomePathInfo(button, origin) {
     image.setAttribute("width", "50");
     image.setAttribute("height", "50");
 
-    image.src = "/evolved/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -834,7 +834,7 @@ function SetSkillPathInfo(button, origin) {
     image.setAttribute("width", "50");
     image.setAttribute("height", "50");
 
-    image.src = "/evolved/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/UnitIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -1351,12 +1351,12 @@ function createImage(type, origin) {
 
     switch (type) {
         case "Tome":
-            setImage(`/evolved/Icons/TomeIcons/${origin.id}.png`);
+            setImage(`/rbbp/Icons/TomeIcons/${origin.id}.png`);
             break;
         case "Society1":
         case "Society2":
         case "FormTrait":
-            setImage("/evolved/Icons/TraitIcons/" + origin.icon + ".png");
+            setImage("/rbbp/Icons/TraitIcons/" + origin.icon + ".png");
             break;
         case "Culture":
         case "Origin":
@@ -1367,17 +1367,17 @@ function createImage(type, origin) {
             setImage(getFactionIconPath(origin.id));
             break;
         case "Class":
-            setImage(`/evolved/Icons/Text/${origin.icon}.png`);
+            setImage(`/rbbp/Icons/Text/${origin.icon}.png`);
             break;
         case "Signature":
         case "Ascension":
-            setImage(`/evolved/Icons/UnitIcons/${origin.icon}.png`);
+            setImage(`/rbbp/Icons/UnitIcons/${origin.icon}.png`);
             break;
         case "Symbol":
             let symbolId = parseInt(origin, 10);
             if (symbolId < 10 && symbolId > 0) symbolId = "0" + symbolId;
             if (symbolId === 0) symbolId = 138;
-            setImage(`/evolved/Icons/Symbols/SigilIcons_${symbolId}.gif`);
+            setImage(`/rbbp/Icons/Symbols/SigilIcons_${symbolId}.gif`);
             break;
     }
 
@@ -1386,7 +1386,7 @@ function createImage(type, origin) {
 
 function getFactionIconPath(id) {
     const cleanId = id.startsWith("_") ? id.split("_").slice(1).join("_") : id;
-    return `/evolved/Icons/TraitIcons/${cleanId}.png`;
+    return `/rbbp/Icons/TraitIcons/${cleanId}.png`;
 }
 
 function findOriginLocName(origin, type) {
@@ -1727,7 +1727,7 @@ function SetTomePreview(span, origin) {
         for (let index = 0; index < locOrigin.initial_upgrades.length; index++) {
             const struc = GetStructure(locOrigin.initial_upgrades[index].upgrade_slug);
             span.innerHTML +=
-                '<bullet> <img width="20px" src="/evolved/Icons/UpgradeIcons/' +
+                '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                 struc.icon +
                 '.png">' +
                 struc.name +
@@ -1747,14 +1747,14 @@ function SetTomePreview(span, origin) {
                 if ("spell_slug" in origin.skills[index]) {
                     const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
                     span.innerHTML +=
-                        '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                         spell.icon +
                         '.png">' +
                         spell.name +
                         "</bullet>";
                 } else {
                     span.innerHTML +=
-                        '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                         origin.skills[index].unit_slug +
                         '.png">' +
                         findBy(jsonUnitsLocalized, "id", locOrigin.skills[index].unit_slug).name +
@@ -1771,7 +1771,7 @@ function SetTomePreview(span, origin) {
                 }
 
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SiegeProjectIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SiegeProjectIcons/' +
                     slug +
                     '.png">' +
                     findBy(jsonSiegeProjectsLocalized, "id", slug).name +
@@ -1781,7 +1781,7 @@ function SetTomePreview(span, origin) {
             else if (origin.skills[index].type.indexOf("Structure") != -1) {
                 const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/UpgradeIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                     struc.icon +
                     '.png">' +
                     struc.name +
@@ -1791,7 +1791,7 @@ function SetTomePreview(span, origin) {
             else if (origin.skills[index].type.indexOf("Province") != -1) {
                 const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/UpgradeIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                     struc.icon +
                     '.png">' +
                     struc.name +
@@ -1801,7 +1801,7 @@ function SetTomePreview(span, origin) {
             else if (origin.skills[index].type.indexOf("Empire") != -1) {
                 var imageLinkName = locOrigin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                     imageLinkName +
                     '.png">' +
                     origin.skills[index].name +
@@ -1811,7 +1811,7 @@ function SetTomePreview(span, origin) {
             else {
                 const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/evolved/Icons/SpellIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                     spell.icon +
                     '.png">' +
                     spell.name +
@@ -2116,7 +2116,7 @@ function CreateSpellIcon(listEntry, colorEntry) {
 
     var smallIcon = document.createElement("img");
     let iconLink = spellData.icon || spellData.id;
-    smallIcon.setAttribute("src", "/evolved/Icons/SpellIcons/" + iconLink + ".png");
+    smallIcon.setAttribute("src", "/rbbp/Icons/SpellIcons/" + iconLink + ".png");
     smallIcon.setAttribute("width", "25px");
     smallIcon.setAttribute("height", "25px");
     spell.appendChild(tier);
@@ -2185,13 +2185,13 @@ function CreateUnitIcon(listEntry, colorEntry) {
     allAbilities.innerHTML +=
         '<span style="font-size: 16px;text-align:center"> ' + listEntryLoc.name.toUpperCase() + " <br></span> ";
     allAbilities.innerHTML +=
-        '<span style="font-size: 20px ;display:flex" ><img  src="/evolved/Icons/Text/health.png" width="25 " height="25 ">' +
+        '<span style="font-size: 20px ;display:flex" ><img  src="/rbbp/Icons/Text/health.png" width="25 " height="25 ">' +
         listEntry.hp +
-        '<img src="/evolved/Icons/Text/mp.png" width="25 " height="25 ">' +
+        '<img src="/rbbp/Icons/Text/mp.png" width="25 " height="25 ">' +
         listEntry.mp +
-        '<img src="/evolved/Icons/Text/resistance.png" width="25 " height="25 ">' +
+        '<img src="/rbbp/Icons/Text/resistance.png" width="25 " height="25 ">' +
         listEntry.resistance +
-        '<img  src="/evolved/Icons/Text/armor.png" width="25 " height="25 ">' +
+        '<img  src="/rbbp/Icons/Text/armor.png" width="25 " height="25 ">' +
         listEntry.armor +
         "</span><hr>";
     if ("secondary_passives" in listEntry) {
@@ -2279,7 +2279,7 @@ function ShowUpgradesOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = " " + loc.name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2322,7 +2322,7 @@ function ShowHeroSkillsOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = jsonHeroSkills[i].name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UnitIcons/" + jsonHeroSkills[i].icon + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UnitIcons/" + jsonHeroSkills[i].icon + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2392,7 +2392,7 @@ function ShowPassivesOverview(list) {
         var text = document.createElement("div");
         text.innerHTML = list[index].name;
         // var smallIcon = document.createElement("img");
-        // smallIcon.setAttribute("src", "/evolved/Icons/UnitIcons/" + jsonHeroSkills[index].icon + ".png");
+        // smallIcon.setAttribute("src", "/rbbp/Icons/UnitIcons/" + jsonHeroSkills[index].icon + ".png");
         // smallIcon.setAttribute("width", "20px");
         //    spell.appendChild(smallIcon);
         spell.appendChild(text);
@@ -2452,7 +2452,7 @@ function ShowSPIOverview(list) {
                text.innerHTML = loc.name;
 
                 const smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].icon + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].icon + ".png");
                 smallIcon.setAttribute("width", "20px");
 
                 spell.appendChild(smallIcon);
@@ -2515,7 +2515,7 @@ function ShowSiegeProjectsOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = loc.name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/evolved/Icons/SiegeProjectIcons/" + jsonSiegeProjects[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/SiegeProjectIcons/" + jsonSiegeProjects[i].id + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);

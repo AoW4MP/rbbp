@@ -67,7 +67,7 @@ function AddNewItemIconType(entry){
         const newImage = document.createElement("img");
     var entryNameFixed = entry.replaceAll(":", "");
     entryNameFixed = entryNameFixed.split(".")[0];
-        newImage.setAttribute("src", "/evolved/Icons/ItemForge/" + entryNameFixed + ".png");
+        newImage.setAttribute("src", "/rbbp/Icons/ItemForge/" + entryNameFixed + ".png");
         newImage.style.width = "70px";
         newButton.append(newImage);
         const newSpan = document.createElement("Span");

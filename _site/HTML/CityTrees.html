@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
         <meta charset="UTF-8" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
@@ -205,7 +205,7 @@
 
             const baseGrid = [["town_hall_i_town_center"], ["throne:throne"]];
             $("#body").ready(function () {
-                $("#header").load("/evolved/HTML/header.html", function () {
+                $("#header").load("/rbbp/HTML/header.html", function () {
                     CheckData();
                 });
             });
@@ -364,7 +364,7 @@
                 var newNodeBackground = document.createElement("DIV");
 
                 var img = document.createElement("IMG");
-                img.setAttribute("src", "/evolved/Icons/UpgradeIcons/" + structureInfo.id + ".png");
+                img.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + structureInfo.id + ".png");
                 img.setAttribute("height", "60px");
                 img.className = "structureNodeIcon";
                 newNode.setAttribute("id", structureInfo.id);
@@ -380,7 +380,7 @@
                     newNodeBackground.setAttribute("style", "left:15px; top:-30px; width:190px");
 
                     if (affinity == "mystic") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/mystic.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/mystic.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -388,7 +388,7 @@
                         spa.innerHTML = '<span style="color:  #9bc6ff;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "barbarian") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/barbarian.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/barbarian.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -396,7 +396,7 @@
                         spa.innerHTML = '<span style="color:  red;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "high") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/high.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/high.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -404,7 +404,7 @@
                         spa.innerHTML = '<span style="color:  yellow;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "feudal") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/feudal.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/feudal.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -412,7 +412,7 @@
                         spa.innerHTML = '<span style="color:  grey;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "dark") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/dark.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/dark.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -420,7 +420,7 @@
                         spa.innerHTML = '<span style="color:  #e92fe9;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "industrious") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/industrious.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/industrious.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -428,7 +428,7 @@
                         spa.innerHTML = '<span style="color:  orange;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "reaver") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/reaver.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/reaver.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -436,7 +436,7 @@
                         spa.innerHTML = '<span style="color:  yellow;">⤷' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "primal") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/primal.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/primal.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -446,7 +446,7 @@
 
                     if (affinity == "throne") {
                         newNodeBackground.setAttribute("style", "left:0px; top:0px; width:220px");
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/throne.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/throne.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -454,7 +454,7 @@
                         spa.innerHTML = '<span style="color:  yellow;">' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "order") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/order.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/order.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -462,7 +462,7 @@
                         spa.innerHTML = '<span style="color:  white;">' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "shadow") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/shadow.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/shadow.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -470,7 +470,7 @@
                         spa.innerHTML = '<span style="color:  white;">' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "nature") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/nature.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/nature.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -479,7 +479,7 @@
                     }
 
                     if (affinity == "materium") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/materium.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/materium.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -487,7 +487,7 @@
                         spa.innerHTML = '<span style="color:  white;">' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "astral") {
-                        newNodeBackground.style.backgroundImage = 'url("/evolved/Icons/Text/astral.png")';
+                        newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/astral.png")';
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -495,7 +495,7 @@
                         spa.innerHTML = '<span style="color:  white;">' + name.toUpperCase() + "</span>" + "<br>";
                     }
                     if (affinity == "chosen_destroyers") {
-                        //  newNodeBackground.style.backgroundImage = "url(\"/evolved/Icons/Text/mystic.png\")";
+                        //  newNodeBackground.style.backgroundImage = "url(\"/rbbp/Icons/Text/mystic.png\")";
                         newNodeBackground.style.backgroundRepeat = "no-repeat";
                         newNodeBackground.style.backgroundPositionX = "140px";
                         newNodeBackground.style.backgroundSize = "80px";
@@ -620,7 +620,7 @@
                     var newNodeBackground = document.createElement("DIV");
 
                     var img = document.createElement("IMG");
-                    img.setAttribute("src", "/evolved/Icons/Text/" + structure + ".png");
+                    img.setAttribute("src", "/rbbp/Icons/Text/" + structure + ".png");
                     img.setAttribute("height", "50px");
                     img.className = "structureNodeIcon";
                     newNode.setAttribute("id", structure);
@@ -674,7 +674,7 @@
                         positionLeft +
                         "px; background-color:" +
                         color +
-                        ";   border-width:5px;   border-style: solid;border-image: url(/evolved/Icons/9slicetooltip.png);border-image-slice: 10 10 10 10 ; margin-left:-40px"
+                        ";   border-width:5px;   border-style: solid;border-image: url(/rbbp/Icons/9slicetooltip.png);border-image-slice: 10 10 10 10 ; margin-left:-40px"
                 );
                 var categoryname = document.createElement("DIV");
                 categoryname.innerHTML = name.toUpperCase();
@@ -757,7 +757,7 @@
         position: absolute;
 
         transform-origin: left center;
-        background-image: url(/evolved/Icons/Interface/talents-arrow-line-gray.png);
+        background-image: url(/rbbp/Icons/Interface/talents-arrow-line-gray.png);
         background-size: 10px;
         width: 25px;
     }
@@ -770,11 +770,11 @@
         height: auto;
         width: auto;
         background-color: black;
-        background-image: url(/evolved/Icons/Interface/citytree.png);
+        background-image: url(/rbbp/Icons/Interface/citytree.png);
         background-size: 5584px;
         background-repeat: no-repeat;
         border-width: 5px;
-        border-image: url(/evolved/Icons/9slicetooltip.png);
+        border-image: url(/rbbp/Icons/9slicetooltip.png);
         border-image-slice: 10 10 10 10 fill;
         border-style: solid;
         padding-top: 30px;
@@ -808,7 +808,7 @@
     .structureNode {
         position: relative;
 
-        background-image: url(/evolved/Icons/tooltipBG.png);
+        background-image: url(/rbbp/Icons/tooltipBG.png);
         font-size: 11px;
         color: #bbcdf6;
         min-height: 60px;
@@ -816,7 +816,7 @@
         width: 225px;
         text-align: left;
         border-style: solid;
-        border-image: url(/evolved/Icons/9slicetooltip.png);
+        border-image: url(/rbbp/Icons/9slicetooltip.png);
         border-image-slice: 4 10 4 10 fill;
         text-shadow: 2px 2px black;
         box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);

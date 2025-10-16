@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<link rel="shortcut icon" type="image/x-icon" href="/evolved/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/evolved/Style/style.css">
+    <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css">
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/evolved/HTML/header.html", function() {
+            $("#header").load("/rbbp/HTML/header.html", function() {
                 CheckData();
             });
         });
@@ -93,7 +93,7 @@
 
 
                             var img = document.createElement("IMG");
-                            img.setAttribute("src", "/evolved/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
+                            img.setAttribute("src", "/rbbp/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
                             img.setAttribute("height", "50px");
                             img.className = "empireNodeIcon";
                             newNode.append(img);
@@ -153,7 +153,7 @@
 
 
                             var img = document.createElement("IMG");
-                            img.setAttribute("src", "/evolved/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
+                            img.setAttribute("src", "/rbbp/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
                             img.setAttribute("height", "50px");
                             img.setAttribute("style", "left:-35%");
                             img.className = "empireNodeIcon";
@@ -272,7 +272,7 @@
         position: absolute;
 
         transform-origin: left center;
-        background-image: url(/evolved/Icons/Interface/talents-arrow-line-gray.png);
+        background-image: url(/rbbp/Icons/Interface/talents-arrow-line-gray.png);
         background-size: 10px;
         width: 25px;
     }
@@ -285,10 +285,10 @@
         height: 750px;
         width: 1150px;
         background-color: black;
-        background-image: url(/evolved/Icons/Interface/panel_Background.png);
+        background-image: url(/rbbp/Icons/Interface/panel_Background.png);
         background-size: inherit;
 
-        border-image: url(/evolved/Icons/9slicetooltip.png);
+        border-image: url(/rbbp/Icons/9slicetooltip.png);
         border-image-slice: 4 10 4 10 fill;
         border-style: solid;
     }
