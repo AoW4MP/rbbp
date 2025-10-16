@@ -8,6 +8,9 @@
     "slug": "000004c00000052a"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000060d4"
    },
    {
@@ -53,6 +56,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -77,6 +83,9 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -114,6 +123,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -128,6 +140,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -470,6 +485,9 @@
     "slug": "000004c0000004cc"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003eb000004c4"
    },
    {
@@ -518,6 +536,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -539,6 +560,9 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -576,6 +600,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -590,6 +617,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -787,6 +817,9 @@
     "slug": "0000049700000533"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -829,6 +862,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -847,6 +883,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -878,6 +917,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -892,6 +934,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -1095,6 +1140,9 @@
     "slug": "0000049700000cea"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000493000003a2"
    },
    {
@@ -1146,6 +1194,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -1164,6 +1215,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -1195,6 +1249,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -1209,11 +1266,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000045e00000664"
    }
@@ -1236,7 +1299,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586584322,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -1337,7 +1400,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586584312,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -1418,6 +1481,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -1462,6 +1528,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -1480,6 +1549,12 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "000003e300004f29"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -1504,6 +1579,9 @@
   ],
   "medal_rewards_4": [
    {
+    "slug": "000003e3000054ec"
+   },
+   {
     "slug": "0000048b00000c6e"
    },
    {
@@ -1511,6 +1589,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -1525,6 +1606,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -1625,7 +1709,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586583144,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -1727,7 +1811,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586583142,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -1795,6 +1879,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000049700000f8f"
    },
@@ -1922,7 +2009,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586583126,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -2024,7 +2111,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586582491,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -2284,6 +2371,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048b00000b35"
    },
    {
@@ -2311,7 +2401,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586582162,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -2406,7 +2496,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586582155,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -2478,6 +2568,9 @@
     "slug": "0000041b00000baf"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000580"
    },
    {
@@ -2514,6 +2607,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -2535,6 +2631,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -2563,6 +2662,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -2577,11 +2679,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000049700000f8f"
    },
@@ -2712,7 +2820,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586578995,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -2817,7 +2925,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586578993,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -3395,7 +3503,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Каменная_стенаКаменные_стены",
   "name": "Каменная стенаКаменные стены",
-  "hp": 100,
+  "hp": 10,
   "armor": 4,
   "resistance": 3,
   "medal_rewards_2": [
@@ -3454,6 +3562,9 @@
   "id": "Мститель",
   "sub_culture_name": "Праведность",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "00000497000010f9"
    },
@@ -3936,6 +4047,9 @@
     "slug": "0000049700000cff"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000493000003a2"
    },
    {
@@ -4047,6 +4161,9 @@
     "slug": "0000049700000cea"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000493000003a2"
    },
    {
@@ -4077,10 +4194,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5046586576083,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4101,6 +4221,9 @@
   "armor": 6,
   "resistance": 4,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4129,6 +4252,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4143,6 +4269,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4150,6 +4279,9 @@
   "primary_passives": [
    {
     "slug": "0000049700000533"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -4194,6 +4326,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -4212,6 +4347,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4243,6 +4381,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4257,6 +4398,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4264,6 +4408,9 @@
   "primary_passives": [
    {
     "slug": "0000049700000533"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -4308,6 +4455,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -4326,6 +4476,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4357,6 +4510,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4371,6 +4527,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4378,6 +4537,9 @@
   "primary_passives": [
    {
     "slug": "0000049700000533"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -4422,6 +4584,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -4440,6 +4605,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4471,6 +4639,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4485,6 +4656,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4605,6 +4779,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -4656,6 +4833,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -4674,6 +4854,9 @@
   "armor": 5,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4705,6 +4888,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4719,6 +4905,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4758,7 +4947,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5029406705254,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -4813,6 +5002,9 @@
     "slug": "000003e300006546"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -4861,6 +5053,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -4885,6 +5080,9 @@
   "armor": 6,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -4916,6 +5114,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -4930,6 +5131,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -4937,6 +5141,9 @@
   "primary_passives": [
    {
     "slug": "000004c000000c9f"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -4990,6 +5197,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -5011,6 +5221,9 @@
   "armor": 7,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -5042,6 +5255,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -5056,6 +5272,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -5178,7 +5397,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
   "resid": 5016521812190,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -5815,7 +6034,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000176d"
@@ -5909,7 +6128,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001785"
@@ -6003,7 +6222,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000178f"
@@ -6097,7 +6316,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001797"
@@ -6191,7 +6410,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000179d"
@@ -6285,7 +6504,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d000017a1"
@@ -6892,6 +7111,9 @@
   "sub_culture_name": "Зодчие порядка",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048d00001907"
    },
    {
@@ -6976,6 +7198,9 @@
   "id": "СотрясательСотрясатели",
   "sub_culture_name": "Зодчие хаоса",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000048d00001907"
    },
@@ -7062,6 +7287,9 @@
   "sub_culture_name": "Зодчие астрала",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048d00001907"
    },
    {
@@ -7146,6 +7374,9 @@
   "id": "СотрясательСотрясатели",
   "sub_culture_name": "Зодчие материи",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000048d00001907"
    },
@@ -7232,6 +7463,9 @@
   "sub_culture_name": "Зодчие природы",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048d00001907"
    },
    {
@@ -7316,6 +7550,9 @@
   "id": "СотрясательСотрясатели",
   "sub_culture_name": "Зодчие тени",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000048d00001907"
    },
@@ -7405,7 +7642,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000176d"
@@ -7490,7 +7727,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001785"
@@ -7575,7 +7812,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000178f"
@@ -7660,7 +7897,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001797"
@@ -7745,7 +7982,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000179d"
@@ -7830,7 +8067,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d000017a1"
@@ -8444,6 +8681,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e300006124"
    },
    {
@@ -8486,6 +8726,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -8497,6 +8740,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -8522,6 +8768,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -8536,6 +8785,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -8729,6 +8981,9 @@
     "slug": "00000497000024d0"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000580"
    },
    {
@@ -8771,6 +9026,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -8782,6 +9040,9 @@
   "armor": 5,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -8807,6 +9068,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -8821,6 +9085,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -8932,6 +9199,9 @@
   "id": "Воитель",
   "sub_culture_name": "Раздор",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "00000497000010ff"
    },
@@ -9118,7 +9388,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb2"
@@ -9203,7 +9473,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb5"
@@ -9288,7 +9558,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb8"
@@ -9373,7 +9643,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb2"
@@ -9389,7 +9659,7 @@
    }
   ],
   "mp": 32,
-  "hp": 60,
+  "hp": 55,
   "description": "",
   "armor": 1,
   "resistance": 3,
@@ -9464,7 +9734,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb5"
@@ -9480,7 +9750,7 @@
    }
   ],
   "mp": 32,
-  "hp": 60,
+  "hp": 55,
   "description": "",
   "armor": 1,
   "resistance": 3,
@@ -9555,7 +9825,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb8"
@@ -9571,7 +9841,7 @@
    }
   ],
   "mp": 32,
-  "hp": 60,
+  "hp": 55,
   "description": "",
   "armor": 1,
   "resistance": 3,
@@ -9649,7 +9919,7 @@
     "slug": "0000049700001571"
    }
   ],
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 70<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb2"
@@ -9740,7 +10010,7 @@
     "slug": "0000049700001571"
    }
   ],
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 70<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb5"
@@ -9831,7 +10101,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 70<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb8"
@@ -10861,6 +11131,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e300004814"
    },
    {
@@ -10897,10 +11170,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802795,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -10921,6 +11197,9 @@
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -10958,6 +11237,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -10972,11 +11254,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -11017,6 +11305,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -11032,6 +11323,9 @@
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11069,6 +11363,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11083,11 +11380,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -11122,10 +11425,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802793,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11139,6 +11445,9 @@
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11176,6 +11485,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11190,11 +11502,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -11229,10 +11547,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802792,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11253,6 +11574,9 @@
   "armor": 3,
   "resistance": 1,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11287,6 +11611,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11301,6 +11628,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -11308,6 +11638,9 @@
   "primary_passives": [
    {
     "slug": "0000040d0000001d"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e300004814"
@@ -11343,10 +11676,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802791,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11367,6 +11703,9 @@
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11401,6 +11740,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11415,11 +11757,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -11457,10 +11805,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802790,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11481,6 +11832,9 @@
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11515,6 +11869,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11529,11 +11886,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -11574,10 +11937,13 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802788,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11598,6 +11964,9 @@
   "armor": 3,
   "resistance": 2,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -11635,6 +12004,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -11649,6 +12021,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -13012,13 +13387,16 @@
   "sub_culture_name": "Болотный крокодил",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000497000001d0"
    },
    {
     "slug": "000004970000024f"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dc"
@@ -13103,10 +13481,13 @@
   "sub_culture_name": "Штормовой ворон",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002df"
@@ -13191,10 +13572,13 @@
   "sub_culture_name": "Ледовый мамонт",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000204"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e1"
@@ -13279,10 +13663,13 @@
   "sub_culture_name": "Пепельный смилодон",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000497000001dd"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dd"
@@ -13367,10 +13754,13 @@
   "sub_culture_name": "Песчаный змей",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002de"
@@ -13455,10 +13845,13 @@
   "sub_culture_name": "Подземный паук",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000211"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e0"
@@ -13543,10 +13936,13 @@
   "sub_culture_name": "Лесной волк",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000137"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002db"
@@ -13637,7 +14033,7 @@
     "slug": "000004970000024f"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dc"
@@ -13731,7 +14127,7 @@
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002df"
@@ -13825,7 +14221,7 @@
     "slug": "0000049700000204"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e1"
@@ -13919,7 +14315,7 @@
     "slug": "00000497000001dd"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dd"
@@ -14013,7 +14409,7 @@
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002de"
@@ -14107,7 +14503,7 @@
     "slug": "0000049700000211"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e0"
@@ -14201,7 +14597,7 @@
     "slug": "0000049700000137"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002db"
@@ -15558,6 +15954,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000664"
    },
    {
@@ -15663,6 +16062,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000664"
    },
    {
@@ -15693,7 +16095,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521802432,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15995,7 +16397,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521801767,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -16090,7 +16492,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521801766,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -16183,7 +16585,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5016521801765,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -16278,7 +16680,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905466,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -16376,7 +16778,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905464,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -16474,7 +16876,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905462,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -16572,7 +16974,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905460,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -16670,7 +17072,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905458,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -16768,7 +17170,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636905285,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -17166,7 +17568,10 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "0000048d000011fb"
+    "slug": "cbe7688b0000023f"
+   },
+   {
+    "slug": "0000049700001571"
    },
    {
     "slug": "000003eb00000425"
@@ -17199,7 +17604,7 @@
     "slug": "000003e300006287"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "description": "",
   "sub_culture_name": "Монархия",
   "secondary_passives": [
@@ -17243,7 +17648,10 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "0000048d000011fb"
+    "slug": "cbe7688b0000023f"
+   },
+   {
+    "slug": "0000049700001571"
    },
    {
     "slug": "000003eb00000425"
@@ -17276,7 +17684,7 @@
     "slug": "000003e300006287"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "description": "",
   "sub_culture_name": "Аристократия",
   "secondary_passives": [
@@ -17604,7 +18012,7 @@
    }
   ],
   "description": "{GLOBAL.PROPERTIES.POLEARM_UNIT.Hyperlink}, способный обездвиживать врагов и притягивать их к себе.",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 5003636901344,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -17853,6 +18261,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000049700000f8f"
    },
@@ -18301,6 +18712,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -18414,6 +18828,9 @@
     "slug": "00000497000019cf"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000580"
    },
    {
@@ -18450,6 +18867,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -18471,6 +18891,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -18502,6 +18925,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -18516,6 +18942,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -18750,7 +19179,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
   "resid": 4986457035631,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -18927,6 +19356,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003eb000004c4"
    },
    {
@@ -18978,6 +19410,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -18999,6 +19434,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -19036,6 +19474,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -19050,11 +19491,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003eb000004c4"
    },
@@ -19107,6 +19554,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -19128,6 +19578,9 @@
   "armor": 5,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -19162,6 +19615,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -19176,6 +19632,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -19338,7 +19797,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457035304,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -19419,6 +19878,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000041b00000cbc"
    },
    {
@@ -19467,6 +19929,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -19488,6 +19953,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -19525,6 +19993,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -19539,6 +20010,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -19773,6 +20247,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000041b00000cbc"
    },
    {
@@ -19800,7 +20277,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457035300,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -19993,7 +20470,7 @@
    }
   ],
   "description": "Монах^Ml",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457035150,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -20082,7 +20559,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457034590,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -20154,6 +20631,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000d20"
    },
    {
@@ -20205,6 +20685,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -20223,6 +20706,9 @@
   "armor": 8,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -20254,6 +20740,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -20268,6 +20757,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -20459,6 +20951,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -20577,7 +21072,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457030820,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -20667,7 +21162,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4986457030819,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -20956,10 +21451,10 @@
   "name": "НаблюдательНаблюдатели",
   "primary_passives": [
    {
-    "slug": "0000049700000f8f"
+    "slug": "cbe7688b000001dc"
    },
    {
-    "slug": "0000048d00000206"
+    "slug": "0000049700000f8f"
    },
    {
     "slug": "0000045e00000580"
@@ -21308,6 +21803,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -21365,6 +21863,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -21383,6 +21884,9 @@
   "armor": 6,
   "resistance": 4,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -21417,6 +21921,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -21431,6 +21938,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -21525,6 +22035,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -21572,6 +22085,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -21596,6 +22112,9 @@
   "armor": 8,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -21627,6 +22146,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -21641,6 +22163,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -21780,7 +22305,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4827543240790,
   "medal_rewards_3": [
    {
@@ -22054,6 +22579,9 @@
   "primary_passives": [
    {
     "slug": "0000041b00000ab8"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000045e00000664"
@@ -22383,6 +22911,9 @@
     "slug": "000003e300005e31"
    },
    {
+    "slug": "00000385000000f6"
+   },
+   {
     "slug": "0000041b000019e0"
    },
    {
@@ -22583,7 +23114,7 @@
    }
   ],
   "description": "Защитное сооружение, которое исцеляет и усиливает дружественную нежить поблизости.",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4514010634335,
   "medal_rewards_3": [
    {
@@ -22641,6 +23172,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e300004814"
    },
    {
@@ -22685,6 +23219,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -22700,6 +23237,9 @@
   "armor": 9,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -22731,6 +23271,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -22745,11 +23288,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -22891,7 +23440,7 @@
    }
   ],
   "description": "Башня, которая ведёт огонь по врагам и увеличивает урон от заклинаний.",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010633029,
   "medal_rewards_3": [
    {
@@ -22969,7 +23518,7 @@
    }
   ],
   "description": "\\<\\<C:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, поражающий врагов цепными молниями.",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010632963,
   "medal_rewards_3": [
    {
@@ -23064,7 +23613,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010632570,
   "medal_rewards_3": [
    {
@@ -23223,6 +23772,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e300004a40"
    },
    {
@@ -23267,6 +23819,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -23285,6 +23840,9 @@
   "armor": 7,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -23319,6 +23877,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -23333,6 +23894,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -23725,7 +24289,7 @@
     "slug": "0000049700000533"
    }
   ],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000041B00000E5F"
@@ -23928,6 +24492,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003eb000006ac"
@@ -24164,7 +24731,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
   "resid": 4514010630880,
   "medal_rewards_3": [
    {
@@ -24308,6 +24875,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000049700000f8f"
    },
@@ -24569,7 +25139,7 @@
    }
   ],
   "description": "Даёт доступ к \\<\\<dat,c:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, способному применять эффект «{GLOBAL.PROPERTIES.FROZEN.Hyperlink}».",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010629896,
   "medal_rewards_3": [
    {
@@ -24657,7 +25227,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 50<gold></gold> 20<souls></souls> ",
+  "cost": "110<unitprod></unitprod> 40<gold></gold> 20<souls></souls> ",
   "resid": 4514010629615,
   "medal_rewards_3": [
    {
@@ -24914,6 +25484,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000063b1"
    },
    {
@@ -25029,7 +25602,7 @@
    }
   ],
   "description": "{GLOBAL.PROPERTIES.SUPPORT_UNIT.Hyperlink}, способный призывать \\<\\<gen,cm:{GLOBAL.PROPERTIES.ANIMAL.Hyperlink}\\>\\> и делать их сильнее.",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010629029,
   "medal_rewards_3": [
    {
@@ -25114,7 +25687,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4514010628985,
   "medal_rewards_3": [
    {
@@ -25212,7 +25785,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4488240825326,
   "medal_rewards_3": [
    {
@@ -25301,7 +25874,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4389456579876,
   "medal_rewards_3": [
    {
@@ -25383,7 +25956,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4389456578439,
   "medal_rewards_3": [
    {
@@ -25466,7 +26039,7 @@
    }
   ],
   "description": "An immobile siege engine that can hurl large projectiles over large distances. But may be inaccurate.",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4389456576747,
   "medal_rewards_3": [
    {
@@ -25533,7 +26106,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003EC00002919"
@@ -25606,6 +26179,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e300004814"
    },
    {
@@ -25647,6 +26223,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -25662,6 +26241,9 @@
   "armor": 8,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -25693,6 +26275,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -25707,11 +26292,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004814"
    },
@@ -25754,6 +26345,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -25769,6 +26363,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -25800,6 +26397,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -25814,6 +26414,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -25847,7 +26450,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4312147173997,
   "medal_rewards_3": [
    {
@@ -26194,6 +26797,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000060d4"
    },
    {
@@ -26250,6 +26856,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -26274,6 +26883,9 @@
   "armor": 7,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -26311,6 +26923,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -26325,11 +26940,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e300004fc1"
    },
@@ -26338,9 +26959,6 @@
    },
    {
     "slug": "0000041b00000cbc"
-   },
-   {
-    "slug": "0000045e00000580"
    },
    {
     "slug": "000003870000001b"
@@ -26363,7 +26981,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -26389,9 +27007,9 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "ФениксФениксы",
   "name": "ФениксФениксы",
-  "hp": 130,
-  "armor": 6,
-  "resistance": 6,
+  "hp": 110,
+  "armor": 5,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -26403,13 +27021,13 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
-   },
-   {
     "slug": "000003fe00000018"
    },
    {
     "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003bd000028b7"
    }
   ],
   "medal_rewards_4": [
@@ -26465,7 +27083,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4312147171472,
   "medal_rewards_3": [
    {
@@ -26633,9 +27251,6 @@
     "slug": "0000049700001683"
    },
    {
-    "slug": "000003870000001b"
-   },
-   {
     "slug": "000003fe0000007f"
    },
    {
@@ -26645,7 +27260,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003EC00001885"
@@ -26666,7 +27281,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4312147171461,
   "medal_rewards_3": [
    {
@@ -26701,9 +27316,6 @@
   ],
   "tier": 2,
   "secondary_passives": [
-   {
-    "slug": "000003450000052c"
-   },
    {
     "slug": "000003e500001adb"
    },
@@ -27447,7 +28059,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4312147169114,
   "medal_rewards_3": [
    {
@@ -27514,6 +28126,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003e30000665c"
    },
@@ -27845,6 +28460,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e30000665c"
    },
    {
@@ -28024,6 +28642,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -28068,6 +28689,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -28086,6 +28710,12 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "000003e300004f29"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -28110,6 +28740,9 @@
   ],
   "medal_rewards_4": [
    {
+    "slug": "000003e3000054ec"
+   },
+   {
     "slug": "0000048b00000c6e"
    },
    {
@@ -28117,6 +28750,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -28131,6 +28767,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -28141,6 +28780,9 @@
    },
    {
     "slug": "0000040d0000001d"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -28187,6 +28829,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -28205,6 +28850,12 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "000003e300004f29"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -28229,6 +28880,9 @@
   ],
   "medal_rewards_4": [
    {
+    "slug": "000003e3000054ec"
+   },
+   {
     "slug": "0000048b00000c6e"
    },
    {
@@ -28236,6 +28890,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -28250,6 +28907,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -28257,6 +28917,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -28300,6 +28963,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -28311,6 +28977,12 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "000003e300004f29"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -28338,6 +29010,9 @@
   ],
   "medal_rewards_4": [
    {
+    "slug": "000003e3000054ec"
+   },
+   {
     "slug": "0000048b00000c6e"
    },
    {
@@ -28345,6 +29020,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -28359,6 +29037,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -28686,7 +29367,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4312147167410,
   "medal_rewards_3": [
    {
@@ -28777,7 +29458,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492489404,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -28866,7 +29547,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492488880,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -28934,6 +29615,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -28982,6 +29666,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -29003,6 +29690,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -29034,6 +29724,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -29048,6 +29741,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -29055,6 +29751,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -29108,6 +29807,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -29126,6 +29828,9 @@
   "armor": 6,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -29154,6 +29859,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -29168,6 +29876,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -29194,7 +29905,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492488731,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -29732,9 +30443,6 @@
     "slug": "0000045e00000664"
    },
    {
-    "slug": "000003870000001b"
-   },
-   {
     "slug": "000003fe0000007f"
    },
    {
@@ -29744,7 +30452,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300006EE3"
@@ -29796,9 +30504,6 @@
   "tier": 3,
   "secondary_passives": [
    {
-    "slug": "000003450000052c"
-   },
-   {
     "slug": "000003e30000426c"
    },
    {
@@ -29843,9 +30548,6 @@
     "slug": "0000045e00000664"
    },
    {
-    "slug": "000003870000001b"
-   },
-   {
     "slug": "000003fe0000007f"
    },
    {
@@ -29855,7 +30557,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300006EE0"
@@ -29907,9 +30609,6 @@
   "tier": 3,
   "secondary_passives": [
    {
-    "slug": "000003450000052c"
-   },
-   {
     "slug": "000003e30000426c"
    },
    {
@@ -29952,6 +30651,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e300006bf6"
@@ -30011,6 +30713,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -30029,6 +30734,9 @@
   "armor": 8,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -30060,6 +30768,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -30074,6 +30785,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -30081,6 +30795,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e300006be6"
@@ -30140,6 +30857,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -30158,6 +30878,9 @@
   "armor": 8,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -30189,6 +30912,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -30203,6 +30929,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -30614,6 +31343,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -30661,6 +31393,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -30672,6 +31407,9 @@
   "armor": 6,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -30700,6 +31438,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -30714,6 +31455,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -30744,7 +31488,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492484799,
   "medal_rewards_3": [
    {
@@ -30796,6 +31540,9 @@
   "primary_passives": [
    {
     "slug": "0000049700002d57"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -30854,6 +31601,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -30878,6 +31628,9 @@
   "armor": 5,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -30909,6 +31662,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -30923,6 +31679,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -30959,7 +31718,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492484430,
   "medal_rewards_3": [
    {
@@ -31050,7 +31809,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492484361,
   "medal_rewards_3": [
    {
@@ -31138,7 +31897,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492484324,
   "medal_rewards_3": [
    {
@@ -31215,6 +31974,9 @@
     "slug": "000003e300006546"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -31262,6 +32024,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -31286,6 +32051,9 @@
   "armor": 8,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -31320,6 +32088,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -31334,6 +32105,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -31685,7 +32459,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
   "resid": 4273492483857,
   "medal_rewards_3": [
    {
@@ -31779,7 +32553,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492483762,
   "medal_rewards_3": [
    {
@@ -32073,7 +32847,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
   "resid": 4273492483608,
   "medal_rewards_3": [
    {
@@ -32144,6 +32918,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f8f"
    },
    {
@@ -32200,6 +32977,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -32218,6 +32998,9 @@
   "armor": 7,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -32249,6 +33032,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -32263,6 +33049,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -32293,7 +33082,7 @@
    }
   ],
   "description": "",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492483421,
   "medal_rewards_3": [
    {
@@ -32548,7 +33337,11 @@
   ]
  },
  {
-  "primary_passives": [],
+  "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   }
+  ],
   "mp": 40,
   "abilities": [
    {
@@ -32567,7 +33360,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 50<gold></gold> 50<mana></mana> ",
+  "cost": "110<unitprod></unitprod> 40<gold></gold> 40<mana></mana> ",
   "resid": 4273492483247,
   "medal_rewards_3": [
    {
@@ -32642,6 +33435,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000045e00000664"
@@ -32741,6 +33537,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000664"
    }
   ],
@@ -32837,7 +33636,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492483115,
   "medal_rewards_3": [
    {
@@ -32928,7 +33727,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492483035,
   "medal_rewards_3": [
    {
@@ -33488,6 +34287,9 @@
     "slug": "000003fe000008c4"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -33535,6 +34337,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -33556,6 +34361,9 @@
   "armor": 7,
   "resistance": 6,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -33593,6 +34401,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -33607,12 +34418,15 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "heat_of_the_revel_ability_000003E300005A54"
@@ -33712,6 +34526,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000045e00000664"
    },
@@ -33883,6 +34700,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000664"
    },
    {
@@ -33907,7 +34727,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
   "resid": 4273492482176,
   "medal_rewards_3": [
    {
@@ -34197,7 +35017,7 @@
     "slug": "000003e300006280"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Гармония",
   "secondary_passives": [
@@ -34284,7 +35104,7 @@
     "slug": "000003e300006280"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Потенциал",
   "secondary_passives": [
@@ -34374,7 +35194,7 @@
     "slug": "000003e300006280"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Призыв",
   "secondary_passives": [
@@ -34464,7 +35284,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Гармония",
   "secondary_passives": [
@@ -34548,7 +35368,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Потенциал",
   "secondary_passives": [
@@ -34635,7 +35455,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Призыв",
   "secondary_passives": [
@@ -35472,6 +36292,9 @@
   "name": "Тёмный рыцарьТёмные рыцари",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000049700000f4f"
    }
   ],
@@ -35544,7 +36367,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480772,
   "medal_rewards_3": [
    {
@@ -35633,7 +36456,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480771,
   "medal_rewards_3": [
    {
@@ -35812,6 +36635,9 @@
   "id": "Тёмный_воительТёмные_воители",
   "name": "Тёмный воительТёмные воители",
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000049700000f4f"
    }
@@ -36069,7 +36895,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480760,
   "medal_rewards_3": [
    {
@@ -36161,7 +36987,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480759,
   "medal_rewards_3": [
    {
@@ -36239,6 +37065,9 @@
  },
  {
   "medal_rewards_5": [
+   {
+    "slug": "cbe7688b000001dd"
+   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -36677,7 +37506,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480747,
   "medal_rewards_3": [
    {
@@ -36849,7 +37678,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480745,
   "medal_rewards_3": [
    {
@@ -37032,6 +37861,9 @@
   "name": "БерсеркБерсерки",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048b00000b35"
    },
    {
@@ -37104,7 +37936,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480736,
   "medal_rewards_3": [
    {
@@ -37190,7 +38022,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480735,
   "medal_rewards_3": [
    {
@@ -37556,13 +38388,13 @@
   "name": "Рыцарь",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048d00001205"
    },
    {
     "slug": "000003eb000004c4"
-   },
-   {
-    "slug": "000003eb00000425"
    }
   ],
   "abilities": [
@@ -37646,13 +38478,13 @@
   "name": "Рыцарь",
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000048d00001205"
    },
    {
     "slug": "000003eb000004c4"
-   },
-   {
-    "slug": "000003eb00000425"
    }
   ],
   "abilities": [
@@ -37856,7 +38688,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Монархия",
   "secondary_passives": [
@@ -37943,7 +38775,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "description": "",
   "sub_culture_name": "Аристократия",
   "secondary_passives": [
@@ -38244,7 +39076,7 @@
   "resid": 4273492480719,
   "medal_rewards_3": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    }
   ],
   "resistances": [],
@@ -38274,14 +39106,14 @@
   "resistance": 1,
   "medal_rewards_2": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    }
   ],
   "tier": 1,
   "culture_name": "Феодалы",
   "medal_rewards_5": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    },
    {
     "slug": "0000049700001549"
@@ -38300,19 +39132,16 @@
   ],
   "medal_rewards_4": [
    {
-    "slug": "0000048b00000c76"
-   },
-   {
     "slug": "0000048b00000c7a"
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "cbe7688b00000291"
    }
   ],
   "medal_rewards_6": [
-   {
-    "slug": "0000048b00000c76"
-   },
    {
     "slug": "0000048b00000c74"
    },
@@ -38321,6 +39150,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "cbe7688b00000291"
    }
   ]
  },
@@ -38328,7 +39160,7 @@
   "resid": 4273492480719,
   "medal_rewards_3": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    }
   ],
   "resistances": [],
@@ -38358,14 +39190,14 @@
   "resistance": 1,
   "medal_rewards_2": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    }
   ],
   "tier": 1,
   "culture_name": "Феодалы",
   "medal_rewards_5": [
    {
-    "slug": "0000048b00000c76"
+    "slug": "cbe7688b00000291"
    },
    {
     "slug": "0000049700001549"
@@ -38384,19 +39216,16 @@
   ],
   "medal_rewards_4": [
    {
-    "slug": "0000048b00000c76"
-   },
-   {
     "slug": "0000048b00000c7a"
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "cbe7688b00000291"
    }
   ],
   "medal_rewards_6": [
-   {
-    "slug": "0000048b00000c76"
-   },
    {
     "slug": "0000048b00000c74"
    },
@@ -38405,6 +39234,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "cbe7688b00000291"
    }
   ]
  },
@@ -38526,11 +39358,11 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492480706,
   "medal_rewards_3": [
    {
@@ -38553,13 +39385,13 @@
   "tier": 1,
   "secondary_passives": [
    {
-    "slug": "000003e300004ea6"
-   },
-   {
     "slug": "000003fe00000018"
    },
    {
     "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003fe00000060"
    }
   ],
   "medal_rewards_4": [
@@ -38598,6 +39430,9 @@
    },
    {
     "slug": "000003e300005582"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -38644,6 +39479,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -38668,6 +39506,9 @@
   "armor": 5,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -38708,6 +39549,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -38722,6 +39566,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -38729,9 +39576,6 @@
   "primary_passives": [
    {
     "slug": "0000045e00000664"
-   },
-   {
-    "slug": "000003870000001b"
    },
    {
     "slug": "000003fe0000007f"
@@ -38743,7 +39587,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300004F60"
@@ -38794,9 +39638,6 @@
   "tier": 3,
   "secondary_passives": [
    {
-    "slug": "000003450000052c"
-   },
-   {
     "slug": "000003e30000426c"
    },
    {
@@ -38841,9 +39682,6 @@
     "slug": "0000045e00000664"
    },
    {
-    "slug": "000003870000001b"
-   },
-   {
     "slug": "000003fe0000007f"
    },
    {
@@ -38853,7 +39691,7 @@
     "slug": "000003e300004e71"
    }
   ],
-  "mp": 40,
+  "mp": 48,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300004F5F"
@@ -38904,9 +39742,6 @@
   "tier": 3,
   "secondary_passives": [
    {
-    "slug": "000003450000052c"
-   },
-   {
     "slug": "000003e30000426c"
    },
    {
@@ -38949,6 +39784,9 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d4"
@@ -39007,6 +39845,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -39025,6 +39866,9 @@
   "armor": 8,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -39056,6 +39900,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -39070,6 +39917,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -39301,7 +40151,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492479138,
   "medal_rewards_3": [
    {
@@ -39383,7 +40233,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492479113,
   "medal_rewards_3": [
    {
@@ -39578,7 +40428,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
   "resid": 4273492478522,
   "medal_rewards_3": [
    {
@@ -39753,6 +40603,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -39775,7 +40631,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -39805,10 +40661,10 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -39856,9 +40712,15 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300004A21"
@@ -39872,7 +40734,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -39899,10 +40761,10 @@
   "tier": 1,
   "secondary_passives": [
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -39943,6 +40805,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -39965,7 +40833,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -39995,10 +40863,10 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -40046,9 +40914,15 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300004A17"
@@ -40062,7 +40936,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -40089,10 +40963,10 @@
   "tier": 1,
   "secondary_passives": [
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -40133,6 +41007,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -40155,7 +41035,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -40185,10 +41065,10 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000003e500001988"
@@ -40242,6 +41122,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -40264,11 +41150,11 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
   "resid": 4273492478473,
   "medal_rewards_3": [
    {
@@ -40291,10 +41177,10 @@
   "tier": 2,
   "secondary_passives": [
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000003e500001988"
@@ -40344,6 +41230,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -40363,7 +41255,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
@@ -40400,10 +41292,10 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -40451,6 +41343,12 @@
    },
    {
     "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "mp": 40,
@@ -40470,11 +41368,11 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006294"
+    "slug": "000003e300006284"
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492478461,
   "medal_rewards_3": [
    {
@@ -40504,10 +41402,10 @@
   "tier": 2,
   "secondary_passives": [
    {
-    "slug": "000003e300004ea6"
+    "slug": "000003fe00000018"
    },
    {
-    "slug": "000003fe00000018"
+    "slug": "000003e600000492"
    },
    {
     "slug": "000004150000025b"
@@ -40565,7 +41463,7 @@
    }
   ],
   "description": "\\<\\<C:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, распространяющий вокруг себя огонь и способный применять эффект «{GLOBAL.PROPERTIES.BURNING.Hyperlink}».",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492478197,
   "medal_rewards_3": [
    {
@@ -40681,6 +41579,9 @@
   "secondary_passives": [
    {
     "slug": "000003bd000020c0"
+   },
+   {
+    "slug": "000003eb0000073f"
    },
    {
     "slug": "0000049300000402"
@@ -40819,6 +41720,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000065d9"
    },
    {
@@ -40860,6 +41764,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -40871,6 +41778,9 @@
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -40899,6 +41809,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -40913,11 +41826,17 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000045e00000580"
    }
@@ -40948,6 +41867,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
@@ -40959,6 +41881,9 @@
   "armor": 4,
   "resistance": 5,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -40987,6 +41912,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -41001,6 +41929,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -41031,7 +41962,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
   "resid": 4264902529455,
   "medal_rewards_3": [
    {
@@ -41094,6 +42025,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "0000045e00000664"
    }
@@ -41170,6 +42104,9 @@
  {
   "primary_passives": [
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "0000045e00000664"
    },
    {
@@ -41203,7 +42140,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4264902529424,
   "medal_rewards_3": [
    {
@@ -41270,16 +42207,25 @@
  {
   "primary_passives": [
    {
+    "slug": "0000045e00000d23"
+   },
+   {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "000003e30000665c"
    },
    {
     "slug": "0000042b00000006"
    },
    {
-    "slug": "000003e10000118a"
+    "slug": "000003e10000139d"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E100001183"
@@ -41297,7 +42243,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4264902529411,
   "medal_rewards_3": [
    {
@@ -41327,6 +42273,9 @@
   "tier": 2,
   "secondary_passives": [
    {
+    "slug": "000003e30000528e"
+   },
+   {
     "slug": "000003e300004ea6"
    },
    {
@@ -41365,13 +42314,25 @@
  {
   "primary_passives": [
    {
+    "slug": "0000045e00000d2f"
+   },
+   {
     "slug": "0000045e00000664"
    },
    {
+    "slug": "0000048b00000086"
+   },
+   {
     "slug": "0000042b00000006"
+   },
+   {
+    "slug": "000003e10000139d"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
-  "mp": 32,
+  "mp": 40,
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E100001164"
@@ -41389,7 +42350,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4264902529380,
   "medal_rewards_3": [
    {
@@ -41419,6 +42380,9 @@
   "tier": 2,
   "secondary_passives": [
    {
+    "slug": "000003e30000528e"
+   },
+   {
     "slug": "000003e300004ea6"
    },
    {
@@ -41456,6 +42420,9 @@
  },
  {
   "primary_passives": [
+   {
+    "slug": "cbe7688b0000023f"
+   },
    {
     "slug": "000003eb000004c4"
    },
@@ -41571,6 +42538,9 @@
   "primary_passives": [
    {
     "slug": "0000040d0000001d"
+   },
+   {
+    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d6"
@@ -41758,6 +42728,9 @@
     "slug": "000003e30000612d"
    },
    {
+    "slug": "cbe7688b0000023f"
+   },
+   {
     "slug": "000003e3000060d4"
    },
    {
@@ -41811,6 +42784,9 @@
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [
@@ -41829,6 +42805,9 @@
   "armor": 8,
   "resistance": 7,
   "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   },
    {
     "slug": "0000048b00000c6e"
    }
@@ -41860,6 +42839,9 @@
    },
    {
     "slug": "0000048b00000c79"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ],
   "medal_rewards_6": [
@@ -41874,6 +42856,9 @@
    },
    {
     "slug": "0000048b00000c7d"
+   },
+   {
+    "slug": "0000048b00000c74"
    }
   ]
  },
@@ -41989,7 +42974,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4110283712707,
   "medal_rewards_3": [
    {
@@ -42153,7 +43138,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4110283712705,
   "medal_rewards_3": [
    {
@@ -42235,7 +43220,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4110283712687,
   "medal_rewards_3": [
    {
@@ -42314,7 +43299,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4110283712644,
   "medal_rewards_3": [
    {
@@ -42396,7 +43381,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 100<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4110283712639,
   "medal_rewards_3": [
    {
@@ -42481,7 +43466,7 @@
    }
   ],
   "description": "Мобильное осадное орудие, метающее снаряды на большие расстояния. Не отличается высокой точностью.",
-  "cost": "160<unitprod></unitprod> 110<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4041564236799,
   "medal_rewards_3": [
    {

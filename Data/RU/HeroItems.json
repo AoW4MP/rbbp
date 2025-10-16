@@ -14704,8 +14704,8 @@
   ],
   "description": "Воин получает:<bulletlist><bullet>способность «Очень высокая скорость»;</bullet><bullet>тип «Кавалерия»;</bullet><bullet>способность «Стайный охотник»;</bullet><bullet>2 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink>.</bullet></bulletlist>",
   "name": "Ездовой белый волк",
-  "tier": "Ранг III",
-  "tier_numerals": "III",
+  "tier": "Ранг II",
+  "tier_numerals": "II",
   "slot": "Ездовое животное",
   "icon": "0000041B00001634",
   "disabled_slots": []

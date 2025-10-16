@@ -108,6 +108,12 @@
    },
    {
     "name": "Правитель начинает верхом на грифоне."
+   },
+   {
+    "name": "-2 <defensefrost></defensefrost> <hyperlink>Сопротивление холоду</hyperlink>"
+   },
+   {
+    "name": "-2 <defenseblight></defenseblight> <hyperlink>Сопротивление яду</hyperlink>"
    }
   ],
   "enabled": true,
@@ -215,8 +221,8 @@
  },
  {
   "biography_description": "От их божественных тел исходит священный свет, который испепеляет врагов, словно очистительный огонь.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageSpirit></damageSpirit> <hyperlink>урон магией духа</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "Внутренний_свет",
   "name": "Внутренний свет",
   "incompatible_society_traits": [
@@ -236,10 +242,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>."
-   },
-   {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>."
+    "name": "+4 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>."
    }
   ],
   "enabled": true,
@@ -278,7 +281,7 @@
  },
  {
   "biography_description": "Вместо крови в их жилах энергия молнии, и горе тем, кто осмелится ранить их!",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageLightning></damageLightning> <hyperlink>электрический урон</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "Внутренний_заряд",
   "name": "Внутренний заряд",
@@ -299,10 +302,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>."
+    "name": "+2 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>."
    },
    {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>."
+    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Наэлектризованность»."
+   },
+   {
+    "name": "Невосприимчивость к эффекту «Наэлектризованность»."
    }
   ],
   "enabled": true,
@@ -314,8 +320,8 @@
  },
  {
   "biography_description": "Их кожа обжигающе холодна, и тот, кто подойдёт слишком близко, рискует получить обморожение.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFrost></damageFrost> <hyperlink>урон от холода</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "Внутренний_холод",
   "name": "Внутренний холод",
   "incompatible_society_traits": [
@@ -335,10 +341,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink>."
-   },
-   {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>."
+    "name": "+4 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink>."
    }
   ],
   "enabled": true,
@@ -350,7 +353,7 @@
  },
  {
   "biography_description": "Их огненная кровь обжигает любого, кто рискнет нанести им раны.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFire></damageFire> <hyperlink>урон от огня</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "Внутренний_огонь",
   "name": "Внутренний огонь",
@@ -371,10 +374,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensefire></defensefire> <hyperlink>сопротивлению огню</hyperlink>."
+    "name": "+2 к <defensefire></defensefire> <hyperlink>сопротивлению огню</hyperlink>."
    },
    {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>."
+    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Горение»."
+   },
+   {
+    "name": "Невосприимчивость к эффекту «Горение»."
    }
   ],
   "enabled": true,
@@ -469,6 +475,9 @@
    },
    {
     "name": "Правитель начинает верхом на орле."
+   },
+   {
+    "name": "-1 <defense></defense> <hyperlink>Защита</hyperlink>"
    }
   ],
   "enabled": true,
@@ -507,7 +516,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+15 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+25 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    },
    {
     "name": "Даёт способность «Джаггернаут»."
@@ -539,7 +548,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+15 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    },
    {
     "name": "+4 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink>."
@@ -756,7 +765,10 @@
  {
   "starting_bonuses": [
    {
-    "description": "Начальные <hyperlink>воины</hyperlink> получают +1 к уровню."
+    "description": "Начальные <hyperlink>воины</hyperlink> получают +1 к уровню и +3 <statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектам</hyperlink>."
+   },
+   {
+    "description": "Дополнительный воин поддержки или воин с пикой в начале игры."
    }
   ],
   "affinities": [
@@ -772,7 +784,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 100 к <influence></influence> <hyperlink>авторитету</hyperlink>."
+    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 10 к <influence></influence> <hyperlink>авторитету</hyperlink>."
    },
    {
     "name": "Если у вас нет активных заданий за <hyperlink>награду</hyperlink>, вы всегда можете получить задание на уничтожение ближайшего <hyperlink>вторжения</hyperlink>, которое ещё не было целью. Однако если подходящего логова нет, задание не появится."
@@ -785,18 +797,13 @@
   "icon": "00000493000008F8"
  },
  {
-  "starting_bonuses": [
-   {
-    "description": "Начальный <unitHero></unitHero> <hyperlink>предел героев</hyperlink> равен +1, а для героев из пантеона — +3."
-   }
-  ],
   "affinities": [
    {
     "name": "1<shadow></shadow> Приверженность тени"
    }
   ],
-  "biography_description": "Они превозносят своих героев до небес, придавая им сил своим экстатическим поклонением.",
   "lore_description": "Они верят в силу своих героев — избранников судьбы, возвысившихся над серой массой.",
+  "biography_description": "Они превозносят своих героев до небес, придавая им сил своим экстатическим поклонением.",
   "point_cost": 1,
   "id": "Культ_личности",
   "name": "Культ личности",
@@ -806,17 +813,14 @@
     "name": "<hyperlink>Герои</hyperlink> получают дополнительное очко навыка, когда уровень их <renown></renown> <hyperlink>славы</hyperlink> повышается."
    },
    {
-    "name": "Когда уровень <renown></renown> <hyperlink>славы</hyperlink> <hyperlink>героев</hyperlink> повышается, стоимость их <hyperlink>содержания</hyperlink> увеличивается на 10 ед. <gold></gold> <hyperlink>золота</hyperlink>."
-   },
-   {
     "name": "<hyperlink>Воины</hyperlink> в <hyperlink>армии</hyperlink> без героя получают -20 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> во время боя."
    }
   ],
   "enabled": true,
   "front_end": false,
+  "icon": "00000493000008F4",
   "type": "society",
-  "display_order": 1,
-  "icon": "00000493000008F4"
+  "display_order": 1
  },
  {
   "affinities": [
@@ -870,6 +874,12 @@
    },
    {
     "name": "Правитель начинает верхом на небесном грифоне."
+   },
+   {
+    "name": "-2 <defensefire></defensefire> <hyperlink>Сопротивление огню</hyperlink>"
+   },
+   {
+    "name": "-2 <defenselightning></defenselightning> <hyperlink>Сопротивление молниям</hyperlink>"
    }
   ],
   "enabled": true,
@@ -925,6 +935,9 @@
    },
    {
     "name": "Правитель начинает верхом на пегасе."
+   },
+   {
+    "name": "-1 <resistance></resistance> <hyperlink>Сопротивление</hyperlink>"
    }
   ],
   "enabled": true,
@@ -944,7 +957,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+5 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    },
    {
     "name": "Даёт способность «Чумное бегство»."
@@ -1299,13 +1312,19 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "При победе в сражении даёт 2 ед. <influence></influence> <hyperlink>авторитета</hyperlink> за каждого убитого <hyperlink>воина</hyperlink> вражеской <hyperlink>империи</hyperlink>.<br></br>Эта награда увеличивается на +1 за каждый уровень <evilact></evilact> злого <hyperlink>мировоззрения</hyperlink> у той фракции, к которой принадлежал воин."
+    "name": "При победе в сражении даёт <influence></influence> <hyperlink>Авторитет</hyperlink> за каждого побежденного <hyperlink>воина</hyperlink> или <hyperlink>героя</hyperlink> вражеской <hyperlink>империи</hyperlink>.<br></br>Эта награда увеличивается за каждый уровень <evilact></evilact> злого <hyperlink>мировоззрения</hyperlink> у той фракции, к которой принадлежал воин.<br></br><br></br>При победе в сражении даёт <influence></influence> <hyperlink>Авторитет</hyperlink> за каждого побежденного Чудовищный демон, Нежить, Демон мрака, Проклятый демон"
    },
    {
     "name": "Даёт +30 <casusBelli></casusBelli> <hyperlink>поводов к войне</hyperlink> против игроков со <evilact></evilact> злым <hyperlink>мировоззрением</hyperlink>."
    },
    {
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
+   },
+   {
+    "name": "<hyperlink>Воины</hyperlink> и <hyperlink>Герои</hyperlink> получают иммунитет к Мрачная хворь."
+   },
+   {
+    "name": "<hyperlink>Дистанционная атака</hyperlink>:<bulletlist><bullet>+1<damageFire></damageFire> <hyperlink>Урон от огня</hyperlink></bullet><bullet> +1<damageSpirit></damageSpirit> <hyperlink>Урон магией духа</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Физический урон</hyperlink></bullet></bulletlist><br></br><bullet><hyperlink>Ближний бой</hyperlink>:<bulletlist></bullet><bullet>+1<damageFire></damageFire> <hyperlink>Урон от огня</hyperlink></bullet><bullet>+1<damageSpirit></damageSpirit> <hyperlink>Урон магией духа</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Физический урон</hyperlink></bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1422,6 +1441,9 @@
    },
    {
     "name": "Правитель начинает верхом на священном драконе."
+   },
+   {
+    "name": "-10 <hyperlink>Здоровья</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1482,6 +1504,9 @@
   "effect_descriptions": [
    {
     "name": "<hyperlink>Сбор сеньоров</hyperlink> случается в два раза чаще."
+   },
+   {
+    "name": "<hyperlink>Воины</hyperlink>, призванные при <hyperlink>сборе сеньоров</hyperlink>, получают +2 к уровню при найме."
    }
   ],
   "enabled": true,
@@ -1545,7 +1570,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Городские сооружения стоят на 100% больше очков <structureprod></structureprod> производство, при этом они помимо своего обычного эффекта дают +1 к <happiness></happiness> стабильность города и +5 к <gold></gold> золоту."
+    "name": "Городские сооружения стоят на 50% больше очков <structureprod></structureprod> производство, при этом они помимо своего обычного эффекта дают +1 к <happiness></happiness> стабильность города и +3 к <gold></gold> золоту."
    },
    {
     "name": "Воины <hyperlink>ранга воина</hyperlink> 3 этого народа получают +1 к уровню."
@@ -1629,6 +1654,9 @@
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
+   },
+   {
+    "name": "<hyperlink>Тотальная война</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1698,13 +1726,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Получают +30% к доходам от <hyperlink>вассалов</hyperlink>."
+    "name": "Получают +60% к доходам от <hyperlink>вассалов</hyperlink>."
    },
    {
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
-   },
-   {
-    "name": "<hyperlink>Воины</hyperlink>, призванные при <hyperlink>сборе сеньоров</hyperlink>, получают +1 к уровню при найме."
    },
    {
     "name": "Даёт <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink> (+1)."
@@ -2014,6 +2039,9 @@
   "effect_descriptions": [
    {
     "name": "Способность «Высокая скорость», дающая 40 оч. перемещения на <hyperlink>глобальной карте</hyperlink> и в <hyperlink>сражении</hyperlink>."
+   },
+   {
+    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2157,7 +2185,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+8 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2670,7 +2698,7 @@
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
    },
    {
-    "name": "Воины получают +2 ед. <hyperlink><xp></xp> опыта</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink> при максимальном уровне доброго <goodact></goodact> <hyperlink>мировоззрения</hyperlink>."
+    "name": "Воины, не являющиеся героями, получают +2 ед. <hyperlink><xp></xp> опыта</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink> при максимальном уровне доброго <goodact></goodact> <hyperlink>мировоззрения</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2822,23 +2850,31 @@
   "display_order": 4
  },
  {
-  "lore_description": "<helpcolor>Урон от магических атак и заклинаний снижается.</helpcolor>",
   "biography_description": "Они обладают естественной защитой от магического урона.",
+  "lore_description": "<helpcolor>Урон от магических атак и заклинаний снижается.</helpcolor>",
   "point_cost": 2,
   "id": "Стойкость",
   "name": "Стойкость",
+  "incompatible_society_traits": [
+   {
+    "name": "Твёрдость"
+   },
+   {
+    "name": "Оплот"
+   }
+  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+1 к <defense></defense> <hyperlink>защите</hyperlink> и +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink> от <hyperlink>магических</hyperlink> атак, <hyperlink>заклинаний</hyperlink> и других эффектов."
+    "name": "+2 <resistance></resistance> <hyperlink>Сопротивление</hyperlink>"
    }
   ],
   "enabled": true,
+  "type": "form",
   "group_name": "Защита",
   "front_end": true,
-  "icon": "0000041B0000072D",
-  "type": "form",
-  "display_order": 4
+  "display_order": 4,
+  "icon": "0000041B0000072D"
  },
  {
   "affinities": [
@@ -3219,23 +3255,31 @@
   "display_order": 4
  },
  {
-  "lore_description": "<helpcolor>Воины получают меньше урона от атак в ближнем бою.</helpcolor>",
   "biography_description": "Эти воины отличаются крепким сложением и не боятся боли и ран.",
+  "lore_description": "<helpcolor>Воины получают меньше урона от атак в ближнем бою.</helpcolor>",
   "point_cost": 2,
   "id": "Твёрдость",
   "name": "Твёрдость",
+  "incompatible_society_traits": [
+   {
+    "name": "Стойкость"
+   },
+   {
+    "name": "Оплот"
+   }
+  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+1 к <defense></defense> <hyperlink>защите</hyperlink> и +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink> от <hyperlink>атак в ближнем бою</hyperlink>."
+    "name": "+2 <defense></defense> <hyperlink>Защита</hyperlink>"
    }
   ],
   "enabled": true,
+  "type": "form",
   "group_name": "Защита",
   "front_end": true,
-  "icon": "000003E10000145F",
-  "type": "form",
-  "display_order": 4
+  "display_order": 4,
+  "icon": "000003E10000145F"
  },
  {
   "biography_description": "Сила их крови позволяет быстрее восстанавливаться после ранений.",

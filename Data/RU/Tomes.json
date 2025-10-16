@@ -75,7 +75,7 @@
   "icon": "0000049700002C0D",
   "skills": [
    {
-    "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+% к урону;</bullet><bullet>способность «Бессмертный»;</bullet><bullet>способность «Доспех отчаяния».</bullet></bulletlist><br></br>При применении этого заклинания вражеские воины в радиусе  кл. теряют 10 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>.",
+    "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+% к урону;</bullet><bullet>способность «Бессмертный»;</bullet><bullet>способность «Доспех отчаяния».</bullet></bulletlist><br></br>При применении этого заклинания вражеские воины в радиусе  кл. теряют 5 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>.",
     "name": "Нечестивый воитель",
     "spell_slug": "Нечестивый_воитель",
     "tier": 7,
@@ -243,14 +243,14 @@
     "upgrade_slug": "Дом_милосердия"
    },
    {
-    "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>получает эффект «Стойкость» на <turn></turn> х.;</bullet><bullet>игнорирует штрафы от <hyperlink>потерь</hyperlink> в течение <turn></turn> х.</bullet></bulletlist>",
+    "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink> ();</bullet><bullet>получает эффект «Стойкость» на <turn></turn> х.;</bullet><bullet>игнорирует штрафы от <hyperlink>потерь</hyperlink> в течение <turn></turn> х.</bullet></bulletlist><br></br>Нельзя применить к одному и тому же воину больше одного раза за битву.",
     "name": "Превозмогание",
     "spell_slug": "Превозмогание",
     "tier": 3,
     "type": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>"
    },
    {
-    "description": "Придаёт выбранному народу стойкость в особенно тяжёлые моменты, наделяя их следующими особенностями:<bulletlist><bullet>+ к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>когда <hyperlink>здоровье</hyperlink> воинов падает ниже % от максимального запаса, они:<bulletlist></bullet><bullet>игнорируют % <hyperlink>потерь</hyperlink>;</bullet><bullet>получают + к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получают + к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+    "description": "Придаёт выбранному народу стойкость в особенно тяжёлые моменты, наделяя их следующими особенностями:<bulletlist><bullet>когда <hyperlink>здоровье</hyperlink> воинов падает ниже % от максимального запаса, они:<bulletlist></bullet><bullet>игнорируют % <hyperlink>потерь</hyperlink>;</bullet><bullet>получают + к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получают + к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
     "name": "Праведный дух",
     "spell_slug": "Праведный_дух",
     "tier": 3,
@@ -341,7 +341,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>"
    },
    {
-    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 15 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink> (урон удваивается в <hyperlink>провинциях</hyperlink> с катакомбами);</bullet><bullet>в течение 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink> к воинам этой армии в начале каждого боя на 3 <turn></turn> х. применяется эффект «Скорость снижена».</bullet></bulletlist>",
+    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 3 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink> (урон удваивается в <hyperlink>провинциях</hyperlink> с катакомбами);</bullet><bullet>в течение 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink> к воинам этой армии в начале каждого боя на 3 <turn></turn> х. применяется эффект «Скорость снижена».</bullet></bulletlist>",
     "name": "Подземная опасность",
     "spell_slug": "Подземная_опасность",
     "tier": 3,
@@ -708,7 +708,7 @@
     "upgrade_slug": "_conduit___Алтарь_марширующей_тьмы"
    },
    {
-    "description": "Выбранный народ получает от Пучины мрака дары, дающие следующие особенности:<bulletlist><bullet>способность «Невосприимчивость к мрачной хвори»;</bullet><bullet>воины на ландшафте <hyperlink>Мрака</hyperlink>:<bulletlist></bullet><bullet>получают + к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>восстанавливают + ед. <hyperlink>здоровья</hyperlink> за каждый <turn></turn> <hyperlink>ход</hyperlink> на глобальной карте.</bullet></bulletlist><bullet><hyperlink>Города</hyperlink> народа:<bulletlist></bullet><bullet>получают +2 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink> за каждую провинцию с ландшафтом Мрака;</bullet><bullet>игнорируют штрафы к <happiness></happiness> <hyperlink> стабильности города</hyperlink>, вызванные ландшафтом Мрака.</bullet></bulletlist><bullet>Герои получают способность «Мрачный пастырь».</bullet></bulletlist><br></br>Эта трансформация несовместима со способностью «Чистая душа».",
+    "description": "Выбранный народ получает от Пучины мрака дары, дающие следующие особенности:<bulletlist><bullet>способность «Невосприимчивость к мрачной хвори»;</bullet><bullet>воины на ландшафте <hyperlink>Мрака</hyperlink>:<bulletlist></bullet><bullet>получают + к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>восстанавливают + ед. <hyperlink>здоровья</hyperlink> за каждый <turn></turn> <hyperlink>ход</hyperlink> на глобальной карте.</bullet></bulletlist><bullet><hyperlink>Города</hyperlink> народа:<bulletlist></bullet><bullet>получают +1 <knowledge></knowledge> <hyperlink>Знания</hyperlink> и +1 <mana></mana> <hyperlink>Мана</hyperlink> за каждую провинцию с ландшафтом Мрака;</bullet><bullet>игнорируют штрафы к <happiness></happiness> <hyperlink> стабильности города</hyperlink>, вызванные ландшафтом Мрака.</bullet></bulletlist><bullet>Герои получают способность «Мрачный пастырь».</bullet></bulletlist><br></br>Эта трансформация несовместима со способностью «Чистая душа».",
     "name": "Мрачная плоть",
     "spell_slug": "Мрачная_плоть",
     "tier": 3,
@@ -1418,7 +1418,7 @@
     "upgrade_slug": "Храм_огня"
    },
    {
-    "description": "Выбранная <hyperlink>провинция</hyperlink>:<bulletlist><bullet>Вражеские воины получают 20 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>.</bullet><bullet>Провинция на <turn></turn> х. получает эффект «Буря священного пламени».</bullet><bullet>Если там есть <hyperlink>улучшение провинции</hyperlink>, принадлежащее врагу, оно будет <hyperlink>разграблено</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранная <hyperlink>провинция</hyperlink>:<bulletlist><bullet>Вражеские воины получают 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>.</bullet><bullet>Провинция на <turn></turn> х. получает эффект «Буря священного пламени».</bullet><bullet>Если там есть <hyperlink>улучшение провинции</hyperlink>, принадлежащее врагу, оно будет <hyperlink>разграблено</hyperlink>.</bullet></bulletlist>",
     "name": "Буря священного пламени",
     "spell_slug": "Буря_священного_пламени",
     "tier": 6,
@@ -1686,7 +1686,7 @@
   ],
   "initial_upgrades": [
    {
-    "upgrade_slug": "_conduit___Монастырь"
+    "upgrade_slug": "_farm___Монастырь"
    }
   ]
  },
@@ -2395,7 +2395,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>"
    },
    {
-    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 20 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>получает эффект «Приговор» на 5 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>получает эффект «Приговор» на 5 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
     "name": "Проклясть армию",
     "spell_slug": "Проклясть_армию",
     "tier": 7,
@@ -2443,7 +2443,7 @@
     "upgrade_slug": "Исцеляющие_шпили"
    },
    {
-    "description": "Воины под действием чар:<bulletlist><bullet>получают способность «Верный», снижающую стоимость <hyperlink>содержания воинов</hyperlink>;</bullet><bullet>получив смертельное ранение в первый раз, воин получает:<bulletlist></bullet><bullet>эффект «Стойкость» на 1 <turn></turn> х.;</bullet><bullet>эффект «Умиротворение» на 1 <turn></turn> х.</bullet></bulletlist></bulletlist>",
+    "description": "Воины под действием чар:<bulletlist><bullet>получают способность «Верный», снижающую стоимость <hyperlink>содержания воинов</hyperlink>;</bullet><bullet>получив смертельное ранение в первый раз, воин получает:<bulletlist></bullet><bullet>эффект «Стойкость» на 1 <turn></turn> х.;</bullet><bullet>эффект «Оглушение» на 1 <turn></turn> х.</bullet></bulletlist></bulletlist>",
     "name": "Знак хранителя",
     "spell_slug": "Знак_хранителя",
     "tier": 5,
@@ -2544,7 +2544,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 20 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>теряет 50% очки перемещения на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранная вражеская армия:<bulletlist><bullet>получает 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>теряет 50% очки перемещения на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
     "name": "Бремя вины",
     "spell_slug": "Бремя_вины",
     "tier": 3,
@@ -2800,7 +2800,7 @@
   "icon": "0000041B00001714",
   "skills": [
    {
-    "description": "Выбранная <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>Вражеские <hyperlink>воины</hyperlink> в провинции получают:<bulletlist></bullet><bullet>20 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>эффект «<statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектам</hyperlink>» (-5) на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist><bullet>В провинции появляются особенности ландшафта «<hyperlink>Снег</hyperlink>» и «<hyperlink>Лёд</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>», «<hyperlink>Грибные поля</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+    "description": "Выбранная <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>Вражеские <hyperlink>воины</hyperlink> в провинции получают:<bulletlist></bullet><bullet>3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>Теряют 25% от своих Очки перемещения на <hyperlink>Глобальная карта</hyperlink>.</bullet><bullet>В течении 1 <turn></turn> Ход <hyperlink>Глобальная карта</hyperlink> с начала боя подразделения в этой армии становятся Слепота на 3 <turn></turn> Ход.</bullet></bulletlist><bullet>В провинции появляются особенности ландшафта «<hyperlink>Снег</hyperlink>» и «<hyperlink>Лёд</hyperlink>».</bullet><bullet>Провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Луга</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Река</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>», «<hyperlink>Грибные поля</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
     "name": "Моментальная заморозка",
     "spell_slug": "Моментальная_заморозка",
     "tier": 5,
@@ -3384,7 +3384,7 @@
   "icon": "0000041B00001214",
   "skills": [
    {
-    "description": "Все воины в выбранной армии врага получают:<bulletlist><bullet>20 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>-1 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
+    "description": "Все воины в выбранной армии врага получают:<bulletlist><bullet>3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>-2 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
     "name": "Поток молний",
     "spell_slug": "Поток_молний",
     "tier": 3,
@@ -3451,9 +3451,8 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>"
    },
    {
-    "description": "Выбранный дружественный воин и ещё один в радиусе  кл. получают щит, дающий следующие особенности:<bulletlist><bullet>с базовой вероятностью % может применить к атакующим врагам эффект «Оглушение».</bullet><bullet>Действует <turn></turn> х.</bullet></bulletlist>",
+    "description": "Выбранный дружественный воин получает щит, дающий следующие особенности:<bulletlist><bullet>с базовой вероятностью % может применить к атакующим врагам эффект «Оглушение».</bullet><bullet>Действует <turn></turn> х.</bullet></bulletlist>",
     "name": "Статический щит",
-    "spell_slug": "Статический_щит",
     "tier": 3,
     "type": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>"
    },
@@ -3727,7 +3726,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Выбранный народ становится един с лесом и получает следующие особенности:<bulletlist><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>«Ходьба по лесам»;</bullet><bullet>«Лесной камуфляж».</bullet></bulletlist>",
+    "description": "Выбранный народ становится един с лесом и получает следующие особенности:<bulletlist><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>+2 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>«Ходьба по лесам»;</bullet><bullet>«Лесной камуфляж».</bullet></bulletlist>",
     "name": "Кожа-листва",
     "spell_slug": "Кожа-листва",
     "tier": 3,
@@ -3780,14 +3779,14 @@
   "icon": "0000041B000006BE",
   "skills": [
    {
-    "description": "Все воины в выбранной армии врага получают:<bulletlist><bullet>20 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>-3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
+    "description": "Все воины в выбранной армии врага получают:<bulletlist><bullet>3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>-2 <defensefrost></defensefrost> <hyperlink>Сопротивление холоду</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
     "name": "Снежная буря",
     "spell_slug": "Снежная_буря",
     "tier": 3,
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание для вражеской армии</hyperlink>"
    },
    {
-    "description": "Призывает <hyperlink>малого снежного духа</hyperlink> — застрельщика, чьи атаки применяют эффект «Заморожен».",
+    "description": "Призывает <hyperlink>малого снежного духа</hyperlink> — застрельщика, чьи атаки применяют эффект «Скорость снижена».",
     "name": "Призыв малого снежного духа",
     "spell_slug": "Призыв_малого_снежного_духа",
     "tier": 2,
@@ -4174,7 +4173,7 @@
     "type": "<hyperlink>Осадный проект</hyperlink>"
    },
    {
-    "description": "Дружественные воины в радиусе  кл.:<bulletlist><bullet>восстанавливают  ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляются от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+    "description": "Дружественные воины в радиусе  кл.:<bulletlist><bullet>восстанавливают  ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляются от отрицательных эффектов.</bullet></bulletlist>",
     "name": "Очистительное пламя",
     "spell_slug": "Очистительное_пламя",
     "tier": 5,
@@ -4538,7 +4537,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Атаки воинов под действием чар:<bulletlist><bullet>применяют эффект «Невезение».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+    "description": "Атаки воина:<bulletlist><bullet>с базовой вероятностью % может применить эффект «Невезение».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
     "name": "Знак невезения",
     "spell_slug": "Знак_невезения",
     "tier": 3,
@@ -4913,14 +4912,14 @@
   "icon": "0000042A0000060D",
   "skills": [
    {
-    "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+20 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>;</bullet><bullet>-10 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+20 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>;</bullet><bullet>-15 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet></bulletlist>",
     "name": "Ожившие инструменты",
     "spell_slug": "Ожившие_инструменты",
     "tier": 2,
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание для города</hyperlink>"
    },
    {
-    "description": "Базовые атаки воинов под действием чар в <hyperlink>ближнем бою</hyperlink>:<bulletlist><bullet>применяют эффект «Пробитая защита», снижающий <defense></defense> <hyperlink>защиту</hyperlink> врага;</bullet><bullet>получают способность «Сокрушитель», позволяющую разрушать укреплённые препятствия.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+    "description": "Базовые атаки воинов под действием чар в <hyperlink>ближнем бою</hyperlink>:<bulletlist><bullet>применяют эффект «Пробитая защита», снижающий <defense></defense> <hyperlink>защиту</hyperlink> врага</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
     "name": "Рассекающие клинки",
     "spell_slug": "Рассекающие_клинки",
     "tier": 2,
@@ -5001,7 +5000,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Выбранный вражеский воин получает  ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>, а также по  ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина со способностью «Верный» на поле боя (до 8).",
+    "description": "Выбранный вражеский воин получает  ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>, а также по  ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина со способностью «Верный» на поле боя (до 16).",
     "name": "Гнев верных",
     "spell_slug": "Гнев_верных",
     "tier": 2,

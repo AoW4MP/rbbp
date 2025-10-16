@@ -2254,7 +2254,7 @@
   "resid": 5003636902874,
   "tree_name": "<classDefender></classDefender> Защитник",
   "tree_pos_y": 650.0,
-  "description": "+30 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
+  "description": "+35 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
   "required_skills": [
    {
     "resid": 5003636903809
@@ -2274,7 +2274,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_vigor_ii",
-  "description": "+15 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
+  "description": "+20 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
   "required_skills": [
    {
     "resid": 5003636902843
@@ -2609,7 +2609,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 150.0,
   "id": "hs_defender_vigor_i",
-  "description": "+15 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
+  "description": "+20 к максимальному <hyperlink><hp></hp> здоровью</hyperlink>",
   "required_skills": [
    {
     "resid": 5003636903770
@@ -2855,23 +2855,6 @@
    },
    {
     "resid": 4995046965987
-   }
-  ]
- },
- {
-  "group_name": "Warrior - Hero Skill Group",
-  "icon": "0000048D00000FFA",
-  "type": "normal",
-  "resid": 5003636903929,
-  "tree_name": "<classWarrior></classWarrior> Воин",
-  "name": "Благословенный натиск",
-  "tree_pos_x": 200.0,
-  "tree_pos_y": 650.0,
-  "id": "hs_warrior_graceful_charge",
-  "description": "Атакуя <hyperlink>натиском</hyperlink> после перемещения, герой получает +1 ур. свойства «Благодать».",
-  "required_skills": [
-   {
-    "resid": 5003636903922
    }
   ]
  },
@@ -10941,7 +10924,7 @@
   "tree_pos_x": 150.0,
   "tree_pos_y": 350.0,
   "id": "hs_spellblade_spell_penetration",
-  "description": "Все атаки игнорируют 1 ед. <resistance></resistance> <hyperlink>сопротивления</hyperlink> и 1 ед. <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивления эффектам</hyperlink>.",
+  "description": "Все атаки игнорируют 3 ед. <resistance></resistance> <hyperlink>сопротивления</hyperlink> и 3 ед. <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивления эффектам</hyperlink>.",
   "required_skills": [
    {
     "resid": 5111011085218
@@ -12910,7 +12893,7 @@
   "name": "Заклинатель космоса",
   "hero_property": "Astral Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Пульсация хаоса» заменяется способностью «Пульсация космоса».</bullet><bullet>Даёт способность «Поток мудреца».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
+  "description": "<bulletlist><bullet>Способность «Пульсация хаоса» заменяется способностью «Пульсация космоса».</bullet><bullet>Даёт способность «Поток мудреца».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575303
@@ -13182,7 +13165,7 @@
   "name": "Заклинатель опустошения",
   "hero_property": "Chaos Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Пульсация хаоса» заменяется способностью «Пульсация опустошения», отчего число срабатывающих эффектов увеличивается с 1 до 2.</bullet><bullet>Даёт способность «Поток хаоса».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
+  "description": "<bulletlist><bullet>Способность «Пульсация хаоса» заменяется способностью «Пульсация опустошения», отчего число срабатывающих эффектов увеличивается с 1 до 2.</bullet><bullet>Даёт способность «Поток хаоса».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575303
@@ -13697,7 +13680,7 @@
   "name": "Скульптор плоти",
   "hero_property": "Nature Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Улучшенная одержимость».</bullet><bullet>Способность «Плетение из плоти» заменяется способностью «Лепка из плоти».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
+  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Улучшенная одержимость».</bullet><bullet>Способность «Плетение из плоти» заменяется способностью «Лепка из плоти».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575299
@@ -13969,7 +13952,7 @@
   "name": "Поработитель",
   "hero_property": "Order Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Тёмная истина» заменяется способностью «Невероятная истина».</bullet><bullet>Даёт способность «Манипулятор».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
+  "description": "<bulletlist><bullet>Способность «Тёмная истина» заменяется способностью «Невероятная истина».</bullet><bullet>Даёт способность «Манипулятор».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575294
@@ -14071,7 +14054,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -14086,7 +14069,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -14101,7 +14084,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -14116,7 +14099,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -14131,7 +14114,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -14146,7 +14129,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -14241,7 +14224,7 @@
   "name": "Пожиратель разума",
   "hero_property": "Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Тёмная истина» заменяется способностью «Невообразимая истина».</bullet><bullet>Даёт способность «Рассечение разума».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
+  "description": "<bulletlist><bullet>Способность «Тёмная истина» заменяется способностью «Невообразимая истина».</bullet><bullet>Даёт способность «Рассечение разума».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575294
@@ -14256,7 +14239,7 @@
   "name": "Мастер марионеток",
   "hero_property": "Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Марионеточная одержимость».</bullet><bullet>Способность «Тёмный захват разума» заменяется способностью «Марионеточное подчинение».<br></br><br></br>Содержание воинов становится дороже на 20 ед. <mana></mana> <hyperlink>маны</hyperlink>.</bullet>",
+  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Марионеточная одержимость».</bullet><bullet>Способность «Тёмный захват разума» заменяется способностью «Марионеточное подчинение».<br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.</bullet>",
   "required_skills": [
    {
     "resid": 5046586575299
@@ -14462,7 +14445,7 @@
   "name": "Безумный маг",
   "hero_property": "Astral/Chaos Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Даёт способности:<bulletlist><bullet>«Пульсация хаоса»;</bullet><bullet>«Поток мастера».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 10 ед. <mana></mana> <hyperlink>маны</hyperlink>."
+  "description": "Даёт способности:<bulletlist><bullet>«Пульсация хаоса»;</bullet><bullet>«Поток мастера».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>."
  },
  {
   "resid": 5046586575294,
@@ -14472,7 +14455,7 @@
   "name": "Разрушение разума",
   "hero_property": "Order/Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Даёт способности:<bulletlist><bullet>«Тёмная истина»;</bullet><bullet>«Тёмная брешь».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 10 ед. <mana></mana> <hyperlink>маны</hyperlink>."
+  "description": "Даёт способности:<bulletlist><bullet>«Тёмная истина»;</bullet><bullet>«Тёмная брешь».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>."
  },
  {
   "resid": 5046586575299,
@@ -14482,6 +14465,6 @@
   "name": "Ткач плоти",
   "hero_property": "Shadow/Nature Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Даёт способности:<bulletlist><bullet>«Одержимость»;</bullet><bullet>«Плетение из плоти».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 10 ед. <mana></mana> <hyperlink>маны</hyperlink>."
+  "description": "Даёт способности:<bulletlist><bullet>«Одержимость»;</bullet><bullet>«Плетение из плоти».</bullet></bulletlist><br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>."
  }
 ]

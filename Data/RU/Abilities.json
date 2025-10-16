@@ -12,7 +12,7 @@
     "count": 1
    }
   ],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000004C000000519",
   "damage": "9<damagephysical></damagephysical> 9<damagespirit></damagespirit> 9<damagefrost></damagefrost> ",
@@ -128,6 +128,12 @@
   "icon": "0000039F000028E0"
  },
  {
+  "description": "-30% урона для <hyperlink>Натиск</hyperlink>.",
+  "name": "Атака натиском: уменьшение урона",
+  "slug": "cbe7688b0000023f",
+  "icon": "CBE7688B00000244"
+ },
+ {
   "description": "В конце хода этого воина вражеские воины по соседству теряют -5 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink><br></br><br></br>Не действует на воинов с этой способностью.",
   "name": "Аура ужаса",
   "slug": "000003e3000060d4",
@@ -218,16 +224,16 @@
   "icon": "0000048B00000C78"
  },
  {
-  "description": "Воин получает способность «Инерция удара».",
-  "name": "Медаль чемпиона: инерция удара",
-  "slug": "000003e300006288",
-  "icon": "000003E30000627B"
- },
- {
   "description": "Атаки этого воина дополнительно наносят 10% урона.",
   "name": "+10% к урону",
   "slug": "0000048b00000c74",
   "icon": "0000048B00000C78"
+ },
+ {
+  "description": "Воин получает способность «Инерция удара».",
+  "name": "Медаль чемпиона: инерция удара",
+  "slug": "000003e300006288",
+  "icon": "000003E30000627B"
  },
  {
   "description": "Максимальная <defense></defense> <hyperlink>защита</hyperlink> этого воина увеличивается на 1.",
@@ -280,10 +286,10 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 50 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляется от всех отрицательных эффектов.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 50 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Исцеление",
   "slug": "light_heal_ability_000004C0000004F3",
   "damage": "",
@@ -484,7 +490,7 @@
   "description": "Выпускает волшебную стрелу в выбранного вражеского воина.",
   "name": "Сияющие снаряды",
   "slug": "magic_bolts_ability_000004C0000004E9",
-  "damage": "7<damagefire></damagefire> 7<damagespirit></damagespirit> ",
+  "damage": "6<damagefire></damagefire> 6<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -511,7 +517,7 @@
   "description": "Выбранный воин:<bulletlist><bullet>получает урон;</bullet><bullet>теряет все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist><br></br>Воины по соседству с целью:<bulletlist><bullet>получают 50% урона;</bullet><bullet>теряют <hyperlink>положительные эффекты</hyperlink> (до 2).</bullet></bulletlist>",
   "name": "Очистительный взрыв",
   "slug": "purifying_blast_ability_000004C0000004E9",
-  "damage": "20<damagefire></damagefire> 20<damagespirit></damagespirit> ",
+  "damage": "9<damagefire></damagefire> 9<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -537,7 +543,7 @@
   "icon": "000003E300004C87"
  },
  {
-  "description": "Этот воин может летать:<bulletlist><bullet>+2 к радиусу обзора.</bullet><bullet>Перемещение по любому ландшафту стоит 5.</bullet><bullet>Для перемещения над водой требуется знание мореходства.</bullet><bullet>Во время сражения воин может свободно миновать большинство других воинов и препятствий.</bullet></bulletlist>",
+  "description": "Этот воин может летать:<bulletlist><bullet>+1 к радиусу обзора.</bullet><bullet>Перемещение по любому ландшафту стоит 5.</bullet><bullet>Для перемещения над водой требуется знание мореходства.</bullet><bullet>Во время сражения воин может свободно миновать большинство других воинов и препятствий.</bullet></bulletlist>",
   "name": "Летающий",
   "slug": "000003eb0000071b",
   "icon": "00000357000001A5"
@@ -556,7 +562,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000004C0000004AB",
   "damage": "9<damagephysical></damagephysical> 9<damagefire></damagefire> 9<damagespirit></damagespirit> ",
@@ -842,7 +848,7 @@
     "count": 1
    },
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    }
@@ -1178,7 +1184,7 @@
     "count": 1
    }
   ],
-  "description": "Атака натиском, при которой воин передвигается на 2 кл. вперёд:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
+  "description": "Атака натиском, при которой воин передвигается на 2 кл. вперёд:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Натиск в полёте",
   "slug": "flyby_melee_charge_ability_0000049700002D02",
   "damage": "21<damagephysical></damagephysical> ",
@@ -1280,7 +1286,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000049700002A6F",
   "damage": "19<damagefrost></damagefrost> 11<damagephysical></damagephysical> ",
@@ -1380,6 +1386,17 @@
   "slug": "Frost_resistance_6"
  },
  {
+  "description": "Скорость воина:<bulletlist><bullet>Глобальная карта — 40 оч. движения;</bullet><bullet>Сражение — 5 оч. движения.</bullet></bulletlist>",
+  "name": "Высокая скорость",
+  "slug": "000003e300004f29"
+ },
+ {
+  "description": "На 1 <turn></turn> х. даёт:<bulletlist><bullet>+2 к очкам движения;</bullet><bullet>«Неуловимый»</bullet></bulletlist>",
+  "name": "Бег",
+  "slug": "000003e3000054ec",
+  "icon": "000003E3000054EB"
+ },
+ {
   "modifiers": [
    {
     "description": "+40% к урону против <hyperlink>всадников</hyperlink> и <hyperlink>крупных целей</hyperlink>.",
@@ -1436,7 +1453,7 @@
   "icon": "000004970000286B"
  },
  {
-  "description": "Конструкция со следующими особенностями:<bulletlist><bullet>способность «Укреплённая защита»;</bullet><bullet>-4 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>;</bullet><bullet>2 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>способность «Бездушие»;</bullet><bullet>способность «Невосприимчивость: Потеря контроля»;</bullet><bullet>невосприимчивость к эффектам:<bulletlist></bullet><bullet>«Кровотечение»;</bullet><bullet>«Болезнь»;</bullet><bullet>«Рассеянный»;</bullet><bullet>«Отравление».</bullet></bulletlist>",
+  "description": "Конструкция со следующими особенностями:<bulletlist><bullet>способность «Укреплённая защита»;</bullet><bullet>-4 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>;</bullet><bullet>2 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>способность «Бездушие»;</bullet><bullet>способность «Невосприимчивость: Потеря контроля»;</bullet><bullet>невосприимчивость к эффектам:<bulletlist></bullet><bullet>«Кровотечение»;</bullet><bullet>«Болезнь»;</bullet><bullet>«Рассеянный»;</bullet><bullet>«Отравление»;</bullet><bullet>Не могут быть подняты как зомби во время боя.</bullet></bulletlist>",
   "name": "Конструкция",
   "slug": "000003e3000071ff",
   "icon": "000003E3000071FD"
@@ -1514,7 +1531,7 @@
  },
  {
   "modifiers": [],
-  "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Сотрясающий натиск",
   "slug": "melee_charge_strike_(base)_ability_0000049700002864",
   "damage": "18<damagephysical></damagephysical> ",
@@ -1708,7 +1725,7 @@
   "icon": "0000048D00000207"
  },
  {
-  "description": "Вражеские воины в радиусе 2 кл.:<bulletlist><bullet>получают 10 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 30% на 1 <turn></turn> х. получают эффект «Заморожен». В случае неудачи к ним на <turn></turn> х. применяется эффект «Скорость снижена».</bullet></bulletlist>",
+  "description": "Вражеские воины в радиусе 2 кл.:<bulletlist><bullet>получают 10 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 30% на 2 <turn></turn> х. получают эффект «Скорость снижена»</bullet></bulletlist>",
   "name": "Леденящий туман",
   "slug": "0000049700002668",
   "icon": "00000497000025DE"
@@ -1727,7 +1744,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700002492",
   "damage": "21<damagephysical></damagephysical> ",
@@ -1918,7 +1935,7 @@
  },
  {
   "modifiers": [],
-  "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Опустошительный натиск",
   "slug": "melee_charge_strike_(base)_ability_0000049700001835",
   "damage": "10<damagephysical></damagephysical> 8<damagefire></damagefire> ",
@@ -2128,7 +2145,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700000FAD_0000049700000fb5",
   "damage": "24<damagephysical></damagephysical> ",
@@ -2150,16 +2167,9 @@
   "icon": "000003EB0000040D"
  },
  {
-  "modifiers": [
+  "notes": [
    {
-    "description": "Игнорирует 50% от <defense></defense> <hyperlink>защиты</hyperlink> цели.",
-    "name": "Бронебойная атака",
-    "count": 1
-   },
-   {
-    "description": "Игнорирует 50% от <resistance></resistance> <hyperlink>сопротивления</hyperlink> цели.",
-    "name": "Пробивная атака",
-    "count": 1
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
   "description": "Наносит урон выбранному воину.",
@@ -2180,15 +2190,10 @@
   "accuracy": "100%",
   "actionPoints": "<fullaction></fullaction>",
   "range": "1",
-  "notes": [
-   {
-    "note": "Перезарядка: 2 <turn></turn>"
-   }
-  ],
   "icon": "00000497000010A8"
  },
  {
-  "description": "Атаки воина (кроме атак с фланга) наносят дополнительный урон в зависимости от уровня <hyperlink>преданности</hyperlink>:<bulletlist><bullet><devotion3></devotion3> Идеал: +5 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion2></devotion2> Ревнитель: +4 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion1></devotion1> Неофит: +3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion0></devotion0> Нейтралитет: +2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion-1></devotion-1> Клятвопреступник: -20% от урона.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воина (кроме атак с фланга) наносят дополнительный урон в зависимости от уровня <hyperlink>преданности</hyperlink>:<bulletlist><bullet><devotion3></devotion3> Идеал: +3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion2></devotion2> Ревнитель: +2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion1></devotion1> Неофит: +1 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion0></devotion0> Нейтралитет: +0 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet><devotion-1></devotion-1> Клятвопреступник: -20% от урона.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Благородство",
   "slug": "00000497000010f9",
   "icon": "0000049700001106"
@@ -2248,7 +2253,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может на 3 <turn></turn> х. применить эффект «Слабость».",
+    "description": "Применяет эффект «Слабость» на 3 <turn></turn> х.",
     "name": "Слабость",
     "count": 1
    }
@@ -2256,7 +2261,7 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_0000049700000DE0",
-  "damage": "5<damageblight></damageblight> 5<damagefrost></damagefrost> ",
+  "damage": "7<damageblight></damageblight> 7<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Перемещение"
@@ -2367,7 +2372,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700000CD6",
   "damage": "24<damagephysical></damagephysical> ",
@@ -2446,7 +2451,7 @@
     "count": 1
    },
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    }
@@ -2530,7 +2535,7 @@
     "count": 1
    },
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    }
@@ -2614,7 +2619,7 @@
     "count": 1
    },
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    }
@@ -2888,7 +2893,7 @@
   "description": "Вражеские воины на линии длиной 4 кл. и шириной 3 кл.:<bulletlist><bullet>получают урон;</bullet><bullet>получают эффект «Слабость» (2) на 3 <turn></turn> х.;</bullet><bullet>получают эффект «Сожаление» (3) на 3 </bullet></bulletlist><turn></turn> х.",
   "name": "Оскверняющий луч",
   "slug": "ray_of_corruption_ability_0000049000002900",
-  "damage": "20<damagespirit></damagespirit> 20<damagefrost></damagefrost> ",
+  "damage": "15<damagespirit></damagespirit> 15<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ослабление"
@@ -2959,11 +2964,6 @@
  {
   "modifiers": [
    {
-    "description": "Атаки применяют эффект «Приговор».",
-    "name": "Приговор",
-    "count": 1
-   },
-   {
     "description": "Применяет эффект «Пробитая защита» на 3 <turn></turn> х.",
     "name": "Пробитая защита",
     "count": 1
@@ -2977,7 +2977,7 @@
   "description": "Наносит урон вражеским воинам в конусе размером 2 кл. Воины под воздействием эффекта «Приговор» получают на 20% ед. больше урона.",
   "name": "Божественное рассечение",
   "slug": "divine_sundering_ability_00000490000028FF",
-  "damage": "25<damagefire></damagefire> 25<damagespirit></damagespirit> ",
+  "damage": "20<damagefire></damagefire> 20<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -2994,7 +2994,7 @@
   "range": "1",
   "notes": [
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
   "icon": "000004C00000049C"
@@ -3005,7 +3005,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Все дружественные воины в радиусе 2 кл.:<bulletlist><bullet>восстанавливают 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают 1 уровень эффекта «Благодать».</bullet></bulletlist>",
+  "description": "Все дружественные воины в радиусе 2 кл.:<bulletlist><bullet>восстанавливают 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают 1 уровень эффекта «Благодать».</bullet></bulletlist>",
   "name": "Благодать ангела",
   "slug": "angelic_grace_ability_00000490000028FF",
   "damage": "",
@@ -3015,7 +3015,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<freeaction></freeaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "0",
   "icon": "000004C0000004A5"
  },
@@ -3073,7 +3073,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 40 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают способность «Предвидение».</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают способность «Предвидение».</bullet></bulletlist>",
   "name": "Знамение исцеления",
   "slug": "healing_portent_ability_00000490000028E0",
   "damage": "",
@@ -3102,9 +3102,9 @@
     "requisite": "Поддержка"
    }
   ],
-  "accuracy": "Всегда попадает в цель",
+  "accuracy": "85%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
+  "range": "0",
   "icon": "0000049700002AD0"
  },
  {
@@ -3146,30 +3146,19 @@
   "icon": "000003BD000020C9"
  },
  {
-  "modifiers": [],
-  "description": "Наносит урон выбранному воину, после чего встаёт в <hyperlink>защитную позицию</hyperlink>.",
-  "name": "Кара",
-  "slug": "smite_ability_00000490000028DE",
-  "damage": "20<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
-  "requisites": [
-   {
-    "requisite": "Ближний бой"
-   },
-   {
-    "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
-   }
-  ],
-  "accuracy": "100%",
-  "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "1",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
+  "description": "Наносит урон выбранному воину, после чего встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "name": "Кара",
+  "slug": "smite_ability_00000490000028DE",
+  "damage": "17<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
+  "requisites": [],
+  "accuracy": "100%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "1",
   "icon": "0000049700002A8B"
  },
  {
@@ -4076,7 +4065,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000176d",
   "damage": "16<damagephysical></damagephysical> ",
@@ -4102,7 +4091,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d00001785",
   "damage": "16<damagephysical></damagephysical> ",
@@ -4122,7 +4111,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000178f",
   "damage": "16<damagephysical></damagephysical> ",
@@ -4142,7 +4131,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d00001797",
   "damage": "16<damagephysical></damagephysical> ",
@@ -4162,7 +4151,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000179d",
   "damage": "16<damagephysical></damagephysical> ",
@@ -4182,7 +4171,7 @@
  },
  {
   "modifiers": [],
-  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d000017a1",
   "damage": "16<damagephysical></damagephysical> ",
@@ -5208,9 +5197,6 @@
   "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
-    "requisite": "Ближний бой"
-   },
-   {
     "requisite": "Перемещение"
    }
   ],
@@ -5220,7 +5206,7 @@
   "icon": "00000497000010C0"
  },
  {
-  "description": "Если дружественные воины не имеют численного преимущества над врагом, воин в начале своего хода получает способность «Ярость воителя» до конца боя.<br></br><br></br>Способность «Ярость воителя» увеличивает урон от атак в зависимости от уровня <hyperlink>преданности</hyperlink>:<bulletlist><bullet><devotion3></devotion3> Идеал: +5 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion2></devotion2> Ревнитель: +4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion1></devotion1> Неофит: +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion0></devotion0> Нейтралитет: +2 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion-1></devotion-1> Клятвопреступник: «Ярость воителя» не действует, атаки наносят на 20% меньше урона.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Если дружественные воины не имеют численного преимущества над врагом, воин в начале своего хода получает способность «Ярость воителя» до конца хода.<br></br><br></br>Способность «Ярость воителя» увеличивает урон от атак в зависимости от уровня <hyperlink>преданности</hyperlink>:<bulletlist><bullet><devotion3></devotion3> Идеал: +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion2></devotion2> Ревнитель: +2 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion1></devotion1> Неофит: +1 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion0></devotion0> Нейтралитет: +0 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet><devotion-1></devotion-1> Клятвопреступник: «Ярость воителя» не действует, атаки наносят на 20% меньше урона.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Душа воина",
   "slug": "00000497000010ff",
   "icon": "0000049700001107"
@@ -5259,6 +5245,22 @@
   "icon": "000003BD000020CE"
  },
  {
+  "modifiers": [],
+  "description": "Наносит урон врагам по линии в 3 кл.",
+  "name": "Прямой выстрел",
+  "slug": "line_shot_ability_0000049000000E8D_0000049700000fb2",
+  "damage": "28<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Дистанционная атака"
+   },
+   {
+    "requisite": "Основная атака"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "2",
   "notes": [
    {
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
@@ -5267,18 +5269,6 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Наносит урон врагам по линии в 3 кл.",
-  "name": "Прямой выстрел",
-  "slug": "line_shot_ability_0000049000000E8D_0000049700000fb2",
-  "damage": "24<damagephysical></damagephysical> ",
-  "requisites": [
-   {
-    "requisite": "Дистанционная атака"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
   "icon": "0000049700001085"
  },
  {
@@ -5410,7 +5400,14 @@
   "icon": "000003BD0000210B"
  },
  {
-  "modifiers": [],
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Перезарядка: 3 <turn></turn>"
+   }
+  ],
   "description": "Наносит урон и применяет эффект «Печать передачи», который на 3 <turn></turn> х. связывает воинов между собой.",
   "name": "Печать передачи",
   "slug": "magic_seal_ability_0000049000000E8C_0000049700000fb5",
@@ -5431,15 +5428,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
-    "note": "Перезарядка: 3 <turn></turn>"
-   }
-  ]
+  "range": "6"
  },
  {
   "modifiers": [],
@@ -5508,7 +5497,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
-  "description": "Наносит выбранному воину урон и снимает с него 1 <hyperlink>положительный эффект</hyperlink>.",
+  "description": "Наносит выбранному воину урон и снимает с него 1 (90%) <hyperlink>положительный эффект</hyperlink>.",
   "name": "Очищающий взрыв",
   "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb2",
   "damage": "14<damagespirit></damagespirit> ",
@@ -5534,10 +5523,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
   "name": "Обет исцеления",
   "slug": "vow_of_healing_ability_0000049000000E8B_0000049700000fb2",
   "damage": "",
@@ -5557,10 +5546,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>получает эффект «Защита от эффектов» (3) на 3 <turn></turn> х.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 отрицательных эффектов.</bullet><bullet>получает 3 Защита от эффектов на 3 <turn></turn>х</bullet></bulletlist>",
   "name": "Обет очищения",
   "slug": "vow_of_purification_ability_0000049000000E8B_0000049700000fb2",
   "damage": "",
@@ -5581,8 +5570,15 @@
   "icon": "000003E30000627B"
  },
  {
-  "modifiers": [],
-  "description": "Наносит выбранному воину урон и снимает с него 1 <hyperlink>положительный эффект</hyperlink>.",
+  "notes": [
+   {
+    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
+   },
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
+  "description": "Наносит выбранному воину урон и снимает с него 1 (90%) <hyperlink>положительный эффект</hyperlink>.",
   "name": "Очищающий взрыв",
   "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb5",
   "damage": "14<damagespirit></damagespirit> ",
@@ -5600,14 +5596,6 @@
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
   "icon": "000003E600000566"
  },
  {
@@ -5616,10 +5604,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
   "name": "Обет исцеления",
   "slug": "vow_of_healing_ability_0000049000000E8B_0000049700000fb5",
   "damage": "",
@@ -5639,10 +5627,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>получает эффект «Защита от эффектов» (3) на 3 <turn></turn> х.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 отрицательных эффектов.</bullet><bullet>получает 3 Защита от эффектов на 3 <turn></turn>х</bullet></bulletlist>",
   "name": "Обет очищения",
   "slug": "vow_of_purification_ability_0000049000000E8B_0000049700000fb5",
   "damage": "",
@@ -5665,7 +5653,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
-  "description": "Наносит выбранному воину урон и снимает с него 1 <hyperlink>положительный эффект</hyperlink>.",
+  "description": "Наносит выбранному воину урон и снимает с него 1 (90%) <hyperlink>положительный эффект</hyperlink>.",
   "name": "Очищающий взрыв",
   "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb8",
   "damage": "14<damagespirit></damagespirit> ",
@@ -5691,10 +5679,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Дружественные воины в радиусе 1 кл. восстанавливают 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
   "name": "Обет исцеления",
   "slug": "vow_of_healing_ability_0000049000000E8B_0000049700000fb8",
   "damage": "",
@@ -5714,10 +5702,10 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>получает эффект «Защита от эффектов» (3) на 3 <turn></turn> х.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 отрицательных эффектов.</bullet><bullet>получает 3 Защита от эффектов на 3 <turn></turn>х</bullet></bulletlist>",
   "name": "Обет очищения",
   "slug": "vow_of_purification_ability_0000049000000E8B_0000049700000fb8",
   "damage": "",
@@ -5763,9 +5751,6 @@
    },
    {
     "requisite": "Ближний бой"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -5816,9 +5801,6 @@
    },
    {
     "requisite": "Ближний бой"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -5863,9 +5845,6 @@
    },
    {
     "requisite": "Ближний бой"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -6010,7 +5989,14 @@
   "icon": "0000045E0000085B"
  },
  {
-  "modifiers": [],
+  "notes": [
+   {
+    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
+   },
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
   "description": "Выпускает стрелы в выбранного вражеского воина.",
   "name": "Выстрелить из лука",
   "slug": "wayfarer_shoot_bow_ability_0000049000000E88_0000049700000fb5",
@@ -6026,14 +6012,6 @@
   "accuracy": "90%",
   "actionPoints": "<repeatingaction></repeatingaction>",
   "range": "4",
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
   "icon": "000003BD000020CE"
  },
  {
@@ -6085,7 +6063,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Слабость».",
+    "description": "Применяет эффект «Слабость» на 3 <turn></turn> х.",
     "name": "Слабость",
     "count": 1
    }
@@ -6543,7 +6521,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_primal_mammoth_ability_0000049000000424",
   "damage": "21<damagefrost></damagefrost> ",
@@ -6646,7 +6624,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Болотного крокодила:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Болотного крокодила» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>применяют эффект «Болезнь».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Болотного крокодила».</bullet></bulletlist>",
+  "description": "Воин получил благословение Болотного крокодила:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Болотного крокодила» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>применяют эффект «Болезнь».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Болотного крокодила».</bullet></bulletlist>",
   "name": "Дар Болотного крокодила",
   "slug": "00000497000001d0",
   "icon": "00000497000001D1"
@@ -6697,7 +6675,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Штормового ворона:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Штормового ворона» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносят 4 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink> вражеским воинам по соседству.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Штормового ворона».</bullet></bulletlist>",
+  "description": "Воин получил благословение Штормового ворона:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Штормового ворона» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносят 4 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink> вражеским воинам по соседству.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Штормового ворона».</bullet></bulletlist>",
   "name": "Дар Штормового ворона",
   "slug": "00000497000001f7",
   "icon": "0000049700000145"
@@ -6742,7 +6720,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Ледового мамонта:<bulletlist><bullet>каждая атака повышает уровень особенности «Растущая ярость»;</bullet><bullet>при достижении 5 уровня она превращается в способность «Ярость Ледового мамонта» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +4 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 30% могут применить эффект «Заморожен».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Ледового мамонта».</bullet></bulletlist>",
+  "description": "Воин получил благословение Ледового мамонта:<bulletlist><bullet>каждая атака повышает уровень особенности «Растущая ярость»;</bullet><bullet>при достижении 3 уровня она превращается в способность «Ярость Ледового мамонта» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +4 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 30% могут применить эффект «Заморожен».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Ледового мамонта».</bullet></bulletlist>",
   "name": "Дар Ледового мамонта",
   "slug": "0000049700000204",
   "icon": "0000049700000205"
@@ -6781,7 +6759,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Пепельного смилодона:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Пепельного смилодона» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносят 4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> другому вражескому воину на расстоянии до 2 кл.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
+  "description": "Воин получил благословение Пепельного смилодона:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Пепельного смилодона» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносят 4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> другому вражескому воину на расстоянии до 2 кл.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
   "name": "Дар Пепельного смилодона",
   "slug": "00000497000001dd",
   "icon": "00000497000001DE"
@@ -6820,7 +6798,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Песчаного змея:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Песчаного змея» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +4 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>применяют эффект «Слепота» на 1 <turn></turn> х.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Песчаного змея».</bullet></bulletlist>",
+  "description": "Воин получил благословение Песчаного змея:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Песчаного змея» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +4 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>применяют эффект «Слепота» на 1 <turn></turn> х.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности «Ярость Песчаного змея».</bullet></bulletlist>",
   "name": "Дар Песчаного змея",
   "slug": "00000497000001ea",
   "icon": "00000497000001EB"
@@ -6859,7 +6837,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Подземного паука:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Подземного паука» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>получают способность «Вампиризм».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
+  "description": "Воин получил благословение Подземного паука:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Подземного паука» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>получают способность «Вампиризм».</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
   "name": "Дар Подземного паука",
   "slug": "0000049700000211",
   "icon": "0000049700000212"
@@ -6898,7 +6876,7 @@
   "icon": "000003BD000020CE"
  },
  {
-  "description": "Воин получил благословение Лесного волка:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 5 уровня она превращается в способность «Ярость Лесного волка» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>+2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина по соседству с целью.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
+  "description": "Воин получил благословение Лесного волка:<bulletlist><bullet>Каждая атака повышает уровень особенности «Растущая ярость».</bullet><bullet>При достижении 3 уровня она превращается в способность «Ярость Лесного волка» того же уровня. Базовые атаки воина:<bulletlist></bullet><bullet>наносят +3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>+2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина по соседству с целью.</bullet></bulletlist><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
   "name": "Дар Лесного волка",
   "slug": "0000049700000137",
   "icon": "0000049700000145"
@@ -7338,7 +7316,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dc",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7362,12 +7340,12 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Болотного крокодила",
     "count": 1
    }
@@ -7382,6 +7360,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7402,7 +7383,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002df",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7426,12 +7407,12 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Штормового ворона",
     "count": 1
    }
@@ -7446,6 +7427,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7466,7 +7450,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e1",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7490,12 +7474,12 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Ледового мамонта",
     "count": 1
    }
@@ -7510,6 +7494,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7530,7 +7517,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dd",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7554,13 +7541,13 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
-    "name": "Первобытный дар",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
+    "name": "Дар Пепельного смилодона",
     "count": 1
    }
   ],
@@ -7574,6 +7561,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7594,7 +7584,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002de",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7618,12 +7608,12 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Песчаного змея",
     "count": 1
    }
@@ -7638,6 +7628,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7658,7 +7651,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e0",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7682,12 +7675,12 @@
  {
   "modifiers": [
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    },
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Подземного паука",
     "count": 1
    }
@@ -7702,6 +7695,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7722,7 +7718,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002db",
   "damage": "21<damagephysical></damagephysical> ",
@@ -7746,12 +7742,12 @@
  {
   "modifiers": [
    {
-    "description": "При использовании даёт 1 ур. особенности «Растущая ярость».",
+    "description": "При использовании даёт 2 ур. особенности «Растущая ярость».",
     "name": "Дар Лесного волка",
     "count": 1
    },
    {
-    "description": "+20% к урону за каждую пройденную клетку (до 3 кл.)",
+    "description": "+30% к урону за каждую пройденную клетку (до 3 кл.)",
     "name": "Инерция",
     "count": 1
    }
@@ -7766,6 +7762,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -7846,7 +7845,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
@@ -7934,7 +7933,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
@@ -8016,7 +8015,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
@@ -8098,7 +8097,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
@@ -8180,7 +8179,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
@@ -8262,7 +8261,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
@@ -8344,7 +8343,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 3 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
@@ -9115,7 +9114,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(elephant_mammoth_only)_00000490000002C1",
   "damage": "24<damagephysical></damagephysical> ",
@@ -9174,7 +9173,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(elephant_mammoth_only)_00000490000002C0",
   "damage": "21<damagephysical></damagephysical> ",
@@ -9253,6 +9252,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -9349,10 +9351,16 @@
   "description": "Наносит урон в конусе размером 1 кл.",
   "name": "Замах",
   "slug": "swipe_ability_0000049000000027",
-  "damage": "26<damagephysical></damagephysical> ",
+  "damage": "34<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -9392,23 +9400,30 @@
   "icon": "000003BD000020C9"
  },
  {
-  "notes": [
-   {
-    "note": "Перезарядка: 1 <turn></turn>"
-   }
-  ],
+  "modifiers": [],
   "description": "Наносит урон в конусе размером 1 кл.",
   "name": "Замах",
   "slug": "swipe_ability_0000049000000026",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
+  "notes": [
+   {
+    "note": "Перезарядка: 1 <turn></turn>"
+   }
+  ],
   "icon": "000003E30000728A"
  },
  {
@@ -9432,23 +9447,30 @@
   "icon": "000003BD000020C9"
  },
  {
-  "notes": [
-   {
-    "note": "Перезарядка: 1 <turn></turn>"
-   }
-  ],
+  "modifiers": [],
   "description": "Наносит урон в конусе размером 1 кл.",
   "name": "Замах",
   "slug": "swipe_ability_0000049000000025",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
+  "notes": [
+   {
+    "note": "Перезарядка: 1 <turn></turn>"
+   }
+  ],
   "icon": "000003E30000728A"
  },
  {
@@ -9712,10 +9734,10 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 0 <turn></turn>"
    }
   ],
-  "description": "Привязывается к выбранному дружественному <hyperlink>герою</hyperlink>:<bulletlist><bullet>урон, полученный связанным воином, переходит к этому воину, уменьшаясь при этом на 25%;</bullet><bullet>в начале каждого хода связанный воин получает эффект «Дополнительная сила».</bullet></bulletlist>",
+  "description": "Привязывается к выбранному дружественному <hyperlink>герою</hyperlink>:<bulletlist><bullet>урон получают оба воина, но уменьшенный на 40%;</bullet><bullet>в начале каждого хода связанный воин получает эффект «Дополнительная сила».</bullet></bulletlist>",
   "name": "Клятвенная связь",
   "slug": "sworn_bond_ability_0000048D00001227_0000048d00001220",
   "damage": "",
@@ -9728,7 +9750,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 30% может на 3 <turn></turn> х. применить эффект «Пробитая защита».",
+    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Пробитая защита».",
     "name": "Пробитая защита",
     "count": 1
    },
@@ -9766,7 +9788,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 30% может на 3 <turn></turn> х. применить эффект «Пробитая защита».",
+    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Пробитая защита».",
     "name": "Пробитая защита",
     "count": 1
    },
@@ -9812,10 +9834,10 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d000011e2",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "21<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9840,17 +9862,11 @@
   "icon": "0000048D000012E5"
  },
  {
-  "description": "Воин дополнительно наносит -6 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>, если по соседству с целью стоит ещё один враг.",
-  "name": "Разделитель",
-  "slug": "0000048d000011fb",
-  "icon": "0000048D00001201"
- },
- {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d00001220",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "21<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9933,7 +9949,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<leaveoneaction></leaveoneaction>",
-  "range": "4",
+  "range": "1",
   "icon": "0000048D000006F9"
  },
  {
@@ -9952,7 +9968,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<fullaction></fullaction>",
   "range": "1",
   "icon": "0000048D00000728"
  },
@@ -10170,7 +10186,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_00000489000013E2",
   "damage": "21<damagephysical></damagephysical> ",
@@ -10401,7 +10417,7 @@
     "count": 1
    }
   ],
-  "description": "Атака натиском, наносящая урон всем врагам в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Атака натиском, наносящая урон всем врагам в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Зверский натиск",
   "slug": "savage_charge_ability_000004890000137A",
   "damage": "30<damagephysical></damagephysical> ",
@@ -10469,7 +10485,7 @@
     "count": 1
    }
   ],
-  "description": "Атака натиском на выбранного вражеского воина наносит врагам по соседству с целью 50% от урона.<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Атака натиском на выбранного вражеского воина наносит врагам по соседству с целью 50% от урона.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Кристаллический натиск",
   "slug": "melee_charge_strike_(base)_ability_0000048900001376",
   "damage": "17<damagephysical></damagephysical> 17<damagelightning></damagelightning> ",
@@ -10843,7 +10859,7 @@
  },
  {
   "notes": [],
-  "description": "Привязывается к выбранному дружественному воину:<bulletlist><bullet>урон, полученный связанным воином, переходит к этому воину, уменьшаясь при этом на 35%;</bullet><bullet>в начале каждого хода оба воина получают эффект «Благодать».</bullet></bulletlist><br></br>Пока связь действует, воин получает способность «Вернуть маску процветания».",
+  "description": "Привязывается к выбранному дружественному воину:<bulletlist><bullet>урон получают оба воина, но уменьшенный на 45%;</bullet><bullet>в начале каждого хода оба воина получают эффект «Благодать».</bullet></bulletlist><br></br>Пока связь действует, воин получает способность «Вернуть маску процветания».",
   "name": "Даровать маску процветания",
   "slug": "bestow_mask_of_prosperity_ability_0000048900001231",
   "damage": "",
@@ -11328,9 +11344,14 @@
     "description": "Оттесняет атакованную цель и перемещается на её клетку.",
     "name": "Оттеснить и заместить",
     "count": 1
+   },
+   {
+    "description": "Рассеивает у целей <hyperlink>положительные эффекты</hyperlink> (2) с вероятностью 90%.",
+    "name": "Рассеивание положительных эффектов",
+    "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Проклятый натиск",
   "slug": "melee_charge_strike_(base)_ability_0000048900001224",
   "damage": "10<damagephysical></damagephysical> 6<damagefire></damagefire> 6<damagefrost></damagefrost> ",
@@ -11471,19 +11492,16 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "2",
+  "range": "3",
   "icon": "0000048B000001B6"
  },
  {
   "notes": [
    {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Воин:<bulletlist><bullet>восстанавливает 15 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink> (2);</bullet><bullet>встаёт в <hyperlink>защитную позицию</hyperlink>.</bullet></bulletlist>",
+  "description": "Этот воин:<bulletlist><bullet>восстанавливает 20ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляется от отрицательных эффектов (2).</bullet></bulletlist>",
   "name": "Медитация",
   "slug": "monk_meditate_ability_000004890000118E",
   "damage": "",
@@ -11493,7 +11511,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "0",
   "icon": "0000048B000001BB"
  },
@@ -11675,7 +11693,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(roving_furnace)_0000048900000222",
   "damage": "11<damagephysical></damagephysical> 11<damagefire></damagefire> ",
@@ -11991,7 +12009,7 @@
     "count": 1
    },
    {
-    "description": "Применяет эффект «Помечен» на 3 <turn></turn> х.",
+    "description": "Применяет эффект «Помечен» (2) на 3 <turn></turn> х.",
     "name": "Помечен",
     "count": 1
    }
@@ -12046,6 +12064,12 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "10",
   "icon": "000003E3000073DE"
+ },
+ {
+  "description": "При отступлении этот воин никогда не погибает и возвращается на  <turn></turn> х. быстрее.",
+  "name": "Мастер отступления",
+  "slug": "cbe7688b000001dc",
+  "icon": "0000045E0000085E"
  },
  {
   "description": "Воин получает +3 к <hyperlink>дальности обнаружения</hyperlink>.",
@@ -12406,7 +12430,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Зверский натиск",
   "slug": "melee_charge_strike_(base)_ability_0000046400000058",
   "damage": "19<damagephysical></damagephysical> 19<damagefrost></damagefrost> ",
@@ -12767,7 +12791,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(infernal_elephant_only)_0000043D000004FE",
   "damage": "13<damagephysical></damagephysical> 13<damagefire></damagefire> ",
@@ -13153,7 +13177,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B00001492",
   "damage": "27<damagephysical></damagephysical> ",
@@ -13345,7 +13369,7 @@
     "count": 1
    }
   ],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000041B00001131",
   "damage": "33<damagephysical></damagephysical> ",
@@ -13685,7 +13709,7 @@
     "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Выбранные дружественные воины в радиусе 1 кл.:<bulletlist><bullet>получают эффект «Регенерация» (2);</bullet><bullet>избавляются от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>получают эффект «Регенерация» (2);</bullet><bullet>избавляются от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Придание сил",
   "slug": "revitalize_ability_0000041B00000E5F",
   "damage": "",
@@ -13708,7 +13732,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Даёт базовую вероятность 60% на 3 <turn></turn> х. применить к выбранному вражескому воину эффект «Подчинён».<br></br>В случае неудачи к воину применяется эффект «Рассеянный».",
+  "description": "Даёт базовую вероятность 90% на 3 <turn></turn> х. применить к выбранному вражескому воину эффект «Подчинён».<br></br>В случае неудачи к воину применяется эффект «Рассеянный».",
   "name": "Соблазнить",
   "slug": "seduce_ability_0000041B00000E5F",
   "damage": "",
@@ -13754,7 +13778,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B00000BB2",
   "damage": "27<damagephysical></damagephysical> ",
@@ -13924,7 +13948,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B000007FD",
   "damage": "24<damagephysical></damagephysical> ",
@@ -13997,7 +14021,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может на 1 <turn></turn> х. применить эффект «Заморожен». В случае неудачи применяет эффект «Уязвимость к эффектам».",
+    "description": "С базовой вероятностью 60% может на 1 <turn></turn> х. применить эффект «Заморожен». В случае неудачи применяет эффект «Уязвимость к эффектам».",
     "name": "Заморожен",
     "count": 1
    }
@@ -14031,7 +14055,7 @@
   "icon": "0000041B0000070D"
  },
  {
-  "description": "Взрыв холода:<bulletlist><bullet>дополнительно наносит 6 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 120% может применить эффект «Заморожен».</bullet></bulletlist>",
+  "description": "Взрыв холода:<bulletlist><bullet>дополнительно наносит 6 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% может применить эффект «Заморожен».</bullet></bulletlist>",
   "name": "Героический взрыв холода",
   "slug": "0000048b000009f1",
   "icon": "000003E30000627B"
@@ -14169,7 +14193,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Деморализующая атака натиском",
   "slug": "demoralizing_charge_ability_0000041B0000048F",
   "damage": "27<damagephysical></damagephysical> ",
@@ -14209,8 +14233,12 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "3",
-  "notes": [],
+  "range": "1",
+  "notes": [
+   {
+    "note": "Перезарядка: 2 <turn></turn>"
+   }
+  ],
   "icon": "0000049700002D53"
  },
  {
@@ -14628,7 +14656,7 @@
   "icon": "000003E3000056E3"
  },
  {
-  "description": "Участвуя в сражении, этот воин действует как глушитель заклинаний, повышая на 100% количество <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>, необходимых врагу для применения <hyperlink>заклинаний</hyperlink>.",
+  "description": "Участвуя в сражении, этот воин действует как глушитель заклинаний, повышая на 50% количество <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>, необходимых врагу для применения <hyperlink>заклинаний</hyperlink>.",
   "name": "Живой глушитель заклинаний",
   "slug": "000003e3000056ea",
   "icon": "000003E3000056EB"
@@ -14968,10 +14996,10 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00001891",
-  "damage": "22<damagefire></damagefire> 11<damagephysical></damagephysical> ",
+  "damage": "20<damagefire></damagefire> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15000,7 +15028,7 @@
   "description": "Наносит урон в радиусе 2 кл.",
   "name": "Перегрев",
   "slug": "overheat_ability_000003EC00001891",
-  "damage": "25<damagefire></damagefire> ",
+  "damage": "22<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -15348,6 +15376,11 @@
     "description": "С базовой вероятностью 90% может на 1 <turn></turn> х. применить эффект «Обездвижен».",
     "name": "Обездвижен",
     "count": 1
+   },
+   {
+    "description": "Применяет эффект «Помечен» (2) на 3 <turn></turn> х.",
+    "name": "Помечен",
+    "count": 1
    }
   ],
   "description": "Наносит урон выбранному воину.",
@@ -15379,7 +15412,13 @@
   "icon": "000003E3000043B9"
  },
  {
-  "modifiers": [],
+  "modifiers": [
+   {
+    "description": "Рассеивает у целей <hyperlink>положительные эффекты</hyperlink> (1) с вероятностью 60%.",
+    "name": "Рассеивание положительных эффектов",
+    "count": 1
+   }
+  ],
   "description": "Бьёт выбранного вражеского воина.",
   "name": "Удар в рукопашной",
   "slug": "melee_strike_(base)_ability_000003EC00000F5A",
@@ -15401,7 +15440,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
   "description": "Воин получает:<bulletlist><bullet>«Дополнительная сила» (2);</bullet><bullet>«Пробитая защита» (2);</bullet><bullet>способность «Стылая отрыжка».</bullet></bulletlist>",
@@ -15410,7 +15449,7 @@
   "damage": "",
   "requisites": [],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "0",
   "icon": "000003E30000436A"
  },
@@ -15422,7 +15461,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00000DEA",
   "damage": "11<damagephysical></damagephysical> 11<damagelightning></damagelightning> ",
@@ -15698,7 +15737,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00000DDF",
   "damage": "8<damagephysical></damagephysical> 8<damagelightning></damagelightning> ",
@@ -15752,7 +15791,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DB3",
   "damage": "19<damagelightning></damagelightning> 11<damagephysical></damagephysical> ",
@@ -15826,7 +15865,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA1",
   "damage": "19<damagefire></damagefire> 11<damagephysical></damagephysical> ",
@@ -15898,7 +15937,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA0",
   "damage": "30<damagephysical></damagephysical> ",
@@ -16084,7 +16123,7 @@
     "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 15 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Регенерация»;</bullet><bullet>избавляются от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают +15 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Регенерация»;</bullet><bullet>избавляются от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Цветущая жизнь",
   "slug": "blooming_life_ability_000003EC000008CB",
   "damage": "",
@@ -16178,6 +16217,11 @@
     "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Кровотечение».",
     "name": "Кровотечение",
     "count": 1
+   },
+   {
+    "description": "Рассеивает у целей <hyperlink>положительные эффекты</hyperlink> (1) с вероятностью 60%.",
+    "name": "Рассеивание положительных эффектов",
+    "count": 1
    }
   ],
   "description": "Бьёт выбранного вражеского воина.",
@@ -16199,19 +16243,36 @@
   "icon": "000003BD000020C9"
  },
  {
-  "notes": [
+  "modifiers": [
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Кровотечение».",
+    "name": "Кровотечение",
+    "count": 1
    }
   ],
   "description": "Наносит урон выбранному воину. В зависимости от количества потерянного здоровья повышается вероятность того, что цель:<bulletlist><bullet>на 3 <turn></turn> х. получит эффект «Кровотечение» (3);</bullet><bullet>на 3 <turn></turn> х. получит эффект «Пробитая защита» (3).</bullet><bullet>В случае успеха огр восстанавливает 15 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Порез мясника",
   "slug": "butchers_cut_ability_000003EC000008B2",
-  "damage": "25<damagephysical></damagephysical> ",
-  "requisites": [],
+  "damage": "28<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
+   }
+  ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
+  "notes": [
+   {
+    "note": "Перезарядка: 1 <turn></turn>"
+   }
+  ],
   "icon": "000003E300004FFD"
  },
  {
@@ -17164,6 +17225,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -17604,7 +17668,7 @@
  },
  {
   "modifiers": [],
-  "description": "Выбранный вражеский воин, не являющийся герой, с базовой вероятностью 60% погибает.<bulletlist><bullet>Если от использования способности погибает воин, не являющийся нежитью, он превращается в <hyperlink>гниющего зомби</hyperlink> и до конца боя подчиняется вашим приказам.</bullet><bullet>В случае неудачи воин получает 45 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>, который игнорирует <resistance></resistance> <hyperlink>сопротивление</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный вражеский воин, не являющийся герой, с базовой вероятностью 30% погибает.<bulletlist><bullet>В случае неудачи воин получает 45 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>, который игнорирует <resistance></resistance> <hyperlink>сопротивление</hyperlink>.</bullet></bulletlist>",
   "name": "Касание смерти",
   "slug": "finger_of_death_ability_000003E300006016",
   "damage": "",
@@ -18177,7 +18241,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005CAF",
   "damage": "21<damagephysical></damagephysical> ",
@@ -18268,7 +18332,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005C56",
   "damage": "9<damagephysical></damagephysical> 9<damageblight></damageblight> ",
@@ -18496,7 +18560,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин получает: <bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитая защита».</bullet></bulletlist>",
+  "description": "Выбранный воин получает: <bulletlist><bullet>«Помечен»;</bullet><bullet>«Пробитая защита» (2);</bullet><bullet>«Уязвимость к эффектам».</bullet></bulletlist>",
   "name": "Знак следопыта",
   "slug": "trackers_mark_ability_000003E300005B5E",
   "damage": "",
@@ -18533,8 +18597,8 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 30% может на 1 <turn></turn> х. применить эффект «Заморожен». В случае неудачи применяет эффект «Уязвимость к эффектам».",
-    "name": "Заморожен",
+    "description": "С базовой вероятностью 90% может на 2 <turn></turn> х. применить эффект «Скорость снижена».",
+    "name": "Скорость снижена",
     "count": 1
    }
   ],
@@ -18866,7 +18930,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "0",
+  "range": "4",
   "icon": "000003E300005A62"
  },
  {
@@ -18888,7 +18952,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005A2D",
   "damage": "14<damagephysical></damagephysical> ",
@@ -19699,7 +19763,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005305",
   "damage": "24<damagephysical></damagephysical> ",
@@ -19908,7 +19972,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005301",
   "damage": "18<damagephysical></damagephysical> ",
@@ -20005,23 +20069,30 @@
   "icon": "000003E10000154C"
  },
  {
-  "notes": [
-   {
-    "note": "Перезарядка: 2 <turn></turn>"
-   }
-  ],
+  "modifiers": [],
   "description": "<bulletlist><bullet>Наносит урон выбранному воину.</bullet><bullet>Вражеские воины по соседству получают 50% от этого урона.</bullet><bullet>После применения воин принимает <hyperlink>защитную позицию</hyperlink>.</bullet>",
   "name": "Защитный выпад",
   "slug": "defensive_sweep_ability_000003E3000052F9",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Однократная атака"
+   },
+   {
+    "requisite": "Основная атака"
    }
   ],
   "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
+  "notes": [
+   {
+    "note": "Перезарядка: 2 <turn></turn>"
+   }
+  ],
   "icon": "0000049700000175"
  },
  {
@@ -20204,6 +20275,12 @@
   "icon": "000003E30000623D"
  },
  {
+  "description": "Игнорирует 50% от <defense></defense> <hyperlink>защиты</hyperlink> цели.",
+  "name": "Бронебойная атака",
+  "slug": "cbe7688b000001dd",
+  "icon": "000003E30000627B"
+ },
+ {
   "modifiers": [],
   "description": "Бьёт выбранного вражеского воина.",
   "name": "Удар в рукопашной",
@@ -20326,12 +20403,12 @@
  {
   "modifiers": [
    {
-    "description": "Применяет эффект «Пробитая защита» на 3 <turn></turn> х.",
+    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Пробитая защита».",
     "name": "Пробитая защита",
     "count": 1
    },
    {
-    "description": "Применяет эффект «Пробитое сопротивление» на 3 <turn></turn> х.",
+    "description": "С базовой вероятностью 60% может на 3 <turn></turn> х. применить эффект «Пробитое сопротивление».",
     "name": "Пробитое сопротивление",
     "count": 1
    }
@@ -20365,7 +20442,7 @@
   "icon": "000003E300006560"
  },
  {
-  "description": "Разоблачающий свет:<bulletlist><bullet>применяет дополнительный уровень эффектов «Пробитая защита» и «Пробитое сопротивление».</bullet></bulletlist>",
+  "description": "Разоблачающий свет:<bulletlist><bullet>увеличивает шанс применения эффектов «Пробитая защита» и «Пробитое сопротивление».</bullet></bulletlist>",
   "name": "Героический разоблачающий свет",
   "slug": "0000048b00000a00",
   "icon": "000003E30000627B"
@@ -20437,7 +20514,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин и ещё один воин без способности «Пробуждённый» в радиусе 2 кл. на 3 <turn></turn> получают способность «Пробуждённый».",
@@ -20580,7 +20657,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052E1",
   "damage": "24<damagephysical></damagephysical> ",
@@ -20898,9 +20975,14 @@
     "description": "Наносит на 40% больше урона <hyperlink>крупным целям</hyperlink>.",
     "name": "Убийца великанов",
     "count": 1
+   },
+   {
+    "description": "Атаки <hyperlink>натиском</hyperlink> по отрядам дают этому воину эффект «Благодать» (1).",
+    "name": "Благословенный натиск",
+    "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d000011e2",
   "damage": "31<damagephysical></damagephysical> ",
@@ -20922,7 +21004,7 @@
   "icon": "000003EB0000040D"
  },
  {
-  "description": "Атаки <hyperlink>натиском</hyperlink> дают этому воину эффект «Благодать» (1).<br></br>Не срабатывает при <hyperlink>ответном ударе</hyperlink> и <hyperlink>неплановой атаке</hyperlink>.",
+  "description": "Атаки <hyperlink>натиском</hyperlink> по отрядам дают этому воину эффект «Благодать» (1).",
   "name": "Благословенный натиск",
   "slug": "0000048d00001205",
   "icon": "0000048D0000135A"
@@ -20933,9 +21015,14 @@
     "description": "Наносит на 40% больше урона <hyperlink>крупным целям</hyperlink>.",
     "name": "Убийца великанов",
     "count": 1
+   },
+   {
+    "description": "Атаки <hyperlink>натиском</hyperlink> по отрядам дают этому воину эффект «Благодать» (1).",
+    "name": "Благословенный натиск",
+    "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d00001220",
   "damage": "31<damagephysical></damagephysical> ",
@@ -21211,6 +21298,12 @@
   "range": "1",
   "notes": [],
   "icon": "000003BD000020C9"
+ },
+ {
+  "description": "Максимальное <hyperlink>здоровье</hyperlink> этого воина увеличивается на 3.",
+  "name": "+3<hp></hp>",
+  "slug": "cbe7688b00000291",
+  "icon": "0000048B00000C78"
  },
  {
   "modifiers": [
@@ -21765,7 +21858,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300004CA2",
   "damage": "18<damagephysical></damagephysical> ",
@@ -22491,7 +22584,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 35 ед. <temphp></temphp> временного здоровья.</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +35 ед. <temphp></temphp> временного здоровья;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Целительная молитва",
   "slug": "healing_prayer_ability_000003E300004830",
   "damage": "",
@@ -22555,7 +22648,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
   "damage": "33<damagephysical></damagephysical> ",
@@ -22603,7 +22696,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
+  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <GLOBAL.DefenseModeConcept> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
   "name": "Ужасающая трапеза",
   "slug": "terrifying_gorging_ability_(monster_version)_000003E300004447",
   "damage": "",
@@ -22695,7 +22788,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E1000011AC",
   "damage": "18<damagephysical></damagephysical> ",
@@ -22724,7 +22817,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001190",
   "damage": "21<damagephysical></damagephysical> ",
@@ -22794,10 +22887,10 @@
   "icon": "000003BD000020C9"
  },
  {
-  "description": "Если воин поражён <hyperlink>атакой в ближнем бою</hyperlink>, атакующий получает 4 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.",
-  "name": "Статически заряжен",
-  "slug": "000003e10000118a",
-  "icon": "000003E10000118C"
+  "description": "Если воин поражён <hyperlink>в ближнем бою</hyperlink>:<bulletlist><bullet>атакующий получает 6 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% к нему применяется эффект «Наэлектризованность».</bullet></bulletlist>",
+  "name": "Великий щит молний",
+  "slug": "0000045e00000d23",
+  "icon": "0000045E00000D24"
  },
  {
   "modifiers": [
@@ -22826,8 +22919,20 @@
   "icon": "000003BD000020C9"
  },
  {
+  "description": "Если воин поражён <hyperlink>в ближнем бою</hyperlink>:<bulletlist><bullet>атакующий получает 6 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>с базовой вероятностью 60% к нему применяется эффект «Отравление».</bullet></bulletlist>",
+  "name": "Великий щит яда",
+  "slug": "0000045e00000d2f",
+  "icon": "0000045E00000D30"
+ },
+ {
+  "description": "Невосприимчивость к эффекту «Отравление».",
+  "name": "Невосприимчивость к эффекту: Отравление",
+  "slug": "0000048b00000086",
+  "icon": "0000049700000866"
+ },
+ {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001160",
   "damage": "12<damagephysical></damagephysical> 12<damagespirit></damagespirit> ",
@@ -22879,7 +22984,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001153",
   "damage": "12<damagephysical></damagephysical> 12<damagefire></damagefire> ",
@@ -23053,7 +23158,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003BD000028AF",
   "damage": "18<damagephysical></damagephysical> ",
@@ -23617,7 +23722,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
+  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <GLOBAL.DefenseModeConcept> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
   "name": "Ужасающая трапеза",
   "slug": "terrifying_gorging_ability_(monster_version)_000003BD00002895",
   "damage": "",
@@ -23932,7 +24037,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может на 1 <turn></turn> х. применить эффект «Заморожен». В случае неудачи применяет эффект «Уязвимость к эффектам».",
+    "description": "С базовой вероятностью 60% может на 1 <turn></turn> х. применить эффект «Заморожен». В случае неудачи применяет эффект «Уязвимость к эффектам».",
     "name": "Заморожен",
     "count": 1
    }
@@ -24122,10 +24227,10 @@
  {
   "notes": [
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "<bulletlist><bullet>+1 к очкам движения на 1 <turn></turn> х.;</bullet><bullet>«Увёртливость» на 1 <turn></turn> х.;</bullet><bullet>восстанавливает 15 ед. <temphp></temphp> временного здоровья.</bullet></bulletlist><br></br><br></br>Эта способность перезаряжается после каждого убийства.",
+  "description": "<bulletlist><bullet>+2 к очкам движения на 1 <turn></turn> х.;</bullet><bullet>восстанавливает 15ед. <temphp></temphp> временного здоровья</bullet><bullet>Неуловимый</bullet></bulletlist>",
   "name": "Второе дыхание",
   "slug": "hs_warrior_second_wind_ability_000003BD00002895",
   "damage": "",
@@ -24299,10 +24404,10 @@
  {
   "notes": [
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 0 <turn></turn>"
    }
   ],
-  "description": "Урон, полученный выбранным дружественным воином, переходит к этому воину, уменьшаясь при этом на 50%.",
+  "description": "Урон получают оба воина, но уменьшенный на 50%.",
   "name": "Оберегающая связь",
   "slug": "hs_defender_warding_bond_ability_000003BD00002895",
   "damage": "",
@@ -24452,7 +24557,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 6 <turn></turn>"
    }
   ],
   "icon": "000004C000000917"
@@ -24463,7 +24568,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 6 <turn></turn>"
    }
   ],
   "description": "Наносит урон вражеским воинам в радиусе 1 кл.<bulletlist><bullet>Применяет эффект «Пробитая защита» (2);</bullet><bullet>цели выходят из <hyperlink>защитной позиции</hyperlink> и теряют все <hyperlink>ответные удары</hyperlink>.</bullet></bulletlist><br></br><br></br>Требуется дисциплина земли.",
@@ -24486,7 +24591,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 6 <turn></turn>"
    }
   ],
   "description": "Наносит урон выбранному вражескому воину.<bulletlist><bullet>Применяет эффект «Горение» (4) на 3 <turn></turn> х.;</bullet><bullet>эффект последовательно применяется к врагам по соседству с целью.</bullet></bulletlist><br></br><br></br>Требуется дисциплина огня.",
@@ -24506,7 +24611,7 @@
  {
   "notes": [
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 6 <turn></turn>"
    }
   ],
   "description": "Наносит урон вражеским воинам на линии в 6 кл.<bulletlist><bullet>Применяет эффект «Наэлектризованность» (2) на 3 <turn></turn> х.;</bullet><bullet>молния отскакивает от цели к другому врагу в радиусе 2.</bullet></bulletlist><br></br><br></br>Требуется дисциплина бури.",
@@ -24526,7 +24631,7 @@
  {
   "notes": [
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 6 <turn></turn>"
    }
   ],
   "description": "До конца <hyperlink>хода</hyperlink> все атаки и способности игнорируют 10 ед. <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивления эффектам</hyperlink>.",
@@ -24546,7 +24651,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
   "description": "Заклинатель:<bulletlist><bullet>перезаряжает все способности;</bullet><bullet>получает способность «Средоточие стихий.</bullet></bulletlist>",
@@ -25022,7 +25127,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +30 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>получает эффект «Регенерация»;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Восстановление",
   "slug": "hs_ritualist_restore_ability_000003BD00002895",
   "damage": "",
@@ -25118,25 +25223,19 @@
   "description": "Дистанционная атака по выбранному врагу.",
   "name": "Снайперский выстрел",
   "slug": "hs_ranger_sniper_shot_ability_000003BD00002895",
-  "damage": "40<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
-  "accuracy": "90%",
+  "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
   "range": "6",
   "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
    {
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
@@ -25579,7 +25678,7 @@
   "icon": "000004A600000A85"
  },
  {
-  "description": "<bulletlist><bullet>Воин получает способность «Верный»;</bullet><bullet>получив смертельное ранение в первый раз, воин получает:<bulletlist></bullet><bullet>эффект «Стойкость» на 1 <turn></turn> х.;</bullet><bullet>эффект «Умиротворение» на 1 <turn></turn> х.</bullet></bulletlist></bulletlist>",
+  "description": "<bulletlist><bullet>Воин получает способность «Верный»;</bullet><bullet>получив смертельное ранение в первый раз, воин получает:<bulletlist></bullet><bullet>эффект «Стойкость» на 1 <turn></turn> х.;</bullet><bullet>эффект «Оглушение» на 1 <turn></turn> х.</bullet></bulletlist></bulletlist>",
   "name": "Знак хранителя",
   "slug": "0000045e00000298",
   "icon": "0000041B00001983"
@@ -25761,8 +25860,8 @@
  {
   "modifiers": [
    {
-    "description": "Применяет эффект «Скорость снижена» на 2 х.",
-    "name": "Скорость снижена",
+    "description": "Применяет эффект «Уязвимость к эффектам» на 3 <turn></turn> х.",
+    "name": "Уязвимость к эффектам",
     "count": 1
    }
   ],
@@ -25843,7 +25942,7 @@
     "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
-  "description": "Выбранный вражеский воин с базовой вероятностью 90%:<bulletlist><bullet>Теряет -30 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>;</bullet><bullet>получает эффект «Оглушение» на 1 <turn></turn> х.</bullet></bulletlist><br></br>В случае неудачи цель теряет -15 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>.",
+  "description": "Выбранный вражеский воин с базовой вероятностью 60%:<bulletlist><bullet>Теряет -30 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>;</bullet><bullet>получает эффект «Оглушение» на 1 <turn></turn> х.</bullet></bulletlist><br></br>В случае неудачи цель теряет -15 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink>.",
   "name": "Невыносимые страдания",
   "slug": "desperate_anguish_ability_000003BD00002895",
   "damage": "",
@@ -25863,7 +25962,7 @@
     "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
-  "description": "К выбранному вражескому воину с базовой вероятностью 90% применяются эффекты:<bulletlist><bullet>«Безумие» на 1 <turn></turn> х.;</bullet><bullet>«Пробитая защита» (5) на 3 <turn></turn> х.;</bullet><bullet>«Пробитое сопротивление» (5) на 3 <turn></turn> х.</bullet></bulletlist>",
+  "description": "К выбранному вражескому воину с базовой вероятностью 60% применяются эффекты:<bulletlist><bullet>«Безумие» на 1 <turn></turn> х.;</bullet><bullet>«Пробитая защита» (5) на 3 <turn></turn> х.;</bullet><bullet>«Пробитое сопротивление» (5) на 3 <turn></turn> х.</bullet></bulletlist>",
   "name": "Делирий",
   "slug": "delirium_ability_000003BD00002895",
   "damage": "",
@@ -25887,6 +25986,9 @@
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
    }
   ],
   "description": "Телепортация на выбранную клетку.",
@@ -25903,13 +26005,16 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "6",
+  "range": "4",
   "icon": "0000049700000B9D"
  },
  {
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
    }
   ],
   "description": "Телепортация на выбранную клетку.",
@@ -25926,7 +26031,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "3",
+  "range": "2",
   "icon": "0000049700000B99"
  },
  {
@@ -26003,7 +26108,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин и ещё один воин без способности «Пробуждённый» в радиусе 2 кл. на 3 <turn></turn> получают способность «Пробуждённый».",
@@ -26212,8 +26317,8 @@
  {
   "modifiers": [
    {
-    "description": "Применяет эффект «Скорость снижена» на 2 х.",
-    "name": "Скорость снижена",
+    "description": "Применяет эффект «Кровотечение» на 3 <turn></turn> х.",
+    "name": "Кровотечение",
     "count": 1
    }
   ],
@@ -26763,7 +26868,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от всех <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получает +3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получает +3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
   "name": "Святое очищение",
   "slug": "hs_battlesaint_cleanse_ability_000003BD00002895",
   "damage": "",
@@ -27102,7 +27207,7 @@
   "description": "Наносит урон воинам в конусе размером 2 кл.",
   "name": "Мощное затаптывание",
   "slug": "mighty_stomp_ability_000003BD00002895",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27111,7 +27216,11 @@
   "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Перезарядка: 2 <turn></turn>"
+   }
+  ],
   "icon": "0000049700001879"
  },
  {
@@ -27358,7 +27467,7 @@
  },
  {
   "modifiers": [],
-  "description": "Мощный натиск атакует врагов на линии в 2 кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск атакует врагов на линии в 2 кл.:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_000003BD00002895",
   "damage": "24<damagephysical></damagephysical> ",
@@ -27378,7 +27487,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003BD00002895",
   "damage": "23<damagephysical></damagephysical> ",
@@ -27427,7 +27536,7 @@
  },
  {
   "modifiers": [],
-  "description": "Наносит выбранному воину урон и снимает с него 1 <hyperlink>положительный эффект</hyperlink>.",
+  "description": "Наносит выбранному воину урон и снимает с него 1 (90%) <hyperlink>положительный эффект</hyperlink>.",
   "name": "Очищающий взрыв",
   "slug": "magic_blast_(single)_ability_000003BD00002895",
   "damage": "18<damagespirit></damagespirit> ",
@@ -27559,7 +27668,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge_warclaw)_ability_000003BD00002895",
   "damage": "23<damagephysical></damagephysical> ",
@@ -27656,7 +27765,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge)_ability_000003BD00002895",
   "damage": "21<damagephysical></damagephysical> ",
@@ -28417,7 +28526,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge_lance)_ability_000003BD00002895",
   "damage": "19<damagephysical></damagephysical> ",
@@ -28756,7 +28865,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "2",
+  "range": "3",
   "icon": "00000493000008E7"
  },
  {
@@ -28901,7 +29010,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может на 3 <turn></turn> х. применить эффект «Слабость».",
+    "description": "Применяет эффект «Слабость» на 3 <turn></turn> х.",
     "name": "Слабость",
     "count": 1
    }
@@ -28909,7 +29018,7 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_000003BD00002895",
-  "damage": "5<damageblight></damageblight> 5<damagefrost></damagefrost> ",
+  "damage": "11<damageblight></damageblight> 11<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Перемещение"
@@ -29514,7 +29623,7 @@
   "description": "Вражеские воины в конусе размером в 2 кл. получают урон, к ним применяется эффект «Слабость» (1).",
   "name": "Изнуряющий вой",
   "slug": "enfeebling_howl_mount_ability_000003BD00002895",
-  "damage": "21<damagefrost></damagefrost> ",
+  "damage": "18<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -29703,7 +29812,7 @@
     "count": 1
    }
   ],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "godbreaker_ability_000003BD00002895",
   "damage": "28<damagephysical></damagephysical> ",
@@ -29882,7 +29991,7 @@
     "count": 1
    }
   ],
-  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "executioner_ability_000003BD00002895",
   "damage": "28<damagephysical></damagephysical> ",
@@ -30160,7 +30269,7 @@
     "count": 1
    }
   ],
-  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
+  "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "excessive_force_ability_000003BD00002895",
   "damage": "28<damagephysical></damagephysical> ",
@@ -30383,7 +30492,7 @@
   "icon": "000003E300007216"
  },
  {
-  "description": "Воин получает:<bulletlist><bullet>+50% к урону;</bullet><bullet>способность «Бессмертный»;</bullet><bullet>способность «Доспех отчаяния».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+30% к урону;</bullet><bullet>способность «Бессмертный»;</bullet><bullet>способность «Доспех отчаяния».</bullet></bulletlist>",
   "name": "Нечестивый воитель",
   "slug": "0000049700002da1",
   "icon": "0000049700002C3D"
@@ -30437,7 +30546,7 @@
   "icon": "000004C000000B85"
  },
  {
-  "description": "Воин получает:<bulletlist><bullet>-4 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet><bullet>В конце его хода этот <hyperlink>отрицательный эффект</hyperlink> с базовой вероятностью 60% может распространиться на воинов поблизости.</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>-1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet><bullet>В конце его хода этот <hyperlink>отрицательный эффект</hyperlink> с базовой вероятностью 60% может распространиться на воинов поблизости.</bullet></bulletlist>",
   "name": "Болезнь",
   "slug": "000003e100001303",
   "icon": "000003E100001300"
@@ -30700,12 +30809,6 @@
   "icon": "000003E3000056BB"
  },
  {
-  "description": "Воин получает:<bulletlist><bullet>+1 к очкам движения;</bullet><bullet>«Увёртливость»;</bullet><bullet>«Неуловимый»;</bullet><bullet>«Стремительность».</bullet></bulletlist>",
-  "name": "Быстрый бег",
-  "slug": "000003e3000054f1",
-  "icon": "0000042B00000008"
- },
- {
   "description": "Атаки:<bulletlist><bullet>наносят +3 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>получают способность «Вампиризм».</bullet><bullet>Каждая атака снимает один уровень способности.</bullet></bulletlist>",
   "name": "Ярость Подземного паука",
   "slug": "0000049700000219",
@@ -30742,7 +30845,7 @@
   "icon": "0000049700000A62"
  },
  {
-  "description": "Воин:<bulletlist><bullet>игнорирует 50% <hyperlink>потерь</hyperlink>;</bullet><bullet>получает +1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получает +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Воин:<bulletlist><bullet>игнорирует 25% <hyperlink>потерь</hyperlink>;</bullet><bullet>получает +1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получает +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "name": "Праведный дух",
   "slug": "0000049700002d4c",
   "icon": "0000049700002A9E"
@@ -31120,25 +31223,25 @@
   "icon": "000003E300005EBD"
  },
  {
-  "description": "Атаки этого воина наносят +5 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки этого воина наносят +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Ярость воителя (Идеал)",
   "slug": "0000048b00000b0e",
   "icon": "0000049700001107"
  },
  {
-  "description": "Атаки этого воина наносят +4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки этого воина наносят +2 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Ярость воителя (Ревнитель)",
   "slug": "0000048b00000b09",
   "icon": "0000049700001107"
  },
  {
-  "description": "Атаки этого воина наносят +3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки этого воина наносят +1 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Ярость воителя (Неофит)",
   "slug": "0000048b00000b04",
   "icon": "0000049700001107"
  },
  {
-  "description": "Атаки этого воина наносят +2 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки этого воина наносят +0 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Ярость воителя",
   "slug": "0000048b00000afa",
   "icon": "0000049700001107"
@@ -31234,12 +31337,6 @@
   "icon": "0000041B00001BA7"
  },
  {
-  "description": "-5 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.",
-  "name": "Моментальная заморозка",
-  "slug": "0000045e0000032f",
-  "icon": "0000041B00001764"
- },
- {
   "description": "Воин не теряет <happiness></happiness> <hyperlink>боевого духа</hyperlink>.",
   "name": "Бесстрашный",
   "slug": "000003e100001383",
@@ -31270,7 +31367,7 @@
   "icon": "000003FE00000CC4"
  },
  {
-  "description": "Воин получает: -1 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>.",
+  "description": "Воин получает: -2 к <defenselightning></defenselightning> <hyperlink>сопротивлению молниям</hyperlink>.",
   "name": "Поток молний",
   "slug": "0000041b000012f6",
   "icon": "0000041B000012E5"
@@ -31324,7 +31421,7 @@
   "icon": "000003E300005C93"
  },
  {
-  "description": "-3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>",
+  "description": "-2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>",
   "name": "Приговор",
   "slug": "0000041b000019e5",
   "icon": "0000041B000019E6"
@@ -31348,7 +31445,7 @@
   "icon": "0000041B0000174B"
  },
  {
-  "description": "-3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>",
+  "description": "У этого воина -2 <defensefrost></defensefrost> <hyperlink>Сопротивление холоду</hyperlink>.",
   "name": "Снежная буря",
   "slug": "0000041b000016bb",
   "icon": "0000041B000006D0"
@@ -31564,7 +31661,7 @@
   "icon": "000003E300004C79"
  },
  {
-  "description": "<bulletlist><bullet>+3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> при атаках;</bullet><bullet>активируются <abilityblue>спящие способности</abilityblue>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "<bulletlist><bullet>+2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> при атаках;</bullet><bullet>активируются <abilityblue>спящие способности</abilityblue>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Пробуждённый",
   "slug": "000003ec00002713",
   "icon": "000003E300004C5D"
