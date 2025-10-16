@@ -1,434 +1,434 @@
 [
  {
-  "id": "giant_king_governor",
-  "name": "Giant King Governor",
+  "id": "Губернатор-король_великанов",
+  "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> приносит <hyperlink>связующие фрагменты</hyperlink> (+1<bindingfragment></bindingfragment>)",
     "level": 3
    },
    {
-    "effect_description": "City Structures grant +2<gold></gold> Gold in addition to their normal effects<br></br>Enable drafting of <hyperlink>Frost Giant</hyperlink> units",
+    "effect_description": "Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>ледяных великанов</hyperlink>.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Frost Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>ледяных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
-  "id": "giant_king_governor",
-  "name": "Giant King Governor",
+  "id": "Губернатор-король_великанов",
+  "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> приносит <hyperlink>связующие фрагменты</hyperlink> (+1<bindingfragment></bindingfragment>)",
     "level": 3
    },
    {
-    "effect_description": "City Structures grant +2<gold></gold> Gold in addition to their normal effects<br></br>Enable drafting of <hyperlink>Rock Giant</hyperlink> units",
+    "effect_description": "Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>каменных великанов</hyperlink>.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Rock Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>каменных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
-  "id": "giant_king_governor",
-  "name": "Giant King Governor",
+  "id": "Губернатор-король_великанов",
+  "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> приносит <hyperlink>связующие фрагменты</hyperlink> (+1<bindingfragment></bindingfragment>)",
     "level": 3
    },
    {
-    "effect_description": "City Structures grant +2<gold></gold> Gold in addition to their normal effects<br></br>Enable drafting of <hyperlink>Fire Giant</hyperlink> units",
+    "effect_description": "Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>огненных великанов</hyperlink>.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Fire Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>огненных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
-  "id": "giant_king_governor",
-  "name": "Giant King Governor",
+  "id": "Губернатор-король_великанов",
+  "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> приносит <hyperlink>связующие фрагменты</hyperlink> (+1<bindingfragment></bindingfragment>)",
     "level": 3
    },
    {
-    "effect_description": "City Structures grant +2<gold></gold> Gold in addition to their normal effects<br></br>Enable drafting of <hyperlink>Storm Giant</hyperlink> units",
+    "effect_description": "Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>штормовых великанов</hyperlink>.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Storm Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>штормовых великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
-  "id": "trollkin_governor",
-  "name": "Trollkin Governor",
+  "id": "Губернатор-тролль",
+  "name": "Губернатор-тролль",
   "level_data": [
    {
-    "effect_description": "Each <forester></forester> <hyperlink>Forester</hyperlink> grants +3<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.",
     "level": 1
    },
    {
-    "effect_description": "Each <forester></forester> <hyperlink>Forester</hyperlink> grants +5<unitprod></unitprod> <hyperlink>Draft</hyperlink>.<br></br>May recruit <hyperlink>Butcher Ogres</hyperlink> and <hyperlink>Brewer Ogres</hyperlink>.",
+    "effect_description": "Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.<br></br>Можно нанимать <hyperlink>огров-мясников</hyperlink> и <hyperlink>огров-пивоваров</hyperlink>.",
     "level": 2
    },
    {
-    "effect_description": "Each province with rivers grants 5 <food></food> <hyperlink>Food</hyperlink> income.<br></br>May recruit <hyperlink>River Trolls</hyperlink>.",
+    "effect_description": "Каждая провинция с реками даёт 2 к <food></food> <hyperlink>пище</hyperlink>.<br></br>Можно нанимать <hyperlink>речных троллей</hyperlink>.",
     "level": 3
    },
    {
-    "effect_description": "Each <forester></forester> <hyperlink>Forester</hyperlink> grants +5<mana></mana> <hyperlink>Mana</hyperlink>.<br></br>May recruit <hyperlink>Swamp Trolls</hyperlink>.",
+    "effect_description": "Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к <mana></mana> <hyperlink>мане</hyperlink>.<br></br>Можно нанимать <hyperlink>болотных троллей</hyperlink>.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <forester></forester> <hyperlink>Forester</hyperlink> grants +3<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 2</white><br></br>Each <forester></forester> <hyperlink>Forester</hyperlink> grants +5<unitprod></unitprod> <hyperlink>Draft</hyperlink>.<br></br>May recruit <hyperlink>Butcher Ogres</hyperlink> and <hyperlink>Brewer Ogres</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each province with rivers grant 5 <food></food> <hyperlink>Food</hyperlink> income.<br></br>May recruit <hyperlink>River Trolls</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>Each <forester></forester> <hyperlink>Forester</hyperlink> grants +3<mana></mana> <hyperlink>Mana</hyperlink>.<br></br>May recruit <hyperlink>Swamp Trolls</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.<br></br>Можно нанимать <hyperlink>огров-мясников</hyperlink> и <hyperlink>огров-пивоваров</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая провинция с реками даёт 2 к <food></food> <hyperlink>пище</hyperlink>.<br></br>Можно нанимать <hyperlink>речных троллей</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Каждая <forester></forester> <hyperlink>лесопилка</hyperlink> даёт +2 к <mana></mana> <hyperlink>мане</hyperlink>.<br></br>Можно нанимать <hyperlink>болотных троллей</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D000013FB"
  },
  {
-  "id": "eldritch_governor",
-  "name": "Eldritch Governor",
+  "id": "Тёмный_губернатор",
+  "name": "Тёмный губернатор",
   "level_data": [
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> costs -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build",
+    "effect_description": "Строительство каждого <hyperlink>особого улучшения провинции</hyperlink> стоит на 10% меньше <gold></gold> <hyperlink>золота</hyperlink> и на 10% меньше очков <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> grants +10<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +10 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<mana></mana> Mana",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +1 к <mana></mana> мане",
     "level": 3
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge",
+    "effect_description": "+1<thralls></thralls> <hyperlink>Раб</hyperlink> income.",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> costs -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build.</bullet><bullet><white>Renown level 2</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> grants +10<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<mana></mana> Mana.</bullet><bullet><white>Renown level 4</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <hyperlink>Особое улучшение провинции</hyperlink> costs -10% less <gold></gold> <hyperlink>Золото</hyperlink> and -10% less <structureprod></structureprod> <hyperlink>Производство</hyperlink> to build.</bullet><bullet><white>Renown level 2</white><br></br>Each <hyperlink>Особое улучшение провинции</hyperlink> grants +10<happiness></happiness> <hyperlink> Стабильность города</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Население</hyperlink> grants +1<mana></mana> Мана.</bullet><bullet><white>Renown level 4</white><br></br>+1<thralls></thralls> <hyperlink>Раб</hyperlink> income.</bullet></bulletlist>",
   "icon": "0000048D0000133B"
  },
  {
-  "id": "dragon_governor",
-  "name": "Dragon Governor",
+  "id": "Губернатор-дракон",
+  "name": "Губернатор-дракон",
   "level_data": [
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>.",
     "level": 1
    },
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту",
     "level": 3
    },
    {
-    "effect_description": "+10% more <gold></gold> <hyperlink>Gold</hyperlink> income",
+    "effect_description": "+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00001330"
  },
  {
-  "id": "wizard_governor",
-  "name": "Wizard Governor",
+  "id": "Губернатор-волшебник",
+  "name": "Губернатор-волшебник",
   "level_data": [
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> grants +5<knowledge></knowledge> Knowledge<br></br>+5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink><br></br>+5 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>",
+    "effect_description": "Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <mana></mana> мане<br></br>+5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink><br></br>+15 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <conduit></conduit> <hyperlink>Conduit</hyperlink> or <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead<br></br>+5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink><br></br>+5 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>",
+    "effect_description": "Каждый <conduit></conduit> <hyperlink>портал</hyperlink> или <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink><br></br>+5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink><br></br>+15 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge<br></br>+5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink><br></br>+5 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания<br></br>+5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink><br></br>+15 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>",
     "level": 3
    },
    {
-    "effect_description": "+10% more <mana></mana> <hyperlink>Mana</hyperlink> income<br></br>+5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink><br></br>+5 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>",
+    "effect_description": "+10% к доходу <mana></mana> <hyperlink>маны</hyperlink><br></br>+5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink><br></br>+15 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> grants +5<knowledge></knowledge> Knowledge.</bullet><bullet><white>Renown level 2</white><br></br>Each <conduit></conduit> <hyperlink>Conduit</hyperlink> or <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5 <happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet></bulletlist><br></br>In addition each renown level grants +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> and +5 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>.",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <mana></mana> мане.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <conduit></conduit> <hyperlink>портал</hyperlink> или <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <mana></mana> <hyperlink>маны</hyperlink>.</bullet></bulletlist><br></br>Кроме того, каждый уровень славы даёт +5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink> и +15 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>.",
   "icon": "0000048D00000DDD"
  },
  {
-  "id": "champion_governor",
-  "name": "Champion Governor",
+  "id": "Губернатор-герой",
+  "name": "Губернатор-герой",
   "level_data": [
    {
-    "effect_description": "Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <food></food> <hyperlink>пище</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -20% less <food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Для появления нового <population></population> <hyperlink>населения</hyperlink> требуется на 20% меньше <food></food> <hyperlink>пищи</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +1 к <gold></gold> золоту, +1 к <mana></mana> мане и +1 к <knowledge></knowledge> знания",
     "level": 3
    },
    {
-    "effect_description": "Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit",
+    "effect_description": "Наём воинов стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и очков <unitprod></unitprod> <hyperlink>на́йма</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -20% less <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge.</bullet><bullet><white>Renown level 4</white><br></br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink> to recruit.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <food></food> <hyperlink>пище</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Для появления нового <population></population> <hyperlink>населения</hyperlink> требуется на 20% меньше <food></food> <hyperlink>пищи</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +1 к <gold></gold> золоту, +1 к <mana></mana> мане и +1 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>Наём воинов стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и очков <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000DDD"
  },
  {
-  "id": "fortifying_governor",
-  "name": "Fortifying Governor",
+  "id": "Губернатор-строитель_крепостей",
+  "name": "Губернатор-строитель крепостей",
   "level_data": [
    {
-    "effect_description": "Defensive City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build",
+    "effect_description": "Строительство оборонительных городские сооружения стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и на 20% меньше очков <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Defensive City Structures grant +10<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Оборонительные городские сооружения дают +10 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Defensive City Structures grant +10<unitprod></unitprod> <hyperlink>Draft</hyperlink>",
+    "effect_description": "Оборонительные городские сооружения дают +10 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>",
     "level": 3
    },
    {
-    "effect_description": "The Governed city suffers no penalties from being besieged or having pillaged provinces",
+    "effect_description": "Город под управлением не получает штрафов из-за осады или разграбленных провинций",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Defensive City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build.</bullet><bullet><white>Renown level 2</white><br></br>Defensive City Structures grant +10<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Defensive City Structures grant +10<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>The Governed city suffers no income penalties from being besieged or having pillaged provinces.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Строительство оборонительных городские сооружения стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и на 20% меньше очков <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Оборонительные городские сооружения дают +10 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Оборонительные городские сооружения дают +10 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Город под управлением героя не получает штрафов к доходам из-за осады или разграбленных провинций.</bullet></bulletlist>",
   "icon": "0000048D00000B33"
  },
  {
-  "id": "specialist_governor",
-  "name": "Specialist Governor",
+  "id": "Губернатор-специалист",
+  "name": "Губернатор-специалист",
   "level_data": [
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> costs -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build",
+    "effect_description": "Строительство каждого <hyperlink>особого улучшения провинции</hyperlink> стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и на 20% меньше очков <structureprod></structureprod> <hyperlink>производства</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> grants +2<mana></mana> Mana and +2<gold></gold> Gold",
+    "effect_description": "Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <knowledge></knowledge> знания",
     "level": 3
    },
    {
-    "effect_description": "Each <hyperlink>Special Province Improvement</hyperlink> grants +3<knowledge></knowledge> Knowledge",
+    "effect_description": "Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +2 к <mana></mana> мане и 2 к <gold></gold> золоту",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> costs -20% less <gold></gold> <hyperlink>Gold</hyperlink> and -20% less <structureprod></structureprod> <hyperlink>Production</hyperlink> to build.</bullet><bullet><white>Renown level 2</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> grants +2<mana></mana> Mana and +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>Each <hyperlink>Special Province Improvement</hyperlink> grants +3<knowledge></knowledge> Knowledge.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Строительство каждого <hyperlink>особого улучшения провинции</hyperlink> стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink> и на -20% меньше очков <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +5 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>Каждое <hyperlink>особое улучшение провинции</hyperlink> даёт +2 к <mana></mana> мане и 2 к <gold></gold> золоту.</bullet>",
   "icon": "0000048D00000B31"
  },
  {
-  "id": "nautical_governor",
-  "name": "Nautical Governor",
+  "id": "Морской_губернатор",
+  "name": "Морской губернатор",
   "level_data": [
    {
-    "effect_description": "Coast or Water provinces grant +5<food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Прибрежные и водные провинции дают +5 к <food></food> <hyperlink>пище</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Coast or Water provinces grant +3<mana></mana> Mana",
+    "effect_description": "На разграбление провинций в городских владениях требуется на 2 <turn></turn> <hyperlink>х.</hyperlink> больше",
     "level": 2
    },
    {
-    "effect_description": "Coast or Water provinces grant +3<gold></gold> Gold",
+    "effect_description": "Прибрежные и водные провинции дают +2 к <mana></mana> мане",
     "level": 3
    },
    {
-    "effect_description": "Coast or Underground Lake provinces grant +3<knowledge></knowledge> Knowledge",
+    "effect_description": "Прибрежные и водные провинции дают +3 к <gold></gold> золоту",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Coast or Underground Lake provinces grant +5<food></food> <hyperlink>Food</hyperlink></bullet><bullet><white>Renown level 2</white><br></br>Coast or Underground Lake provinces grant +3<mana></mana> Mana</bullet><bullet><white>Renown level 3</white><br></br>Coast or Underground Lake provinces grant +3<gold></gold> Gold</bullet><bullet><white>Renown level 4</white><br></br>Coast or Underground Lake provinces grant +3<knowledge></knowledge> Knowledge</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Прибрежные и водные провинции дают +5 к <food></food> <hyperlink>пище</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>На разграбление провинций в городских владениях требуется на 2 <turn></turn> <hyperlink>х.</hyperlink> больше.</bullet><bullet><white>Уровень славы 3</white><br></br>Прибрежные провинции и провинции с подземными озерами дают +2 к <mana></mana> мане.</bullet><bullet><white>Уровень славы 4</white><br></br>Прибрежные провинции и провинции с подземными озерами дают +3 к <gold></gold> золоту.</bullet></bulletlist>",
   "icon": "0000048D00000B28"
  },
  {
-  "id": "scholarly_governor",
-  "name": "Scholarly Governor",
+  "id": "Губернатор-учёный",
+  "name": "Губернатор-учёный",
   "level_data": [
    {
-    "effect_description": "Each <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5<knowledge></knowledge> <hyperlink>Knowledge</hyperlink>",
+    "effect_description": "Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания",
     "level": 3
    },
    {
-    "effect_description": "+10% more <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income",
+    "effect_description": "+10% к доходу <knowledge></knowledge> <hyperlink>знаний</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5<knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <researchpost></researchpost> <hyperlink>Research Post</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<knowledge></knowledge> Knowledge</bullet><bullet><white>Renown level 4</white><br></br>+10% more <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <knowledge></knowledge> <hyperlink>знаний</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000B22"
  },
  {
-  "id": "arcane_governor",
-  "name": "Arcane Governor",
+  "id": "Губернатор-волшебник",
+  "name": "Губернатор-волшебник",
   "level_data": [
    {
-    "effect_description": "Each <conduit></conduit> <hyperlink>Conduit</hyperlink> grants +5<mana></mana> <hyperlink>Mana</hyperlink>",
+    "effect_description": "Каждый <conduit></conduit> <hyperlink>портал</hyperlink> даёт +5 к <mana></mana> <hyperlink>мане</hyperlink>.",
     "level": 1
    },
    {
-    "effect_description": "Each <conduit></conduit> <hyperlink>Conduit</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждый <conduit></conduit> <hyperlink>портал</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<mana></mana> Mana",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <mana></mana> <hyperlink>мане</hyperlink>",
     "level": 3
    },
    {
-    "effect_description": "+10% more <mana></mana> <hyperlink>Mana</hyperlink> income",
+    "effect_description": "+10% к доходу <mana></mana> <hyperlink>маны</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <conduit></conduit> <hyperlink>Conduit</hyperlink> grants +5<mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <conduit></conduit> <hyperlink>Conduit</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<mana></mana> Mana.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждый <conduit></conduit> <hyperlink>портал</hyperlink> даёт +5 к <mana></mana> <hyperlink>мане</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <conduit></conduit> <hyperlink>портал</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <mana></mana> мане.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <mana></mana> <hyperlink>маны</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000B1A"
  },
  {
-  "id": "prospecting_governor",
-  "name": "Prospecting Governor",
+  "id": "Губернатор-изыскатель",
+  "name": "Губернатор-изыскатель",
   "level_data": [
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grant +5<gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту",
     "level": 3
    },
    {
-    "effect_description": "+10% more <gold></gold> <hyperlink>Gold</hyperlink> income",
+    "effect_description": "+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000B13"
  },
  {
-  "id": "agricultural_governor",
-  "name": "Agricultural Governor",
+  "id": "Губернатор-хозяйственник",
+  "name": "Губернатор-хозяйственник",
   "level_data": [
    {
-    "effect_description": "Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <food></food> <hyperlink>пище</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -30% less <food></food> <hyperlink>Food</hyperlink>",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +1 к <gold></gold> золоту, +1 к <mana></mana> мане и +1 к <knowledge></knowledge> знания",
     "level": 3
    },
    {
-    "effect_description": "Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge",
+    "effect_description": "Для появления нового <population></population> <hyperlink>населения</hyperlink> требуется на 30% меньше <food></food> <hyperlink>пищи</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <farm></farm> <hyperlink>Farm</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>Acquiring new <population></population> <hyperlink>Population</hyperlink> requires -30% less <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +1<gold></gold> Gold, +1<mana></mana> Mana, and +1<knowledge></knowledge> Knowledge.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <food></food> <hyperlink>пище</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <farm></farm> <hyperlink>ферма</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +1 к <gold></gold> золоту, +1 к <mana></mana> мане и +1 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>Для появления нового <population></population> <hyperlink>населения</hyperlink> требуется на 30% меньше <food></food> <hyperlink>пищи</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000B0B"
  },
  {
-  "id": "industrious_governor",
-  "name": "Industrious Governor",
+  "id": "Предприимчивый_губернатор",
+  "name": "Предприимчивый губернатор",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к <structureprod></structureprod> <hyperlink>производству</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink><br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 3
    },
    {
-    "effect_description": "City Structures grant +2<gold></gold> Gold in addition to their normal effects",
+    "effect_description": "Городские сооружения помимо своего обычного эффекта дают +2 к <gold></gold> <hyperlink>золоту</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.<br></br><hyperlink>Dark</hyperlink> culture gains negative <happiness></happiness> <hyperlink>City Stability</hyperlink> instead.</bullet><bullet><white>Renown level 3</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к <structureprod></structureprod> <hyperlink>производству</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.</bullet></bulletlist>",
   "icon": "0000048D00000B07"
  },
  {
-  "id": "recruiting_governor",
-  "name": "Recruiting Governor",
+  "id": "Губернатор-вербовщик",
+  "name": "Губернатор-вербовщик",
   "level_data": [
    {
-    "effect_description": "+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>",
+    "effect_description": "+30 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Tier I and II <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank",
+    "effect_description": "Наём воинов стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
-    "effect_description": "Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit",
+    "effect_description": "<hyperlink>Воины</hyperlink> ранга I и II нанимаются с +1<medalGold></medalGold> к уровню",
     "level": 3
    },
    {
-    "effect_description": "Tier III, IV, and V <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank",
+    "effect_description": "<hyperlink>Воины</hyperlink> ранга III, IV и V нанимаются с +1<medalGold></medalGold> к уровню",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Tier I and II <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet><bullet><white>Renown level 3</white><br></br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit.</bullet><bullet><white>Renown level 4</white><br></br>Tier III, IV and V <hyperlink>Units</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>+30 к очкам <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Наём воинов стоит на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br><hyperlink>Воины</hyperlink> ранга I и II нанимаются с +1<medalGold></medalGold> к уровню.</bullet><bullet><white>Уровень славы 4</white><br></br><hyperlink>Воины</hyperlink> ранга III, IV и V нанимаются с +1<medalGold></medalGold> к уровню.</bullet></bulletlist>",
   "icon": "0000048D00000B03"
  }
 ]

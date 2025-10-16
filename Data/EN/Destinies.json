@@ -1,27 +1,27 @@
 [
  {
   "available_to_non_rulers": true,
-  "id": "gloryseeker",
-  "name": "Gloryseeker",
-  "screen_description": "This Hero seeks glory by slaying only the most experienced foes.",
+  "id": "Искатель_славы",
+  "name": "Искатель славы",
+  "screen_description": "Этот герой стремится к славе и хочет убивать лишь самых опытных врагов.",
   "available_to_rulers": true,
   "icon": "000004AC00000078",
   "ambitions": [
    {
-    "screen_description": "Personally slay a unit of legendary rank in combat",
+    "screen_description": "Лично сразить в бою воина легендарного уровня",
     "type": "major",
     "reward_renown": 100,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Rank Slayer",
-      "screen_description": "Deal +10% damage for each rank the target has.",
+      "name": "Убийца ветеранов",
+      "screen_description": "Наносит на +10% больше урона за каждый уровень цели.",
       "icon": "000004A600000941"
      }
     ]
    },
    {
-    "screen_description": "Personally slay a unit of elite rank in combat",
+    "screen_description": "Лично сразить в бою воина элитного уровня",
     "type": "minor",
     "reward_renown": 25,
     "repeatable": true,
@@ -31,87 +31,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "dominator",
-  "name": "Dominator",
-  "screen_description": "This Hero seeks to dominate others to bolster their own ranks.",
+  "id": "Деспот",
+  "name": "Деспот",
+  "screen_description": "Этот герой стремится подавлять волю других, принуждая их служить себе.",
   "available_to_rulers": true,
   "icon": "000004AC00000076",
   "ambitions": [
    {
-    "screen_description": "Recruit or Raise a Tier IV+ unit after combat",
+    "screen_description": "Нанять или поднять после боя воина ранга IV и выше",
     "type": "major",
-    "reward_renown": 100,
+    "reward_renown": 50,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Domination",
-      "screen_description": "Grants a base 90% chance of inflicting Dominated on target enemy until the end of battle.",
+      "name": "Подчинение",
+      "screen_description": "Даёт возможность с базовой вероятностью 90% применить к выбранному врагу эффект «Подчинён» до конца боя.",
       "icon": "0000045E000003E6"
      }
     ]
    },
    {
-    "screen_description": "Recruit or raise units after combat",
-    "type": "minor",
-    "reward_renown": 25,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "prospector",
-  "name": "Prospector",
-  "screen_description": "This Hero desires to become the wealthiest in the realm.",
-  "available_to_rulers": false,
-  "icon": "000004AC00000074",
-  "ambitions": [
-   {
-    "screen_description": "Governed City has a gold income of 200+",
-    "type": "major",
-    "reward_renown": 100,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Artisan Equipment",
-      "screen_description": "While army leader, all other units have:<bulletlist><bullet>+10 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+10% damage</bullet></bulletlist><br></br><br></br>This hero costs +50 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink>.",
-      "icon": "000004A6000008FF"
-     }
-    ]
-   },
-   {
-    "screen_description": "Clear a resource node",
-    "type": "minor",
-    "reward_renown": 25,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "defender",
-  "name": "Defender",
-  "screen_description": "This Hero strives to defend their city and Empire.",
-  "available_to_rulers": true,
-  "icon": "000004AC00000077",
-  "ambitions": [
-   {
-    "screen_description": "Governed city has 40+ Fortification Health",
-    "type": "major",
-    "reward_renown": 150,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Militarist",
-      "screen_description": "While army leader, all Shield Units, Polearm Units, Shock Units, and Fighter Units in army gain:<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet></bulletlist>",
-      "icon": "000003E100001EC5"
-     }
-    ]
-   },
-   {
-    "screen_description": "Win a battle in friendly territory",
+    "screen_description": "Нанять или поднять воинов после боя",
     "type": "minor",
     "reward_renown": 50,
     "repeatable": true,
@@ -121,27 +61,87 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "elitist",
-  "name": "Elitist",
-  "screen_description": "This Hero aims to prove their superiority to others.",
+  "id": "Изыскатель",
+  "name": "Изыскатель",
+  "screen_description": "Этот герой жаждет стать самым богатым вельможей державы.",
+  "available_to_rulers": false,
+  "icon": "000004AC00000074",
+  "ambitions": [
+   {
+    "screen_description": "Доход золота от города под управлением должен быть 200 и выше",
+    "type": "major",
+    "reward_renown": 100,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Мастерское снаряжение",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые получают:<bulletlist><bullet>+10 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>+10% урона.</bullet></bulletlist><br></br><br></br><hyperlink>Содержание</hyperlink> этого героя стоит на 50 ед. <gold></gold> <hyperlink>золота</hyperlink> больше.",
+      "icon": "000004A6000008FF"
+     }
+    ]
+   },
+   {
+    "screen_description": "Освободить источник ресурсов",
+    "type": "minor",
+    "reward_renown": 25,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Защитник",
+  "name": "Защитник",
+  "screen_description": "Этот герой стремится защищать свой город и всю империю от врагов.",
+  "available_to_rulers": true,
+  "icon": "000004AC00000077",
+  "ambitions": [
+   {
+    "screen_description": "Состояние укреплений города под вашим управлением должно быть 40 или выше",
+    "type": "major",
+    "reward_renown": 100,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Милитарист",
+      "screen_description": "Если герой стоит во главе армии, подчинённые ему воины со щитом, воины с пикой, ударные воины и боецы получают:<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>.</bullet></bulletlist>",
+      "icon": "000003E100001EC5"
+     }
+    ]
+   },
+   {
+    "screen_description": "Победить в битве на дружественной территории",
+    "type": "minor",
+    "reward_renown": 50,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Аристократ",
+  "name": "Аристократ",
+  "screen_description": "Этот герой стремится доказать своё превосходство над окружающими.",
   "available_to_rulers": false,
   "icon": "000004AC00000075",
   "ambitions": [
    {
-    "screen_description": "Reach level 12",
+    "screen_description": "Достичь уровня 12",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Ruler's Retinue",
-      "screen_description": "If this hero is in the same battle as your Ruler, this hero and your Ruler have +2 <defense></defense> <hyperlink>Defense</hyperlink> and +2 <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
+      "name": "Свита правителя",
+      "screen_description": "Если этот герой участвует в бою вместе с вашим правителем, оба они получают +2 к <defense></defense> <hyperlink>защите</hyperlink> и +2 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.",
       "icon": "000004A60000091B"
      }
     ]
    },
    {
-    "screen_description": "Fight alongside their Ruler",
+    "screen_description": "Сражаться бок о бок с правителем",
     "type": "minor",
     "reward_renown": 20,
     "repeatable": true,
@@ -151,29 +151,29 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "raider",
-  "name": "Raider",
-  "screen_description": "This Hero thrives on the raiding of enemy territory.",
+  "id": "Налётчик",
+  "name": "Налётчик",
+  "screen_description": "Этот герой обожает устраивать набеги на территорию неприятеля.",
   "available_to_rulers": true,
   "icon": "000004AC00000073",
   "ambitions": [
    {
-    "screen_description": "Win a combat in enemy territory",
+    "screen_description": "Победить в битве на вражеской территории",
     "type": "major",
-    "reward_renown": 150,
+    "reward_renown": 100,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Resourceful",
-      "screen_description": "While army leader, units in army have:<bulletlist><bullet>+10 <hyperlink><hp></hp> Hit Point</hyperlink> regeneration in the <hyperlink>World Map</hyperlink>.</bullet></bulletlist>",
+      "name": "Находчивый",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые получают:<bulletlist><bullet>+10 к восстановлению <hyperlink>здоровья</hyperlink> на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
       "icon": "000003E100001EC5"
      }
     ]
    },
    {
-    "screen_description": "Pillage a province",
+    "screen_description": "Разграбить провинцию",
     "type": "minor",
-    "reward_renown": 50,
+    "reward_renown": 75,
     "repeatable": true,
     "reward_properties": []
    }
@@ -181,21 +181,21 @@
  },
  {
   "available_to_non_rulers": false,
-  "id": "necromancer",
-  "name": "Necromancer",
-  "screen_description": "WIP TEXT: Spooky Scary Skeletons",
+  "id": "Некромант",
+  "name": "Некромант",
+  "screen_description": "WIP TEXT: жутенькие скелеты",
   "available_to_rulers": false,
   "icon": "000003C70000022B",
   "ambitions": [
    {
-    "screen_description": "Win a combat with only undead units on your side",
+    "screen_description": "Победить в бою, командуя только нежитью",
     "type": "major",
     "reward_renown": 75,
     "repeatable": false,
     "reward_properties": []
    },
    {
-    "screen_description": "Raise undead units after combat",
+    "screen_description": "Поднять нежить после боя",
     "type": "minor",
     "reward_renown": 10,
     "repeatable": true,
@@ -205,29 +205,29 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "instructor",
-  "name": "Instructor",
-  "screen_description": "This Hero aims to lead the most experienced force in the world.",
+  "id": "Инструктор",
+  "name": "Инструктор",
+  "screen_description": "Этот герой мечтает встать во главе отряда самых опытных бойцов в мире.",
   "available_to_rulers": true,
   "icon": "000004AC00000072",
   "ambitions": [
    {
-    "screen_description": "Hero leads a full army of Legendary rank units",
+    "screen_description": "Возглавить полноценную армию из воинов легендарного уровня",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Trainer",
-      "screen_description": "While army leader, all non-Hero units in army gain:<bulletlist><bullet>+30% <hyperlink><xp></xp> Experience</hyperlink>.</bullet></bulletlist>",
+      "name": "Инструктор",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые (кроме героев) получают:<bulletlist><bullet>+50% к <hyperlink><xp></xp> опыту</hyperlink>.</bullet></bulletlist>",
       "icon": "000003E100001EC5"
      }
     ]
    },
    {
-    "screen_description": "Rank up units in this Hero's army",
+    "screen_description": "Повысить уровень воинов в своей армии",
     "type": "minor",
-    "reward_renown": 6,
+    "reward_renown": 5,
     "repeatable": true,
     "reward_properties": []
    }
@@ -235,21 +235,21 @@
  },
  {
   "available_to_non_rulers": false,
-  "id": "martyr",
-  "name": "Martyr",
+  "id": "Мученик",
+  "name": "Мученик",
   "screen_description": "WIP TEXT: Chronic Victim Syndrome",
   "available_to_rulers": false,
   "icon": "000003C70000022B",
   "ambitions": [
    {
-    "screen_description": "Get resurrected in the Crypt",
+    "screen_description": "Погибнуть и воскреснуть в склепе",
     "type": "major",
     "reward_renown": 100,
     "repeatable": false,
     "reward_properties": []
    },
    {
-    "screen_description": "Lose units in battle",
+    "screen_description": "Потерять воинов в бою",
     "type": "minor",
     "reward_renown": 25,
     "repeatable": true,
@@ -259,177 +259,177 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "crusader",
-  "name": "Crusader",
-  "screen_description": "This Hero vows to smite the wicked.",
+  "id": "Крестоносец",
+  "name": "Крестоносец",
+  "screen_description": "Этот герой жаждет карать порочных.",
   "available_to_rulers": true,
   "icon": "000004AC00000071",
   "ambitions": [
    {
-    "screen_description": "Personally slay an undead or fiend unit of Tier 4+ in combat. Combat summons do not count.",
-    "type": "major",
-    "reward_renown": 200,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Preacher",
-      "screen_description": "While army leader, units in army have:<bulletlist><bullet>Faithful</bullet><bullet>Zeal</bullet></bulletlist>",
-      "icon": "000003E100001EC5"
-     }
-    ]
-   },
-   {
-    "screen_description": "Personally slay an undead or fiend unit in combat. Combat summons do not count.",
-    "type": "minor",
-    "reward_renown": 25,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "duelist",
-  "name": "Duelist",
-  "screen_description": "This Hero aspires to become an unrivaled duelist.",
-  "available_to_rulers": true,
-  "icon": "000004AC00000070",
-  "ambitions": [
-   {
-    "screen_description": "Personally slay a Ruler in combat",
-    "type": "major",
-    "reward_renown": 200,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Duelist",
-      "screen_description": "Against Heroes, this unit:<bulletlist><bullet>Deals +50% damage.</bullet><bullet>Has +3 <defense></defense> <hyperlink>Defense</hyperlink> and <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
-      "icon": "000003E100001EB4"
-     }
-    ]
-   },
-   {
-    "screen_description": "Personally slay a Hero in combat",
-    "type": "minor",
-    "reward_renown": 50,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "shepherd",
-  "name": "Shepherd",
-  "screen_description": "This Hero strives to nurture the next generation and lead them onward.",
-  "available_to_rulers": true,
-  "icon": "000004AC0000006F",
-  "ambitions": [
-   {
-    "screen_description": "Win a combat with only animal, plants and elementals units on your side",
-    "type": "major",
-    "reward_renown": 100,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Druid",
-      "screen_description": "While army leader, Animal, Plant and Elemental units in army have:<bulletlist><bullet>+10 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>-10% base <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
-      "icon": "000003E100001EC5"
-     }
-    ]
-   },
-   {
-    "screen_description": "Evolve or Promote a unit in this hero's army",
-    "type": "minor",
-    "reward_renown": 50,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "privateer",
-  "name": "Privateer",
-  "screen_description": "This Hero thrives in the freedom of the open seas.",
-  "available_to_rulers": true,
-  "icon": "000004AC0000006E",
-  "ambitions": [
-   {
-    "screen_description": "Clear a water infestation",
-    "type": "major",
-    "reward_renown": 100,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Ambusher",
-      "screen_description": "While army leader, units in army have:<bulletlist><bullet>Universal Camouflage</bullet></bulletlist>",
-      "icon": "000003E100001EC5"
-     }
-    ]
-   },
-   {
-    "screen_description": "Win a naval battle",
-    "type": "minor",
-    "reward_renown": 20,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "challenger",
-  "name": "Challenger",
-  "screen_description": "This Hero craves to be challenged in combat.",
-  "available_to_rulers": true,
-  "icon": "000004AC0000006D",
-  "ambitions": [
-   {
-    "screen_description": "Win a combat against an army with 500 more power",
-    "type": "major",
-    "reward_renown": 200,
-    "repeatable": false,
-    "reward_properties": [
-     {
-      "name": "Aggressive Tactician",
-      "screen_description": "While army leader, all units in army:<bulletlist><bullet>Start combat Hastened for 3 <turn></turn> Turns.</bullet></bulletlist>",
-      "icon": "000003E100001EC5"
-     }
-    ]
-   },
-   {
-    "screen_description": "Win a battle against an army with more power",
-    "type": "minor",
-    "reward_renown": 40,
-    "repeatable": true,
-    "reward_properties": []
-   }
-  ]
- },
- {
-  "available_to_non_rulers": true,
-  "id": "imperialist",
-  "name": "Imperialist",
-  "screen_description": "This Hero aims to bring the free cities to heel.",
-  "available_to_rulers": true,
-  "icon": "000004AC0000006C",
-  "ambitions": [
-   {
-    "screen_description": "Win a siege battle against a free city",
+    "screen_description": "Лично сразить в бою нежить или демона ранга 4 или выше. Призванные в бою воины не считаются.",
     "type": "major",
     "reward_renown": 150,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Siege Master",
-      "screen_description": "While army leader, grants Siege Breaker to all units in the army.",
+      "name": "Проповедник",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые получают:<bulletlist><bullet>«Верный»;</bullet><bullet>«Рвение»</bullet></bulletlist>",
+      "icon": "000003E100001EC5"
+     }
+    ]
+   },
+   {
+    "screen_description": "Лично сразить в бою нежить или демона. Призванные в бою воины не считаются.",
+    "type": "minor",
+    "reward_renown": 35,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Дуэлянт",
+  "name": "Дуэлянт",
+  "screen_description": "Этот герой хочет войти в историю как непревзойдённый дуэлянт.",
+  "available_to_rulers": true,
+  "icon": "000004AC00000070",
+  "ambitions": [
+   {
+    "screen_description": "Лично сразить в бою правителя",
+    "type": "major",
+    "reward_renown": 150,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Дуэлянт",
+      "screen_description": "Сражаясь с героями, воин получает:<bulletlist><bullet>+50% к урону;</bullet><bullet>+3 к <defense></defense> <hyperlink>защите</hyperlink> и <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+      "icon": "000003E100001EB4"
+     }
+    ]
+   },
+   {
+    "screen_description": "Лично сразить в бою героя",
+    "type": "minor",
+    "reward_renown": 50,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Пастырь",
+  "name": "Пастырь",
+  "screen_description": "Этот герой хочет воспитывать следующее поколение и вести его к лучшему будущему.",
+  "available_to_rulers": true,
+  "icon": "000004AC0000006F",
+  "ambitions": [
+   {
+    "screen_description": "Победить в бою, командуя только животными, растениями и элементалями",
+    "type": "major",
+    "reward_renown": 100,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Друид",
+      "screen_description": "Если герой стоит во главе армии, подчинённые ему животные, растения и элементали получают:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>-20% от базовой стоимости <hyperlink>содержания</hyperlink>.</bullet></bulletlist>",
+      "icon": "000003E100001EC5"
+     }
+    ]
+   },
+   {
+    "screen_description": "Добиться эволюции или повышения воина в своей армии",
+    "type": "minor",
+    "reward_renown": 75,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Пират",
+  "name": "Пират",
+  "screen_description": "Этот герой наслаждается вольной жизнью моряка.",
+  "available_to_rulers": true,
+  "icon": "000004AC0000006E",
+  "ambitions": [
+   {
+    "screen_description": "Уничтожить логово на воде",
+    "type": "major",
+    "reward_renown": 100,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Мастер засад",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые получают:<bulletlist><bullet>«Универсальный камуфляж»;</bullet></bulletlist>",
+      "icon": "000003E100001EC5"
+     }
+    ]
+   },
+   {
+    "screen_description": "Победить в сражении на воде",
+    "type": "minor",
+    "reward_renown": 35,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Богатырь",
+  "name": "Богатырь",
+  "screen_description": "Этот герой стремится побеждать самых сильных противников.",
+  "available_to_rulers": true,
+  "icon": "000004AC0000006D",
+  "ambitions": [
+   {
+    "screen_description": "Выиграть сражение против армии, превосходящей силы героя минимум на 250",
+    "type": "major",
+    "reward_renown": 100,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Агрессивный тактик",
+      "screen_description": "Если герой стоит во главе армии, все его подчинённые:<bulletlist><bullet>начинают бой под воздействием эффекта «Ускорение» продолжительностью 3 <turn></turn> х.</bullet></bulletlist>",
+      "icon": "000003E100001EC5"
+     }
+    ]
+   },
+   {
+    "screen_description": "Выиграть сражение против армии, превосходящей силы героя",
+    "type": "minor",
+    "reward_renown": 50,
+    "repeatable": true,
+    "reward_properties": []
+   }
+  ]
+ },
+ {
+  "available_to_non_rulers": true,
+  "id": "Империалист",
+  "name": "Империалист",
+  "screen_description": "Этот герой желает подчинить все свободные города.",
+  "available_to_rulers": true,
+  "icon": "000004AC0000006C",
+  "ambitions": [
+   {
+    "screen_description": "Провести успешную осаду свободного города",
+    "type": "major",
+    "reward_renown": 150,
+    "repeatable": false,
+    "reward_properties": [
+     {
+      "name": "Мастер осады",
+      "screen_description": "Даёт способность «Кольцо осады» всем воинам в армии.",
       "icon": "000003FE000008C5"
      }
     ]
    },
    {
-    "screen_description": "Win a battle against a free city",
+    "screen_description": "Выиграть битву против свободного города",
     "type": "minor",
     "reward_renown": 50,
     "repeatable": true,
@@ -439,27 +439,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "delver",
-  "name": "Delver",
-  "screen_description": "This Hero aims to dig up the treasures of the underground.",
+  "id": "Копатель",
+  "name": "Копатель",
+  "screen_description": "Этот герой хочет отыскать сокровища подземного мира.",
   "available_to_rulers": true,
   "icon": "000004AC0000006B",
   "ambitions": [
    {
-    "screen_description": "Clear an underground infestation",
+    "screen_description": "Уничтожить подземное логово",
     "type": "major",
-    "reward_renown": 150,
+    "reward_renown": 100,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Unstoppable Leader",
-      "screen_description": "All units in the army have Unstoppable Juggernaut.",
+      "name": "Неудержимый командир",
+      "screen_description": "Все воины в армии получают способность «Неудержимый джаггернаут».",
       "icon": "000004A6000008FA"
      }
     ]
    },
    {
-    "screen_description": "Excavate a province",
+    "screen_description": "Провести раскопки в провинции",
     "type": "minor",
     "reward_renown": 50,
     "repeatable": true,
@@ -469,27 +469,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "fearmonger",
-  "name": "Fearmonger",
-  "screen_description": "This Hero aspires to become a symbol of fear.",
+  "id": "Тиран",
+  "name": "Тиран",
+  "screen_description": "Этот герой хочет вызывать у всех страх.",
   "available_to_rulers": true,
   "icon": "000004AC0000006A",
   "ambitions": [
    {
-    "screen_description": "Win a battle where 5 enemies routed",
+    "screen_description": "Выиграть сражение, обратив 2 вражеских воинов в бегство",
     "type": "major",
-    "reward_renown": 200,
+    "reward_renown": 50,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Intimidating",
-      "screen_description": "Unit has:",
+      "name": "Грозный",
+      "screen_description": "Воин получает:",
       "icon": "000003E100001EB4"
      }
     ]
    },
    {
-    "screen_description": "Rout enemy units in battle",
+    "screen_description": "В бою обратить вражеских воинов в бегство",
     "type": "minor",
     "reward_renown": 25,
     "repeatable": true,
@@ -499,27 +499,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "lawbringer",
-  "name": "Lawbringer",
-  "screen_description": "This Hero aims to bring law and order to the unruly wilds.",
+  "id": "Законник",
+  "name": "Законник",
+  "screen_description": "Этот герой стремится принести в глушь закон и порядок.",
   "available_to_rulers": true,
   "icon": "000004AC00000069",
   "ambitions": [
    {
-    "screen_description": "Clear a Gold level infestation",
+    "screen_description": "Уничтожить логово золотого уровня",
     "type": "major",
-    "reward_renown": 200,
+    "reward_renown": 150,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Pragmatic Leader",
-      "screen_description": "While army leader, all units in the army gain:<bulletlist><bullet>Cold Blooded</bullet><bullet>-20% base <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
+      "name": "Прагматичный командир",
+      "screen_description": "Если герой стоит во главе армии, его подчинённые получают:<bulletlist><bullet>способность «Хладнокровие»;</bullet><bullet>-20% от стоимости <hyperlink>содержания</hyperlink>.</bullet></bulletlist>",
       "icon": "000003E100001EC5"
      }
     ]
    },
    {
-    "screen_description": "Clear an infestation",
+    "screen_description": "Уничтожить логово",
     "type": "minor",
     "reward_renown": 50,
     "repeatable": true,
@@ -529,29 +529,29 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "collector",
-  "name": "Collector",
-  "screen_description": "This Hero desires to own a full collection of powerful artifacts.",
+  "id": "Коллекционер",
+  "name": "Коллекционер",
+  "screen_description": "Этот герой мечтает собрать коллекцию могущественных артефактов.",
   "available_to_rulers": true,
   "icon": "000004AC00000068",
   "ambitions": [
    {
-    "screen_description": "Fully equip with Tier 2+ items",
+    "screen_description": "Полностью экипироваться предметами ранга 2",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Equipment Mastery",
-      "screen_description": "Gain +1 <hyperlink><hp></hp> Hit Point</hyperlink> per item tier equipped.",
+      "name": "Мастер снаряжения",
+      "screen_description": "Даёт +1 ед. <hyperlink>здоровья</hyperlink> за каждый ранг используемых предметов.",
       "icon": "000004A600000937"
      }
     ]
    },
    {
-    "screen_description": "Have an item equipped for 3 turns",
+    "screen_description": "Использовать предмет не менее 3 ходов",
     "type": "minor",
-    "reward_renown": 3,
+    "reward_renown": 2,
     "repeatable": true,
     "reward_properties": []
    }
@@ -559,27 +559,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "explorer",
-  "name": "Explorer",
-  "screen_description": "This Hero aims to explore the ancient wonders of the world.",
+  "id": "Исследователь",
+  "name": "Исследователь",
+  "screen_description": "Этот герой жаждет исследовать древние чудеса.",
   "available_to_rulers": true,
   "icon": "000004AC00000067",
   "ambitions": [
    {
-    "screen_description": "Explore a Golden Ancient Wonder",
+    "screen_description": "Исследовать золотое древнее чудо",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Farseer",
-      "screen_description": "This unit has:<bulletlist><bullet>+6 <hyperlink>Vision Range</hyperlink></bullet><bullet>+6 <hyperlink>Sensing Range</hyperlink></bullet><bullet>Truesight</bullet></bulletlist>",
+      "name": "Провидец",
+      "screen_description": "Этот воин получает:<bulletlist><bullet>+6 к <hyperlink>радиусу обзора</hyperlink>;</bullet><bullet>+6 к <hyperlink>дальности обнаружения</hyperlink>;</bullet><bullet>способность «Всевидение».</bullet></bulletlist>",
       "icon": "000004A6000008F6"
      }
     ]
    },
    {
-    "screen_description": "Explore an Ancient Wonder",
+    "screen_description": "Исследовать древнее чудо",
     "type": "minor",
     "reward_renown": 100,
     "repeatable": true,
@@ -589,27 +589,27 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "steward",
-  "name": "Steward",
-  "screen_description": "This Hero thrives in the governance of a large and stable city.",
+  "id": "Сенешаль",
+  "name": "Сенешаль",
+  "screen_description": "Этот герой хочет править богатым и процветающим городом.",
   "available_to_rulers": false,
   "icon": "000004AC00000066",
   "ambitions": [
    {
-    "screen_description": "Grow governed city to 16 population",
+    "screen_description": "Поднять численность населения города под управлением до 16",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Protector",
-      "screen_description": "Adjacent friendly units gain:<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
+      "name": "Защитник",
+      "screen_description": "Дружественные воины по соседству получают:<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
       "icon": "000003E100001EB4"
      }
     ]
    },
    {
-    "screen_description": "Governed City maintains positive stability for 3 turns",
+    "screen_description": "Удерживать положительную стабильность в городе под управлением не менее 5 ходов",
     "type": "minor",
     "reward_renown": 40,
     "repeatable": true,
@@ -619,29 +619,29 @@
  },
  {
   "available_to_non_rulers": true,
-  "id": "conqueror",
-  "name": "Conqueror",
-  "screen_description": "This Hero aspires to become a conqueror of cities.",
+  "id": "Завоеватель",
+  "name": "Завоеватель",
+  "screen_description": "Этот герой хочет прославиться завоеванием городов.",
   "available_to_rulers": true,
   "icon": "000004AC00000065",
   "ambitions": [
    {
-    "screen_description": "Win a siege battle against a Throne City",
+    "screen_description": "Провести успешную осаду тронного города",
     "type": "major",
     "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
-      "name": "Demolitionist",
-      "screen_description": "Unit has:",
+      "name": "Уничтожитель",
+      "screen_description": "Воин получает:",
       "icon": "000003E100001EB4"
      }
     ]
    },
    {
-    "screen_description": "Win a siege battle",
+    "screen_description": "Провести успешную осаду",
     "type": "minor",
-    "reward_renown": 100,
+    "reward_renown": 200,
     "repeatable": true,
     "reward_properties": []
    }
