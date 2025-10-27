@@ -15,7 +15,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000004C000000519",
-  "damage": "9<damagephysical></damagephysical> 9<damagespirit></damagespirit> 9<damagefrost></damagefrost> ",
+  "damage": "7<damagephysical></damagephysical> 7<damagespirit></damagespirit> 7<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -126,12 +126,6 @@
   "name": "Амфибия",
   "slug": "000003eb0000071f",
   "icon": "0000039F000028E0"
- },
- {
-  "description": "-30% урона для <hyperlink>Натиск</hyperlink>.",
-  "name": "Атака натиском: уменьшение урона",
-  "slug": "cbe7688b0000023f",
-  "icon": "CBE7688B00000244"
  },
  {
   "description": "В конце хода этого воина вражеские воины по соседству теряют -5 ед. <happiness></happiness> <hyperlink>боевого духа</hyperlink><br></br><br></br>Не действует на воинов с этой способностью.",
@@ -565,7 +559,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000004C0000004AB",
-  "damage": "9<damagephysical></damagephysical> 9<damagefire></damagefire> 9<damagespirit></damagespirit> ",
+  "damage": "7<damagephysical></damagephysical> 7<damagefire></damagefire> 7<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -1187,7 +1181,7 @@
   "description": "Атака натиском, при которой воин передвигается на 2 кл. вперёд:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Натиск в полёте",
   "slug": "flyby_melee_charge_ability_0000049700002D02",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -1289,7 +1283,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000049700002A6F",
-  "damage": "19<damagefrost></damagefrost> 11<damagephysical></damagephysical> ",
+  "damage": "14<damagefrost></damagefrost> 8<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -1534,7 +1528,7 @@
   "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Сотрясающий натиск",
   "slug": "melee_charge_strike_(base)_ability_0000049700002864",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "13<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -1747,7 +1741,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700002492",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -1938,7 +1932,7 @@
   "description": "Наносит урон в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Опустошительный натиск",
   "slug": "melee_charge_strike_(base)_ability_0000049700001835",
-  "damage": "10<damagephysical></damagephysical> 8<damagefire></damagefire> ",
+  "damage": "7<damagephysical></damagephysical> 6<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -2148,7 +2142,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700000FAD_0000049700000fb5",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -2375,7 +2369,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000049700000CD6",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4068,7 +4062,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000176d",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4094,7 +4088,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d00001785",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4114,7 +4108,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000178f",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4134,7 +4128,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d00001797",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4154,7 +4148,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d0000179d",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -4174,7 +4168,7 @@
   "description": "Атака натиском:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>разрубает цели в конусе размером в 1 клетку, нанося 20% урона от атаки;</bullet><bullet>воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Сметающий натиск",
   "slug": "sweeping_charge_unit_property_ability_00000490000016DC_0000048d000017a1",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -5167,7 +5161,7 @@
   "description": "Натиск:<bulletlist><bullet>получает +5 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Атака пылающим натиском",
   "slug": "flaming_charge_strike_ability_0000049000000EA6_0000049700000fb8",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -6524,7 +6518,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_primal_mammoth_ability_0000049000000424",
-  "damage": "21<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7319,7 +7313,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dc",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7353,7 +7347,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002dc",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7386,7 +7380,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002df",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7420,7 +7414,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002df",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7453,7 +7447,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e1",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7487,7 +7481,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002e1",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7520,7 +7514,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dd",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7554,7 +7548,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002dd",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7587,7 +7581,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002de",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7621,7 +7615,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002de",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7654,7 +7648,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e0",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7688,7 +7682,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002e0",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7721,7 +7715,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002db",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -7755,7 +7749,7 @@
   "description": "Атакует воинов в конусе размером 1 кл.",
   "name": "Рассекающий натиск",
   "slug": "cleaving_charge_ability_000004900000031E_00000497000002db",
-  "damage": "17<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9117,7 +9111,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(elephant_mammoth_only)_00000490000002C1",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9176,7 +9170,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(elephant_mammoth_only)_00000490000002C0",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9837,7 +9831,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d000011e2",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -9866,7 +9860,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d00001220",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -10189,7 +10183,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_00000489000013E2",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -10420,7 +10414,7 @@
   "description": "Атака натиском, наносящая урон всем врагам в конусе размером 1 кл.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Зверский натиск",
   "slug": "savage_charge_ability_000004890000137A",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "21<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -10488,7 +10482,7 @@
   "description": "Атака натиском на выбранного вражеского воина наносит врагам по соседству с целью 50% от урона.<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Кристаллический натиск",
   "slug": "melee_charge_strike_(base)_ability_0000048900001376",
-  "damage": "17<damagephysical></damagephysical> 17<damagelightning></damagelightning> ",
+  "damage": "12<damagephysical></damagephysical> 12<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -11354,7 +11348,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Проклятый натиск",
   "slug": "melee_charge_strike_(base)_ability_0000048900001224",
-  "damage": "10<damagephysical></damagephysical> 6<damagefire></damagefire> 6<damagefrost></damagefrost> ",
+  "damage": "7<damagephysical></damagephysical> 5<damagefire></damagefire> 5<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -11696,7 +11690,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(roving_furnace)_0000048900000222",
-  "damage": "11<damagephysical></damagephysical> 11<damagefire></damagefire> ",
+  "damage": "8<damagephysical></damagephysical> 8<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -12433,7 +12427,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Зверский натиск",
   "slug": "melee_charge_strike_(base)_ability_0000046400000058",
-  "damage": "19<damagephysical></damagephysical> 19<damagefrost></damagefrost> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -12794,7 +12788,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(infernal_elephant_only)_0000043D000004FE",
-  "damage": "13<damagephysical></damagephysical> 13<damagefire></damagefire> ",
+  "damage": "10<damagephysical></damagephysical> 10<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -13180,7 +13174,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B00001492",
-  "damage": "27<damagephysical></damagephysical> ",
+  "damage": "19<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -13372,7 +13366,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000041B00001131",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -13781,7 +13775,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B00000BB2",
-  "damage": "27<damagephysical></damagephysical> ",
+  "damage": "19<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -13951,7 +13945,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_0000041B000007FD",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -14196,7 +14190,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Деморализующая атака натиском",
   "slug": "demoralizing_charge_ability_0000041B0000048F",
-  "damage": "27<damagephysical></damagephysical> ",
+  "damage": "19<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -14999,7 +14993,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00001891",
-  "damage": "20<damagefire></damagefire> 10<damagephysical></damagephysical> ",
+  "damage": "14<damagefire></damagefire> 7<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15464,7 +15458,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00000DEA",
-  "damage": "11<damagephysical></damagephysical> 11<damagelightning></damagelightning> ",
+  "damage": "8<damagephysical></damagephysical> 8<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15740,7 +15734,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003EC00000DDF",
-  "damage": "8<damagephysical></damagephysical> 8<damagelightning></damagelightning> ",
+  "damage": "6<damagephysical></damagephysical> 6<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15794,7 +15788,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DB3",
-  "damage": "19<damagelightning></damagelightning> 11<damagephysical></damagephysical> ",
+  "damage": "14<damagelightning></damagelightning> 8<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15868,7 +15862,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA1",
-  "damage": "19<damagefire></damagefire> 11<damagephysical></damagephysical> ",
+  "damage": "14<damagefire></damagefire> 8<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -15940,7 +15934,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA0",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "22<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -18244,7 +18238,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005CAF",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -18279,7 +18273,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на % за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(caustic_worm_only)_000003E300005C57",
-  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
+  "damage": "9<damagephysical></damagephysical> 9<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -18335,7 +18329,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005C56",
-  "damage": "9<damagephysical></damagephysical> 9<damageblight></damageblight> ",
+  "damage": "7<damagephysical></damagephysical> 7<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -18955,7 +18949,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005A2D",
-  "damage": "14<damagephysical></damagephysical> ",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -19016,7 +19010,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на % за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_(ram_warship_only)_000003E300005880",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -19766,7 +19760,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005305",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -19975,7 +19969,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300005301",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "13<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -20660,7 +20654,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052E1",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -20985,7 +20979,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d000011e2",
-  "damage": "31<damagephysical></damagephysical> ",
+  "damage": "22<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -21025,7 +21019,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d00001220",
-  "damage": "31<damagephysical></damagephysical> ",
+  "damage": "22<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -22651,7 +22645,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -22791,7 +22785,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E1000011AC",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "13<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -22820,7 +22814,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001190",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -22935,7 +22929,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001160",
-  "damage": "12<damagephysical></damagephysical> 12<damagespirit></damagespirit> ",
+  "damage": "9<damagephysical></damagephysical> 9<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -22987,7 +22981,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E100001153",
-  "damage": "12<damagephysical></damagephysical> 12<damagefire></damagefire> ",
+  "damage": "9<damagephysical></damagephysical> 9<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27470,7 +27464,7 @@
   "description": "Мощный натиск атакует врагов на линии в 2 кл.:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_000003BD00002895",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27490,7 +27484,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003BD00002895",
-  "damage": "23<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27569,7 +27563,7 @@
   "description": "Натиск:<bulletlist><bullet>получает +5 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Атака пылающим натиском",
   "slug": "flaming_charge_strike_ability_000003BD00002895",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27671,7 +27665,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge_warclaw)_ability_000003BD00002895",
-  "damage": "23<damagephysical></damagephysical> ",
+  "damage": "17<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -27768,7 +27762,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge)_ability_000003BD00002895",
-  "damage": "21<damagephysical></damagephysical> ",
+  "damage": "15<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -28529,7 +28523,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(item_forge_lance)_ability_000003BD00002895",
-  "damage": "19<damagephysical></damagephysical> ",
+  "damage": "14<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -29815,7 +29809,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "godbreaker_ability_000003BD00002895",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -29994,7 +29988,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "executioner_ability_000003BD00002895",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -30272,7 +30266,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "excessive_force_ability_000003BD00002895",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
