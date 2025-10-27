@@ -516,7 +516,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+25 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+20 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gain the Juggernaut ability."
@@ -814,6 +814,9 @@
    },
    {
     "name": "In combat, <hyperlink>Units</hyperlink> in an <hyperlink>Army</hyperlink> without a Hero suffer -20 <happiness></happiness> <hyperlink>Morale</hyperlink>."
+   },
+   {
+    "name": "<hyperlink>Heroes</hyperlink> assigmented by Governors give:<bulletlist><bullet>+10<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet></bulletlist></bullet>"
    }
   ],
   "enabled": true,
@@ -2361,7 +2364,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -40% <knowledge></knowledge> Knowledge to unlock."
+    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -30% <knowledge></knowledge> Knowledge to unlock."
    },
    {
     "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -30% upkeep."

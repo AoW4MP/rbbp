@@ -1704,7 +1704,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4634269712816,
   "id": "_expansionvictory___beacon_of_unity",
@@ -3183,7 +3183,7 @@
  {
   "requirement_description": "Requires 2: <conduit></conduit> <hyperlink>Conduits</hyperlink><br></br><br></br>Only 1 Guild allowed per city.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 <mana></mana> <hyperlink>Mana</hyperlink> income per <conduit></conduit> Conduit:",
+  "prediction_description": "<bulletlist><bullet>+20 <optactical></optactical> Combat Casting Point</bullet><bullet>+20 <caststrategic></caststrategic> World Map Casting Point</bullet><bullet>+10 <mana></mana> <hyperlink>Mana</hyperlink> income per <conduit></conduit> Conduit:</bullet></bulletlist>",
   "resid": 4282082401309,
   "id": "mages_guild",
   "description": "",

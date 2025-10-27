@@ -1508,7 +1508,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "earthshape_ashland",
   "tactical": false,
-  "description": "Target friendly or unowned <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Ashlands</hyperlink></bullet><bullet>Loses <hyperlink>River</hyperlink>, <hyperlink>Grassland</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Gloom</hyperlink></bullet></bulletlist>",
+  "description": "Target friendly or unowned <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Ashlands</hyperlink></bullet><bullet>Loses <hyperlink>River</hyperlink>, <hyperlink>Grassland</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Gloom</hyperlink></bullet></bulletlist>",
   "name": "Earthshape: Ashland",
   "operation_point_cost": 45,
   "icon": "000004970000066F"
@@ -2109,14 +2109,14 @@
   ]
  },
  {
-  "casting_cost": "400<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 5029406703618,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Sustained World Spell</hyperlink>",
   "id": "bind_gold_ancient_wonder",
   "tactical": false,
   "description": "<bulletlist><bullet>Target owned and annexed Gold <siteGold></siteGold> <hyperlink>Ancient Wonder</hyperlink> becomes bound.</bullet><bullet>While bound, it grants +50 <knowledge></knowledge>.</bullet><bullet>A number of bound Golden Ancient Wonders are required for <hyperlink>Magic Victory</hyperlink>.</bullet><bullet>This spell is canceled if the Bound Ancient Wonder is occupied or changes ownership.</bullet></bulletlist>",
   "name": "Bind Gold Ancient Wonder",
-  "operation_point_cost": 300,
+  "operation_point_cost": 100,
   "icon": "0000049300000004"
  },
  {
@@ -3097,7 +3097,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "earthshape_sand",
   "tactical": false,
-  "description": "Target friendly or unowned Surface <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Sand</hyperlink>.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly or unowned Surface <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Sand</hyperlink>.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Earthshape: Sand",
   "operation_point_cost": 45,
   "icon": "0000045E00000EB2"
@@ -3108,7 +3108,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "earthshape_swamp",
   "tactical": false,
-  "description": "Target friendly or unowned Surface <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Swamp</hyperlink></bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly or unowned Surface <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Swamp</hyperlink></bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Earthshape: Swamp",
   "operation_point_cost": 45,
   "icon": "0000045E00000E99"
@@ -3119,7 +3119,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "earthshape_snow",
   "tactical": false,
-  "description": "Target friendly or unowned <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Grassland</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly or unowned <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Grassland</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Earthshape: Snow",
   "operation_point_cost": 45,
   "icon": "0000045E00000E97"
@@ -3234,7 +3234,7 @@
   "icon": "000003E300005C88"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567758,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3242,11 +3242,11 @@
   "tactical": false,
   "description": "Channel the Age of Shadow to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <shadow></shadow> <hyperlink>Shadow Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random corpse is reanimated as a <hyperlink>Decaying Zombie</hyperlink> until the end of combat.</bullet></bulletlist>",
   "name": "Age of Shadow",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567754,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3254,11 +3254,11 @@
   "tactical": false,
   "description": "Channel the Age of Order to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <order></order> <hyperlink>Order Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random ally gains 3 random <hyperlink>Positive Status Effects</hyperlink> and loses all <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist>",
   "name": "Age of Order",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000B"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567750,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3266,11 +3266,11 @@
   "tactical": false,
   "description": "Channel the Age of Nature to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <nature></nature> <hyperlink>Nature Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Every 2 turns in combat, a Tier II-III nature unit is summoned on your side.</bullet></bulletlist>",
   "name": "Age of Nature",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000007"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567746,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3278,7 +3278,7 @@
   "tactical": false,
   "description": "Channel the Age of Materium to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <matter></matter> <hyperlink>Materium Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a friendly unit gains Bolstered Defense and Bolstered Resistance. Repeats 2-4 times.</bullet></bulletlist>",
   "name": "Age of Materium",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000003"
  },
  {
@@ -3316,7 +3316,7 @@
   "icon": "000004450000005F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4694399254591,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3324,7 +3324,7 @@
   "tactical": false,
   "description": "Channel the Age of Chaos to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <chaos></chaos> <hyperlink>Chaos Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each <turn></turn> Turn in combat, a random enemy unit sustains 15 damage of a random type and has a base 90% chance of receiving a random <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Age of Chaos",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000044500000040"
  },
  {
@@ -3870,7 +3870,7 @@
   "icon": "0000041B00001298"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4514010633567,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -3878,7 +3878,7 @@
   "tactical": false,
   "description": "Channel the Age of Astral to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <arcana></arcana> <hyperlink>Astral Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random enemy takes 15 mixed Fire, Lightning, and Frost, damage and gets 2 Sundered Resistance and 2 Status Vulnerability.</bullet></bulletlist>",
   "name": "Age of Astral",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000041B00001560"
  },
  {
