@@ -516,7 +516,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+25 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+20 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    },
    {
     "name": "Даёт способность «Джаггернаут»."
@@ -814,6 +814,9 @@
    },
    {
     "name": "<hyperlink>Воины</hyperlink> в <hyperlink>армии</hyperlink> без героя получают -20 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> во время боя."
+   },
+   {
+    "name": "<hyperlink>Герои</hyperlink>, назначенные Губернаторами, дают:<bulletlist><bullet>+10 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -2361,7 +2364,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -40% ед. <knowledge></knowledge> знания."
+    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -30% ед. <knowledge></knowledge> знания."
    },
    {
     "name": "Поддержание <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> обходится на 30% дешевле."

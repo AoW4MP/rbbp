@@ -1704,7 +1704,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4634269712816,
   "id": "_expansionvictory___Маяк_единения",
@@ -3183,7 +3183,7 @@
  {
   "requirement_description": "Требуются <conduit></conduit> <hyperlink>порталы</hyperlink> (2)<br></br><br></br>В городе можно иметь только 1 гильдию.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 к доходу <mana></mana> <hyperlink>маны</hyperlink> за каждую провинцию типа «<conduit></conduit> Портал» ()",
+  "prediction_description": "<bulletlist><bullet>+20 <optactical></optactical> Очки боевых заклинаний</bullet><bullet>+20 <caststrategic></caststrategic> Очки глобальных заклинаний</bullet><bullet>+10 к доходу <mana></mana> <hyperlink>маны</hyperlink> за каждую провинцию типа «<conduit></conduit> Портал» ()</bullet></bulletlist>",
   "resid": 4282082401309,
   "id": "Гильдия_магов",
   "description": "",

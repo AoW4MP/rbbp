@@ -1508,7 +1508,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
   "id": "Трансформация_земли_пепелища",
   "tactical": false,
-  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>в провинции появляется особенность ландшафта «<hyperlink>Пепелище</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Река</hyperlink>», «<hyperlink>Луга</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству получают следующие особенности:<bulletlist><bullet>в провинции появляется особенность ландшафта «<hyperlink>Пепелище</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Река</hyperlink>», «<hyperlink>Луга</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
   "name": "Трансформация земли: пепелища",
   "operation_point_cost": 45,
   "icon": "000004970000066F"
@@ -2109,14 +2109,14 @@
   ]
  },
  {
-  "casting_cost": "400<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 5029406703618,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Постоянное заклинание для мира</hyperlink>",
   "id": "Подчинить_золотое_древнее_чудо",
   "tactical": false,
   "description": "<bulletlist><bullet>Выбранное золотое <siteGold></siteGold> <hyperlink>древнее чудо</hyperlink>, захваченное и присоединённое игроком, подчиняется его воле.</bullet><bullet>Подчинённое чудо даёт +50 <knowledge></knowledge>.</bullet><bullet>Чтобы одержать <hyperlink>магическую победу</hyperlink>, необходимо подчинить своей воле несколько золотых древних чудес.</bullet><bullet>Если подчинённое древнее чудо будет захвачено противником или сменит владельца, действие заклинания прекратится.</bullet></bulletlist>",
   "name": "Подчинить золотое древнее чудо",
-  "operation_point_cost": 300,
+  "operation_point_cost": 100,
   "icon": "0000049300000004"
  },
  {
@@ -3097,7 +3097,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
   "id": "Трансформация_земли_пески",
   "tactical": false,
-  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> на поверхности получает следующие особенности:<bulletlist><bullet>в провинции появляется особенность ландшафта «<hyperlink>Пески</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству на поверхности получают следующие особенности:<bulletlist><bullet>в провинции появляется особенность ландшафта «<hyperlink>Пески</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
   "name": "Трансформация земли: пески",
   "operation_point_cost": 45,
   "icon": "0000045E00000EB2"
@@ -3108,7 +3108,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
   "id": "Трансформация_земли_болота",
   "tactical": false,
-  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> на поверхности получает следующие особенности:<bulletlist><bullet>В провинции появляется особенность ландшафта «<hyperlink>Болото</hyperlink>».</bullet><bullet>Провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству на поверхности получают следующие особенности:<bulletlist><bullet>В провинции появляется особенность ландшафта «<hyperlink>Болото</hyperlink>».</bullet><bullet>Провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
   "name": "Трансформация земли: болота",
   "operation_point_cost": 45,
   "icon": "0000045E00000E99"
@@ -3119,7 +3119,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
   "id": "Трансформация_земли_снега",
   "tactical": false,
-  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>в провинции появляются особенности ландшафта «<hyperlink>Снег</hyperlink>» и «<hyperlink>Лёд</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Луга</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству получают следующие особенности:<bulletlist><bullet>в провинции появляются особенности ландшафта «<hyperlink>Снег</hyperlink>» и «<hyperlink>Лёд</hyperlink>»;</bullet><bullet>провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Луга</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
   "name": "Трансформация земли: снега",
   "operation_point_cost": 45,
   "icon": "0000045E00000E97"
@@ -3234,7 +3234,7 @@
   "icon": "000003E300005C88"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567758,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3242,11 +3242,11 @@
   "tactical": false,
   "description": "Начните Век тени, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>Ваши <hyperlink>заклинания</hyperlink> <shadow></shadow> <hyperlink>приверженности тени</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>.</bullet><bullet>В сражениях случайные трупы восстают каждый ход как <hyperlink>гниющий зомби</hyperlink> до конца боя.</bullet></bulletlist>",
   "name": "Век тени",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567754,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3254,11 +3254,11 @@
   "tactical": false,
   "description": "Начните Век порядка, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>ваши <hyperlink>заклинания</hyperlink> <order></order> <hyperlink>приверженности порядку</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>;</bullet><bullet>в сражениях каждый ход случайный союзник получает случайно выбранные <hyperlink>положительные эффекты</hyperlink> (до 3) и теряет все <hyperlink>отрицательные эффекты</hyperlink>.</bullet></bulletlist>",
   "name": "Век порядка",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000B"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567750,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3266,11 +3266,11 @@
   "tactical": false,
   "description": "Начните Век природы, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>Ваши <hyperlink>заклинания</hyperlink> <nature></nature> <hyperlink>приверженности природе</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>.</bullet><bullet>В сражениях раз в 2 х. к вам присоединяется воин природы рангом от II до III.</bullet></bulletlist>",
   "name": "Век природы",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000007"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567746,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3278,7 +3278,7 @@
   "tactical": false,
   "description": "Начните Век материи, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>Ваши <hyperlink>заклинания</hyperlink> <matter></matter> <hyperlink>приверженности материи</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>.</bullet><bullet>В сражениях к дружественным воинам каждый ход применяются эффекты «Усиленная защита» и «Усиленное сопротивление». Действие повторяется от 2 до 4 р.</bullet></bulletlist>",
   "name": "Век материи",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000003"
  },
  {
@@ -3316,7 +3316,7 @@
   "icon": "000004450000005F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4694399254591,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3324,7 +3324,7 @@
   "tactical": false,
   "description": "Начните Век хаоса, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>ваши <hyperlink>заклинания</hyperlink> <chaos></chaos> <hyperlink>приверженности хаосу</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>;</bullet><bullet>в сражениях случайный враг каждый <turn></turn> ход получает 15 ед. урона случайного типа. С базовой вероятностью 90% к нему применяется случайный <hyperlink>отрицательный эффект</hyperlink>.</bullet></bulletlist>",
   "name": "Век хаоса",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000044500000040"
  },
  {
@@ -3870,7 +3870,7 @@
   "icon": "0000041B00001298"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4514010633567,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание магической победы</hyperlink>",
@@ -3878,7 +3878,7 @@
   "tactical": false,
   "description": "Начните Век астрала, чтобы добиться <hyperlink>магической победы</hyperlink>. В процессе сотворения заклинания:<bulletlist><bullet>Ваши <hyperlink>заклинания</hyperlink> <arcana></arcana> <hyperlink>приверженности астралу</hyperlink> тратят на 20% меньше <mana></mana> <hyperlink>маны</hyperlink>, <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink> и <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink>.</bullet><bullet>В сражениях случайный враг каждый ход получает 15 ед. смешанного урона от огня, холода и электричества, а также эффекты «Пробитое сопротивление» (2) и «Уязвимость к эффектам» (2).</bullet></bulletlist>",
   "name": "Век астрала",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000041B00001560"
  },
  {
