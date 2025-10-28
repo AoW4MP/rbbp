@@ -3656,7 +3656,7 @@ function backtrackUnitOrigins(unitData, name, holder) {
 
     var evolve = CheckIfEvolveTarget(unitData.id);
     if (evolve != "") {
-        const tooltipText = `Evolved from Unit <hyperlink>${evolve.name}</<hyperlink>`;
+        const tooltipText = `RbbP from Unit <hyperlink>${evolve.name}</<hyperlink>`;
         const imgSrc = `/rbbp/Icons/UnitIcons/evolve.png`;
         const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
         const link = `/rbbp/HTML/Units.html?unit=${evolve.id}`;

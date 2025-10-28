@@ -225,7 +225,7 @@ function GetTomeTierAndNameTome(id) {
 
 function ShowUnitFromLink() {
     let unitID = searchParams.get("unit");
-    document.title = "Age of Wonders 4 Evolved - " + GetUnitTierAndName(unitID).split(">")[2];
+    document.title = "Age of Wonders 4 RbbP - " + GetUnitTierAndName(unitID).split(">")[2];
     showUnitFromString(unitID, "dataHolder");
 }
 
@@ -272,7 +272,7 @@ function ShowSpellFromLink() {
         const id = searchParams.get(key);
         if (id) {
             const titleText = typeof title === "function" ? title(id) : title;
-            document.title = `Age of Wonders 4 Evolved - ${titleText}`;
+            document.title = `Age of Wonders 4 RbbP - ${titleText}`;
             action(id, "dataHolder");
             return;
         }
@@ -3218,7 +3218,7 @@ function backtrackUnitOrigins(unitData, name, holder) {
 
     let evolve = CheckIfEvolveTarget(unitData.id);
     if (evolve != "") {
-        const tooltipText = `Evolved/Promoted from Unit <hyperlink>${evolve.name}</<hyperlink>`;
+        const tooltipText = `RbbP/Promoted from Unit <hyperlink>${evolve.name}</<hyperlink>`;
         const imgSrc = `/rbbp/Icons/UnitIcons/evolve.png`;
         const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
         const link = `/rbbp/HTML/Units.html?unit=${evolve.id}`;
