@@ -44,6 +44,48 @@
  {
   "abilities": [
    {
+    "slug": "00000497000034f4"
+   }
+  ],
+  "resid": 5046586586354,
+  "id": "blood_pest_hero_skill_normal",
+  "group_name": "Pantheon Hero Skills",
+  "icon": "00000497000034F3",
+  "type": "normal",
+  "name": "Вознесение: Тварь крови",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "torment_and_pain_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586586346,
+  "id": "torment_and_pain_hero_skill_normal",
+  "group_name": "Pantheon Hero Skills",
+  "icon": "00000497000034EB",
+  "type": "normal",
+  "name": "Вознесение: Боль и страдания",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "blood_rite_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586586326,
+  "id": "blood_rite_hero_skill_normal",
+  "group_name": "Pantheon Hero Skills",
+  "icon": "00000497000034D7",
+  "type": "normal",
+  "name": "Вознесение: Обряд крови",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
     "slug": "0000049700002ddf"
    }
   ],
@@ -204,7 +246,7 @@
   "icon": "0000048D000009D3",
   "type": "normal",
   "name": "Притягивание",
-  "description": "Выбранный воин:<bulletlist><bullet>получает урон;</bullet><bullet>с базовой вероятностью %:<bulletlist></bullet><bullet>может быть притянут на соседнюю клетку;</bullet><bullet>может получить эффект «Удушение» на <turn></turn> х.</bullet></bulletlist>"
+  "description": "Выбранный воин:<bulletlist><bullet>получает урон;</bullet><bullet>с базовой вероятностью %:<bulletlist></bullet><bullet>может быть притянут на соседнюю клетку;</bullet><bullet>может получить эффект «Удушение» на <turn></turn> х.</bullet></bulletlist></bulletlist>"
  },
  {
   "abilities": [
@@ -613,7 +655,7 @@
   "icon": "000003E100001FC3",
   "type": "normal",
   "name": "Ярость берсерка",
-  "description": "Когда <hyperlink>здоровье</hyperlink> этого воина опускается до % и ниже, он на <turn></turn> превращается в берсерк:<bulletlist><bullet>«Берсерк»;</bullet><bullet>«Стойкость».</bullet></bulletlist>"
+  "description": "Когда <hp></hp> <hyperlink>здоровье</hyperlink> этого воина опускается до % и ниже, он на <turn></turn> превращается в берсерк:<bulletlist><bullet>«Берсерк»;</bullet><bullet>«Стойкость».</bullet></bulletlist>"
  },
  {
   "resid": 4264902531963,
@@ -640,7 +682,7 @@
   "icon": "000003E100001FC6",
   "type": "normal",
   "name": "Поднятие нежити",
-  "description": "Цель:<bulletlist><bullet>труп дружественной нежити возрождается с % от максимального <hyperlink>здоровья</hyperlink>;</bullet><bullet>труп, не являющийся нежитью, оживает как <hyperlink>зомби</hyperlink>.</bullet></bulletlist>"
+  "description": "Цель:<bulletlist><bullet>труп дружественной нежити возрождается с % от максимального <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>труп, не являющийся нежитью, оживает как <hyperlink>зомби</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 4264902531958,
@@ -1456,7 +1498,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 50.0,
   "id": "hs_death_knight_knight",
-  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+10 к максимальному запасу <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+10 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Death Knight - Skill Group",
@@ -1848,7 +1890,7 @@
   "resid": 4995046967317,
   "tree_name": "<classDeathknight></classDeathknight> Рыцарь смерти",
   "tree_pos_y": 250.0,
-  "description": "+20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>.",
+  "description": "+20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046967300
@@ -2921,7 +2963,7 @@
   "resid": 5003636903862,
   "tree_name": "<classWarrior></classWarrior> Воин",
   "tree_pos_y": 50.0,
-  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+10 к максимальному запасу <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+10 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Warrior - Hero Skill Group",
@@ -2938,7 +2980,7 @@
   "resid": 5003636903857,
   "tree_name": "<classWarrior></classWarrior> Воин",
   "tree_pos_y": 50.0,
-  "description": "<bulletlist><bullet>Атаки <hyperlink>в ближнем бою</hyperlink> получают +10% к урону;</bullet><bullet>+10% к максимальному запасу <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>Атаки <hyperlink>в ближнем бою</hyperlink> получают +10% к урону;</bullet><bullet>+10% к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Warrior - Hero Skill Group",
@@ -3501,7 +3543,7 @@
   "resid": 4514010630464,
   "tree_name": "<classWarrior></classWarrior> Воин",
   "tree_pos_y": 250.0,
-  "description": "+20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>.",
+  "description": "+20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636902942
@@ -3894,7 +3936,7 @@
   "tree_pos_x": 150.0,
   "tree_pos_y": 350.0,
   "id": "hs_mage_elemental_echo",
-  "description": "<hyperlink>Магические</hyperlink> атаки и способности добавляют:<bulletlist><bullet>1 ур. эффекта «Наэлектризованность», «Горение» или «Пробитая защита» к целям, уже находящимся под воздействием этих эффектов.</bullet></bulletlist><br></br>Это распространяется и на эффекты, непосредственно применённые данной атакой.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "<hyperlink>Магические</hyperlink> атаки и способности добавляют:<bulletlist><bullet>1 ур. эффекта «Наэлектризованность», «Горение» или «Пробитая защита» к целям, уже находящимся под воздействием этих эффектов.</bullet></bulletlist><br></br>Также действует с эффектами, применёнными этой атакой.<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
    {
     "resid": 5222680233952
@@ -4305,7 +4347,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 750.0,
   "id": "hs_ritualist_healing_mastery",
-  "description": "Способности <hyperlink>поддержки</hyperlink> восстанавливают на 50% больше <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Способности <hyperlink>поддержки</hyperlink> восстанавливают на 50% больше <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "required_skills": [
    {
     "resid": 5222680233728
@@ -4322,7 +4364,7 @@
   "tree_pos_x": 750.0,
   "tree_pos_y": 150.0,
   "id": "hs_ritualist_enhanced_restoration",
-  "description": "Способность «Восстановление»:<bulletlist><bullet>восстанавливает 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Способность «Восстановление»:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046966028
@@ -4482,7 +4524,7 @@
   "icon": "000004C000000709",
   "type": "normal",
   "name": "Целительная поддержка II",
-  "description": "Теперь способности <hyperlink>поддержки</hyperlink> помимо своего основного эффекта восстанавливают целям 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Теперь способности <hyperlink>поддержки</hyperlink> помимо своего основного эффекта восстанавливают целям 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "required_skills": [
    {
     "resid": 5222680233603
@@ -4590,7 +4632,7 @@
   "tree_pos_x": 350.0,
   "tree_pos_y": 750.0,
   "id": "hs_ritualist_natural_vitality",
-  "description": "Герой получает:<bulletlist><bullet>+20 к максимальному запасу <hyperlink>здоровья</hyperlink>.</bullet></bulletlist><br></br>Призванные воины получают:<bulletlist><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Герой получает:<bulletlist><bullet>+20 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist><br></br>Призванные воины получают:<bulletlist><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680233728
@@ -5117,7 +5159,7 @@
   "tree_pos_x": 200.0,
   "tree_pos_y": 450.0,
   "id": "hs_ritualist_reclaiming_attacks",
-  "description": "Базовые атаки:<bulletlist><bullet>при ударе восстанавливают случайному дружественному воину по соседству с целью 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Базовые атаки:<bulletlist><bullet>при ударе восстанавливают случайному дружественному воину по соседству с целью 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
    {
     "resid": 5222680233714
@@ -5134,7 +5176,7 @@
   "icon": "0000048B00000340",
   "type": "normal",
   "name": "Опытный лекарь",
-  "description": "Если герой стоит во главе армии, все его подчинённые восстанавливают +15 ед. <hyperlink>здоровья</hyperlink> за каждый <turn></turn> <hyperlink>ход</hyperlink> на глобальной карте.",
+  "description": "Если герой стоит во главе армии, все его подчинённые восстанавливают +15 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за каждый <turn></turn> <hyperlink>ход</hyperlink> на глобальной карте.",
   "required_skills": [
    {
     "resid": 5222680233597
@@ -5492,7 +5534,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 350.0,
   "id": "hs_ranger_blood_trail",
-  "description": "Теперь <hyperlink><flank></flank> атаки с фланга</hyperlink> применяют эффекты «Кровотечение» и «Помечен».<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Теперь <flank></flank> <hyperlink>атаки с фланга</hyperlink> применяют эффекты «Кровотечение» и «Помечен».<br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
    {
     "resid": 4995046966569
@@ -5557,7 +5599,7 @@
   "resid": 4995046966569,
   "tree_name": "<classRanger></classRanger> Охотник",
   "tree_pos_y": 250.0,
-  "description": "Теперь <hyperlink><flank></flank> атаки с фланга</hyperlink> наносят на +20% больше урона.",
+  "description": "Теперь <flank></flank> <hyperlink>атаки с фланга</hyperlink> наносят на +20% больше урона.",
   "required_skills": [
    {
     "resid": 4995046966552
@@ -5574,7 +5616,7 @@
   "tree_pos_x": 750.0,
   "tree_pos_y": 150.0,
   "id": "hs_ranger_keen_edge",
-  "description": "+20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>."
+  "description": "+20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>."
  },
  {
   "group_name": "Ranger - Hero Skill Group",
@@ -5640,7 +5682,7 @@
   "resid": 4995046966531,
   "tree_name": "<classRanger></classRanger> Охотник",
   "tree_pos_y": 550.0,
-  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +20% к <hyperlink><crit></crit>шансу критического удара</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
+  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
   "required_skills": [
    {
     "resid": 4995046966503
@@ -5662,7 +5704,7 @@
   "resid": 4995046966521,
   "tree_name": "<classRanger></classRanger> Охотник",
   "tree_pos_y": 550.0,
-  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +30% к <hyperlink><accuracy></accuracy> точности</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
+  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +30% к <accuracy></accuracy> <hyperlink>точности</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
   "required_skills": [
    {
     "resid": 4995046966503
@@ -5699,7 +5741,7 @@
   "tree_pos_x": 200.0,
   "tree_pos_y": 450.0,
   "id": "hs_ranger_snipers_focus",
-  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +1% к <hyperlink><range></range>дальности</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
+  "description": "Если в начале своего хода этот герой не <hyperlink>вовлечён в ближний бой</hyperlink>, он получает +1% к <range></range> <hyperlink>дальности</hyperlink> при <hyperlink>стрельбе</hyperlink>, пока не начнёт передвижение.",
   "required_skills": [
    {
     "resid": 4995046966470
@@ -5917,7 +5959,7 @@
   "resid": 4995046966427,
   "tree_name": "<classRanger></classRanger> Охотник",
   "tree_pos_y": 150.0,
-  "description": "Теперь способность «Мгновенный выстрел» отбрасывает цель на 1 клетку назад.",
+  "description": "Теперь способность «Мгновенный выстрел» отбрасывает цель на 1 клетку назад и может использоваться во вражеской <hyperlink>зоне контроля</hyperlink>.",
   "required_skills": [
    {
     "resid": 4995046966390
@@ -6611,6 +6653,9 @@
    },
    {
     "resid": 4273492487889
+   },
+   {
+    "resid": 5046586584839
    }
   ]
  },
@@ -6650,6 +6695,132 @@
    },
    {
     "resid": 4273492487896
+   },
+   {
+    "resid": 5046586584884
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "conjure_vampire_matriarch_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586586444,
+  "id": "hs_conjure_vampire_matriarch",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "000004970000354D",
+  "type": "normal",
+  "name": "Призыв матриарха пауков-вампиров",
+  "required_skills": [
+   {
+    "resid": 5046586584943
+   },
+   {
+    "resid": 5046586584911
+   },
+   {
+    "resid": 5046586586483
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "000003e3000049bf"
+   }
+  ],
+  "resid": 5046586585698,
+  "id": "hs_vicious_killer",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "0000049700003263",
+  "type": "normal",
+  "name": "Жестокий убийца"
+ },
+ {
+  "abilities": [
+   {
+    "slug": "scarlet_plague_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586585694,
+  "id": "hs_scarlet_plague",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "000004970000325F",
+  "type": "normal",
+  "name": "Алая чума",
+  "required_skills": [
+   {
+    "resid": 5046586584873
+   }
+  ],
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "wail_of_the_banshee_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586585690,
+  "id": "hs_wail_of_the_banshee",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "000004970000325B",
+  "type": "normal",
+  "name": "Вопль баньши",
+  "required_skills": [
+   {
+    "resid": 5046586586412
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "crushing_anguish_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586585688,
+  "id": "hs_crushing_anguish",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "0000049700003259",
+  "type": "normal",
+  "name": "Мучительные страдания"
+ },
+ {
+  "abilities": [
+   {
+    "slug": "conjure_dread_matriarch_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586585671,
+  "id": "hs_conjure_dread_matriarch",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "0000049700003248",
+  "type": "normal",
+  "name": "Призыв кошмарного матриарха",
+  "required_skills": [
+   {
+    "resid": 5046586585347
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "song_of_carnage_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586585667,
+  "id": "hs_song_of_carnage",
+  "group_name": "Affinity Hero Skill Group",
+  "icon": "000004970000324E",
+  "type": "normal",
+  "name": "Песнь бойни",
+  "required_skills": [
+   {
+    "resid": 5046586586403
    }
   ]
  },
@@ -6660,7 +6831,7 @@
   "icon": "0000048D00000D9A",
   "type": "normal",
   "name": "Личный пример",
-  "description": "<bulletlist><bullet>При убийстве: все дружественные воины получают +15 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet><bullet>При использовании способности поддержки: все дружественные воины получают +5 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>При убийстве: все дружественные воины получают +15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet><bullet>При использовании способности поддержки: все дружественные воины получают +5 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586579093
@@ -6774,6 +6945,9 @@
    },
    {
     "resid": 5046586575303
+   },
+   {
+    "resid": 5046586584839
    }
   ]
  },
@@ -6816,6 +6990,15 @@
    },
    {
     "resid": 5046586575341
+   },
+   {
+    "resid": 5046586586510
+   },
+   {
+    "resid": 5046586585273
+   },
+   {
+    "resid": 5046586585249
    }
   ]
  },
@@ -6858,6 +7041,12 @@
    },
    {
     "resid": 5046586575348
+   },
+   {
+    "resid": 5046586584958
+   },
+   {
+    "resid": 5046586586464
    }
   ]
  },
@@ -6882,6 +7071,9 @@
    },
    {
     "resid": 4273492487857
+   },
+   {
+    "resid": 5046586584916
    }
   ]
  },
@@ -6934,6 +7126,9 @@
   "type": "normal",
   "name": "Скачок",
   "required_skills": [
+   {
+    "resid": 5046586586423
+   },
    {
     "resid": 5046586579007
    },
@@ -7007,6 +7202,9 @@
    },
    {
     "resid": 5003636902596
+   },
+   {
+    "resid": 5046586585229
    }
   ]
  },
@@ -7017,7 +7215,7 @@
   "icon": "00000445000000A8",
   "type": "normal",
   "name": "Аватар природы",
-  "description": "Даёт:<bulletlist><bullet>+30 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>«Ярость матери»;</bullet><bullet>«Естественная регенерация».</bullet></bulletlist>",
+  "description": "Даёт:<bulletlist><bullet>+30 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>«Ярость матери»;</bullet><bullet>«Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586579078
@@ -7053,6 +7251,12 @@
    },
    {
     "resid": 5046586575294
+   },
+   {
+    "resid": 5046586585384
+   },
+   {
+    "resid": 5046586585141
    }
   ]
  },
@@ -7179,6 +7383,12 @@
    },
    {
     "resid": 5046586575310
+   },
+   {
+    "resid": 5046586585273
+   },
+   {
+    "resid": 5046586585249
    }
   ]
  },
@@ -7206,6 +7416,9 @@
    },
    {
     "resid": 5003636902619
+   },
+   {
+    "resid": 5046586585576
    }
   ]
  },
@@ -7242,6 +7455,12 @@
    },
    {
     "resid": 5046586575322
+   },
+   {
+    "resid": 5046586584943
+   },
+   {
+    "resid": 5046586584911
    }
   ]
  },
@@ -7317,7 +7536,7 @@
   "icon": "0000041B00000FC2",
   "type": "normal",
   "name": "Метеоритные удары",
-  "description": "<bulletlist><bullet>Базовые атаки наносят 4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> как выбранной цели, так и всем врагам по соседству.</bullet><bullet>Все атаки получают свойство «Сокрушитель».<br></br><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.</bullet>",
+  "description": "<bulletlist><bullet>Базовые атаки наносят 4 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> выбранной цели и всем врагам по соседству.</bullet><bullet>Все атаки получают свойство «Сокрушитель».<br></br><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586579054
@@ -7342,6 +7561,9 @@
   "name": "Ядовитые атаки",
   "description": "Базовые атаки:<bulletlist><bullet>наносят +2 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>получают +10% к урону против воинов под воздействием эффекта «Отравление» или «Разлагается».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
+   {
+    "resid": 5046586585141
+   },
    {
     "resid": 5046586579070
    },
@@ -7376,6 +7598,9 @@
    },
    {
     "resid": 5046586575345
+   },
+   {
+    "resid": 5046586585327
    }
   ]
  },
@@ -7438,6 +7663,9 @@
    },
    {
     "resid": 4273492487897
+   },
+   {
+    "resid": 5046586586391
    }
   ]
  },
@@ -7488,6 +7716,24 @@
    },
    {
     "resid": 5046586575341
+   },
+   {
+    "resid": 5046586586423
+   },
+   {
+    "resid": 5046586586412
+   },
+   {
+    "resid": 5046586586403
+   },
+   {
+    "resid": 5046586584884
+   },
+   {
+    "resid": 5046586584873
+   },
+   {
+    "resid": 5046586585176
    }
   ]
  },
@@ -7547,6 +7793,9 @@
    },
    {
     "resid": 4273492487894
+   },
+   {
+    "resid": 5046586585384
    }
   ]
  },
@@ -7577,6 +7826,9 @@
    },
    {
     "resid": 5046586575299
+   },
+   {
+    "resid": 5046586584892
    }
   ]
  },
@@ -7604,6 +7856,9 @@
    },
    {
     "resid": 5003636902555
+   },
+   {
+    "resid": 5046586586473
    }
   ]
  },
@@ -7673,6 +7928,12 @@
    },
    {
     "resid": 5046586575318
+   },
+   {
+    "resid": 5046586584958
+   },
+   {
+    "resid": 5046586586464
    }
   ]
  },
@@ -7700,6 +7961,9 @@
    },
    {
     "resid": 5046586575299
+   },
+   {
+    "resid": 5046586586391
    }
   ]
  },
@@ -7777,6 +8041,9 @@
    },
    {
     "resid": 5046586575351
+   },
+   {
+    "resid": 5046586585176
    }
   ]
  },
@@ -7787,7 +8054,7 @@
   "icon": "000003E300005A50",
   "type": "normal",
   "name": "Усиление хаоса",
-  "description": "Базовые атаки получают:<bulletlist><bullet>+10% к <hyperlink><crit></crit>шансу критического удара</hyperlink>;</bullet><bullet><hyperlink>критическии удары</hyperlink> наносят 3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> и применяют эффект «Горение» к цели и к врагам по соседству.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Базовые атаки получают:<bulletlist><bullet>+10% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>;</bullet><bullet><hyperlink>критическии удары</hyperlink> наносят 3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink> и применяют эффект «Горение» к цели и к врагам по соседству.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
    {
     "resid": 5046586579038
@@ -7822,7 +8089,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 350.0,
   "DLC": "GIANTKINGS ",
-  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586582515
@@ -7875,7 +8142,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 150.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок глыбы льда:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок глыбы льда:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583019
@@ -7990,7 +8257,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 250.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок глыбы льда:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок глыбы льда:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583061
@@ -8026,7 +8293,7 @@
   "tree_pos_y": 250.0,
   "id": "hs_rune_of_creation_frost",
   "DLC": "GIANTKINGS ",
-  "description": "<bulletlist><bullet>Даёт +20 ед. <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: холод» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: холод» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586582532
@@ -8218,7 +8485,7 @@
   "tree_pos_y": 50.0,
   "id": "hs_astral_wisp_ritual",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Даёт +5 к <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>Даёт +5 к <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Eldritch Sovereign - Hero Skill Group",
@@ -8231,7 +8498,7 @@
   "tree_pos_y": 250.0,
   "id": "hs_mage_bane_ritual",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Даёт +5 к <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +5 к <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586575915
@@ -8249,7 +8516,7 @@
   "tree_pos_y": 150.0,
   "id": "hs_astral_siphoner_ritual",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Даёт +5 к <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +5 к <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet><bullet>Даёт +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586576375
@@ -8343,7 +8610,7 @@
   "tree_pos_y": 50.0,
   "id": "hs_eldritch_rituals",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Даёт +10 к <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>Даёт +10 к <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Eldritch Sovereign - Hero Skill Group",
@@ -9039,7 +9306,7 @@
   "type": "normal",
   "name": "Здоровье дракона III",
   "DLC": "DRAGONLORDS ",
-  "description": "<bulletlist><bullet>+30 к максимальному <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+30 к максимальному <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4273492487228
@@ -9054,7 +9321,7 @@
   "type": "normal",
   "name": "Здоровье дракона II",
   "DLC": "DRAGONLORDS ",
-  "description": "<bulletlist><bullet>+15 к максимальному <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+15 к максимальному <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4273492487226
@@ -9069,7 +9336,7 @@
   "type": "normal",
   "name": "Здоровье дракона I",
   "DLC": "DRAGONLORDS ",
-  "description": "<bulletlist><bullet>+15 к максимальному <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet>+15 к максимальному <hp></hp> <hyperlink>здоровью</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 4273492487187,
@@ -9079,7 +9346,7 @@
   "type": "normal",
   "name": "Древний губернатор II",
   "DLC": "DRAGONLORDS ",
-  "description": "Если герой является губернатором, город получает:<bulletlist><bullet>+15 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>+20 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>;</bullet><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink>.</bullet></bulletlist>",
+  "description": "Если герой является губернатором, город получает:<bulletlist><bullet>+15 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>+20 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>+20 к <garrison></garrison> <hyperlink>состоянию укреплений</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4273492487183
@@ -9094,7 +9361,7 @@
   "type": "normal",
   "name": "Древний губернатор I",
   "DLC": "DRAGONLORDS ",
-  "description": "Если герой является губернатором, город получает:<bulletlist><bullet>+10 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>+15 к <happiness></happiness> <hyperlink> стабильности города</hyperlink>;</bullet><bullet>+15 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink>.</bullet></bulletlist>"
+  "description": "Если герой является губернатором, город получает:<bulletlist><bullet>+10 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>+15 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>+15 к <garrison></garrison> <hyperlink>состоянию укреплений</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 4273492487176,
@@ -9269,7 +9536,7 @@
   "tree_pos_y": 250.0,
   "id": "hs_rune_of_creation_storm",
   "DLC": "GIANTKINGS ",
-  "description": "<bulletlist><bullet>Даёт +20 ед. <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: шторм» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: шторм» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578812
@@ -9352,7 +9619,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 350.0,
   "DLC": "GIANTKINGS ",
-  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578761
@@ -9495,7 +9762,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 250.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок молнии:<bulletlist><bullet>Теперь наносит урон другим целям (до 4) на расстоянии до 3 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок молнии:<bulletlist><bullet>Теперь наносит урон другим целям (до 4) на расстоянии до 3 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578651
@@ -9518,7 +9785,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 150.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок молнии:<bulletlist><bullet>Теперь наносит урон другим целям (до 2) на расстоянии до 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок молнии:<bulletlist><bullet>Теперь наносит урон другим целям (до 2) на расстоянии до 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583020
@@ -9564,7 +9831,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 350.0,
   "DLC": "GIANTKINGS ",
-  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578761
@@ -9635,7 +9902,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 150.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок камня:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок камня:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578641
@@ -9671,7 +9938,7 @@
   "tree_pos_y": 250.0,
   "id": "hs_rune_of_creation_rock",
   "DLC": "GIANTKINGS ",
-  "description": "<bulletlist><bullet>Даёт +20 ед. <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: камень» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: камень» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578832
@@ -9847,7 +10114,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 250.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок камня:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок камня:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583069
@@ -9939,7 +10206,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 349.0,
   "DLC": "GIANTKINGS ",
-  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Призванное оружие теперь сохраняется до конца боя и получает:<bulletlist><bullet>+10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578761
@@ -10010,7 +10277,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 150.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок огня:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок огня:<bulletlist><bullet>Теперь наносит урон в радиусе 1 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583018
@@ -10086,7 +10353,7 @@
   "tree_pos_y": 250.0,
   "id": "hs_rune_of_creation_fire",
   "DLC": "GIANTKINGS ",
-  "description": "<bulletlist><bullet>Даёт +20 ед. <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: огонь» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Даёт +20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet><bullet>Открывает доступ к усилению «Руна творения: огонь» в <hyperlink>кузнице предметов</hyperlink>. Применимо к жезлам.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586578841
@@ -10262,7 +10529,7 @@
   "tree_name": "Короли великанов",
   "tree_pos_y": 250.0,
   "DLC": "GIANTKINGS ",
-  "description": "Бросок огня:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet>",
+  "description": "Бросок огня:<bulletlist><bullet>Теперь наносит урон в радиусе 2 кл.</bullet><bullet>Время перезарядки увеличивается на 1 <turn></turn>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586583053
@@ -10299,6 +10566,303 @@
   ]
  },
  {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EFD",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "0000049700002f03"
+   }
+  ],
+  "resid": 5046586584828,
+  "tree_name": "Вампир",
+  "name": "Полёт вампира",
+  "tree_pos_x": 200.0,
+  "tree_pos_y": 450.0,
+  "id": "hs_vampiric_flight",
+  "required_skills": [
+   {
+    "resid": 5046586584826
+   }
+  ],
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EFB",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "0000049700002ef6"
+   }
+  ],
+  "resid": 5046586584826,
+  "tree_name": "Вампир",
+  "name": "Превращение в туман",
+  "tree_pos_x": 200.0,
+  "tree_pos_y": 350.0,
+  "id": "hs_mist_away",
+  "required_skills": [
+   {
+    "resid": 5046586584816
+   },
+   {
+    "resid": 5046586584807
+   }
+  ],
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EF1",
+  "type": "normal",
+  "name": "Извлечение крови",
+  "tree_pos_x": 250.0,
+  "id": "hs_sanguine_extraction",
+  "excluded_skills": [
+   {
+    "resid": 5046586584807
+   }
+  ],
+  "resid": 5046586584816,
+  "tree_name": "Вампир",
+  "tree_pos_y": 250.0,
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Ваша способность <hyperlink>кровососа</hyperlink> игнорирует <defense></defense> <hyperlink>защиту</hyperlink> и <resistance></resistance> <hyperlink>сопротивление</hyperlink> воинов, которые находятся под воздействием эффектов «Кровотечение» или «Паразит крови».",
+  "required_skills": [
+   {
+    "resid": 5046586584735
+   },
+   {
+    "resid": 5046586584776
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EED",
+  "type": "normal",
+  "resid": 5046586584812,
+  "tree_name": "Вампир",
+  "name": "Дистанционное иссушение",
+  "tree_pos_x": 400.0,
+  "tree_pos_y": 150.0,
+  "id": "hs_reaching_drain",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Дальность способности «Перекачка крови» увеличивается на 2.",
+  "required_skills": [
+   {
+    "resid": 5046586584725
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EE8",
+  "type": "normal",
+  "name": "Неутолимый голод",
+  "tree_pos_x": 150.0,
+  "id": "hs_deep_hunger",
+  "excluded_skills": [
+   {
+    "resid": 5046586584816
+   }
+  ],
+  "resid": 5046586584807,
+  "tree_name": "Вампир",
+  "tree_pos_y": 250.0,
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Перезарядка вашей способности <hyperlink>кровососа</hyperlink> сокращается на 1 <turn></turn> х.",
+  "required_skills": [
+   {
+    "resid": 5046586584735
+   },
+   {
+    "resid": 5046586584776
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EE0",
+  "type": "normal",
+  "resid": 5046586584799,
+  "tree_name": "Вампир",
+  "name": "Глубокая связь",
+  "tree_pos_x": 350.0,
+  "tree_pos_y": 350.0,
+  "id": "hs_deep_bond",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Способность «Иссушение спутника» также даёт выбранному воину эффект «Регенерация» (3), а исцеление увеличивается до 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
+  "required_skills": [
+   {
+    "resid": 5046586584783
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002ED0",
+  "type": "normal",
+  "resid": 5046586584783,
+  "tree_name": "Вампир",
+  "name": "Порочная сила",
+  "tree_pos_x": 350.0,
+  "tree_pos_y": 250.0,
+  "id": "hs_profane_strength",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способность «Иссушение спутника» даёт выбранному воину эффект «Дополнительная сила» (3).",
+  "required_skills": [
+   {
+    "resid": 5046586584776
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EC9",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "drain_familiar_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586584776,
+  "tree_name": "Вампир",
+  "name": "Иссушение спутника",
+  "tree_pos_x": 250.0,
+  "tree_pos_y": 150.0,
+  "id": "hs_drain_familiar",
+  "required_skills": [
+   {
+    "resid": 5046586584708
+   },
+   {
+    "resid": 5046586584725
+   }
+  ],
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EB0",
+  "type": "normal",
+  "resid": 5046586584751,
+  "tree_name": "Вампир",
+  "name": "Гипнотическое иссушение",
+  "tree_pos_x": 50.0,
+  "tree_pos_y": 350.0,
+  "id": "hs_mesmerizing_drain",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способности <hyperlink>кровососа</hyperlink> вместо эффекта «Ментальный контроль» с некоторой вероятностью могут применять эффект «Подчинён», действующий до конца боя.",
+  "required_skills": [
+   {
+    "resid": 5046586584744
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EA9",
+  "type": "normal",
+  "resid": 5046586584744,
+  "tree_name": "Вампир",
+  "name": "Иссушающие чары",
+  "tree_pos_x": 50.0,
+  "tree_pos_y": 250.0,
+  "id": "hs_draining_charm",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способности <hyperlink>кровососа</hyperlink> вместо эффекта «Оглушение» с некоторой вероятностью могут на 3 <turn></turn> х. применять эффект «Ментальный контроль».",
+  "required_skills": [
+   {
+    "resid": 5046586584735
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002EA0",
+  "type": "normal",
+  "resid": 5046586584735,
+  "tree_name": "Вампир",
+  "name": "Ошеломляющее иссушение",
+  "tree_pos_x": 150.0,
+  "tree_pos_y": 150.0,
+  "id": "hs_stunning_drain",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Способности <hyperlink>кровососа</hyperlink> с базовой вероятностью 60% могут на 1 <turn></turn> х. применять эффект «Оглушение».",
+  "required_skills": [
+   {
+    "resid": 5046586584708
+   },
+   {
+    "resid": 5046586584725
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002E9C",
+  "type": "normal",
+  "resid": 5046586584731,
+  "tree_name": "Вампир",
+  "name": "Ошеломляющий укус",
+  "tree_pos_x": 0.0,
+  "tree_pos_y": 150.0,
+  "id": "hs_staggering_bite",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Иссушающий укус отменяет <hyperlink>защитную позицию</hyperlink> и останавливает <hyperlink>ответные удары</hyperlink>, если цель не обладает свойством «Стойкость перед натиском».",
+  "required_skills": [
+   {
+    "resid": 5046586584708
+   }
+  ]
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002E96",
+  "type": "normal",
+  "name": "Перекачка крови",
+  "tree_pos_x": 250.0,
+  "id": "hs_siphon_blood",
+  "excluded_skills": [
+   {
+    "resid": 5046586584708
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "siphon_blood_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586584725,
+  "tree_name": "Вампир",
+  "tree_pos_y": 50.0,
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "group_name": "Vampire Lord - Hero Skill Group",
+  "icon": "0000049700002E85",
+  "type": "normal",
+  "name": "Иссушающий укус",
+  "tree_pos_x": 150.0,
+  "id": "hs_draining_bite",
+  "excluded_skills": [
+   {
+    "resid": 5046586584725
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "draining_bite_ability_000003BD00002895"
+   }
+  ],
+  "resid": 5046586584708,
+  "tree_name": "Вампир",
+  "tree_pos_y": 50.0,
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
   "group_name": "Spellblade - Hero Skill Group",
   "icon": "0000048B0000052A",
   "type": "normal",
@@ -10313,7 +10877,7 @@
   "resid": 5111011085305,
   "tree_name": "<classSpellblade></classSpellblade> Боевой маг",
   "tree_pos_y": 350.0,
-  "description": "Теперь <hyperlink><flank></flank> атаки с фланга</hyperlink> наносят на +20% больше урона.",
+  "description": "Теперь <flank></flank> <hyperlink>атаки с фланга</hyperlink> наносят на +20% больше урона.",
   "required_skills": [
    {
     "resid": 5111011085240
@@ -10669,7 +11233,7 @@
   "tree_pos_x": 450.0,
   "tree_pos_y": 250.0,
   "id": "hs_spellblade_keen_edge",
-  "description": "+20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>.",
+  "description": "+20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>.",
   "required_skills": [
    {
     "resid": 5111011085258
@@ -10911,23 +11475,6 @@
   "required_skills": [
    {
     "resid": 5111011085221
-   }
-  ]
- },
- {
-  "group_name": "Spellblade - Hero Skill Group",
-  "icon": "000004A600000BA9",
-  "type": "normal",
-  "resid": 5111011085224,
-  "tree_name": "<classSpellblade></classSpellblade> Боевой маг",
-  "name": "Магическое пробивание",
-  "tree_pos_x": 150.0,
-  "tree_pos_y": 350.0,
-  "id": "hs_spellblade_spell_penetration",
-  "description": "Все атаки игнорируют 3 ед. <resistance></resistance> <hyperlink>сопротивления</hyperlink> и 3 ед. <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивления эффектам</hyperlink>.",
-  "required_skills": [
-   {
-    "resid": 5111011085218
    }
   ]
  },
@@ -11227,7 +11774,7 @@
   "tree_pos_x": 350.0,
   "tree_pos_y": 550.0,
   "id": "hs_warlock_empowered_pacts",
-  "description": "Способность «Уязвляющая связь»:<bulletlist><bullet>применяет к цели эффект «Под помехами», пока действует связь.</bullet></bulletlist><br></br>Способность «Кровавый пакт»:<bulletlist><bullet>даёт заклинателю +20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>;</bullet><bullet>даёт цели +20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>.</bullet></bulletlist>",
+  "description": "Способность «Уязвляющая связь»:<bulletlist><bullet>применяет к цели эффект «Под помехами», пока действует связь.</bullet></bulletlist><br></br>Способность «Кровавый пакт»:<bulletlist><bullet>даёт заклинателю +20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>;</bullet><bullet>даёт цели +20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234880
@@ -11558,7 +12105,7 @@
   "tree_pos_x": 150.0,
   "tree_pos_y": 450.0,
   "id": "hs_warlock_chaos_magic",
-  "description": "Магические атаки гарантированно добавляют 1 ур. эффектов «Слабость», «Пробитая защита» или «Пробитое сопротивление» к целям, уже находящимся под воздействием этих эффектов.",
+  "description": "Магические атаки гарантированно добавляют 1 ур. эффектов «Слабость», «Пробитая защита» или «Пробитое сопротивление» к целям, уже находящимся под воздействием этих эффектов.<br></br>Также действует с эффектами, применёнными этой атакой.",
   "required_skills": [
    {
     "resid": 5222680234869
@@ -11697,7 +12244,7 @@
   "tree_pos_x": 750.0,
   "tree_pos_y": 150.0,
   "id": "hs_warlock_reclaiming_attacks",
-  "description": "Базовые атаки:<bulletlist><bullet>при ударе восстанавливают случайному дружественному воину по соседству с целью 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Базовые атаки:<bulletlist><bullet>при ударе восстанавливают случайному дружественному воину по соседству с целью 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "required_skills": [
    {
     "resid": 5222680234943
@@ -11935,7 +12482,7 @@
   "tree_pos_y": 850.0,
   "required_skills": [
    {
-    "resid": 5222680234444
+    "resid": 5222680234382
    },
    {
     "resid": 5222680234445
@@ -11971,7 +12518,7 @@
   "tree_pos_y": 850.0,
   "required_skills": [
    {
-    "resid": 5222680234444
+    "resid": 5222680234382
    }
   ],
   "DLC": "ARCHONPROPHECY "
@@ -11985,10 +12532,10 @@
   "id": "hs_battlesaint_defensive_master",
   "excluded_skills": [
    {
-    "resid": 5222680234444
+    "resid": 5222680234445
    },
    {
-    "resid": 5222680234445
+    "resid": 5222680234382
    }
   ],
   "abilities": [
@@ -12018,10 +12565,10 @@
   "id": "hs_battlesaint_support_resistance_iii",
   "excluded_skills": [
    {
-    "resid": 5222680234444
+    "resid": 5222680234446
    },
    {
-    "resid": 5222680234446
+    "resid": 5222680234382
    }
   ],
   "resid": 5222680234445,
@@ -12042,28 +12589,17 @@
   "group_name": "Battlesaint - Hero Skill Group",
   "icon": "0000048B00000336",
   "type": "normal",
-  "name": "Восстанавливающая поддержка",
-  "tree_pos_x": 250.0,
-  "id": "hs_battlesaint_regenerating_support",
-  "excluded_skills": [
-   {
-    "resid": 5222680234446
-   },
-   {
-    "resid": 5222680234445
-   }
-  ],
   "resid": 5222680234444,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
-  "tree_pos_y": 750.0,
+  "name": "Восстанавливающая поддержка",
+  "tree_pos_x": 50.0,
+  "tree_pos_y": 450.0,
+  "id": "hs_battlesaint_regenerating_support",
   "DLC": "ARCHONPROPHECY ",
   "description": "Способности <hyperlink>поддержки</hyperlink>:<bulletlist><bullet>дают воинам эффект «Регенерация» (1).</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234425
-   },
-   {
-    "resid": 5222680234436
    }
   ]
  },
@@ -12109,7 +12645,7 @@
   "id": "hs_battlesaint_weakening_aura",
   "required_skills": [
    {
-    "resid": 5222680234415
+    "resid": 5222680234379
    },
    {
     "resid": 5222680234420
@@ -12129,15 +12665,12 @@
   "resid": 5222680234425,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
   "name": "Святое очищение",
-  "tree_pos_x": 150.0,
-  "tree_pos_y": 650.0,
+  "tree_pos_x": 100.0,
+  "tree_pos_y": 350.0,
   "id": "hs_battlesaint_cleanse",
   "required_skills": [
    {
-    "resid": 5222680234407
-   },
-   {
-    "resid": 5222680234413
+    "resid": 5222680234348
    }
   ],
   "DLC": "ARCHONPROPHECY "
@@ -12173,12 +12706,12 @@
   "type": "normal",
   "resid": 5222680234420,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
-  "name": "Защита",
+  "name": "Улучшенная защита",
   "tree_pos_x": 550.0,
   "tree_pos_y": 550.0,
   "id": "hs_battlesaint_defense_ii",
   "DLC": "ARCHONPROPHECY ",
-  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+5% к <hyperlink>уклонению</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+2 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+10% к <hyperlink>уклонению</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5222680234395
@@ -12201,14 +12734,14 @@
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
   "name": "Кровь мученика",
   "tree_pos_x": 400.0,
-  "tree_pos_y": 550.0,
+  "tree_pos_y": 350.0,
   "id": "hs_battlesaint_martyrs_blood",
   "required_skills": [
    {
-    "resid": 5222680234395
+    "resid": 5222680234359
    },
    {
-    "resid": 5222680234384
+    "resid": 5222680234364
    }
   ],
   "DLC": "ARCHONPROPHECY "
@@ -12251,7 +12784,7 @@
   "id": "hs_battlesaint_revive",
   "required_skills": [
    {
-    "resid": 5222680234382
+    "resid": 5222680234444
    },
    {
     "resid": 5222680234383
@@ -12323,7 +12856,7 @@
   "id": "hs_battlesaint_radiant_retribution",
   "required_skills": [
    {
-    "resid": 5222680234379
+    "resid": 5222680234415
    },
    {
     "resid": 5222680234380
@@ -12351,7 +12884,7 @@
     "resid": 5222680234378
    },
    {
-    "resid": 5222680234379
+    "resid": 5222680234415
    }
   ],
   "DLC": "ARCHONPROPHECY "
@@ -12370,7 +12903,7 @@
   "description": "Способности <hyperlink>поддержки</hyperlink> также дают воинам 1 ур. эффекта «Усиленное сопротивление».",
   "required_skills": [
    {
-    "resid": 5222680234374
+    "resid": 5222680234425
    },
    {
     "resid": 5222680234378
@@ -12381,17 +12914,28 @@
   "group_name": "Battlesaint - Hero Skill Group",
   "icon": "0000048B00000317",
   "type": "normal",
+  "name": "Целительная поддержка",
+  "tree_pos_x": 250.0,
+  "id": "hs_battlesaint_healing_support",
+  "excluded_skills": [
+   {
+    "resid": 5222680234445
+   },
+   {
+    "resid": 5222680234446
+   }
+  ],
   "resid": 5222680234382,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
-  "name": "Целительная поддержка",
-  "tree_pos_x": 50.0,
-  "tree_pos_y": 450.0,
-  "id": "hs_battlesaint_healing_support",
+  "tree_pos_y": 750.0,
   "DLC": "ARCHONPROPHECY ",
-  "description": "Теперь способности <hyperlink>поддержки</hyperlink> помимо своего основного эффекта восстанавливают целям 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.",
+  "description": "Теперь способности <hyperlink>поддержки</hyperlink> помимо своего основного эффекта восстанавливают целям 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "required_skills": [
    {
-    "resid": 5222680234374
+    "resid": 5003636906930
+   },
+   {
+    "resid": 5222680234436
    }
   ]
  },
@@ -12451,14 +12995,14 @@
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
   "name": "Оберегающая связь",
   "tree_pos_x": 400.0,
-  "tree_pos_y": 350.0,
+  "tree_pos_y": 550.0,
   "id": "hs_battlesaint_warding_bond",
   "required_skills": [
    {
-    "resid": 5222680234359
+    "resid": 5222680234384
    },
    {
-    "resid": 5222680234364
+    "resid": 5222680234395
    }
   ],
   "DLC": "ARCHONPROPHECY "
@@ -12485,25 +13029,17 @@
   ]
  },
  {
-  "group_name": "Battlesaint - Hero Skill Group",
-  "icon": "000004C000000987",
-  "type": "normal",
   "abilities": [
    {
     "slug": "hs_battlesaint_bless_ability_000003BD00002895"
    }
   ],
   "resid": 5222680234374,
-  "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
+  "id": "hs_battlesaint_bless__unlinked_",
+  "group_name": "Battlesaint - Hero Skill Group",
+  "icon": "000004C000000987",
+  "type": "normal",
   "name": "Благословение",
-  "tree_pos_x": 100.0,
-  "tree_pos_y": 350.0,
-  "id": "hs_battlesaint_bless",
-  "required_skills": [
-   {
-    "resid": 5222680234348
-   }
-  ],
   "DLC": "ARCHONPROPHECY "
  },
  {
@@ -12532,14 +13068,6 @@
   "group_name": "Battlesaint - Hero Skill Group",
   "icon": "000004C00000097D",
   "type": "normal",
-  "name": "Пылкий мученик",
-  "tree_pos_x": 500.0,
-  "id": "hs_battlesaint_fervorous_martyr",
-  "excluded_skills": [
-   {
-    "resid": 5222680234359
-   }
-  ],
   "abilities": [
    {
     "slug": "000004c00000097b"
@@ -12547,7 +13075,10 @@
   ],
   "resid": 5222680234364,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
+  "name": "Пылкий мученик",
+  "tree_pos_x": 500.0,
   "tree_pos_y": 250.0,
+  "id": "hs_battlesaint_fervorous_martyr",
   "required_skills": [
    {
     "resid": 5222680234339
@@ -12562,14 +13093,6 @@
   "group_name": "Battlesaint - Hero Skill Group",
   "icon": "000004C000000978",
   "type": "normal",
-  "name": "Пылкий послушник",
-  "tree_pos_x": 300.0,
-  "id": "hs_battlesaint_fervorous_disciple",
-  "excluded_skills": [
-   {
-    "resid": 5222680234364
-   }
-  ],
   "abilities": [
    {
     "slug": "000004c00000093f"
@@ -12577,7 +13100,10 @@
   ],
   "resid": 5222680234359,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
+  "name": "Пылкий послушник",
+  "tree_pos_x": 300.0,
   "tree_pos_y": 250.0,
+  "id": "hs_battlesaint_fervorous_disciple",
   "required_skills": [
    {
     "resid": 5222680234327
@@ -12739,13 +13265,34 @@
   ],
   "abilities": [
    {
-    "slug": "000004c000000979"
+    "slug": "0000048d00001bab"
    }
   ],
   "resid": 5222680234293,
   "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
   "tree_pos_y": 50.0,
   "DLC": "ARCHONPROPHECY "
+ },
+ {
+  "group_name": "Battlesaint - Hero Skill Group",
+  "icon": "0000048D00001BB3",
+  "type": "normal",
+  "resid": 5003636906930,
+  "tree_name": "<classBattlesaint></classBattlesaint> Святой битвы",
+  "name": "Счастливая поддержка",
+  "tree_pos_x": 150.0,
+  "tree_pos_y": 650.0,
+  "id": "hs_battlesaint_fortunate_support",
+  "DLC": "ARCHONPROPHECY ",
+  "description": "Способности <hyperlink>поддержки</hyperlink>:<bulletlist><bullet>дают воинам эффект «Удача» (1).</bullet></bulletlist>",
+  "required_skills": [
+   {
+    "resid": 5222680234407
+   },
+   {
+    "resid": 5222680234413
+   }
+  ]
  },
  {
   "abilities": [
@@ -12908,7 +13455,7 @@
   "name": "Старейшина астрала",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Щит ветров»;</bullet><bullet>способность «Призыв бури».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Щит ветров»;</bullet><bullet>способность «Призыв бури».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903606,
@@ -12918,7 +13465,7 @@
   "name": "Трансформация астрала",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Бесплотный»;</bullet><bullet>способность «Снаряды космоса».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Бесплотный»;</bullet><bullet>способность «Снаряды космоса».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903473,
@@ -12928,7 +13475,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -12995,7 +13542,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -13010,7 +13557,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -13025,7 +13572,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -13040,7 +13587,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -13055,7 +13602,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -13070,7 +13617,7 @@
   "name": "Грозовое дыхание",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом астрала, дыхание приобретает характеристики <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>;</bullet><bullet>наносит на +30% больше урона;</bullet><bullet>всегда применяет эффект «Наэлектризованность»;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Слепота»</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -13085,7 +13632,178 @@
   "name": "Аспект астрала",
   "hero_property": "Astral Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>дыхание наносит на 30% больше урона;</bullet><bullet>дыхание с базовой вероятностью 90% может на 3 <turn></turn> х. применить эффект «Пробитое сопротивление».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>дыхание наносит на 30% больше урона;</bullet><bullet>дыхание с базовой вероятностью 90% может на 3 <turn></turn> х. применить эффект «Пробитое сопротивление».</bullet></bulletlist>"
+ },
+ {
+  "abilities": [
+   {
+    "slug": "000004970000353c"
+   }
+  ],
+  "resid": 5046586586423,
+  "id": "vampire_signature_nightlord",
+  "icon": "0000049700003538",
+  "type": "signature",
+  "name": "Владыка ночи",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "0000049700003533"
+   }
+  ],
+  "resid": 5046586586412,
+  "id": "vampire_signature_reaper",
+  "icon": "000004970000352D",
+  "type": "signature",
+  "name": "Жнец",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "0000049700003527"
+   }
+  ],
+  "resid": 5046586586403,
+  "id": "vampire_signature_vampiric_rage",
+  "icon": "0000049700003524",
+  "type": "signature",
+  "name": "Ярость вампира",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "supernatural_speed_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003580"
+   }
+  ],
+  "resid": 5046586584958,
+  "id": "vampire_signature_supernatural_speed",
+  "icon": "0000049700002F7F",
+  "type": "signature",
+  "name": "Сверхъестественная быстрота",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "resid": 5046586584943,
+  "id": "vampire_signature_parasitic_communion",
+  "icon": "0000049700002F70",
+  "type": "signature",
+  "name": "Паразитическое причастие",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способность «Кровавое причастие» может с базовой вероятностью 120% на 3 <turn></turn> х. применить эффект «Паразит крови» к врагам по соседству с целью или с заклинателем.",
+  "required_skills": [
+   {
+    "resid": 5046586584916
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "blood_communion_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586584916,
+  "id": "vampire_signature_blood_communion",
+  "icon": "0000049700002F55",
+  "type": "signature",
+  "name": "Кровавое причастие",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "resid": 5046586584911,
+  "id": "vampire_signature_violent_exsanguination",
+  "icon": "0000049700002F50",
+  "type": "signature",
+  "name": "Жестокая кровопотеря",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способность «Кровопотеря» наносит 50% от урона врагам по соседству с целью, игнорируя при этом 50% от их <defense></defense> <hyperlink>защиты</hyperlink> и <resistance></resistance> <hyperlink>сопротивления</hyperlink>.",
+  "required_skills": [
+   {
+    "resid": 5046586584892
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "exsanguinate_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586584892,
+  "id": "vampire_signature_exsanguinate",
+  "icon": "0000049700002F3D",
+  "type": "signature",
+  "name": "Кровопотеря",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "0000049700002f36"
+   }
+  ],
+  "resid": 5046586584884,
+  "id": "vampire_signature_profane_body_mastery",
+  "icon": "0000049700002F35",
+  "type": "signature",
+  "name": "Тело порока",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "0000049700002f33"
+   }
+  ],
+  "resid": 5046586584873,
+  "id": "vampire_signature_marrow_drinker",
+  "icon": "0000049700002F2A",
+  "type": "signature",
+  "name": "Пожиратель костного мозга",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "blood_empowerment_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700002f26"
+   },
+   {
+    "slug": "0000049700003214"
+   }
+  ],
+  "resid": 5046586584839,
+  "id": "vampire_signature_hemomancer",
+  "icon": "0000049700002F0E",
+  "type": "signature",
+  "name": "Гемомант",
+  "hero_property": "Chaos Property",
+  "DLC": "THRONESOFBLOOD "
  },
  {
   "abilities": [
@@ -13180,7 +13898,7 @@
   "name": "Старейшина хаоса",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>невосприимчивость к огненным опасным зонам;</bullet><bullet>эффект «Пламя войны» до конца боя при убийстве врагов.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>невосприимчивость к огненным опасным зонам;</bullet><bullet>эффект «Пламя войны» до конца боя при убийстве врагов.</bullet></bulletlist>"
  },
  {
   "resid": 5003636903507,
@@ -13190,7 +13908,7 @@
   "name": "Трансформация хаоса",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Чудовищный демон»;</bullet><bullet>способность «Жестокий убийца»;</bullet><bullet>способность «Аура ужаса».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Чудовищный демон»;</bullet><bullet>способность «Жестокий убийца»;</bullet><bullet>способность «Аура ужаса».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903471,
@@ -13200,7 +13918,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -13267,7 +13985,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Призрачный огонь»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Призрачный огонь»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -13282,7 +14000,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -13297,7 +14015,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -13312,7 +14030,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -13327,7 +14045,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -13342,7 +14060,7 @@
   "name": "Аспект хаоса",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>+20% к <hyperlink><crit></crit>шансу критического удара</hyperlink>.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>+20% к <crit></crit> <hyperlink>шансу критического удара</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 4273492487888,
@@ -13352,7 +14070,7 @@
   "name": "Палящее дыхание",
   "hero_property": "Chaos Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом хаоса, дыхание приобретает характеристики <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>наносит на 30% больше урона;</bullet><bullet>всегда применяет эффект «Горение»;</bullet><bullet>атакованные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -13423,7 +14141,7 @@
   "name": "Старейшина материи",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>невосприимчивость к эффектам «Скорость снижена» и «Обездвижен»;</bullet><bullet>способность «Неудержимый джаггернаут»;</bullet><bullet>способность «Чешуя материи».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>невосприимчивость к эффектам «Скорость снижена» и «Обездвижен»;</bullet><bullet>способность «Неудержимый джаггернаут»;</bullet><bullet>способность «Чешуя материи».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903564,
@@ -13433,7 +14151,7 @@
   "name": "Трансформация материи",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Элементаль»;</bullet><bullet>все атаки получают эффекты «Усиленный удар» и «Сопротивляющийся удар»;</bullet><bullet>способность «Первый удар».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Элементаль»;</bullet><bullet>все атаки получают эффекты «Усиленный удар» и «Сопротивляющийся удар»;</bullet><bullet>способность «Первый удар».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903475,
@@ -13443,7 +14161,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -13510,7 +14228,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -13525,7 +14243,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -13540,7 +14258,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -13555,7 +14273,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -13570,7 +14288,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -13585,7 +14303,7 @@
   "name": "Разъедающее дыхание",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом материи, дыхание приобретает характеристики <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>всегда применяет эффект «Слабость»;</bullet><bullet>всегда применяет эффект «Пробитая защита»;</bullet><bullet>снимает с врагов все <hyperlink>положительные эффекты</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -13600,7 +14318,7 @@
   "name": "Аспект материи",
   "hero_property": "Materium Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet><hyperlink>ответные удары</hyperlink> и <hyperlink>неплановаи атаки</hyperlink> наносят на 50% больше урона;</bullet><bullet>способность «Стойкость перед натиском».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet><hyperlink>ответные удары</hyperlink> и <hyperlink>неплановаи атаки</hyperlink> наносят на 50% больше урона;</bullet><bullet>способность «Стойкость перед натиском».</bullet></bulletlist>"
  },
  {
   "abilities": [
@@ -13695,7 +14413,7 @@
   "name": "Старейшина природы",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>любые способности, за исключением атакующих, восстанавливают всем прочим дружественным воинам 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>любые способности, за исключением атакующих, восстанавливают всем прочим дружественным воинам 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 5003636903580,
@@ -13705,7 +14423,7 @@
   "name": "Трансформация природы",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Растение» и «Фея»;</bullet><bullet>способность «Саженцы фей».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Растение» и «Фея»;</bullet><bullet>способность «Саженцы фей».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903477,
@@ -13715,7 +14433,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -13782,7 +14500,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -13797,7 +14515,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -13812,7 +14530,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -13827,7 +14545,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -13842,7 +14560,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -13857,7 +14575,7 @@
   "name": "Аспект природы",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атакующие способности, за исключением базовых атак, восстанавливают дружественным воинам в радиусе 3 кл. от цели 10 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атакующие способности, за исключением базовых атак, восстанавливают дружественным воинам в радиусе 3 кл. от цели 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 4273492487892,
@@ -13867,7 +14585,7 @@
   "name": "Живительное дыхание",
   "hero_property": "Nature Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом природы, дыхание приобретает характеристики <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>оживляет трупы дружественных воинов с 30% от их максимального запаса <hp></hp> <hyperlink>здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -13967,7 +14685,7 @@
   "name": "Старейшина порядка",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>все дружественные воины в бою получают невосприимчивость: Потеря контроля;</bullet><bullet>в начале хода этого воина все дружественные воины получают +5 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>все дружественные воины в бою получают невосприимчивость: Потеря контроля;</bullet><bullet>в начале хода этого воина все дружественные воины получают +5 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist>"
  },
  {
   "resid": 5003636903487,
@@ -13977,7 +14695,7 @@
   "name": "Трансформация порядка",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Ангел»;</bullet><bullet>все атаки с базовой вероятностью 90% могут применить эффект «Приговор».</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Ангел»;</bullet><bullet>все атаки с базовой вероятностью 90% могут применить эффект «Приговор».</bullet></bulletlist>"
  },
  {
   "resid": 5003636903465,
@@ -13987,7 +14705,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -14054,7 +14772,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -14069,7 +14787,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -14084,7 +14802,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -14099,7 +14817,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -14114,7 +14832,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -14129,7 +14847,7 @@
   "name": "Очищающее дыхание",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <hyperlink><temphp></temphp> временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом порядка, дыхание приобретает характеристики <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>;</bullet><bullet>восстанавливает дружественным воинам 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и снимает с них 2 отрицательных эффектов.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -14144,7 +14862,247 @@
   "name": "Аспект порядка",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>дружественные воины по соседству получают +2 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>дружественные воины по соседству получают +2 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>"
+ },
+ {
+  "abilities": [
+   {
+    "slug": "00000497000035a6"
+   },
+   {
+    "slug": "0000049700003596"
+   }
+  ],
+  "resid": 5046586586510,
+  "id": "vampire_signature_rosebound_noble",
+  "icon": "000004970000358F",
+  "type": "signature",
+  "name": "Аристократ роз",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "resid": 5046586586483,
+  "id": "vampire_signature_spreading_blight",
+  "icon": "000004970000356A",
+  "type": "signature",
+  "name": "Разрастающаяся порча",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Эффект «Порченая кровь» теперь затрагивает до 4 вражеских воинов на расстоянии до 3 кл.",
+  "required_skills": [
+   {
+    "resid": 5046586586473
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "bloodblight_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586586473,
+  "id": "vampire_signature_bloodblight",
+  "icon": "000004970000356A",
+  "type": "signature",
+  "name": "Порченая кровь",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "0000049700003564"
+   }
+  ],
+  "resid": 5046586586464,
+  "id": "vampire_signature_aura_of_torment",
+  "icon": "0000049700003561",
+  "type": "signature",
+  "name": "Аура мучений",
+  "hero_property": "Shadow Property",
+  "required_skills": [
+   {
+    "resid": 5046586585576
+   }
+  ],
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "bat_swarm_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003519"
+   },
+   {
+    "slug": "0000049700003214"
+   }
+  ],
+  "resid": 5046586586391,
+  "id": "vampire_signature_nightsworn",
+  "icon": "0000049700003518",
+  "type": "signature",
+  "name": "Служитель ночи",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "tormenting_mist_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586585576,
+  "id": "vampire_signature_tormenting_mist",
+  "icon": "00000497000031E9",
+  "type": "signature",
+  "name": "Мучительный туман",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "dread_ability_000003BD00002895"
+   },
+   {
+    "slug": "000004970000313a"
+   },
+   {
+    "slug": "0000049700003214"
+   }
+  ],
+  "resid": 5046586585384,
+  "id": "vampire_signature_dreadful",
+  "icon": "0000049700003129",
+  "type": "signature",
+  "name": "Ужас",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "resid": 5046586585347,
+  "id": "vampire_signature_miasmic_spine",
+  "icon": "0000049700003104",
+  "type": "signature",
+  "name": "Зловонный шип",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Когда воин погибает от способности «Гноящийся шип», все вражеские воины в радиусе 2 кл. на 3 <turn></turn> х. получают эффекты «Отравление» (5) и «Разлагается» (4).",
+  "required_skills": [
+   {
+    "resid": 5046586585327
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "festering_spine_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586585327,
+  "id": "vampire_signature_festering_spine",
+  "icon": "00000497000030F0",
+  "type": "signature",
+  "name": "Гноящийся шип",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "curse_to_undeath_ability_000003BD00002895"
+   },
+   {
+    "slug": "00000497000030c4"
+   }
+  ],
+  "resid": 5046586585273,
+  "id": "vampire_signature_curse_to_undeath",
+  "icon": "00000497000030BA",
+  "type": "signature",
+  "name": "Посмертное проклятие",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "resid": 5046586585249,
+  "id": "vampire_signature_elite_march",
+  "icon": "00000497000030A2",
+  "type": "signature",
+  "name": "Марш элиты",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD ",
+  "description": "Теперь способность «Марш могил» создаёт трупы нежити ранга III и IV, а её перезарядка сокращается на 2.",
+  "required_skills": [
+   {
+    "resid": 5046586585229
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "gravemarch_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003215"
+   }
+  ],
+  "resid": 5046586585229,
+  "id": "vampire_signature_gravemarch",
+  "icon": "000004970000308E",
+  "type": "signature",
+  "name": "Марш могил",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "000004970000305a"
+   }
+  ],
+  "resid": 5046586585176,
+  "id": "vampire_signature_defiler",
+  "icon": "0000049700003059",
+  "type": "signature",
+  "name": "Кощунник",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
+ },
+ {
+  "abilities": [
+   {
+    "slug": "dark_sacrament_ability_000003BD00002895"
+   },
+   {
+    "slug": "0000049700003048"
+   },
+   {
+    "slug": "0000049700003214"
+   }
+  ],
+  "resid": 5046586585141,
+  "id": "vampire_signature_desecrator",
+  "icon": "0000049700003036",
+  "type": "signature",
+  "name": "Осквернитель",
+  "hero_property": "Shadow Property",
+  "DLC": "THRONESOFBLOOD "
  },
  {
   "abilities": [
@@ -14239,7 +15197,7 @@
   "name": "Мастер марионеток",
   "hero_property": "Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Марионеточная одержимость».</bullet><bullet>Способность «Тёмный захват разума» заменяется способностью «Марионеточное подчинение».<br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.</bullet>",
+  "description": "<bulletlist><bullet>Способность «Одержимость» заменяется способностью «Марионеточная одержимость».</bullet><bullet>Способность «Тёмный захват разума» заменяется способностью «Марионеточное подчинение».<br></br><br></br>Содержание воинов становится дороже на 0 ед. <mana></mana> <hyperlink>маны</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586575299
@@ -14254,7 +15212,7 @@
   "name": "Первобытный дракон",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>способность «Естественная регенерация».</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -14283,7 +15241,7 @@
   "name": "Трансформация тени",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 к <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Нежить»;</bullet><bullet>все атаки получают эффект «Вампиризм»;</bullet><bullet>убитые воины превращаются в <hyperlink>гниющих зомби</hyperlink>, за исключением сражений на воде.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 к <hp></hp> <hyperlink>здоровью</hyperlink>;<br></br>+1к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>тип «Нежить»;</bullet><bullet>все атаки получают эффект «Вампиризм»;</bullet><bullet>убитые воины превращаются в <hyperlink>гниющих зомби</hyperlink>, за исключением сражений на воде.</bullet></bulletlist>"
  },
  {
   "abilities": [
@@ -14345,7 +15303,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -14360,7 +15318,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -14375,7 +15333,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -14390,7 +15348,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен»;</bullet><bullet>эффект «Горение» заменяется эффектом «Призрачный огонь».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен»;</bullet><bullet>эффект «Горение» заменяется эффектом «Призрачный огонь».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -14405,7 +15363,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -14420,7 +15378,7 @@
   "name": "Аспект тени",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+15 ед. <hyperlink>здоровья</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атаки всегда применяют эффект «Слабость» на 3 <turn></turn> <hyperlink>х.</hyperlink>.<br></br>Эффект удваивается для однократных атак.</bullet></bulletlist>"
+  "description": "Воин получает:<bulletlist><bullet>+15 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;<br></br>+1 к <defense></defense> <hyperlink>защите</hyperlink>;<br></br>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атаки всегда применяют эффект «Слабость» на 3 <turn></turn> <hyperlink>х.</hyperlink>.<br></br>Эффект удваивается для однократных атак.</bullet></bulletlist>"
  },
  {
   "resid": 4273492487896,
@@ -14430,7 +15388,7 @@
   "name": "Морозное дыхание",
   "hero_property": "Shadow Property",
   "DLC": "DRAGONLORDS ",
-  "description": "Воин получает:<bulletlist><bullet>+20 к <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
+  "description": "Воин получает:<bulletlist><bullet>+20 к <hp></hp> <hyperlink>здоровью</hyperlink>;</bullet><bullet>дыхание воина:<bulletlist></bullet><bullet>область действия увеличивается;</bullet><bullet>если воин не является драконом тени, дыхание приобретает характеристики <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% применяет эффект «Заморожен». В случае неудачи применяет эффект «Скорость снижена».</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
