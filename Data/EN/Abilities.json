@@ -3912,7 +3912,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -3994,7 +3994,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -4064,7 +4064,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -4134,7 +4134,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -4204,7 +4204,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -4274,7 +4274,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -4455,7 +4455,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000176d",
   "damage": "",
@@ -4513,7 +4513,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d00001785",
   "damage": "",
@@ -4565,7 +4565,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000178f",
   "damage": "",
@@ -4617,7 +4617,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d00001797",
   "damage": "",
@@ -4669,7 +4669,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000179d",
   "damage": "",
@@ -4721,7 +4721,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +2 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+  "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br></br><br></br>While linked:<bulletlist><bullet>Target unit gains +1 Affinity Incarnate.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Cultivate Affinity",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d000017a1",
   "damage": "",
@@ -4747,6 +4747,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4773,6 +4776,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4793,6 +4799,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4813,6 +4822,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4833,6 +4845,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4853,6 +4868,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -11496,7 +11514,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_(base)_ability_0000048900001370",
-  "damage": "10<damagephysical></damagephysical> 6<damagelightning></damagelightning> ",
+  "damage": "8<damagephysical></damagephysical> 4<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -11522,7 +11540,7 @@
   "description": "Deal damage to enemy units in a 2-hex line.",
   "name": "Pinning Thrust",
   "slug": "pinning_thrust_ability_0000048900001370",
-  "damage": "12<damagephysical></damagephysical> 12<damagelightning></damagelightning> ",
+  "damage": "10<damagephysical></damagephysical> 10<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -11582,7 +11600,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Crystal Blast",
   "slug": "magic_blast_(single)_ability_000004890000136E",
-  "damage": "7<damagephysical></damagephysical> 7<damagelightning></damagelightning> ",
+  "damage": "10<damagephysical></damagephysical> 10<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -11616,7 +11634,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit. While linked, all damage that unit takes is transferred to this unit with a 20% reduction.",
+  "description": "Link to target friendly unit. While linked, both units receive damage, but reduced by 50%.",
   "name": "Core Link",
   "slug": "core_link_ability_000004890000136E",
   "damage": "",
@@ -11629,12 +11647,6 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "00000497000019DF"
- },
- {
-  "description": "Core Link:<bulletlist><bullet>Reduces incoming damage by an additional 10%.</bullet><bullet>Boosts the target's damage by 10%.</bullet></bulletlist>",
-  "name": "Champion Core Link",
-  "slug": "0000048b00000c22",
-  "icon": "0000049700001A10"
  },
  {
   "modifiers": [],
@@ -20628,7 +20640,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    },
@@ -20662,7 +20674,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -20717,7 +20729,7 @@
     "count": 1
    },
    {
-    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 30% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -20754,7 +20766,7 @@
     "count": 1
    },
    {
-    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 30% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -20792,7 +20804,7 @@
     "count": 1
    },
    {
-    "description": "Base 90% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    },
@@ -20842,7 +20854,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 30% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -20955,7 +20967,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -21013,7 +21025,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 30% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    }
@@ -25488,7 +25500,7 @@
     "note": "Cooldown: 0 <turn></turn>"
    }
   ],
-  "description": "Both units receive damage, but reduced by 50%.",
+  "description": "Link to target friendly unit. While linked, both units receive damage, but reduced by 50%.",
   "name": "Warding Bond",
   "slug": "hs_defender_warding_bond_ability_000003BD00002895",
   "damage": "",
@@ -28226,7 +28238,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 3 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
   "description": "Target friendly corpse is revived with 60% of its max Hit Points.",
@@ -28466,7 +28478,7 @@
   "icon": "000004970000352D"
  },
  {
-  "description": "Damage increases as <hyperlink><hp></hp> Hit Points</hyperlink> are lowered, up to 50%.",
+  "description": "Damage increases as <hyperlink><hp></hp> Hit Points</hyperlink> are lowered, up to 50% at 1 <hyperlink><hp></hp> Hit Point</hyperlink>.",
   "name": "Vampiric Rage",
   "slug": "0000049700003527",
   "icon": "0000049700003524"
@@ -28538,6 +28550,9 @@
    },
    {
     "requisite": "Debuff"
+   },
+   {
+    "requisite": "Base"
    },
    {
     "requisite": "Single Shot"
@@ -28910,6 +28925,9 @@
    },
    {
     "requisite": "Debuff"
+   },
+   {
+    "requisite": "Base"
    }
   ],
   "accuracy": "90%",
@@ -28949,10 +28967,10 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 5 <turn></turn>"
+    "note": "Can only be used once per battle."
    }
   ],
-  "description": "Conjure 4 corpses of Tier I Thorned Skeleton units in a 1-hex radius.<br></br>For the next 4 <turn></turn> Turns, resurrect one random corpse on the battlefield under your control until the end of combat.",
+  "description": "Conjure 4 corpses of Tier I Thorned Skeleton units in a 1-hex radius.<br></br>For the next 4 <turn></turn> Turns, resurrect one random non-<hyperlink>Hero</hyperlink> corpse on the battlefield under your control until the end of combat.",
   "name": "Gravemarch",
   "slug": "gravemarch_ability_000003BD00002895",
   "damage": "",
@@ -29795,11 +29813,12 @@
   "icon": "000003BD000020C9"
  },
  {
-  "modifiers": [
+  "notes": [
    {
-    "description": "Damage can not be reduced by <defense></defense> <hyperlink>Defense</hyperlink> or <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
-    "name": "Unblockable Damage",
-    "count": 1
+    "note": "Ignores line of sight penalties."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    }
   ],
   "description": "Deal damage to target unit.",
@@ -29820,28 +29839,14 @@
   "accuracy": "90%",
   "actionPoints": "<fullaction></fullaction>",
   "range": "8",
-  "notes": [
-   {
-    "note": "Ignores line of sight penalties."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
   "icon": "0000049700000A0C"
  },
  {
-  "modifiers": [
-   {
-    "description": "Damage can not be reduced by <defense></defense> <hyperlink>Defense</hyperlink> or <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
-    "name": "Unblockable Damage",
-    "count": 1
-   }
-  ],
+  "notes": [],
   "description": "Deal damage to adjacent unit.",
   "name": "Mind Rebuke",
   "slug": "magic_rebuke_(item_forge)_ability_000003BD00002895",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -29856,7 +29861,6 @@
   "accuracy": "Always Hits",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
-  "notes": [],
   "icon": "0000049700000A29"
  },
  {
@@ -32826,6 +32830,12 @@
   "icon": "000003E30000435F"
  },
  {
+  "description": "The death of another has granted this unit:<bulletlist><bullet>+3 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>+2% <hyperlink><crit></crit>Critical Hit Chance</hyperlink></bullet></bulletlist><br></br>Stacks up to 10 times.",
+  "name": "Mortal Blessing",
+  "slug": "cbe7688b000004f6",
+  "icon": "CBE7688B000004F4"
+ },
+ {
   "description": "<bulletlist><bullet>Attacks have +1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Can stack up to 5 times.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "name": "Infernal Might",
   "slug": "0000049700000ec3",
@@ -33599,7 +33609,7 @@
   "icon": "0000041B000005E4"
  },
  {
-  "description": "Melee attackers have a base 60% chance of becoming Stunned.",
+  "description": "Attackers have a base 60% chance of becoming Stunned.",
   "name": "Static Shield",
   "slug": "0000048b00000ca4",
   "icon": "0000049700002E01"
@@ -33777,6 +33787,18 @@
   "name": "Fatigued",
   "slug": "000003df000013d2",
   "icon": "0000047400000008"
+ },
+ {
+  "description": "Unit has -2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink> and -2 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink>.",
+  "name": "Pall of Gloom",
+  "slug": "cbe7688b00000522",
+  "icon": "CBE7688B00000525"
+ },
+ {
+  "description": "Until the end of their next combat, this unit has:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>+15 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>",
+  "name": "Morbid Sacrifice",
+  "slug": "cbe7688b00000516",
+  "icon": "CBE7688B00000519"
  },
  {
   "description": "This unit is controlled by the opponent.<br></br>If the effect lasts until the end of combat, the unit will die, unless its original owner wins.",

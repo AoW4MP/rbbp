@@ -23,7 +23,7 @@
  },
  {
   "resid": 5003636899977,
-  "cost": "200<gold></gold> ",
+  "cost": "100<gold></gold> ",
   "id": "construct_siege_guns",
   "DLC": "EMPIRESANDASHES ",
   "description": "<bulletlist>At the start of the battle, gain 2 <hyperlink>Magelock Cannon</hyperlink> units on the attacker's side until the end of battle.<bullet>Only one type of Siegecraft unit can be brought into <hyperlink>Combat</hyperlink>. If multiple <hyperlink>Siege Projects</hyperlink> would bring them, only the strongest of them will appear.</bullet></bulletlist>",
@@ -34,7 +34,7 @@
  },
  {
   "resid": 4853313044741,
-  "cost": "150<gold></gold> ",
+  "cost": "100<gold></gold> ",
   "id": "construct_great_bombard",
   "DLC": "EMPIRESANDASHES ",
   "description": "At the start of the battle, gain <hyperlink>Great Bombard</hyperlink> on the attacker's side until the end of battle. <bulletlist><bullet>Great Bombard is an immobile Siegecraft <hyperlink>Unit</hyperlink>.</bullet><bullet> Only one type of Siegecraft unit can be brought into <hyperlink>Combat</hyperlink>. If multiple <hyperlink>Siege Projects</hyperlink> would bring them, only the strongest of them will appear.</bullet></bulletlist>",
@@ -227,7 +227,7 @@
  },
  {
   "resid": 4273492483443,
-  "cost": "160<gold></gold> ",
+  "cost": "100<gold></gold> ",
   "id": "construct_bolt_repeaters",
   "description": "<bulletlist>At the start of the battle, gain 2 <hyperlink>Bolt Repeater</hyperlink> units on the attacker's side until the end of battle.<bullet> <hyperlink>Bolt Repeaters</hyperlink> are immobile Siegecraft <hyperlink>Units</hyperlink> with long range area of effect attacks that are repeating, unlike <hyperlink>Onagers</hyperlink>.</bullet><bullet>Only one type of Siegecraft unit can be brought into <hyperlink>Combat</hyperlink>. If multiple <hyperlink>Siege Projects</hyperlink> would bring them, only the strongest of them will appear.</bullet></bulletlist>",
   "name": "Construct Bolt Repeaters",

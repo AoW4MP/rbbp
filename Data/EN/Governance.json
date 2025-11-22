@@ -28,11 +28,11 @@
   "name": "Giant King Governor",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 2
    },
    {
@@ -44,7 +44,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Frost Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Frost Giant</hyperlink> units.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -52,11 +52,11 @@
   "name": "Giant King Governor",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 2
    },
    {
@@ -68,7 +68,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Rock Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Rock Giant</hyperlink> units.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -76,11 +76,11 @@
   "name": "Giant King Governor",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 2
    },
    {
@@ -92,7 +92,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Fire Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Fire Giant</hyperlink> units.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -100,11 +100,11 @@
   "name": "Giant King Governor",
   "level_data": [
    {
-    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>",
+    "effect_description": "Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 2
    },
    {
@@ -116,7 +116,7 @@
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +5<structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -20% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Storm Giant</hyperlink> units.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>City Structures cost -5% less <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <quarry></quarry> <hyperlink>Quarry</hyperlink> grants +1<bindingfragment></bindingfragment> <hyperlink>Binding Fragments</hyperlink>.</bullet><bullet><white>Renown level 4</white><br></br>City Structures grant +2<gold></gold> Gold in addition to their normal effects.<br></br>Enable drafting of <hyperlink>Storm Giant</hyperlink> units.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -172,7 +172,7 @@
   "name": "Dragon Governor",
   "level_data": [
    {
-    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>",
+    "effect_description": "Each <mine></mine> <hyperlink>Mine</hyperlink> grants +7<gold></gold> <hyperlink>Gold</hyperlink>",
     "level": 1
    },
    {
@@ -184,11 +184,11 @@
     "level": 3
    },
    {
-    "effect_description": "+10% more <gold></gold> <hyperlink>Gold</hyperlink> income",
+    "effect_description": "+15% more <gold></gold> <hyperlink>Gold</hyperlink> income, +15% more <structureprod></structureprod> <hyperlink>Production</hyperlink> income, +15% more <unitprod></unitprod> <hyperlink>Draft</hyperlink> income, +15% more <food></food> <hyperlink>Food</hyperlink> income",
     "level": 4
    }
   ],
-  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>+10% more <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet></bulletlist>",
+  "screen_description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +7<gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet><white>Renown level 2</white><br></br>Each <mine></mine> <hyperlink>Mine</hyperlink> grants +5<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet><white>Renown level 3</white><br></br>Each <population></population> <hyperlink>Population</hyperlink> grants +2<gold></gold> Gold.</bullet><bullet><white>Renown level 4</white><br></br>+15% more <gold></gold> <hyperlink>Gold</hyperlink> income, +15% more <structureprod></structureprod> <hyperlink>Production</hyperlink> income, +15% more <unitprod></unitprod> <hyperlink>Draft</hyperlink> income, +15% more <food></food> <hyperlink>Food</hyperlink> income.</bullet></bulletlist>",
   "icon": "0000048D00001330"
  },
  {

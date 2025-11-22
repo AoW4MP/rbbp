@@ -900,7 +900,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>"
    },
    {
-    "description": "Target <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 10 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 10 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet></bulletlist>",
+    "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink></bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer -2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink> and -2 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
     "name": "Pall of Gloom",
     "spell_slug": "pall_of_gloom",
     "tier": 7,
@@ -1440,7 +1440,7 @@
   "icon": "0000048D00001A64",
   "skills": [
    {
-    "description": "Units in friendly armies in the target Province:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
+    "description": "Units in target friendly army:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
     "name": "Morbid Sacrifice",
     "spell_slug": "morbid_sacrifice",
     "tier": 3,

@@ -476,7 +476,7 @@
   "id": "desecration_ritual",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "Target and adjacent surface <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Sunless</hyperlink>.</bullet><bullet>Enemy armies sustain 20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Target surface <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Sunless</hyperlink>.</bullet><bullet>Enemy armies sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Desecration Ritual",
   "operation_point_cost": 275,
   "icon": "0000049700002E5B"
@@ -2438,12 +2438,12 @@
   "icon": "0000048D00001B34"
  },
  {
-  "casting_cost": "60<mana></mana> 1<embalmedsacrifice></embalmedsacrifice> ",
+  "casting_cost": "60<mana></mana> 2<embalmedsacrifice></embalmedsacrifice> ",
   "resid": 5003636906629,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "morbid_sacrifice",
   "tactical": false,
-  "description": "Units in friendly armies in the target Province:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
+  "description": "Units in target friendly army:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
   "name": "Morbid Sacrifice",
   "operation_point_cost": 60,
   "icon": "0000048D00001A6E"
@@ -3230,7 +3230,7 @@
   "id": "pall_of_gloom",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Target <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 10 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 10 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink></bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer -2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink> and -2 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Pall of Gloom",
   "operation_point_cost": 150,
   "icon": "0000048B00000135"
@@ -3376,7 +3376,7 @@
   "icon": "0000046A0000019C"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044895,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_reposition",
@@ -3384,11 +3384,11 @@
   "tactical": true,
   "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Hastened</bullet><bullet>Strengthened</bullet><bullet>This effect then cascades to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
   "name": "Cascading Command: Reposition",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A00000187"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044885,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_defend",
@@ -3396,7 +3396,7 @@
   "tactical": true,
   "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for 1 <turn></turn> Turn.</bullet><bullet>Has 2 <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
   "name": "Cascading Command: Defend",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A0000017D"
  },
  {
@@ -3532,6 +3532,9 @@
   "operation_point_cost": 150,
   "icon": "000003E300005A9C",
   "summoned_units": [
+   {
+    "slug": "skald"
+   },
    {
     "slug": "nightmare"
    },

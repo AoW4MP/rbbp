@@ -16,6 +16,12 @@
    },
    {
     "name": "Ruler starts with a Shrieking Bat mount."
+   },
+   {
+    "name": "-2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>"
+   },
+   {
+    "name": "-2 <defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1052,6 +1058,51 @@
   "front_end": true,
   "icon": "0000049000000917",
   "display_order": 0
+ },
+ {
+  "affinities": [
+   {
+    "name": "<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
+   }
+  ],
+  "biography_description": "In the eras of <hyperlink>Myrrida</hyperlink>, the <hyperlink>Giant Kings</hyperlink> governed the realms they reshaped in all corners of the <hyperlink>Astral Sea</hyperlink>. But their reshaping did not end with the terrain, as they also modified the inhabitants of the realms the Giants ruled, infusing them with special crystals that made their mortal bodies ageless. The Elder Giants would later use these same crystals to store memories and emotions. Since the fall of Myrrida, the <hyperlink>Eternal Sages</hyperlink> that remain are governed by Eternal Councils.",
+  "lore_description": "In the eras of <hyperlink>Myrrida</hyperlink>, the <hyperlink>Giant Kings</hyperlink> governed the realms they reshaped in all corners of the <hyperlink>Astral Sea</hyperlink>. But their reshaping did not end with the terrain, as they also modified the inhabitants of the realms the Giants ruled, infusing them with special crystals that made their mortal bodies ageless. The Elder Giants would later use these same crystals to store memories and emotions. Since the fall of Myrrida, the <hyperlink>Eternal Sages</hyperlink> that remain are governed by Eternal Councils.",
+  "DLC": "GIANTKINGS ",
+  "point_cost": 1,
+  "id": "siäldryh_sentinels",
+  "name": "Siäldryh Sentinels",
+  "incompatible_society_traits": [
+   {
+    "name": "Ritual Cannibals <evilact></evilact>"
+   },
+   {
+    "name": "Chosen Uniters <goodact></goodact>"
+   },
+   {
+    "name": "Imperialists"
+   },
+   {
+    "name": "Fabled Hunters"
+   }
+  ],
+  "screen_description": "These are the servants of the <hyperlink>Eternal Sages</hyperlink>. Their bodies have been augmented with magical crystals that fortify the body and imbue the mind with memories of long-gone Giants.",
+  "effect_descriptions": [],
+  "enabled": false,
+  "front_end": false,
+  "type": "society",
+  "display_order": -1,
+  "starting_bonuses": [
+   {
+    "empire_progression_slug": "excavation"
+   },
+   {
+    "description": "Get 1 random hero items."
+   },
+   {
+    "description": "100<influence></influence> "
+   }
+  ],
+  "icon": "0000048F000002E9"
  },
  {
   "lore_description": "Fated to bring about great change to the Realm.",

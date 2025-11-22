@@ -6945,9 +6945,6 @@
    },
    {
     "resid": 5046586575303
-   },
-   {
-    "resid": 5046586584839
    }
   ]
  },
@@ -7686,6 +7683,9 @@
    },
    {
     "resid": 4273492487889
+   },
+   {
+    "resid": 5046586584839
    }
   ]
  },
@@ -11480,6 +11480,23 @@
  },
  {
   "group_name": "Spellblade - Hero Skill Group",
+  "icon": "000004A600000BA9",
+  "type": "normal",
+  "resid": 5111011085224,
+  "tree_name": "<classSpellblade></classSpellblade> Spellblade",
+  "name": "Spell Penetration",
+  "tree_pos_x": 150.0,
+  "tree_pos_y": 350.0,
+  "id": "hs_spellblade_spell_penetration",
+  "description": "All attacks ignore 3 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
+  "required_skills": [
+   {
+    "resid": 5111011085218
+   }
+  ]
+ },
+ {
+  "group_name": "Spellblade - Hero Skill Group",
   "icon": "000004BB0000000C",
   "type": "normal",
   "resid": 5111011085223,
@@ -15046,7 +15063,7 @@
   "name": "Elite March",
   "hero_property": "Shadow Property",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Gravemarch now conjures the bodies of Tier 3 and Tier 4 Undead units and has its cooldown reduced by 2.",
+  "description": "Gravemarch now conjures the bodies of Tier 3 and Tier 4 Undead units.",
   "required_skills": [
    {
     "resid": 5046586585229
