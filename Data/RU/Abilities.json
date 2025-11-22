@@ -3912,7 +3912,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -3994,7 +3994,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -4064,7 +4064,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -4134,7 +4134,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -4204,7 +4204,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -4274,7 +4274,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Призывает на выбранную клетку <hyperlink>тессеракт приверженности</hyperlink>.<br></br>Тип урона тессеракта такой же, как у заклинателя.<br></br><br></br>Призванный воин остаётся в бою на 3 <turn></turn> <hyperlink>х.</hyperlink>.",
@@ -4455,7 +4455,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000176d",
   "damage": "",
@@ -4513,7 +4513,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d00001785",
   "damage": "",
@@ -4565,7 +4565,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000178f",
   "damage": "",
@@ -4617,7 +4617,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d00001797",
   "damage": "",
@@ -4669,7 +4669,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d0000179d",
   "damage": "",
@@ -4721,7 +4721,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +2 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
+  "description": "Создаёт связь с выбранным дружественным воином и снимает <hyperlink>отрицательные эффекты</hyperlink>: до 1.<br></br><br></br>Пока связь действует:<bulletlist><bullet>выбранный воин получает +1 к свойству «Воплощение приверженности»;</bullet><bullet>в начале своего хода оба воина восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> и теряют до 1 <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Культивация приверженности",
   "slug": "cultivate_affinity_ability_00000490000016DD_0000048d000017a1",
   "damage": "",
@@ -4747,6 +4747,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4773,6 +4776,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4793,6 +4799,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4813,6 +4822,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4833,6 +4845,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4853,6 +4868,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -11496,7 +11514,7 @@
   "description": "Бьёт выбранного вражеского воина.",
   "name": "Удар в рукопашной",
   "slug": "melee_strike_(base)_ability_0000048900001370",
-  "damage": "10<damagephysical></damagephysical> 6<damagelightning></damagelightning> ",
+  "damage": "8<damagephysical></damagephysical> 4<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -11522,7 +11540,7 @@
   "description": "Наносит урон вражеским воинам по линии в 2 кл.",
   "name": "Поражающий выпад",
   "slug": "pinning_thrust_ability_0000048900001370",
-  "damage": "12<damagephysical></damagephysical> 12<damagelightning></damagelightning> ",
+  "damage": "10<damagephysical></damagephysical> 10<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -11582,7 +11600,7 @@
   "description": "Магическая атака, направленная на выбранного воина.",
   "name": "Взрыв кристаллов",
   "slug": "magic_blast_(single)_ability_000004890000136E",
-  "damage": "7<damagephysical></damagephysical> 7<damagelightning></damagelightning> ",
+  "damage": "10<damagephysical></damagephysical> 10<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Основная атака"
@@ -11616,7 +11634,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Устанавливает связь с выбранным дружественным воином. Пока связь действует, полученный выбранным воином урон переходит к этому воину, уменьшаясь при этом на 20%.",
+  "description": "Устанавливает связь с выбранным дружественным воином. Пока связь действует, урон получают оба воина, но уменьшенный на 50%.",
   "name": "Связанные сердечники",
   "slug": "core_link_ability_000004890000136E",
   "damage": "",
@@ -11629,12 +11647,6 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "00000497000019DF"
- },
- {
-  "description": "Связанные сердечники:<bulletlist><bullet>дополнительно уменьшает получаемый урон на 10%;</bullet><bullet>увеличивает наносимый связанным воином урон на 10%.</bullet></bulletlist>",
-  "name": "Героические связанные сердечники",
-  "slug": "0000048b00000c22",
-  "icon": "0000049700001A10"
  },
  {
   "modifiers": [],
@@ -20628,7 +20640,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    },
@@ -20662,7 +20674,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -20717,7 +20729,7 @@
     "count": 1
    },
    {
-    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 30% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -20754,7 +20766,7 @@
     "count": 1
    },
    {
-    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 30% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -20792,7 +20804,7 @@
     "count": 1
    },
    {
-    "description": "С базовой вероятностью 90% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    },
@@ -20842,7 +20854,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 30% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -20955,7 +20967,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 90% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -21013,7 +21025,7 @@
  {
   "modifiers": [
    {
-    "description": "С базовой вероятностью 60% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+    "description": "С базовой вероятностью 30% может:<bulletlist><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> применить эффект «Уязвимость к эффектам»;</bullet><bullet>исцелить себя на 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
     "name": "Поиск слабого места",
     "count": 1
    }
@@ -25488,7 +25500,7 @@
     "note": "Перезарядка: 0 <turn></turn>"
    }
   ],
-  "description": "Урон получают оба воина, но уменьшенный на 50%.",
+  "description": "Устанавливает связь с выбранным дружественным воином. Пока связь действует, урон получают оба воина, но уменьшенный на 50%.",
   "name": "Оберегающая связь",
   "slug": "hs_defender_warding_bond_ability_000003BD00002895",
   "damage": "",
@@ -28226,7 +28238,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 3 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
   "description": "Выбранный труп дружественного воина возрождается с 60% от максимального значения свойства «Здоровье».",
@@ -28538,6 +28550,9 @@
    },
    {
     "requisite": "Ослабление"
+   },
+   {
+    "requisite": "Основная атака"
    },
    {
     "requisite": "Однократная атака"
@@ -28910,6 +28925,9 @@
    },
    {
     "requisite": "Ослабление"
+   },
+   {
+    "requisite": "Основная атака"
    }
   ],
   "accuracy": "90%",
@@ -28949,10 +28967,10 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 5 <turn></turn>"
+    "note": "Можно использовать только один раз за битву."
    }
   ],
-  "description": "Создаёт в радиусе 1 кл. трупы шипастых скелетов ранга I (всего 4).<br></br>В течение следующих 4 <turn></turn> ходов каждый ход воскрешает случайно выбранный труп на поле сражения, чтобы он сражался за вас до конца боя.",
+  "description": "Создаёт в радиусе 1 кл. трупы шипастых скелетов ранга I (всего 4).<br></br>В течение следующих 4 <turn></turn> ходов каждый ход воскрешает случайно выбранный труп не являющийся <hyperlink>героем</hyperlink>, на поле сражения, чтобы он сражался за вас до конца боя.",
   "name": "Марш могил",
   "slug": "gravemarch_ability_000003BD00002895",
   "damage": "",
@@ -29795,11 +29813,12 @@
   "icon": "000003BD000020C9"
  },
  {
-  "modifiers": [
+  "notes": [
    {
-    "description": "Урон не может быть снижен при помощи <defense></defense> <hyperlink>защиты</hyperlink> или <resistance></resistance> <hyperlink>сопротивления</hyperlink>.",
-    "name": "Неблокируемый урон",
-    "count": 1
+    "note": "Игнорирует штрафы за нехватку прямой видимости."
+   },
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
   "description": "Наносит урон выбранному воину.",
@@ -29820,28 +29839,14 @@
   "accuracy": "90%",
   "actionPoints": "<fullaction></fullaction>",
   "range": "8",
-  "notes": [
-   {
-    "note": "Игнорирует штрафы за нехватку прямой видимости."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
   "icon": "0000049700000A0C"
  },
  {
-  "modifiers": [
-   {
-    "description": "Урон не может быть снижен при помощи <defense></defense> <hyperlink>защиты</hyperlink> или <resistance></resistance> <hyperlink>сопротивления</hyperlink>.",
-    "name": "Неблокируемый урон",
-    "count": 1
-   }
-  ],
+  "notes": [],
   "description": "Наносит урон воину по соседству.",
   "name": "Обвинение разума",
   "slug": "magic_rebuke_(item_forge)_ability_000003BD00002895",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -29856,7 +29861,6 @@
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
-  "notes": [],
   "icon": "0000049700000A29"
  },
  {
@@ -32736,7 +32740,7 @@
   "icon": "0000049700003114"
  },
  {
-  "description": "<bulletlist><bullet>Воин получает 4 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink> каждый <turn></turn>.</bullet><bullet>Выполняет роль эффекта «Кровотечение», но игнорирует невосприимчивость к эффекту: кровотечение.</bullet><bullet>Может суммироваться до 5 р.</bullet></bulletlist><br></br>Если этот воин погибнет, на его месте до конца боя появится <hyperlink>кровавая личинка</hyperlink> под контролем противника.</bulletlist></bulletlist>",
+  "description": "<bulletlist><bullet>Воин получает 4 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink> каждый <turn></turn>.</bullet><bullet>Выполняет роль эффекта «Кровотечение», но игнорирует невосприимчивость к эффекту: кровотечение.</bullet><bullet>Может суммироваться до 5 р.</bullet></bulletlist><bulletlist><br></br>Если этот воин погибнет, на его месте до конца боя появится <hyperlink>кровавая личинка</hyperlink> под контролем противника.</bulletlist>",
   "name": "Паразит крови",
   "slug": "0000049700002ef4",
   "icon": "0000049700002EF5"
@@ -32824,6 +32828,12 @@
   "name": "Во всеоружии",
   "slug": "0000049700001522",
   "icon": "000003E30000435F"
+ },
+ {
+  "description": "Гибель другого воина приносит этому воину:<bulletlist><bullet>+3 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2% к <crit></crit> <hyperlink>шанса критического удара</hyperlink>.</bullet></bulletlist><br></br>Может суммироваться до 10 р.",
+  "name": "Смертельная благодать",
+  "slug": "cbe7688b000004f6",
+  "icon": "CBE7688B000004F4"
  },
  {
   "description": "<bulletlist><bullet>Атаки наносят +1 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.</bullet><bullet>Может суммироваться до 5 р.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
@@ -33599,7 +33609,7 @@
   "icon": "0000041B000005E4"
  },
  {
-  "description": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Оглушение».",
+  "description": "К атакующим с базовой вероятностью 60% применяется эффект «Оглушение».",
   "name": "Статический щит",
   "slug": "0000048b00000ca4",
   "icon": "0000049700002E01"
@@ -33777,6 +33787,18 @@
   "name": "Усталость",
   "slug": "000003df000013d2",
   "icon": "0000047400000008"
+ },
+ {
+  "description": "Воин получает: -2 к <defenseblight></defenseblight> <hyperlink>сопротивлению яду</hyperlink> и -2 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink>.",
+  "name": "Покров мрака",
+  "slug": "cbe7688b00000522",
+  "icon": "CBE7688B00000525"
+ },
+ {
+  "description": "До конца своего следующего боя воин получает:<bulletlist><bullet>+20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist>",
+  "name": "Мрачное жертвоприношение",
+  "slug": "cbe7688b00000516",
+  "icon": "CBE7688B00000519"
  },
  {
   "description": "Этот воин находится под контролем противника.<br></br>Если эффект продлится до конца боя и его изначальный командир проиграет, то этот воин погибнет.",

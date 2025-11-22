@@ -16,6 +16,12 @@
    },
    {
     "name": "Правитель начинает верхом на визжащем нетопыре."
+   },
+   {
+    "name": "-2 <defensefire></defensefire> <hyperlink>Сопротивление огню</hyperlink>"
+   },
+   {
+    "name": "-2 <defensespirit></defensespirit> <hyperlink>Сопротивление магии духа</hyperlink>"
    }
   ],
   "enabled": true,

@@ -476,7 +476,7 @@
   "id": "Ритуал_осквернения",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "Выбранная <hyperlink>провинция</hyperlink> на поверхности и провинции по соседству:<bulletlist><bullet>погружаются в <hyperlink>вечную ночь</hyperlink>;</bullet><bullet>вражеские армии получают 20 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранная <hyperlink>провинция</hyperlink> на поверхности<bulletlist><bullet>погружается в <hyperlink>вечную ночь</hyperlink>;</bullet><bullet>вражеские армии получают 3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>.</bullet></bulletlist>",
   "name": "Ритуал осквернения",
   "operation_point_cost": 275,
   "icon": "0000049700002E5B"
@@ -2438,12 +2438,12 @@
   "icon": "0000048D00001B34"
  },
  {
-  "casting_cost": "60<mana></mana> 1<embalmedsacrifice></embalmedsacrifice> ",
+  "casting_cost": "60<mana></mana> 2<embalmedsacrifice></embalmedsacrifice> ",
   "resid": 5003636906629,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для дружественной армии</hyperlink>",
   "id": "Мрачное_жертвоприношение",
   "tactical": false,
-  "description": "Воины в дружественных армиях в выбранной провинции:<bulletlist><bullet>восстанавливают всё <hp></hp> <hyperlink>здоровье</hyperlink>;</bullet><bullet>на 3 <turn></turn> х. получают свойство «Универсальный камуфляж»;</bullet><bullet>получают +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> до конца своего следующего боя;</bullet><bullet>получают +20 к <hp></hp> <hyperlink>здоровью</hyperlink> до конца своего следующего боя.</bullet></bulletlist>",
+  "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают всё <hp></hp> <hyperlink>здоровье</hyperlink>;</bullet><bullet>на 3 <turn></turn> х. получают свойство «Универсальный камуфляж»;</bullet><bullet>получают +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> до конца своего следующего боя;</bullet><bullet>получают +20 к <hp></hp> <hyperlink>здоровью</hyperlink> до конца своего следующего боя.</bullet></bulletlist>",
   "name": "Мрачное жертвоприношение",
   "operation_point_cost": 60,
   "icon": "0000048D00001A6E"
@@ -3230,7 +3230,7 @@
   "id": "Покров_мрака",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Выбранная <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству получают следующие особенности:<bulletlist><bullet>в провинциях появляется особенность ландшафта «<hyperlink>Мрак</hyperlink>»;</bullet><bullet>провинции теряют особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Река</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Катакомбы</hyperlink>»;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают 10 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink> и 10 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранная <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>в провинциях появляется особенность ландшафта «<hyperlink>Мрак</hyperlink>»;</bullet><bullet>провинции теряют особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Река</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Катакомбы</hyperlink>»;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают 2 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink> и 2 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают -2 к <defenseblight></defenseblight> <hyperlink>сопротивлению яду</hyperlink> и -2 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
   "name": "Покров мрака",
   "operation_point_cost": 150,
   "icon": "0000048B00000135"
@@ -3376,7 +3376,7 @@
   "icon": "0000046A0000019C"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044895,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Каскадная_команда_перемещение",
@@ -3384,11 +3384,11 @@
   "tactical": true,
   "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь» получает:<bulletlist><bullet>«Ускорение»;</bullet><bullet>«Дополнительная сила».</bullet><bullet>Эффект последовательно применяется ко всем дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
   "name": "Каскадная команда: перемещение",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A00000187"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044885,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Каскадная_команда_оборона",
@@ -3396,7 +3396,7 @@
   "tactical": true,
   "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь»:<bulletlist><bullet>на 1 <turn></turn> х. получает способность «Мастер обороны»;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink> (2);</bullet><bullet>эффект последовательно применяется ко всем дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
   "name": "Каскадная команда: оборона",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A0000017D"
  },
  {
@@ -3532,6 +3532,9 @@
   "operation_point_cost": 150,
   "icon": "000003E300005A9C",
   "summoned_units": [
+   {
+    "slug": "Скальд"
+   },
    {
     "slug": "КошмарКошмары"
    },
@@ -6489,7 +6492,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>",
   "id": "Похитители_радости",
   "tactical": false,
-  "description": "Выбранный народ становится олицетворением отчаяния и получает следующую особенность:<bulletlist><bullet>каждая успешная атака снижает <happiness></happiness> <hyperlink>боевой дух</hyperlink> противника на 4 ед.;</bullet><bullet>эффект удваивается, если у цели высокий боевой дух.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Выбранный народ становится олицетворением отчаяния и получает следующую особенность:<bulletlist><bullet>каждая успешная атака похищает 4 ед. <happiness></happiness> <hyperlink>боевой дух</hyperlink> у противника;</bullet><bullet>эффект удваивается, если у цели высокий боевой дух.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Похитители радости",
   "operation_point_cost": 250,
   "icon": "0000041B000016DE"

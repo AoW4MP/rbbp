@@ -900,7 +900,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>"
    },
    {
-    "description": "Выбранная <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству получают следующие особенности:<bulletlist><bullet>в провинциях появляется особенность ландшафта «<hyperlink>Мрак</hyperlink>»;</bullet><bullet>провинции теряют особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Река</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Катакомбы</hyperlink>»;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают 10 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink> и 10 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранная <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>в провинциях появляется особенность ландшафта «<hyperlink>Мрак</hyperlink>»;</bullet><bullet>провинции теряют особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Река</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>» и «<hyperlink>Катакомбы</hyperlink>»;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают 2 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink> и 2 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>вражеские <hyperlink>воины</hyperlink> получают -2 к <defenseblight></defenseblight> <hyperlink>сопротивлению яду</hyperlink> и -2 к <defensefrost></defensefrost> <hyperlink>сопротивлению холоду</hyperlink> на 1 <turn></turn> х. на <hyperlink>глобальной карте</hyperlink>.</bullet></bulletlist>",
     "name": "Покров мрака",
     "spell_slug": "Покров_мрака",
     "tier": 7,
@@ -1440,7 +1440,7 @@
   "icon": "0000048D00001A64",
   "skills": [
    {
-    "description": "Воины в дружественных армиях в выбранной провинции:<bulletlist><bullet>восстанавливают всё <hp></hp> <hyperlink>здоровье</hyperlink>;</bullet><bullet>на 3 <turn></turn> х. получают свойство «Универсальный камуфляж»;</bullet><bullet>получают +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> до конца своего следующего боя;</bullet><bullet>получают +20 к <hp></hp> <hyperlink>здоровью</hyperlink> до конца своего следующего боя.</bullet></bulletlist>",
+    "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают всё <hp></hp> <hyperlink>здоровье</hyperlink>;</bullet><bullet>на 3 <turn></turn> х. получают свойство «Универсальный камуфляж»;</bullet><bullet>получают +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> до конца своего следующего боя;</bullet><bullet>получают +20 к <hp></hp> <hyperlink>здоровью</hyperlink> до конца своего следующего боя.</bullet></bulletlist>",
     "name": "Мрачное жертвоприношение",
     "spell_slug": "Мрачное_жертвоприношение",
     "tier": 3,
@@ -3189,7 +3189,7 @@
   "icon": "0000041B000016C9",
   "skills": [
    {
-    "description": "Выбранный народ становится олицетворением отчаяния и получает следующую особенность:<bulletlist><bullet>каждая успешная атака снижает <happiness></happiness> <hyperlink>боевой дух</hyperlink> противника на ед.;</bullet><bullet>эффект удваивается, если у цели высокий боевой дух.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+    "description": "Выбранный народ становится олицетворением отчаяния и получает следующую особенность:<bulletlist><bullet>каждая успешная атака похищает ед. <happiness></happiness> <hyperlink>боевой дух</hyperlink> у противника;</bullet><bullet>эффект удваивается, если у цели высокий боевой дух.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
     "name": "Похитители радости",
     "spell_slug": "Похитители_радости",
     "tier": 4,

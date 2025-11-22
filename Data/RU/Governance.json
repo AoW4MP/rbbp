@@ -28,11 +28,11 @@
   "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
@@ -44,7 +44,7 @@
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>ледяных великанов</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>ледяных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -52,11 +52,11 @@
   "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
@@ -68,7 +68,7 @@
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>каменных великанов</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>каменных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -76,11 +76,11 @@
   "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
@@ -92,7 +92,7 @@
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>огненных великанов</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>огненных великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -100,11 +100,11 @@
   "name": "Губернатор-король великанов",
   "level_data": [
    {
-    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>",
+    "effect_description": "Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>",
     "level": 1
    },
    {
-    "effect_description": "Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>",
+    "effect_description": "Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>",
     "level": 2
    },
    {
@@ -116,7 +116,7 @@
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +5 к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 20% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>штормовых великанов</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +2 к очкам <bindingessence></bindingessence> <hyperlink>Связующая квинтэссенция</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Городские сооружения стоят на 5% меньше <gold></gold> <hyperlink>золота</hyperlink>.</bullet><bullet><white>Уровень славы 3</white><br></br>Каждая <quarry></quarry> <hyperlink>каменоломня</hyperlink> даёт +1<bindingfragment></bindingfragment> к <hyperlink>связующим фрагментам</hyperlink>.</bullet><bullet><white>Уровень славы 4</white><br></br>Городские сооружения, помимо своего обычного эффекта, дают +2 к <gold></gold> золоту.<br></br>Можно нанимать <hyperlink>штормовых великанов</hyperlink>.</bullet></bulletlist>",
   "icon": "0000049700001A1C"
  },
  {
@@ -172,7 +172,7 @@
   "name": "Губернатор-дракон",
   "level_data": [
    {
-    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>.",
+    "effect_description": "Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +7 к <gold></gold> <hyperlink>золоту</hyperlink>.",
     "level": 1
    },
    {
@@ -184,11 +184,11 @@
     "level": 3
    },
    {
-    "effect_description": "+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>",
+    "effect_description": "+15% к доходу <gold></gold> <hyperlink>золота</hyperlink>, +15% к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>, +15% к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink>, +15% к доходу <food></food> <hyperlink>пищи</hyperlink>",
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <gold></gold> <hyperlink>золота</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +7 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждый <mine></mine> <hyperlink>рудник</hyperlink> даёт +5 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <gold></gold> золоту.</bullet><bullet><white>Уровень славы 4</white><br></br>+15% к доходу <gold></gold> <hyperlink>золота</hyperlink>, +15% к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>, +15% к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink>, +15% к доходу <food></food> <hyperlink>пищи</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00001330"
  },
  {

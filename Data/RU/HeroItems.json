@@ -1,7 +1,7 @@
 [
  {
   "resid": 5257039971057,
-  "id": "forefathers_cloak_item__tier_3_book_of_wonders",
+  "id": "forefathers_cloak_item__tier_3_given_iteam_book_of_wonders",
   "name": "Плащ Прародителя",
   "tier_numerals": "IV",
   "tier": "Ранг IV",
@@ -76,7 +76,7 @@
  },
  {
   "resid": 5257039970588,
-  "id": "forefathers_cloak_item__tier_3",
+  "id": "forefathers_cloak_item__tier_3_blueprint_item",
   "name": "Плащ Прародителя",
   "tier_numerals": "IV",
   "tier": "Ранг IV",
