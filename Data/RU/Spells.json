@@ -349,7 +349,7 @@
   "id": "Истязающие_снаряды",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "<hyperlink>Магические атаки</hyperlink> и <hyperlink>стрельба</hyperlink> воинов под действием чар:<bulletlist><bullet>применяют эффект «Мучение» до конца боя.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "<hyperlink>Стрельба</hyperlink> и <hyperlink>магические</hyperlink> атаки воинов под действием чар:<bulletlist><bullet>с базовой вероятностью 90% могут применить эффект «Мучение» до конца боя.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
