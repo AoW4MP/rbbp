@@ -641,7 +641,7 @@
     "note": "Starts on cooldown"
    }
   ],
-  "description": "Target friendly Tier III or higher unit gains Blood of the Exarch until the end of combat.",
+  "description": "Target friendly Tier III or higher unit gains Blood of the Exarch until the end of combat.<br></br><br></br>Cannot affect <hyperlink>Heroes</hyperlink> or other Blood Exarchs.",
   "name": "Grant Blood of the Exarch",
   "slug": "gift_blood_of_the_exarch_ability_000004C500000B10",
   "damage": "",
@@ -657,7 +657,7 @@
  },
  {
   "modifiers": [],
-  "description": "Target enemy unit sustains damage and is pulled to an adjacent hex.",
+  "description": "Target unit sustains damage and has a base 90% chance of being pulled to an adjacent hex.",
   "name": "Blood Pull",
   "slug": "blood_pull_ability_000004C500000B10",
   "damage": "11<damagephysical></damagephysical> ",
@@ -667,11 +667,11 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<freeaction></freeaction>",
+  "actionPoints": "<leaveoneaction></leaveoneaction>",
   "range": "4",
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "icon": "000004970000340F"
@@ -10196,7 +10196,7 @@
   "icon": "0000048D00001A46"
  },
  {
-  "description": "On Kill, gain +1 additional Mortal Blessing until the end of combat",
+  "description": "On Kill, gain +1 additional Mortal Blessing until the end of combat<br></br><br></br>Does not trigger on the death of Combat Summons, Tower and Siegecraft units.",
   "name": "Blessed End",
   "slug": "0000048d00001a43",
   "icon": "0000048D00001A49"
@@ -10208,7 +10208,7 @@
   "icon": "0000048D00001A3B"
  },
  {
-  "description": "Whenever a unit dies:<bulletlist><bullet>Gain +1 Mortal Blessing</bullet><bullet>If this unit struck the killing blow +1 additional Mortal Blessing</bullet></bulletlist>",
+  "description": "When a unit dies:<bulletlist><bullet>Gain +1 Mortal Blessing</bullet><bullet>If this unit struck the killing blow +1 additional Mortal Blessing</bullet></bulletlist><br></br><br></br>Does not trigger on the death of Combat Summons, Tower and Siegecraft units.",
   "name": "Power from Death",
   "slug": "0000048d000019f7",
   "icon": "0000048D00001A13"
@@ -11634,7 +11634,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit. While linked, both units receive damage, but reduced by 50%.",
+  "description": "Link to target friendly unit:<bulletlist><bullet>Damage sustained by the linked unit is dealt to this unit as well with a 50% reduction.</bullet></bulletlist>",
   "name": "Core Link",
   "slug": "core_link_ability_000004890000136E",
   "damage": "",
@@ -20804,7 +20804,7 @@
     "count": 1
    },
    {
-    "description": "Base 60% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+    "description": "Base 30% chance of:<bulletlist><bullet>Inflicting Status Vulnerability for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet><bullet>Healing self for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
     "name": "Exploit Vulnerability",
     "count": 1
    },
@@ -20817,19 +20817,13 @@
   "description": "Target enemy unit and another within 3 hexes sustain damage.",
   "name": "Sundering Curse",
   "slug": "sundering_curse_ability_000003E300005303_0000048d000019de",
-  "damage": "16<damagefrost></damagefrost> ",
+  "damage": "12<damagefrost></damagefrost> ",
   "requisites": [
-   {
-    "requisite": "Base"
-   },
    {
     "requisite": "Debuff"
    },
    {
     "requisite": "Magic"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "Always Hits",
@@ -25500,7 +25494,7 @@
     "note": "Cooldown: 0 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly unit. While linked, both units receive damage, but reduced by 50%.",
+  "description": "Link to target friendly unit:<bulletlist><bullet>Damage sustained by the linked unit is dealt to this unit as well with a 50% reduction.</bullet></bulletlist>",
   "name": "Warding Bond",
   "slug": "hs_defender_warding_bond_ability_000003BD00002895",
   "damage": "",
@@ -27314,7 +27308,11 @@
   "name": "Overcharge Cast",
   "slug": "overcharge_cast_ability_property_000003BD00002895",
   "damage": "",
-  "requisites": [],
+  "requisites": [
+   {
+    "requisite": "Can't be refreshed"
+   }
+  ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
   "range": "0",
@@ -28781,7 +28779,7 @@
   "icon": "0000048D00000A82"
  },
  {
-  "description": "At the start of combat, conjure a <hyperlink>Rose Knight</hyperlink>.",
+  "description": "At the start of combat, conjure a <hyperlink>Rose Knight</hyperlink>.<br></br><br></br>Does not work in water battles.",
   "name": "Rose Knight Guardian",
   "slug": "00000497000035a6",
   "icon": "00000497000035A7"
@@ -28970,7 +28968,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Conjure 4 corpses of Tier I Thorned Skeleton units in a 1-hex radius.<br></br>For the next 4 <turn></turn> Turns, resurrect one random non-<hyperlink>Hero</hyperlink> corpse on the battlefield under your control until the end of combat.",
+  "description": "Conjure 4 corpses of Tier I Thorned Skeleton units in a 1-hex radius.<br></br>For the next 4 <turn></turn> Turns, resurrect one random corpse on the battlefield under your control until the end of combat.<br></br><br></br>Does not apply to corpses: Hero, Combat Summon, Construct, Siegecraft, Tower",
   "name": "Gravemarch",
   "slug": "gravemarch_ability_000003BD00002895",
   "damage": "",
@@ -32740,7 +32738,7 @@
   "icon": "0000049700003114"
  },
  {
-  "description": "<bulletlist><bullet>Unit sustains 4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> each <turn></turn>.</bullet><bullet>Replaces and counts as Bleeding, but ignores Status Effect Immunity: Bleeding.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br>On unit death, it spawns a <hyperlink>Blood Maggot</hyperlink> under the opponent's control until end of combat.</bulletlist></bulletlist>",
+  "description": "<bulletlist><bullet>Unit sustains 4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> each <turn></turn>.</bullet><bullet>Replaces and counts as Bleeding, but ignores Status Effect Immunity: Bleeding.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><bulletlist><br></br>On unit death, it spawns a <hyperlink>Blood Maggot</hyperlink> under the opponent's control until end of combat.</bulletlist>",
   "name": "Blood Parasite",
   "slug": "0000049700002ef4",
   "icon": "0000049700002EF5"
