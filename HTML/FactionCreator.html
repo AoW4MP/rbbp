@@ -380,6 +380,8 @@
         <script>
             const namePrefixes = ["Arcane", "Feral", "Divine", "Cursed", "Mystic"];
             const nameTypes = ["Warlord", "Summoner", "Champion", "Sorcerer", "Guardian"];
+            
+            const placeHolderTomes = [];
 
           
             function HandlePage() {
@@ -390,6 +392,8 @@
                //         document.getElementById("shareSection").style.display= "none";
                //     document.getElementById("buildsSubmitHolder").style.display = "none";
                // }
+                
+                   jsonTomes = [...jsonTomes, ...placeHolderTomes];
                 SetRandomStart();
 
                 document.getElementById("YourKey").textContent = getOrCreateUserEditKey();

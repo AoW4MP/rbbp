@@ -212,7 +212,7 @@ function GetTomeTierAndNameTome(id) {
 
 function ShowUnitFromLink() {
     let unitID = searchParams.get("unit");
-    document.title = "Age of Wonders 4 Database - " + GetUnitTierAndName(unitID).split(">")[2];
+    document.title = "Age of Wonders 4 RbbP - " + GetUnitTierAndName(unitID).split(">")[2];
     showUnitFromString(unitID, "dataHolder");
 }
 
@@ -259,7 +259,7 @@ function ShowSpellFromLink() {
         const id = searchParams.get(key);
         if (id) {
             const titleText = typeof title === "function" ? title(id) : title;
-            document.title = `Age of Wonders 4 Database - ${titleText}`;
+            document.title = `Age of Wonders 4 RbbP - ${titleText}`;
             action(id, "dataHolder");
             return;
         }
