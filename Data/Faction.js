@@ -1,6 +1,6 @@
 searchParams = new URLSearchParams(window.location.search);
 searchKeyword = searchParams.get("u");
-var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal"];
+var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal", "Dark"];
 
 var ListOfSubsocietyHolders = ["Vision of Promise", "Vision of Ruin", "Vision of Destiny"];
 
@@ -44,6 +44,7 @@ var listOfPantheonTraits = [
     "merciless_slavers__evilact__",
     "relentless_crusaders__goodact__",
     "silver_tongued",
+
     "perfectionist_artisans"
 ];
 
@@ -146,9 +147,9 @@ function SetRandomStart(overwriteParameter) {
                     currentFormTraitList = [];
                     currentFormTraitList.push(randomEntry);
 
-                    while (getPoints() < 10) {
+                    while (getPoints() < 5) {
                         randomEntry = GetRandomEntry(listofChoice[j]);
-                        if (getPoints() + randomEntry.point_cost < 11 && !isInArray(currentFormTraitList, randomEntry)) {
+                        if (getPoints() + randomEntry.point_cost < 6 && !isInArray(currentFormTraitList, randomEntry)) {
                             if (checkCompatibilityTraits(randomEntry) == true) {
                                 currentFormTraitList.push(randomEntry);
                             }
@@ -302,7 +303,7 @@ function selectOrigin(origin, type) {
             break;
         case "Origin":
             currentOrigin = origin;
-            if (origin.name != "Dragon Lord" && origin.name != "Giant King") {
+            if (origin.name != "Dragon Lord" && origin.name != "Giant King" && origin.name != "Elder Vampire") {
                 currentSubType = "";
             } else {
                 let newBit;
@@ -316,9 +317,14 @@ function selectOrigin(origin, type) {
                         if (jsonFactionCreation[index].id === "rock_giant_king") {
                             newBit = jsonFactionCreation[index];
                         }
+                    } else if (origin.name == "Elder Vampire") {
+                        if (jsonFactionCreation[index].id === "elder_vampire_pureblood") {
+                            newBit = jsonFactionCreation[index];
+                        }
                     }
                 }
-                console.log(newBit.name);
+                //
+                //  console.log(newBit.name);
                 currentSubType = newBit;
             }
             selectOrigin(currentSubType, "SubType");
@@ -378,7 +384,7 @@ function selectOrigin(origin, type) {
                     }
                 }
 
-                console.log(newBit.name);
+                // console.log(newBit.name);
                 currentSubCulture = newBit;
             }
             selectOrigin(currentSubCulture, "SubCulture");
@@ -971,13 +977,12 @@ function SetupButtons(evt, type) {
         /*  case "Signature":
             list = GetAllSignatureSkills();
             if (currentSignatureSkills.length == 4) {
-                console.log("more than 4");
+               
                 return;
             }
             break;*/
     }
 
-    // console.log(currentChoice);
     // List of origin options
 
     // Create origin buttons dynamically from the list
@@ -995,15 +1000,11 @@ function SetupButtons(evt, type) {
             // hook into options thingie
             originButtonNew.className = "list-button";
 
-            // console.log(origin.point_cost + " " + getPoints());
-
             if (isInArray(currentFormTraitList, origin)) {
                 originButtonNew.classList.toggle("selected");
-
-                console.log(currentFormTraitList + " " + origin);
             }
 
-            if (origin.point_cost + getPoints() > 10) {
+            if (origin.point_cost + getPoints() > 5) {
                 originButtonNew.style.color = "grey";
             } else if (checkCompatibilityTraits(origin) == false) {
                 originButtonNew.style.color = "red";
@@ -1298,8 +1299,6 @@ function ClearAffinityExtraTags(input) {
 function duplicateTags(inputString) {
     const tagPattern = /(\d+)\s+<([^>]+)>/g;
 
-    //console.log(inputString);
-
     let result = "";
     let match;
 
@@ -1323,7 +1322,7 @@ function duplicateTags(inputString) {
 function SetButtonInfo(button, origin, type, color) {
     button.innerHTML = "";
 
-    if (type === "SubType" && !["Dragon Lord", "Giant King"].includes(currentOrigin.name)) return;
+    if (type === "SubType" && !["Dragon Lord", "Giant King", "Elder Vampire"].includes(currentOrigin.name)) return;
 
     if (type === "SubCulture" && !ListOfSubcultureHolders.includes(currentCulture.name)) return;
 
@@ -1394,27 +1393,32 @@ function findOriginLocName(origin, type) {
     switch (type) {
         case "Origin":
         case "Culture":
-              case "Class":
-              case "SubCulture":
+        case "Class":
+        case "SubCulture":
         case "SubType":
-        case "Form": 
-           
-            if("extraLookup" in origin){
-                  const valueLookup = findBy(jsonExtraFactionCreationFromPOLocalized, "id", origin.extraLookup);
-                if("extraLookup2" in origin){
-                  const valueLookup2 = findBy(jsonExtraFactionCreationFromPOLocalized, "id", origin.extraLookup2);
-             
-                newOrigin = valueLookup2.hyperlink  || valueLookup2.name || valueLookup2.title;
-            } else{
-                console.log(valueLookup);
-                 newOrigin = valueLookup.hyperlink || valueLookup.name;
+        case "Form":
+            if ("extraLookup" in origin) {
+                const valueLookup = findBy(jsonAllFromPOLocalized, "id", origin.extraLookup);
+                if ("extraLookup2" in origin) {
+                    const valueLookup2 = findBy(jsonAllFromPOLocalized, "id", origin.extraLookup2);
+
+                    newOrigin = valueLookup2.hyperlink || valueLookup2.name || valueLookup2.title;
+                } else {
+                    newOrigin = valueLookup.hyperlink || valueLookup.name;
+                }
+            } else {
+                newOrigin = origin.name;
             }
-               
-            }
+
             break;
 
         case "Tome":
-            newOrigin = jsonTomesLocalized.find((entry) => entry.resid === origin.resid).name;
+            const tomeNameLoc = jsonTomesLocalized.find((entry) => entry.resid === origin.resid);
+            if (tomeNameLoc == undefined) {
+                newOrigin = origin.name;
+            } else {
+                newOrigin = tomeNameLoc.name;
+            }
             //newOrigin = jsonTomes.find((entry) => entry.resid === origin.resid);
             break;
 
@@ -1438,7 +1442,6 @@ function createButtonText(origin, type) {
     const span = document.createElement("span");
 
     const originLoc = findOriginLocName(origin, type);
-   
 
     if ("point_cost" in origin && type === "FormTrait") {
         span.innerHTML += `${origin.point_cost}: `;
@@ -1447,7 +1450,7 @@ function createButtonText(origin, type) {
     if (type == "SubSociety1" || type == "SubSociety2") {
         span.innerHTML += origin.name.split(":")[1];
     } else {
-        span.innerHTML +=  originLoc;
+        span.innerHTML += originLoc;
     }
 
     if ("affinity" in origin) {
@@ -1486,14 +1489,12 @@ function createButtonText(origin, type) {
 }
 function createTooltip(origin, type) {
     const tooltip = document.createElement("span");
-   
-    tooltip.style = "margin-left:113px";
-   
-         tooltip.innerHTML = `<p style="color: #d7c297;"><span style="font-size:20px;"> ${origin.name.toUpperCase()}</p>`;
 
-    
-   
-    var originLoc =  origin;//findOriginLoc(origin, type);
+    tooltip.style = "margin-left:113px";
+
+    tooltip.innerHTML = `<p style="color: #d7c297;"><span style="font-size:20px;"> ${origin.name.toUpperCase()}</p>`;
+
+    var originLoc = origin; //findOriginLoc(origin, type);
     switch (type) {
         /* case "Society1":
         case "Society2":
@@ -1585,7 +1586,6 @@ function SetSkillPreview(span, origin) {
         // span.innerHTML += GetAbilityToolTip()
     }
 }
-
 
 function labelAndTransformString(input) {
     if (input == undefined) {
@@ -1703,7 +1703,11 @@ function GetClassFromWeaponId(id) {
 
 function SetTomePreview(span, origin) {
     // get loc version?
-    const locOrigin = findBy(jsonTomesLocalized, "resid", origin.resid);
+    let locOrigin = findBy(jsonTomesLocalized, "resid", origin.resid);
+    // if not found, use og
+    if (locOrigin == undefined) {
+        locOrigin = origin;
+    }
 
     span.innerHTML =
         '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + locOrigin.name.toUpperCase() + "</p>";
@@ -1746,9 +1750,14 @@ function SetTomePreview(span, origin) {
                 // can be summon as well
                 if ("spell_slug" in origin.skills[index]) {
                     const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
+                    
+                     let iconLink = spell.icon;
+                if(spell.icon == undefined){
+                    iconLink = spell.id;
+                }
                     span.innerHTML +=
                         '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
-                        spell.icon +
+                        iconLink +
                         '.png">' +
                         spell.name +
                         "</bullet>";
@@ -1769,12 +1778,14 @@ function SetTomePreview(span, origin) {
                 } else {
                     slug = locOrigin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 }
+                
+                const siege = findBy(jsonSiegeProjectsLocalized, "id", slug);
 
                 span.innerHTML +=
                     '<bullet> <img width="20px" src="/rbbp/Icons/SiegeProjectIcons/' +
-                    slug +
+                    siege.icon +
                     '.png">' +
-                    findBy(jsonSiegeProjectsLocalized, "id", slug).name +
+                    siege.name +
                     "</bullet>";
             }
             // city structure
@@ -1810,9 +1821,13 @@ function SetTomePreview(span, origin) {
             // normal spell
             else {
                 const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
+                let iconLink = spell.icon;
+                if(spell.icon == undefined){
+                    iconLink = spell.id;
+                }
                 span.innerHTML +=
                     '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
-                    spell.icon +
+                    iconLink +
                     '.png">' +
                     spell.name +
                     "</bullet>";
@@ -1883,10 +1898,17 @@ function CollectAllPartsForOverview(fromload) {
     ExtraTomelist.push(...currentTomeList);
 
     for (let v = 0; v < jsonTomes.length; v++) {
-        if (currentCulture.name.indexOf(jsonTomes[v].name) != -1) {
-            // if subcutlure
+        if (currentSubCulture != "") {
+              if (jsonTomes[v].name.indexOf(currentSubCulture.name) != -1) {
+                 // if subcutlure
+                ExtraTomelist.push(jsonTomes[v]);
+            }
+        } else {
+            if (jsonTomes[v].name.indexOf(currentCulture.name) != -1) {
+               
 
-            ExtraTomelist.push(jsonTomes[v]);
+                ExtraTomelist.push(jsonTomes[v]);
+            }
         }
     }
 
@@ -1949,7 +1971,6 @@ function CollectAllPartsForOverview(fromload) {
                 listOfAllCurrentPassivesSlugs.push(ExtraTomelist[index].passives[q], ExtraTomelist[index]);
             }
         }
-        console.log(listOfAllCurrentPassivesSlugs);
     }
     ShowPassivesOverview(listOfAllCurrentPassivesSlugs);
     ShowUnitsOverview(listOfAllCurrentUnitSlugs);
@@ -1962,7 +1983,6 @@ function CollectAllPartsForOverview(fromload) {
     ShowSiegeProjectsOverview(listOfAllCurrentSiegeProjectsSlugs);
     var parentDiv = document.getElementById("mainoverview");
 
-    // console.log("here");
     // reset highlights
     if (fromload == false) {
         ResetHighlights();
@@ -2091,8 +2111,6 @@ function applyTextColor(element, colors) {
 }
 
 function CreateSpellIcon(listEntry, colorEntry) {
-    
-  
     // var Color = ["green", "blue"];
     var spell = document.createElement("button");
     if ("affinities" in colorEntry) {
@@ -2110,9 +2128,9 @@ function CreateSpellIcon(listEntry, colorEntry) {
     // get spell already
 
     var spellData = jsonSpells.find((entry) => entry.id == listEntry.spell_slug);
-      const listEntryLoc = findBy(jsonSpellsLocalized, "resid", spellData.resid);
-    
-     text.innerHTML = " " + listEntryLoc.name;
+    const listEntryLoc = findBy(jsonSpellsLocalized, "resid", spellData.resid);
+
+    text.innerHTML = " " + listEntryLoc.name;
 
     var smallIcon = document.createElement("img");
     let iconLink = spellData.icon || spellData.id;
@@ -2161,13 +2179,12 @@ function GetColors(affinity) {
             colors.push("#e39954");
         }
     }
-    // console.log(colors);
+
     return colors;
 }
 
 function CreateUnitIcon(listEntry, colorEntry) {
-    
-   const listEntryLoc = findBy(jsonUnitsLocalized, "resid", listEntry.resid);
+    const listEntryLoc = findBy(jsonUnitsLocalized, "resid", listEntry.resid);
     var spell = document.createElement("button");
     if (colorEntry != null) {
         var Color = GetColors(colorEntry.affinities);
@@ -2271,7 +2288,7 @@ function ShowUpgradesOverview(list) {
     for (let index = 0; index < list.length; index += 2) {
         for (let i = 0; i < jsonStructureUpgrades.length; i++) {
             if (jsonStructureUpgrades[i].id == list[index].upgrade_slug) {
-                 const loc = findBy(jsonStructureUpgradesLocalized, "resid", jsonStructureUpgrades[i].resid);
+                const loc = findBy(jsonStructureUpgradesLocalized, "resid", jsonStructureUpgrades[i].resid);
                 var spell = document.createElement("button");
                 var Color = GetColors(list[index + 1].affinities);
                 applyTextColor(spell, Color);
@@ -2441,7 +2458,7 @@ function ShowSPIOverview(list) {
             if (jsonStructureUpgrades[i].id == structureId) {
                 // get loc name
                 const loc = findBy(jsonStructureUpgradesLocalized, "resid", jsonStructureUpgrades[i].resid);
-                console.log(loc);
+
                 const spell = document.createElement("button");
 
                 const Color = GetColors(list[index + 1].affinities);
@@ -2449,7 +2466,7 @@ function ShowSPIOverview(list) {
                 spell.className = "overview_list_entry";
 
                 const text = document.createElement("div");
-               text.innerHTML = loc.name;
+                text.innerHTML = loc.name;
 
                 const smallIcon = document.createElement("img");
                 smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].icon + ".png");
@@ -2515,13 +2532,13 @@ function ShowSiegeProjectsOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = loc.name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/rbbp/Icons/SiegeProjectIcons/" + jsonSiegeProjects[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/SiegeProjectIcons/" + jsonSiegeProjects[i].icon + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
                 section.append(spell);
 
-                var name =loc.name;
+                var name = loc.name;
 
                 var spa = document.createElement("SPAN");
                 spa.innerHTML =
@@ -2600,7 +2617,7 @@ function GetNextSetOfTomes() {
             }
         }
     }
-    if (currentTomeList.length > 5 ) {
+    if (currentTomeList.length > 5) {
         // allow tier 4 tomes
         for (i = 0; i < jsonTomes.length; i++) {
             if (jsonTomes[i].tier === 4) {
@@ -2633,40 +2650,31 @@ function GetNextSetOfTomes() {
     return listOfNextTomes;
 }
 
-function checkEmpireOfCosmos(tierCheck){
+function checkEmpireOfCosmos(tierCheck) {
     // no empire of cosmos here
-    if(currentSociety1.id != "empire_of_the_cosmos" && currentSociety2.id != "empire_of_the_cosmos" ){
-        console.log("no empire");
+    if (currentSociety1.id != "empire_of_the_cosmos" && currentSociety2.id != "empire_of_the_cosmos") {
         return false;
     }
-    
-     if( hasAllAffinitiesForEmpireOfCosmos(tierCheck)){
-         return true;
-     } else{
-         return false;
-     }
-    
+
+    if (hasAllAffinitiesForEmpireOfCosmos(tierCheck)) {
+        return true;
+    } else {
+        return false;
+    }
 }
-    
-    function hasAllAffinitiesForEmpireOfCosmos(number) {
-  const html = document.getElementById("currentAffinity").innerHTML;
 
-  // List of affinity tags
-  const affinities = [
-    "empirematter",
-    "empirearcana",
-    "empirechaos",
-    "empirenature",
-    "empireorder",
-    "empireshadow"
-  ];
+function hasAllAffinitiesForEmpireOfCosmos(number) {
+    const html = document.getElementById("currentAffinity").innerHTML;
 
-  // Check if each affinity has a number >= 1 after it
-  return affinities.every(affinity => {
-    const regex = new RegExp(`<${affinity}big></${affinity}big>\\s*(\\d+)`);
-    const match = html.match(regex);
-    return match && parseInt(match[1], 10) >= number;
-  });
+    // List of affinity tags
+    const affinities = ["empirematter", "empirearcana", "empirechaos", "empirenature", "empireorder", "empireshadow"];
+
+    // Check if each affinity has a number >= 1 after it
+    return affinities.every((affinity) => {
+        const regex = new RegExp(`<${affinity}big></${affinity}big>\\s*(\\d+)`);
+        const match = html.match(regex);
+        return match && parseInt(match[1], 10) >= number;
+    });
 }
 
 function GetAffinityMatches(affinityTotal, substringToCount, number) {
@@ -2676,7 +2684,6 @@ function GetAffinityMatches(affinityTotal, substringToCount, number) {
         var empireType = substringToCount.split(" ")[1];
 
         affinityTotal = affinityTotal.replaceAll("  ", " ");
-        //   console.log(empireType + " input :" + inputString);
 
         // Use a regular expression to find the tag and extract the number
         const match = affinityTotal.match(new RegExp(`${empireType}\\s*(\\d+)`));
@@ -2702,7 +2709,6 @@ function GetAffinityMatches(affinityTotal, substringToCount, number) {
             // Use a regular expression to find the tag and extract the number
             const match = affinityTotal.match(new RegExp(`${empireType}\\s*(\\d+)`));
             numberMatches.push(match ? parseInt(match[1]) : 0);
-            // console.log(match);
         }
 
         var finalNumber = 0;
@@ -2760,7 +2766,7 @@ function GetAllFormTraitsList() {
             listOfAllOrigins.push(jsonFactionCreation2[i]);
         }
     }
-    //console.log(listOfAllOrigins);
+
     listOfAllOrigins.sort((a, b) => a.point_cost - b.point_cost);
 
     return listOfAllOrigins;
@@ -2822,6 +2828,7 @@ function GetAllSubCultureSetups() {
     }
 
     listOfAllSubCultTypes.sort((a, b) => a.id - b.id);
+    console.log(listOfAllSubCultTypes);
     return listOfAllSubCultTypes;
 }
 
@@ -2906,12 +2913,13 @@ function GetRandomEntry(type) {
             var list = GetAllSubTypes(currentOrigin);
 
             randomOrigin = list[Math.floor(Math.random() * list.length)];
-            if (currentOrigin.name != "Dragon Lord" && currentOrigin.name != "Giant King") {
+            if (
+                currentOrigin.name != "Dragon Lord" &&
+                currentOrigin.name != "Giant King" &&
+                currentOrigin.name != "Elder Vampire"
+            ) {
                 randomOrigin = "";
             }
-            // while (incompatibleCheck("Loadout", randomOrigin) === true) {
-            //   randomOrigin = list[Math.floor(Math.random() * list.length)];
-            //}
             break;
         case "SubCulture":
             var list = GetAllSubCultureSetups(currentOrigin);
@@ -3130,7 +3138,7 @@ function updateSelectedOptions(origin) {
         //         currentFormTraitList.pop();
         //     }
         // } else {
-        if (getPoints() > 10) {
+        if (getPoints() > 5) {
             currentFormTraitList.pop();
         }
         // }
@@ -3496,7 +3504,7 @@ function reversLookUp(code) {
     // subculture
     if (currentCultureSplit[1] != undefined) {
         // subculture here
-        console.log("here");
+        //  console.log("here");
         var subcultureNo = jsonBuilderLookUp[hexToDecimal(currentCultureSplit[1])].id;
 
         for (let index = 0; index < jsonFactionCreation.length; index++) {
