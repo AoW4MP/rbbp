@@ -1,0 +1,924 @@
+[
+    {
+        "type": "Class",
+        "id": "ranger",
+        "name": "Ranger",
+        "icon": "ranger",
+        "extraLookup": "CONCEPT@HERO_CLASS@RANGER"
+    },
+    {
+        "type": "Class",
+        "id": "warrior",
+        "name": "Warrior",
+        "icon": "warrior",
+        "extraLookup": "CONCEPT@HERO_CLASS@WARRIOR"
+    },
+    {
+        "type": "Class",
+        "id": "mage",
+        "name": "Elementalist",
+        "icon": "mage",
+        "extraLookup": "CONCEPT@HERO_CLASS@MAGE"
+    },
+    {
+        "type": "Class",
+        "id": "ritualist",
+        "name": "Ritualist",
+        "icon": "ritualist",
+        "extraLookup": "CONCEPT@HERO_CLASS@RITUALIST"
+    },
+    {
+        "type": "Class",
+        "id": "defender",
+        "name": "Defender",
+        "icon": "defender",
+        "extraLookup": "CONCEPT@HERO_CLASS@DEFENDER"
+    },
+    {
+        "type": "Class",
+        "id": "spellblade",
+        "name": "Spellblade",
+        "icon": "spellblade",
+        "extraLookup": "CONCEPT@HERO_CLASS@SPELLBLADE"
+    },
+    {
+        "type": "Class",
+        "id": "deathknight",
+        "name": "Death Knight",
+        "icon": "death_knight",
+        "extraLookup": "CONCEPT@HERO_CLASS@DEATH_KNIGHT"
+    },
+    {
+        "type": "Class",
+        "id": "warlock",
+        "name": "Warlock",
+        "icon": "warlock",
+        "extraLookup": "CONCEPT@HERO_CLASS@WARLOCK"
+    },
+    {
+        "type": "Class",
+        "id": "battlesaint",
+        "name": "Battlesaint",
+        "DLC": "ARCHONPROPHECY",
+        "icon": "battlesaint",
+        "extraLookup": "DLC@ARCHONPROPHECY@CONCEPT@HERO_CLASS@BATTLESAINT"
+    },
+    {
+        "type": "Ruler Origin",
+        "id": "champion",
+        "icon": "champion",
+        "name": "Champion",
+        "extraLookup": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@RACIAL_LEADER"
+    },
+    
+    {
+        "type": "Ruler Origin",
+        "id": "wizard_king",
+        "name": "Wizard King",
+        "extraLookup": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@WIZARD_KING",
+        "icon": "wizard_king"
+    },
+    {
+        "type": "Ruler Origin",
+        "id": "dragon_lord",
+        "name": "Dragon Lord",
+        "icon": "dragon_lord",
+        "DLC": "DRAGONLORDS ",
+        "extraLookup": "DLC@DRAGONLORDS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@DRAGON_LEADER"
+    },
+     {
+        "type": "Ruler Origin",
+        "id": "elder_vampire",
+        "icon": "elder_vampire",
+        "name": "Elder Vampire",
+         "DLC" : "THRONESOFBLOOD ",
+        "extraLookup": "DLC@THRONESOFBLOOD@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@VAMPIRE_LORD"
+    },
+    {
+        "type": "Ruler Origin",
+        "id": "eldritch_sovereign",
+        "name": "Eldritch Sovereign",
+        "icon": "eldritch_sovereign",
+        "DLC": "ELDRITCHREALMS ",
+        "extraLookup": "DLC@ELDRITCHREALMS@ELDRITCH_RULER_TYPE"
+    },
+    {
+        "type": "Ruler Origin",
+        "id": "giant_king",
+        "name": "Giant King",
+        "icon": "giant_king",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING",
+        "extraLookup2" : "INTERFACE@LORE_CONCEPT@GIANT_KING"
+        
+    },
+    {
+        "type": "Culture",
+        "id": "feudal",
+        "icon": "feudal",
+        "name": "Feudal",
+         "affinity": "<empireorder></empireorder>",
+        "extraLookup": "CULTURE_FEUDAL@FEUDAL"
+    },
+    {
+        "type": "SubCulture",
+        "id": "feudal_monarchy",
+        "icon": "feudal_monarchy",
+        "affinity": "<empirematter></empirematter>",
+        "requirement": "Feudal",
+        "name": "Feudal - Monarchy",
+        "extraLookup": "CULTURE_FEUDAL@SUBCULTURE@MONARCHY"
+    },
+    {
+        "type": "SubCulture",
+        "id": "feudal_aristocracy",
+        "icon": "feudal_aristocracy",
+        "affinity": "<empirenature></empirenature>",
+        "name": "Feudal - Aristocracy",
+        "requirement": "Feudal",
+        "extraLookup": "CULTURE_FEUDAL@SUBCULTURE@ARISTOCRACY"
+    },
+    {
+        "type": "Culture",
+        "id": "barbarian",
+        "icon": "barbarian",
+        "affinity": "<empirechaos></empirechaos>,<empirenature></empirenature>",
+        "name": "Barbarian",
+        "extraLookup": "CULTURE_SAVAGE@SAVAGE"
+    },
+    {
+        "type": "Culture",
+        "id": "architect",
+        "icon": "architect",
+        "name": "Architect",
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT"
+    },
+    {
+        "type": "Culture",
+        "id": "industrious",
+        "icon": "industrious",
+        "affinity": "<empirematter></empirematter>,<empirematter></empirematter>",
+        "name": "Industrious",
+        "extraLookup": "CULTURE_INDUSTRIOUS@INDUSTRIOUS"
+    },
+    {
+        "type": "Culture",
+        "id": "high",
+        "icon": "high",
+        "affinity": "<empireorder></empireorder>,<empireorder></empireorder>",
+        "name": "High",
+        "extraLookup": "CULTURE_HIGH@HIGH"
+    },
+    {
+        "type": "Culture",
+        "id": "dark",
+        "icon": "dark",
+        "name": "Dark",
+        "affinity": "<empireshadow></empireshadow>",
+        "extraLookup": "CULTURE_DARK@DARK"
+    },
+    {
+        "type": "SubCulture",
+        "id": "mystic_school_of_attunement",
+        "affinity": "<empirearcana></empirearcana>",
+        "name": "Mystic - School of Attunement",
+        "icon": "mystic_school_of_attunement",
+        "requirement": "Mystic",
+        "extraLookup": "CULTURE_MYSTIC@SUBCULTURE@ATTUNEMENT_SEEKERS",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            }
+        ]
+    },
+    {
+        "type": "Culture",
+        "id": "mystic",
+        "name": "Mystic",
+        "icon": "mystic",
+         "affinity": "<empirearcana></empirearcana>",
+        "extraLookup": "CULTURE_MYSTIC@MYSTIC",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "mystic_school_of_potential",
+        "affinity": "<empireshadow></empireshadow>",
+        "name": "Mystic - School of Potential",
+        "icon": "mystic_school_of_potential",
+        "requirement": "Mystic",
+        "extraLookup": "CULTURE_MYSTIC@SUBCULTURE@SPELL_ARCANISTS",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "mystic_school_of_summoning",
+        "affinity": "<empirearcana></empirearcana>",
+        "name": "Mystic - School of Summoning",
+        "icon": "mystic_school_of_summoning",
+        "requirement": "Mystic",
+        "extraLookup": "CULTURE_MYSTIC@SUBCULTURE@ASTRAL_SUMMONERS",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            }
+        ]
+    },
+    {
+        "type": "Culture",
+        "id": "oathsworn",
+        "name": "Oathsworn",
+        "icon": "oathsworn",
+        "DLC": "WAYSOFWAR ",
+        "affinity": "<empireorder></empireorder>",
+        "extraLookup": "DLC@WAYSOFWAR@CULTURE_OATHSWORN"
+    },
+    {
+        "type": "SubCulture",
+        "id": "oathsworn_oath_of_strife",
+        "affinity": "<empirechaos></empirechaos>",
+        "name": "Oathsworn - Oath of Strife",
+        "icon": "oathsworn_oath_of_strife",
+        "DLC": "WAYSOFWAR ",
+        "requirement": "Oathsworn",
+        "extraLookup": "DLC@WAYSOFWAR@SUBCULTURE_OATHSWORN@BRAVERY",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            },
+            {
+                "name": "Scions of Evil <evilact></evilact>"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "oathsworn_oath_of_righteousness",
+        "affinity": "<empireorder></empireorder>",
+        "name": "Oathsworn - Oath of Righteousness",
+        "icon": "oathsworn_oath_of_righteousness",
+        "DLC": "WAYSOFWAR ",
+        "requirement": "Oathsworn",
+        "extraLookup": "DLC@WAYSOFWAR@SUBCULTURE_OATHSWORN@RIGHTEOUSNESS",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            },
+            {
+                "name": "Scions of Evil <evilact></evilact>"
+            },
+            {
+                "name": "Umbral Disciples <evilact></evilact>"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "oathsworn_oath_of_harmony",
+        "affinity": "<empirenature></empirenature>",
+        "name": "Oathsworn - Oath of Harmony",
+        "icon": "oathsworn_oath_of_harmony",
+        "DLC": "WAYSOFWAR ",
+        "requirement": "Oathsworn",
+        "extraLookup": "DLC@WAYSOFWAR@SUBCULTURE_OATHSWORN@WISDOM",
+        "incompatible": [
+            {
+                "name": "Fabled Hunters"
+            },
+            {
+                "name": "Scions of Evil <evilact></evilact>"
+            }
+        ]
+    },
+    {
+        "type": "Culture",
+        "id": "reaver",
+        "affinity": "<empirematter></empirematter>,<empirechaos></empirechaos>",
+        "name": "Reaver",
+        "DLC": "EMPIRESANDASHES ",
+        "icon": "reaver",
+        "extraLookup": "DLC@EMPIRESANDASHES@CULTURE_REAVER",
+        "extraLookup2": "DLC@EMPIRESANDASHES@CULTURE_REAVER@REAVER",
+        "incompatible": [
+            {
+                "name": "Scions of Evil <evilact></evilact>"
+            }
+        ]
+    },
+    {
+        "type": "Culture",
+        "id": "primal",
+        "name": "Primal",
+        "DLC": "PRIMALFURY ",
+        "icon": "primal",
+        "affinity": "<empirenature></empirenature>",
+        "extraLookup": "DLC@PRIMALFURY@CULTURE_PRIMAL",
+        "extraLookup2": "DLC@PRIMALFURY@CULTURE_PRIMAL@PRIMAL",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_mire_crocodile",
+        "affinity": "<empirenature></empirenature>",
+        "name": "Primal - Mire Crocodile",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_mire_crocodile",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@CROCODILE",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_storm_crow",
+        "affinity": "<empirearcana></empirearcana>",
+        "name": "Primal - Storm Crow",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_storm_crow",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@CROW",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_glacial_mammoth",
+        "affinity": "<empireshadow></empireshadow>",
+        "name": "Primal - Glacial Mammoth",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_glacial_mammoth",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@MAMMOTH",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_dune_serpent",
+        "affinity": "<empirematter></empirematter>",
+        "name": "Primal - Dune Serpent",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_dune_serpent",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SERPENT",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_ash_sabertooth",
+        "affinity": "<empirechaos></empirechaos>",
+        "name": "Primal - Ash Sabertooth",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_ash_sabertooth",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SABERTOOTH",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_tunneling_spider",
+        "affinity": "<empirenature></empirenature>",
+        "name": "Primal - Tunneling Spider",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_tunneling_spider",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SPIDER",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "SubCulture",
+        "id": "primal_sylvan_wolf",
+        "affinity": "<empireorder></empireorder>",
+        "name": "Primal - Sylvan Wolf",
+        "DLC": "PRIMALFURY",
+        "icon": "primal_sylvan_wolf",
+        "requirement": "Primal",
+        "extraLookup": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@WOLF",
+        "incompatible": [
+            {
+                "name": "Adaptation"
+            }
+        ]
+    },
+    {
+        "type": "Skin",
+        "id": "dwarfkin",
+        "name": "Dwarfkin",
+        "extraLookup": "ESSENCE_STOUT@SKIN_DWARF"
+    },
+    {
+        "type": "Skin",
+        "id": "elfkin",
+        "name": "Elfkin",
+        "extraLookup": "ESSENCE_GRACE@SKIN_ELVES"
+    },
+    {
+        "type": "Skin",
+        "id": "feline",
+        "name": "Feline",
+        "extraLookup": "ESSENCE_GRACE@SKIN_TIGRAN"
+    },
+    {
+        "type": "Skin",
+        "id": "goblinoid",
+        "name": "Goblinoid",
+        "extraLookup": "ESSENCE_HORDE@SKIN_GOBLINS"
+    },
+    {
+        "type": "Skin",
+        "id": "avian",
+        "name": "Avian",
+        "DLC": " EMPIRESANDASHES",
+        "extraLookup": "DLC@EMPIRESANDASHES@ESSENCE_GRACE@SKIN_AVIAN"
+    },
+    {
+        "type": "Skin",
+        "id": "syron",
+        "name": "Syron",
+        "DLC": " ELDRITCHREALMS",
+        "extraLookup": "DLC@ELDRITCHREALMS@ESSENCE_VERSATILE@SKIN_SYRON"
+    },
+    {
+        "type": "Skin",
+        "id": "ogrekin",
+        "name": "Ogrekin",
+        "DLC": " WAYSOFWAR",
+        "extraLookup": "DLC@WAYSOFWAR@ESSENCE_FORCE@SKIN_OGRE"
+    },
+    {
+        "type": "Skin",
+        "id": "simian",
+        "name": "Simian",
+        "DLC": " WAYSOFWAR",
+        "extraLookup": "DLC@WAYSOFWAR@ESSENCE_HORDEE@SKIN_MONKEY"
+    },
+    {
+        "type": "Skin",
+        "id": "insectoid",
+        "name": "Insectoid",
+        "DLC": " ELDRITCHREALMS",
+        "extraLookup": "DLC@ELDRITCHREALMS@ESSENCE_VERSATILE@SKIN_INSECTOID"
+    },
+    {
+        "type": "Skin",
+        "id": "halfling",
+        "name": "Halfling",
+        "extraLookup": "ESSENCE_VERSATILE@SKIN_HALFLING"
+    },
+    {
+        "type": "Skin",
+        "id": "human",
+        "name": "Human",
+        "extraLookup": "ESSENCE_VERSATILE@SKIN_HUMAN"
+    },
+    {
+        "type": "Skin",
+        "id": "molekin",
+        "name": "Molekin",
+        "extraLookup": "ESSENCE_STOUT@SKIN_MOLEMEN"
+    },
+    {
+        "type": "Skin",
+        "id": "orcoid",
+        "name": "Orcoid",
+        "extraLookup": "ESSENCE_FORCE@SKIN_ORC"
+    },
+    {
+        "type": "Skin",
+        "id": "ratkin",
+        "name": "Ratkin",
+        "extraLookup": "ESSENCE_HORDE@SKIN_RATKIN"
+    },
+    {
+        "type": "Skin",
+        "id": "toadkin",
+        "name": "Toadkin",
+     "extraLookup": "ESSENCE_STOUT@SKIN_TOADMEN"
+    },
+    {
+        "type": "Skin",
+        "id": "lizardfolk",
+        "name": "Lizardfolk",
+        "DLC": " DRAGONLORDS",
+    "extraLookup": "DLC@DRAGONLORDS@ESSENCE_VERSATILE@SKIN_LIZARD"
+     },
+    {
+        "type": "Skin",
+        "id": "lupine",
+        "name": "Lupine",
+        "DLC": "PRIMALFURY",
+       "extraLookup": "DLC@PRIMALFURY@ESSENCE_VERSATILE@SKIN_LUPINE"
+    },
+    {
+        "type": "Skin",
+        "id": "goatkin",
+        "name": "Goatkin",
+        "DLC": "PRIMALFURY",
+      "extraLookup": "DLC@PRIMALFURY@ESSENCE_VERSATILE@SKIN_GOATKIN"
+    },
+    {
+        "type": "Skin",
+        "id": "ancient",
+        "name": "Ancient",
+        "DLC": "ARCHONPROPHECY",
+          "extraLookup" : "DLC@ARCHONPROPHECY@SKIN_ANCIENTS"
+  
+    },
+    {
+        "type": "Skin",
+        "id": "elysian",
+        "name": "Elysian",
+        "DLC": "ARCHONPROPHECY",
+      "extraLookup" : "DLC@ARCHONPROPHECY@SKIN_ELYSIAN"
+    },
+    {
+        "type": "SubType",
+        "id": "astral_dragon",
+        "name": "Astral Dragon",
+        "requirement": "Dragon Lord",
+        "DLC": "DRAGONLORDS ",
+        "affinity": "<empirearcana></empirearcana>",
+        "extraLookup": "DLC@DRAGONLORDS@ASTRAL@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "chaos_dragon",
+        "name": "Chaos Dragon",
+        "DLC": "DRAGONLORDS ",
+        "requirement": "Dragon Lord",
+        "affinity": "<empirechaos></empirechaos>",
+        "extraLookup": "DLC@DRAGONLORDS@CHAOS@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "materium_dragon",
+        "name": "Materium Dragon",
+        "DLC": "DRAGONLORDS ",
+        "requirement": "Dragon Lord",
+        "affinity": "<empirematter></empirematter>",
+        "extraLookup": "DLC@DRAGONLORDS@MATERIUM@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "nature_dragon",
+        "name": "Nature Dragon",
+        "DLC": "DRAGONLORDS ",
+        "requirement": "Dragon Lord",
+        "affinity": "<empirenature></empirenature>",
+        "extraLookup": "DLC@DRAGONLORDS@NATURE@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "order_dragon",
+        "name": "Order Dragon",
+        "DLC": "DRAGONLORDS ",
+        "requirement": "Dragon Lord",
+        "affinity": "<empireorder></empireorder>",
+        "extraLookup": "DLC@DRAGONLORDS@ORDER@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "shadow_dragon",
+        "name": "Shadow Dragon",
+        "DLC": "DRAGONLORDS ",
+        "requirement": "Dragon Lord",
+        "affinity": "<empireshadow></empireshadow>",
+        "extraLookup": "DLC@DRAGONLORDS@SHADOW@CLAW"
+    },
+    {
+        "type": "SubType",
+        "id": "rock_giant_king",
+        "name": "Rock Giant King",
+        "requirement": "Giant King",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING_STONE"
+    },
+    {
+        "type": "SubType",
+        "id": "fire_giant_king",
+        "name": "Fire Giant King",
+        "requirement": "Giant King",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING_FIRE"
+    },
+    {
+        "type": "SubType",
+        "id": "storm_giant_king",
+        "name": "Storm Giant King",
+        "requirement": "Giant King",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING_STORM"
+    },
+    {
+        "type": "SubType",
+        "id": "frost_giant_king",
+        "name": "Frost Giant King",
+        "requirement": "Giant King",
+        "DLC": "GIANTKINGS ",
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING_FROST"
+    },
+     {
+        "type": "SubType",
+        "id": "elder_vampire_pureblood",
+        "name": "Elder Vampire Pureblood",
+        "requirement": "Elder Vampire",
+        "DLC": "THRONESOFBLOOD ",
+         "extraLookup": "DLC@THRONESOFBLOOD@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@VAMPIRE_LORD_PUREBLOOD"
+    ,  "extraLookup2" : "DLC@THRONESOFBLOOD@VAMPIRE_PUREBLOOD_TYPE"
+     },
+     {
+        "type": "SubType",
+        "id": "elder_vampire_hybrid",
+        "name": "Elder Vampire Hybrid",
+        "requirement": "Elder Vampire",
+        "DLC": "THRONESOFBLOOD ",
+         "extraLookup": "DLC@THRONESOFBLOOD@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@VAMPIRE_LORD_HYBRID",
+    "extraLookup2" : "DLC@THRONESOFBLOOD@VAMPIRE_HYBRID_TYPE"
+     },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_shadow",
+        "name": "Architects of Shadow",
+        "affinity": "<empireshadow></empireshadow>, <empireshadow></empireshadow>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_order",
+        "name": "Architects of Order",
+        "affinity": "<empireorder></empireorder>, <empireorder></empireorder>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_chaos",
+        "name": "Architects of Chaos",
+        "affinity": "<empirechaos></empirechaos>, <empirechaos></empirechaos>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_nature",
+        "name": "Architects of Nature",
+        "affinity": "<empirenature></empirenature>, <empirenature></empirenature>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_materium",
+        "name": "Architects of Materium",
+        "affinity": "<empirematter></empirematter>, <empirematter></empirematter>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "architects_of_astral",
+        "name": "Architects of Astral",
+        "affinity": "<empirearcana></empirearcana>, <empirearcana></empirearcana>",
+        "requirement": "Architect",
+        "DLC": "ARCHONPROPHECY ",
+        "description": ""
+    },
+    {
+        "type": "SubCulture",
+        "id": "cult_of_death",
+        "name": "Cult of Death",
+       "affinity": "<empirenature></empirenature>",
+        "requirement": "Dark",
+        "extraLookup": "CULTURE_DARK@SUBCULTURE@CULTOFDEATH"
+    },
+     {
+        "type": "SubCulture",
+        "id": "cult_of_tyranny",
+        "name": "Cult of Tyranny",
+       "affinity": "<empireshadow></empireshadow>",
+        "requirement": "Dark",
+        "extraLookup": "CULTURE_DARK@SUBCULTURE@CULTOFTYRANNY"
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_promise_order",
+        "name": "Visions of Promise: Order",
+        "affinity": "<empireorder></empireorder>",
+        "requirement": "Vision of Promise",
+        "DLC": "ARCHONPROPHECY ",
+       "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@CONQUEST_ORDER",
+        "rewards" : ["DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@COMPLETION"]
+       },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_promise_nature",
+        "name": "Visions of Promise : Nature",
+        "affinity": "<empirenature></empirenature>",
+        "requirement": "Vision of Promise",
+        "DLC": "ARCHONPROPHECY ",
+       
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@RECLAMATION_NATURE",
+        "rewards" : ["DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@COMPLETION"]
+         },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_promise_materium",
+        "name": "Visions of Promise: Materium",
+        "affinity": "<empirematter></empirematter>",
+        "requirement": "Vision of Promise",
+        "DLC": "ARCHONPROPHECY ",
+       
+        "amount" : "50",
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@CONSTRUCT_MATERIUM",
+        "rewards" : [ 
+                     "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_PROMISE@COMPLETION","DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@TITAN_GUARDIAN"]
+        },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_ruin_chaos",
+        "name": "Visions of Ruin : Chaos",
+        "affinity": "<empirechaos></empirechaos>",
+        "requirement": "Vision of Ruin",
+        "DLC": "ARCHONPROPHECY ",
+        "objective": "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_RUIN@WAR_CHAOS",
+       "rewards": ["DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_RUIN@WAR_CHAOS@OUTCOME"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_ruin_astral",
+        "name": "Visions of Ruin : Astral",
+        "affinity": "<empirearcana></empirearcana>",
+        "requirement": "Vision of Ruin",
+        "DLC": "ARCHONPROPHECY ",
+        "objective": "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_RUIN@MAGIC_ASTRAL",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_RUIN@MAGIC@AGE_OF_MAGIC"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_ruin_shadow",
+        "name": "Visions of Ruin : Shadow",
+        "affinity": "<empireshadow></empireshadow>",
+        "requirement": "Vision of Ruin",
+        "DLC": "ARCHONPROPHECY ",
+        "objective": "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_RUIN@DEATH_SHADOW",
+       "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_RUIN@SHADOW@AGE_OF_DEATH"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_order",
+        "name": "Visions of Destiny : Order Affinity: Peacemakers",
+        "affinity": "<empireorder></empireorder>,<empireorder></empireorder>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+         "unit_unlocks": [
+            {
+                "slug": "light_spirit"
+            },
+            {
+                "slug": "blessed_soul"
+            },
+            {
+                "slug": "astra"
+            }
+        ],
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@ORDER",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@ORDER@MARK_OF_ORDER"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_chaos",
+        "name": "Visions of Destiny : Chaos Affinity: Conquerors",
+        "affinity": "<empirechaos></empirechaos>,<empirechaos></empirechaos>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+         "unit_unlocks": [
+            {
+                "slug": "inferno_hound"
+            },
+            {
+                "slug": "nightmare"
+            },
+            {
+                "slug": "balor"
+            }
+        ],
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@CHAOS",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@CHAOS@MARK_OF_CHAOS"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_astral",
+        "name": "Visions of Destiny : Astral Affinity: Scholars",
+        "affinity": "<empirearcana></empirearcana>,<empirearcana></empirearcana>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+         "unit_unlocks": [
+            {
+                "slug": "lost_wizard"
+            },
+            {
+                "slug": "mage_bane"
+            }
+        ],
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@ASTRAL",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@ASTRAL@MARK_OF_ASTRAL"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_materium",
+        "name": "Visions of Destiny : Materium Affinity: Artisans",
+        "affinity": "<empirematter></empirematter>,<empirematter></empirematter>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+         "unit_unlocks": [
+            {
+                "slug": "earth_titan"
+            },
+            {
+                "slug": "golden_golem"
+            }
+        ],
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@MATERIUM",
+         "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@MATERIUM@MARK_OF_MATERIUM"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_nature",
+        "name": "Visions of Destiny : Nature Affinity: Cultivators",
+        "affinity": "<empirenature></empirenature>,<empirenature></empirenature>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+         "unit_unlocks": [
+            {
+                "slug": "entwined_scourge"
+            },
+            {
+                "slug": "horned_god"
+            }
+          
+        ],
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@NATURE",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@NATURE@MARK_OF_NATURE"]
+    },
+    {
+        "type": "SubSociety",
+        "id": "vision_of_destiny_shadow",
+        "name": "Visions of Destiny : Shadow Affinity: Deathbringers",
+        "affinity": "<empireshadow></empireshadow>,<empireshadow></empireshadow>",
+        "requirement": "Vision of Destiny",
+        "DLC": "ARCHONPROPHECY ",
+        "unit_unlocks": [
+            {
+                "slug": "bone_dragon"
+            },
+            {
+                "slug": "undead_titan"
+            },
+            {
+                "slug": "fallen_angel"
+            }
+        ],
+        
+        "objective" : "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@SHADOW",
+        "rewards": ["DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@SHADOW@MARK_OF_SHADOW"]
+    }
+]

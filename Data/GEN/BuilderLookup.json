@@ -1,0 +1,3767 @@
+[
+  {
+    "id": "dire_bear_mounts"
+  },
+  {
+    "id": "sharp_eyes"
+  },
+  {
+    "id": "light_footed"
+  },
+  {
+    "id": "hideous_stench"
+  },
+  {
+    "id": "merciless_slavers__evilact__"
+  },
+  {
+    "id": "relentless_crusaders__goodact__"
+  },
+  {
+    "id": "hermit_kingdom"
+  },
+  {
+    "id": "reclaimers"
+  },
+  {
+    "id": "artifact_hoarders"
+  },
+  {
+    "id": "bannerlords"
+  },
+  {
+    "id": "mana_addicts"
+  },
+  {
+    "id": "perfectionist_artisans"
+  },
+  {
+    "id": "talented_collectors"
+  },
+  {
+    "id": "chosen_destroyers__evilact__"
+  },
+  {
+    "id": "silver_tongued"
+  },
+  {
+    "id": "chosen_uniters__goodact__"
+  },
+  {
+    "id": ""
+  },
+  {
+    "id": "mark_of_the_owl"
+  },
+  {
+    "id": "mark_of_the_hoard"
+  },
+  {
+    "id": "mark_of_the_dove"
+  },
+  {
+    "id": "swamp_adaptation"
+  },
+  {
+    "id": "desert_adaptation"
+  },
+  {
+    "id": "arctic_adaptation"
+  },
+  {
+    "id": "underground_adaptation"
+  },
+  {
+    "id": "tenacious"
+  },
+  {
+    "id": "elusive"
+  },
+  {
+    "id": "athletics"
+  },
+  {
+    "id": "defensive_tactics"
+  },
+  {
+    "id": "overwhelm_tactics"
+  },
+  {
+    "id": "bulwark"
+  },
+  {
+    "id": "arcane_focus"
+  },
+  {
+    "id": "resilient"
+  },
+  {
+    "id": "hardy"
+  },
+  {
+    "id": "devious_watchers"
+  },
+  {
+    "id": "powerful_evokers"
+  },
+  {
+    "id": "scions_of_evil__evilact__"
+  },
+  {
+    "id": "wonder_architects"
+  },
+  {
+    "id": "runesmiths"
+  },
+  {
+    "id": "great_builders"
+  },
+  {
+    "id": "experienced_seafarers"
+  },
+  {
+    "id": "adept_settlers"
+  },
+  {
+    "id": "guardians_of_nature__goodact__"
+  },
+  {
+    "id": "fabled_hunters"
+  },
+  {
+    "id": "mana_channelers"
+  },
+  {
+    "id": "gifted_casters"
+  },
+  {
+    "id": "ritual_cannibals__evilact__"
+  },
+  {
+    "id": "ruthless_raiders__evilact__"
+  },
+  {
+    "id": "imperialists"
+  },
+  {
+    "id": "devotees_of_good__goodact__"
+  },
+  {
+    "id": "prolific_swarmers"
+  },
+  {
+    "id": "white_wolf_mounts"
+  },
+  {
+    "id": "nightmare_mounts"
+  },
+  {
+    "id": "ferocious"
+  },
+  {
+    "id": "strong"
+  },
+  {
+    "id": "resistant"
+  },
+  {
+    "id": "ancient_wise_ones"
+  },
+  {
+    "id": "cannibals"
+  },
+  {
+    "id": "malformed"
+  },
+  {
+    "id": "regenerating"
+  },
+  {
+    "id": "spider_worshippers"
+  },
+  {
+    "id": "doomed"
+  },
+  {
+    "id": "lucky_ones"
+  },
+  {
+    "id": "verminous"
+  },
+  {
+    "id": "chosen"
+  },
+  {
+    "id": "unicorn_mounts"
+  },
+  {
+    "id": "dread_spider_mounts"
+  },
+  {
+    "id": "poisonous"
+  },
+  {
+    "id": "cold_blooded"
+  },
+  {
+    "id": "adaptable"
+  },
+  {
+    "id": "sneaky"
+  },
+  {
+    "id": "quick_reflexes"
+  },
+  {
+    "id": "keen-sighted"
+  },
+  {
+    "id": "tough"
+  },
+  {
+    "id": "fast_recuperation"
+  },
+  {
+    "id": "mark_of_the_butcher"
+  },
+  {
+    "id": "mark_of_the_otter"
+  },
+  {
+    "id": "mark_of_the_sword"
+  },
+  {
+    "id": "mark_of_the_tower"
+  },
+  {
+    "id": "mark_of_the_conflux"
+  },
+  {
+    "id": "champion"
+  },
+  {
+    "id": "wizard_king"
+  },
+  {
+    "id": "dragon_lord"
+  },
+  {
+    "id": "feudal_aristocracy"
+  },
+  {
+    "id": "barbarian"
+  },
+  {
+    "id": "industrious"
+  },
+  {
+    "id": "high"
+  },
+  {
+    "id": "dark"
+  },
+  {
+    "id": "mystic_school_of_attunement"
+  },
+  {
+    "id": "reaver"
+  },
+  {
+    "id": "dwarfkin"
+  },
+  {
+    "id": "elfkin"
+  },
+  {
+    "id": "feline"
+  },
+  {
+    "id": "goblinoid"
+  },
+  {
+    "id": "avian"
+  },
+  {
+    "id": "halfling"
+  },
+  {
+    "id": "human"
+  },
+  {
+    "id": "molekin"
+  },
+  {
+    "id": "orcoid"
+  },
+  {
+    "id": "ratkin"
+  },
+  {
+    "id": "toadkin"
+  },
+  {
+    "id": "lizardfolk"
+  },
+  {
+    "id": "barbarian_axe"
+  },
+  {
+    "id": "greataxe"
+  },
+  {
+    "id": "bow"
+  },
+  {
+    "id": "staff_of_blight"
+  },
+  {
+    "id": "poison_orb"
+  },
+  {
+    "id": "lance"
+  },
+  {
+    "id": "feudal_longsword"
+  },
+  {
+    "id": "greatsword"
+  },
+  {
+    "id": "staff_of_spirit"
+  },
+  {
+    "id": "spirit_orb"
+  },
+  {
+    "id": "lightning_orb"
+  },
+  {
+    "id": "greathammer"
+  },
+  {
+    "id": "industrious_hammer"
+  },
+  {
+    "id": "mystic_mace"
+  },
+  {
+    "id": "staff_of_lightning"
+  },
+  {
+    "id": "crossbow"
+  },
+  {
+    "id": "staff_of_fire"
+  },
+  {
+    "id": "fire_orb"
+  },
+  {
+    "id": "staff_of_frost"
+  },
+  {
+    "id": "pistol_and_sword"
+  },
+  {
+    "id": "frost_orb"
+  },
+  {
+    "id": "dragon_claw_2"
+  },
+  {
+    "id": "dragon_claw_6"
+  },
+  {
+    "id": "dragon_claw"
+  },
+  {
+    "id": "dragon_claw_4"
+  },
+  {
+    "id": "dragon_claw_5"
+  },
+  {
+    "id": "dragon_claw_3"
+  },
+  {
+    "id": "godir_sword"
+  },
+  {
+    "id": "godir_bow"
+  },
+  {
+    "id": "godir_greataxe"
+  },
+  {
+    "id": "tome_of_severing"
+  },
+  {
+    "id": "tome_of_the_construct"
+  },
+  {
+    "id": "tome_of_alchemy"
+  },
+  {
+    "id": "tome_of_the_dreadnought"
+  },
+  {
+    "id": "tome_of_the_goddess_of_nature"
+  },
+  {
+    "id": "tome_of_the_creator"
+  },
+  {
+    "id": "tome_of_the_golden_realm"
+  },
+  {
+    "id": "tome_of_transmutation"
+  },
+  {
+    "id": "tome_of_terramancy"
+  },
+  {
+    "id": "tome_of_winds"
+  },
+  {
+    "id": "tome_of_rock"
+  },
+  {
+    "id": "tome_of_the_god_emperor"
+  },
+  {
+    "id": "tome_of_exaltation"
+  },
+  {
+    "id": "tome_of_supremacy"
+  },
+  {
+    "id": "tome_of_sanctuary"
+  },
+  {
+    "id": "tome_of_the_beacon"
+  },
+  {
+    "id": "tome_of_the_inquisition"
+  },
+  {
+    "id": "tome_of_zeal"
+  },
+  {
+    "id": "tome_of_the_eternal_lord"
+  },
+  {
+    "id": "tome_of_oblivion"
+  },
+  {
+    "id": "tome_of_the_reaper"
+  },
+  {
+    "id": "tome_of_the_cold_dark"
+  },
+  {
+    "id": "tome_of_the_great_transformation"
+  },
+  {
+    "id": "tome_of_souls"
+  },
+  {
+    "id": "tome_of_the_doomherald"
+  },
+  {
+    "id": "tome_of_the_arch_mage"
+  },
+  {
+    "id": "tome_of_the_astral_mirror"
+  },
+  {
+    "id": "tome_of_astral_convergence"
+  },
+  {
+    "id": "tome_of_summoning"
+  },
+  {
+    "id": "tome_of_teleportation"
+  },
+  {
+    "id": "tome_of_scrying"
+  },
+  {
+    "id": "tome_of_amplification"
+  },
+  {
+    "id": "tome_of_evocation"
+  },
+  {
+    "id": "tome_of_warding"
+  },
+  {
+    "id": "tome_of_paradise"
+  },
+  {
+    "id": "tome_of_roots"
+  },
+  {
+    "id": "tome_of_fertility"
+  },
+  {
+    "id": "tome_of_cycles"
+  },
+  {
+    "id": "tome_of_glades"
+  },
+  {
+    "id": "tome_of_cryomancy"
+  },
+  {
+    "id": "tome_of_necromancy"
+  },
+  {
+    "id": "tome_of_beasts"
+  },
+  {
+    "id": "tome_of_dragons"
+  },
+  {
+    "id": "tome_of_evolution"
+  },
+  {
+    "id": "tome_of_the_chaos_lord"
+  },
+  {
+    "id": "tome_of_the_demon_gate"
+  },
+  {
+    "id": "tome_of_chaos_channeling"
+  },
+  {
+    "id": "tome_of_pandemonium"
+  },
+  {
+    "id": "tome_of_revelry"
+  },
+  {
+    "id": "tome_of_mayhem"
+  },
+  {
+    "id": "tome_of_the_horde"
+  },
+  {
+    "id": "tome_of_natures_wrath"
+  },
+  {
+    "id": "tome_of_vigor"
+  },
+  {
+    "id": "tome_of_subjugation"
+  },
+  {
+    "id": "tome_of_artificing"
+  },
+  {
+    "id": "tome_of_pyromancy"
+  },
+  {
+    "id": "tome_of_enchantment"
+  },
+  {
+    "id": "tome_of_faith"
+  },
+  {
+    "id": "tome_of_devastation"
+  },
+  {
+    "id": "general_research"
+  },
+  {
+    "id": "tome_of_the_crucible"
+  },
+  {
+    "id": "eagle_mounts"
+  },
+  {
+    "id": "mount_masters"
+  },
+  {
+    "id": "elephant_mounts"
+  },
+  {
+    "id": "mammoth_mounts"
+  },
+  {
+    "id": "herbivore"
+  },
+  {
+    "id": "pack_tactics"
+  },
+  {
+    "id": "desolate_adaptation"
+  },
+  {
+    "id": "druidic_terraformers"
+  },
+  {
+    "id": "primal_mire_crocodile"
+  },
+  {
+    "id": "primal_storm_crow"
+  },
+  {
+    "id": "primal_glacial_mammoth"
+  },
+  {
+    "id": "primal_dune_serpent"
+  },
+  {
+    "id": "primal_ash_sabertooth"
+  },
+  {
+    "id": "primal_tunneling_spider"
+  },
+  {
+    "id": "primal_sylvan_wolf"
+  },
+  {
+    "id": "lupine"
+  },
+  {
+    "id": "goatkin"
+  },
+  {
+    "id": "reaver_halberd"
+  },
+  {
+    "id": "heavy_magelock_rifle"
+  },
+  {
+    "id": "handaxe_and_shield"
+  },
+  {
+    "id": "spear"
+  },
+  {
+    "id": "blowgun"
+  },
+  {
+    "id": "staff_of_the_primal_spirit"
+  },
+  {
+    "id": "pantheon_berserkers_axe"
+  },
+  {
+    "id": "pantheon_cryomancers_staff"
+  },
+  {
+    "id": "pantheon_druids_staff"
+  },
+  {
+    "id": "pantheon_earthshakers_hammer"
+  },
+  {
+    "id": "pantheon_orb_of_necromancy"
+  },
+  {
+    "id": "pantheon_tyrants_sword_and_shield"
+  },
+  {
+    "id": "pantheon_veterans_pike"
+  },
+  {
+    "id": "pantheon_captains_axe_and_shield"
+  },
+  {
+    "id": "pantheon_crowmasters_bow"
+  },
+  {
+    "id": "pantheon_hunters_crossbow"
+  },
+  {
+    "id": "tome_of_the_stormborne"
+  },
+  {
+    "id": "tome_of_fey_mists"
+  },
+  {
+    "id": "swiftfoot_raptor_mounts"
+  },
+  {
+    "id": "empowered_by_magic"
+  },
+  {
+    "id": "ceaseless_cacophony"
+  },
+  {
+    "id": "death_beetle_mounts"
+  },
+  {
+    "id": "keepers_of_knowledge__goodact__"
+  },
+  {
+    "id": "umbral_disciples__evilact__"
+  },
+  {
+    "id": "eldritch_sovereign"
+  },
+  {
+    "id": "mystic_school_of_potential"
+  },
+  {
+    "id": "mystic_school_of_summoning"
+  },
+  {
+    "id": "syron"
+  },
+  {
+    "id": "insectoid"
+  },
+  {
+    "id": "tome_of_corruption"
+  },
+  {
+    "id": "tome_of_the_cleansing_flame"
+  },
+  {
+    "id": "tome_of_the_tentacle"
+  },
+  {
+    "id": "relic_of_flesh"
+  },
+  {
+    "id": "relic_of_mind"
+  },
+  {
+    "id": "relic_of_havoc"
+  },
+  {
+    "id": "relic_of_cosmos"
+  },
+  {
+    "id": "umbral_thralls"
+  },
+  {
+    "id": "relic_of_the_cosmos"
+  },
+  {
+    "id": "eldritch_pact"
+  },
+  {
+    "id": "forgotten_tome_of_blessings"
+  },
+  {
+    "id": "forgotten_tome_of_arcfire"
+  },
+  {
+    "id": "forgotten_tome_of_sorcery"
+  },
+  {
+    "id": "forgotten_tome_of_pestilence"
+  },
+  {
+    "id": "forgotten_tome_of_curses"
+  },
+  {
+    "id": "mind_devourer"
+  },
+  {
+    "id": "enthraller"
+  },
+  {
+    "id": "cosmic_caster"
+  },
+  {
+    "id": "havoc_caster"
+  },
+  {
+    "id": "fleshsculptor"
+  },
+  {
+    "id": "puppeteer"
+  },
+  {
+    "id": "madcaster"
+  },
+  {
+    "id": "fleshweaver"
+  },
+  {
+    "id": "mindbreaker"
+  },
+  {
+    "id": "shadow_transformation"
+  },
+  {
+    "id": "order_transformation"
+  },
+  {
+    "id": "nature_transformation"
+  },
+  {
+    "id": "materium_transformation"
+  },
+  {
+    "id": "chaos_transformation"
+  },
+  {
+    "id": "astral_transformation"
+  },
+  {
+    "id": "shadow_aspect"
+  },
+  {
+    "id": "order_aspect"
+  },
+  {
+    "id": "nature_aspect"
+  },
+  {
+    "id": "materium_aspect"
+  },
+  {
+    "id": "chaos_aspect"
+  },
+  {
+    "id": "astral_aspect"
+  },
+  {
+    "id": "summon_undead"
+  },
+  {
+    "id": "dark_ritual"
+  },
+  {
+    "id": "draining_blade"
+  },
+  {
+    "id": "frostfire_detonation"
+  },
+  {
+    "id": "warding_bond"
+  },
+  {
+    "id": "summon_elemental"
+  },
+  {
+    "id": "summon_animal"
+  },
+  {
+    "id": "mass_rejuvenation"
+  },
+  {
+    "id": "virulent_outbreak"
+  },
+  {
+    "id": "restoration"
+  },
+  {
+    "id": "rallying_blessing"
+  },
+  {
+    "id": "holy_retribution"
+  },
+  {
+    "id": "assassinate"
+  },
+  {
+    "id": "reckless_rage"
+  },
+  {
+    "id": "demon_step"
+  },
+  {
+    "id": "blink"
+  },
+  {
+    "id": "visions_of_woe"
+  },
+  {
+    "id": "mana_unchained"
+  },
+  {
+    "id": "pantheon_umbral_warriors_greataxe"
+  },
+  {
+    "id": "pantheon_umbral_direcasters_staff"
+  },
+  {
+    "id": "pantheon_umbral_demonslayers_bow"
+  },
+  {
+    "id": "pantheon_lashers_sword_and_shield"
+  },
+  {
+    "id": "ascended_shadowshaper_hero_skill_normal"
+  },
+  {
+    "id": "ascended_pyrebearer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_deepcaller_hero_skill_normal"
+  },
+  {
+    "id": "ascended_dragonheart_hero_skill_normal"
+  },
+  {
+    "id": "ascended_stormbearer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_mistborne_hero_skill_normal"
+  },
+  {
+    "id": "ascended_disruptor_hero_skill_normal"
+  },
+  {
+    "id": "ascended_golemheart_hero_skill_normal"
+  },
+  {
+    "id": "ascended_artillerist_hero_skill_normal"
+  },
+  {
+    "id": "ascended_alchemist_hero_skill_normal"
+  },
+  {
+    "id": "ascended_shaper_hero_skill_normal"
+  },
+  {
+    "id": "ascended_spiritbreaker_hero_skill_normal"
+  },
+  {
+    "id": "ascended_cryomancer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_deathcaller_hero_skill_normal"
+  },
+  {
+    "id": "ascended_hunter_hero_skill_normal"
+  },
+  {
+    "id": "ascended_rootwarden_hero_skill_normal"
+  },
+  {
+    "id": "ascended_restorer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_artificer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_earthshaker_hero_skill_normal"
+  },
+  {
+    "id": "ascended_forgemaster_hero_skill_normal"
+  },
+  {
+    "id": "ascended_seer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_summoner_hero_skill_normal"
+  },
+  {
+    "id": "ascended_sorcerer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_occultist_hero_skill_normal"
+  },
+  {
+    "id": "ascended_pyromancer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_warlord_hero_skill_normal"
+  },
+  {
+    "id": "ascended_subjugator_hero_skill_normal"
+  },
+  {
+    "id": "ascended_prophet_hero_skill_normal"
+  },
+  {
+    "id": "ascended_martyr_hero_skill_normal"
+  },
+  {
+    "id": "cheerful"
+  },
+  {
+    "id": "inner_lightning"
+  },
+  {
+    "id": "inner_frost"
+  },
+  {
+    "id": "inner_fire"
+  },
+  {
+    "id": "vigilante_knights"
+  },
+  {
+    "id": "cult_of_personality"
+  },
+  {
+    "id": "pegasus_mounts"
+  },
+  {
+    "id": "swift_marchers"
+  },
+  {
+    "id": "lance_of_glory"
+  },
+  {
+    "id": "graceful_judge_mounts"
+  },
+  {
+    "id": "blessed_dragon_mounts"
+  },
+  {
+    "id": "tome_of_calamity"
+  },
+  {
+    "id": "tome_of_prosperity"
+  },
+  {
+    "id": "oathsworn_strife"
+  },
+  {
+    "id": "oathsworn_righteousness"
+  },
+  {
+    "id": "oathsworn_harmony"
+  },
+  {
+    "id": "tome_of_shades"
+  },
+  {
+    "id": "tome_of_discipline"
+  },
+  {
+    "id": "ascended_desecrator_hero_skill_normal"
+  },
+  {
+    "id": "ascended_blessbringer_hero_skill_normal"
+  },
+  {
+    "id": "ascended_assassin_hero_skill_normal"
+  },
+  {
+    "id": "ascended_master_hero_skill_normal"
+  },
+  {
+    "id": "elder_of_astral"
+  },
+  {
+    "id": "elder_of_nature"
+  },
+  {
+    "id": "elder_of_materium"
+  },
+  {
+    "id": "elder_of_chaos"
+  },
+  {
+    "id": "elder_of_order"
+  },
+  {
+    "id": "primal_dragon"
+  },
+  {
+    "id": "elder_of_shadow"
+  },
+  {
+    "id": "paragon_of_shadow"
+  },
+  {
+    "id": "master_of_shadow"
+  },
+  {
+    "id": "adept_of_shadow"
+  },
+  {
+    "id": "initiate_of_shadow"
+  },
+  {
+    "id": "paragon_of_nature"
+  },
+  {
+    "id": "master_of_nature"
+  },
+  {
+    "id": "adept_of_nature"
+  },
+  {
+    "id": "initiate_of_nature"
+  },
+  {
+    "id": "paragon_of_materium"
+  },
+  {
+    "id": "master_of_materium"
+  },
+  {
+    "id": "adept_of_materium"
+  },
+  {
+    "id": "initiate_of_materium"
+  },
+  {
+    "id": "paragon_of_astral"
+  },
+  {
+    "id": "master_of_astral"
+  },
+  {
+    "id": "adept_of_astral"
+  },
+  {
+    "id": "initiate_of_astral"
+  },
+  {
+    "id": "paragon_of_chaos"
+  },
+  {
+    "id": "master_of_chaos"
+  },
+  {
+    "id": "adept_of_chaos"
+  },
+  {
+    "id": "initiate_of_chaos"
+  },
+  {
+    "id": "paragon_of_order"
+  },
+  {
+    "id": "master_of_order"
+  },
+  {
+    "id": "adept_of_order"
+  },
+  {
+    "id": "initiate_of_order"
+  },
+  {
+    "id": "frostbreath"
+  },
+  {
+    "id": "purebreath"
+  },
+  {
+    "id": "lifebreath"
+  },
+  {
+    "id": "rustbreath"
+  },
+  {
+    "id": "infernobreath"
+  },
+  {
+    "id": "stormbreath"
+  },
+  {
+    "id": "oathsworn_oath_of_strife"
+  },
+  {
+    "id": "oathsworn_oath_of_righteousness"
+  },
+  {
+    "id": "oathsworn_oath_of_harmony"
+  },
+  {
+    "id": "ogrekin"
+  },
+  {
+    "id": "simian"
+  },
+  {
+    "id": "axe_and_shield"
+  },
+  {
+    "id": "bladed_mace"
+  },
+  {
+    "id": "blight_orb"
+  },
+  {
+    "id": "blight_staff"
+  },
+  {
+    "id": "cestus"
+  },
+  {
+    "id": "fire_staff"
+  },
+  {
+    "id": "flaming_greatclub"
+  },
+  {
+    "id": "frost_staff"
+  },
+  {
+    "id": "glaive"
+  },
+  {
+    "id": "lightning_staff"
+  },
+  {
+    "id": "mace_and_shield"
+  },
+  {
+    "id": "purging_staff"
+  },
+  {
+    "id": "hammer_and_shield"
+  },
+  {
+    "id": "spirit_staff"
+  },
+  {
+    "id": "sword_and_crossbow"
+  },
+  {
+    "id": "sword_and_shield"
+  },
+  {
+    "id": "godir_sword_and_shield"
+  },
+  {
+    "id": "astral_dragon"
+  },
+  {
+    "id": "chaos_dragon"
+  },
+  {
+    "id": "materium_dragon"
+  },
+  {
+    "id": "nature_dragon"
+  },
+  {
+    "id": "order_dragon"
+  },
+  {
+    "id": "shadow_dragon"
+  },
+  {
+    "id": "pantheon_martial_cestus"
+  },
+  {
+    "id": "pantheon_slayer_sword"
+  },
+  {
+    "id": "vigilante_knights"
+  },
+  {
+    "id": "cult_of_personality"
+  },
+  {
+    "id": "druidic_terraformers"
+  },
+  {
+    "id": "merciless_slavers__evilact__"
+  },
+  {
+    "id": "relentless_crusaders__goodact__"
+  },
+  {
+    "id": "bannerlords"
+  },
+  {
+    "id": "mana_addicts"
+  },
+  {
+    "id": "perfectionist_artisans"
+  },
+  {
+    "id": "talented_collectors"
+  },
+  {
+    "id": "chosen_destroyers__evilact__"
+  },
+  {
+    "id": "silver_tongued"
+  },
+  {
+    "id": "ranger"
+  },
+  {
+    "id": "warrior"
+  },
+  {
+    "id": "mage"
+  },
+  {
+    "id": "ritualist"
+  },
+  {
+    "id": "defender"
+  },
+  {
+    "id": "spellblade"
+  },
+  {
+    "id": "deathknight"
+  },
+  {
+    "id": "es_signature_forbidden_tome_sorcery_signature"
+  },
+  {
+    "id": "es_signature_cosmic_caster_signature"
+  },
+  {
+    "id": "astral_elder_dragon_signature_skill"
+  },
+  {
+    "id": "astral_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "primal_transformation_astral_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_astral_4_paragon"
+  },
+  {
+    "id": "hs_dedication_astral_3"
+  },
+  {
+    "id": "hs_dedication_astral_2"
+  },
+  {
+    "id": "hs_dedication_astral_1"
+  },
+  {
+    "id": "astral_shadow_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_order_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_nature_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_materium_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_chaos_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_stormbreath_dragon_signature_skill"
+  },
+  {
+    "id": "astral_aspect_minor_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "es_signature_forbidden_tome_arcfire_signature"
+  },
+  {
+    "id": "es_signature_havoc_caster_signature"
+  },
+  {
+    "id": "chaos_elder_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "primal_transformation_chaos_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_chaos_4_paragon"
+  },
+  {
+    "id": "hs_dedication_chaos_3"
+  },
+  {
+    "id": "hs_dedication_chaos_2"
+  },
+  {
+    "id": "hs_dedication_chaos_1"
+  },
+  {
+    "id": "chaos_shadow_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_order_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_nature_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_materium_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_astral_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_aspect_minor_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "chaos_infernobreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_elder_dragon_signature_skill"
+  },
+  {
+    "id": "materium_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "primal_transformation_materium_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_materium_4_paragon"
+  },
+  {
+    "id": "hs_dedication_materium_3"
+  },
+  {
+    "id": "hs_dedication_materium_2"
+  },
+  {
+    "id": "hs_dedication_materium_1"
+  },
+  {
+    "id": "materium_shadow_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_order_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_nature_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_chaos_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_astral_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_rustbreath_dragon_signature_skill"
+  },
+  {
+    "id": "materium_aspect_minor_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "es_signature_forbidden_tome_pestilence_signature"
+  },
+  {
+    "id": "es_signature_fleshsculpter_signature"
+  },
+  {
+    "id": "nature_elder_dragon_signature_skill"
+  },
+  {
+    "id": "nature_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "primal_transformation_nature_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_nature_4_paragon"
+  },
+  {
+    "id": "hs_dedication_nature_3"
+  },
+  {
+    "id": "hs_dedication_nature_2"
+  },
+  {
+    "id": "hs_dedication_nature_1"
+  },
+  {
+    "id": "nature_shadow_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "nature_order_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "nature_materium_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "nature_chaos_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "nature_astral_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "nature_aspect_dragon_signature_skill"
+  },
+  {
+    "id": "nature_lifebreath_dragon_signature_skill"
+  },
+  {
+    "id": "es_signature_forbidden_tome_blessings_signature"
+  },
+  {
+    "id": "es_signature_enthraller_signature"
+  },
+  {
+    "id": "order_elder_dragon_signature_skill"
+  },
+  {
+    "id": "order_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "primal_transformation_order_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_order_4_paragon"
+  },
+  {
+    "id": "hs_dedication_order_3"
+  },
+  {
+    "id": "hs_dedication_order_2"
+  },
+  {
+    "id": "hs_dedication_order_1"
+  },
+  {
+    "id": "order_shadow_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_nature_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_materium_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_chaos_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_astral_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_purebreath_dragon_signature_skill"
+  },
+  {
+    "id": "order_minor_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "es_signature_forbidden_tome_curses_signature"
+  },
+  {
+    "id": "es_signature_mind_devourer_signature"
+  },
+  {
+    "id": "es_signature_puppeteer_signature"
+  },
+  {
+    "id": "primal_transformation_shadow_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_elder_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "hs_dedication_shadow_4_paragon"
+  },
+  {
+    "id": "hs_dedication_shadow_3"
+  },
+  {
+    "id": "hs_dedication_shadow_2"
+  },
+  {
+    "id": "hs_dedication_shadow_1"
+  },
+  {
+    "id": "shadow_order_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_nature_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_materium_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_chaos_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_astral_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_aspect_minor_transformation_dragon_signature_skill"
+  },
+  {
+    "id": "shadow_frostbreath_dragon_signature_skill"
+  },
+  {
+    "id": "es_signature_madcaster_signature"
+  },
+  {
+    "id": "es_signature_mindbreaker_signature"
+  },
+  {
+    "id": "es_signature_fleshweaver_signature"
+  },
+  {
+    "id": "subterranean_society"
+  },
+  {
+    "id": "equipment_hoarders"
+  },
+  {
+    "id": "giant_king"
+  },
+  {
+    "id": "feudal_monarchy"
+  },
+  {
+    "id": "rock_giant_king"
+  },
+  {
+    "id": "fire_giant_king"
+  },
+  {
+    "id": "storm_giant_king"
+  },
+  {
+    "id": "frost_giant_king"
+  },
+  {
+    "id": "tome_of_geomancy"
+  },
+  {
+    "id": "tome_of_the_dungeon_depths"
+  },
+  {
+    "id": "crystal_pact"
+  },
+  {
+    "id": "ascended_dungeon_keeper_hero_skill_normal"
+  },
+  {
+    "id": "coward"
+  },
+  {
+    "id": "uncooperative"
+  },
+  {
+    "id": "griffon_mounts"
+  },
+  {
+    "id": "vulnerable_to_physical"
+  },
+  {
+    "id": "vulnerable_to_magic"
+  },
+  {
+    "id": "weak_constitution"
+  },
+  {
+    "id": "careless"
+  },
+  {
+    "id": "inner_radiance"
+  },
+  {
+    "id": "dire_bear_mount"
+  },
+  {
+    "id": "astrological_diviners"
+  },
+  {
+    "id": "celestial_griffon_mounts"
+  },
+  {
+    "id": "chariot_mounts"
+  },
+  {
+    "id": "vision_of_ruin"
+  },
+  {
+    "id": "vision_of_destiny"
+  },
+  {
+    "id": "vision_of_promise"
+  },
+  {
+    "id": "tome_of_the_revenant"
+  },
+  {
+    "id": "tome_of_the_archon"
+  },
+  {
+    "id": "tome_of_prophecies"
+  },
+  {
+    "id": "tome_of_virtue"
+  },
+  {
+    "id": "architect"
+  },
+  {
+    "id": "battlesaint"
+  },
+  {
+    "id": "feudal"
+  },
+  {
+    "id": "mystic"
+  },
+  {
+    "id": "oathsworn"
+  },
+  {
+    "id": "primal"
+  },
+  {
+    "id": "ancient"
+  },
+  {
+    "id": "elysian"
+  },
+  {
+    "id": "architects_of_shadow"
+  },
+  {
+    "id": "architects_of_order"
+  },
+  {
+    "id": "architects_of_chaos"
+  },
+  {
+    "id": "architects_of_nature"
+  },
+  {
+    "id": "architects_of_materium"
+  },
+  {
+    "id": "architects_of_astral"
+  },
+  {
+    "id": "vision_of_promise_order"
+  },
+  {
+    "id": "vision_of_promise_nature"
+  },
+  {
+    "id": "vision_of_promise_materium"
+  },
+  {
+    "id": "vision_of_ruin_chaos"
+  },
+  {
+    "id": "vision_of_ruin_astral"
+  },
+  {
+    "id": "vision_of_ruin_shadow"
+  },
+  {
+    "id": "vision_of_destiny_order"
+  },
+  {
+    "id": "vision_of_destiny_chaos"
+  },
+  {
+    "id": "vision_of_destiny_astral"
+  },
+  {
+    "id": "vision_of_destiny_materium"
+  },
+  {
+    "id": "vision_of_destiny_nature"
+  },
+  {
+    "id": "vision_of_destiny_shadow"
+  },
+  {
+    "id": "warlock"
+  },
+  {
+    "id": "empire_of_the_cosmos"
+  },
+  {
+    "id": "elder_vampire"
+  },
+  {
+    "id": "elder_vampire_pureblood"
+  },
+  {
+    "id": "elder_vampire_hybrid"
+  },
+  {
+    "id": "cult_of_death"
+  },
+  {
+    "id": "cult_of_tyranny"
+  },
+  {
+    "id": "tome_of_the_blood_rite"
+  },
+  {
+    "id": "tome_of_the_torment"
+  },
+  {
+    "id": "tome_of_the_crimson_reign"
+  },
+  {
+    "id": "apex_predators__evilact__"
+  },
+  {
+    "id": "shrieking_bat_mounts"
+  },
+  {
+    "id": "tome_of_torment"
+  },
+  {
+    "id": "dark_cult_of_death"
+  },
+  {
+    "id": "tome_of_the_archmage"
+  },
+  {
+    "id": "dark_cult_of_tyranny"
+  },
+  {
+    "id": "guardian_angel_hero_skill_normal"
+  },
+  {
+    "id": "ascended_diviner_hero_skill_normal"
+  },
+  {
+    "id": "ascended_paladin_hero_skill_normal"
+  },
+  {
+    "id": "blood_pest_hero_skill_normal"
+  },
+  {
+    "id": "torment_and_pain_hero_skill_normal"
+  },
+  {
+    "id": "blood_rite_hero_skill_normal"
+  },
+  {
+    "id": "revenant_champion_hero_skill_normal"
+  },
+  {
+    "id": "demonslayers_bow_hero_skill_normal"
+  },
+  {
+    "id": "umbral_staff_hero_skill_normal"
+  },
+  {
+    "id": "umbral_warriors_greataxe_hero_skill_normal"
+  },
+  {
+    "id": "lashers_sword_and_shield_hero_skill_normal"
+  },
+  {
+    "id": "crowmasters_bow_hero_skill_normal"
+  },
+  {
+    "id": "captains_axe_and_shield_hero_skill_normal"
+  },
+  {
+    "id": "hunters_crossbow_hero_skill_normal"
+  },
+  {
+    "id": "veterans_pike_hero_skill_normal"
+  },
+  {
+    "id": "knight_hero_skill_normal"
+  },
+  {
+    "id": "barbaric_warlord_hero_skill_normal"
+  },
+  {
+    "id": "druid_hero_skill_normal"
+  },
+  {
+    "id": "cryomancer_hero_skill_normal"
+  },
+  {
+    "id": "necromancer_hero_skill_normal"
+  },
+  {
+    "id": "geomancer_hero_skill_normal"
+  },
+  {
+    "id": "hs_defensive_swipe"
+  },
+  {
+    "id": "hs_dragon_roar"
+  },
+  {
+    "id": "hs_terrifying_gorge"
+  },
+  {
+    "id": "hs_comet_breath"
+  },
+  {
+    "id": "hs_line_breath"
+  },
+  {
+    "id": "hs_cone_breath"
+  },
+  {
+    "id": "hs_limited_breath"
+  },
+  {
+    "id": "hs_tail_bash"
+  },
+  {
+    "id": "hs_quickened_breath"
+  },
+  {
+    "id": "hs_tail_swipe"
+  },
+  {
+    "id": "hs_"
+  },
+  {
+    "id": "training_camp_hs_resistance"
+  },
+  {
+    "id": "training_camp_hs_defense"
+  },
+  {
+    "id": "training_camp_hs_vigor"
+  },
+  {
+    "id": "training_camp_hs_havoc_attacks"
+  },
+  {
+    "id": "training_camp_hs_quake"
+  },
+  {
+    "id": "training_camp_hs_chaotic_rebuke"
+  },
+  {
+    "id": "training_camp_hs_exalted_brilliance"
+  },
+  {
+    "id": "training_camp_hs_summon_animal"
+  },
+  {
+    "id": "training_camp_hs_frostfire_detonation"
+  },
+  {
+    "id": "training_camp_hs_visions_of_woe"
+  },
+  {
+    "id": "training_camp_hs_demon_step"
+  },
+  {
+    "id": "training_camp_hs_overcharge_cast"
+  },
+  {
+    "id": "training_camp_hs_virulent_outbreak"
+  },
+  {
+    "id": "training_camp_hs_freezing_blast"
+  },
+  {
+    "id": "training_camp_hs_mark_of_misfortune"
+  },
+  {
+    "id": "hs_death_knight_sundering_sweep"
+  },
+  {
+    "id": "hs_death_knight_melee_mage"
+  },
+  {
+    "id": "hs_death_knight_terrifying_aura"
+  },
+  {
+    "id": "hs_death_knight_weakening_aura"
+  },
+  {
+    "id": "hs_death_knight_dark_ritual"
+  },
+  {
+    "id": "hs_death_knight_infested_summons"
+  },
+  {
+    "id": "hs_death_knight_wyvern_keeper"
+  },
+  {
+    "id": "hs_death_knight_zombie_keeper"
+  },
+  {
+    "id": "hs_death_knight_raise_undead"
+  },
+  {
+    "id": "hs_death_knight_frost_curse"
+  },
+  {
+    "id": "hs_death_knight_mass_curse"
+  },
+  {
+    "id": "hs_death_knight_hex_of_disruption"
+  },
+  {
+    "id": "hs_death_knight_hex_of_decay"
+  },
+  {
+    "id": "hs_death_knight_weakening_magic"
+  },
+  {
+    "id": "hs_death_knight_plague_magic"
+  },
+  {
+    "id": "hs_death_knight_curse"
+  },
+  {
+    "id": "hs_death_knight_knight"
+  },
+  {
+    "id": "hs_death_knight_killing_momentum"
+  },
+  {
+    "id": "hs_death_knight_warseeker"
+  },
+  {
+    "id": "hs_death_knight_willbreaker"
+  },
+  {
+    "id": "hs_death_knight_unyielding"
+  },
+  {
+    "id": "hs_death_knight_vigor_ii"
+  },
+  {
+    "id": "hs_death_knight_vigor_i"
+  },
+  {
+    "id": "hs_death_knight_fighting_ii"
+  },
+  {
+    "id": "hs_death_knight_fighting_i"
+  },
+  {
+    "id": "hs_death_knight_second_wind"
+  },
+  {
+    "id": "hs_death_knight_undying_warrior"
+  },
+  {
+    "id": "hs_death_knight_execute"
+  },
+  {
+    "id": "hs_death_knight_critical_momentum"
+  },
+  {
+    "id": "hs_death_knight_berserkers_rage"
+  },
+  {
+    "id": "hs_death_knight_grim_executioner"
+  },
+  {
+    "id": "hs_death_knight_reckless_rage"
+  },
+  {
+    "id": "hs_death_knight_sundering_strikes"
+  },
+  {
+    "id": "hs_death_knight_keen_edge"
+  },
+  {
+    "id": "hs_death_knight_frenzy"
+  },
+  {
+    "id": "hs_defender_reinforced_armor"
+  },
+  {
+    "id": "hs_defender_warded_armor"
+  },
+  {
+    "id": "hs_defender_stunning_bash"
+  },
+  {
+    "id": "hs_defender_braced_defense"
+  },
+  {
+    "id": "hs_defender_graceful_defense"
+  },
+  {
+    "id": "hs_defender_bladestorm"
+  },
+  {
+    "id": "hs_defender_consolidating_push"
+  },
+  {
+    "id": "hs_defender_aggressive_push"
+  },
+  {
+    "id": "hs_defender_pushing_attack"
+  },
+  {
+    "id": "hs_defender_taunt"
+  },
+  {
+    "id": "hs_defender_weakening_strikes"
+  },
+  {
+    "id": "hs_defender_invigorating_retaliations"
+  },
+  {
+    "id": "hs_defender_frenzied_retaliations"
+  },
+  {
+    "id": "hs_defender_tireless_retaliator"
+  },
+  {
+    "id": "hs_defender_retaliator_i"
+  },
+  {
+    "id": "hs_defender_rallying_cry"
+  },
+  {
+    "id": "hs_defender_vigor_iii"
+  },
+  {
+    "id": "hs_defender_vigor_ii"
+  },
+  {
+    "id": "hs_defender_fighting_i"
+  },
+  {
+    "id": "hs_defender_greater_fighting"
+  },
+  {
+    "id": "hs_defender_resistance_i"
+  },
+  {
+    "id": "hs_defender_resistance_ii"
+  },
+  {
+    "id": "hs_defender_resistance_iii"
+  },
+  {
+    "id": "hs_defender_defense_iii"
+  },
+  {
+    "id": "hs_defender_defense_ii"
+  },
+  {
+    "id": "hs_defender_defense_i"
+  },
+  {
+    "id": "hs_defender_pure_defense"
+  },
+  {
+    "id": "hs_defender_offensive_vanguard"
+  },
+  {
+    "id": "hs_defender_resistant_vanguard"
+  },
+  {
+    "id": "hs_defender_shieldbearer"
+  },
+  {
+    "id": "hs_defender_frontline_fighter"
+  },
+  {
+    "id": "hs_defender_sentinel"
+  },
+  {
+    "id": "hs_defender_warding_bond_hero_skill"
+  },
+  {
+    "id": "hs_defender_vigor_i"
+  },
+  {
+    "id": "hs_defender_weakening_aura"
+  },
+  {
+    "id": "hs_defender_deflecting_defense"
+  },
+  {
+    "id": "hs_defender_adaptive_armor"
+  },
+  {
+    "id": "hs_defender_defensive_master"
+  },
+  {
+    "id": "hs_defender_leaden_blows"
+  },
+  {
+    "id": "hs_warrior_brutal_parry"
+  },
+  {
+    "id": "hs_warrior_warseeker"
+  },
+  {
+    "id": "hs_warrior_willbreaker"
+  },
+  {
+    "id": "hs_warrior_unyielding"
+  },
+  {
+    "id": "hs_warrior_cleaving_sweep"
+  },
+  {
+    "id": "hs_warrior_graceful_charge"
+  },
+  {
+    "id": "hs_warrior_sweeping_charge"
+  },
+  {
+    "id": "hs_warrior_weakening_charge"
+  },
+  {
+    "id": "hs_warrior_knight"
+  },
+  {
+    "id": "hs_warrior_berserker"
+  },
+  {
+    "id": "hs_warrior_committed_charge"
+  },
+  {
+    "id": "hs_warrior_taunting_charge"
+  },
+  {
+    "id": "hs_warrior_frenzy"
+  },
+  {
+    "id": "hs_warrior_killing_momentum"
+  },
+  {
+    "id": "hs_warrior_defense_iii"
+  },
+  {
+    "id": "hs_warrior_vigor_iii"
+  },
+  {
+    "id": "hs_warrior_vigor_ii"
+  },
+  {
+    "id": "hs_warrior_vigor_i"
+  },
+  {
+    "id": "hs_warrior_fighting_ii"
+  },
+  {
+    "id": "hs_warrior_fighting_i"
+  },
+  {
+    "id": "hs_warrior_second_wind"
+  },
+  {
+    "id": "hs_warrior_relentless_charge"
+  },
+  {
+    "id": "hs_warrior_distracting_charge"
+  },
+  {
+    "id": "hs_warrior_brutal_charge"
+  },
+  {
+    "id": "hs_warrior_guarded_charge"
+  },
+  {
+    "id": "hs_warrior_prepared_charge"
+  },
+  {
+    "id": "hs_warrior_reckless_rage"
+  },
+  {
+    "id": "hs_warrior_execute"
+  },
+  {
+    "id": "hs_warrior_undying_warrior"
+  },
+  {
+    "id": "hs_warrior_critical_momentum"
+  },
+  {
+    "id": "hs_warrior_berserkers_rage"
+  },
+  {
+    "id": "hs_warrior_sundering_strikes"
+  },
+  {
+    "id": "hs_warrior_grim_executioner"
+  },
+  {
+    "id": "hs_warrior_keen_edge"
+  },
+  {
+    "id": "hs_mage_mastered_focus"
+  },
+  {
+    "id": "hs_mage_inexorable_prowess"
+  },
+  {
+    "id": "hs_mage_amplifying_elements"
+  },
+  {
+    "id": "hs_mage_frostwind_evocation"
+  },
+  {
+    "id": "hs_mage_cloudburst_evocation"
+  },
+  {
+    "id": "hs_mage_withering_blizzard"
+  },
+  {
+    "id": "hs_mage_sunder_earth"
+  },
+  {
+    "id": "hs_mage_wildfire"
+  },
+  {
+    "id": "hs_mage_lightning_bolt"
+  },
+  {
+    "id": "hs_mage_elemental_mastery"
+  },
+  {
+    "id": "hs_mage_empowered_evocations"
+  },
+  {
+    "id": "hs_mage_unrestrained_magic"
+  },
+  {
+    "id": "hs_mage_inexorable_cast"
+  },
+  {
+    "id": "hs_mage_ritual_of_elements"
+  },
+  {
+    "id": "hs_mage_greater_conjuration"
+  },
+  {
+    "id": "hs_mage_elemental_gateway"
+  },
+  {
+    "id": "hs_mage_elemental_echo"
+  },
+  {
+    "id": "hs_mage_withering_magic"
+  },
+  {
+    "id": "hs_mage_conjure_lesser_elemental_spirit"
+  },
+  {
+    "id": "hs_mage_sundering_magic"
+  },
+  {
+    "id": "hs_mage_unrelenting_elements"
+  },
+  {
+    "id": "hs_mage_defense_i"
+  },
+  {
+    "id": "hs_mage_amplified_magic_i"
+  },
+  {
+    "id": "hs_mage_focused_evocation"
+  },
+  {
+    "id": "hs_mage_discipline_of_frost"
+  },
+  {
+    "id": "hs_mage_blast_evocation"
+  },
+  {
+    "id": "hs_mage_discipline_of_earth"
+  },
+  {
+    "id": "hs_mage_chaining_evocation"
+  },
+  {
+    "id": "hs_mage_discipline_of_flames"
+  },
+  {
+    "id": "hs_mage_discipline_of_storms"
+  },
+  {
+    "id": "hs_mage_resistance_i"
+  },
+  {
+    "id": "hs_ritualist_graceful_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_healing_mastery"
+  },
+  {
+    "id": "hs_ritualist_enhanced_restoration"
+  },
+  {
+    "id": "hs_ritualist_enhanced_rejuvination"
+  },
+  {
+    "id": "hs_ritualist_rite_of_fury"
+  },
+  {
+    "id": "hs_ritualist_rite_of_vigil"
+  },
+  {
+    "id": "hs_ritualist_polymorph"
+  },
+  {
+    "id": "hs_ritualist_protectors_fury"
+  },
+  {
+    "id": "hs_ritualist_healing_support_ii"
+  },
+  {
+    "id": "hs_ritualist_rituals_of_strength"
+  },
+  {
+    "id": "hs_ritualist_lifeseeder"
+  },
+  {
+    "id": "hs_ritualist_swift_leader"
+  },
+  {
+    "id": "hs_ritualist_rooted_resistance"
+  },
+  {
+    "id": "hs_ritualist_natural_vitality"
+  },
+  {
+    "id": "hs_ritualist_decompose"
+  },
+  {
+    "id": "hs_ritualist_feygrowth"
+  },
+  {
+    "id": "hs_ritualist_awaken_entwined"
+  },
+  {
+    "id": "hs_ritualist_reincarnate"
+  },
+  {
+    "id": "hs_ritualist_hardening_support"
+  },
+  {
+    "id": "hs_ritualist_inner_grace__unlinked_"
+  },
+  {
+    "id": "hs_ritualist_restore_strength"
+  },
+  {
+    "id": "hs_ritualist_rejuvinate"
+  },
+  {
+    "id": "hs_ritualist_grasping_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_empowered_awakening"
+  },
+  {
+    "id": "hs_ritualist_spreading_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_weakening_magic"
+  },
+  {
+    "id": "hs_ritualist_distracting_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_deathward"
+  },
+  {
+    "id": "hs_ritualist_rite_of_restoration"
+  },
+  {
+    "id": "hs_ritualist_support_resistance_iii"
+  },
+  {
+    "id": "hs_ritualist_support_resistance_ii"
+  },
+  {
+    "id": "hs_ritualist_support_resistance_i"
+  },
+  {
+    "id": "hs_ritualist_empowering_bond"
+  },
+  {
+    "id": "hs_ritualist_living_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_encasing_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_hostile_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_attuned_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_protective_wildgrowth"
+  },
+  {
+    "id": "hs_ritualist_reclaiming_attacks"
+  },
+  {
+    "id": "hs_ritualist_master_of_healing"
+  },
+  {
+    "id": "hs_ritualist_regenerating_support"
+  },
+  {
+    "id": "hs_ritualist_restore"
+  },
+  {
+    "id": "hs_ritualist_bolstering_support"
+  },
+  {
+    "id": "hs_ranger_slip_away"
+  },
+  {
+    "id": "hs_ranger_martial_expertise"
+  },
+  {
+    "id": "hs_ranger_defense_ii"
+  },
+  {
+    "id": "hs_ranger_defense_i"
+  },
+  {
+    "id": "hs_ranger_ranger_2"
+  },
+  {
+    "id": "hs_ranger_ranger_1"
+  },
+  {
+    "id": "hs_ranger_go_for_the_kill"
+  },
+  {
+    "id": "hs_ranger_fatal_strikes"
+  },
+  {
+    "id": "hs_ranger_opening_strikes"
+  },
+  {
+    "id": "hs_ranger_critical_second_wind"
+  },
+  {
+    "id": "hs_ranger_knockback_retaliations"
+  },
+  {
+    "id": "hs_ranger_exploit_weakness"
+  },
+  {
+    "id": "hs_ranger_grim_executioner"
+  },
+  {
+    "id": "hs_ranger_evasive_strikes"
+  },
+  {
+    "id": "hs_ranger_blood_trail"
+  },
+  {
+    "id": "hs_ranger_critical_skirmisher"
+  },
+  {
+    "id": "hs_ranger_melee_training"
+  },
+  {
+    "id": "hs_ranger_flanking_skirmisher"
+  },
+  {
+    "id": "hs_ranger_keen_edge"
+  },
+  {
+    "id": "hs_ranger_skirmisher_training"
+  },
+  {
+    "id": "hs_ranger_versatile_skirmisher"
+  },
+  {
+    "id": "hs_ranger_mastered_focus"
+  },
+  {
+    "id": "hs_ranger_focused_hunt"
+  },
+  {
+    "id": "hs_ranger_focused_aim"
+  },
+  {
+    "id": "hs_ranger_kill_shot"
+  },
+  {
+    "id": "hs_ranger_snipers_focus"
+  },
+  {
+    "id": "hs_ranger_barrage_attacks"
+  },
+  {
+    "id": "hs_ranger_invigorating_takedown"
+  },
+  {
+    "id": "hs_ranger_thorn_shot"
+  },
+  {
+    "id": "hs_ranger_plague_shot"
+  },
+  {
+    "id": "hs_ranger_ensnaring_hunter"
+  },
+  {
+    "id": "hs_ranger_big_game_hunter"
+  },
+  {
+    "id": "hs_ranger_swarm_hunter"
+  },
+  {
+    "id": "hs_ranger_culling_hunter"
+  },
+  {
+    "id": "hs_ranger_knockback_snapshot"
+  },
+  {
+    "id": "hs_ranger_disruptive_snapshot"
+  },
+  {
+    "id": "hs_ranger_piercing_shot"
+  },
+  {
+    "id": "hs_ranger_afflicting_shot"
+  },
+  {
+    "id": "hs_ranger_snapshot"
+  },
+  {
+    "id": "hs_ranger_sniper_shot"
+  },
+  {
+    "id": "hs_ranger_scatter_shot"
+  },
+  {
+    "id": "hs_champion_coordinated_command"
+  },
+  {
+    "id": "hs_champion_decisive_command"
+  },
+  {
+    "id": "hs_champion_of_war"
+  },
+  {
+    "id": "hs_champion_of_perseverance"
+  },
+  {
+    "id": "hs_foraging_training"
+  },
+  {
+    "id": "hs_defensive_formation"
+  },
+  {
+    "id": "hs_offensive_formation"
+  },
+  {
+    "id": "hs_experienced_leader"
+  },
+  {
+    "id": "hs_logistics_training"
+  },
+  {
+    "id": "hs_champion_command"
+  },
+  {
+    "id": "hs_endurance_training"
+  },
+  {
+    "id": "hs_enchanters_ritual"
+  },
+  {
+    "id": "hs_amplified_healing"
+  },
+  {
+    "id": "hs_empowered_attuned_godir"
+  },
+  {
+    "id": "hs_amplified_evocation"
+  },
+  {
+    "id": "hs_evokers_ritual"
+  },
+  {
+    "id": "hs_attuned_godir"
+  },
+  {
+    "id": "hs_quickened_ritual"
+  },
+  {
+    "id": "hs_defensive_ritual"
+  },
+  {
+    "id": "hs_channeling_ritual"
+  },
+  {
+    "id": "hs_wizard_king_iii__unlinked_"
+  },
+  {
+    "id": "hs_wizard_king_ii__unlinked_"
+  },
+  {
+    "id": "hs_wizard_king_i__unlinked_"
+  },
+  {
+    "id": "hs_amplify_chaos"
+  },
+  {
+    "id": "hs_inspiring_killer"
+  },
+  {
+    "id": "hs_draining_burst"
+  },
+  {
+    "id": "hs_conjure_vampire_matriarch"
+  },
+  {
+    "id": "hs_vicious_killer"
+  },
+  {
+    "id": "hs_scarlet_plague"
+  },
+  {
+    "id": "hs_wail_of_the_banshee"
+  },
+  {
+    "id": "hs_crushing_anguish"
+  },
+  {
+    "id": "hs_conjure_dread_matriarch"
+  },
+  {
+    "id": "hs_song_of_carnage"
+  },
+  {
+    "id": "hs_lead_by_example"
+  },
+  {
+    "id": "hs_awaken_earth"
+  },
+  {
+    "id": "hs_artificers_overcharge"
+  },
+  {
+    "id": "hs_purging_strikes"
+  },
+  {
+    "id": "hs_exhume_undead"
+  },
+  {
+    "id": "hs_phaselock"
+  },
+  {
+    "id": "hs_warding_aura"
+  },
+  {
+    "id": "hs_bolstering_evasion"
+  },
+  {
+    "id": "hs_blink"
+  },
+  {
+    "id": "hs_zealous"
+  },
+  {
+    "id": "hs_immobilizing_presence"
+  },
+  {
+    "id": "hs_avatar_of_nature_hero_skill"
+  },
+  {
+    "id": "hs_souldraining_strikes"
+  },
+  {
+    "id": "hs_dome_of_protection"
+  },
+  {
+    "id": "hs_keepers_mark"
+  },
+  {
+    "id": "hs_incorruptible_spirit"
+  },
+  {
+    "id": "hs_eternal_one"
+  },
+  {
+    "id": "hs_spiritbreaker_aura"
+  },
+  {
+    "id": "hs_arcane_surge"
+  },
+  {
+    "id": "hs_lightning_strikes"
+  },
+  {
+    "id": "hs_ancient_of_earth"
+  },
+  {
+    "id": "hs_still_as_stone"
+  },
+  {
+    "id": "hs_meteor_strikes"
+  },
+  {
+    "id": "hs_blight_strikes"
+  },
+  {
+    "id": "hs_withering_decay"
+  },
+  {
+    "id": "hs_poisonous_undergrowth"
+  },
+  {
+    "id": "hs_frost_strikes"
+  },
+  {
+    "id": "hs_searing_steel"
+  },
+  {
+    "id": "hs_unholy_leader"
+  },
+  {
+    "id": "hs_call_of_the_wild"
+  },
+  {
+    "id": "hs_shield_of_faith"
+  },
+  {
+    "id": "hs_adaptive_vigor"
+  },
+  {
+    "id": "hs_debilitating_aura"
+  },
+  {
+    "id": "hs_mending_touch"
+  },
+  {
+    "id": "hs_controlled_chaos_hero_skill"
+  },
+  {
+    "id": "hs_pack_leader"
+  },
+  {
+    "id": "hs_resistance_sundering"
+  },
+  {
+    "id": "hs_investiture_of_chaos"
+  },
+  {
+    "id": "hs_chaos_empowerment"
+  },
+  {
+    "id": "hs_reinforced_conjured_weapon_frost"
+  },
+  {
+    "id": "hs_conjure_ice_glaive"
+  },
+  {
+    "id": "hs_large_ice_boulder"
+  },
+  {
+    "id": "hs_sundering_ice"
+  },
+  {
+    "id": "hs_hurl_ice"
+  },
+  {
+    "id": "hs_freezing_boulder"
+  },
+  {
+    "id": "hs_empowered_throw_frost_giant"
+  },
+  {
+    "id": "hs_massive_ice_boulder"
+  },
+  {
+    "id": "hs_impactful_animated_weapon_frost"
+  },
+  {
+    "id": "hs_rune_of_creation_frost"
+  },
+  {
+    "id": "hs_rune_of_command_frost"
+  },
+  {
+    "id": "hs_rune_of_protection_frost"
+  },
+  {
+    "id": "hs_rune_of_power_frost"
+  },
+  {
+    "id": "hs_sharpened_conjured_weapon_frost"
+  },
+  {
+    "id": "hs_conjure_ice_bow"
+  },
+  {
+    "id": "hs_conjure_frost_sword"
+  },
+  {
+    "id": "hs_eldritch_caster_ii"
+  },
+  {
+    "id": "hs_eldritch_caster_i"
+  },
+  {
+    "id": "hs_enthralling_presence"
+  },
+  {
+    "id": "hs_astral_wisp_ritual"
+  },
+  {
+    "id": "hs_mage_bane_ritual"
+  },
+  {
+    "id": "hs_astral_siphoner_ritual"
+  },
+  {
+    "id": "hs_forgotten_tome_mastery"
+  },
+  {
+    "id": "hs_mass_phantasmal_ritual"
+  },
+  {
+    "id": "hs_phantasmal_ritual"
+  },
+  {
+    "id": "hs_quickening_ritual"
+  },
+  {
+    "id": "hs_eldritch_rituals"
+  },
+  {
+    "id": "hs_desperate_anguish"
+  },
+  {
+    "id": "hs_delirium"
+  },
+  {
+    "id": "hs_tentacled_escape"
+  },
+  {
+    "id": "hs_eldritch_phase_ii"
+  },
+  {
+    "id": "hs_eldritch_phase_i"
+  },
+  {
+    "id": "hs_warriors_soul_invalid"
+  },
+  {
+    "id": "hs_nobility_invalid"
+  },
+  {
+    "id": "hs_harmonize_invalid"
+  },
+  {
+    "id": "hs_empowering_ritual_invalid"
+  },
+  {
+    "id": "hs_captured_thralls_inactive"
+  },
+  {
+    "id": "hs_eldritch_influence_ii_inactive"
+  },
+  {
+    "id": "hs_eldritch_influence_i_inactive"
+  },
+  {
+    "id": "hs_primal_fury_(spider)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(mammoth)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(crow)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(serpent)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(sabertooth)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(crocodile)_invalid"
+  },
+  {
+    "id": "hs_primal_fury_(wolf)_invalid"
+  },
+  {
+    "id": "hs_quest_skill_inspiring_presence"
+  },
+  {
+    "id": "hs_astral_summoners_spirit_summoner_invalid"
+  },
+  {
+    "id": "hs_attunement_seekers_overcharge_cast_disabled"
+  },
+  {
+    "id": "hs_ciphers_of_dissonance_invalid"
+  },
+  {
+    "id": "hs_spell_arcanists_overcharge_cast_disabled"
+  },
+  {
+    "id": "hs_defender_chaotic_rebuke__unused_"
+  },
+  {
+    "id": "hs_resistance_training_disabled"
+  },
+  {
+    "id": "hs_attunement_star_blades_invalid"
+  },
+  {
+    "id": "hs_bolstering_invalid"
+  },
+  {
+    "id": "hs_twin_awaken_invalid"
+  },
+  {
+    "id": "hs_cull_the_weak_invalid"
+  },
+  {
+    "id": "hs_brutal_mark_invalid"
+  },
+  {
+    "id": "hs_focused_aggression_invalid"
+  },
+  {
+    "id": "hs_shadow_aura_disabled"
+  },
+  {
+    "id": "hs_astral_aura_disabled"
+  },
+  {
+    "id": "hs_materium_aura_disabled"
+  },
+  {
+    "id": "hs_nature_aura_disabled"
+  },
+  {
+    "id": "hs_chaos_aura_disabled"
+  },
+  {
+    "id": "hs_dragon_scales_ii_materium_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_ii_astral_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_ii_shadow_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_ii_nature_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_ii_chaos_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_ii_order_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_materium_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_astral_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_shadow_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_nature_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_chaos_invalid"
+  },
+  {
+    "id": "hs_dragon_scales_order_invalid"
+  },
+  {
+    "id": "hs_order_aura_disabled"
+  },
+  {
+    "id": "hs_draconic_health_iii_disabled"
+  },
+  {
+    "id": "hs_draconic_health_ii_disabled"
+  },
+  {
+    "id": "hs_draconic_health_i_disabled"
+  },
+  {
+    "id": "hs_ancient_governor_ii_disabled"
+  },
+  {
+    "id": "hs_ancient_governor_i_disabled"
+  },
+  {
+    "id": "hs_heightened_senses_ii_invalid"
+  },
+  {
+    "id": "hs_heightened_senses_i_invalid"
+  },
+  {
+    "id": "hs_forge_master"
+  },
+  {
+    "id": "hs_disenchanter"
+  },
+  {
+    "id": "hs_conjure_storm_shield"
+  },
+  {
+    "id": "hs_sundering_lightning"
+  },
+  {
+    "id": "hs_hurl_lightning"
+  },
+  {
+    "id": "hs_impactful_animated_weapon_storm"
+  },
+  {
+    "id": "hs_rune_of_creation_storm"
+  },
+  {
+    "id": "hs_rune_of_command_storm"
+  },
+  {
+    "id": "hs_rune_of_protection_storm"
+  },
+  {
+    "id": "hs_rune_of_power_storm"
+  },
+  {
+    "id": "hs_reinforced_conjured_weapon_storm"
+  },
+  {
+    "id": "hs_sharpened_conjured_weapon_storm"
+  },
+  {
+    "id": "hs_conjure_storm_glaive"
+  },
+  {
+    "id": "hs_conjure_lightning_sword"
+  },
+  {
+    "id": "hs_empowered_throw_storm_giant"
+  },
+  {
+    "id": "hs_mass_chain_lightnning"
+  },
+  {
+    "id": "hs_chain_lightning"
+  },
+  {
+    "id": "hs_stunning_lightning"
+  },
+  {
+    "id": "hs_reinforced_conjured_weapon_rock"
+  },
+  {
+    "id": "hs_conjure_steel_hammer"
+  },
+  {
+    "id": "hs_large_boulder"
+  },
+  {
+    "id": "hs_impactful_animated_weapon_rock"
+  },
+  {
+    "id": "hs_rune_of_creation_rock"
+  },
+  {
+    "id": "hs_rune_of_command_rock"
+  },
+  {
+    "id": "hs_rune_of_protection_rock"
+  },
+  {
+    "id": "hs_rune_of_power_rock"
+  },
+  {
+    "id": "hs_sharpened_conjured_weapon_rock"
+  },
+  {
+    "id": "hs_conjure_steel_shield"
+  },
+  {
+    "id": "hs_conjure_iron_sword"
+  },
+  {
+    "id": "hs_concussive_boulder"
+  },
+  {
+    "id": "hs_massive_boulder"
+  },
+  {
+    "id": "hs_empowered_throw_rock_giant"
+  },
+  {
+    "id": "hs_sundering_boulder_rock"
+  },
+  {
+    "id": "hs_hurl_boulder"
+  },
+  {
+    "id": "hs_reinforced_conjured_weapon_fire"
+  },
+  {
+    "id": "hs_conjure_lava_bow"
+  },
+  {
+    "id": "hs_large_flame"
+  },
+  {
+    "id": "hs_sundering_flame"
+  },
+  {
+    "id": "hs_hurl_flame"
+  },
+  {
+    "id": "hs_impactful_animated_weapon_fire"
+  },
+  {
+    "id": "hs_rune_of_creation_fire"
+  },
+  {
+    "id": "hs_rune_of_command_fire"
+  },
+  {
+    "id": "hs_rune_of_protection_fire"
+  },
+  {
+    "id": "hs_rune_of_power_fire"
+  },
+  {
+    "id": "hs_sharpened_conjured_weapon_fire"
+  },
+  {
+    "id": "hs_conjure_lava_hammer"
+  },
+  {
+    "id": "hs_conjure_fire_sword"
+  },
+  {
+    "id": "hs_impactful_flame"
+  },
+  {
+    "id": "hs_massive_flame"
+  },
+  {
+    "id": "hs_empowered_throw_fire_giant"
+  },
+  {
+    "id": "hs_vampiric_flight"
+  },
+  {
+    "id": "hs_mist_away"
+  },
+  {
+    "id": "hs_sanguine_extraction"
+  },
+  {
+    "id": "hs_reaching_drain"
+  },
+  {
+    "id": "hs_deep_hunger"
+  },
+  {
+    "id": "hs_deep_bond"
+  },
+  {
+    "id": "hs_profane_strength"
+  },
+  {
+    "id": "hs_drain_familiar"
+  },
+  {
+    "id": "hs_mesmerizing_drain"
+  },
+  {
+    "id": "hs_draining_charm"
+  },
+  {
+    "id": "hs_stunning_drain"
+  },
+  {
+    "id": "hs_staggering_bite"
+  },
+  {
+    "id": "hs_siphon_blood"
+  },
+  {
+    "id": "hs_draining_bite"
+  },
+  {
+    "id": "hs_spellblade_flanking_skirmisher"
+  },
+  {
+    "id": "hs_spellblade_vigor_ii"
+  },
+  {
+    "id": "hs_spellblade_vigor_i"
+  },
+  {
+    "id": "hs_spellblade_go_for_the_kill"
+  },
+  {
+    "id": "hs_spellblade_adaptive_armor"
+  },
+  {
+    "id": "hs_spellblade_fatal_strikes"
+  },
+  {
+    "id": "hs_spellblade_opening_strikes"
+  },
+  {
+    "id": "hs_spellblade_critical_second_wind"
+  },
+  {
+    "id": "hs_spellblade_knockback_retaliations"
+  },
+  {
+    "id": "hs_spellblade_grim_executioner"
+  },
+  {
+    "id": "hs_spellblade_evasive_strikes"
+  },
+  {
+    "id": "hs_spellblade_retaliator_i"
+  },
+  {
+    "id": "hs_spellsword_critical_skirmisher"
+  },
+  {
+    "id": "hs_spellblade_arcane_skirmisher"
+  },
+  {
+    "id": "hs_spellblade_frontline_fighter"
+  },
+  {
+    "id": "hs_spellblade_keen_edge"
+  },
+  {
+    "id": "hs_spellblade_skirmisher_training"
+  },
+  {
+    "id": "hs_spellblade_melee_training"
+  },
+  {
+    "id": "hs_spellblade_weaver"
+  },
+  {
+    "id": "hs_spellblade_spellblade_expertise"
+  },
+  {
+    "id": "hs_spellblade_resistance_ii"
+  },
+  {
+    "id": "hs_spellblade_resistance_i"
+  },
+  {
+    "id": "hs_spellblade_spellblade_ii"
+  },
+  {
+    "id": "hs_spellblade_spellblade_i"
+  },
+  {
+    "id": "hs_spellblade_arcfire_burst"
+  },
+  {
+    "id": "hs_spellblade_melee_mage"
+  },
+  {
+    "id": "hs_spellblade_quick_phase"
+  },
+  {
+    "id": "hs_spellblade_spell_penetration"
+  },
+  {
+    "id": "hs_spellblade_wildfire"
+  },
+  {
+    "id": "hs_spellblade_aethermancy"
+  },
+  {
+    "id": "hs_spellblade_electromancy"
+  },
+  {
+    "id": "hs_spellblade_pyromancy"
+  },
+  {
+    "id": "hs_spellblade_sundering_evocation"
+  },
+  {
+    "id": "hs_spellblade_devastating_evocation"
+  },
+  {
+    "id": "hs_spellblade_cascading_evocation"
+  },
+  {
+    "id": "hs_spellblade_lightning_evoker"
+  },
+  {
+    "id": "hs_spellblade_fire_evoker"
+  },
+  {
+    "id": "hs_warlock_raise_undead"
+  },
+  {
+    "id": "hs_warlock_graceful_servants"
+  },
+  {
+    "id": "hs_warlock_unstable_summons"
+  },
+  {
+    "id": "hs_warlock_transfer_life"
+  },
+  {
+    "id": "hs_warlock_empowered_pacts"
+  },
+  {
+    "id": "hs_warlock_ritualized_focus"
+  },
+  {
+    "id": "hs_warlock_tuned_magic"
+  },
+  {
+    "id": "hs_warlock_willbreaker"
+  },
+  {
+    "id": "hs_warlock_feed_on_despair"
+  },
+  {
+    "id": "hs_warlock_decaying_magic"
+  },
+  {
+    "id": "hs_warlock_warseeker"
+  },
+  {
+    "id": "hs_warlock_sundering_magic"
+  },
+  {
+    "id": "hs_warlock_awaken_corrupted_soul"
+  },
+  {
+    "id": "hs_warlock_pact_of_eternal_servitude"
+  },
+  {
+    "id": "hs_warlock_culling_magic"
+  },
+  {
+    "id": "hs_warlock_hex_of_broken_spirit"
+  },
+  {
+    "id": "hs_warlock_hex_pact"
+  },
+  {
+    "id": "hs_warlock_claim_soul"
+  },
+  {
+    "id": "hs_warlock_infectious_affliction"
+  },
+  {
+    "id": "hs_warlock_bend_broken_will"
+  },
+  {
+    "id": "hs_warlock_chaos_magic"
+  },
+  {
+    "id": "hs_warlock_blood_pact"
+  },
+  {
+    "id": "hs_warlock_dark_ritual"
+  },
+  {
+    "id": "hs_warlock_infested_summons"
+  },
+  {
+    "id": "hs_warlock_bone_wyvern"
+  },
+  {
+    "id": "hs_warlock_undead_retinue"
+  },
+  {
+    "id": "hs_warlock_reclaiming_attacks"
+  },
+  {
+    "id": "hs_warlock_siphon_blessing"
+  },
+  {
+    "id": "hs_warlock_disenchanting_magic"
+  },
+  {
+    "id": "hs_warlock_withering_magic"
+  },
+  {
+    "id": "hs_warlock_fate_magic"
+  },
+  {
+    "id": "hs_warlock_weakening_magic"
+  },
+  {
+    "id": "hs_warlock_draining_magic"
+  },
+  {
+    "id": "hs_warlock_resistance_i"
+  },
+  {
+    "id": "hs_warlock_curse"
+  },
+  {
+    "id": "hs_battlesaint_smite"
+  },
+  {
+    "id": "hs_battlesaint_immortal_saint"
+  },
+  {
+    "id": "hs_battlesaint_battlefield_restoration"
+  },
+  {
+    "id": "hs_battlesaint_defensive_master"
+  },
+  {
+    "id": "hs_battlesaint_support_resistance_iii"
+  },
+  {
+    "id": "hs_battlesaint_regenerating_support"
+  },
+  {
+    "id": "hs_battlesaint_inner_grace"
+  },
+  {
+    "id": "hs_battlesaint_weakening_aura"
+  },
+  {
+    "id": "hs_battlesaint_cleanse"
+  },
+  {
+    "id": "hs_battlesaint_condemnation"
+  },
+  {
+    "id": "hs_battlesaint_defense_ii"
+  },
+  {
+    "id": "hs_battlesaint_martyrs_blood"
+  },
+  {
+    "id": "hs_battlesaint_support_resistance_ii"
+  },
+  {
+    "id": "hs_battlesaint_revive"
+  },
+  {
+    "id": "hs_battlesaint_herald_of_portents"
+  },
+  {
+    "id": "hs_battlesaint_resistant_vanguard"
+  },
+  {
+    "id": "hs_battlesaint_radiant_retribution"
+  },
+  {
+    "id": "hs_battlesaint_blessed_body"
+  },
+  {
+    "id": "hs_battlesaint_bolstering_support"
+  },
+  {
+    "id": "hs_battlesaint_healing_support"
+  },
+  {
+    "id": "hs_battlesaint_warded_armor"
+  },
+  {
+    "id": "hs_battlesaint_defense_i"
+  },
+  {
+    "id": "hs_battlesaint_warding_bond"
+  },
+  {
+    "id": "hs_battlesaint_support_resistance_i"
+  },
+  {
+    "id": "hs_battlesaint_bless__unlinked_"
+  },
+  {
+    "id": "hs_battlesaint_purifying_fervor"
+  },
+  {
+    "id": "hs_battlesaint_fervorous_martyr"
+  },
+  {
+    "id": "hs_battlesaint_fervorous_disciple"
+  },
+  {
+    "id": "hs_battlesaint_rallying_fervor"
+  },
+  {
+    "id": "hs_battlesaint_saints_fervor"
+  },
+  {
+    "id": "hs_battlesaint_clerics_fervor"
+  },
+  {
+    "id": "hs_battlesaint_warriors_fervor"
+  },
+  {
+    "id": "hs_battlesaint_paladin"
+  },
+  {
+    "id": "hs_battlesaint_cleric"
+  },
+  {
+    "id": "hs_battlesaint_fortunate_support"
+  },
+  {
+    "id": "giant_signature_astral_rune_4_frost"
+  },
+  {
+    "id": "giant_signature_astral_rune_4_fire"
+  },
+  {
+    "id": "giant_signature_astral_rune_4_rock"
+  },
+  {
+    "id": "giant_signature_astral_rune_2_frost"
+  },
+  {
+    "id": "giant_signature_astral_rune_2_rock"
+  },
+  {
+    "id": "giant_signature_astral_rune_2_fire"
+  },
+  {
+    "id": "giant_signature_astral_rune_4_storm"
+  },
+  {
+    "id": "giant_signature_astral_rune_3"
+  },
+  {
+    "id": "giant_signature_astral_rune_2_storm"
+  },
+  {
+    "id": "giant_signature_astral_rune_1"
+  },
+  {
+    "id": "vampire_signature_nightlord"
+  },
+  {
+    "id": "vampire_signature_reaper"
+  },
+  {
+    "id": "vampire_signature_vampiric_rage"
+  },
+  {
+    "id": "vampire_signature_supernatural_speed"
+  },
+  {
+    "id": "vampire_signature_parasitic_communion"
+  },
+  {
+    "id": "vampire_signature_blood_communion"
+  },
+  {
+    "id": "vampire_signature_violent_exsanguination"
+  },
+  {
+    "id": "vampire_signature_exsanguinate"
+  },
+  {
+    "id": "vampire_signature_profane_body_mastery"
+  },
+  {
+    "id": "vampire_signature_marrow_drinker"
+  },
+  {
+    "id": "vampire_signature_hemomancer"
+  },
+  {
+    "id": "giant_signature_chaos_rune_4"
+  },
+  {
+    "id": "giant_signature_chaos_rune_3"
+  },
+  {
+    "id": "giant_signature_chaos_rune_2"
+  },
+  {
+    "id": "giant_signature_chaos_rune_1"
+  },
+  {
+    "id": "giant_signature_materium_rune_4"
+  },
+  {
+    "id": "giant_signature_materium_rune_3"
+  },
+  {
+    "id": "giant_signature_materium_rune_2"
+  },
+  {
+    "id": "giant_signature_materium_rune_1"
+  },
+  {
+    "id": "giant_signature_nature_rune_4"
+  },
+  {
+    "id": "giant_signature_nature_rune_3"
+  },
+  {
+    "id": "giant_signature_nature_rune_2"
+  },
+  {
+    "id": "giant_signature_nature_rune_1"
+  },
+  {
+    "id": "giant_signature_order_rune_4"
+  },
+  {
+    "id": "giant_signature_order_rune_3"
+  },
+  {
+    "id": "giant_signature_order_rune_2"
+  },
+  {
+    "id": "giant_signature_order_rune_1"
+  },
+  {
+    "id": "vampire_signature_rosebound_noble"
+  },
+  {
+    "id": "vampire_signature_spreading_blight"
+  },
+  {
+    "id": "vampire_signature_bloodblight"
+  },
+  {
+    "id": "vampire_signature_aura_of_torment"
+  },
+  {
+    "id": "vampire_signature_nightsworn"
+  },
+  {
+    "id": "vampire_signature_tormenting_mist"
+  },
+  {
+    "id": "vampire_signature_dreadful"
+  },
+  {
+    "id": "vampire_signature_miasmic_spine"
+  },
+  {
+    "id": "vampire_signature_festering_spine"
+  },
+  {
+    "id": "vampire_signature_curse_to_undeath"
+  },
+  {
+    "id": "vampire_signature_elite_march"
+  },
+  {
+    "id": "vampire_signature_gravemarch"
+  },
+  {
+    "id": "vampire_signature_defiler"
+  },
+  {
+    "id": "vampire_signature_desecrator"
+  },
+  {
+    "id": "giant_signature_shadow_rune_4"
+  },
+  {
+    "id": "giant_signature_shadow_rune_3"
+  },
+  {
+    "id": "giant_signature_shadow_rune_2"
+  },
+  {
+    "id": "giant_signature_shadow_rune_1"
+  }
+]
