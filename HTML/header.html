@@ -27,35 +27,39 @@
                 </div>
             </div>
             <label style="display: block; position: relative; left: -86px">
+                WIP
                 <select id="languageSelect" class="button-random" onchange="SwitchToBeta()">
                     <option value="EN">English</option>
-                    <option value="RU">Русский</option>
+                    <option value="RU">Pусский</option>
                 </select>
             </label>
+            <div class="donate" >
+                <a class="prett" href="/rbbp/HTML/Donate.html">
+                    Donate<img src="/rbbp/Icons/Text/health.png" width="20px" />
+                </a>
+            </div>
+
             <div class="dropdown">
-                <div class="dropdown-title">Mods Databases ▼</div>
+                <div class="dropdown-title">Mods Database ▼</div>
                 <div class="dropdown-content">
                     <a class="prett" href="https://aow4mp.github.io/evolved/" target="_blank">
                         <img src="/rbbp/Icons/Interface/fav.png" width="20px" /> AOW4 Evolved
-                    </a>
-                    <a class="prett" href="https://aow4mp.github.io/rbbp/" target="_blank">
-                        <img src="/rbbp/Icons/Interface/fav.png" width="20px" /> AOW4 RbbP
                     </a>
                 </div>
             </div>
         </div>
         <div class="header-img">
-            <div class="hero-text">Age of Wonders 4 RbbP</div>
-            <div class="mid-text" style="display: none; margin: 15px">
-                Switch To Griffon Beta Dataset:<input type="checkbox" id="showBetaCheckbox" onclick="SwitchToBeta()" />
-                <br /><i>(only changes exported dataset, images can break)</i>
+            <div id="topButtonContainer" style="display: none">
+                <div id="myCenteredButton"><a href="/rbbp/HTML/Donate.html">Donate</a></div>
             </div>
-            <div class="current-version">Updated: 28 OCT 2025 (RbbP 1.3.1)</div>
+
+            <a href="/rbbp/" style=" text-decoration: none;"><div class="hero-text">Age of Wonders 4 Database</div></a>
+            <div class="current-version">Updated: 25 NOV 2025</div>
 
             <div class="hero-text" style="display: block">
                 <img style="
     position: relative;
-    top: -21px;" src="/rbbp/Icons/Interface/archon_prophecy.png" width="442px" />
+    top: -21px;" src="/rbbp/Icons/Text/ThroneOfBloodLogo.png" width="442px" />
             </div>
             <ul id="menu">
                 <li>
@@ -95,7 +99,7 @@
                                     >
                                 </li>
                                 <li>
-                                    <a id="culture-dark" href="/rbbp/HTML/DarkUnits.html?type=outrider"
+                                    <a id="culture-dark" href="/rbbp/HTML/DarkUnits.html?type=outriderCult%20of%20Death&"
                                         ><img src="/rbbp/Icons/Text/dark.png" width="20px" /> Dark</a
                                     >
                                 </li>
@@ -217,6 +221,11 @@
                                         Prophecy</a
                                     >
                                 </li>
+                                 <li>
+                                    <a id="tomesU-tob" href="/rbbp/HTML/ThronesOfBloodUnits.html"
+                                        ><img src="/rbbp/Icons/Text/ThronesOfBlood.png" width="20px" /> Thrones of Blood</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -312,7 +321,7 @@
                                 ><img
                                     style="margin-top: -20px; margin-bottom: -10px"
                                     src="/rbbp/Icons/UnitIcons/shock_unit.png"
-                                    width="20px" />Classes
+                                    width="20px" />Classes ▸
                             </a>
                             <ul class="submenu">
                                 <li>
@@ -503,7 +512,7 @@
                     >
                     <ul class="menus">
                         <li>
-                            <a id="world-city" href="/rbbp/HTML/CityTreesNew.html"
+                            <a id="world-city" href="/rbbp/HTML/CityTrees.html"
                                 ><img src="/rbbp/Icons/UpgradeIcons/throne.png" width="20px" /> City Tree</a
                             >
                         </li>
@@ -548,7 +557,7 @@
                             <a
                                 id="hero-equipment"
                                 href="/rbbp/HTML/HeroEquipment.html?type=Primary%20Weapon&sort=tier:true"
-                                ><img src="/rbbp/Icons/Interface/EquipmentIcon.png" width="20px" />Equipment</a
+                                ><img src="/rbbp/Icons/Text/equipment.png" width="15px" /> Equipment</a
                             >
                         </li>
                         <li>

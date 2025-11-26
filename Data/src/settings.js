@@ -66,7 +66,7 @@ function RevealKey() {
 
 function downloadEditKeyFile() {
   const text =
-    "Age of Wonders 4 RbbP (minionsart.github.io/rbbp)\nYour Build Edit Key : " + getOrCreateUserEditKey(); // Replace with your dynamic content
+    "Age of Wonders 4 RbbP (aow4mp.github.io/rbbp)\nYour Build Edit Key : " + getOrCreateUserEditKey(); // Replace with your dynamic content
   const filename = "rbbp_EditKey.txt";
 
   const blob = new Blob([text], { type: "text/plain" });
