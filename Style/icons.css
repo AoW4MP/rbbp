@@ -270,7 +270,7 @@ ELDRITCHREALMS,
 WAYSOFWAR,
 HERALDOFGLORY,
 PRIMALFURY,
-EMPIRESANDASHES,ARCHONPROPHECY, COSMICWANDERER {
+EMPIRESANDASHES,ARCHONPROPHECY, COSMICWANDERER, THRONESOFBLOOD {
     max-width: 20px;
     top: 7px;
     position: relative;
@@ -300,7 +300,9 @@ HERALDOFGLORY {
 COSMICWANDERER {
     content: url(/rbbp/Icons/Text/CosmicWanderer.png);
 }
-
+THRONESOFBLOOD {
+      content: url(/rbbp/Icons/Text/ThronesOfBlood.png);
+}
 
 ELDRITCHREALMS {
     content: url(/rbbp/Icons/Text/EldritchRealms.png);
@@ -637,6 +639,34 @@ structureprod {
     max-height: 20px;
     top: 3px;
     content: url(/rbbp/Icons/Text/production.png);
+    position: relative;
+}
+
+embalmedsacrifice{
+     max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/embalmedSacrifice.png);
+    position: relative;
+}
+
+goodrelation{
+     max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/goodrelations.png);
+    position: relative;
+}
+
+minorcity{
+     max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/free_city.png);
+    position: relative;
+}
+
+allegiance{
+       max-width: 20px;
+    top: 2px;
+    content: url(/rbbp/Icons/Text/allegiance.png);
     position: relative;
 }
 

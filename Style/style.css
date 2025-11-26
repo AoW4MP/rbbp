@@ -566,10 +566,16 @@ p {
     position: sticky;
     top: 0;
     z-index: 2;
+  scrollbar-color: #15846f black;
+  scrollbar-width: thin;
 }
 
 .w3-bar .w3-button {
     white-space: normal;
+}
+
+.switch{
+    color: white;
 }
 
 .w3-bar .w3-bar-item {
@@ -1624,7 +1630,7 @@ silver {
     border-style: solid;
     border-color: #490d82;
     transform: rotate(45deg);
-    background: linear-gradient(126deg, purple 50%, #65aadf);
+    background: linear-gradient(126cdeg, purple 50%, #65aadf);
 }
 
 .ARCHONPROPHECYtriangle {
@@ -1640,6 +1646,21 @@ silver {
     border-color: #f5f100;
     transform: rotate(45deg);
     background: linear-gradient(126deg, #1adff2 50%, #65aadf);
+}
+
+.THRONESOFBLOODtriangle {
+    position: absolute;
+
+    z-index: 0;
+    top: -22px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #b61515;
+    transform: rotate(45deg);
+    background: linear-gradient(126deg, #f66363 50%, #ff002d);
 }
 
 .header-img::after {
@@ -1663,7 +1684,7 @@ silver {
     position: relative;
 
     font-size: 17px;
-    top: -30%;
+    top: -20%;
     margin: -15px;
     text-shadow: 2px 2px 5px black;
     text-shadow:
@@ -1683,6 +1704,7 @@ silver {
     position: relative;
     font-family: "Decorative", sans-serif;
     font-size: 35px;
+   
    
     left: 50%;
     transform: translate(-50%, -30%);
@@ -1705,7 +1727,7 @@ silver {
     position: relative;
     font-family: "Regular", sans-serif;
     font-size: 14px;
-    top: 2%;
+    top: -12%;
     left: 1%;
     color: whitesmoke;
     opacity: 2;
