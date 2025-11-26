@@ -6,41 +6,6 @@ const unlockableUnitsMapStructures = {
     shrine_of_prosperity: ["blessed_dragon", "radiant_guardian", "righteous_judge"]
 };
 
-const highCultureUnits = ["lightseeker", "dawn_defender", "dusk_hunter", "sun_priest", "daylight_spear", "awakener"];
-const barbarianCultureUnits = ["pathfinder", "sunderer", "warrior", "war_shaman", "fury", "berserker"];
-const darkCultureUnits = ["outrider", "pursuer", "dark_warrior", "warlock", "night_guard", "dark_knight"];
-const feudalCultureUnits = ["scout", "militia", "archer", "bannerman", "defender", "knight", "longbow", "liege_guard"];
-const industriousCultureUnits = ["pioneer", "anvil_guard", "arbalest", "steelshaper", "halberdier", "bastion"];
-const mysticCultureUnits = [
-    "mystic_projection",
-    "arcane_guard",
-    "arcanist",
-    "soother",
-    "spellshield",
-    "spellbreaker",
-    "spellweaver",
-    "summoner"
-];
-const reaverCultureUnits = ["observer", "mercenary", "harrier", "overseer", "magelock", "dragoon", "magelock_cannon"];
-const primalCultureUnits = [
-    "spirit_tracker",
-    "protector",
-    "primal_darter",
-    "primal_charger",
-    "animist",
-    "ancestral_warden"
-];
-const oathswornCultureUnits = [
-    "honor_guard",
-    "wayfarer",
-    "sworn_guard",
-    "sealbearer",
-    "vowkeeper",
-    "peacebringer",
-    "avenger",
-    "warbound"
-];
-
 
 function cleanTranslation(text) {
   if (!text) return text;
@@ -101,7 +66,7 @@ const extraFormUnitsList = [
     "houndmaster",
     "geomancer",
     "paladin",
-    "oracle"
+    "oracle", "pain_bringer", "blood_cultist"
 ];
 
 const incorrectIconOverrideList = [
@@ -140,6 +105,23 @@ const extraSkills = [
             }
         ]
     },
+    {
+  "group_name": "Warlock - Skill Group",
+  "icon": "000004C000000B45",
+  "type": "normal",
+  "resid": 5222680234769,
+  "tree_name": "<classWarlock></classWarlock> Warlock",
+  "name": "Hexseeking Bolts",
+  "tree_pos_x": 250.0,
+  "tree_pos_y": 150.0,
+  "id": "hs_warlock_hexseeking_bolts",
+  "description": "Attacks and <hyperlink>Debuff</hyperlink> abilities against the target of Hex pact:<bulletlist><bullet>Always Hit.</bullet><bullet>Ignore 3 Status Resistance against the target of Hex Pact</bullet></bulletlist>",
+  "required_skills": [
+   {
+    "resid": 5222680234747
+   }
+  ]
+ },
     {
         group_name: "Ritualist - Hero Skill Group",
         icon: "0000048B00000336",
@@ -183,13 +165,14 @@ function fetchJsonFiles(filePaths) {
 var jsonSiegeProjects;
 
 const dlcMap = {
-    EMPIRESANDASHES: {
-        src: "/rbbp/Icons/Text/EmpiresAshes.png",
-        text: "Part of the Empires & Ashes DLC"
-    },
+   
     DRAGONLORDS: {
         src: "/rbbp/Icons/Text/DragonDawn.png",
         text: "Part of the Dragon Dawn DLC"
+    },
+     EMPIRESANDASHES: {
+        src: "/rbbp/Icons/Text/EmpiresAshes.png",
+        text: "Part of the Empires & Ashes DLC"
     },
     PRIMALFURY: {
         src: "/rbbp/Icons/Text/PrimalFury.png",
@@ -217,15 +200,18 @@ const dlcMap = {
     }, COSMICWANDERER: {
         src: "/rbbp/Icons/Text/CosmicWanderer.png",
         text: "Part of the Cosmic Wanderer DLC"
+    },THRONESOFBLOOD: {
+        src: "/rbbp/Icons/Text/ThronesOfBlood.png",
+        text: "Part of the Thrones of Blood DLC"
     }
 };
 
 async function GetAllData(selectedLang) {
-    const basePathEN = `/rbbp/Data/EN/`;
+    let basePathEN = `/rbbp/Data/EN/`;
 
-    //if(selectedLang == "Beta"){
-    //         basePathEN = `/rbbp/Data/Beta/`;
-    //  }else{
+    if(selectedLang == "BETA"){
+            basePathEN = `/rbbp/Data/BETA/`;
+     }
 
     const basePathGen = `/rbbp/Data/GEN/`;
     // }
@@ -234,7 +220,7 @@ async function GetAllData(selectedLang) {
 
     const fileNamesGeneric = [
         "EnchantmentTables.json",
-        "SpawnTables.json",
+        "all_spawnsets.json",
         "BuilderLookup.json",
         "AscendedInfo.json",
         "BuilderLookupHero.json",
@@ -264,11 +250,7 @@ async function GetAllData(selectedLang) {
         "Governance.json",
         // non-ingame-dump-json-files
         "UI.json",
-        "baseConceptLookup.json",
-        "extraFactionCreation.json",
-        "world_structures.json",
-        "combat_properties.json",
-        "events.json"
+        "all.json",
     ];
 
     // Create file paths
@@ -314,11 +296,7 @@ async function GetAllData(selectedLang) {
             "jsonHeroAmbitions",
             "jsonHeroGovernance",
             "jsonUI",
-            "jsonBaseConcepts",
-            "jsonExtraFactionCreationFromPO",
-            "jsonExtraStructureFromPO",
-            "jsonExtraCombatPropertiesFromPO",
-            "jsonExtraEventsFromPO"
+            "jsonAllFromPO"
         ];
 
         // Assign data to global vars
@@ -375,7 +353,7 @@ async function CheckData() {
         checkboxNumbers.checked = storedSettings.isolateNumber;
 
         //showBetaTooltip = document.getElementById("showBetaCheckbox");
-        showBetaTooltip.checked = storedSettings.showBeta;
+      //  showBetaTooltip.checked = storedSettings.showBeta;
 
         //  languageSelect = document.getElementById("languageSelect");
         languageSelect.value = storedSettings.language;
@@ -391,11 +369,11 @@ async function CheckData() {
         }
         CheckBoxTooltips();
 
-        //  if (storedSettings.showBeta) {
-        //      await GetAllData("Beta");
-        //  } else {
+       //   if (storedSettings.showBeta) {
+     //        await GetAllData("BETA");
+      //   } else {
         await GetAllData(storedSettings.language);
-        //}
+      //  }
 
         AddExtraData();
 
@@ -410,17 +388,26 @@ async function CheckData() {
 
 const patchDates = [
     // date ranges of patches
-    { name: "Griffon 1.1", from: new Date("2025-08-114"), to: new Date("2025-11-29") },
+    { name: "Gargoyle 1.0", from: new Date("2025-11-11"), to: new Date("2026-11-29") },
+    { name: "Griffon 1.1", from: new Date("2025-08-11"), to: new Date("2025-11-10") },
     { name: "Griffon 1.0", from: new Date("2025-08-12"), to: new Date("2025-11-14") },
     { name: "Ogre 1.2.1", from: new Date("2025-05-13"), to: new Date("2025-08-12") },
     { name: "Ogre 1.2", from: new Date("2025-04-26"), to: new Date("2025-05-13") }
 ];
 
-function LocalizeUI() {
+function LocalizeUI(specific) {
     // general ui lookup first
     for (const id in jsonUIGeneric) {
-        const el = document.getElementById(id);
-        if (el) {
+        let el = "";
+        if(specific != undefined){
+              el = specific.querySelector("#" +id);
+            console.log(el);
+           
+        }else{
+              el = document.getElementById(id);
+        }
+       
+        if (el != null) {
             let value = "error";
 
             // check if there is a lookup in the baseConceptLookup file
@@ -430,12 +417,12 @@ function LocalizeUI() {
                 if (test.includes("&")) {
                     test = test.split("&");
 
-                    const found = findBy(jsonBaseConceptsLocalized, "id", test[0]);
+                    const found = findBy(jsonAllFromPOLocalized, "id", test[0]);
                     if (found) {
                         value = found[test[1]];
                     }
                 } else {
-                    const found = findBy(jsonBaseConceptsLocalized, "id", test);
+                    const found = findBy(jsonAllFromPOLocalized, "id", test);
                     if (found) {
                         value = found.hyperlink;
                     }

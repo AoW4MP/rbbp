@@ -350,19 +350,18 @@ function doubleNumbers(inputString) {
 }
 
 
-function ConvertSpawnTable(input) {
-    const entries = input.split(",");
-
-    const bulletListName = entries.shift(); // Get the first entry as the bullet list name
+function ConvertSpawnTable(input, subtractName) {
+  
+    const bulletListName = input.category.split(subtractName + "_")[1]; // Get the first entry as the bullet list name
 
     // Calculate the percentages for each entry
     const entryCounts = {};
-    for (const entry of entries) {
+    for (const entry of input.items) {
         entryCounts[entry] = (entryCounts[entry] || 0) + 1;
     }
 
-    const percentages = entries.map((entry) => {
-        const percentage = (entryCounts[entry] / entries.length) * 100;
+    const percentages = input.items.map((entry) => {
+        const percentage = (entryCounts[entry] / input.items.length) * 100;
         return {
             entry,
             percentage
@@ -389,6 +388,53 @@ function ConvertSpawnTable(input) {
     bulletList.innerHTML += "</bulletList>";
     return bulletList;
 }
+
+  function CreateParts(subcultures, icons, names) {
+                const presetPoint = document.getElementById("presetPoint");
+
+                // Create the main holder div for buttons
+                const holder = document.createElement("div");
+                holder.className = "subcultureHolder";
+
+                // Generate the subculture buttons
+                subcultures.forEach((sub) => {
+                    const button = document.createElement("button");
+                    button.className = "subscultureButton";
+                    button.setAttribute("onclick", `showSubDiv(event,'${sub}')`);
+
+                    const img = document.createElement("img");
+                    img.src = `/rbbp/Icons/FactionCreation/${sub.toLowerCase().replaceAll(" ","_")}.png`;
+                    img.width = 50;
+
+                    const span = document.createElement("span");
+                    span.className = "subCultureName";
+                    span.id = `subCultureName${sub}`;
+                    span.textContent = `${names}${sub}`;
+
+                    button.appendChild(img);
+                    button.appendChild(span);
+                    holder.appendChild(button);
+                });
+
+                // Append the button holder to the body
+                presetPoint.append(holder);
+
+                // Generate subDiv sections
+                subcultures.forEach((sub, i) => {
+                    const div = document.createElement("div");
+                    div.className = "subDiv";
+                    div.id = sub;
+
+                    div.innerHTML = `
+    <div class="w3-container">
+      <div id="buttonHolder${i}" class="w3-bar w3-black"></div>
+      <div id="dataHolder${i}" class="dataholder" style="margin-top:-250px"></div>
+    </div>
+  `;
+
+                    presetPoint.append(div);
+                });
+            }
 
 
 function addSpoiler(text) {
