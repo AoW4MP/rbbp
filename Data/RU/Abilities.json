@@ -26278,6 +26278,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Не перезаряжается"
    }
   ],
   "accuracy": "90%",
@@ -26308,6 +26311,9 @@
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Не перезаряжается"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -26328,13 +26334,16 @@
   "description": "Наносит урон в радиусе 1 кл.",
   "name": "Выстрел залпом",
   "slug": "hs_ranger_scatter_shot_ability_000003BD00002895",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
    },
    {
     "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Не перезаряжается"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -28591,7 +28600,11 @@
   "name": "Усиление крови",
   "slug": "blood_empowerment_ability_000003BD00002895",
   "damage": "",
-  "requisites": [],
+  "requisites": [
+   {
+    "requisite": "Не перезаряжается"
+   }
+  ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<freeaction></freeaction>",
   "range": "0",
