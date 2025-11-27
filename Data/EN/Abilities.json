@@ -26278,6 +26278,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Can't be refreshed"
    }
   ],
   "accuracy": "90%",
@@ -26308,6 +26311,9 @@
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Can't be refreshed"
    }
   ],
   "accuracy": "Always Hits",
@@ -26328,13 +26334,16 @@
   "description": "Deals damage in a 1-hex radius.",
   "name": "Scatter Shot",
   "slug": "hs_ranger_scatter_shot_ability_000003BD00002895",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
    },
    {
     "requisite": "Base"
+   },
+   {
+    "requisite": "Can't be refreshed"
    }
   ],
   "accuracy": "Always Hits",
@@ -28591,7 +28600,11 @@
   "name": "Blood Empowerment",
   "slug": "blood_empowerment_ability_000003BD00002895",
   "damage": "",
-  "requisites": [],
+  "requisites": [
+   {
+    "requisite": "Can't be refreshed"
+   }
+  ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
   "range": "0",
