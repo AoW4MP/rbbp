@@ -18981,7 +18981,7 @@
     "count": 1
    },
    {
-    "description": "Base 90% chance of inflicting Gilded for 1 <turn></turn> Turn.",
+    "description": "Base 60% chance of inflicting Gilded for 1 <turn></turn> Turn.",
     "name": "Gilded",
     "count": 1
    }
@@ -18989,7 +18989,7 @@
   "description": "Deal damage to enemy units in a 1-hex cone.",
   "name": "Gilded Cleave",
   "slug": "gilded_cleave_ability_000003E300005DA3",
-  "damage": "29<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -23690,7 +23690,7 @@
   "description": "A Charge attack:<bulletlist><bullet>Gains 30% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Charge Strike",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -23713,7 +23713,7 @@
   "description": "Enemy units within a 2-hex radius sustain damage and lose -5 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
   "name": "Bone-Shattering Howl",
   "slug": "bone_shattering_howl_ability_000003E300004447",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Magic"

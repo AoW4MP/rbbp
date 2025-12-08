@@ -560,7 +560,7 @@
    {
     "description": "A Support Unit that can link to units and take their damage for them. Draftable in cities.",
     "name": "Lithorine Core",
-    "tier": 2,
+    "tier": 5,
     "unit_slug": "lithorine_core",
     "type": "<hyperlink>Unit</hyperlink>"
    },
@@ -602,7 +602,7 @@
    {
     "description": "A Polearm Unit that immobilizes enemies. Draftable in cities.",
     "name": "Lithorine Shardlancer",
-    "tier": 5,
+    "tier": 2,
     "unit_slug": "lithorine_shardlancer",
     "type": "<hyperlink>Unit</hyperlink>"
    },

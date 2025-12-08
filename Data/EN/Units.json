@@ -43115,6 +43115,9 @@
    },
    {
     "slug": "0000038700001864"
+   },
+   {
+    "slug": "0000045e00000664"
    }
   ],
   "mp": 40,
@@ -43137,7 +43140,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -43153,7 +43156,7 @@
   "upkeep": "60<gold></gold> 7<influence></influence> ",
   "id": "karagh",
   "name": "Karagh",
-  "hp": 160,
+  "hp": 140,
   "armor": 6,
   "resistance": 5,
   "medal_rewards_2": [
@@ -43164,6 +43167,9 @@
   "tier": 5,
   "secondary_passives": [
    {
+    "slug": "000003fe00000018"
+   },
+   {
     "slug": "000004a600000b7a"
    },
    {
@@ -43173,7 +43179,7 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
+    "slug": "000003bd000028b7"
    }
   ],
   "medal_rewards_4": [
