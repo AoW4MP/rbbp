@@ -18981,7 +18981,7 @@
     "count": 1
    },
    {
-    "description": "С базовой вероятностью 90% может на 1 <turn></turn> х. применить эффект «Позолота».",
+    "description": "С базовой вероятностью 60% может на 1 <turn></turn> х. применить эффект «Позолота».",
     "name": "Позолота",
     "count": 1
    }
@@ -18989,7 +18989,7 @@
   "description": "Наносит урон вражеским воинам в конусе размером 1 кл.",
   "name": "Золочёное рассечение",
   "slug": "gilded_cleave_ability_000003E300005DA3",
-  "damage": "29<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -23690,7 +23690,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 30% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -23713,7 +23713,7 @@
   "description": "Вражеские воины в радиусе 2 кл. получают урон, их <happiness></happiness> <hyperlink>боевой дух</hyperlink> снижается на -5.",
   "name": "Дробящий кости вой",
   "slug": "bone_shattering_howl_ability_000003E300004447",
-  "damage": "33<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -23735,7 +23735,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <GLOBAL.DefenseModeConcept> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
+  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <hyperlink>Защитная позиция</hyperlink> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
   "name": "Ужасающая трапеза",
   "slug": "terrifying_gorging_ability_(monster_version)_000003E300004447",
   "damage": "",
@@ -24809,7 +24809,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <GLOBAL.DefenseModeConcept> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
+  "description": "С базовой вероятностью 90% может проглотить вражеского воина ранга I, II или III.<bulletlist><bullet>В случае успеха этот воин восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>В случае неудачи наносит 30 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>.</bullet><bullet>Встаёт в <hyperlink>Защитная позиция</hyperlink> после применения.</bullet></bulletlist><br></br>Если этот воин погибает, последний проглоченный им противник возвращается в бой.",
   "name": "Ужасающая трапеза",
   "slug": "terrifying_gorging_ability_(monster_version)_000003BD00002895",
   "damage": "",
