@@ -495,7 +495,7 @@
   "description": "Deal damage to target enemy.",
   "name": "Tormenting Lash",
   "slug": "whip_ability_000004C500000B15",
-  "damage": "18<damagephysical></damagephysical> 18<damagefrost></damagefrost> ",
+  "damage": "20<damagephysical></damagephysical> 20<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -26208,7 +26208,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Heals +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gains Regeneration.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Heals for 30<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Has their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
   "name": "Restore",
   "slug": "hs_ritualist_restore_ability_000003BD00002895",
   "damage": "",
@@ -28202,7 +28202,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Have 2 <hyperlink>Negative Status Effects</hyperlink> removed.</bullet><bullet>Gains +3<statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Has all <hyperlink>Negative Status Effects</hyperlink> removed.</bullet><bullet>Gains +3<statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
   "name": "Cleanse",
   "slug": "hs_battlesaint_cleanse_ability_000003BD00002895",
   "damage": "",
@@ -30102,13 +30102,13 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
   "description": "Deal damage to target enemy.",
   "name": "Whip Lash",
   "slug": "whip_ability_000003BD00002895",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
