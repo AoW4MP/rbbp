@@ -495,7 +495,7 @@
   "description": "Наносит урон выбранному врагу.",
   "name": "Истязающий охлест",
   "slug": "whip_ability_000004C500000B15",
-  "damage": "18<damagephysical></damagephysical> 18<damagefrost></damagefrost> ",
+  "damage": "20<damagephysical></damagephysical> 20<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
@@ -26208,7 +26208,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получает эффект «Регенерация»;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Восстановление",
   "slug": "hs_ritualist_restore_ability_000003BD00002895",
   "damage": "",
@@ -28202,7 +28202,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получает +3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от всех <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получает +3 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
   "name": "Святое очищение",
   "slug": "hs_battlesaint_cleanse_ability_000003BD00002895",
   "damage": "",
@@ -30102,13 +30102,13 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
   "description": "Наносит урон выбранному врагу.",
   "name": "Удар кнутом",
   "slug": "whip_ability_000003BD00002895",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
