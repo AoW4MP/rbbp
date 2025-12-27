@@ -4668,14 +4668,14 @@
   ]
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010632168,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "abducting_cyclone",
   "tactical": true,
-  "description": "Pulls the closest enemy within 3 hexes to target empty hex. They have a base 90% chance of becoming Stunned for 1 <turn></turn> Turn.",
+  "description": "Pulls the closest enemy within 2 hexes to target empty hex. They have a base 90% chance of becoming Stunned for 1 <turn></turn> Turn.",
   "name": "Abducting Cyclone",
-  "operation_point_cost": 20,
+  "operation_point_cost": 35,
   "icon": "0000041B00000FC8"
  },
  {

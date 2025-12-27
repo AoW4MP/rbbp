@@ -2015,7 +2015,7 @@
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 40% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
   "name": "Heavy Charge Strike",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000049700002A6F",
-  "damage": "19<damagefrost></damagefrost> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagefrost></damagefrost> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -2044,7 +2044,7 @@
   "description": "Deals damage to target.",
   "name": "Throw Ice Boulder",
   "slug": "throw_boulder_ability_0000049700002A6F",
-  "damage": "27<damagefrost></damagefrost> ",
+  "damage": "24<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -2077,7 +2077,7 @@
   "description": "Deals damage to target unit. Enemy units within 1 hexes of the target sustain 30% of the damage.",
   "name": "Blizzard Smash",
   "slug": "earthquake_smash_ability_0000049700002A6F",
-  "damage": "16<damagephysical></damagephysical> 16<damagefrost></damagefrost> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -2115,12 +2115,6 @@
   "description": "Unit has:<bulletlist><bullet>40 Movement on the World Map.</bullet><bullet>5 Movement in Combat.</bullet></bulletlist>",
   "name": "Fast Movement",
   "slug": "000003e300004f29"
- },
- {
-  "description": "For 1 <turn></turn> grants:<bulletlist><bullet>+1 hex of movement</bullet><bullet>Fleeting</bullet></bulletlist>",
-  "name": "Sprint",
-  "slug": "000003e3000054ec",
-  "icon": "000003E3000054EB"
  },
  {
   "modifiers": [
@@ -3824,19 +3818,30 @@
   "icon": "000003BD000020C9"
  },
  {
+  "modifiers": [],
+  "description": "Deal damage to target unit. Enter <hyperlink>Defense Mode</hyperlink>.",
+  "name": "Smite",
+  "slug": "smite_ability_00000490000028DE",
+  "damage": "20<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Melee"
+   },
+   {
+    "requisite": "Base"
+   },
+   {
+    "requisite": "Single Shot"
+   }
+  ],
+  "accuracy": "100%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "1",
   "notes": [
    {
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Deal damage to target unit. Enter <hyperlink>Defense Mode</hyperlink>.",
-  "name": "Smite",
-  "slug": "smite_ability_00000490000028DE",
-  "damage": "17<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
-  "requisites": [],
-  "accuracy": "100%",
-  "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "1",
   "icon": "0000049700002A8B"
  },
  {
@@ -9528,7 +9533,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Mire Crocodile stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Mire Crocodile stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002dc",
   "damage": "",
@@ -9566,7 +9571,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Storm Crow stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Storm Crow stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002df",
   "damage": "",
@@ -9604,7 +9609,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Glacial Mammoth stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Glacial Mammoth stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002e1",
   "damage": "",
@@ -9642,7 +9647,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Ash Sabertooth stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Ash Sabertooth stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002dd",
   "damage": "",
@@ -9680,7 +9685,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Dune Serpent stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Dune Serpent stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002de",
   "damage": "",
@@ -9718,7 +9723,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Tunneling Spider stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Tunneling Spider stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002e0",
   "damage": "",
@@ -9756,7 +9761,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Remove all Fury of the Sylvan Wolf stacks.</bullet><bullet>Heal 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Remove all Fury of the Sylvan Wolf stacks.</bullet><bullet>Heal 8 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack removed.</bullet><bullet>Enter Defense Mode.</bullet></bulletlist>",
   "name": "Primal Renewal",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002db",
   "damage": "",
@@ -16682,7 +16687,7 @@
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 40% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
   "name": "Heavy Charge Strike",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DB3",
-  "damage": "19<damagelightning></damagelightning> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagelightning></damagelightning> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -16705,7 +16710,7 @@
   "description": "Deals damage to target and up to 2 other units within 4 hexes.",
   "name": "Lightning Strike",
   "slug": "lightning_strike_ability_000003EC00000DB3",
-  "damage": "25<damagelightning></damagelightning> ",
+  "damage": "22<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -16729,7 +16734,7 @@
   "description": "Deals damage to target unit. Enemy units in a 3-hex line behind the original target sustain 30% of the damage.",
   "name": "Tempestuous Smash",
   "slug": "tempestuous_smash_ability_000003EC00000DB3",
-  "damage": "16<damagephysical></damagephysical> 16<damagelightning></damagelightning> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -16756,7 +16761,7 @@
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 40% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
   "name": "Heavy Charge Strike",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA1",
-  "damage": "19<damagefire></damagefire> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagefire></damagefire> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -16801,7 +16806,7 @@
   "description": "Deals damage to target unit. Enemy units within 1 hexes of the target sustain 30% of the damage.",
   "name": "Volcanic Smash",
   "slug": "volcanic_smash_ability_000003EC00000DA1",
-  "damage": "16<damagephysical></damagephysical> 16<damagefire></damagefire> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -16828,7 +16833,7 @@
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 40% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
   "name": "Heavy Charge Strike",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA0",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "27<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -16857,7 +16862,7 @@
   "description": "Deals damage to target.",
   "name": "Throw Boulder",
   "slug": "throw_boulder_ability_000003EC00000DA0",
-  "damage": "27<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -16890,7 +16895,7 @@
   "description": "Deals damage to target unit. Enemy units within 1 hexes of the target sustain 30% of the damage.",
   "name": "Earthquake Smash",
   "slug": "earthquake_smash_ability_000003EC00000DA0",
-  "damage": "31<damagephysical></damagephysical> ",
+  "damage": "28<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -23623,7 +23628,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Heals +35 <temphp></temphp> Temporary Hit Points.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Heals +35 <temphp></temphp> Temporary Hit Points.</bullet><bullet>Has their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
   "name": "Healing Prayer",
   "slug": "healing_prayer_ability_000003E300004830",
   "damage": "",
@@ -23647,7 +23652,7 @@
   "modifiers": [],
   "description": "Single magical attack at target unit.",
   "name": "Fire Blast",
-  "slug": "magic_blast_(single)_ability_000003E300004519",
+  "slug": "rbbp_giant_fire_runestone_magic_blast_(single)_ability_000003E300004519",
   "damage": "16<damagefire></damagefire> ",
   "requisites": [
    {
@@ -23662,7 +23667,7 @@
   ],
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
+  "range": "8",
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
@@ -23671,7 +23676,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    }
   ],
-  "icon": "000003E600000566"
+  "icon": "CBE7688B00000536"
  },
  {
   "description": "This unit is immune to <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.",
@@ -26082,7 +26087,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly units in a 1-hex radius:<bulletlist><bullet>Heal for 15<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 1 <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
+  "description": "Target friendly units in a 1-hex radius:<bulletlist><bullet>Heal for 15<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 2 <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
   "name": "Rejuvenate",
   "slug": "hs_ritualist_rejuvinate_ability_000003BD00002895",
   "damage": "",
@@ -32422,7 +32427,7 @@
   "icon": "00000497000035CA"
  },
  {
-  "description": "The death of another has granted this unit:<bulletlist><bullet>+5 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>+2% <hyperlink><crit></crit>Critical Hit Chance</hyperlink></bullet></bulletlist><br></br>Stacks up to 10 times.",
+  "description": "The death of another has granted this unit:<bulletlist><bullet>+3 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>+2% <hyperlink><crit></crit>Critical Hit Chance</hyperlink></bullet></bulletlist><br></br>Stacks up to 10 times.",
   "name": "Mortal Blessing",
   "slug": "0000048d00001a0f",
   "icon": "0000048D00001A0A"
