@@ -2015,7 +2015,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_0000049700002A6F",
-  "damage": "19<damagefrost></damagefrost> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagefrost></damagefrost> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -2044,7 +2044,7 @@
   "description": "Наносит урон цели.",
   "name": "Бросок глыбы льда",
   "slug": "throw_boulder_ability_0000049700002A6F",
-  "damage": "27<damagefrost></damagefrost> ",
+  "damage": "24<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
@@ -2077,7 +2077,7 @@
   "description": "Наносит урон выбранному воину. Вражеские воины в радиусе 1 кл. от цели получают 30% от этого урона.",
   "name": "Удар метели",
   "slug": "earthquake_smash_ability_0000049700002A6F",
-  "damage": "16<damagephysical></damagephysical> 16<damagefrost></damagefrost> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -2115,12 +2115,6 @@
   "description": "Скорость воина:<bulletlist><bullet>Глобальная карта — 40 оч. движения;</bullet><bullet>Сражение — 5 оч. движения.</bullet></bulletlist>",
   "name": "Высокая скорость",
   "slug": "000003e300004f29"
- },
- {
-  "description": "На 1 <turn></turn> х. даёт:<bulletlist><bullet>+1 к очкам движения;</bullet><bullet>«Неуловимый»</bullet></bulletlist>",
-  "name": "Бег",
-  "slug": "000003e3000054ec",
-  "icon": "000003E3000054EB"
  },
  {
   "modifiers": [
@@ -3824,19 +3818,30 @@
   "icon": "000003BD000020C9"
  },
  {
+  "modifiers": [],
+  "description": "Наносит урон выбранному воину, после чего встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "name": "Кара",
+  "slug": "smite_ability_00000490000028DE",
+  "damage": "20<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Ближний бой"
+   },
+   {
+    "requisite": "Основная атака"
+   },
+   {
+    "requisite": "Однократная атака"
+   }
+  ],
+  "accuracy": "100%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "1",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Наносит урон выбранному воину, после чего встаёт в <hyperlink>защитную позицию</hyperlink>.",
-  "name": "Кара",
-  "slug": "smite_ability_00000490000028DE",
-  "damage": "17<damagespirit></damagespirit> 10<damagephysical></damagephysical> ",
-  "requisites": [],
-  "accuracy": "100%",
-  "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "1",
   "icon": "0000049700002A8B"
  },
  {
@@ -9528,7 +9533,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Болотного крокодила».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Болотного крокодила».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002dc",
   "damage": "",
@@ -9566,7 +9571,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Штормового ворона».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Штормового ворона».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002df",
   "damage": "",
@@ -9604,7 +9609,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Ледового мамонта».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Ледового мамонта».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002e1",
   "damage": "",
@@ -9642,7 +9647,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Пепельного смилодона».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Пепельного смилодона».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002dd",
   "damage": "",
@@ -9680,7 +9685,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Песчаного змея».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Песчаного змея».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002de",
   "damage": "",
@@ -9718,7 +9723,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Подземного паука».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Подземного паука».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002e0",
   "damage": "",
@@ -9756,7 +9761,7 @@
  },
  {
   "notes": [],
-  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Лесного волка».</bullet><bullet>Восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Устраняет все уровни особенности «Ярость Лесного волка».</bullet><bullet>Восстанавливает 8 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждый устранённый уровень.</bullet><bullet>Воин встаёт в защитную позицию.</bullet></bulletlist>",
   "name": "Первобытное возрождение",
   "slug": "primal_renewal_ability_000004900000031B_00000497000002db",
   "damage": "",
@@ -16682,7 +16687,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DB3",
-  "damage": "19<damagelightning></damagelightning> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagelightning></damagelightning> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -16705,7 +16710,7 @@
   "description": "Наносит урон цели и другим воинам (до 2), находящимся в радиусе 4 кл. от неё.",
   "name": "Электрический удар",
   "slug": "lightning_strike_ability_000003EC00000DB3",
-  "damage": "25<damagelightning></damagelightning> ",
+  "damage": "22<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Магия"
@@ -16729,7 +16734,7 @@
   "description": "Наносит урон выбранному воину. Вражеские воины на линии длиной в 3 кл., протянувшейся позади цели, получают 30% от этого урона.",
   "name": "Ураганный удар",
   "slug": "tempestuous_smash_ability_000003EC00000DB3",
-  "damage": "16<damagephysical></damagephysical> 16<damagelightning></damagelightning> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -16756,7 +16761,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA1",
-  "damage": "19<damagefire></damagefire> 11<damagephysical></damagephysical> ",
+  "damage": "17<damagefire></damagefire> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -16801,7 +16806,7 @@
   "description": "Наносит урон выбранному воину. Вражеские воины в радиусе 1 кл. от цели получают 30% от этого урона.",
   "name": "Вулканический удар",
   "slug": "volcanic_smash_ability_000003EC00000DA1",
-  "damage": "16<damagephysical></damagephysical> 16<damagefire></damagefire> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -16828,7 +16833,7 @@
   "description": "Мощный натиск:<bulletlist><bullet>Увеличивает урон на 40% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>;</bullet><bullet>мощный натиск игнорирует способность «Стойкость перед натиском».</bullet></bulletlist>",
   "name": "Атака мощным натиском",
   "slug": "heavy_melee_charge_strike_(giants)_ability_000003EC00000DA0",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "27<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -16857,7 +16862,7 @@
   "description": "Наносит урон цели.",
   "name": "Бросок камня",
   "slug": "throw_boulder_ability_000003EC00000DA0",
-  "damage": "27<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
@@ -16890,7 +16895,7 @@
   "description": "Наносит урон выбранному воину. Вражеские воины в радиусе 1 кл. от цели получают 30% от этого урона.",
   "name": "Подземный удар",
   "slug": "earthquake_smash_ability_000003EC00000DA0",
-  "damage": "31<damagephysical></damagephysical> ",
+  "damage": "28<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Ближний бой"
@@ -23623,7 +23628,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +35 ед. <temphp></temphp> временного здоровья;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 35 ед. <temphp></temphp> временного здоровья.</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink>.</bullet></bulletlist>",
   "name": "Целительная молитва",
   "slug": "healing_prayer_ability_000003E300004830",
   "damage": "",
@@ -23647,7 +23652,7 @@
   "modifiers": [],
   "description": "Магическая атака, направленная на выбранного воина.",
   "name": "Огненный взрыв",
-  "slug": "magic_blast_(single)_ability_000003E300004519",
+  "slug": "rbbp_giant_fire_runestone_magic_blast_(single)_ability_000003E300004519",
   "damage": "16<damagefire></damagefire> ",
   "requisites": [
    {
@@ -23662,7 +23667,7 @@
   ],
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
+  "range": "8",
   "notes": [
    {
     "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
@@ -23671,7 +23676,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
-  "icon": "000003E600000566"
+  "icon": "CBE7688B00000536"
  },
  {
   "description": "Этот воин неуязвим для <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>.",
@@ -26082,7 +26087,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранные дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляются от 1 <hyperlink>отрицательного эффекта</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранные дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляются от 2 <hyperlink>отрицательного эффекта</hyperlink>.</bullet></bulletlist>",
   "name": "Обновление",
   "slug": "hs_ritualist_rejuvinate_ability_000003BD00002895",
   "damage": "",
@@ -32422,7 +32427,7 @@
   "icon": "00000497000035CA"
  },
  {
-  "description": "Гибель другого воина приносит этому воину:<bulletlist><bullet>+5 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2% к <crit></crit> <hyperlink>шанса критического удара</hyperlink>.</bullet></bulletlist><br></br>Может суммироваться до 10 р.",
+  "description": "Гибель другого воина приносит этому воину:<bulletlist><bullet>+3 к максимальному запасу <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>+2% к <crit></crit> <hyperlink>шанса критического удара</hyperlink>.</bullet></bulletlist><br></br>Может суммироваться до 10 р.",
   "name": "Смертельная благодать",
   "slug": "0000048d00001a0f",
   "icon": "0000048D00001A0A"

@@ -2743,9 +2743,6 @@
     "slug": "000003e3000072a5"
    },
    {
-    "slug": "0000045e00000580"
-   },
-   {
     "slug": "0000039c0000061d"
    },
    {
@@ -2772,7 +2769,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -2795,9 +2792,9 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "Ледяной_великанЛедяные_великаны",
   "name": "Ледяной великанЛедяные великаны",
-  "hp": 140,
-  "armor": 6,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 5,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "000003e300004f29"
@@ -2812,22 +2809,19 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
-   },
-   {
     "slug": "000003eb0000071f"
    },
    {
     "slug": "000004a600000b7a"
    },
    {
+    "slug": "000003bd000028b7"
+   },
+   {
     "slug": "000004970000191a"
    }
   ],
   "medal_rewards_4": [
-   {
-    "slug": "000003e3000054ec"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -6542,7 +6536,7 @@
    }
   ],
   "description": "",
-  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "resid": 5016521812190,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -29886,9 +29880,6 @@
     "slug": "000003e30000665c"
    },
    {
-    "slug": "0000045e00000580"
-   },
-   {
     "slug": "0000039c0000061d"
    },
    {
@@ -29915,7 +29906,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -29938,9 +29929,9 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "Штормовой_великанШтормовые_великаны",
   "name": "Штормовой великанШтормовые великаны",
-  "hp": 140,
-  "armor": 6,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 5,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "000003e300004f29"
@@ -29955,22 +29946,19 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
-   },
-   {
     "slug": "000003eb0000071f"
    },
    {
     "slug": "000004a600000b7a"
    },
    {
+    "slug": "000003bd000028b7"
+   },
+   {
     "slug": "000004970000191a"
    }
   ],
   "medal_rewards_4": [
-   {
-    "slug": "000003e3000054ec"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -30014,9 +30002,6 @@
     "slug": "0000041b00000cbc"
    },
    {
-    "slug": "0000045e00000580"
-   },
-   {
     "slug": "0000039c0000061d"
    },
    {
@@ -30043,7 +30028,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -30066,9 +30051,9 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "Огненный_великанОгненные_великаны",
   "name": "Огненный великанОгненные великаны",
-  "hp": 140,
-  "armor": 6,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 5,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "000003e300004f29"
@@ -30083,22 +30068,19 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
-   },
-   {
     "slug": "000003eb0000071f"
    },
    {
     "slug": "000004a600000b7a"
    },
    {
+    "slug": "000003bd000028b7"
+   },
+   {
     "slug": "000004970000191a"
    }
   ],
   "medal_rewards_4": [
-   {
-    "slug": "000003e3000054ec"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -30136,9 +30118,6 @@
     "slug": "000003e3000065d9"
    },
    {
-    "slug": "0000045e00000580"
-   },
-   {
     "slug": "0000039c0000061d"
    },
    {
@@ -30165,7 +30144,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006288"
+    "slug": "000003e300006287"
    }
   ],
   "description": "",
@@ -30181,9 +30160,9 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "Каменный_великанКаменные_великаны",
   "name": "Каменный великанКаменные великаны",
-  "hp": 140,
-  "armor": 6,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 5,
+  "resistance": 4,
   "medal_rewards_2": [
    {
     "slug": "000003e300004f29"
@@ -30198,13 +30177,13 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003e300004e9f"
-   },
-   {
     "slug": "000003eb0000071f"
    },
    {
     "slug": "000004a600000b7a"
+   },
+   {
+    "slug": "000003bd000028b7"
    },
    {
     "slug": "0000049300000405"
@@ -30214,9 +30193,6 @@
    }
   ],
   "medal_rewards_4": [
-   {
-    "slug": "000003e3000054ec"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -34667,7 +34643,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
   "resid": 4273492483158,
   "medal_rewards_3": [
    {
@@ -42126,7 +42102,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
   "resid": 4273492478497,
   "medal_rewards_3": [
    {
@@ -42322,7 +42298,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
   "resid": 4273492478487,
   "medal_rewards_3": [
    {
@@ -42536,7 +42512,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492478473,
   "medal_rewards_3": [
    {
@@ -43022,7 +42998,7 @@
   "mp": 16,
   "abilities": [
    {
-    "slug": "magic_blast_(single)_ability_000003E300004519"
+    "slug": "rbbp_giant_fire_runestone_magic_blast_(single)_ability_000003E300004519"
    },
    {
     "slug": "0000034500000469"
@@ -43414,7 +43390,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
   "resid": 4264902529452,
   "medal_rewards_3": [
    {
@@ -43504,7 +43480,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "resid": 4264902529424,
   "medal_rewards_3": [
    {
