@@ -3677,7 +3677,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Все дружественные воины в радиусе 2 кл.:<bulletlist><bullet>восстанавливают 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают 1 уровень эффекта «Благодать».</bullet></bulletlist>",
+  "description": "Все дружественные воины в радиусе 2 кл.:<bulletlist><bullet>восстанавливают 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают 1 уровень эффекта «Благодать».</bullet></bulletlist>",
   "name": "Благодать ангела",
   "slug": "angelic_grace_ability_00000490000028FF",
   "damage": "",
@@ -3687,7 +3687,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "0",
   "icon": "000004C0000004A5"
  },
@@ -4752,9 +4752,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4764,7 +4761,7 @@
   "icon": "0000048D00001472"
  },
  {
-  "description": "Воин получает +5 ед. <hp></hp> здоровья за каждый уровень свойства «Воплощение приверженности».",
+  "description": "Воин получает +8 ед. <hp></hp> здоровья за каждый уровень свойства «Воплощение приверженности».",
   "name": "Стойкость воплощения",
   "slug": "0000048d0000172a",
   "icon": "0000048D000014AE"
@@ -4781,9 +4778,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4804,9 +4798,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4827,9 +4818,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4850,9 +4838,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -4873,9 +4858,6 @@
    },
    {
     "requisite": "Основная атака"
-   },
-   {
-    "requisite": "Однократная атака"
    }
   ],
   "accuracy": "100%",
@@ -17497,7 +17479,7 @@
   "description": "Выстрел из пистоля-магострела в выбранного вражеского воина.",
   "name": "Досаждающий выстрел",
   "slug": "harrying_shot_ability_000003E3000071AF",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "26<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Дистанционная атака"
@@ -17509,9 +17491,9 @@
     "requisite": "Однократная атака"
    }
   ],
-  "accuracy": "90%",
+  "accuracy": "80%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
@@ -20716,7 +20698,7 @@
   "icon": "0000048D00001AA2"
  },
  {
-  "description": "В конце хода этого воина:<bulletlist><bullet>восстанавливает 15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждого вражеского воина по соседству.</bullet></bulletlist>",
+  "description": "В конце хода этого воина:<bulletlist><bullet>восстанавливает 5 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink> за каждого вражеского воина по соседству.</bullet></bulletlist>",
   "name": "Живучесть деспота",
   "slug": "0000048d00001ade",
   "icon": "0000048D00001AE1"
@@ -21138,9 +21120,6 @@
   "requisites": [
    {
     "requisite": "Ближний бой"
-   },
-   {
-    "requisite": "Однократная атака"
    },
    {
     "requisite": "Основная атака"
@@ -26632,7 +26611,7 @@
     "note": "Можно использовать только один раз за битву."
    }
   ],
-  "description": "Призывает \\<\\<acc.<br></\\<acc.<br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "description": "Призывает <hyperlink>матриарха пауков-вампиров</hyperlink>.<br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
   "name": "Призыв матриарха пауков-вампиров",
   "slug": "conjure_vampire_matriarch_ability_000003BD00002895",
   "damage": "",
@@ -26734,7 +26713,7 @@
     "note": "Можно использовать только один раз за битву."
    }
   ],
-  "description": "Призывает \\<\\<acc.<br></\\<acc.<br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "description": "Призывает <hyperlink>матриарха кошмарных пауков</hyperlink>.<br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
   "name": "Призыв кошмарного матриарха",
   "slug": "conjure_dread_matriarch_ability_000003BD00002895",
   "damage": "",
@@ -28264,7 +28243,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "4",
+  "range": "8",
   "icon": "000004C000000AC1"
  },
  {
@@ -30212,7 +30191,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<fullactioncontinue></fullactioncontinue>",
   "range": "4",
   "icon": "0000049700003325"
  },

@@ -186,7 +186,7 @@
   "resid": 5046586585047,
   "id": "Замок_вампиров_кузница_душ",
   "DLC": "THRONESOFBLOOD ",
-  "description": "<bulletlist><bullet>Открывает доступ к <hyperlink>кузнице предметов</hyperlink>, с помощью которой можно создавать уникальные артефакты для героев за счёт <bindingessence></bindingessence> <hyperlink>связующей квинтэссенции</hyperlink>.</bullet><bullet>Позволяет нанимать <hyperlink>молодых пауков-вампиров</hyperlink>, <hyperlink>гибельных нетопырей</hyperlink>, <hyperlink>визжащих нетопырей</hyperlink> и \\<\\<acc,c. На наём этих воинов тратятся <thralls></\\<acc,c. На наём этих воинов тратятся <thralls> <hyperlink>рабы</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Открывает доступ к <hyperlink>кузнице предметов</hyperlink>, с помощью которой можно создавать уникальные артефакты для героев за счёт <bindingessence></bindingessence> <hyperlink>связующей квинтэссенции</hyperlink>.</bullet><bullet>Позволяет нанимать <hyperlink>молодых пауков-вампиров</hyperlink>, <hyperlink>гибельных нетопырей</hyperlink>, <hyperlink>визжащих нетопырей</hyperlink> и <hyperlink>матриархов пауков-вампиров</hyperlink>. На наём этих воинов тратятся <thralls></thralls> <hyperlink>рабы</hyperlink>.</bullet></bulletlist>",
   "name": "Замок вампиров: кузница душ",
   "icon": "0000049700002FD8",
   "is_sector_upgrade": false
@@ -721,7 +721,7 @@
   "resid": 5046586573697,
   "id": "_conduit___Ледовый_мегалит",
   "DLC": "PRIMALFURY ",
-  "description": "<bulletlist><bullet>+6 <structureprod></structureprod> <hyperlink>Производство</hyperlink> за каждую заснеженную <hyperlink>провинцию</hyperlink> по соседству.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+4 <structureprod></structureprod> <hyperlink>Производство</hyperlink> за каждую заснеженную <hyperlink>провинцию</hyperlink> по соседству.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Ледовый мегалит",
   "icon": "0000049700000382",
   "is_sector_upgrade": true
@@ -2049,7 +2049,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "Укрепляющая_матрица_природы",
-  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы дают эффект «Регенерация» (2).",
+  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы рассеивают <hyperlink>отрицательные эффекты</hyperlink> (2).",
   "name": "Укрепляющая матрица природы",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -2491,7 +2491,7 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+40 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+40 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-20 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
   "resid": 4578435139242,
   "id": "Рынок_теней",
   "description": "",
@@ -2503,7 +2503,7 @@
  {
   "requirement_description": "",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+30 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-20 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
   "resid": 4578435139237,
   "id": "Коллекционер",
   "description": "",
@@ -3471,8 +3471,8 @@
  },
  {
   "requirement_description": "Для постройки требуются <quarry></quarry> <hyperlink>каменоломни</hyperlink> (4)<br></br><br></br>В городе можно иметь только 1 гильдию.",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+10 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
+  "cost": "500<gold></gold> 400<structureprod></structureprod> ",
+  "prediction_description": "<bulletlist><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+80 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink></bullet><bullet>+10 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
   "resid": 4282082401262,
   "id": "Гильдия_рабочих",
   "description": "",
@@ -3483,7 +3483,7 @@
  },
  {
   "requirement_description": "Требуются <quarry></quarry> <hyperlink>каменоломни</hyperlink> (2)",
-  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
+  "cost": "300<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+20 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
   "resid": 4282082401258,
   "id": "Зал_каменщиков",

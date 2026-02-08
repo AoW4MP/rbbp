@@ -399,7 +399,7 @@
   "id": "Ритуал_кровопускания",
   "DLC": "THRONESOFBLOOD ",
   "tactical": true,
-  "description": "Выбранный дружественный воин получает 5 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>, который невозможно блокировать. Затем все вражеские воины в радиусе 2 кл. от цели получают:<bulletlist><bullet>10 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>эффект «Кровотечение» (2) на 3 <turn></turn> х.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин получает 5 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>, который невозможно блокировать. Затем все вражеские воины в радиусе 1 кл. от цели получают:<bulletlist><bullet>10 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>эффект «Кровотечение» (2) на 3 <turn></turn> х.</bullet></bulletlist>",
   "name": "Ритуал кровопускания",
   "operation_point_cost": 15,
   "icon": "0000049700003296"
@@ -781,7 +781,7 @@
   "id": "Праведный_дух",
   "DLC": "ARCHONPROPHECY ",
   "tactical": false,
-  "description": "Придаёт выбранному народу стойкость в особенно тяжёлые моменты, наделяя их следующими особенностями:<bulletlist><bullet>когда <hp></hp> <hyperlink>здоровье</hyperlink> воинов падает ниже 60% от максимального запаса, они:<bulletlist></bullet><bullet>игнорируют 25% <hyperlink>потерь</hyperlink>;</bullet><bullet>получают +1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получают +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist>",
+  "description": "Придаёт выбранному народу стойкость в особенно тяжёлые моменты, наделяя их следующими особенностями:<bulletlist><bullet>+2 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>когда <hp></hp> <hyperlink>здоровье</hyperlink> воинов падает ниже 60% от максимального запаса, они:<bulletlist></bullet><bullet>игнорируют 25% <hyperlink>потерь</hyperlink>;</bullet><bullet>получают +1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>получают +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Праведный дух",
   "operation_point_cost": 250,
   "icon": "0000049700002A9E"
@@ -3148,9 +3148,6 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Боевой маг"
-   },
-   {
-    "requisite": "<unitSkirmisher></unitSkirmisher> Застрельщик"
    }
   ],
   "name": "Повышенная концентрация",
@@ -4811,7 +4808,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
   "id": "Оживить_землю",
   "tactical": false,
-  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> получает следующие особенности:<bulletlist><bullet>В провинции появляется особенность ландшафта «<hyperlink>Луга</hyperlink>» (если провинция на поверхности) или «<hyperlink>Грибные поля</hyperlink>» и «<hyperlink>Грибной лес</hyperlink>» (если провинция в подземелье).</bullet><bullet>Провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>», «<hyperlink>Сталагмиты</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
+  "description": "Выбранная дружественная или незанятая <hyperlink>провинция</hyperlink> и <hyperlink>провинции</hyperlink> по соседству получают следующие особенности:<bulletlist><bullet>В провинции появляется особенность ландшафта «<hyperlink>Луга</hyperlink>» (если провинция на поверхности) или «<hyperlink>Грибные поля</hyperlink>» и «<hyperlink>Грибной лес</hyperlink>» (если провинция в подземелье).</bullet><bullet>Провинция теряет особенности ландшафта «<hyperlink>Пропасть</hyperlink>», «<hyperlink>Болото</hyperlink>», «<hyperlink>Снег</hyperlink>», «<hyperlink>Лёд</hyperlink>», «<hyperlink>Пепелище</hyperlink>», «<hyperlink>Пески</hyperlink>», «<hyperlink>Поверхность пещеры</hyperlink>», «<hyperlink>Сталагмиты</hyperlink>» и «<hyperlink>Мрак</hyperlink>».</bullet></bulletlist>",
   "name": "Оживить землю",
   "operation_point_cost": 30,
   "icon": "0000041B00000D7C"
@@ -6919,7 +6916,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>",
   "id": "Кожа-листва",
   "tactical": false,
-  "description": "Выбранный народ становится един с лесом и получает следующие особенности:<bulletlist><bullet>+1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>+2 к <defensespirit></defensespirit> <hyperlink>сопротивлению магии духа</hyperlink>;</bullet><bullet>«Ходьба по лесам»;</bullet><bullet>«Лесной камуфляж».</bullet></bulletlist>",
+  "description": "Выбранный народ становится един с лесом и получает следующие особенности:<bulletlist><bullet>+2 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>«Ходьба по лесам»;</bullet><bullet>«Лесной камуфляж»</bullet><bullet>Имеют бонус +10 % к урону при сражении на территории: <hyperlink>Лес</hyperlink>, <hyperlink>Грибной лес</hyperlink>.</bullet></bulletlist>",
   "name": "Кожа-листва",
   "operation_point_cost": 250,
   "icon": "0000041B00000D41"
@@ -7379,10 +7376,19 @@
     "requisite": "<unitShield></unitShield> Воин со щитом"
    },
    {
+    "requisite": "<unitRanged></unitRanged> Стрелок"
+   },
+   {
     "requisite": "<unitPolearm></unitPolearm> Воин с пикой"
    },
    {
+    "requisite": "<unitSupport></unitSupport> Воин поддержки"
+   },
+   {
     "requisite": "<unitShock></unitShock> Ударный воин"
+   },
+   {
+    "requisite": "<unitBattleMage></unitBattleMage> Боевой маг"
    },
    {
     "requisite": "<unitFighter></unitFighter> Боец"
@@ -7503,7 +7509,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Песнь_стальной_ярости",
   "tactical": true,
-  "description": "Дружественные воины в радиусе 2 кл.: теряют все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект они получают:<bulletlist><bullet>«Дополнительная сила»;</bullet><bullet>«Удача»</bullet></bulletlist>",
+  "description": "Все дружественные воины теряют все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект они получают:<bulletlist><bullet>«Дополнительная сила»;</bullet><bullet>«Удача»</bullet></bulletlist>",
   "name": "Песнь стальной ярости",
   "operation_point_cost": 20,
   "icon": "0000041B00000115"
@@ -7613,6 +7619,17 @@
   "name": "Избранник Иландры",
   "operation_point_cost": 300,
   "icon": "000003DF000016E0"
+ },
+ {
+  "casting_cost": "150<gold></gold> ",
+  "resid": -3753916818180274834,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Жест_доброй_воли",
+  "tactical": false,
+  "description": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>",
+  "name": "Жест доброй воли",
+  "operation_point_cost": 100,
+  "icon": "CBE7688B0000056B"
  },
  {
   "casting_cost": "",

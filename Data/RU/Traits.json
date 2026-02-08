@@ -51,13 +51,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "1 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <mana></mana> <hyperlink>мане</hyperlink>;</bullet><bullet>Книги III ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "1 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+30 к <mana></mana> <hyperlink>мане</hyperlink>;</bullet><bullet>Книги III ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
-    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
-    "name": "3 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <influence></influence> <hyperlink>авторитету</hyperlink>;</bullet><bullet>Книги V ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "3 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <influence></influence> <hyperlink>авторитету</hyperlink>;</bullet><bullet>Книги V ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -793,16 +793,16 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Даёт 50 1 при успешном <hyperlink>разграблении</hyperlink> <hyperlink>улучшения провинции</hyperlink>."
+    "name": "Даёт 150 <food></food> <hyperlink>пищи</hyperlink> при успешном <hyperlink>разграблении</hyperlink> <hyperlink>улучшения провинции</hyperlink>."
    },
    {
-    "name": "Даёт 50 1 за каждое <hyperlink>улучшение провинции</hyperlink> при успешном <hyperlink>разрушении</hyperlink> <hyperlink>города</hyperlink>."
+    "name": "Даёт 150 <food></food> <hyperlink>пищи</hyperlink> за каждое <hyperlink>улучшение провинции</hyperlink> при успешном <hyperlink>разрушении</hyperlink> <hyperlink>города</hyperlink>."
    },
    {
-    "name": "Даёт 30 1 при успешном <hyperlink>заселении</hyperlink> захваченного <hyperlink>города</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>, однако затем город дополнительно теряет <population></population> население."
+    "name": "Даёт 90 <food></food> <hyperlink>пищи</hyperlink> при успешном <hyperlink>заселении</hyperlink> захваченного <hyperlink>города</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>, однако затем город дополнительно теряет <population></population> население."
    },
    {
-    "name": "<hyperlink>Вассалы</hyperlink> дают +10 <food></food> <hyperlink>Пища</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>."
+    "name": "<hyperlink>Вассалы</hyperlink> дают 30 <food></food> <hyperlink>пищи</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>."
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
@@ -864,7 +864,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 10 к <influence></influence> <hyperlink>авторитету</hyperlink>."
+    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 50 к <influence></influence> <hyperlink>авторитету</hyperlink>."
    },
    {
     "name": "Если у вас нет активных заданий за <hyperlink>награду</hyperlink>, вы всегда можете получить задание на уничтожение ближайшего <hyperlink>вторжения</hyperlink>, которое ещё не было целью. Однако если подходящего логова нет, задание не появится."
@@ -1058,51 +1058,6 @@
   "front_end": true,
   "icon": "0000049000000917",
   "display_order": 0
- },
- {
-  "affinities": [
-   {
-    "name": "<reputation4></reputation4> <hyperlink>Мировоззрение</hyperlink>"
-   }
-  ],
-  "biography_description": "В эпоху господства <hyperlink>Мирриды</hyperlink> <hyperlink>короли великанов</hyperlink> правили множеством миров по всему <hyperlink>Астральному морю</hyperlink>. Их безраздельная власть над материей не ограничивалась одной лишь природой — они видоизменяли даже тела своих подданных, вживляя в их плоть особые кристаллы, предотвращавшие старение. Впоследствии древние великаны воспользовались этими же кристаллами, чтобы сохранить свои воспоминания и чувства. После падения Мирриды власть над уцелевшими <hyperlink>Предвечными мудрецами</hyperlink> перешла к Советам Предвечных.",
-  "lore_description": "В эпоху господства <hyperlink>Мирриды</hyperlink> <hyperlink>короли великанов</hyperlink> правили множеством миров по всему <hyperlink>Астральному морю</hyperlink>. Их безраздельная власть над материей не ограничивалась одной лишь природой — они видоизменяли даже тела своих подданных, вживляя в их плоть особые кристаллы, предотвращавшие старение. Впоследствии древние великаны воспользовались этими же кристаллами, чтобы сохранить свои воспоминания и чувства. После падения Мирриды власть над уцелевшими <hyperlink>Предвечными мудрецами</hyperlink> перешла к Советам Предвечных.",
-  "DLC": "GIANTKINGS ",
-  "point_cost": 1,
-  "id": "Стражи_Сьялдрикх",
-  "name": "Стражи Сьялдрикх",
-  "incompatible_society_traits": [
-   {
-    "name": "Идейные каннибалы<evilact></evilact>"
-   },
-   {
-    "name": "Избранные объединители <goodact></goodact>"
-   },
-   {
-    "name": "Империалисты"
-   },
-   {
-    "name": "Легендарные охотники"
-   }
-  ],
-  "screen_description": "В тела этих прислужников <hyperlink>Предвечных мудрецов</hyperlink> вживлены магические кристаллы. Волшебство кристаллов укрепляет их плоть, а разум наполняет воспоминаниями давно сгинувших великанов.",
-  "effect_descriptions": [],
-  "enabled": false,
-  "front_end": false,
-  "type": "society",
-  "display_order": -1,
-  "starting_bonuses": [
-   {
-    "empire_progression_slug": "Раскопки"
-   },
-   {
-    "description": "Даёт случайно выбранные предметы для героев (1)."
-   },
-   {
-    "description": "100<influence></influence> "
-   }
-  ],
-  "icon": "0000048F000002E9"
  },
  {
   "lore_description": "Им суждено принести в мир великие перемены.",
@@ -1729,7 +1684,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +5 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +10 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2160,16 +2115,13 @@
  {
   "lore_description": "<helpcolor>Воины быстрее передвигаются в бою и на глобальной карте.</helpcolor>",
   "biography_description": "Они мастера в беге на длинные дистанции и обладают исключительной скоростью.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "Атлетика",
   "name": "Атлетика",
   "screen_description": "",
   "effect_descriptions": [
    {
     "name": "Способность «Высокая скорость», дающая 40 оч. перемещения на <hyperlink>глобальной карте</hyperlink> и в <hyperlink>сражении</hyperlink>."
-   },
-   {
-    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2379,7 +2331,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10% к урону от <casttactical></casttactical> <hyperlink>заклинаний урона</hyperlink>."
+    "name": "+20% к урону от <casttactical></casttactical> <hyperlink>заклинаний урона</hyperlink>."
    },
    {
     "name": "В начале боя Боевые маги и воины поддержки дают +5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink>."
@@ -2489,10 +2441,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -30% ед. <knowledge></knowledge> знания."
+    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -20% ед. <knowledge></knowledge> знания."
    },
    {
-    "name": "Поддержание <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> обходится на 30% дешевле."
+    "name": "Поддержание <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> обходится на 40% дешевле."
    }
   ],
   "enabled": true,
@@ -2523,7 +2475,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +2 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую каменоломню в своих <hyperlink>владениях</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +5 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую каменоломню в своих <hyperlink>владениях</hyperlink>."
    },
    {
     "name": "Особые улучшения провинции стоят -50% ед. <structureprod></structureprod> производство."
@@ -2684,7 +2636,7 @@
     "name": "+10 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>."
    },
    {
-    "name": "Использование <hyperlink>боевых заклинаний</hyperlink> стоит на -20% меньше <mana></mana> <hyperlink>маны</hyperlink>."
+    "name": "Использование <hyperlink>боевых заклинаний</hyperlink> стоит на -20% меньше <mana></mana> <hyperlink>маны</hyperlink> и <optactical></optactical> очки боевых заклинаний."
    }
   ],
   "enabled": true,
@@ -2721,7 +2673,7 @@
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
    },
    {
-    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +3 к <mana></mana> <hyperlink>мане</hyperlink> и +3 к <food></food> <hyperlink>пище</hyperlink> за каждый ранг погибших в бою воинов (кроме воинов <hyperlink>магического происхождения</hyperlink>)."
+    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +5 к <mana></mana> <hyperlink>мане</hyperlink> и +5 к <food></food> <hyperlink>пище</hyperlink> за каждый ранг погибших в бою воинов (кроме воинов <hyperlink>магического происхождения</hyperlink>)."
    }
   ],
   "enabled": true,
@@ -2752,7 +2704,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +3 к <gold></gold> <hyperlink>золоту</hyperlink> и +3 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый ранг убитых в бою воинов."
+    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +5 к <gold></gold> <hyperlink>золоту</hyperlink> и +5 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый ранг убитых в бою воинов."
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"

@@ -56,7 +56,7 @@
   "name": "Улучшенная логистика",
   "icon": "0000045E0000097E",
   "required_level": 10,
-  "cost": "500<influence></influence> "
+  "cost": "200<influence></influence> "
  },
  {
   "category": "Умения империи: материя",
@@ -101,7 +101,7 @@
   "repeat_cost_increase": "300<influence></influence> ",
   "icon": "000003E100001803",
   "required_level": 4,
-  "cost": "175<influence></influence> "
+  "cost": "200<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -111,7 +111,7 @@
   "name": "Раскопки",
   "icon": "000003E100001800",
   "required_level": 3,
-  "cost": "150<influence></influence> "
+  "cost": "125<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -121,7 +121,7 @@
   "name": "Строительство дорог",
   "icon": "000003E1000017FA",
   "required_level": 3,
-  "cost": "150<influence></influence> "
+  "cost": "125<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -195,7 +195,7 @@
   "name": "Приоритет дипломатии",
   "icon": "000003E100001EE8",
   "required_level": 2,
-  "cost": "125<influence></influence> "
+  "cost": "100<influence></influence> "
  },
  {
   "category": "Умения империи: порядок",
@@ -218,7 +218,7 @@
   "repeat_cost_increase": "50<influence></influence> ",
   "icon": "000003E100001DB0",
   "required_level": 5,
-  "cost": "200<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Умения империи: тень",
@@ -294,7 +294,7 @@
   "name": "Повышенная чувствительность",
   "icon": "000003E100001D12",
   "required_level": 9,
-  "cost": "400<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -304,7 +304,7 @@
   "name": "Ускоренный марш",
   "icon": "000003E100001D08",
   "required_level": 7,
-  "cost": "300<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -314,7 +314,7 @@
   "name": "Инфраструктура для телепортации",
   "icon": "000003E100001A16",
   "required_level": 8,
-  "cost": "350<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Обряд тени. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
@@ -398,7 +398,7 @@
   "name": "Специализация на осаде",
   "icon": "000003E1000019CE",
   "required_level": 6,
-  "cost": "250<influence></influence> "
+  "cost": "150<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -655,7 +655,7 @@
   "category": "Умения империи: порядок",
   "id": "Данники",
   "required_xp": 60,
-  "description": "<hyperlink>Вассалы</hyperlink> приносят в качестве дани +20 к <gold></gold> <hyperlink>золоту</hyperlink>.",
+  "description": "<hyperlink>Вассалы</hyperlink> приносят в качестве дани +10 к <gold></gold> <hyperlink>золоту</hyperlink>.",
   "name": "Данники",
   "icon": "000003E100001905",
   "required_level": 3,
@@ -1081,6 +1081,17 @@
   "required_affinity": "<arcana></arcana>"
  },
  {
+  "category": "Умения империи: порядок",
+  "id": "Данники",
+  "required_xp": 60,
+  "description": "<hyperlink>Вассалы</hyperlink> приносят в качестве дани +20 к <gold></gold> <hyperlink>золоту</hyperlink>.<br></br>Даёт <hyperlink>Глобальное заклинание</hyperlink> Жест доброй воли",
+  "name": "Данники",
+  "icon": "CBE7688B0000056B",
+  "required_level": 3,
+  "cost": "150<influence></influence> ",
+  "required_affinity": "<order></order>"
+ },
+ {
   "category": "Обряд хаоса. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_одержимости",
   "required_xp": 500,
@@ -1222,7 +1233,7 @@
   "category": "Умения империи: хаос",
   "id": "Принудительная_вербовка",
   "required_xp": 15,
-  "description": "<hyperlink>Воины</hyperlink> <hyperlink>ранга</hyperlink> I набирают <xp></xp> <hyperlink>опыт</hyperlink> на 50% быстрее.",
+  "description": "<hyperlink>Воины</hyperlink> <hyperlink>ранга</hyperlink> I и II набирают <xp></xp> <hyperlink>опыт</hyperlink> на 20% быстрее.",
   "name": "Принудительная вербовка",
   "icon": "CBE7688B000003B7",
   "required_level": 1,
