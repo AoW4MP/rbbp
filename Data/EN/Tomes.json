@@ -414,7 +414,7 @@
     "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
    },
    {
-    "description": "Gives target race strength in moments of weakness, giving them:<bulletlist><bullet>When this unit drops below % of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>:<bulletlist></bullet><bullet>Ignores % of its <hyperlink>Casualties</hyperlink>.</bullet><bullet>Gains + <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains + <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
+    "description": "Gives target race strength in moments of weakness, giving them:<bulletlist><bullet>+ <defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink></bullet><bullet>When this unit drops below % of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>:<bulletlist></bullet><bullet>Ignores % of its <hyperlink>Casualties</hyperlink>.</bullet><bullet>Gains + <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains + <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist></bulletlist>",
     "name": "Virtuous Spirit",
     "spell_slug": "virtuous_spirit",
     "tier": 3,
@@ -3821,7 +3821,7 @@
     "type": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>"
    },
    {
-    "description": "Target friendly or unowned <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+    "description": "Target friendly or unowned <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
     "name": "Restore the Land",
     "spell_slug": "restore_the_land",
     "tier": 3,
@@ -3936,7 +3936,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2<defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet></bulletlist>",
+    "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet><bullet>Have a +10 % bonus to damage when fighting in the following areas: <hyperlink>Forest</hyperlink>, <hyperlink>Mushroom Forest</hyperlink></bullet></bulletlist>",
     "name": "Leafskin",
     "spell_slug": "leafskin",
     "tier": 3,
@@ -4162,7 +4162,7 @@
   "icon": "0000041B000000E5",
   "skills": [
    {
-    "description": "Friendly units in a -hex radius: lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
+    "description": "All friendly units lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
     "name": "Steelfury Chant",
     "spell_slug": "steelfury_chant",
     "tier": 2,

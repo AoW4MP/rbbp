@@ -51,13 +51,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+30 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+200 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+200 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -793,16 +793,16 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
+    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
    },
    {
-    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
+    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
    },
    {
-    "name": "Gain 30 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
+    "name": "Gain 90 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
    },
    {
-    "name": "<hyperlink>Vassals</hyperlink> grant +10 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
+    "name": "<hyperlink>Vassals</hyperlink> grant 30 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -864,7 +864,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 10 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
+    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 50 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
    },
    {
     "name": "Whenever you have no <hyperlink>Bounties</hyperlink> active, gain a bounty offer targeting a nearby existing <hyperlink>Infestation</hyperlink> that hasn't been targeted before. It will not generate a new bounty if no more Infestations can be found."
@@ -1058,51 +1058,6 @@
   "front_end": true,
   "icon": "0000049000000917",
   "display_order": 0
- },
- {
-  "affinities": [
-   {
-    "name": "<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
-   }
-  ],
-  "biography_description": "In the eras of <hyperlink>Myrrida</hyperlink>, the <hyperlink>Giant Kings</hyperlink> governed the realms they reshaped in all corners of the <hyperlink>Astral Sea</hyperlink>. But their reshaping did not end with the terrain, as they also modified the inhabitants of the realms the Giants ruled, infusing them with special crystals that made their mortal bodies ageless. The Elder Giants would later use these same crystals to store memories and emotions. Since the fall of Myrrida, the <hyperlink>Eternal Sages</hyperlink> that remain are governed by Eternal Councils.",
-  "lore_description": "In the eras of <hyperlink>Myrrida</hyperlink>, the <hyperlink>Giant Kings</hyperlink> governed the realms they reshaped in all corners of the <hyperlink>Astral Sea</hyperlink>. But their reshaping did not end with the terrain, as they also modified the inhabitants of the realms the Giants ruled, infusing them with special crystals that made their mortal bodies ageless. The Elder Giants would later use these same crystals to store memories and emotions. Since the fall of Myrrida, the <hyperlink>Eternal Sages</hyperlink> that remain are governed by Eternal Councils.",
-  "DLC": "GIANTKINGS ",
-  "point_cost": 1,
-  "id": "siäldryh_sentinels",
-  "name": "Siäldryh Sentinels",
-  "incompatible_society_traits": [
-   {
-    "name": "Ritual Cannibals <evilact></evilact>"
-   },
-   {
-    "name": "Chosen Uniters <goodact></goodact>"
-   },
-   {
-    "name": "Imperialists"
-   },
-   {
-    "name": "Fabled Hunters"
-   }
-  ],
-  "screen_description": "These are the servants of the <hyperlink>Eternal Sages</hyperlink>. Their bodies have been augmented with magical crystals that fortify the body and imbue the mind with memories of long-gone Giants.",
-  "effect_descriptions": [],
-  "enabled": false,
-  "front_end": false,
-  "type": "society",
-  "display_order": -1,
-  "starting_bonuses": [
-   {
-    "empire_progression_slug": "excavation"
-   },
-   {
-    "description": "Get 1 random hero items."
-   },
-   {
-    "description": "100<influence></influence> "
-   }
-  ],
-  "icon": "0000048F000002E9"
  },
  {
   "lore_description": "Fated to bring about great change to the Realm.",
@@ -1729,7 +1684,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2160,16 +2115,13 @@
  {
   "lore_description": "<helpcolor>Units move faster in combat and on the world map.</helpcolor>",
   "biography_description": "Trained in long distance running, they are exceptionally fast.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "athletics",
   "name": "Athletics",
   "screen_description": "",
   "effect_descriptions": [
    {
     "name": "Fast Movement, having 40 movement on the <hyperlink>World Map</hyperlink> and in <hyperlink>Combat</hyperlink>."
-   },
-   {
-    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2379,7 +2331,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +10% damage."
+    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +20% damage."
    },
    {
     "name": "Battle Mage Units and Support Units provide +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
@@ -2489,10 +2441,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -30% <knowledge></knowledge> Knowledge to unlock."
+    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -20% <knowledge></knowledge> Knowledge to unlock."
    },
    {
-    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -30% upkeep."
+    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -40% upkeep."
    }
   ],
   "enabled": true,
@@ -2523,7 +2475,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +2 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
    },
    {
     "name": "Special Province Improvements cost -50% <structureprod></structureprod> Production."
@@ -2684,7 +2636,7 @@
     "name": "+10 <caststrategic></caststrategic> World Map Casting Points."
    },
    {
-    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> to cast."
+    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> and <optactical></optactical> Combat Casting Point to cast."
    }
   ],
   "enabled": true,
@@ -2721,7 +2673,7 @@
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "The nearest City owned gains +3 <mana></mana> <hyperlink>Mana</hyperlink> and +3 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
+    "name": "The nearest City owned gains +5 <mana></mana> <hyperlink>Mana</hyperlink> and +5 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
    }
   ],
   "enabled": true,
@@ -2752,7 +2704,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "The nearest City owned gains +3 <gold></gold> <hyperlink>Gold</hyperlink> and +3 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
+    "name": "The nearest City owned gains +5 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."

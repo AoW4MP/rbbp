@@ -56,7 +56,7 @@
   "name": "Advanced Logistics",
   "icon": "0000045E0000097E",
   "required_level": 10,
-  "cost": "500<influence></influence> "
+  "cost": "200<influence></influence> "
  },
  {
   "category": "Materium Empire Skill",
@@ -101,7 +101,7 @@
   "repeat_cost_increase": "300<influence></influence> ",
   "icon": "000003E100001803",
   "required_level": 4,
-  "cost": "175<influence></influence> "
+  "cost": "200<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -111,7 +111,7 @@
   "name": "Excavation",
   "icon": "000003E100001800",
   "required_level": 3,
-  "cost": "150<influence></influence> "
+  "cost": "125<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -121,7 +121,7 @@
   "name": "Road Building",
   "icon": "000003E1000017FA",
   "required_level": 3,
-  "cost": "150<influence></influence> "
+  "cost": "125<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -195,7 +195,7 @@
   "name": "Diplomatic Focus",
   "icon": "000003E100001EE8",
   "required_level": 2,
-  "cost": "125<influence></influence> "
+  "cost": "100<influence></influence> "
  },
  {
   "category": "Order Empire Skill",
@@ -218,7 +218,7 @@
   "repeat_cost_increase": "50<influence></influence> ",
   "icon": "000003E100001DB0",
   "required_level": 5,
-  "cost": "200<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Shadow Empire Skill",
@@ -294,7 +294,7 @@
   "name": "Advanced Sensing",
   "icon": "000003E100001D12",
   "required_level": 9,
-  "cost": "400<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -304,7 +304,7 @@
   "name": "Forced March",
   "icon": "000003E100001D08",
   "required_level": 7,
-  "cost": "300<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -314,7 +314,7 @@
   "name": "Teleporter Infrastructure",
   "icon": "000003E100001A16",
   "required_level": 8,
-  "cost": "350<influence></influence> "
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Shadow Rite. Repeatable +150 <influence></influence> <hyperlink>Imperium</hyperlink>",
@@ -398,7 +398,7 @@
   "name": "Siege Specialization",
   "icon": "000003E1000019CE",
   "required_level": 6,
-  "cost": "250<influence></influence> "
+  "cost": "150<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -655,7 +655,7 @@
   "category": "Order Empire Skill",
   "id": "tributaries",
   "required_xp": 60,
-  "description": "<hyperlink>Vassals</hyperlink> grant +20 <gold></gold> <hyperlink>Gold</hyperlink> in tribute.",
+  "description": "<hyperlink>Vassals</hyperlink> grant +10 <gold></gold> <hyperlink>Gold</hyperlink> in tribute.",
   "name": "Tributaries",
   "icon": "000003E100001905",
   "required_level": 3,
@@ -1081,6 +1081,17 @@
   "required_affinity": "<arcana></arcana>"
  },
  {
+  "category": "Order Empire Skill",
+  "id": "tributaries",
+  "required_xp": 60,
+  "description": "<hyperlink>Vassals</hyperlink> grant +20 <gold></gold> <hyperlink>Gold</hyperlink> in tribute.<br></br>Gain the Gesture of Goodwill <hyperlink>World Map Spell</hyperlink>",
+  "name": "Tributaries",
+  "icon": "CBE7688B0000056B",
+  "required_level": 3,
+  "cost": "150<influence></influence> ",
+  "required_affinity": "<order></order>"
+ },
+ {
   "category": "Chaos Rite. Repeatable +150 <influence></influence> <hyperlink>Imperium</hyperlink>",
   "id": "rite_of_possession",
   "required_xp": 500,
@@ -1222,7 +1233,7 @@
   "category": "Chaos Empire Skill",
   "id": "impressment",
   "required_xp": 15,
-  "description": "<hyperlink>Tier</hyperlink> I <hyperlink>Units</hyperlink> gain <hyperlink><xp></xp> Experience</hyperlink> +50% faster.",
+  "description": "<hyperlink>Tier</hyperlink> I and II <hyperlink>Units</hyperlink> gain <hyperlink><xp></xp> Experience</hyperlink> +20% faster.",
   "name": "Impressment",
   "icon": "CBE7688B000003B7",
   "required_level": 1,

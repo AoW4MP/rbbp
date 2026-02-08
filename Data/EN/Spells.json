@@ -399,7 +399,7 @@
   "id": "rite_of_bloodletting",
   "DLC": "THRONESOFBLOOD ",
   "tactical": true,
-  "description": "Target friendly unit sustains 5 unblockable <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>. Then all enemy units within 2 hexes:<bulletlist><bullet>Sustain 10 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain 2 Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "Target friendly unit sustains 5 unblockable <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>. Then all enemy units within 1 hexes:<bulletlist><bullet>Sustain 10 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain 2 Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Rite of Bloodletting",
   "operation_point_cost": 15,
   "icon": "0000049700003296"
@@ -781,7 +781,7 @@
   "id": "virtuous_spirit",
   "DLC": "ARCHONPROPHECY ",
   "tactical": false,
-  "description": "Gives target race strength in moments of weakness, giving them:<bulletlist><bullet>When this unit drops below 60% of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>:<bulletlist></bullet><bullet>Ignores 25% of its <hyperlink>Casualties</hyperlink>.</bullet><bullet>Gains +1 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
+  "description": "Gives target race strength in moments of weakness, giving them:<bulletlist><bullet>+2 <defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink></bullet><bullet>When this unit drops below 60% of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>:<bulletlist></bullet><bullet>Ignores 25% of its <hyperlink>Casualties</hyperlink>.</bullet><bullet>Gains +1 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Virtuous Spirit",
   "operation_point_cost": 250,
   "icon": "0000049700002A9E"
@@ -3148,9 +3148,6 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
-   },
-   {
-    "requisite": "<unitSkirmisher></unitSkirmisher> Skirmisher Unit"
    }
   ],
   "name": "Focus Aim",
@@ -4811,7 +4808,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "restore_the_land",
   "tactical": false,
-  "description": "Target friendly or unowned <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly or unowned <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Restore the Land",
   "operation_point_cost": 30,
   "icon": "0000041B00000D7C"
@@ -6919,7 +6916,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "leafskin",
   "tactical": false,
-  "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+2<defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet></bulletlist>",
+  "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet><bullet>Have a +10 % bonus to damage when fighting in the following areas: <hyperlink>Forest</hyperlink>, <hyperlink>Mushroom Forest</hyperlink></bullet></bulletlist>",
   "name": "Leafskin",
   "operation_point_cost": 250,
   "icon": "0000041B00000D41"
@@ -7379,10 +7376,19 @@
     "requisite": "<unitShield></unitShield> Shield Unit"
    },
    {
+    "requisite": "<unitRanged></unitRanged> Ranged Unit"
+   },
+   {
     "requisite": "<unitPolearm></unitPolearm> Polearm Unit"
    },
    {
+    "requisite": "<unitSupport></unitSupport> Support Unit"
+   },
+   {
     "requisite": "<unitShock></unitShock> Shock Unit"
+   },
+   {
+    "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -7503,7 +7509,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "steelfury_chant",
   "tactical": true,
-  "description": "Friendly units in a 2-hex radius: lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
+  "description": "All friendly units lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
   "name": "Steelfury Chant",
   "operation_point_cost": 20,
   "icon": "0000041B00000115"
@@ -7613,6 +7619,17 @@
   "name": "Ilandra's Chosen",
   "operation_point_cost": 300,
   "icon": "000003DF000016E0"
+ },
+ {
+  "casting_cost": "150<gold></gold> ",
+  "resid": -3753916818180274834,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "gesture_of_goodwill",
+  "tactical": false,
+  "description": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>.",
+  "name": "Gesture of Goodwill",
+  "operation_point_cost": 100,
+  "icon": "CBE7688B0000056B"
  },
  {
   "casting_cost": "",

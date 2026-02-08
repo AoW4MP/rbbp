@@ -3677,7 +3677,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "All friendly units in a 2-hex radius:<bulletlist><bullet>Heal +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain a stack of Grace</bullet></bulletlist>",
+  "description": "All friendly units in a 2-hex radius:<bulletlist><bullet>Heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain a stack of Grace</bullet></bulletlist>",
   "name": "Angelic Grace",
   "slug": "angelic_grace_ability_00000490000028FF",
   "damage": "",
@@ -3687,7 +3687,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "0",
   "icon": "000004C0000004A5"
  },
@@ -4752,9 +4752,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4764,7 +4761,7 @@
   "icon": "0000048D00001472"
  },
  {
-  "description": "This unit gains +5 <hp></hp> Hit Points per stack of Affinity Incarnate.",
+  "description": "This unit gains +8 <hp></hp> Hit Points per stack of Affinity Incarnate.",
   "name": "Incarnate Fortitude",
   "slug": "0000048d0000172a",
   "icon": "0000048D000014AE"
@@ -4781,9 +4778,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4804,9 +4798,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4827,9 +4818,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4850,9 +4838,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -4873,9 +4858,6 @@
    },
    {
     "requisite": "Base"
-   },
-   {
-    "requisite": "Single Shot"
    }
   ],
   "accuracy": "100%",
@@ -17497,7 +17479,7 @@
   "description": "Fire Magelock Pistol at target unit.",
   "name": "Harrying Shot",
   "slug": "harrying_shot_ability_000003E3000071AF",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "26<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -17509,9 +17491,9 @@
     "requisite": "Single Shot"
    }
   ],
-  "accuracy": "90%",
+  "accuracy": "80%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
@@ -20716,7 +20698,7 @@
   "icon": "0000048D00001AA2"
  },
  {
-  "description": "At the end of this unit's turn:<bulletlist><bullet>Heal for 15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per adjacent enemy unit.</bullet></bulletlist>",
+  "description": "At the end of this unit's turn:<bulletlist><bullet>Heal for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per adjacent enemy unit.</bullet></bulletlist>",
   "name": "Despotic Vitality",
   "slug": "0000048d00001ade",
   "icon": "0000048D00001AE1"
@@ -21138,9 +21120,6 @@
   "requisites": [
    {
     "requisite": "Melee"
-   },
-   {
-    "requisite": "Single Shot"
    },
    {
     "requisite": "Base"
@@ -26632,7 +26611,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Conjure a .<br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "description": "Conjure a <hyperlink>Vampire Spider Matriarch</hyperlink>.<br></br>This summon lasts for 3 <turn></turn> Turns.",
   "name": "Conjure Vampire Spider Matriarch",
   "slug": "conjure_vampire_matriarch_ability_000003BD00002895",
   "damage": "",
@@ -26734,7 +26713,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Conjure a .<br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "description": "Conjure a <hyperlink>Dread Spider Matriarch</hyperlink>.<br></br>This summon lasts for 3 <turn></turn> Turns.",
   "name": "Conjure Dread Matriarch",
   "slug": "conjure_dread_matriarch_ability_000003BD00002895",
   "damage": "",
@@ -28264,7 +28243,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "4",
+  "range": "8",
   "icon": "000004C000000AC1"
  },
  {
@@ -30212,7 +30191,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<fullactioncontinue></fullactioncontinue>",
   "range": "4",
   "icon": "0000049700003325"
  },
