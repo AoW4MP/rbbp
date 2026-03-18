@@ -225,7 +225,7 @@
                 const divOG = document.getElementById(divFromID);
 
                 const divTO = document.getElementById(divToID);
-                console.log(divOG, divTO);
+              //  console.log(divOG, divTO);
                 if (divOG == undefined || divTO == undefined) {
                     return;
                 }
@@ -409,7 +409,7 @@
                         const skill = tome.skills[k];
                         if ("upgrade_slug" in skill && ListOfCityBuildings.includes(skill.upgrade_slug)) {
                             TomeBuildings.push({
-                                tomeId: tome.id, // Tome ID
+                                tomeId: tome, // Tome ID
                                 buildingId: skill.upgrade_slug // Building ID
                             });
                         }
@@ -507,6 +507,21 @@
                     color: "rgb(17, 17, 17)",
                     title: "Architect"
                 },
+                 {
+                    key: "nomad",
+                    color: "rgb(17, 17, 17)",
+                    title: "Nomad"
+                },
+                   {
+                    key: "nomad_conquerors",
+                       color: "rgb(17, 17, 17)",
+                    title: "Nomad Conquerors"
+                },
+                 {
+                    key: "nomad_scavengers",
+                       color: "rgb(17, 17, 17)",
+                    title: "Nomad Scavengers"
+                },
                 {
                     key: "reaver",
                     color: "rgb(17, 17, 17)",
@@ -514,31 +529,33 @@
                 }
             ];
 
-            const overrideBuildings = {
+            
+            
+             const overrideBuildings = {
                 /*throne: ["town_hall_i_town_center: throne"],*/
                 feudal: [
                     "town_hall_ii:town_hall_ii_castle",
                     "town_hall_iii:town_hall_iii_citadel",
                     "town_hall_iv:town_hall_iv_grand_estate"
                 ],
-                feudal_monarchy: ["workshop:militia_barracks", "blacksmith:royal_smith", "iii_unlock:lords_manor"],
+                feudal_monarchy: ["workshop:militia_barracks", "blacksmith:royal_smith", "iii_unlock_2:retainers_estate"],
                 feudal_aristocracy: [
                     "store_house:house_hunting_grounds",
                     "granary:serf_quarters",
-                    "iii_unlock_2:retainers_estate"
+                    "iii_unlock:lords_manor"
                 ],
                 dark: [
                     "town_hall_ii:town_hall_ii_dread_spire",
                     "town_hall_iii:town_hall_iii_stronghold",
-                    "iii_unlock:overlords_tower",
+                
                     "town_hall_iv:town_hall_iv_black_palace"
                 ],
 
-                dark_cult_of_tyranny: ["market:collector", "mint:shadowtrade_quarter"],
-                dark_cult_of_death: ["mana_obelisk:grave_obelisk", "monolith:crypt-temple"],
+                dark_cult_of_tyranny: ["market:collector", "mint:shadowtrade_quarter", "iii_unlock:overlords_tower"],
+                dark_cult_of_death: ["mana_obelisk:grave_obelisk", "monolith:crypt-temple", "iii_unlock_2:soulvault"],
                 barbarian: [
-                    "library:battle_ritual_site",
-                    "arcane_institute:ancestral_seer_hall",
+                    "shrine:battle_ritual_site",
+                    "mana_obelisk:ancestral_seer_hall",
                     "town_hall_ii:town_hall_ii_communal_tent",
                     "town_hall_iii:town_hall_iii_halls_of_war",
                     "iii_unlock:shrine_of_the_wargod",
@@ -602,7 +619,15 @@
                     "town_hall_iii:town_hall_iii_ascended_gardens",
                     "iii_unlock:affinity_obelisks",
                     "town_hall_iv:town_hall_iv_pinnacle_of_the_incarnate"
-                ]
+                ],
+                 nomad: [
+                  
+                    "town_hall_ii:town_hall_ii_council_deck",
+                    "town_hall_iii:town_hall_iii_cartography_bilge",
+                    "town_hall_iv:town_hall_iv_pinnacle_bridge","stone_walls:sentry_nests"
+                ],
+                   nomad_conquerors: ["store_house:raider_tents", "granary:trophy_stores", "iii_unlock:conquerors_tower"],
+                  nomad_scavengers: ["workshop:salvage_shop", "blacksmith:loot_armory", "iii_unlock_2:scavenger_vault"],
             };
 
             function findResources(text) {
@@ -635,13 +660,18 @@
                 // Convert overrideBuildings into a lookup map for easy matching
                 const overrideMap = {};
 
-                for (const [overrideName, list] of Object.entries(overrideBuildings)) {
+                //
+               // if(showBetaTooltip.checked){
+                
+                     for (const [overrideName, list] of Object.entries(overrideBuildings)) {
                     for (const entry of list) {
                         const [base, extra] = entry.split(":");
                         if (!overrideMap[base]) overrideMap[base] = [];
                         overrideMap[base].push({ overrideName, extra });
                     }
                 }
+               
+               
 
                 // Now loop through TestBase
                 let row = 0;
@@ -867,7 +897,13 @@
                 var newNodeBackground = document.createElement("DIV");
 
                 var img = document.createElement("IMG");
-                img.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + structureInfo.icon + ".png");
+                // different palce when its the 4 I added here
+                if(extraBuildings.includes(structureInfo)){
+                     img.setAttribute("src", "/rbbp/Icons/ExtraIcons/" + structureInfo.icon + ".png");
+                }else{
+                     img.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + structureInfo.icon + ".png");
+                }
+          
                 img.setAttribute("height", "60px");
                 img.className = "structureNodeIcon";
                 newNode.setAttribute("id", structureInfo.id);
@@ -943,7 +979,7 @@
                 }
 
                 if (tomeID) {
-                    newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/TomeIcons/' + tomeID + '.png")';
+                    newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/TomeIcons/' + tomeID.icon + '.png")';
                     newNodeBackground.style.backgroundRepeat = "no-repeat";
                     newNodeBackground.style.backgroundPositionX = "140px";
                     newNodeBackground.style.backgroundSize = "80px";
@@ -990,7 +1026,7 @@
             }
         </script>
 
-        <title>Age of Wonders 4 RbbP - City Tree</title>
+        <title>Age of Wonders 4 Database - City Tree</title>
     </head>
 
     <body>
@@ -1108,6 +1144,15 @@
                         checked="checked"
                         onchange="reDrawAll()" />
                     Architect
+                </label>
+                   <label class="switch">
+                    <input
+                        type="checkbox"
+                        name="checkToggle"
+                        id="nomadCheck"
+                        checked="checked"
+                        onchange="reDrawAll()" />
+                    Nomad
                 </label>
             </div>
         </div>

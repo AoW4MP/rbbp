@@ -48,7 +48,8 @@ const worldStructuresChecked = document.getElementById("worldStructuresCheck");
 const cityStructuresChecked = document.getElementById("cityStructuresCheck");
 const ambitionsChecked = document.getElementById("ambitionsCheck");
 
-var deprecatedCheckList = ["000003e300005fe2", "000003e300005fe5", "000003e300005fe7", "000003e300005fe6"];
+const deprecatedCheckList = ["000003e300005fe2", "000003e300005fe5", "000003e300005fe7", "000003e300005fe6"];
+const invalidUnitCheckList = ["fracture", "townsman"];
 
 function normalizeText(str) {
     return Sanitize(str || "").toUpperCase();
@@ -68,7 +69,8 @@ function isInArray(array, search) {
 
 async function rememberSearch() {
     // filter settings
-    const params = new URLSearchParams(window.location.search);
+    const rawSearch = window.location.search.replace(/&amp;/g, "&");
+    let params = new URLSearchParams(rawSearch);
     const filters = (params.get("f") || "").split(",");
     if (filters != "") {
         for (const [id, code] of Object.entries(filterMap)) {
@@ -127,6 +129,10 @@ function searchData(keywords) {
 }
 
 function depCheckResID(resid) {
+    let unitEN = findBy(jsonUnits, "resid", resid);
+    if (invalidUnitCheckList.includes(unitEN.id)) {
+        return true;
+    }
     let unit = findBy(jsonUnitsLocalized, "resid", resid);
     if (unit != undefined) {
         for (let l = 0; l < unit.primary_passives.length; l++) {
@@ -138,31 +144,39 @@ function depCheckResID(resid) {
     return false;
 }
 
-function DLCCheck(fieldToSearch){
-     return fieldToSearch.toUpperCase() in dlcMap;
+function DLCCheck(fieldToSearch) {
+    return fieldToSearch.toUpperCase() in dlcMap;
 }
 
-function DLCAdd(jsonLookup, DLC, type, toArray){
+function DLCAdd(jsonLookup, DLC, type, toArray, depCheck = false) {
     const results = new Set();
-      for (const unit of jsonLookup) {
-              if("DLC" in unit){
-                  if(unit.DLC.indexOf(DLC) != -1){
-                      if(type == null){
+    for (const unit of jsonLookup) {
+        if ("DLC" in unit) {
+            if (unit.DLC.indexOf(DLC) != -1) {
+                if (depCheck == true) {
+                    if (!depCheckResID(unit.resid)) {
+                        if (type == null) {
                             results.add(unit);
-                      }else{
+                        } else {
                             results.add(unit[type]);
-                      }
-                     
-                  }
-              }
-          }
-  //  console.log(results);
-    if(toArray){
-        return Array.from(results);
-    }else{
-          return results;
+                        }
+                    }
+                } else {
+                    if (type == null) {
+                        results.add(unit);
+                    } else {
+                        results.add(unit[type]);
+                    }
+                }
+            }
+        }
     }
-        
+    //  console.log(results);
+    if (toArray) {
+        return Array.from(results);
+    } else {
+        return results;
+    }
 }
 
 function returnUnitList(fieldToSearch) {
@@ -170,13 +184,10 @@ function returnUnitList(fieldToSearch) {
 
     const search = fieldToSearch.toLowerCase();
     const results = new Set();
-    
-   if (DLCCheck(fieldToSearch)){
-      return DLCAdd(jsonUnits, fieldToSearch, "id", false);
-   }
-     
-        
 
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonUnits, fieldToSearch, "id", false, depCheck = true);
+    }
 
     // --- Name-based search ---
 
@@ -222,11 +233,10 @@ function returnEmpireTreeList(fieldToSearch) {
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-     if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonEmpire, fieldToSearch, "id", true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonEmpire, fieldToSearch, "id", true);
+    }
 
     for (const spell of jsonEmpireLocalized) {
         const name = spell.name?.toUpperCase() || "";
@@ -246,11 +256,10 @@ function returnSpellList(fieldToSearch) {
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-     if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonSpells, fieldToSearch, "id", true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonSpells, fieldToSearch, "id", true);
+    }
 
     for (const spell of jsonSpellsLocalized) {
         const name = spell.name?.toUpperCase() || "";
@@ -270,11 +279,10 @@ function returnAmbitionsList(fieldsToSearch) {
 
     const search = fieldsToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-     if (DLCCheck(fieldsToSearch)){
-        
-      return DLCAdd(jsonHeroAmbitions, fieldsToSearch, null, true);
-   }
+
+    if (DLCCheck(fieldsToSearch)) {
+        return DLCAdd(jsonHeroAmbitions, fieldsToSearch, null, true);
+    }
 
     for (const trait of jsonHeroAmbitionsLocalized) {
         const name = trait.name?.toUpperCase() || "";
@@ -289,20 +297,42 @@ function returnAmbitionsList(fieldsToSearch) {
     return Array.from(results);
 }
 
-function returnTraitsList(fieldToSearch) {
+function returnLocList(fieldsToSearch) {
+    if (!fieldsToSearch) return [];
+
+    const search = fieldsToSearch.replaceAll("_", " ").toUpperCase();
+    const results = new Set();
+
+    if (DLCCheck(fieldsToSearch)) {
+        return DLCAdd(jsonHeroAmbitions, fieldsToSearch, null, true);
+    }
+
+    for (const entry of jsonAllFromPOLocalized) {
+        const name = entry.name?.toUpperCase() || "";
+        const description = Sanitize(entry.description || "").toUpperCase();
+
+        if (name.includes(search) || description.includes(search)) {
+            // const traitEN = findBy(jsonHeroAmbitions, "icon", trait.icon);
+            results.add(entry);
+        }
+    }
+
+    return Array.from(results);
+}
+
+function returnTraitsList(fieldToSearch, locToCheck) {
     if (!fieldToSearch) return [];
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-      if (DLCCheck(fieldToSearch)){
-      
-        let  setExtra = DLCAdd(jsonFactionCreation2, fieldToSearch, "id", true);
-             const  setExtra2 = DLCAdd(jsonFactionCreation, fieldToSearch, "id", true);
-           setExtra = new Set([...setExtra, ...setExtra2]);
-       
-      return Array.from(setExtra);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        let setExtra = DLCAdd(jsonFactionCreation2, fieldToSearch, "id", true);
+        const setExtra2 = DLCAdd(jsonFactionCreation, fieldToSearch, "id", true);
+        setExtra = new Set([...setExtra, ...setExtra2]);
+
+        return Array.from(setExtra);
+    }
 
     for (const trait of jsonFactionCreation2) {
         const name = trait.name?.toUpperCase() || "";
@@ -320,13 +350,22 @@ function returnTraitsList(fieldToSearch) {
             }
         }
     }
+    // manual check
     for (const trait of jsonFactionCreation) {
         const name = trait.name?.toUpperCase() || "";
         const description = Sanitize(trait.description || "").toUpperCase();
 
+        // check lookup
+        if ("extraLookup" in trait) {
+            const exists = locToCheck.some((e) => e.id === trait.extraLookup);
+
+            if (exists) {
+                results.add(trait.id);
+            }
+        }
+
         if (name.includes(search) || description.includes(search)) {
             // const traitEN = findBy(jsonFactionCreation, "id", trait.id);
-            results.add(trait.id);
         }
     }
 
@@ -339,11 +378,10 @@ function returnSkillList(fieldToSearch) {
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const heroSlugs = new Set();
     const results = new Set();
-    
-      if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonHeroSkills, fieldToSearch, null, true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonHeroSkills, fieldToSearch, null, true);
+    }
 
     const matches = (text) => text && text.toUpperCase().includes(search);
 
@@ -365,7 +403,7 @@ function returnSkillList(fieldToSearch) {
             }
         }
     }
-    console.log(heroSlugs);
+    // console.log(heroSlugs);
 
     // Match hero skills
     for (const skill of jsonHeroSkillsLocalized) {
@@ -397,12 +435,10 @@ function returnEquipList(fieldToSearch) {
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const equipSet = new Set();
     const resultsSet = new Set();
-    
-     
-     if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonHeroItems, fieldToSearch, null, true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonHeroItems, fieldToSearch, null, true);
+    }
 
     // Collect abilities matching the search
     for (const ability of jsonUnitAbilitiesLocalized) {
@@ -452,11 +488,10 @@ function returnSiegeProj(fieldToSearch) {
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-      if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonSiegeProjects, fieldToSearch, "id", true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonSiegeProjects, fieldToSearch, "id", true);
+    }
 
     for (const spell of jsonSiegeProjectsLocalized) {
         const name = spell.name?.toUpperCase() || "";
@@ -478,35 +513,29 @@ function Sanitize(string) {
     return string;
 }
 
-function returnWorldStructure(fieldToSearch) {
+function returnWorldStructure(fieldToSearch, locToCheck) {
     if (!fieldToSearch) return [];
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
-    
-    
-      if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonWorldStructures, fieldToSearch, "id", true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonWorldStructures, fieldToSearch, "id", true);
+    }
 
     for (const entry of jsonWorldStructures) {
         const name = entry.name?.toUpperCase() || "";
         const description = Sanitize(entry.description || "").toUpperCase();
-  let description2  = "";
+
         if ("extraLookup" in entry) {
-            const traitExtra = findBy(jsonAllFromPOLocalized, "id", entry.extraLookup);
-            // console.log(Object.entries(traitExtra));
-            if ("description" in traitExtra) {
-               // console.log(traitExtra.description);
-                   description2 = Sanitize(traitExtra.description || "").toUpperCase();
-               // if (traitExtra.description.includes(search)) {
-                 //   results.add(entry.id);
-                //}
+            const exists = locToCheck.some((e) => e.id === entry.extraLookup);
+
+            if (exists) {
+                results.add(entry.id);
             }
         }
 
-        if (name.includes(search) || description.includes(search) || description2.includes(search)) {
+        if (name.includes(search) || description.includes(search)) {
             results.add(entry.id);
         }
     }
@@ -520,11 +549,10 @@ function returnStructure(fieldToSearch) {
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
     const results = new Set();
     const excludeSet = new Set(excludeListStructures);
-    
-      if (DLCCheck(fieldToSearch)){
-        
-      return DLCAdd(jsonStructureUpgrades, fieldToSearch, "id", true);
-   }
+
+    if (DLCCheck(fieldToSearch)) {
+        return DLCAdd(jsonStructureUpgrades, fieldToSearch, "id", true);
+    }
 
     const checkAndAdd = (struct, text) => {
         if (text && text.toUpperCase().includes(search) && !excludeSet.has(struct.id)) {
@@ -548,9 +576,9 @@ function searchAll(keyword) {
 
     var fields = keyword.split("+", 3);
     let listSet = new Set();
-    
+
     // return all DLC stuff
-  
+
     if (unitsChecked.checked) {
         listSet = returnUnitList(fields[0]);
         listSet = returnAbilitiesUnits(fields[0], listSet);
@@ -560,16 +588,22 @@ function searchAll(keyword) {
     let listspells = spellsChecked.checked ? returnSpellList(fields[0]) : "";
     let listSiegeProj = siegeChecked.checked ? returnSiegeProj(fields[0]) : "";
     let listskills = heroSkillChecked.checked ? returnSkillList(fields[0]) : "";
-    let listTraits = factionTraitsChecked.checked ? returnTraitsList(fields[0]) : "";
-   
+
     let listStructures = cityStructuresChecked.checked ? returnStructure(fields[0]) : "";
-    let listWorldStructures = worldStructuresChecked.checked ? returnWorldStructure(fields[0]) : "";
     let listEmpireTree = empireTreeChecked.checked ? returnEmpireTreeList(fields[0]) : "";
     let listEquip = heroItemsChecked.checked ? returnEquipList(fields[0]) : "";
     let listAmbtions = ambitionsChecked.checked ? returnAmbitionsList(fields[0]) : "";
+    // javascript exports
+    // get all localization and then back
+    let listOfLocEntries = returnLocList(fields[0]);
+    // check if IDs are used in any of the javascript exported files
+
+    // console.log(listOfLocEntries);
+    let listTraits = factionTraitsChecked.checked ? returnTraitsList(fields[0], listOfLocEntries) : "";
+    let listWorldStructures = worldStructuresChecked.checked ? returnWorldStructure(fields[0], listOfLocEntries) : "";
 
     var buttonHolder = document.getElementById("buttonHolder");
- 
+
     buttonHolder.innerHTML = "";
     var dataHolder = document.getElementById("dataHolder");
     dataHolder.innerHTML = "";
@@ -580,7 +614,9 @@ function searchAll(keyword) {
     });
 
     if (list.length > 0) {
-        SetButtonsAndDivs(list, "buttonHolder", "searchUnit", undefined, undefined, undefined);
+           SetCollapsibleButtonsAndDivs("Units", list, "unit");
+    SetButtonsAndDivs(list, "Units" + "-button","searchUnit", undefined, undefined, undefined);
+     //   SetButtonsAndDivs(list, "buttonHolder", "searchUnit", undefined, undefined, undefined);
     }
     if (listspells.length > 0) {
         SetCollapsibleButtonsAndDivs("Spells", listspells, "searchSpell");
@@ -603,9 +639,8 @@ function searchAll(keyword) {
     if (listEmpireTree.length > 0) {
         SetCollapsibleButtonsAndDivs("Empire Tree", listEmpireTree, "searchEmpire");
     }
-   
+
     if (listTraits.length > 0) {
-        
         SetCollapsibleButtonsAndDivs("Faction Traits", listTraits, "searchTraits");
     }
     if (listAmbtions.length > 0) {
@@ -613,6 +648,7 @@ function searchAll(keyword) {
     }
 
     SetLevelUpStuff();
+      SetCollapsibleStuff();
 }
 
 function returnAbilitiesUnits(fieldToSearch, unitSetToCheckTo) {

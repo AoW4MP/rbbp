@@ -1,5 +1,16 @@
 [
  {
+  "resid": 5046586586875,
+  "cost": "60<mana></mana> ",
+  "id": "Эдикт_завоевателя",
+  "DLC": "RISEFROMRUIN ",
+  "description": "<bulletlist><bullet>Во время осады все дружественные воины получают способность «Кольцо осады».</bullet><bullet>В бою:<bulletlist></bullet><bullet>Все дружественные воины получают +15% к <hyperlink>критическому удару</hyperlink>.</bullet><bullet>Случайные клетки <hyperlink>воспламеняются</hyperlink>.</bullet></bulletlist><bullet>В случае победы разрушение или заселение этого города занимает на 1 <turn></turn> х. меньше.</bullet></bulletlist>",
+  "name": "Эдикт завоевателя",
+  "siege_health_damage": 4,
+  "needs_research_to_unlock": true,
+  "icon": "00000497000036CC"
+ },
+ {
   "resid": 5046586583803,
   "cost": "70<mana></mana> ",
   "id": "Пророчество_о_падении",
@@ -23,7 +34,7 @@
  },
  {
   "resid": 5003636899977,
-  "cost": "100<gold></gold> ",
+  "cost": "200<gold></gold> ",
   "id": "Построить_осадные_пушки",
   "DLC": "EMPIRESANDASHES ",
   "description": "<bulletlist>К сражению на стороне атакующих до конца боя присоединяются <hyperlink>магострельные пушки</hyperlink> (2).<bullet>В <hyperlink>сражении</hyperlink> можно использовать только один вид осадных орудий. Если в ходе осады применялось несколько разных <hyperlink>осадных проектов</hyperlink>, при штурме будут выбраны наиболее мощные из них.</bullet></bulletlist>",
@@ -34,7 +45,7 @@
  },
  {
   "resid": 4853313044741,
-  "cost": "100<gold></gold> ",
+  "cost": "150<gold></gold> ",
   "id": "Построить_большую_бомбарду",
   "DLC": "EMPIRESANDASHES ",
   "description": "К сражению на стороне атакующих до конца боя присоединяется <hyperlink>большая бомбарда</hyperlink>.<bulletlist><bullet>Большая бомбарда — это статичное осадное орудие.</bullet><bullet>В <hyperlink>сражении</hyperlink> можно использовать только один вид осадных орудий. Если в ходе осады применялось несколько разных <hyperlink>осадных проектов</hyperlink>, при штурме будут выбраны наиболее мощные из них.</bullet></bulletlist>",
@@ -87,7 +98,7 @@
   "resid": 4514010631183,
   "cost": "50<mana></mana> ",
   "id": "Спустить_боевых_гончих",
-  "description": "<bulletlist><bullet>К сражению на стороне атакующих присоединяются <hyperlink>боеваи гончие</hyperlink> (6). После окончания боя они пропадают.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>К сражению на стороне атакующих присоединяются <hyperlink>боевые гончие</hyperlink> (6). После окончания боя они пропадают.</bullet></bulletlist>",
   "name": "Спустить боевых гончих",
   "siege_health_damage": 0,
   "needs_research_to_unlock": true,
@@ -95,7 +106,7 @@
  },
  {
   "resid": 4514010630994,
-  "cost": "200<mana></mana> ",
+  "cost": "20<mana></mana> ",
   "id": "Неразбериха",
   "description": "В начале сражения вражеские воины:<bulletlist><bullet>перемещаются на 4 кл.;</bullet><bullet>на 3 <turn></turn> <hyperlink>Ходы</hyperlink> получают эффект «Невезение»;</bullet><bullet>на 1 <turn></turn> <hyperlink>Ходы</hyperlink> получают эффект «Скорость снижена».</bullet></bulletlist>",
   "name": "Неразбериха",
@@ -165,7 +176,7 @@
  },
  {
   "resid": 4389456579064,
-  "cost": "100<gold></gold> ",
+  "cost": "200<gold></gold> ",
   "id": "Построить_онагры",
   "description": "<bulletlist><bullet>К сражению на стороне атакующих до конца боя присоединяются <hyperlink>онагр</hyperlink> (2). После боя они пропадают.</bullet><bullet><hyperlink>Онагр</hyperlink> — это статичное Осадные орудия с большой дальностью стрельбы и атакой по области. Особенно эффективен против препятствий, однако точность против других <hyperlink>воинов</hyperlink> невысока.</bullet><bullet>В <hyperlink>сражении</hyperlink> можно использовать только один вид осадных орудий. Если в ходе осады применялось несколько разных <hyperlink>осадных проектов</hyperlink>, при штурме будут выбраны наиболее мощные орудия.</bullet></bulletlist>",
   "name": "Построить онагры",
@@ -206,12 +217,12 @@
  },
  {
   "resid": 4273492487097,
-  "cost": "60<mana></mana> ",
+  "cost": "150<mana></mana> ",
   "id": "Налёт_драконов",
   "DLC": "DRAGONLORDS ",
-  "description": "<bulletlist><bullet>В начале боя:<bulletlist></bullet><bullet>защитники города получают 26 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>с базовой вероятностью 90% к защитникам города может быть применён эффект «Горение»;</bullet><bullet>добавляются <hyperlink>пожары</hyperlink> в случайных местах;</bullet><bullet>большинство <hyperlink>укреплений</hyperlink> будут охвачены <hyperlink>огнём</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "<bulletlist><bullet>В начале боя:<bulletlist></bullet><bullet>защитники города получают 26 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>с базовой вероятностью 120% к защитникам города может быть применён эффект «Горение»;</bullet><bullet>добавляются <hyperlink>пожары</hyperlink> в случайных местах;</bullet><bullet>большинство <hyperlink>укреплений</hyperlink> будут охвачены <hyperlink>огнём</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Налёт драконов",
-  "siege_health_damage": 0,
+  "siege_health_damage": 5,
   "needs_research_to_unlock": true,
   "icon": "000003E300006B93"
  },
@@ -227,7 +238,7 @@
  },
  {
   "resid": 4273492483443,
-  "cost": "100<gold></gold> ",
+  "cost": "160<gold></gold> ",
   "id": "Строительство_многозарядных_баллист",
   "description": "<bulletlist>К сражению на стороне атакующих до конца боя присоединяются <hyperlink>многозарядные баллисты</hyperlink> (2). После боя они пропадают.<bullet><hyperlink>Многозарядные баллисты</hyperlink> — это статичные осадные орудия с большой дальностью стрельбы и атакой по области. В отличие от <hyperlink>онагр</hyperlink>, они обладают высокой скорострельностью.</bullet><bullet>В <hyperlink>сражении</hyperlink> можно использовать только один вид осадных орудий. Если в ходе осады применялось несколько разных <hyperlink>осадных проектов</hyperlink>, при штурме будут выбраны наиболее мощные из них.</bullet></bulletlist>",
   "name": "Строительство многозарядных баллист",

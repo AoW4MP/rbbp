@@ -1,0 +1,224 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/rbbp/Data/Init.js"></script>
+        <script>
+              let selectedTreeFilter = "all";
+            let selectedSubTreeFilter = "all";
+            let selectedMMTreeFilter = "all";
+            function HandlePage() {
+               // CheckLengths(jsonItemForgeUpgrades);
+                CreateAllInfusions();
+
+                $("#filterInput").on("change input", function () {
+                    ShowAllDivsWithFilters("list_abilityslot", "flex");
+                    SetLevelUpStuff();
+                });
+                
+                 document.querySelectorAll(".treeFilterButton").forEach((button) => {
+                    button.addEventListener("click", () => {
+                        // Remove active state from all buttons
+                        document.querySelectorAll(".treeFilterButton").forEach((btn) => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        // Update selected filter and refresh view
+                        selectedTreeFilter = button.dataset.tree;
+                        CreateAllInfusions();
+                    });
+                });
+
+                document.querySelectorAll(".treeFilterButtonSub").forEach((button) => {
+                    button.addEventListener("click", () => {
+                        document
+                            .querySelectorAll(".treeFilterButtonSub")
+                            .forEach((btn) => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        selectedSubTreeFilter = button.dataset.tree;
+                        CreateAllInfusions(); // refresh on subfilter change
+                    });
+                });
+                  document.querySelectorAll(".treeFilterButtonMM").forEach((button) => {
+                    button.addEventListener("click", () => {
+                        document
+                            .querySelectorAll(".treeFilterButtonMM")
+                            .forEach((btn) => btn.classList.remove("active"));
+                        button.classList.add("active");
+
+                        selectedMMTreeFilter = button.dataset.tree;
+                        CreateAllInfusions(); // refresh on subfilter change
+                    });
+                });
+            }
+            
+             function CreateAllInfusions() {
+                 const holder =   document.getElementById("dataHolder");
+                holder.innerHTML = ""; // Clear existing
+
+                jsonItemForgeUpgrades.forEach((infusion) => {
+                    const div = showInfusionListEntrySmall(infusion,selectedTreeFilter, selectedSubTreeFilter,selectedMMTreeFilter);
+                    if(div != undefined){
+                         holder.appendChild(div);
+                    }
+                     
+               });
+             }
+                                              
+
+          
+          /*  async function CheckLengths(list) {
+                // let card = await spawnSpellCards(list);
+                const holder = document.getElementById("dataHolder");
+                for (let i = 0; i < list.length; i++) {
+                    // skip damage for now
+                    if(list[i].name.indexOf(" Damage") != -1){
+                        continue;
+                    }
+                   holder.appendChild(showInfusionListEntrySmall(list[i]));
+                }
+            }*/
+            
+            function sortDivsList(sortType) {
+                const currentbutton = document.getElementById(`${sortType}-button`);
+                const ascendingOrder = !currentbutton.classList.contains("activeDown");
+
+                document.querySelectorAll(".sortingButton").forEach((btn) => (btn.className = "sortingButton"));
+                currentbutton.classList.add(ascendingOrder ? "activeDown" : "activeUp");
+
+                const container = document.getElementById(currentView || "dataHolder");
+                const elements = Array.from(container.querySelectorAll(".list_abilityslot"));
+
+                const selectorMap = {
+                    range: (el) => el.querySelector(".list_range")?.innerHTML,
+                    accuracy: (el) => el.querySelector(".list_accuracy")?.innerHTML,
+                    damage: (el) => el.querySelector(".ability_damage")?.innerHTML,
+                    action: (el) => el.querySelector(".list_action")?.innerHTML,
+                    type: (el) => el.querySelector(".list_types")?.innerHTML,
+                    default: (el) => el.querySelector(".tooltip")?.innerHTML
+                };
+
+                const selector = selectorMap[sortType] || selectorMap.default;
+                const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+
+                elements
+                    .sort((a, b) => {
+                        let valA = selector(a);
+                        let valB = selector(b);
+
+                        if (sortType === "tier") {
+                            valA = deromanize(valA.split("Tier ")[1]);
+                            valB = deromanize(valB.split("Tier ")[1]);
+                        }
+
+                        return collator.compare(ascendingOrder ? valA : valB, ascendingOrder ? valB : valA);
+                    })
+                    .forEach((el) => container.appendChild(el));
+
+                sorting = `${sortType}:${ascendingOrder}`;
+            }
+        </script>
+
+        <title>Age of Wonders 4 Database - Infusions List</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">Infusions List</div>
+        <div style="height: auto; color: white; text-align: center">
+            <br />
+            Filter<br />
+            <div style="margin-right: auto; margin-left: auto; width: 500px">
+                <input type="text" class="searchbar" id="filterInput" />
+            </div>
+        </div>
+        
+        <div id="treeFilterGroup" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButton active" data-tree="all">All</button>
+            <button class="treeFilterButton" data-tree="OneHanded">1H</button>
+                <button class="treeFilterButton" data-tree="TwoHandedHeavy">2H Heavy</button>
+               <button class="treeFilterButton" data-tree="EldritchRelic">Eldritch Relic</button>
+             <button class="treeFilterButton" data-tree="Shield">Shield</button>
+             <button class="treeFilterButton" data-tree="Head">Head</button>
+              <button class="treeFilterButton" data-tree="Armor">Torso</button>
+              <button class="treeFilterButton" data-tree="Legs">Legs</button>
+            
+             <button class="treeFilterButton" data-tree="Ring">Ring</button>
+              <button class="treeFilterButton" data-tree="Wand">Wand</button>
+             <button class="treeFilterButton" data-tree="Amulet">Trinket</button>
+           
+        </div>
+        
+         <div id="treeFilterGroupMM" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButtonMM active" data-tree="all">All</button>
+                <button class="treeFilterButtonMM" data-tree="Always">Always</button>
+                <button class="treeFilterButtonMM" data-tree="Pantheon">Pantheon</button>
+               <button class="treeFilterButtonMM" data-tree="GiantKing">Giant King</button>
+                 <button class="treeFilterButtonMM" data-tree="Arcanium Ore">Arcanium Ore</button>
+                 <button class="treeFilterButtonMM" data-tree="Focus Crystal">Focus Crystal</button>
+               <button class="treeFilterButtonMM" data-tree="Fireforge Stone">Fireforge Stone</button>
+                 <button class="treeFilterButtonMM" data-tree="Blood Glass">Blood Glass</button>
+            <button class="treeFilterButtonMM" data-tree="Archon Blood">Archon Blood</button>
+             <button class="treeFilterButtonMM" data-tree="Astral Dew">Astral Dew</button>
+             <button class="treeFilterButtonMM" data-tree="Tranquility Pool">Tranquility Pool</button>
+                  <button class="treeFilterButtonMM" data-tree="Hasteberries">Hasteberries</button>
+             <button class="treeFilterButtonMM" data-tree="Silvertongue Fruit">Silvertongue Fruit</button>
+             <button class="treeFilterButtonMM" data-tree="Rainbow Clover">Rainbow Clover</button>
+                <button class="treeFilterButtonMM" data-tree="Void Stone">Void Stone</button>
+           
+            
+
+        </div>
+
+        <div id="treeFilterGroupSub" style="margin: 20px; display: flex; justify-content: center; align-items: start">
+            <button class="treeFilterButtonSub active" data-tree="all">All</button>
+            <button class="treeFilterButtonSub" data-tree="Active">Active</button>
+            <button class="treeFilterButtonSub" data-tree="Passive">Passive</button>
+             <button class="treeFilterButtonSub" data-tree="Damage">Damage</button>
+            <!-- Add more as needed -->
+        </div>
+
+       <div class="w3-container" style="  justify-content: center;">
+            <div class="w3-bar w3-black" id="buttonHolder"></div>
+           <div class="list_abilityslotfilter">
+                <button style="width: 300px" class="sortingButton" id="name-button" onclick="sortDivsList('name')">
+                    Name
+                </button>
+                <button style="width: 80px" class="sortingButton" id="range-button" onclick="sortDivsList('range')">
+                    Range <range></range>
+                </button>
+                <button
+                    style="width: 150px"
+                    class="sortingButton"
+                    id="accuracy-button"
+                    onclick="sortDivsList('accuracy')">
+                    Acc.<br />
+                    <accuracy></accuracy>
+                </button>
+                <button style="width: 150px" class="sortingButton" id="damage-button" onclick="sortDivsList('damage')">
+                    Damage<br />
+                    <damageblight></damageblight>
+                </button>
+                <button style="width: 100px" class="sortingButton" id="action-button" onclick="sortDivsList('action')">
+                    Action <repeatingAction></repeatingAction>
+                </button>
+                <button style="width: 200px" class="sortingButton" id="type-button" onclick="sortDivsList('type')">
+                    Type
+                </button>
+            </div>
+
+            <div id="dataHolder" class="divContainer">
+            </div>
+        </div>
+    </body>
+</html>
+
+<footer>
+    <br />
+    <br />
+</footer>

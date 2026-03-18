@@ -1,5 +1,30 @@
 [
  {
+  "lore_description": "<helpcolor>Mounted units are more common and gain a Fractured Eagle mount.</helpcolor>",
+  "biography_description": "They bring doom from the sky, mounted on their fractured eagles.",
+  "point_cost": 3,
+  "id": "fractured_eagle_mount",
+  "name": "Fractured Eagle Mount",
+  "screen_description": "",
+  "effect_descriptions": [
+   {
+    "name": "Gain Flying movement."
+   },
+   {
+    "name": "Additional units become Cavalry"
+   },
+   {
+    "name": "Ruler starts with an Eagle mount."
+   }
+  ],
+  "enabled": false,
+  "group_name": "Mounts",
+  "front_end": true,
+  "icon": "000004D000000459",
+  "type": "form",
+  "display_order": 0
+ },
+ {
   "biography_description": "They darken the sky, mounted on their shrieking bats.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Shrieking Bat mount.</helpcolor>",
   "DLC": "THRONESOFBLOOD ",
@@ -16,12 +41,6 @@
    },
    {
     "name": "Ruler starts with a Shrieking Bat mount."
-   },
-   {
-    "name": "-2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>"
-   },
-   {
-    "name": "-2 <defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink>"
    }
   ],
   "enabled": true,
@@ -51,13 +70,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+30 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+200 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+200 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -140,12 +159,6 @@
    },
    {
     "name": "Ruler starts with a Griffon Mount."
-   },
-   {
-    "name": "-2 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink>"
-   },
-   {
-    "name": "-2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink>"
    }
   ],
   "enabled": true,
@@ -169,7 +182,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "-1 <defense></defense> <hyperlink>Defense</hyperlink>"
+    "name": "-1 <defensephysical></defensephysical> <hyperlink>Physical Protection</hyperlink>"
    }
   ],
   "enabled": true,
@@ -253,8 +266,8 @@
  },
  {
   "biography_description": "Their bodies can barely contain their divine origin, sacred light radiates from within them like a purifying flame.",
-  "lore_description": "",
-  "point_cost": 1,
+  "lore_description": "<helpcolor>Melee attackers sustain <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</helpcolor>",
+  "point_cost": 2,
   "id": "inner_radiance",
   "name": "Inner Radiance",
   "incompatible_society_traits": [
@@ -274,7 +287,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 <defensespirit></defensespirit> <hyperlink>Spirit Resistance</hyperlink>."
+    "name": "+3 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>."
+   },
+   {
+    "name": "Melee attackers sustain 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -313,7 +329,7 @@
  },
  {
   "biography_description": "Lightning runs through their veins, zapping those who dare to harm them.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>Melee attackers sustain <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</helpcolor>",
   "point_cost": 2,
   "id": "inner_lightning",
   "name": "Inner Lightning",
@@ -334,13 +350,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defenselightning></defenselightning> <hyperlink>Lightning Resistance</hyperlink>."
+    "name": "+3 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers have a base 60% chance of becoming Electrified."
-   },
-   {
-    "name": "Immunity to becoming Electrified."
+    "name": "Melee attackers sustain 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -352,8 +365,8 @@
  },
  {
   "biography_description": "Their skin is cold to the touch, causing frostbite to those who get too close.",
-  "lore_description": "",
-  "point_cost": 1,
+  "lore_description": "<helpcolor>Melee attackers sustain <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</helpcolor>",
+  "point_cost": 2,
   "id": "inner_frost",
   "name": "Inner Frost",
   "incompatible_society_traits": [
@@ -373,7 +386,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink>."
+    "name": "+3 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
+   },
+   {
+    "name": "Melee attackers sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -385,7 +401,7 @@
  },
  {
   "biography_description": "Their boiling blood scorches anyone who dares to wound them.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>Melee attackers sustain <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</helpcolor>",
   "point_cost": 2,
   "id": "inner_fire",
   "name": "Inner Fire",
@@ -406,13 +422,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>."
+    "name": "+3 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers have a base 60% chance of becoming Burning."
-   },
-   {
-    "name": "Immunity to becoming Burning."
+    "name": "Melee attackers sustain 3 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -425,7 +438,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain a Raptor mount.</helpcolor>",
   "biography_description": "They have tamed the elusive Swiftfoot Raptors.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "swiftfoot_raptor_mounts",
   "name": "Swiftfoot Raptor Mounts",
   "screen_description": "",
@@ -462,7 +475,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Once per turn, when taking non-<damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> damage, gain Strengthened for 3 <turn></turn> Turns."
+    "name": "Once per turn, when taking damage from <hyperlink>Magic</hyperlink> attacks or spells, gain Strengthened for 3 <turn></turn> Turns."
    }
   ],
   "enabled": true,
@@ -507,9 +520,6 @@
    },
    {
     "name": "Ruler starts with an Eagle mount."
-   },
-   {
-    "name": "-1 <defense></defense> <hyperlink>Defense</hyperlink>"
    }
   ],
   "enabled": true,
@@ -528,6 +538,9 @@
   "screen_description": "",
   "effect_descriptions": [
    {
+    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
+   },
+   {
     "name": "Additional units become Cavalry"
    }
   ],
@@ -542,13 +555,13 @@
   "biography_description": "They share a deep kinship with mighty Elephants.",
   "lore_description": "<helpcolor>Mounted units are more common and gain an Elephant mount </helpcolor>",
   "DLC": "PRIMALFURY ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "elephant_mounts",
   "name": "Elephant Mounts",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+20 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+15 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gain the Juggernaut ability."
@@ -574,16 +587,16 @@
   "biography_description": "They have tamed the furry Mammoths from the tundra.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Mammoth mount.</helpcolor>",
   "DLC": "PRIMALFURY ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "mammoth_mounts",
   "name": "Mammoth Mounts",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+15 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
-    "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink>."
+    "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
    },
    {
     "name": "Gain the Juggernaut ability."
@@ -689,7 +702,7 @@
   "biography_description": "They made friends with the Dire Bears.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Dire Bear mount </helpcolor>",
   "DLC": "EMPIRESANDASHES ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "dire_bear_mount",
   "name": "Dire Bear Mount",
   "screen_description": "",
@@ -774,6 +787,39 @@
  {
   "affinities": [
    {
+    "name": "1<order></order> Order Affinity"
+   }
+  ],
+  "biography_description": "For them, magic should not shape the living; so they shun its use on themselves, focusing on material paths to improvement.",
+  "lore_description": "They believe magic should not interfere with their natural development, so they shun its use on themselves and look for more material ways to improve themselves.",
+  "point_cost": 1,
+  "id": "transformation_ascetics",
+  "name": "Transformation Ascetics",
+  "incompatible_society_traits": [
+   {
+    "name": "Runesmiths"
+   }
+  ],
+  "screen_description": "",
+  "effect_descriptions": [
+   {
+    "name": "<hyperlink>Units</hyperlink> of your Race start with the Transformation Ascetics applied which cannot be disabled."
+   }
+  ],
+  "enabled": true,
+  "front_end": false,
+  "type": "society",
+  "display_order": 6,
+  "starting_bonuses": [
+   {
+    "description": "Transformation Ascetics"
+   }
+  ],
+  "icon": "0000049300001214"
+ },
+ {
+  "affinities": [
+   {
     "name": "1<nature></nature> Nature Affinity"
    },
    {
@@ -793,16 +839,16 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
+    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
    },
    {
-    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
+    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
    },
    {
-    "name": "Gain 90 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
+    "name": "Gain 30 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
    },
    {
-    "name": "<hyperlink>Vassals</hyperlink> grant 30 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
+    "name": "<hyperlink>Vassals</hyperlink> grant +10 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -845,10 +891,7 @@
  {
   "starting_bonuses": [
    {
-    "description": "Starting <hyperlink>Units</hyperlink> gain +1 rank and +3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>"
-   },
-   {
-    "description": "Start with an extra Support Unit or Polearm Unit."
+    "description": "Starting <hyperlink>Units</hyperlink> gain +1 rank."
    }
   ],
   "affinities": [
@@ -864,7 +907,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 50 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
+    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 100 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
    },
    {
     "name": "Whenever you have no <hyperlink>Bounties</hyperlink> active, gain a bounty offer targeting a nearby existing <hyperlink>Infestation</hyperlink> that hasn't been targeted before. It will not generate a new bounty if no more Infestations can be found."
@@ -877,13 +920,18 @@
   "icon": "00000493000008F8"
  },
  {
+  "starting_bonuses": [
+   {
+    "description": "Start with +1 <unitHero></unitHero> <hyperlink>Hero Cap</hyperlink> and +3 Hero Cap for Pantheon heroes."
+   }
+  ],
   "affinities": [
    {
     "name": "1<shadow></shadow> Shadow Affinity"
    }
   ],
-  "lore_description": "They believe in the might of their heroes, the chosen few, elevated above the masses.",
   "biography_description": "They elevate their heroes above the masses, empowered through dark elation.",
+  "lore_description": "They believe in the might of their heroes, the chosen few, elevated above the masses.",
   "point_cost": 1,
   "id": "cult_of_personality",
   "name": "Cult of Personality",
@@ -893,17 +941,17 @@
     "name": "<hyperlink>Heroes</hyperlink> gain a bonus Skill Point whenever they gain a <renown></renown> <hyperlink>Renown</hyperlink> Level."
    },
    {
-    "name": "In combat, <hyperlink>Units</hyperlink> in an <hyperlink>Army</hyperlink> without a Hero suffer -20 <happiness></happiness> <hyperlink>Morale</hyperlink>."
+    "name": "<hyperlink>Heroes</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> whenever they gain a <renown></renown> <hyperlink>Renown</hyperlink> Level."
    },
    {
-    "name": "<hyperlink>Heroes</hyperlink> assigmented by Governors give:<bulletlist><bullet>+10<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet></bulletlist>"
+    "name": "In combat, <hyperlink>Units</hyperlink> in an <hyperlink>Army</hyperlink> without a Hero suffer -20 <happiness></happiness> <hyperlink>Morale</hyperlink>."
    }
   ],
   "enabled": true,
   "front_end": false,
-  "icon": "00000493000008F4",
   "type": "society",
-  "display_order": 1
+  "display_order": 1,
+  "icon": "00000493000008F4"
  },
  {
   "affinities": [
@@ -957,12 +1005,6 @@
    },
    {
     "name": "Ruler starts with a Celestial Griffon Mount."
-   },
-   {
-    "name": "-2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>"
-   },
-   {
-    "name": "-2 <defenselightning></defenselightning> <hyperlink>Lightning Resistance</hyperlink>"
    }
   ],
   "enabled": true,
@@ -976,7 +1018,7 @@
   "biography_description": "Their beasts and troops have been trained in the art of chariot warfare.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Chariot mount.</helpcolor>",
   "DLC": "ARCHONPROPHECY ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "chariot_mounts",
   "name": "Chariot Mounts",
   "screen_description": "",
@@ -1018,9 +1060,6 @@
    },
    {
     "name": "Ruler starts with a Pegasus mount"
-   },
-   {
-    "name": "-1 <resistance></resistance> <hyperlink>Resistance</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1034,13 +1073,13 @@
   "biography_description": "They have tamed the tunneling Death Beetles.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Death Beetle mount.</helpcolor>",
   "DLC": "ELDRITCHREALMS ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "death_beetle_mounts",
   "name": "Death Beetle Mounts",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gain the Pestilent Escape ability."
@@ -1269,6 +1308,9 @@
   "incompatible_society_traits": [
    {
     "name": "Devotees of Good <goodact></goodact>"
+   },
+   {
+    "name": "Transformation Ascetics"
    }
   ],
   "screen_description": "",
@@ -1395,19 +1437,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Empire</hyperlink> <hyperlink>Unit</hyperlink> or <hyperlink>Hero</hyperlink> defeated after successful combat.<br></br>This reward increases for each level of <evilact></evilact>evil <hyperlink>Alignment</hyperlink> of the Faction they belonged to.<br></br><br></br>Gain <influence></influence> <hyperlink>Imperium</hyperlink> for each Infernal Fiend, Undead, Umbral Demon, Accursed Fiend defeated after successful combat."
+    "name": "Gain 2 <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Empire</hyperlink> <hyperlink>Unit</hyperlink> killed after successful combat.<br></br>This reward increases by +1 for each level of <evilact></evilact>evil <hyperlink>Alignment</hyperlink> of the Faction they belonged to."
    },
    {
     "name": "Gain +30 <casusBelli></casusBelli> <hyperlink>Grievances</hyperlink> against players with an <evilact></evilact>evil <hyperlink>Alignment</hyperlink>."
    },
    {
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
-   },
-   {
-    "name": "<hyperlink>Units</hyperlink> and <hyperlink>Heroes</hyperlink> gain immune to Umbral Malady."
-   },
-   {
-    "name": "<hyperlink>Physical Ranged</hyperlink>:<bulletlist><bullet>+1<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink></bullet><bullet> +1<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet></bulletlist><br></br><bullet><hyperlink>Melee</hyperlink>:<bulletlist></bullet><bullet>+1<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink></bullet><bullet>+1<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1482,7 +1518,7 @@
   "biography_description": "They share a deep kinship with the honorable Gracious Judges.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Graceful Judge mount.</helpcolor>",
   "DLC": "WAYSOFWAR ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "graceful_judge_mounts",
   "name": "Graceful Judge Mounts",
   "screen_description": "",
@@ -1524,9 +1560,6 @@
    },
    {
     "name": "Ruler starts with a Blessed Dragon mount."
-   },
-   {
-    "name": "-10 <hyperlink><hp></hp> Hit Points</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1587,9 +1620,6 @@
   "effect_descriptions": [
    {
     "name": "<hyperlink>Rally of the Lieges</hyperlink> occur twice as often"
-   },
-   {
-    "name": "<hyperlink>Units</hyperlink> recruited through <hyperlink>Rally of the Lieges</hyperlink> gain +2 Rank upon recruitment."
    }
   ],
   "enabled": true,
@@ -1653,7 +1683,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "City Structures cost 50% more <structureprod></structureprod> Production but grant +1 <happiness></happiness> City Stability and +3 <gold></gold> Gold in addition to their normal effects."
+    "name": "City Structures cost 100% more <structureprod></structureprod> Production but grant +1 <happiness></happiness> City Stability and +5 <gold></gold> Gold in addition to their normal effects."
    },
    {
     "name": "Racial <hyperlink>Unit tier</hyperlink> 3 Units have +1 Rank"
@@ -1684,7 +1714,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -1737,9 +1767,6 @@
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
-   },
-   {
-    "name": "<hyperlink>Total War</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1809,10 +1836,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain +60% income from <hyperlink>Vassals</hyperlink>."
+    "name": "Gain +30% income from <hyperlink>Vassals</hyperlink>."
    },
    {
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
+   },
+   {
+    "name": "<hyperlink>Units</hyperlink> recruited through <hyperlink>Rally of the Lieges</hyperlink> gain +1 Rank upon recruitment."
    },
    {
     "name": "Gain +1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>."
@@ -2113,15 +2143,15 @@
   "display_order": 5
  },
  {
-  "lore_description": "<helpcolor>Units move faster in combat and on the world map.</helpcolor>",
+  "lore_description": "<helpcolor>Units move faster in combat.</helpcolor>",
   "biography_description": "Trained in long distance running, they are exceptionally fast.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "athletics",
   "name": "Athletics",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Fast Movement, having 40 movement on the <hyperlink>World Map</hyperlink> and in <hyperlink>Combat</hyperlink>."
+    "name": "Grants 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2265,7 +2295,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "10 <hyperlink><hp></hp> Hit Points</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2331,7 +2361,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +20% damage."
+    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +10% damage."
    },
    {
     "name": "Battle Mage Units and Support Units provide +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
@@ -2405,8 +2435,8 @@
   "biography_description": "They are inspired by unique constructions and the Ancient Wonders of old.",
   "lore_description": "They are inspired by unique constructions and the Ancient Wonders of old.",
   "point_cost": 1,
-  "id": "wonder_architects",
-  "name": "Wonder Architects",
+  "id": "seekers_of_wonders",
+  "name": "Seekers of Wonders",
   "screen_description": "",
   "effect_descriptions": [
    {
@@ -2441,10 +2471,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -20% <knowledge></knowledge> Knowledge to unlock."
+    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -40% <knowledge></knowledge> Knowledge to unlock."
    },
    {
-    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -40% upkeep."
+    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -30% upkeep."
    }
   ],
   "enabled": true,
@@ -2475,7 +2505,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +2 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
    },
    {
     "name": "Special Province Improvements cost -50% <structureprod></structureprod> Production."
@@ -2509,7 +2539,7 @@
     "name": "<hyperlink>Cities</hyperlink> gain +2 <gold></gold> Gold, +2 <food></food> Food, and +2 <unitprod></unitprod> Draft for each province with a Coast, River, and Water in their <hyperlink>Domain</hyperlink>."
    },
    {
-    "name": "Embarked units:<bulletlist><bullet>Deal +20% damage</bullet><bullet>Gain +20% <hyperlink><xp></xp> Experience</hyperlink></bullet></bulletlist>"
+    "name": "Embarked units:<bulletlist><bullet>Deal +20% damage.</bullet><bullet>Gain +40% <hyperlink><xp></xp> Experience</hyperlink> from combat.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -2602,7 +2632,7 @@
     "name": "Summoning Spells cost -50% <mana></mana> Mana to cast."
    },
    {
-    "name": "Magic Origin gain +20% more <hyperlink><xp></xp> Experience</hyperlink>."
+    "name": "Magic Origin gain +30% more <hyperlink><xp></xp> Experience</hyperlink> from combat."
    }
   ],
   "enabled": true,
@@ -2636,7 +2666,7 @@
     "name": "+10 <caststrategic></caststrategic> World Map Casting Points."
    },
    {
-    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> and <optactical></optactical> Combat Casting Point to cast."
+    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> to cast."
    }
   ],
   "enabled": true,
@@ -2673,7 +2703,7 @@
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "The nearest City owned gains +5 <mana></mana> <hyperlink>Mana</hyperlink> and +5 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
+    "name": "The nearest City owned gains +3 <mana></mana> <hyperlink>Mana</hyperlink> and +3 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
    }
   ],
   "enabled": true,
@@ -2704,7 +2734,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "The nearest City owned gains +5 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
+    "name": "The nearest City owned gains +3 <gold></gold> <hyperlink>Gold</hyperlink> and +3 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -2778,7 +2808,7 @@
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "Units other than heroes get +2 <hyperlink><xp></xp> Experience</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> while you are at the maximum good <goodact></goodact> <hyperlink>Alignment</hyperlink>."
+    "name": "Units gain +10 <hyperlink><xp></xp> Experience</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> while you are at the maximum good <goodact></goodact> <hyperlink>Alignment</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2829,7 +2859,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain a Wolf mount.</helpcolor>",
   "biography_description": "They have made companions of the White Wolves.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "white_wolf_mounts",
   "name": "White Wolf Mounts",
   "screen_description": "",
@@ -2860,7 +2890,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain a Nightmare mount.</helpcolor>",
   "biography_description": "They have tamed the Flaming Horses of the Inferno.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "nightmare_mounts",
   "name": "Nightmare Mounts",
   "screen_description": "",
@@ -2930,31 +2960,23 @@
   "display_order": 4
  },
  {
-  "biography_description": "They have a natural armor against magical damage.",
   "lore_description": "<helpcolor>Reduce damage from magical attacks and spells.</helpcolor>",
+  "biography_description": "They have a natural armor against magical damage.",
   "point_cost": 2,
   "id": "resistant",
   "name": "Resistant",
-  "incompatible_society_traits": [
-   {
-    "name": "Tough"
-   },
-   {
-    "name": "Bulwark"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <resistance></resistance> <hyperlink>Resistance</hyperlink>"
+    "name": "+1 <resistance></resistance> <hyperlink>Resistance</hyperlink>."
    }
   ],
   "enabled": true,
-  "type": "form",
   "group_name": "Defense",
   "front_end": true,
-  "display_order": 4,
-  "icon": "0000041B0000072D"
+  "icon": "0000041B0000072D",
+  "type": "form",
+  "display_order": 4
  },
  {
   "affinities": [
@@ -3136,7 +3158,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain a Unicorn mount.</helpcolor>",
   "biography_description": "They share a deep kinship with Unicorns.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "unicorn_mounts",
   "name": "Unicorn Mounts",
   "screen_description": "",
@@ -3164,7 +3186,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain a Spider mount.</helpcolor>",
   "biography_description": "They share a deep kinship with Spiders.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "dread_spider_mounts",
   "name": "Dread Spider Mounts",
   "screen_description": "",
@@ -3215,7 +3237,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink>."
+    "name": "+2 <defenseblight></defenseblight> <hyperlink>Blight Protection</hyperlink>."
    },
    {
     "name": "Melee attackers have a base 60% chance of becoming Poisoned."
@@ -3267,7 +3289,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Non-hero units gain +20% <hyperlink><xp></xp> Experience</hyperlink>."
+    "name": "Non-hero units gain +30% <hyperlink><xp></xp> Experience</hyperlink> from combat."
    }
   ],
   "enabled": true,
@@ -3335,31 +3357,23 @@
   "display_order": 4
  },
  {
+  "lore_description": "<helpcolor>Units take less damage from weapon attacks.</helpcolor>",
   "biography_description": "They are tough and used to taking a few hits in battle.",
-  "lore_description": "<helpcolor>Units take less damage from melee attacks.</helpcolor>",
   "point_cost": 2,
   "id": "tough",
   "name": "Tough",
-  "incompatible_society_traits": [
-   {
-    "name": "Resistant"
-   },
-   {
-    "name": "Bulwark"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defense></defense> <hyperlink>Defense</hyperlink>"
+    "name": "+1 <defense></defense> <hyperlink>Defense</hyperlink>."
    }
   ],
   "enabled": true,
-  "type": "form",
   "group_name": "Defense",
   "front_end": true,
-  "display_order": 4,
-  "icon": "000003E10000145F"
+  "icon": "000003E10000145F",
+  "type": "form",
+  "display_order": 4
  },
  {
   "biography_description": "Their blood is strong, which allows them to recuperate from wounds faster than others.",
@@ -3423,8 +3437,8 @@
   "lore_description": "This race has fostered an intimate bond with the native animals of the realm.",
   "biography_description": "Their society has fostered an intimate bond with the native animals of the realm.",
   "point_cost": 1,
-  "id": "mark_of_the_otter",
-  "name": "Mark of the Otter",
+  "id": "mark_of_the_wildspeaker",
+  "name": "Mark of the Wildspeaker",
   "screen_description": "Their society has fostered an intimate bond with the native animals of the realm.",
   "effect_descriptions": [
    {

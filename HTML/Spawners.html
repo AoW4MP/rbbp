@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-CC3NE8PT7K");
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/rbbp/Data/Init.js"></script>
+        
+        <script>
+          
+            function HandlePage() {
+                showWorldStructuresWithArgument(undefined, "Spawner", undefined, "Bronze");
+                SetLevelUpStuff();
+            }
+        </script>
+
+        <title>Age of Wonders 4 Database - Spawners</title>
+    </head>
+
+    <body>
+        <div class="textblocktitle">Infestation Spawners</div>
+        <div class="w3-container">
+            <div class="w3-bar w3-black" id="buttonHolder">
+                <button
+                    id="Bronze-button"
+                    class="w3-bar-item w3-button tablink w3-red"
+                    onclick="openDiv(event,'Bronze')">
+                    Infestations
+                </button>
+              
+            </div>
+            <div id="dataHolder">
+                <div id="Bronze" class="w3-container w3-border city"></div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

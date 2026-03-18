@@ -222,11 +222,62 @@ classDeathKnight,
 classRitualist,
 classMage,
 classDefender,
-classSpellblade,classRanger,classWarlock,classBattlesaint {
+classSpellblade,
+classRanger,
+classWarlock,
+classBattlesaint {
     max-width: 20px;
     top: 7px;
     position: relative;
     margin-top: -10px;
+}
+
+haste_berries,
+silvertongue_fruit,
+void_stones,
+archon_blood,
+arcanium_ore,
+focus_crystals,
+fireforge_stone,
+blood_glass,
+astral_dew, tranquility_pool,rainbow_clover {
+    max-width: 25px;
+    top: 7px;
+    position: relative;
+    margin-top: -10px;
+}
+
+haste_berries {
+       content: url(/rbbp/Icons/WorldStructures/haste_berries.png);
+}
+silvertongue_fruit {
+       content: url(/rbbp/Icons/WorldStructures/silvertongue_fruit.png);
+}
+void_stones {
+       content: url(/rbbp/Icons/WorldStructures/void_stones.png);
+}
+
+archon_blood {
+       content: url(/rbbp/Icons/WorldStructures/archon_blood.png);
+}
+arcanium_ore {
+       content: url(/rbbp/Icons/WorldStructures/arcanium_ore.png);
+}
+focus_crystals {
+       content: url(/rbbp/Icons/WorldStructures/focus_crystals.png);
+}
+fireforge_stone {
+       content: url(/rbbp/Icons/WorldStructures/fireforge_stone.png);
+}
+blood_glass {
+       content: url(/rbbp/Icons/WorldStructures/blood_glass.png);
+}
+astral_dew {
+       content: url(/rbbp/Icons/WorldStructures/astral_dew.png);
+}tranquility_pool {
+       content: url(/rbbp/Icons/WorldStructures/tranquility_pool.png);
+}rainbow_clover  {
+       content: url(/rbbp/Icons/WorldStructures/rainbow_clover.png);
 }
 
 classWarrior {
@@ -270,7 +321,11 @@ ELDRITCHREALMS,
 WAYSOFWAR,
 HERALDOFGLORY,
 PRIMALFURY,
-EMPIRESANDASHES,ARCHONPROPHECY, COSMICWANDERER, THRONESOFBLOOD {
+EMPIRESANDASHES,
+ARCHONPROPHECY,
+COSMICWANDERER,
+THRONESOFBLOOD,
+RISEFROMRUIN {
     max-width: 20px;
     top: 7px;
     position: relative;
@@ -301,7 +356,10 @@ COSMICWANDERER {
     content: url(/rbbp/Icons/Text/CosmicWanderer.png);
 }
 THRONESOFBLOOD {
-      content: url(/rbbp/Icons/Text/ThronesOfBlood.png);
+    content: url(/rbbp/Icons/Text/ThronesOfBlood.png);
+}
+RISEFROMRUIN {
+    content: url(/rbbp/Icons/Text/RiseFromRuin.png);
 }
 
 ELDRITCHREALMS {
@@ -358,130 +416,114 @@ casttactical {
     position: relative;
 }
 
-unitSupport {
-    max-height: 20px;
+/*unittypes*/
+
+unitSupport,
+unitBattleMage,
+unitShield,
+unitPolearm,
+unitRanged,
+unitFighter,
+unitMagicFighter,
+unitScout,
+unitMythic,
+unitSkirmisher,
+unitShock,
+unitTower,
+unitSiegecraft,
+unitCivilian,
+unitCavalry,
+unitPlant,
+unitConstruct,
+unitFey,unitAnimal, unitSettler, unitDragon {
+   width: 20px;
+    height: 20px;
     top: 3px;
-    content: url(/rbbp/Icons/Text/support_unit.png);
     position: relative;
+    object-fit: contain;
+}
+
+unitSupport {
+    content: url(/rbbp/Icons/Text/support_unit.png);
 }
 
 unitBattleMage {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/battle_mage_unit.png);
-    position: relative;
 }
 
 unitShield {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/shield_unit.png);
-    position: relative;
 }
 
 unitPolearm {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/polearm_unit.png);
-    position: relative;
 }
 
 unitRanged {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/ranged_unit.png);
-    position: relative;
 }
 
 unitFighter {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/fighter_unit.png);
-    position: relative;
+}
+
+unitMagicFighter {
+    content: url(/rbbp/Icons/Text/magic_fighter_unit.png);
 }
 
 unitScout {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/scout_unit.png);
-    position: relative;
 }
 
 unitMythic {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/mythic_unit.png);
-    position: relative;
 }
 
 unitSkirmisher {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/skirmisher_unit.png);
-    position: relative;
 }
 
 unitShock {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/shock_unit.png);
-    position: relative;
 }
 
 unitTower {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/tower.png);
-    position: relative;
+}
+unitSettler{
+     content: url(/rbbp/Icons/Text/settler.png);
 }
 
 unitSiegecraft {
-    max-height: 20px;
-    top: 3px;
     content: url(/rbbp/Icons/Text/siegecraft.png);
-    position: relative;
 }
 
 unitCivilian {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/civilian.png);
-    position: relative;
+    content: url(/rbbp/Icons/Interface/Header/civilian.png);
 }
 
 unitCavalry {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/cavalry.png);
-    position: relative;
+    content: url(/rbbp/Icons/Interface/Header/cavalry.png);
 }
 
 unitPlant {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/plant.png);
-    position: relative;
+    content: url(/rbbp/Icons/Interface/Header/plant.png);
 }
 
 unitConstruct {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/construct.png);
-    position: relative;
+    content: url(/rbbp/Icons/Interface/Header/construct.png);
 }
 
 unitFey {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/fey.png);
-    position: relative;
+    content: url(/rbbp/Icons/Interface/Header/fey.png);
+}
+unitDragon {
+    content: url(/rbbp/Icons/Interface/Header/dragon.png);
 }
 
 unitAnimal {
-    max-height: 20px;
-    top: 3px;
-    content: url(/rbbp/Icons/UnitIcons/animal.png);
-    position: relative;
+   
+    content: url(/rbbp/Icons/Interface/Header/animal.png);
 }
 
 knowledge {
@@ -642,29 +684,29 @@ structureprod {
     position: relative;
 }
 
-embalmedsacrifice{
-     max-height: 20px;
+embalmedsacrifice {
+    max-height: 20px;
     top: 3px;
     content: url(/rbbp/Icons/Text/embalmedSacrifice.png);
     position: relative;
 }
 
-goodrelation{
-     max-height: 20px;
+goodrelation {
+    max-height: 20px;
     top: 3px;
     content: url(/rbbp/Icons/Text/goodrelations.png);
     position: relative;
 }
 
-minorcity{
-     max-height: 20px;
+minorcity {
+    max-height: 20px;
     top: 3px;
     content: url(/rbbp/Icons/Text/free_city.png);
     position: relative;
 }
 
-allegiance{
-       max-width: 20px;
+allegiance {
+    max-width: 20px;
     top: 2px;
     content: url(/rbbp/Icons/Text/allegiance.png);
     position: relative;
@@ -794,6 +836,24 @@ magicvictory {
     max-height: 20px;
     top: 3px;
     content: url(/rbbp/Icons/Text/magicvictory.png);
+    position: relative;
+}
+landmark {
+    max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/Landmark_small.png);
+    position: relative;
+}
+ancientwonder {
+    max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/ancientwonder.png);
+    position: relative;
+}
+quest {
+    max-height: 20px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/quest.png);
     position: relative;
 }
 
@@ -961,6 +1021,13 @@ thralls {
     position: relative;
 }
 
+rally {
+    max-width: 20px;
+    top: 5px;
+    content: url(/rbbp/Icons/Text/rally.png);
+    position: relative;
+}
+
 once {
     max-width: 20px;
     top: 5px;
@@ -1002,7 +1069,18 @@ tierV {
     content: url(/rbbp/Icons/Text/tierV.png);
     position: relative;
 }
-
+ench {
+    max-height: 20px;
+    top: 5px;
+    content: url(/rbbp/Icons/Text/transform.png);
+    position: relative;
+}
+other {
+    max-width: 20px;
+    top: 5px;
+    content: url(/rbbp/Icons/Text/other.png);
+    position: relative;
+}
 unit {
     max-width: 20px;
     top: 5px;
@@ -1239,6 +1317,13 @@ defenseblight {
     position: relative;
 }
 
+defensephysical {
+    max-height: 15px;
+    top: 3px;
+    content: url(/rbbp/Icons/Text/physical_resistance.png);
+    position: relative;
+}
+
 statuseffectresistance {
     max-height: 15px;
     top: 3px;
@@ -1356,4 +1441,50 @@ leaveoneaction {
     position: relative;
     padding-left: 10px;
     top: 6px;
+}
+
+fullActionContinue {
+    max-width: 40px;
+    content: url(/rbbp/Icons/Text/full_action_continue.png);
+    position: relative;
+    padding-left: 10px;
+    top: 6px;
+}
+
+transformation {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_transformation.png);
+    position: relative;
+    top: 3px;
+}
+
+terraforming {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_terraforming.png);
+    position: relative;
+    top: 3px;
+}
+worldspell {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_world.png);
+    position: relative;
+    top: 3px;
+}
+cityspell {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_city.png);
+    position: relative;
+    top: 3px;
+}
+armyspell {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_army.png);
+    position: relative;
+    top: 3px;
+}
+summonspell {
+    max-width: 15px;
+    content: url(/rbbp/Icons/Text/spelltype_summon.png);
+    position: relative;
+    top: 3px;
 }

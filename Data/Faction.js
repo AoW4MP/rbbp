@@ -1,6 +1,6 @@
 searchParams = new URLSearchParams(window.location.search);
 searchKeyword = searchParams.get("u");
-var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal", "Dark"];
+var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal", "Dark", "Nomad"];
 
 var ListOfSubsocietyHolders = ["Vision of Promise", "Vision of Ruin", "Vision of Destiny"];
 
@@ -20,6 +20,7 @@ var currentSubSociety2 = "";
 var currentSubType = "";
 var currentClass = "";
 var currentAscension = "";
+var currentAmbition = "";
 
 // sub culture
 var currentSubCulture = "";
@@ -87,7 +88,11 @@ function addOrSubtract(extraAffinity, add) {
     return extraAffinity;
 }
 
+const extraTomesForTheorycrafting = [];
+
 function SetRandomStart(overwriteParameter) {
+    jsonTomes.push(...extraTomesForTheorycrafting);
+    jsonTomesLocalized.push(...extraTomesForTheorycrafting);
     if (searchKeyword != undefined && !overwriteParameter) {
         // console.log("Found" + searchKeyword);
         RebuildFromParam(searchKeyword);
@@ -444,6 +449,9 @@ function selectOrigin(origin, type) {
         case "Ascension":
             currentAscension = origin;
             break;
+        case "Ambition":
+            currentAmbition = origin;
+            break;
         case "Class":
             currentClass = origin;
             // only if its the first
@@ -497,6 +505,12 @@ function ClearAscensionSkill() {
     var ascensionHolder = document.getElementById("originButtonAscension");
     ascensionHolder.innerHTML = "+";
     currentAscension = "";
+}
+
+function ClearAmbition() {
+    var ascensionHolder = document.getElementById("originButtonAmbition");
+    ascensionHolder.innerHTML = "+";
+    currentAmbition = "";
 }
 
 /*
@@ -687,7 +701,7 @@ function SetTomePathInfoSmall(buttonHolder, origin) {
     image.setAttribute("height", "60");
     image.style = "position: relative; top: 10px;";
 
-    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -784,7 +798,7 @@ function SetTomePathInfo(button, origin) {
     image.setAttribute("width", "50");
     image.setAttribute("height", "50");
 
-    image.src = "/rbbp/Icons/TomeIcons/" + origin.id + ".png"; // Set the image source to your image file
+    image.src = "/rbbp/Icons/TomeIcons/" + origin.icon + ".png"; // Set the image source to your image file
 
     // Create a span element to hold the button text
     const buttonText = document.createElement("span");
@@ -956,6 +970,10 @@ function SetupButtons(evt, type) {
             list = GetAllAscensions();
 
             break;
+        case "Ambition":
+            list = GetAllAmbitions();
+
+            break;
         case "Society2":
             list = GetAllSocietyTraits();
 
@@ -1103,8 +1121,9 @@ function GetCurrentChoiceList() {
 
 function GetAffinityTotalFromList(list, tomeList, subType, subCulture, subSociety1, subSociety2) {
     var input = "";
+    console.log(list);
     for (i = 0; i < list.length; i++) {
-        if (list[i] != "") {
+        if (list[i] != "" && list[i] != undefined) {
             if ("affinity" in list[i]) {
                 input += list[i].affinity + ",";
             }
@@ -1350,7 +1369,7 @@ function createImage(type, origin) {
 
     switch (type) {
         case "Tome":
-            setImage(`/rbbp/Icons/TomeIcons/${origin.id}.png`);
+            setImage(`/rbbp/Icons/TomeIcons/${origin.icon}.png`);
             break;
         case "Society1":
         case "Society2":
@@ -1372,12 +1391,15 @@ function createImage(type, origin) {
         case "Ascension":
             setImage(`/rbbp/Icons/UnitIcons/${origin.icon}.png`);
             break;
-        case "Symbol":
+        case "Ambition":
+            setImage(`/rbbp/Icons/AmbitionIcons/${origin.icon}.png`);
+            break;
+        /* case "Symbol":
             let symbolId = parseInt(origin, 10);
             if (symbolId < 10 && symbolId > 0) symbolId = "0" + symbolId;
             if (symbolId === 0) symbolId = 138;
             setImage(`/rbbp/Icons/Symbols/SigilIcons_${symbolId}.gif`);
-            break;
+            break;*/
     }
 
     return image;
@@ -1385,7 +1407,7 @@ function createImage(type, origin) {
 
 function getFactionIconPath(id) {
     const cleanId = id.startsWith("_") ? id.split("_").slice(1).join("_") : id;
-    return `/rbbp/Icons/TraitIcons/${cleanId}.png`;
+    return `/rbbp/Icons/FactionCreation/${cleanId}.png`;
 }
 
 function findOriginLocName(origin, type) {
@@ -1409,7 +1431,7 @@ function findOriginLocName(origin, type) {
             } else {
                 newOrigin = origin.name;
             }
-
+            newOrigin = newOrigin.split("{")[0];
             break;
 
         case "Tome":
@@ -1431,6 +1453,9 @@ function findOriginLocName(origin, type) {
 
         case "Ascension":
             newOrigin = jsonHeroSkillsLocalized.find((entry) => entry.resid === origin.resid).name;
+            break;
+        case "Ambition":
+            newOrigin = jsonHeroAmbitionsLocalized.find((entry) => entry.icon === origin.icon).name;
             break;
         case "Signature":
         case "Loadout":
@@ -1552,6 +1577,14 @@ function createTooltip(origin, type) {
         /* case "FormTrait":
             SetFullPreview(tooltip, originLoc);
             break;*/
+
+        case "Ambition":
+            const el2 = spell_card_template.content.firstElementChild.cloneNode(true);
+
+            tooltip.innerHTML = el2.firstElementChild.innerHTML;
+
+            showHeroTrait(origin.id, tooltip);
+            break;
 
         case "Signature":
         case "Ascension":
@@ -1738,7 +1771,7 @@ function SetTomePreview(span, origin) {
                 "</bullet>";
         }
     }
-    if ("skills" in locOrigin) {
+    if ("skills" in origin) {
         span.innerHTML += '<p  style="color: #97d7a2;>' + '<span style="font-size=20px;">Skills:<br></p>';
 
         for (let index = 0; index < origin.skills.length; index++) {
@@ -1750,20 +1783,30 @@ function SetTomePreview(span, origin) {
                 // can be summon as well
                 if ("spell_slug" in origin.skills[index]) {
                     const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
-                    
-                     let iconLink = spell.icon;
-                if(spell.icon == undefined){
-                    iconLink = spell.id;
-                }
-                    span.innerHTML +=
-                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
-                        iconLink +
-                        '.png">' +
-                        spell.name +
-                        "</bullet>";
+                    let iconLink = "";
+                    if ("icon" in spell) {
+                        iconLink = spell.icon;
+                    }
+
+                    if (iconLink == undefined || incorrectIconOverrideList.includes(spell.spell_slug)) {
+                        iconLink = spell.id;
+                        span.innerHTML +=
+                            '<bullet> <img width="20px" src="/rbbp/Icons/SummonIcons/' +
+                            iconLink +
+                            '.png">' +
+                            spell.name +
+                            "</bullet>";
+                    } else {
+                        span.innerHTML +=
+                            '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
+                            iconLink +
+                            '.png">' +
+                            spell.name +
+                            "</bullet>";
+                    }
                 } else {
                     span.innerHTML +=
-                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
+                        '<bullet> <img width="20px" src="/rbbp/Icons/UnitUnlockIcons/' +
                         origin.skills[index].unit_slug +
                         '.png">' +
                         findBy(jsonUnitsLocalized, "id", locOrigin.skills[index].unit_slug).name +
@@ -1774,16 +1817,19 @@ function SetTomePreview(span, origin) {
             else if (origin.skills[index].type.indexOf("Siege") != -1) {
                 var slug = "";
                 if ("siege_project_slug" in origin.skills[index]) {
-                    slug = locOrigin.skills[index].siege_project_slug;
+                    slug = origin.skills[index].siege_project_slug;
                 } else {
-                    slug = locOrigin.skills[index].name.replaceAll(" ", "_").toLowerCase();
+                    slug = origin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 }
-                
-                const siege = findBy(jsonSiegeProjectsLocalized, "id", slug);
-
+                const siegeEN = findBy(jsonSiegeProjects, "id", slug);
+                const siege = findBy(jsonSiegeProjectsLocalized, "resid", siegeEN.resid);
+                let iconLink = "";
+                if ("icon" in siege) {
+                    iconLink = siege.icon;
+                }
                 span.innerHTML +=
                     '<bullet> <img width="20px" src="/rbbp/Icons/SiegeProjectIcons/' +
-                    siege.icon +
+                    iconLink +
                     '.png">' +
                     siege.name +
                     "</bullet>";
@@ -1791,9 +1837,13 @@ function SetTomePreview(span, origin) {
             // city structure
             else if (origin.skills[index].type.indexOf("Structure") != -1) {
                 const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
+                let iconLink = "";
+                if ("icon" in struc) {
+                    iconLink = struc.icon;
+                }
                 span.innerHTML +=
                     '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
-                    struc.icon +
+                    iconLink +
                     '.png">' +
                     struc.name +
                     "</bullet>";
@@ -1801,18 +1851,23 @@ function SetTomePreview(span, origin) {
             // province Improvement
             else if (origin.skills[index].type.indexOf("Province") != -1) {
                 const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
+                let iconLink = "";
+                if ("icon" in struc) {
+                    iconLink = struc.icon;
+                }
+
                 span.innerHTML +=
                     '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
-                    struc.icon +
+                    iconLink +
                     '.png">' +
                     struc.name +
                     "</bullet>";
             }
             // empire upgrades
             else if (origin.skills[index].type.indexOf("Empire") != -1) {
-                var imageLinkName = locOrigin.skills[index].name.replaceAll(" ", "_").toLowerCase();
+                var imageLinkName = origin.skills[index].name.replaceAll(" ", "_").toLowerCase();
                 span.innerHTML +=
-                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
+                    '<bullet> <img width="20px" src="/rbbp/Icons/ExtraIcons/' +
                     imageLinkName +
                     '.png">' +
                     origin.skills[index].name +
@@ -1820,17 +1875,34 @@ function SetTomePreview(span, origin) {
             }
             // normal spell
             else {
-                const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
-                let iconLink = spell.icon;
-                if(spell.icon == undefined){
-                    iconLink = spell.id;
+                // call young dragon failing? loc will fail here
+                if (origin.skills[index].name == "Call young Dragon") {
+                    origin.skills[index].spell_slug = "call_young_dragon";
                 }
-                span.innerHTML +=
-                    '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
-                    iconLink +
-                    '.png">' +
-                    spell.name +
-                    "</bullet>";
+                console.log(origin.skills[index].name);
+                const spellEN = findBy(jsonSpells, "id", origin.skills[index].spell_slug);
+                const spell = findBy(jsonSpellsLocalized, "resid", spellEN.resid);
+                let iconLink = "";
+                if ("icon" in spell) {
+                    iconLink = spell.icon;
+                }
+
+                if (iconLink == undefined || incorrectIconOverrideList.includes(spell.spell_slug)) {
+                    iconLink = spell.id;
+                    span.innerHTML +=
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SummonIcons/' +
+                        iconLink +
+                        '.png">' +
+                        spell.name +
+                        "</bullet>";
+                } else {
+                    span.innerHTML +=
+                        '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
+                        iconLink +
+                        '.png">' +
+                        spell.name +
+                        "</bullet>";
+                }
             }
             //
         }
@@ -1899,14 +1971,12 @@ function CollectAllPartsForOverview(fromload) {
 
     for (let v = 0; v < jsonTomes.length; v++) {
         if (currentSubCulture != "") {
-              if (jsonTomes[v].name.indexOf(currentSubCulture.name) != -1) {
-                 // if subcutlure
+            if (jsonTomes[v].name.indexOf(currentSubCulture.name) != -1) {
+                // if subcutlure
                 ExtraTomelist.push(jsonTomes[v]);
             }
         } else {
             if (jsonTomes[v].name.indexOf(currentCulture.name) != -1) {
-               
-
                 ExtraTomelist.push(jsonTomes[v]);
             }
         }
@@ -2133,8 +2203,17 @@ function CreateSpellIcon(listEntry, colorEntry) {
     text.innerHTML = " " + listEntryLoc.name;
 
     var smallIcon = document.createElement("img");
-    let iconLink = spellData.icon || spellData.id;
-    smallIcon.setAttribute("src", "/rbbp/Icons/SpellIcons/" + iconLink + ".png");
+
+    let imageSRC;
+    let imageLinkName;
+    if (spellData.icon != undefined && !incorrectIconOverrideList.includes(spellData.id)) {
+        imageLinkName = spellData.icon;
+        imageSRC = "/rbbp/Icons/SpellIcons/" + imageLinkName + ".png";
+    } else {
+        imageLinkName = spellData.id;
+        imageSRC = "/rbbp/Icons/SummonIcons/" + imageLinkName + ".png";
+    }
+    smallIcon.setAttribute("src", imageSRC);
     smallIcon.setAttribute("width", "25px");
     smallIcon.setAttribute("height", "25px");
     spell.appendChild(tier);
@@ -2204,12 +2283,14 @@ function CreateUnitIcon(listEntry, colorEntry) {
     allAbilities.innerHTML +=
         '<span style="font-size: 20px ;display:flex" ><img  src="/rbbp/Icons/Text/health.png" width="25 " height="25 ">' +
         listEntry.hp +
-        '<img src="/rbbp/Icons/Text/mp.png" width="25 " height="25 ">' +
-        listEntry.mp +
-        '<img src="/rbbp/Icons/Text/resistance.png" width="25 " height="25 ">' +
-        listEntry.resistance +
         '<img  src="/rbbp/Icons/Text/armor.png" width="25 " height="25 ">' +
         listEntry.armor +
+        '<img src="/rbbp/Icons/Text/resistance.png" width="25 " height="25 ">' +
+        listEntry.resistance +
+        '<img src="/rbbp/Icons/Text/mp.png" width="25 " height="25 ">' +
+        listEntry.mp +
+        '<img src="/rbbp/Icons/Text/combat_speed.png" width="25 " height="25 ">' +
+        listEntry.combat_speed +
         "</span><hr>";
     if ("secondary_passives" in listEntry) {
         for (let index = 0; index < listEntry.secondary_passives.length; index++) {
@@ -2296,7 +2377,7 @@ function ShowUpgradesOverview(list) {
                 var text = document.createElement("div");
                 text.innerHTML = " " + loc.name;
                 var smallIcon = document.createElement("img");
-                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].id + ".png");
+                smallIcon.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + jsonStructureUpgrades[i].icon + ".png");
                 smallIcon.setAttribute("width", "20px");
                 spell.appendChild(smallIcon);
                 spell.appendChild(text);
@@ -2794,6 +2875,18 @@ function GetAllAscensions() {
     for (i = 0; i < jsonHeroSkills.length; i++) {
         if (jsonHeroSkills[i].name.indexOf("Ascension") != -1) {
             listOfAllOrigins.push(jsonHeroSkills[i]);
+        }
+    }
+    listOfAllOrigins.sort((a, b) => a.name - b.name);
+    return listOfAllOrigins;
+}
+
+function GetAllAmbitions() {
+    var listOfAllOrigins = [];
+
+    for (i = 0; i < jsonHeroAmbitions.length; i++) {
+        if (jsonHeroAmbitions[i].available_to_rulers == true) {
+            listOfAllOrigins.push(jsonHeroAmbitions[i]);
         }
     }
     listOfAllOrigins.sort((a, b) => a.name - b.name);
@@ -3346,6 +3439,14 @@ function GenerateQuickLink() {
         var modRaceName = raceName.replaceAll(" ", "%20");
         code += ":" + modRaceName;
     }
+    // 12 add ambition
+    // 13 ascension
+    if (currentAmbition == "") {
+        code += "," + "am";
+    } else {
+        var number = decimalToHex(LookUpTableData(currentAmbition.id));
+        code += "," + number;
+    }
 
     // console.log("hex code: " + code);
 
@@ -3440,13 +3541,13 @@ function reversLookUp(code) {
     SetButtonInfo(originButton, currentSociety2, "Society2");
 
     // sub society
-    if (currentSocietySplit[1] != undefined) {
+    if (currentSocietySplit2[1] != undefined) {
         // sub society here
 
-        var subsoc1 = jsonBuilderLookUp[hexToDecimal(currentSocietySplit[1])].id;
+        var subsoc2 = jsonBuilderLookUp[hexToDecimal(currentSocietySplit2[1])].id;
 
         for (let index = 0; index < jsonFactionCreation.length; index++) {
-            if (jsonFactionCreation[index].id === subsoc1) {
+            if (jsonFactionCreation[index].id === subsoc2) {
                 var newBit = jsonFactionCreation[index];
             }
             currentSubSociety2 = newBit;
@@ -3648,6 +3749,21 @@ function reversLookUp(code) {
         if (splitNames[1] != "r") {
             document.getElementById("fname").value = splitNames[1];
         }
+    }
+
+    // 13 = ambition if available, else placeholder "am" is added
+    var amb = splitcode[13];
+    if (amb != "am" && amb != undefined) {
+        var numbernew = jsonBuilderLookUp[hexToDecimal(amb)].id;
+
+        for (let index = 0; index < jsonHeroAmbitions.length; index++) {
+            if (jsonHeroAmbitions[index].id === numbernew) {
+                var newas = jsonHeroAmbitions[index];
+            }
+        }
+        currentAmbition = newas;
+        var originButton = document.getElementById("originButtonAmbition");
+        SetButtonInfo(originButton, currentAmbition, "Ambition");
     }
 }
 
