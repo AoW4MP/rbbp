@@ -120,7 +120,7 @@
   "id": "sign_of_the_vanguard",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Unit has:<bulletlist><bullet>Very Fast Movement in combat.</bullet><bullet><hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks against this unit have -20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet><hyperlink>Melee</hyperlink> attacks deal -20% damage.</bullet></bulletlist>",
+  "description": "Unit has:<bulletlist><bullet>Very Fast Movement in combat.</bullet><bullet><hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks against this unit have -20% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet><hyperlink>Melee</hyperlink> attacks deal -20% damage.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShock></unitShock> Shock Unit"
@@ -226,7 +226,7 @@
   "id": "sign_of_the_huntress",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "<hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks have +30% damage and -1<hyperlink><range></range>Range</hyperlink>.",
+  "description": "<hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks have +30% damage and -1<hyperlink><range></range>Range</hyperlink>.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -301,7 +301,7 @@
   "id": "umbral_exile",
   "DLC": "ELDRITCHREALMS ",
   "tactical": true,
-  "description": "Target unit has a base 60% chance of:<bulletlist><bullet>Being immediately removed from combat.</bullet><bullet>Appearing at a random location in the Umbral Abyss after battle.</bullet><bullet>If unsuccessful, inflicts Stunned for 1<turn></turn> Turn instead.</bullet></bulletlist><br></br><br></br>Cannot be used in Water Combat.",
+  "description": "Target non-<hyperlink>Hero</hyperlink> unit has a base 60% chance of:<bulletlist><bullet>Being immediately removed from combat.</bullet><bullet>Appearing at a random location in the Umbral Abyss after battle.</bullet><bullet>If unsuccessful, inflicts Stunned for 1<turn></turn> Turn instead.</bullet></bulletlist><br></br><br></br>Cannot be used in Water Combat.",
   "name": "Umbral Exile",
   "operation_point_cost": 30,
   "icon": "0000049C0000005B"
@@ -423,7 +423,7 @@
   "id": "commanders_call",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain 10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Gain 15 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>",
   "name": "Commander's Call",
   "operation_point_cost": 20,
   "icon": "0000049700003787"
@@ -516,13 +516,13 @@
   ]
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "20<mana></mana> ",
   "resid": 5046586586779,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "sandstorm",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "Conjure a <hyperlink>Sandstorm</hyperlink> in a 3-hex radius that lasts for 3 <turn></turn> Turns.",
+  "description": "Conjure a <hyperlink>Sandstorm</hyperlink> in a 2-hex radius that lasts for 3 <turn></turn> Turns.",
   "name": "Sandstorm",
   "operation_point_cost": 25,
   "icon": "0000049700003666"
@@ -563,7 +563,7 @@
   "id": "dunestalkers",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Target race becomes one with the desert, granting them:<bulletlist><bullet>Sand Walk</bullet><bullet>Sand Camouflage</bullet><bullet>When on <hyperlink>Sand</hyperlink> terrain gain:<bulletlist></bullet><bullet>Very Fast Movement in combat.</bullet><bullet>+20% <hyperlink><flank></flank> Flanking</hyperlink> damage.</bulltlist></bulltlist></bullet>",
+  "description": "Target race becomes one with the desert, granting them:<bulletlist><bullet>Sand Walk</bullet><bullet>Sand Camouflage</bullet><bullet>When on <hyperlink>Sand</hyperlink> terrain gain:<bulletlist></bullet><bullet>Fast Movement in combat.</bullet><bullet>+20% <hyperlink><flank></flank> Flanking</hyperlink> damage.</bullet></bulletlist></bulletlist>",
   "name": "Dunestalkers",
   "operation_point_cost": 250,
   "icon": "0000049700003662"
@@ -685,7 +685,7 @@
   "id": "tormenting_projectiles",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "<hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Have a base 90% chance of inflicting Torment until the end of combat.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "<hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Have a base 90% chance of inflicting Torment until the end of combat.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -738,7 +738,7 @@
   "id": "rite_of_bloodletting",
   "DLC": "THRONESOFBLOOD ",
   "tactical": true,
-  "description": "Target friendly unit sustains 5 unblockable <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>. Then all enemy units within 2 hexes:<bulletlist><bullet>Sustain 10 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain 2 Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "Target friendly unit sustains 5 unblockable <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>. Then all enemy units within 1 hexes:<bulletlist><bullet>Sustain 10 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain 2 Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Rite of Bloodletting",
   "operation_point_cost": 15,
   "icon": "0000049700003296"
@@ -815,7 +815,7 @@
   "id": "desecration_ritual",
   "DLC": "THRONESOFBLOOD ",
   "tactical": false,
-  "description": "Target and adjacent surface <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Sunless</hyperlink>.</bullet><bullet>Enemy armies sustain 20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Target surface <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Sunless</hyperlink>.</bullet><bullet>Enemy armies sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Desecration Ritual",
   "operation_point_cost": 275,
   "icon": "0000049700002E5B"
@@ -838,7 +838,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "blooming_projectiles",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Gain a base 60% chance of inflicting Life Seed for 3 <turn></turn> Turns.</bullet><bullet>Deal +10% damage against Decaying units.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Gain a base 60% chance of inflicting Life Seed for 3 <turn></turn> Turns.</bullet><bullet>Deal +10% damage against Decaying units.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -877,14 +877,14 @@
   ]
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 5046586584444,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_lightbringer",
   "tactical": false,
   "description": "Summon a <hyperlink>Lightbringer</hyperlink> Battle Mage Unit that can convert other units to your cause.",
   "name": "Summon Lightbringer",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "icon": "0000049700002D86",
   "summoned_units": [
    {
@@ -930,7 +930,7 @@
   "id": "unholy_champion",
   "DLC": "ARCHONPROPHECY ",
   "tactical": true,
-  "description": "Target friendly unit gains:<bulletlist><bullet>+50% damage.</bullet><bullet>Undying.</bullet><bullet>Armor of Despair</bullet></bulletlist><br></br>On cast, enemy units in a 2-hex radius lose 10 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
+  "description": "Target friendly unit gains:<bulletlist><bullet>+30% damage.</bullet><bullet>Undying.</bullet><bullet>Armor of Despair</bullet></bulletlist><br></br>On cast, enemy units in a 2-hex radius lose 5 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
   "name": "Unholy Champion",
   "operation_point_cost": 40,
   "icon": "0000049700002C3D"
@@ -1019,21 +1019,21 @@
   "id": "ascended_rebirth",
   "DLC": "ARCHONPROPHECY ",
   "tactical": true,
-  "description": "Target dead non-Hero and non-Celestial unit:<bulletlist><bullet>Revives as a <hyperlink>Vigil</hyperlink> under the caster's control until the end of combat.</bullet><bullet>On revive, all friendly units in a 2-hex radius are healed for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target dead non-Hero and non-Celestial unit:<bulletlist><bullet>Revives as a <hyperlink>Vigil</hyperlink> under the caster's control until the end of combat.</bullet><bullet>On revive, all friendly units in a 2-hex radius are healed for 5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Ascended Rebirth",
   "operation_point_cost": 40,
   "icon": "0000049700002B84"
  },
  {
-  "casting_cost": "450<mana></mana> ",
+  "casting_cost": "600<mana></mana> ",
   "resid": 5046586583927,
-  "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>",
   "id": "pure_soul",
   "DLC": "ARCHONPROPHECY ",
   "tactical": false,
   "description": "Purify the souls of target race, granting them:<bulletlist><bullet>At the start of each turn in combat, dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>If the Negative Status Effect removed had a positive <hyperlink>counter</hyperlink>, gain the <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist><br></br>This transformation is incompatible with Umbral Flesh and Gloom Strider.",
   "name": "Pure Soul",
-  "operation_point_cost": 450,
+  "operation_point_cost": 600,
   "icon": "0000049700002B7C"
  },
  {
@@ -1345,15 +1345,15 @@
   "icon": "0000049700001A52"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 5046586579333,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "dungeon_hazard",
   "DLC": "GIANTKINGS ",
   "tactical": false,
-  "description": "Target enemy army:<bulletlist><bullet>Sustains 15 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>, doubled if cast on a Dungeon <hyperlink>Province</hyperlink>.</bullet><bullet>For 1 <hyperlink>World Map</hyperlink> <turn></turn> Turn, at the start of combat units in this army become Slowed for 3 <turn></turn> Turn.</bullet></bulletlist>",
+  "description": "Target enemy army:<bulletlist><bullet>Sustains 3 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>, doubled if cast on a Dungeon <hyperlink>Province</hyperlink>.</bullet><bullet>For 1 <hyperlink>World Map</hyperlink> <turn></turn> Turn, at the start of combat units in this army become Slowed for 3 <turn></turn> Turn.</bullet></bulletlist>",
   "name": "Dungeon Hazard",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000049700001931"
  },
  {
@@ -1404,7 +1404,7 @@
   "icon": "000004970000159F"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 5046586578095,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_accursed_ogre",
@@ -1412,7 +1412,7 @@
   "tactical": false,
   "description": "Summon an <hyperlink>Accursed Ogre</hyperlink>, a shock unit that pushes enemies around and inflicts them with Ghostfire.",
   "name": "Summon Accursed Ogre",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "summoned_units": [
    {
     "slug": "accursed_ogre"
@@ -1420,7 +1420,7 @@
   ]
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 5046586578091,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_blessed_dragon",
@@ -1428,7 +1428,7 @@
   "tactical": false,
   "description": "Summon a <hyperlink>Blessed Dragon</hyperlink>, a support unit that grants Regeneration and Grace to friendly units.",
   "name": "Summon Blessed Dragon",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "summoned_units": [
    {
     "slug": "blessed_dragon"
@@ -1442,7 +1442,7 @@
   "id": "accursed_projectiles",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "<hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal +1 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>Inflict Ghostfire for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "<hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal +1 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>Inflict Ghostfire for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -1763,7 +1763,7 @@
   "id": "devout_radiance",
   "DLC": "WAYSOFWAR ",
   "tactical": true,
-  "description": "Enemy units in a 1-hex radius sustain 10 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
+  "description": "Enemy units in a 1-hex radius sustain 5 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
   "name": "Devout Radiance",
   "operation_point_cost": 15,
   "icon": "0000049700001158"
@@ -1775,7 +1775,7 @@
   "id": "devout_radiance",
   "DLC": "WAYSOFWAR ",
   "tactical": true,
-  "description": "Enemy units in a 1-hex radius sustain 10 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
+  "description": "Enemy units in a 1-hex radius sustain 5 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
   "name": "Devout Radiance",
   "operation_point_cost": 15,
   "icon": "0000049700001158"
@@ -1787,13 +1787,13 @@
   "id": "devout_radiance",
   "DLC": "WAYSOFWAR ",
   "tactical": true,
-  "description": "Enemy units in a 1-hex radius sustain 10 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
+  "description": "Enemy units in a 1-hex radius sustain 5 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.<br></br><br></br>Damage changes based on your <hyperlink>Devotion</hyperlink> level.",
   "name": "Devout Radiance",
   "operation_point_cost": 15,
   "icon": "0000049700001158"
  },
  {
-  "casting_cost": "5<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 5046586577269,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "counter_stance",
@@ -1801,11 +1801,11 @@
   "tactical": true,
   "description": "Friendly units in a 1-hex radius gain, for 1 <turn></turn> Turn:<bulletlist><bullet>First Strike</bullet><bullet>An extra <hyperlink>Retaliation Attack</hyperlink></bullet><bullet>Defensive Masters</bullet></bulletlist>",
   "name": "Counter Stance",
-  "operation_point_cost": 10,
+  "operation_point_cost": 25,
   "icon": "0000049700001140"
  },
  {
-  "casting_cost": "5<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 5046586577268,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "counter_stance",
@@ -1813,11 +1813,11 @@
   "tactical": true,
   "description": "Friendly units in a 1-hex radius gain, for 1 <turn></turn> Turn:<bulletlist><bullet>First Strike</bullet><bullet>An extra <hyperlink>Retaliation Attack</hyperlink></bullet><bullet>Defensive Masters</bullet></bulletlist>",
   "name": "Counter Stance",
-  "operation_point_cost": 10,
+  "operation_point_cost": 25,
   "icon": "0000049700001140"
  },
  {
-  "casting_cost": "5<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 5046586577259,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "counter_stance",
@@ -1825,7 +1825,7 @@
   "tactical": true,
   "description": "Friendly units in a 1-hex radius gain, for 1 <turn></turn> Turn:<bulletlist><bullet>First Strike</bullet><bullet>An extra <hyperlink>Retaliation Attack</hyperlink></bullet><bullet>Defensive Masters</bullet></bulletlist>",
   "name": "Counter Stance",
-  "operation_point_cost": 10,
+  "operation_point_cost": 25,
   "icon": "0000049700001140"
  },
  {
@@ -1845,7 +1845,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "obsidian_weapons",
   "tactical": false,
-  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Missile</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -1890,7 +1890,7 @@
   "tactical": false,
   "description": "Summons an <hyperlink>Astral Wisp</hyperlink> on target hex.",
   "name": "Astral Wisp Ritual",
-  "operation_point_cost": 45,
+  "operation_point_cost": 65,
   "summoned_units": [
    {
     "slug": "astral_wisp"
@@ -1904,7 +1904,7 @@
   "id": "dark_knowledge_ritual",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Gain 200 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.",
+  "description": "Gain 260 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.",
   "name": "Dark Knowledge Ritual",
   "operation_point_cost": 150,
   "icon": "0000049700000BEB"
@@ -1970,7 +1970,7 @@
   "id": "mass_phantasmal_ritual",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Enemy units in target and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Sustain damage equal to 15% of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Lose 2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> until the end of their next combat.</bullet></bulletlist>",
+  "description": "Enemy units in target and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Sustain damage equal to 2% of their maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Lose 2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> until the end of their next combat.</bullet></bulletlist>",
   "name": "Mass Phantasmal Ritual",
   "operation_point_cost": 150,
   "icon": "0000049700000C1E"
@@ -1982,13 +1982,13 @@
   "id": "phantasmal_ritual",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Target enemy army:<bulletlist><bullet>Sustains damage equal to 20% of its maximum <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Loses 2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> until the end of its next combat</bullet></bulletlist>",
+  "description": "Target enemy army:<bulletlist><bullet>Sustains damage equal to 3% of its maximum <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Loses 2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> until the end of its next combat</bullet></bulletlist>",
   "name": "Phantasmal Ritual",
   "operation_point_cost": 100,
   "icon": "0000049700000C16"
  },
  {
-  "casting_cost": "4<thralls></thralls> ",
+  "casting_cost": "2<thralls></thralls> ",
   "resid": 5046586575938,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "quickening_ritual",
@@ -1996,7 +1996,7 @@
   "tactical": false,
   "description": "Units in target friendly army gain Very Fast Movement for 2 <hyperlink>World Map</hyperlink> <turn></turn> Turns",
   "name": "Quickening Ritual",
-  "operation_point_cost": 150,
+  "operation_point_cost": 80,
   "icon": "0000049700000C0C"
  },
  {
@@ -2029,7 +2029,7 @@
   "id": "enthrall_population",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "<bulletlist><bullet>Target owned or vassal city loses 1 <population></population> <hyperlink>Population</hyperlink>.</bullet><bullet>If used on a vassal lose -200 <goodRelation></goodRelation> relation with them.</bullet><bullet>You gain 3 <thralls></thralls> <hyperlink>Thralls</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Target owned or vassal city loses 2 <population></population> <hyperlink>Population</hyperlink>.</bullet><bullet>If used on a vassal lose -400 <goodRelation></goodRelation> relation with them.</bullet><bullet>You gain 8 <thralls></thralls> <hyperlink>Thralls</hyperlink>.</bullet></bulletlist>",
   "name": "Enthrall Population",
   "operation_point_cost": 30,
   "icon": "0000049700000BCA"
@@ -2040,7 +2040,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "purging_arrows",
   "tactical": false,
-  "description": "Grants base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>+10% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Grants base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>+10% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -2785,14 +2785,14 @@
   ]
  },
  {
-  "casting_cost": "400<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 5029406703618,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Sustained World Spell</hyperlink>",
   "id": "bind_gold_ancient_wonder",
   "tactical": false,
   "description": "<bulletlist><bullet>Target owned and annexed Gold <siteGold></siteGold> <hyperlink>Ancient Wonder</hyperlink> becomes bound.</bullet><bullet>While bound, it grants +50 <knowledge></knowledge>.</bullet><bullet>A number of bound Golden Ancient Wonders are required for <hyperlink>Magic Victory</hyperlink>.</bullet><bullet>This spell is canceled if the Bound Ancient Wonder is occupied or changes ownership.</bullet></bulletlist>",
   "name": "Bind Gold Ancient Wonder",
-  "operation_point_cost": 300,
+  "operation_point_cost": 100,
   "icon": "0000049300000004"
  },
  {
@@ -2802,7 +2802,7 @@
   "id": "living_shadows",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "Wreathes target race in swirling shadows, granting them:<bulletlist><bullet>+10% <hyperlink>Evasion</hyperlink>.</bullet><bullet>When attacked from within 2 hexes the attacker has a base 60% chance of becoming Blind for 1<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+  "description": "Wreathes target race in swirling shadows, granting them:<bulletlist><bullet>+10% <hyperlink>Evasion</hyperlink>.</bullet><bullet>When attacked by an enemy from within 2 hexes, the attacker has a base 60% chance of becoming Blind for 1<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
   "name": "Living Shadows",
   "operation_point_cost": 250,
   "icon": "0000049000000F4E"
@@ -2814,7 +2814,7 @@
   "id": "umbral_flesh",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Gives the target race blessings of the Umbral Abyss, granting them:<bulletlist><bullet>Umbral Malady Immunity</bullet><bullet>While in <hyperlink>Gloom</hyperlink> terrain units gain:<bulletlist></bullet><bullet>+10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet><bullet>+12 <hyperlink><hp></hp> Hit Point</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> on the world map.</bullet></bulletlist><bullet><hyperlink>Cities</hyperlink> of the race:<bulletlist></bullet><bullet>Gain +2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income for each province with Gloom terrain.</bullet><bullet>Ignore <happiness></happiness> <hyperlink>City Stability</hyperlink> penalties from Gloom terrain.</bullet></bulletlist><bullet>Hero units gain Gloom Shepherd.</bullet></bulletlist><br></br>This transformation is incompatible with Pure Soul.",
+  "description": "Gives the target race blessings of the Umbral Abyss, granting them:<bulletlist><bullet>Umbral Malady Immunity</bullet><bullet>While in <hyperlink>Gloom</hyperlink> terrain units gain:<bulletlist></bullet><bullet>+10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet><bullet>+12 <hyperlink><hp></hp> Hit Point</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> on the world map.</bullet></bulletlist><bullet><hyperlink>Cities</hyperlink> of the race:<bulletlist></bullet><bullet>Gain +1 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> and +1 <mana></mana> <hyperlink>Mana</hyperlink> income for each province with Gloom terrain.</bullet><bullet>Ignore <happiness></happiness> <hyperlink>City Stability</hyperlink> penalties from Gloom terrain.</bullet></bulletlist><bullet>Hero units gain Gloom Shepherd.</bullet></bulletlist><br></br>This transformation is incompatible with Pure Soul.",
   "name": "Umbral Flesh",
   "operation_point_cost": 250,
   "icon": "0000049000000854"
@@ -2838,7 +2838,7 @@
   "id": "improvised_remedy",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "All friendly units with Looted Power:<bulletlist><bullet>Heal for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
+  "description": "All friendly units with Looted Power:<bulletlist><bullet>Heal for 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 2 <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet></bulletlist>",
   "name": "Improvised Remedy",
   "operation_point_cost": 15,
   "icon": "0000048D00001EE7"
@@ -2918,7 +2918,7 @@
   "id": "swiftstrike_blessing",
   "DLC": "RISEFROMRUIN ",
   "tactical": true,
-  "description": "Target friendly unit that has action points remaining and another within 3 hexes gain:<bulletlist><bullet>Empowering Momentum for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Fortune for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly unit that has action points remaining and another within 3 hexes gain:<bulletlist><bullet>Momentum for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Fortune for 3 <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist>",
   "name": "Swiftstrike Blessing",
   "operation_point_cost": 15,
   "icon": "0000048D00001D62"
@@ -3037,12 +3037,12 @@
   "icon": "0000048D00001B34"
  },
  {
-  "casting_cost": "60<mana></mana> 1<embalmedsacrifice></embalmedsacrifice> ",
+  "casting_cost": "60<mana></mana> 2<embalmedsacrifice></embalmedsacrifice> ",
   "resid": 5003636906629,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "morbid_sacrifice",
   "tactical": false,
-  "description": "Units in friendly armies in the target Province:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
+  "description": "Units in target friendly army:<bulletlist><bullet>Restore all <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Gain Universal Camouflage for 3 <turn></turn> Turns.</bullet><bullet>Gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink> until the end of their next combat.</bullet><bullet>Gain +20 <hyperlink><hp></hp> Hit Points</hyperlink> until the end of their next combat.</bullet></bulletlist>",
   "name": "Morbid Sacrifice",
   "operation_point_cost": 60,
   "icon": "0000048D00001A6E"
@@ -3287,7 +3287,7 @@
   "icon": "000004130000052E"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 5003636902479,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_willthief",
@@ -3295,7 +3295,7 @@
   "tactical": false,
   "description": "Summons a <hyperlink>Willthief</hyperlink>, an Umbral Demon that binds to and drains enemy units.",
   "name": "Summon Willthief",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "summoned_units": [
    {
     "slug": "willthief"
@@ -3850,7 +3850,7 @@
   "id": "pall_of_gloom",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Target <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 10 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 10 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gain <hyperlink>Gloom</hyperlink></bullet><bullet>Lose <hyperlink>Chasm</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, and <hyperlink>Dungeon</hyperlink>.</bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer 2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and 2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink></bullet><bullet>Enemy <hyperlink>Units</hyperlink> suffer -2 <defenseblight></defenseblight> <hyperlink>Blight Protection</hyperlink> and -2 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Pall of Gloom",
   "operation_point_cost": 150,
   "icon": "0000048B00000135"
@@ -3885,7 +3885,7 @@
   "id": "consecrating_firestorm",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "In target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy units sustain 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>The province gains Consecrating Firestorm for 3 <turn></turn> Turns</bullet><bullet>If it has an enemy owned <hyperlink>Province Improvement</hyperlink>, it is <hyperlink>Pillaged</hyperlink>.</bullet></bulletlist>",
+  "description": "In target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy units sustain 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>The province gains Consecrating Firestorm for 3 <turn></turn> Turns</bullet><bullet>If it has an enemy owned <hyperlink>Province Improvement</hyperlink>, it is <hyperlink>Pillaged</hyperlink>.</bullet></bulletlist>",
   "name": "Consecrating Firestorm",
   "operation_point_cost": 100,
   "icon": "0000048D0000087B"
@@ -4011,7 +4011,7 @@
   "icon": "0000046A0000019C"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044895,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_reposition",
@@ -4019,11 +4019,11 @@
   "tactical": true,
   "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Hastened</bullet><bullet>Strengthened</bullet><bullet>This effect then cascades to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
   "name": "Cascading Command: Reposition",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A00000187"
  },
  {
-  "casting_cost": "30<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4853313044885,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_defend",
@@ -4031,7 +4031,7 @@
   "tactical": true,
   "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for 1 <turn></turn> Turn.</bullet><bullet>Has 2 <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
   "name": "Cascading Command: Defend",
-  "operation_point_cost": 25,
+  "operation_point_cost": 30,
   "icon": "0000046A0000017D"
  },
  {
@@ -4153,7 +4153,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "flash_freeze",
   "tactical": false,
-  "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy <hyperlink>Units</hyperlink> in the Province suffer:<bulletlist></bullet><bullet>20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-5 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turns</hyperlink>.</bullet></bulletlist><bullet>The province gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>The province loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Fungus Fields</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy <hyperlink>Units</hyperlink> in the Province suffer:<bulletlist></bullet><bullet>3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Loses 25% of its <movementgeneral></movementgeneral> Move Points on the <hyperlink>World Map</hyperlink>.</bullet><bullet>For 1 <turn></turn> Turn <hyperlink>World Map</hyperlink>, at the start of combat units in this army become Blind for 3 <turn></turn> Turn. </bullet></bulletlist><bullet>The province gains <hyperlink>Snow</hyperlink> and <hyperlink>Ice</hyperlink>.</bullet><bullet>The province loses <hyperlink>Chasm</hyperlink>, <hyperlink>Grassland</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>River</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Fungus Fields</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Flash Freeze",
   "operation_point_cost": 100,
   "icon": "0000041B00001764"
@@ -4226,7 +4226,7 @@
   "icon": "000003E300005C88"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567758,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4234,11 +4234,11 @@
   "tactical": false,
   "description": "Channel the Age of Shadow to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <shadow></shadow> <hyperlink>Shadow Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random corpse is reanimated as a <hyperlink>Decaying Zombie</hyperlink> until the end of combat.</bullet></bulletlist>",
   "name": "Age of Shadow",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567754,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4246,11 +4246,11 @@
   "tactical": false,
   "description": "Channel the Age of Order to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <order></order> <hyperlink>Order Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random ally gains 3 random <hyperlink>Positive Status Effects</hyperlink> and loses all <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist>",
   "name": "Age of Order",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A0000000B"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567750,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4258,11 +4258,11 @@
   "tactical": false,
   "description": "Channel the Age of Nature to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <nature></nature> <hyperlink>Nature Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Every 2 turns in combat, a Tier II-III nature unit is summoned on your side.</bullet></bulletlist>",
   "name": "Age of Nature",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000007"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4784593567746,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4270,7 +4270,7 @@
   "tactical": false,
   "description": "Channel the Age of Materium to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <matter></matter> <hyperlink>Materium Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a friendly unit gains Bolstered Defense and Bolstered Resistance. Repeats 2-4 times.</bullet></bulletlist>",
   "name": "Age of Materium",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000045A00000003"
  },
  {
@@ -4297,7 +4297,7 @@
   "icon": "0000044500000057"
  },
  {
-  "casting_cost": "150<mana></mana> ",
+  "casting_cost": "150<mana></mana> 2<personalityAstral03></personalityAstral03> ",
   "resid": 4694399254676,
   "spellType": "<casttactical></casttactical> <hyperlink>Healing Spell</hyperlink>",
   "id": "mass_rejuvenation",
@@ -4308,7 +4308,7 @@
   "icon": "000004450000005F"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4694399254591,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4316,7 +4316,7 @@
   "tactical": false,
   "description": "Channel the Age of Chaos to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <chaos></chaos> <hyperlink>Chaos Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each <turn></turn> Turn in combat, a random enemy unit sustains 15 damage of a random type and has a base 90% chance of receiving a random <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Age of Chaos",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000044500000040"
  },
  {
@@ -4331,7 +4331,7 @@
   "icon": "0000044000000079"
  },
  {
-  "casting_cost": "150<mana></mana> ",
+  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4672924418199,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "demonic_onslaught",
@@ -4375,7 +4375,7 @@
   "icon": "0000041B000019D1"
  },
  {
-  "casting_cost": "150<mana></mana> ",
+  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4514010634979,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "exalted_champion",
@@ -4386,7 +4386,7 @@
   "icon": "0000041B000019C9"
  },
  {
-  "casting_cost": "200<mana></mana> ",
+  "casting_cost": "200<mana></mana> 2<personalityAstral03></personalityAstral03> ",
   "resid": 4514010634969,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "mass_revive",
@@ -4397,14 +4397,14 @@
   "icon": "0000041B000019D9"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4514010634948,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "condemn_army",
   "tactical": false,
-  "description": "Target enemy army:<bulletlist><bullet>Takes 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>Becomes Condemned for 5 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "Target enemy army:<bulletlist><bullet>Takes 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>Becomes Condemned for 5 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Condemn Army",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000041B0000199D"
  },
  {
@@ -4441,14 +4441,14 @@
   "icon": "0000041B000019A5"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4514010634867,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "burden_of_guilt",
   "tactical": false,
-  "description": "Target enemy army:<bulletlist><bullet>Sustains 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>Loses 50% of its <movementgeneral></movementgeneral> Move Points on the <hyperlink>World Map</hyperlink>.</bullet></bulletlist>",
+  "description": "Target enemy army:<bulletlist><bullet>Sustains 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>Loses 50% of its <movementgeneral></movementgeneral> Move Points on the <hyperlink>World Map</hyperlink>.</bullet></bulletlist>",
   "name": "Burden of Guilt",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000041B00001957"
  },
  {
@@ -4581,7 +4581,7 @@
   "icon": "0000041B0000176C"
  },
  {
-  "casting_cost": "50<souls></souls> ",
+  "casting_cost": "50<souls></souls> 2<personalityAstral03></personalityAstral03> ",
   "resid": 4514010634391,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "battlefield_reanimation",
@@ -4789,7 +4789,7 @@
   "icon": "0000041B00001721"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "100<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4514010634103,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>",
   "id": "withering_mist",
@@ -4815,14 +4815,14 @@
   ]
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4514010633908,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "blizzard",
   "tactical": false,
-  "description": "All units in target enemy army:<bulletlist><bullet>Sustain 20 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Suffer -3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink> for 1 World Map <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "All units in target enemy army:<bulletlist><bullet>Sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Suffer -2 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink> for 1 World Map <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Blizzard",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000041B000006D0"
  },
  {
@@ -4868,7 +4868,7 @@
   "icon": "0000041B00001298"
  },
  {
-  "casting_cost": "800<mana></mana> ",
+  "casting_cost": "100<mana></mana> ",
   "resid": 4514010633567,
   "upkeep": "50<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Spell Victory</hyperlink>",
@@ -4876,7 +4876,7 @@
   "tactical": false,
   "description": "Channel the Age of Astral to reach the <hyperlink>Magic Victory</hyperlink>. While channeling:<bulletlist><bullet>Your <arcana></arcana> <hyperlink>Astral Affinity</hyperlink> <hyperlink>Spells</hyperlink> cost -20% <mana></mana> <hyperlink>Mana</hyperlink>, <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>, and <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink>.</bullet><bullet>Each turn in combat, a random enemy takes 15 mixed Fire, Lightning, and Frost, damage and gets 2 Sundered Resistance and 2 Status Vulnerability.</bullet></bulletlist>",
   "name": "Age of Astral",
-  "operation_point_cost": 400,
+  "operation_point_cost": 100,
   "icon": "0000041B00001560"
  },
  {
@@ -4899,7 +4899,7 @@
   "icon": "0000041B000012D2"
  },
  {
-  "casting_cost": "200<mana></mana> ",
+  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4514010633542,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "time_stop",
@@ -4910,7 +4910,7 @@
   "icon": "0000041B000012CE"
  },
  {
-  "casting_cost": "300<mana></mana> ",
+  "casting_cost": "300<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4514010633535,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff/Debuff Spell</hyperlink>",
   "id": "disruption_wave",
@@ -5079,14 +5079,14 @@
   "icon": "0000041B0000121F"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4514010632946,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "lightning_torrent",
   "tactical": false,
-  "description": "In target enemy army:<bulletlist><bullet>All units sustain 20 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>All units suffer -1 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "In target enemy army:<bulletlist><bullet>All units sustain 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>All units suffer -2 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink> for 1 <hyperlink>World Map</hyperlink> <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Lightning Torrent",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "0000041B000012E5"
  },
  {
@@ -5120,7 +5120,7 @@
   "icon": "0000041B00001100"
  },
  {
-  "casting_cost": "200<mana></mana> ",
+  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
   "resid": 4514010632479,
   "spellType": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>",
   "id": "tectonic_shatter",
@@ -5241,7 +5241,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "seeker_arrows",
   "tactical": false,
-  "description": "Grants <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>+1<hyperlink><range></range>Range</hyperlink>.</bullet></bulletlist>",
+  "description": "Grants <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>+1<hyperlink><range></range>Range</hyperlink>.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -5304,14 +5304,14 @@
   "icon": "0000041B00000FD4"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010632183,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_wind_rager",
   "tactical": false,
-  "description": "Summon a <hyperlink>Wind Rager</hyperlink>, a fast and disruptive Fighter Unit",
+  "description": "Summon a <hyperlink>Wind Rager</hyperlink>, a fast and disruptive Magic Fighter Unit",
   "name": "Summon Wind Rager",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "icon": "0000041B00000FD8",
   "summoned_units": [
    {
@@ -5320,14 +5320,14 @@
   ]
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010632168,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "abducting_cyclone",
   "tactical": true,
-  "description": "Pulls the closest enemy within 3 hexes to target empty hex. They have a base 90% chance of becoming Stunned for 1 <turn></turn> Turn.",
+  "description": "Pulls the closest enemy within 2 hexes to target empty hex. They have a base 90% chance of becoming Stunned for 1 <turn></turn> Turn.",
   "name": "Abducting Cyclone",
-  "operation_point_cost": 20,
+  "operation_point_cost": 35,
   "icon": "0000041B00000FC8"
  },
  {
@@ -5466,7 +5466,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "restore_the_land",
   "tactical": false,
-  "description": "Target friendly or unowned <hyperlink>Province</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
+  "description": "Target friendly or unowned <hyperlink>Province</hyperlink> and adjacent <hyperlink>Provinces</hyperlink>:<bulletlist><bullet>Gains <hyperlink>Grassland</hyperlink> if it is on the Surface or <hyperlink>Fungus Fields</hyperlink> and <hyperlink>Mushroom Forest</hyperlink> if it is in the Underground.</bullet><bullet>Loses <hyperlink>Chasm</hyperlink>, <hyperlink>Swamp</hyperlink>, <hyperlink>Snow</hyperlink>, <hyperlink>Ice</hyperlink>, <hyperlink>Ashlands</hyperlink>, <hyperlink>Sand</hyperlink>, <hyperlink>Cavern Floor</hyperlink>, <hyperlink>Stalagmites</hyperlink>, and <hyperlink>Gloom</hyperlink>.</bullet></bulletlist>",
   "name": "Restore the Land",
   "operation_point_cost": 30,
   "icon": "0000041B00000D7C"
@@ -5549,7 +5549,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "poison_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain base 60% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain base 60% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -5703,14 +5703,14 @@
   "icon": "000003E3000059F1"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010630942,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_gremlin",
   "tactical": false,
   "description": "Summons a <hyperlink>Gremlin</hyperlink> onto the target world hex. This unit is a disruptive and fiendish Magic Fighter Unit.",
   "name": "Summon Gremlin",
-  "operation_point_cost": 100,
+  "operation_point_cost": 80,
   "summoned_units": [
    {
     "slug": "gremlin"
@@ -5745,7 +5745,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "mark_of_misfortune",
   "tactical": false,
-  "description": "Makes attacks of enchanted units:<bulletlist><bullet>Inflict Misfortune.</bullet></bulletlist> <br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Unit's attacks:<bulletlist><bullet>A base 90% chance of inflicting Misfortune.</bullet></bulletlist> <br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -5789,7 +5789,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Damage Spell</hyperlink>",
   "id": "wrath_of_the_faithful",
   "tactical": true,
-  "description": "Target enemy unit sustains 10 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus 5 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 8).",
+  "description": "Target enemy unit sustains 2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 16).",
   "name": "Wrath of the Faithful",
   "operation_point_cost": 15,
   "icon": "000003BD00002E6B"
@@ -6011,7 +6011,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "totem_of_the_wild",
   "tactical": true,
-  "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier I or II animal unit when it's created and at the start of your next 2 <turn></turn> Turns.<br></br><br></br>Cannot be used in Water battles.",
+  "description": "Summons a <hyperlink>Totem of the Wild</hyperlink>, which spawns a random Tier II animal unit when it's created and at the start of your next 2 <turn></turn> Turns.<br></br><br></br>Cannot be used in Water battles.",
   "name": "Totem of the Wild",
   "operation_point_cost": 35,
   "summoned_units": [
@@ -6470,7 +6470,7 @@
   "id": "purifying_flame",
   "DLC": "DRAGONLORDS ",
   "tactical": true,
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal for 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have their <hyperlink>Negative Status Effects</hyperlink> removed.</bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal for 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
   "name": "Purifying Flame",
   "operation_point_cost": 35,
   "icon": "000003E300006B8F"
@@ -6754,7 +6754,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "frost_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6773,7 +6773,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "amplified_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Deal 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to 2 other targets within 2 hexes.</bullet><bullet>Have a base 30% chance of inflicting Sundered Resistance on each target hit for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes base <hyperlink>Missile</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal -1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Deal 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to 2 other targets within 2 hexes.</bullet><bullet>Have a base 30% chance of inflicting Sundered Resistance on each target hit for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6792,7 +6792,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "fiery_projectiles",
   "tactical": false,
-  "description": "Base <hyperlink>Physical Ranged</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Base <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+1 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6902,7 +6902,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "keepers_mark",
   "tactical": false,
-  "description": "Enchanted units:<bulletlist><bullet>Gain Faithful, reducing <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>When taking fatal damage for the first time, this unit gains:<bulletlist></bullet><bullet>Steadfast for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Pacified for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Enchanted units:<bulletlist><bullet>Gain Faithful, reducing <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>When taking fatal damage for the first time, this unit gains:<bulletlist></bullet><bullet>Steadfast for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Stunned for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -7296,7 +7296,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "summon_astral_serpent",
   "tactical": false,
-  "description": "Summons an <hyperlink>Astral Serpent</hyperlink>, a Fighter Unit that can teleport into the front lines in an explosive manner.",
+  "description": "Summons an <hyperlink>Astral Serpent</hyperlink>, a Magic Fighter Unit that can teleport into the front lines in an explosive manner.",
   "name": "Summon Astral Serpent",
   "operation_point_cost": 150,
   "summoned_units": [
@@ -7379,7 +7379,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "static_shield",
   "tactical": true,
-  "description": "Target friendly unit and another within 3 hexes gain Static Shield for 2 <turn></turn> Turns.",
+  "description": "Target friendly unit gain a shield:<bulletlist><bullet>Has a base 60% chance of inflicting Stunned on attackers.</bullet><bullet>Lasts for 2 <turn></turn> Turns.</bullet></bulletlist>",
   "name": "Static Shield",
   "operation_point_cost": 15,
   "icon": "0000041B0000120C"
@@ -7652,7 +7652,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "leafskin",
   "tactical": false,
-  "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet></bulletlist>",
+  "description": "Makes the target race one with the forest, granting them:<bulletlist><bullet>+2<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Forest Walk</bullet><bullet>Forest Camouflage</bullet><bullet>Have a +10 % bonus to damage when fighting in the following areas: <hyperlink>Forest</hyperlink>, <hyperlink>Mushroom Forest</hyperlink></bullet></bulletlist>",
   "name": "Leafskin",
   "operation_point_cost": 250,
   "icon": "0000041B00000D41"
@@ -7930,7 +7930,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "unleash_beast",
   "tactical": true,
-  "description": "Target Animal or Cavalry unit gains, for 3 <turn></turn> Turns:<bulletlist><bullet>5 Strengthened</bullet><bullet>5 Bolstered Defense</bullet><bullet>Berserk.</bullet></bulletlist>",
+  "description": "Friendly Animal or Cavalry unit in a 2-hex radius gains:<bulletlist><bullet>2 Strengthened</bullet><bullet>2 Bolstered Defense</bullet><bullet>Hastened for 1 <turn></turn> Turn.</bullet></bulletlist>",
   "name": "Unleash Beast",
   "operation_point_cost": 40,
   "icon": "000003E300004AF3"
@@ -8130,7 +8130,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "rune_of_industry",
   "tactical": false,
-  "description": "Grants non-Industrious units:<bulletlist><bullet>Bolstering, which increases defense when they sustain damage.</bullet></bulletlist>",
+  "description": "Grants non-Industrious units:<bulletlist><bullet>Indestructibility, which increases defense when they sustain damage.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -8409,5 +8409,60 @@
   "name": "Ilandra's Chosen",
   "operation_point_cost": 300,
   "icon": "000003DF000016E0"
+ },
+ {
+  "casting_cost": "150<gold></gold> ",
+  "resid": -3753916818180274834,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "gesture_of_goodwill",
+  "tactical": false,
+  "description": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>.",
+  "name": "Gesture of Goodwill",
+  "operation_point_cost": 100,
+  "icon": "CBE7688B0000056B"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180275193,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "spoils_of_destruction",
+  "tactical": false,
+  "description": "<bulletlist><bullet>Target enemy <hyperlink>Empire</hyperlink> <hyperlink>City</hyperlink> loses a border land <hyperlink>Province</hyperlink> and the <population></population> <hyperlink>Population</hyperlink> is lost.</bullet><bullet>The nearest <hyperlink>City</hyperlink> of your <hyperlink>Empire</hyperlink> gains 250 <structureprod></structureprod> Production</bullet><bullet> You gain 250 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist>",
+  "name": "Spoils of Destruction",
+  "operation_point_cost": 100,
+  "icon": "CBE7688B000003E7"
+ },
+ {
+  "casting_cost": "100<warspoils></warspoils> ",
+  "resid": -3753916818180275545,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "recycling_iii",
+  "tactical": false,
+  "description": "Converts <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> to 20 <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink>",
+  "name": "Recycling III",
+  "operation_point_cost": 60,
+  "icon": "000003C700000232"
+ },
+ {
+  "casting_cost": "100<warspoils></warspoils> ",
+  "resid": -3753916818180275548,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "recycling_ii",
+  "tactical": false,
+  "description": "Converts <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> to 100 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink>",
+  "name": "Recycling II",
+  "operation_point_cost": 60,
+  "icon": "000003C700000232"
+ },
+ {
+  "casting_cost": "100<warspoils></warspoils> ",
+  "resid": -3753916818180275563,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "recycling_i",
+  "tactical": false,
+  "description": "Converts <warspoils></warspoils> <hyperlink>War Spoils</hyperlink> to 250 <gold></gold> <hyperlink>Gold</hyperlink>",
+  "name": "Recycling I",
+  "operation_point_cost": 60,
+  "icon": "000003C700000232"
  }
 ]

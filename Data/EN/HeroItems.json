@@ -173,13 +173,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -225,13 +225,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -271,13 +271,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -1535,7 +1535,7 @@
     "slug": "quick_stab_ability_druids_staff_item_tier_1"
    },
    {
-    "slug": "sap_strength_ability_druids_staff_item_tier_1"
+    "slug": "healing_sap_ability_druids_staff_item_tier_1"
    }
   ],
   "icon": "000004A6000008DD",
@@ -2886,7 +2886,6 @@
    }
   ],
   "name": "Magical Orb",
-  "DLC": "RISEFROMRUIN ",
   "ability_slugs": [
    {
     "slug": "magic_hero_bolts_(base)_ability_equipment_item_fractured_orb_base"
@@ -2895,7 +2894,7 @@
     "slug": "quick_stab_ability_equipment_item_fractured_orb_base"
    }
   ],
-  "icon": "0000049700003982",
+  "icon": "0000049700003DD7",
   "disabled_slots": [
    {
     "slot_name": "Secondary"
@@ -2931,7 +2930,6 @@
    }
   ],
   "slot": "Primary",
-  "DLC": "RISEFROMRUIN ",
   "ability_slugs": [
    {
     "slug": "magic_hero_bolts_(physical)__ability_fractured_orb_item_tier_1"
@@ -3937,13 +3935,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Bone Obelisk",
@@ -3988,13 +3986,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Bone Warhammer",
@@ -4039,13 +4037,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Bone Giant Axe",
@@ -4087,13 +4085,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -4138,13 +4136,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -4189,13 +4187,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -4710,13 +4708,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -4762,13 +4760,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -4808,13 +4806,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -5077,13 +5075,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -5128,13 +5126,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -5179,13 +5177,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -5227,13 +5225,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -5278,13 +5276,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -5329,13 +5327,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -5377,13 +5375,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Obelisk",
@@ -5428,13 +5426,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Warhammer",
@@ -5479,13 +5477,13 @@
     "name": "Storm Giant King"
    },
    {
+    "name": "Rock Giant King"
+   },
+   {
     "name": "Frost Giant King"
    },
    {
     "name": "Fire Giant King"
-   },
-   {
-    "name": "Rock Giant King"
    }
   ],
   "name": "Giant Axe",
@@ -17038,8 +17036,8 @@
   ],
   "description": "Unit gains:<bulletlist><bullet>Very Fast Movement.</bullet><bullet>Cavalry unit type.</bullet><bullet>Pack Hunter.</bullet><bullet>2 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink></bullet></bulletlist>",
   "name": "White Wolf Mount",
-  "tier": "Tier III",
-  "tier_numerals": "III",
+  "tier": "Tier II",
+  "tier_numerals": "II",
   "slot": "Mount",
   "icon": "0000041B00001634",
   "disabled_slots": []
@@ -20730,8 +20728,8 @@
   "resid": 4264902531564,
   "id": "cryptblade_item_tier_4",
   "name": "Cryptblade",
-  "tier_numerals": "IV",
-  "tier": "Tier IV",
+  "tier_numerals": "II",
+  "tier": "Tier II",
   "slot": "Miscellaneous",
   "ability_slugs": [
    {
