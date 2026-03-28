@@ -51,12 +51,12 @@
  {
   "category": "Умения империи: общие",
   "id": "Улучшенная_логистика",
-  "required_xp": 400,
+  "required_xp": 500,
   "description": "Передвижение по дорогам расходует 3 <hyperlink>оч. перемещения</hyperlink> вместо 5.<br></br><br></br>Воины получают способность «Быстрая погрузка», а когда они на борту — способность «Очень высокая скорость» на <hyperlink>глобальной карте</hyperlink>.",
   "name": "Улучшенная логистика",
   "icon": "0000045E0000097E",
-  "required_level": 9,
-  "cost": "175<influence></influence> "
+  "required_level": 10,
+  "cost": "200<influence></influence> "
  },
  {
   "category": "Умения империи: материя",
@@ -92,7 +92,7 @@
   "required_affinity": "<nature></nature>"
  },
  {
-  "category": "Повторяющийся общий обряд",
+  "category": "Общий обряд. Повторяемый +300 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Расширенная_бюрократия",
   "required_xp": 100,
   "description": "Увеличивает <hyperlink>предел городов</hyperlink> на +1<citytier></citytier>.",
@@ -116,21 +116,21 @@
  {
   "category": "Умения империи: общие",
   "id": "Строительство_дорог",
-  "required_xp": 100,
+  "required_xp": 60,
   "description": "<hyperlink>Воины</hyperlink> могут строить дороги на <hyperlink>глобальной карте</hyperlink>. Передвижение по дорогам расходует 5 <hyperlink>оч. перемещения</hyperlink>, в то время как большинство типов ландшафта расходуют 6-8 оч.<br></br><br></br>Режим строительства можно активировать на панели <hyperlink>армии</hyperlink>. Дорога будет прокладываться через клетки, по которым движется <hyperlink>армия</hyperlink>. Каждая клетка дороги стоит 3 ед. <gold></gold> <hyperlink>золота</hyperlink>.",
   "name": "Строительство дорог",
   "icon": "000003E1000017FA",
-  "required_level": 4,
+  "required_level": 3,
   "cost": "125<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
   "id": "Простое_мореходство",
-  "required_xp": 40,
+  "required_xp": 15,
   "description": "Позволяет <hyperlink>воинам</hyperlink> грузиться на корабли и пересекать на них водные преграды. Воины со способностями «Летающий» и «Парящий» могут летать над водой.",
   "name": "Простое мореходство",
   "icon": "000003E1000017F9",
-  "required_level": 2,
+  "required_level": 1,
   "cost": "100<influence></influence> "
  },
  {
@@ -190,12 +190,12 @@
  {
   "category": "Умения империи: общие",
   "id": "Приоритет_дипломатии",
-  "required_xp": 120,
+  "required_xp": 40,
   "description": "Даёт <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink> (+1).",
   "name": "Приоритет дипломатии",
   "icon": "000003E100001EE8",
-  "required_level": 5,
-  "cost": "150<influence></influence> "
+  "required_level": 2,
+  "cost": "100<influence></influence> "
  },
  {
   "category": "Умения империи: порядок",
@@ -209,11 +209,13 @@
   "required_affinity": "<order></order>"
  },
  {
-  "category": "Общий обряд",
+  "category": "Общий обряд. Повторяемый +50 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_последнего_боя",
   "required_xp": 120,
   "description": "Каждый город в вашей империи теряет -1 ед. <population></population> <hyperlink>населения</hyperlink> и призывает <hyperlink>воинов</hyperlink> <hyperlink>ранга</hyperlink> I (3).",
+  "repeat_xp_increase": 0,
   "name": "Обряд последнего боя",
+  "repeat_cost_increase": "50<influence></influence> ",
   "icon": "000003E100001DB0",
   "required_level": 5,
   "cost": "175<influence></influence> "
@@ -221,45 +223,45 @@
  {
   "category": "Умения империи: тень",
   "id": "Тени-шпионы",
-  "required_xp": 500,
+  "required_xp": 300,
   "description": "Открывает всю <hyperlink>глобальную карту</hyperlink>.<br></br>Ваш <hyperlink>тронный город</hyperlink> приобретает неограниченную <hyperlink>дальность обнаружения</hyperlink>.<br></br><hyperlink>Армии</hyperlink> в пределах <hyperlink>дальности обнаружения</hyperlink> больше не могут скрывать свою численность и принадлежность.",
   "name": "Тени-шпионы",
   "icon": "000003E100001D5B",
-  "required_level": 10,
-  "cost": "500<influence></influence> ",
-  "required_affinity": "<shadow></shadow>"
- },
- {
-  "category": "Умения империи: тень",
-  "id": "Тёмная_энергия",
-  "required_xp": 200,
-  "description": "Ваши <hyperlink>армии</hyperlink> <hyperlink>восстанавливают</hyperlink> +10 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink>",
-  "name": "Тёмная энергия",
-  "icon": "000003E100001D51",
-  "required_level": 7,
-  "cost": "300<influence></influence> ",
-  "required_affinity": "<shadow></shadow>"
- },
- {
-  "category": "Умения империи: тень",
-  "id": "Владения_тени",
-  "required_xp": 300,
-  "description": "Ваши воины, пока находятся в ваших <hyperlink>владениях</hyperlink>, получают эффект «Универсальный камуфляж».<br></br>Ваши города получают +4 к <hyperlink>радиусу обзора</hyperlink>.",
-  "name": "Владения тени",
-  "icon": "000003E100001D4F",
   "required_level": 8,
   "cost": "350<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
   "category": "Умения империи: тень",
+  "id": "Тёмная_энергия",
+  "required_xp": 120,
+  "description": "Ваши <hyperlink>армии</hyperlink> <hyperlink>восстанавливают</hyperlink> +10 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink>",
+  "name": "Тёмная энергия",
+  "icon": "000003E100001D51",
+  "required_level": 5,
+  "cost": "200<influence></influence> ",
+  "required_affinity": "<shadow></shadow>"
+ },
+ {
+  "category": "Умения империи: тень",
+  "id": "Владения_тени",
+  "required_xp": 200,
+  "description": "Ваши воины, пока находятся в ваших <hyperlink>владениях</hyperlink>, получают эффект «Универсальный камуфляж».<br></br>Ваши города получают +4 к <hyperlink>радиусу обзора</hyperlink>.",
+  "name": "Владения тени",
+  "icon": "000003E100001D4F",
+  "required_level": 7,
+  "cost": "300<influence></influence> ",
+  "required_affinity": "<shadow></shadow>"
+ },
+ {
+  "category": "Умения империи: тень",
   "id": "Магия_смерти",
-  "required_xp": 160,
+  "required_xp": 500,
   "description": "Даёт +10 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink> за каждого погибшего в бою воина или убитого врага.",
   "name": "Магия смерти",
   "icon": "000003E100001D41",
-  "required_level": 6,
-  "cost": "250<influence></influence> ",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
@@ -287,12 +289,12 @@
  {
   "category": "Умения империи: общие",
   "id": "Повышенная_чувствительность",
-  "required_xp": 160,
+  "required_xp": 400,
   "description": "Ваши <hyperlink>воины</hyperlink> и <hyperlink>города</hyperlink> получают +2 к <hyperlink>радиусу обзора</hyperlink> и +3 к <hyperlink>дальности обнаружения</hyperlink>.",
   "name": "Повышенная чувствительность",
   "icon": "000003E100001D12",
-  "required_level": 6,
-  "cost": "150<influence></influence> "
+  "required_level": 9,
+  "cost": "175<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -307,41 +309,47 @@
  {
   "category": "Умения империи: общие",
   "id": "Инфраструктура_для_телепортации",
-  "required_xp": 500,
+  "required_xp": 300,
   "description": "<hyperlink>Города</hyperlink> получают возможность строить в провинциях <teleporter></teleporter> <hyperlink>телепорты</hyperlink>.<br></br><br></br><hyperlink>Форпосты</hyperlink> могут строить телепорты в провинции, присоединённой путём строительства лагеря рабочих.",
   "name": "Инфраструктура для телепортации",
   "icon": "000003E100001A16",
-  "required_level": 10,
-  "cost": "200<influence></influence> "
+  "required_level": 8,
+  "cost": "175<influence></influence> "
  },
  {
-  "category": "Обряд тени",
+  "category": "Обряд тени. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_избранников",
-  "required_xp": 300,
+  "required_xp": 500,
   "description": "Уровень всех ваших <hyperlink>героев</hyperlink> мгновенно повышается на +1.",
+  "repeat_xp_increase": 0,
   "name": "Обряд избранников",
+  "repeat_cost_increase": "150<influence></influence> ",
   "icon": "000003E1000019F4",
-  "required_level": 8,
-  "cost": "350<influence></influence> ",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
-  "category": "Обряд тени",
+  "category": "Обряд тени. Повторяемый +25 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_могильного_клинка",
   "required_xp": 100,
   "description": "Даёт предмет «<hyperlink>Могильный клинок</hyperlink>».",
+  "repeat_xp_increase": 0,
   "name": "Обряд могильного клинка",
+  "repeat_cost_increase": "25<influence></influence> ",
   "icon": "000003E1000019EE",
   "required_level": 4,
   "cost": "175<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
-  "category": "Астральный обряд",
+  "category": "Астральный обряд. Повторяемый +200 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_созидания",
   "required_xp": 300,
   "description": "Мгновенно создаёт защищённые <hyperlink>магические материалы</hyperlink> рядом с каждым <hyperlink>городом</hyperlink> вашей <hyperlink>империи</hyperlink>.",
+  "repeat_xp_increase": 0,
   "name": "Обряд созидания",
+  "repeat_cost_increase": "200<influence></influence> ",
   "icon": "000003E1000019DA",
   "required_level": 8,
   "cost": "350<influence></influence> ",
@@ -359,11 +367,13 @@
   "required_affinity": "<matter></matter>"
  },
  {
-  "category": "Обряд порядка",
+  "category": "Обряд порядка. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_непреклонного_служения",
   "required_xp": 160,
   "description": "Все ваши <hyperlink>воины</hyperlink> мгновенно восстанавливают всё своё <hp></hp> <hyperlink>здоровье</hyperlink>. Уровень <hyperlink>воинов</hyperlink>, не являющихся <hyperlink>героями</hyperlink>, повышается на +1.",
+  "repeat_xp_increase": 0,
   "name": "Обряд непреклонного служения",
+  "repeat_cost_increase": "150<influence></influence> ",
   "icon": "000003E1000019D4",
   "required_level": 6,
   "cost": "250<influence></influence> ",
@@ -383,12 +393,12 @@
  {
   "category": "Умения империи: общие",
   "id": "Специализация_на_осаде",
-  "required_xp": 300,
+  "required_xp": 160,
   "description": "Увеличивает число ячеек <hyperlink>осадных проектов</hyperlink> на +1.",
   "name": "Специализация на осаде",
   "icon": "000003E1000019CE",
-  "required_level": 8,
-  "cost": "175<influence></influence> "
+  "required_level": 6,
+  "cost": "150<influence></influence> "
  },
  {
   "category": "Умения империи: общие",
@@ -421,22 +431,26 @@
   "required_affinity": "<chaos></chaos>"
  },
  {
-  "category": "Астральный обряд",
+  "category": "Астральный обряд. Повторяемый +100 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_астрального_призыва",
   "required_xp": 160,
   "description": "Мгновенно призывает в <hyperlink>тронный город</hyperlink> <hyperlink>армию</hyperlink> <hyperlink>воинов</hyperlink> <hyperlink>магического происхождения</hyperlink> со <hyperlink>сниженной стоимостью содержания</hyperlink>.",
+  "repeat_xp_increase": 0,
   "name": "Обряд астрального призыва",
+  "repeat_cost_increase": "100<influence></influence> ",
   "icon": "000003E10000197D",
   "required_level": 6,
   "cost": "250<influence></influence> ",
   "required_affinity": "<arcana></arcana>"
  },
  {
-  "category": "Обряд материи",
+  "category": "Обряд материи. Повторяемый +100 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_бронника",
   "required_xp": 100,
   "description": "Даёт предмет «<hyperlink>Кираса чемпиона</hyperlink>».",
+  "repeat_xp_increase": 0,
   "name": "Обряд бронника",
+  "repeat_cost_increase": "100<influence></influence> ",
   "icon": "000003E100001979",
   "required_level": 4,
   "cost": "175<influence></influence> ",
@@ -454,11 +468,13 @@
   "required_affinity": "<nature></nature>"
  },
  {
-  "category": "Обряд тени",
+  "category": "Обряд тени. Повторяемый +50 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_запретного_знания",
   "required_xp": 160,
   "description": "<knowledge></knowledge> <hyperlink>Знания</hyperlink> мгновенно увеличиваются на +750.",
+  "repeat_xp_increase": 0,
   "name": "Обряд запретного знания",
+  "repeat_cost_increase": "50<influence></influence> ",
   "icon": "000003E10000195B",
   "required_level": 6,
   "cost": "250<influence></influence> ",
@@ -468,7 +484,7 @@
   "category": "Умения империи: порядок",
   "id": "Великий_сюзерен",
   "required_xp": 400,
-  "description": "Дань от <hyperlink>вассалов</hyperlink> увеличивается на +10%.",
+  "description": "Дань от <hyperlink>вассалов</hyperlink> увеличивается на +20%.",
   "name": "Великий сюзерен",
   "icon": "000003E100001955",
   "required_level": 9,
@@ -500,23 +516,23 @@
  {
   "category": "Умения империи: тень",
   "id": "Шёпот_при_дворе",
-  "required_xp": 100,
+  "required_xp": 40,
   "description": "Позволяет передавать <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink> <hyperlink>вассалам</hyperlink> других империй и получать от них дань.<br></br>Даёт <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink> (+1).",
   "name": "Шёпот при дворе",
   "icon": "000003E10000193F",
-  "required_level": 4,
-  "cost": "175<influence></influence> ",
+  "required_level": 2,
+  "cost": "125<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
   "category": "Умения империи: тень",
   "id": "Краденая_сила",
-  "required_xp": 120,
+  "required_xp": 160,
   "description": "Завоевание города даёт +200 к <mana></mana> <hyperlink>мане</hyperlink> и +200 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>.",
   "name": "Краденая сила",
   "icon": "000003E10000193B",
-  "required_level": 5,
-  "cost": "200<influence></influence> ",
+  "required_level": 6,
+  "cost": "250<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
@@ -533,20 +549,22 @@
  {
   "category": "Умения империи: тень",
   "id": "Всевидение",
-  "required_xp": 40,
+  "required_xp": 15,
   "description": "<minorcity></minorcity> <hyperlink>Свободные города</hyperlink>, которым переданы <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink>, немедленно предоставляют вам <hyperlink>обзор</hyperlink>.<br></br><minorcity></minorcity> <hyperlink>Свободные города</hyperlink> и <hyperlink>вассалы</hyperlink>, которым переданы <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink>, дают +15 к <knowledge></knowledge> <hyperlink>Знаниям</hyperlink>.",
   "name": "Всевидение",
   "icon": "000003E10000192D",
-  "required_level": 2,
-  "cost": "125<influence></influence> ",
+  "required_level": 1,
+  "cost": "100<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
-  "category": "Обряд порядка",
+  "category": "Обряд порядка. Повторяемый +25 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_благосклонности",
   "required_xp": 100,
   "description": "<allegiance></allegiance> <hyperlink>Благосклонность</hyperlink> всех <minorcity></minorcity> <hyperlink>свободных городов</hyperlink> мгновенно увеличивается на +20.",
+  "repeat_xp_increase": 0,
   "name": "Обряд благосклонности",
+  "repeat_cost_increase": "25<influence></influence> ",
   "icon": "000003E10000192A",
   "required_level": 4,
   "cost": "175<influence></influence> ",
@@ -564,22 +582,26 @@
   "required_affinity": "<chaos></chaos>"
  },
  {
-  "category": "Астральный обряд",
+  "category": "Астральный обряд. Повторяемый +100 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_астрального_изобилия",
   "required_xp": 100,
   "description": "<mana></mana> <hyperlink>Мана</hyperlink> мгновенно увеличивается на +1000.",
+  "repeat_xp_increase": 0,
   "name": "Обряд астрального изобилия",
+  "repeat_cost_increase": "100<influence></influence> ",
   "icon": "000003E100001926",
   "required_level": 4,
   "cost": "175<influence></influence> ",
   "required_affinity": "<arcana></arcana>"
  },
  {
-  "category": "Обряд материи",
+  "category": "Обряд материи. Повторяемый +100 <influence></influence> <hyperlink>Авторитет</hyperlink>",
   "id": "Обряд_богатства",
   "required_xp": 160,
   "description": "<gold></gold> <hyperlink>Золото</hyperlink> мгновенно увеличивается на +2000.",
+  "repeat_xp_increase": 0,
   "name": "Обряд богатства",
+  "repeat_cost_increase": "100<influence></influence> ",
   "icon": "000003E100001922",
   "required_level": 6,
   "cost": "250<influence></influence> ",
@@ -797,12 +819,12 @@
  {
   "category": "Умения империи: тень",
   "id": "Извлечение_знаний",
-  "required_xp": 15,
+  "required_xp": 100,
   "description": "Даёт 150 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink> за каждого <hyperlink>героя</hyperlink>, поверженного в бою.",
   "name": "Извлечение знаний",
   "icon": "000003E1000018AB",
-  "required_level": 1,
-  "cost": "100<influence></influence> ",
+  "required_level": 4,
+  "cost": "175<influence></influence> ",
   "required_affinity": "<shadow></shadow>"
  },
  {
@@ -1057,5 +1079,314 @@
   "required_level": 3,
   "cost": "150<influence></influence> ",
   "required_affinity": "<arcana></arcana>"
+ },
+ {
+  "category": "Умения империи: порядок",
+  "id": "Данники",
+  "required_xp": 60,
+  "description": "<hyperlink>Вассалы</hyperlink> приносят в качестве дани +20 к <gold></gold> <hyperlink>золоту</hyperlink>.<br></br>Даёт <hyperlink>Глобальное заклинание</hyperlink> Жест доброй воли",
+  "name": "Данники",
+  "icon": "CBE7688B0000056B",
+  "required_level": 3,
+  "cost": "150<influence></influence> ",
+  "required_affinity": "<order></order>"
+ },
+ {
+  "category": "Обряд хаоса. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Обряд_одержимости",
+  "required_xp": 500,
+  "description": "Ваш <hyperlink>тронный город</hyperlink> теряет -1 ед. <population></population> <hyperlink>населения</hyperlink>. Туда мгновенно призывается <hyperlink>балор</hyperlink>, обладающий способностью «Зверская мощь».",
+  "repeat_xp_increase": 0,
+  "name": "Обряд одержимости",
+  "repeat_cost_increase": "150<influence></influence> ",
+  "icon": "CBE7688B0000042B",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Обряд хаоса. Повторяемый +50 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Обряд_избранных_воинов",
+  "required_xp": 160,
+  "description": "Ваши <hyperlink>города</hyperlink> получают +500 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink> в текущем <turn></turn> <hyperlink>ходе</hyperlink>.",
+  "repeat_xp_increase": 0,
+  "name": "Обряд избранных воинов",
+  "repeat_cost_increase": "50<influence></influence> ",
+  "icon": "CBE7688B00000429",
+  "required_level": 6,
+  "cost": "250<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Обряд хаоса. Повторяемый +50 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Военный_обряд",
+  "required_xp": 100,
+  "description": "Мгновенно призывает подконтрольную вам <hyperlink>армию</hyperlink> разбойников в ваш <hyperlink>тронный город</hyperlink>.",
+  "repeat_xp_increase": 0,
+  "name": "Военный обряд",
+  "repeat_cost_increase": "50<influence></influence> ",
+  "icon": "CBE7688B00000427",
+  "required_level": 4,
+  "cost": "175<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Добыча_разорителя",
+  "required_xp": 500,
+  "description": "Даёт <hyperlink>Глобальное заклинание</hyperlink> Добыча разорителя",
+  "name": "Добыча разорителя",
+  "icon": "CBE7688B000003E7",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Прирождённые_завоеватели",
+  "required_xp": 400,
+  "description": "+30 к <casusBelli></casusBelli> <hyperlink>поводам к войне</hyperlink> против всех остальных <hyperlink>империй</hyperlink>. Эти поводы к войне нельзя обменять или потерять.<br></br>Даёт +50 к <gold></gold> <hyperlink>золоту</hyperlink> и +50 к <mana></mana> <hyperlink>мане</hyperlink> за каждую <rs_war></rs_war> <hyperlink>войну</hyperlink>, в которую вы вовлечены.",
+  "name": "Прирождённые завоеватели",
+  "icon": "CBE7688B000003E1",
+  "required_level": 9,
+  "cost": "400<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Сила_разрушения",
+  "required_xp": 300,
+  "description": "Увеличивает число ячеек <hyperlink>осадных проектов</hyperlink> на +1.<br></br><hyperlink>Осадные проекты</hyperlink> стоят на 50% дешевле.",
+  "name": "Сила разрушения",
+  "icon": "CBE7688B000003DD",
+  "required_level": 8,
+  "cost": "350<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Марш_без_устали",
+  "required_xp": 200,
+  "description": "<hyperlink>Ускоренный марш</hyperlink> стоит на -75% ед. <mana></mana> <hyperlink>маны</hyperlink> дешевле, при этом урон <hyperlink>воинам</hyperlink> снижается на -75%.",
+  "name": "Марш без устали",
+  "icon": "CBE7688B000003D9",
+  "required_level": 7,
+  "cost": "300<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Ловкие_налётчики",
+  "required_xp": 160,
+  "description": "<hyperlink>Грабёж</hyperlink> <hyperlink>провинции</hyperlink> занимает -1<turn></turn> х. и приносит на +20% больше добычи.<br></br><hyperlink>Воины</hyperlink>, задействованные в <hyperlink>грабёже</hyperlink>, восстанавливают +20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.",
+  "name": "Ловкие налётчики",
+  "icon": "CBE7688B000003D3",
+  "required_level": 6,
+  "cost": "250<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Зов_орды",
+  "required_xp": 120,
+  "description": "<hyperlink>Воины</hyperlink> <hyperlink>ранга</hyperlink> I и II получают:<bulletlist><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектам</hyperlink></bullet><bullet>+10 <hp></hp> <hyperlink>Здоровья</hyperlink></bullet></bulletlist>",
+  "name": "Зов орды",
+  "icon": "CBE7688B000003CC",
+  "required_level": 5,
+  "cost": "200<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Призыв_хаоса",
+  "required_xp": 100,
+  "description": "Побеждая в битве, вы с вероятностью 25% получаете воина ранга I или II из числа воинов, которых можно производить в городах.<br></br>Уничтожение логова привлекает к вам на службу воина в зависимости от типа логова.",
+  "name": "Призыв хаоса",
+  "icon": "CBE7688B000003C8",
+  "required_level": 4,
+  "cost": "175<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Захват_рабов",
+  "required_xp": 60,
+  "description": "<hyperlink>Разрушение</hyperlink> чужого <hyperlink>города</hyperlink> увеличивает <population></population> <hyperlink>население</hyperlink> одного из ваших <hyperlink>городов</hyperlink> на +1 за каждые 3 ед. <population></population> <hyperlink>населения</hyperlink> в разрушенном городе.<br></br><hyperlink>Разрушение</hyperlink> <hyperlink>городов</hyperlink> проходит на -1 <turn></turn> <hyperlink>х.</hyperlink> быстрее.",
+  "name": "Захват рабов",
+  "icon": "CBE7688B000003BF",
+  "required_level": 3,
+  "cost": "150<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Мародёрство_на_полях_сражений",
+  "required_xp": 40,
+  "description": "<hyperlink>Воины</hyperlink>, убитые в <hyperlink>сражении</hyperlink>, дают +3 к <gold></gold> <hyperlink>золоту</hyperlink> за каждый <hyperlink>ранг</Hyperlink>.",
+  "name": "Мародёрство на полях сражений",
+  "icon": "CBE7688B000003BC",
+  "required_level": 2,
+  "cost": "125<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Умения империи: хаос",
+  "id": "Принудительная_вербовка",
+  "required_xp": 15,
+  "description": "<hyperlink>Воины</hyperlink> <hyperlink>ранга</hyperlink> I и II получают на 40% больше <xp></xp> <hyperlink>опыта</hyperlink> в бою.",
+  "name": "Принудительная вербовка",
+  "icon": "CBE7688B000003B7",
+  "required_level": 1,
+  "cost": "100<influence></influence> ",
+  "required_affinity": "<chaos></chaos>"
+ },
+ {
+  "category": "Обряд природы. Повторяемый +150 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Экспансия_в_глушь",
+  "required_xp": 500,
+  "description": "Мгновенно призывает в <hyperlink>тронный город</hyperlink> <hyperlink>карагх</hyperlink>.",
+  "repeat_xp_increase": 0,
+  "name": "Экспансия в глушь",
+  "repeat_cost_increase": "150<influence></influence> ",
+  "icon": "CBE7688B000003A9",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Обряд природы. Повторяемый +50 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Обряд_пробуждения",
+  "required_xp": 160,
+  "description": "<knowledge></knowledge> <hyperlink>Знания</hyperlink> мгновенно увеличиваются на +20 за каждую <hyperlink>провинцию</hyperlink> во <hyperlink>владениях</hyperlink> вашей империи.",
+  "repeat_xp_increase": 0,
+  "name": "Обряд пробуждения",
+  "repeat_cost_increase": "50<influence></influence> ",
+  "icon": "CBE7688B000003A8",
+  "required_level": 6,
+  "cost": "250<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Обряд природы. Повторяемый +25 <influence></influence> <hyperlink>Авторитет</hyperlink>",
+  "id": "Обряд_духа-хранителя",
+  "required_xp": 100,
+  "description": "Мгновенно призывает в <hyperlink>тронный город</hyperlink> <hyperlink>призрачного волка</hyperlink>, обладающего способностями «Воскрешение» и «Дух-хранитель».",
+  "repeat_xp_increase": 0,
+  "name": "Обряд духа-хранителя",
+  "repeat_cost_increase": "25<influence></influence> ",
+  "icon": "CBE7688B000003A6",
+  "required_level": 4,
+  "cost": "175<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Следопыты",
+  "required_xp": 500,
+  "description": "Стоимость перемещения дружественных <hyperlink>воинов</hyperlink> в ваших <hyperlink>владениях</hyperlink> уменьшается на -2 <hyperlink>оч. перемещения</hyperlink>.",
+  "name": "Следопыты",
+  "icon": "CBE7688B000003A3",
+  "required_level": 10,
+  "cost": "500<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Присмотр_друидов",
+  "required_xp": 400,
+  "description": "<hyperlink>Провинции</hyperlink> с лесным <hyperlink>ландшафтом</hyperlink> дают +4 к <mana></mana> <hyperlink>мане</hyperlink>.",
+  "name": "Присмотр друидов",
+  "icon": "CBE7688B000003A0",
+  "required_level": 9,
+  "cost": "400<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Империя_друидов",
+  "required_xp": 300,
+  "description": "Для прироста <population></population> <hyperlink>населения</hyperlink> <hyperlink>городам</hyperlink> требуется -50% ед. <food></food> <hyperlink>пищи</hyperlink>.",
+  "name": "Империя друидов",
+  "icon": "CBE7688B0000039D",
+  "required_level": 8,
+  "cost": "350<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Подношения_духам",
+  "required_xp": 200,
+  "description": "Даёт +30 <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>.",
+  "name": "Подношения духам",
+  "icon": "CBE7688B0000039B",
+  "required_level": 7,
+  "cost": "300<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Естественный_порядок",
+  "required_xp": 160,
+  "description": "<hyperlink>Провинции</hyperlink> с лесным <hyperlink>ландшафтом</hyperlink> дают +2 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.",
+  "name": "Естественный порядок",
+  "icon": "CBE7688B00000398",
+  "required_level": 6,
+  "cost": "250<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Расширенный_доступ",
+  "required_xp": 120,
+  "description": "<hyperlink>Основание</hyperlink> и <hyperlink>присоединение</hyperlink> <hyperlink>городов</hyperlink> занимает -3 <turn></turn> х.",
+  "name": "Расширенный доступ",
+  "icon": "CBE7688B0000038F",
+  "required_level": 5,
+  "cost": "200<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Опытные_моряки",
+  "required_xp": 100,
+  "description": "Водные <hyperlink>провинции</hyperlink> и провинции с реками и побережьями дают +4 к <food></food> <hyperlink>пище</hyperlink> и +2 к <gold></gold> <hyperlink>золоту</hyperlink>.<br></br>При расчёте перемещения реки приравниваются к дорогам.",
+  "name": "Опытные моряки",
+  "icon": "CBE7688B00000388",
+  "required_level": 4,
+  "cost": "175<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Естественное_восстановление",
+  "required_xp": 60,
+  "description": "Грабёж <hyperlink>улучшений провинции</hyperlink> в ваших владениях занимает на 1 <turn></turn> больше.<br></br>Расстояние, на котором <hyperlink>города</hyperlink> могут присоединять <hyperlink>провинции</hyperlink>, увеличивается на +2.",
+  "name": "Естественное восстановление",
+  "icon": "CBE7688B00000384",
+  "required_level": 3,
+  "cost": "150<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Хорошая_почва",
+  "required_xp": 40,
+  "description": "<farm></farm> <hyperlink>Фермы</hyperlink> дают +7 к <food></food> <hyperlink>пище</hyperlink> и +2 к <gold></gold> <hyperlink>золоту</hyperlink>.",
+  "name": "Хорошая почва",
+  "icon": "CBE7688B00000381",
+  "required_level": 2,
+  "cost": "125<influence></influence> ",
+  "required_affinity": "<nature></nature>"
+ },
+ {
+  "category": "Умения империи: природа",
+  "id": "Успешная_интеграция",
+  "required_xp": 15,
+  "description": "<hyperlink>Только что основанные</hyperlink> и <hyperlink>присоединённые</hyperlink> <hyperlink>города</hyperlink> получают +2 ед. <population></population> <hyperlink>населения</hyperlink>.",
+  "name": "Успешная интеграция",
+  "icon": "CBE7688B0000037E",
+  "required_level": 1,
+  "cost": "100<influence></influence> ",
+  "required_affinity": "<nature></nature>"
  }
 ]

@@ -40,7 +40,7 @@
    {
     "screen_description": "Нанять или поднять после боя воина ранга IV и выше",
     "type": "major",
-    "reward_renown": 100,
+    "reward_renown": 50,
     "repeatable": false,
     "reward_properties": [
      {
@@ -53,7 +53,7 @@
    {
     "screen_description": "Нанять или поднять воинов после боя",
     "type": "minor",
-    "reward_renown": 25,
+    "reward_renown": 50,
     "repeatable": true,
     "reward_properties": []
    }
@@ -173,7 +173,7 @@
    {
     "screen_description": "Разграбить провинцию",
     "type": "minor",
-    "reward_renown": 25,
+    "reward_renown": 75,
     "repeatable": true,
     "reward_properties": []
    }
@@ -341,7 +341,7 @@
    {
     "screen_description": "Добиться эволюции или повышения воина в своей армии",
     "type": "minor",
-    "reward_renown": 50,
+    "reward_renown": 75,
     "repeatable": true,
     "reward_properties": []
    }
@@ -386,9 +386,9 @@
   "icon": "000004AC0000006D",
   "ambitions": [
    {
-    "screen_description": "Выиграть сражение против армии, превосходящей силы героя минимум на 500",
+    "screen_description": "Выиграть сражение против армии, превосходящей силы героя минимум на 250",
     "type": "major",
-    "reward_renown": 200,
+    "reward_renown": 100,
     "repeatable": false,
     "reward_properties": [
      {
@@ -401,7 +401,7 @@
    {
     "screen_description": "Выиграть сражение против армии, превосходящей силы героя",
     "type": "minor",
-    "reward_renown": 35,
+    "reward_renown": 50,
     "repeatable": true,
     "reward_properties": []
    }
@@ -431,7 +431,7 @@
    {
     "screen_description": "Выиграть битву против свободного города",
     "type": "minor",
-    "reward_renown": 35,
+    "reward_renown": 50,
     "repeatable": true,
     "reward_properties": []
    }
@@ -448,7 +448,7 @@
    {
     "screen_description": "Уничтожить подземное логово",
     "type": "major",
-    "reward_renown": 150,
+    "reward_renown": 100,
     "repeatable": false,
     "reward_properties": [
      {
@@ -461,7 +461,7 @@
    {
     "screen_description": "Провести раскопки в провинции",
     "type": "minor",
-    "reward_renown": 25,
+    "reward_renown": 50,
     "repeatable": true,
     "reward_properties": []
    }
@@ -476,9 +476,9 @@
   "icon": "000004AC0000006A",
   "ambitions": [
    {
-    "screen_description": "Выиграть сражение, обратив 5 вражеских воинов в бегство",
+    "screen_description": "Выиграть сражение, обратив 2 вражеских воинов в бегство",
     "type": "major",
-    "reward_renown": 200,
+    "reward_renown": 50,
     "repeatable": false,
     "reward_properties": [
      {
@@ -568,7 +568,7 @@
    {
     "screen_description": "Исследовать золотое древнее чудо",
     "type": "major",
-    "reward_renown": 100,
+    "reward_renown": 200,
     "repeatable": false,
     "reward_properties": [
      {
@@ -641,7 +641,7 @@
    {
     "screen_description": "Провести успешную осаду",
     "type": "minor",
-    "reward_renown": 100,
+    "reward_renown": 200,
     "repeatable": true,
     "reward_properties": []
    }

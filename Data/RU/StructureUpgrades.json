@@ -136,7 +136,7 @@
  },
  {
   "requirement_description": "Можно построить только в присоединённой <hyperlink>провинции</hyperlink>.",
-  "cost": "60<gold></gold> 130<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 5046586586798,
   "id": "_mine___Большой_базар",
@@ -809,7 +809,7 @@
   "resid": 5046586573697,
   "id": "_conduit___Ледовый_мегалит",
   "DLC": "PRIMALFURY ",
-  "description": "<bulletlist><bullet>+6 <structureprod></structureprod> <hyperlink>Производство</hyperlink> за каждую заснеженную <hyperlink>провинцию</hyperlink> по соседству.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+4 <structureprod></structureprod> <hyperlink>Производство</hyperlink> за каждую заснеженную <hyperlink>провинцию</hyperlink> по соседству.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Ледовый мегалит",
   "icon": "0000049700000382",
   "is_sector_upgrade": true
@@ -1047,7 +1047,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "<bulletlist><bullet>+10 к доходу <food></food> <hyperlink>пищи</hyperlink></bullet><bullet>+15 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink></bullet></bulletlist>",
   "resid": 5016521802591,
   "id": "Каменная_стела",
@@ -1175,7 +1175,7 @@
  {
   "requirement_description": "Можно построить только в присоединённой <hyperlink>провинции</hyperlink>.<br></br><br></br>Требуется город ранга II.",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+15 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink></bullet><bullet>Даёт всем дружественным <hyperlink>воинам</hyperlink> в этих <hyperlink>владениях</hyperlink> свойство «<hyperlink><forester></forester> Военный лагерь</hyperlink>».</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+15 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink></bullet><bullet>Даёт всем дружественным <hyperlink>воинам</hyperlink> в этих <hyperlink>владениях</hyperlink> свойство «<hyperlink>Военный лагерь</hyperlink>».</bullet></bulletlist>",
   "resid": 5003636907290,
   "id": "_forester___Военный_лагерь",
   "DLC": "RISEFROMRUIN ",
@@ -1664,10 +1664,10 @@
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4995046966267,
-  "id": "_conduit___Монастырь",
+  "id": "_farm___Монастырь",
   "DLC": "WAYSOFWAR ",
-  "description": "<bulletlist><bullet>10 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>10 очк. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>;</bullet><bullet>за каждую <farm></farm> <hyperlink>ферму</hyperlink> по соседству:<bulletlist></bullet><bullet>2 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>3 очк. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
-  "name": "<conduit></conduit> Монастырь",
+  "description": "<bulletlist><bullet>10 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>10 очк. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>;</bullet><bullet>за каждую <farm></farm> <hyperlink>ферму</hyperlink> по соседству:<bulletlist></bullet><bullet>2 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>;</bullet><bullet>3 очк. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist><bullet>Выполняет функции <farm></farm> <hyperlink>фермы</hyperlink>.</bullet></bulletlist>",
+  "name": "<farm></farm> Монастырь",
   "icon": "0000048B000003FC",
   "is_sector_upgrade": true
  },
@@ -2134,7 +2134,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4634269712816,
   "id": "_expansionvictory___Маяк_единения",
@@ -2250,7 +2250,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "Укрепляющая_матрица_природы",
-  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы восстанавливают +10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
+  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы рассеивают <hyperlink>отрицательные эффекты</hyperlink> (2).",
   "name": "Укрепляющая матрица природы",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -2272,7 +2272,7 @@
   "prediction_description": "",
   "resid": 4578435139905,
   "id": "Укрепляющая_матрица_порядка",
-  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления порядка дают эффект «Удача» (3).",
+  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления порядка дают эффект «Удача» (2).",
   "name": "Укрепляющая матрица порядка",
   "icon": "0000042A00000943",
   "is_sector_upgrade": false
@@ -2558,7 +2558,7 @@
   "prediction_description": "-10 к доходу <mana></mana> <hyperlink>маны</hyperlink>",
   "resid": 4578435139420,
   "id": "_conduit___Глушитель_заклинаний",
-  "description": "<bulletlist><bullet>В пределах этих <hyperlink>владений</hyperlink> враги не смогут направлять <hyperlink>глобальные заклинания</hyperlink>.</bullet><bullet>Применение <hyperlink>заклинаний</hyperlink> в <hyperlink>сражениях</hyperlink> в пределах городских <hyperlink>владений</hyperlink> будет стоить врагу на 100% <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink> дороже.</bullet><bullet>-10 к <mana></mana> <hyperlink>мане</hyperlink>.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>В пределах этих <hyperlink>владений</hyperlink> враги не смогут направлять <hyperlink>глобальные заклинания</hyperlink>.</bullet><bullet>Применение <hyperlink>заклинаний</hyperlink> в <hyperlink>сражениях</hyperlink> в пределах городских <hyperlink>владений</hyperlink> будет стоить врагу на 50% <optactical></optactical> <hyperlink>очков боевых заклинаний</hyperlink> дороже.</bullet><bullet>-10 к <mana></mana> <hyperlink>мане</hyperlink>.</bullet><bullet>Выполняет функции <conduit></conduit> <hyperlink>портала</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Глушитель заклинаний",
   "icon": "0000042A0000075D",
   "is_sector_upgrade": true
@@ -2631,7 +2631,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "<bulletlist><bullet>+15 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink></bullet><bullet>+10 к доходу <mana></mana> <hyperlink>маны</hyperlink></bullet></bulletlist>",
   "resid": 4578435139267,
   "id": "Призыватель_Камня",
@@ -2692,7 +2692,7 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+40 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+40 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-20 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
   "resid": 4578435139242,
   "id": "Рынок_теней",
   "description": "",
@@ -2704,7 +2704,7 @@
  {
   "requirement_description": "",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+30 к доходу <gold></gold> <hyperlink>золота</hyperlink></bullet><bullet>-20 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet></bulletlist>",
   "resid": 4578435139237,
   "id": "Коллекционер",
   "description": "",
@@ -3069,7 +3069,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+15 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
   "resid": 4578435138479,
   "id": "Каменщик",
@@ -3517,7 +3517,7 @@
  },
  {
   "requirement_description": "Для постройки требуются водные провинции (3)",
-  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
+  "cost": "300<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+20 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
   "resid": 4282082401533,
   "id": "Великая_верфь",
@@ -3613,7 +3613,7 @@
  {
   "requirement_description": "Требуются <conduit></conduit> <hyperlink>порталы</hyperlink> (2)<br></br><br></br>В городе можно иметь только 1 гильдию.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 к доходу <mana></mana> <hyperlink>маны</hyperlink> за каждую провинцию типа «<conduit></conduit> Портал» ()",
+  "prediction_description": "<bulletlist><bullet>+20 <optactical></optactical> Очки боевых заклинаний</bullet><bullet>+20 <caststrategic></caststrategic> Очки глобальных заклинаний</bullet><bullet>+10 к доходу <mana></mana> <hyperlink>маны</hyperlink> за каждую провинцию типа «<conduit></conduit> Портал» ()</bullet></bulletlist>",
   "resid": 4282082401309,
   "id": "Гильдия_магов",
   "description": "",
@@ -3649,7 +3649,7 @@
  {
   "requirement_description": "Требуются <mine></mine> <hyperlink>рудники</hyperlink> (2)<br></br><br></br>В городе можно иметь только 1 гильдию.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 к доходу <gold></gold> <hyperlink>золота</hyperlink> за каждую провинцию типа «<mine></mine> Рудник» ()",
+  "prediction_description": "<bulletlist><bullet>+10 к доходу <gold></gold> <hyperlink>золота</hyperlink> за каждую провинцию типа «<mine></mine> Рудник» ()</bullet><bullet>+2 к доходу <bindingessence></bindingessence> <hyperlink>связующей квинтэссенции</hyperlink> за каждую провинцию типа «<mine></mine> Рудник» ()</bullet><bullet>+1 к доходу <bindingfragments></bindingfragments> <hyperlink>связующих фрагментов</hyperlink> за каждую провинцию типа «<mine></mine> Рудник» ()</bullet></bulletlist>",
   "resid": 4282082401272,
   "id": "Гильдия_купцов",
   "description": "",
@@ -3672,8 +3672,8 @@
  },
  {
   "requirement_description": "Для постройки требуются <quarry></quarry> <hyperlink>каменоломни</hyperlink> (4)<br></br><br></br>В городе можно иметь только 1 гильдию.",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+10 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
+  "cost": "500<gold></gold> 400<structureprod></structureprod> ",
+  "prediction_description": "<bulletlist><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+80 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink></bullet><bullet>+10 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
   "resid": 4282082401262,
   "id": "Гильдия_рабочих",
   "description": "",
@@ -3684,7 +3684,7 @@
  },
  {
   "requirement_description": "Требуются <quarry></quarry> <hyperlink>каменоломни</hyperlink> (2)",
-  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
+  "cost": "300<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+20 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
   "resid": 4282082401258,
   "id": "Зал_каменщиков",
@@ -3697,7 +3697,7 @@
  {
   "requirement_description": "Требуются <forester></forester> <hyperlink>лесопилки</hyperlink> (4)<br></br><br></br>В городе можно иметь только 1 гильдию.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 к доходу <food></food> <hyperlink>пищи</hyperlink> за каждую провинцию типа «<forester></forester> Лесопилка» ()</bullet><bullet>+5 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink> за каждую провинцию типа «<forester></forester> Лесопилка» ()</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг I</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг II</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг III</hyperlink>).</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+5 к доходу <food></food> <hyperlink>пищи</hyperlink> за каждую провинцию типа «<forester></forester> Лесопилка» ()</bullet><bullet>+5 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink> за каждую провинцию типа «<forester></forester> Лесопилка» ()</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг I</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг II</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг III</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг IV</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг V</hyperlink>).</bullet></bulletlist>",
   "resid": 4282082401254,
   "id": "Гильдия_кузнецов",
   "description": "",
@@ -3937,7 +3937,7 @@
  {
   "requirement_description": "Требуются <farm></farm> <hyperlink>фермы</hyperlink> (4)<br></br><br></br>В городе можно иметь только 1 гильдию.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 к доходу <food></food> <hyperlink>пищи</hyperlink> за каждую провинцию типа «<farms></farms> Ферма» ()",
+  "prediction_description": "<bulletlist><bullet>+2 к доходу <influence></influence> <hyperlink>авторитета</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink> ()</bullet><bullet>+10 к доходу <food></food> <hyperlink>пищи</hyperlink> за каждую провинцию типа «<farms></farms> Ферма» ()</bullet></bulletlist>",
   "resid": 4041564233665,
   "id": "Гильдия_фермеров",
   "description": "<bulletlist><bullet>Этот город производит +30% <food></food> <hyperlink>пищи</hyperlink>.</bullet></bulletlist>",

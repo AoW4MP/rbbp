@@ -70,13 +70,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "1 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <mana></mana> <hyperlink>мане</hyperlink>;</bullet><bullet>Книги III ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "1 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+30 к <mana></mana> <hyperlink>мане</hyperlink>;</bullet><bullet>Книги III ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
-    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
-    "name": "3 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+20 к <influence></influence> <hyperlink>авторитету</hyperlink>;</bullet><bullet>Книги V ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "3 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <influence></influence> <hyperlink>авторитету</hyperlink>;</bullet><bullet>Книги V ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -88,7 +88,7 @@
  {
   "biography_description": "Кто-то называет это трусостью, но для них это просто инстинкт самосохранения.",
   "lore_description": "<helpcolor>Воины чаще обращаются в бегство.</helpcolor>",
-  "point_cost": -1,
+  "point_cost": -2,
   "id": "Трусливость",
   "name": "Трусливость",
   "incompatible_society_traits": [
@@ -266,8 +266,8 @@
  },
  {
   "biography_description": "От их божественных тел исходит священный свет, который испепеляет врагов, словно очистительный огонь.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageSpirit></damageSpirit> <hyperlink>урон магией духа</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "Внутренний_свет",
   "name": "Внутренний свет",
   "incompatible_society_traits": [
@@ -287,10 +287,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensespirit></defensespirit> <hyperlink>защите от магии духа</hyperlink>."
-   },
-   {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>."
+    "name": "+4 к <defensespirit></defensespirit> <hyperlink>защите от магии духа</hyperlink>."
    }
   ],
   "enabled": true,
@@ -329,7 +326,7 @@
  },
  {
   "biography_description": "Вместо крови в их жилах энергия молнии, и горе тем, кто осмелится ранить их!",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageLightning></damageLightning> <hyperlink>электрический урон</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "Внутренний_заряд",
   "name": "Внутренний заряд",
@@ -350,10 +347,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defenselightning></defenselightning> <hyperlink>защите от молнии</hyperlink>."
+    "name": "+2 к <defenselightning></defenselightning> <hyperlink>защите от молнии</hyperlink>."
    },
    {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>."
+    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Наэлектризованность»."
+   },
+   {
+    "name": "Невосприимчивость к эффекту «Наэлектризованность»."
    }
   ],
   "enabled": true,
@@ -365,8 +365,8 @@
  },
  {
   "biography_description": "Их кожа обжигающе холодна, и тот, кто подойдёт слишком близко, рискует получить обморожение.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFrost></damageFrost> <hyperlink>урон от холода</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "Внутренний_холод",
   "name": "Внутренний холод",
   "incompatible_society_traits": [
@@ -386,10 +386,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensefrost></defensefrost> <hyperlink>защите от холода</hyperlink>."
-   },
-   {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>."
+    "name": "+4 к <defensefrost></defensefrost> <hyperlink>защите от холода</hyperlink>."
    }
   ],
   "enabled": true,
@@ -401,7 +398,7 @@
  },
  {
   "biography_description": "Их огненная кровь обжигает любого, кто рискнет нанести им раны.",
-  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFire></damageFire> <hyperlink>урон от огня</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "Внутренний_огонь",
   "name": "Внутренний огонь",
@@ -422,10 +419,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 к <defensefire></defensefire> <hyperlink>защите от огня</hyperlink>."
+    "name": "+2 к <defensefire></defensefire> <hyperlink>защите от огня</hyperlink>."
    },
    {
-    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>."
+    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Горение»."
+   },
+   {
+    "name": "Невосприимчивость к эффекту «Горение»."
    }
   ],
   "enabled": true,
@@ -839,16 +839,16 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Даёт 50 к <food></food> <hyperlink>пище</hyperlink> при успешном <hyperlink>разграблении</hyperlink> <hyperlink>улучшения провинции</hyperlink>."
+    "name": "Даёт 150 <food></food> <hyperlink>пищи</hyperlink> при успешном <hyperlink>разграблении</hyperlink> <hyperlink>улучшения провинции</hyperlink>."
    },
    {
-    "name": "Даёт 50 к <food></food> <hyperlink>пище</hyperlink> за каждое <hyperlink>улучшение провинции</hyperlink> при успешном <hyperlink>разрушении</hyperlink> <hyperlink>города</hyperlink>."
+    "name": "Даёт 150 <food></food> <hyperlink>пищи</hyperlink> за каждое <hyperlink>улучшение провинции</hyperlink> при успешном <hyperlink>разрушении</hyperlink> <hyperlink>города</hyperlink>."
    },
    {
-    "name": "Даёт 30 к <food></food> <hyperlink>пище</hyperlink> при успешном <hyperlink>заселении</hyperlink> захваченного <hyperlink>города</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>, однако затем город дополнительно теряет <population></population> население."
+    "name": "Даёт 90 <food></food> <hyperlink>пищи</hyperlink> при успешном <hyperlink>заселении</hyperlink> захваченного <hyperlink>города</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>, однако затем город дополнительно теряет <population></population> население."
    },
    {
-    "name": "<hyperlink>Вассалы</hyperlink> дают +10 к доходу <food></food> <hyperlink>пищи</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>."
+    "name": "<hyperlink>Вассалы</hyperlink> дают 30 <food></food> <hyperlink>пищи</hyperlink> за каждую единицу <population></population> <hyperlink>населения</hyperlink>."
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
@@ -891,7 +891,10 @@
  {
   "starting_bonuses": [
    {
-    "description": "Начальные <hyperlink>воины</hyperlink> получают +1 к уровню."
+    "description": "Начальные <hyperlink>воины</hyperlink> получают +1 к уровню и +3 <statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектам</hyperlink>."
+   },
+   {
+    "description": "Дополнительный воин поддержки или воин с пикой в начале игры."
    }
   ],
   "affinities": [
@@ -907,7 +910,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 100 к <influence></influence> <hyperlink>авторитету</hyperlink>."
+    "name": "Выполнение заданий за <hyperlink>награду</hyperlink> дополнительно приносит +50% к <gold></gold> <hyperlink>золоту</hyperlink> и <mana></mana> <hyperlink>мане</hyperlink>, а также 50 к <influence></influence> <hyperlink>авторитету</hyperlink>."
    },
    {
     "name": "Если у вас нет активных заданий за <hyperlink>награду</hyperlink>, вы всегда можете получить задание на уничтожение ближайшего <hyperlink>вторжения</hyperlink>, которое ещё не было целью. Однако если подходящего логова нет, задание не появится."
@@ -920,18 +923,13 @@
   "icon": "00000493000008F8"
  },
  {
-  "starting_bonuses": [
-   {
-    "description": "Начальный <unitHero></unitHero> <hyperlink>предел героев</hyperlink> равен +1, а для героев из пантеона — +3."
-   }
-  ],
   "affinities": [
    {
     "name": "1<shadow></shadow> Приверженность тени"
    }
   ],
-  "biography_description": "Они превозносят своих героев до небес, придавая им сил своим экстатическим поклонением.",
   "lore_description": "Они верят в силу своих героев — избранников судьбы, возвысившихся над серой массой.",
+  "biography_description": "Они превозносят своих героев до небес, придавая им сил своим экстатическим поклонением.",
   "point_cost": 1,
   "id": "Культ_личности",
   "name": "Культ личности",
@@ -941,17 +939,17 @@
     "name": "<hyperlink>Герои</hyperlink> получают дополнительное очко навыка, когда уровень их <renown></renown> <hyperlink>славы</hyperlink> повышается."
    },
    {
-    "name": "Когда уровень <renown></renown> <hyperlink>славы</hyperlink> <hyperlink>героев</hyperlink> повышается, стоимость их <hyperlink>содержания</hyperlink> увеличивается на 10 ед. <gold></gold> <hyperlink>золота</hyperlink>."
+    "name": "<hyperlink>Воины</hyperlink> в <hyperlink>армии</hyperlink> без героя получают -20 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> во время боя."
    },
    {
-    "name": "<hyperlink>Воины</hyperlink> в <hyperlink>армии</hyperlink> без героя получают -20 к <happiness></happiness> <hyperlink>боевому духу</hyperlink> во время боя."
+    "name": "<hyperlink>Герои</hyperlink>, назначенные Губернаторами, дают:<bulletlist><bullet>+10 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
   "front_end": false,
+  "icon": "00000493000008F4",
   "type": "society",
-  "display_order": 1,
-  "icon": "00000493000008F4"
+  "display_order": 1
  },
  {
   "affinities": [
@@ -1437,13 +1435,19 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "При победе в сражении даёт 2 ед. <influence></influence> <hyperlink>авторитета</hyperlink> за каждого убитого <hyperlink>воина</hyperlink> вражеской <hyperlink>империи</hyperlink>.<br></br>Эта награда увеличивается на +1 за каждый уровень <evilact></evilact> злого <hyperlink>мировоззрения</hyperlink> у той фракции, к которой принадлежал воин."
+    "name": "При победе в сражении даёт <influence></influence> <hyperlink>Авторитет</hyperlink> за каждого побежденного <hyperlink>воина</hyperlink> или <hyperlink>героя</hyperlink> вражеской <hyperlink>империи</hyperlink>.<br></br>Эта награда увеличивается за каждый уровень <evilact></evilact> злого <hyperlink>мировоззрения</hyperlink> у той фракции, к которой принадлежал воин.<br></br><br></br>При победе в сражении даёт <influence></influence> <hyperlink>Авторитет</hyperlink> за каждого побежденного Чудовищный демон, Нежить, Демон мрака, Проклятый демон"
    },
    {
     "name": "Даёт +30 <casusBelli></casusBelli> <hyperlink>поводов к войне</hyperlink> против игроков со <evilact></evilact> злым <hyperlink>мировоззрением</hyperlink>."
    },
    {
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
+   },
+   {
+    "name": "<hyperlink>Воины</hyperlink> и <hyperlink>Герои</hyperlink> получают иммунитет к Мрачная хворь."
+   },
+   {
+    "name": "<hyperlink>Стрельба</hyperlink>:<bulletlist><bullet>+1<damageFire></damageFire> <hyperlink>Урон от огня</hyperlink></bullet><bullet> +1<damageSpirit></damageSpirit> <hyperlink>Урон магией духа</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Физический урон</hyperlink></bullet></bulletlist><br></br><bullet><hyperlink>Ближний бой</hyperlink>:<bulletlist></bullet><bullet>+1<damageFire></damageFire> <hyperlink>Урон от огня</hyperlink></bullet><bullet>+1<damageSpirit></damageSpirit> <hyperlink>Урон магией духа</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Физический урон</hyperlink></bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1620,6 +1624,9 @@
   "effect_descriptions": [
    {
     "name": "<hyperlink>Сбор сеньоров</hyperlink> случается в два раза чаще."
+   },
+   {
+    "name": "<hyperlink>Воины</hyperlink>, призванные при <hyperlink>сборе сеньоров</hyperlink>, получают +2 к уровню при найме."
    }
   ],
   "enabled": true,
@@ -1683,7 +1690,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Городские сооружения стоят на 100% больше очков <structureprod></structureprod> производство, при этом они помимо своего обычного эффекта дают +1 к <happiness></happiness> стабильность города и +5 к <gold></gold> золоту."
+    "name": "Городские сооружения стоят на 50% больше очков <structureprod></structureprod> производство, при этом они помимо своего обычного эффекта дают +1 к <happiness></happiness> стабильность города и +3 к <gold></gold> золоту."
    },
    {
     "name": "Воины <hyperlink>ранга воина</hyperlink> 3 этого народа получают +1 к уровню."
@@ -1714,7 +1721,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +5 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +10 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
    }
   ],
   "enabled": true,
@@ -1767,6 +1774,9 @@
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
+   },
+   {
+    "name": "<hyperlink>Тотальная война</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1836,13 +1846,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Получают +30% к доходам от <hyperlink>вассалов</hyperlink>."
+    "name": "Получают +60% к доходам от <hyperlink>вассалов</hyperlink>."
    },
    {
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
-   },
-   {
-    "name": "<hyperlink>Воины</hyperlink>, призванные при <hyperlink>сборе сеньоров</hyperlink>, получают +1 к уровню при найме."
    },
    {
     "name": "Даёт <whisperingStone></whisperingStone> <hyperlink>шепчущие камни</hyperlink> (+1)."
@@ -2361,7 +2368,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10% к урону от <casttactical></casttactical> <hyperlink>заклинаний урона</hyperlink>."
+    "name": "+20% к урону от <casttactical></casttactical> <hyperlink>заклинаний урона</hyperlink>."
    },
    {
     "name": "В начале боя Боевые магы и воины поддержки дают +5 к <optactical></optactical> <hyperlink>очкам боевых заклинаний</hyperlink>."
@@ -2471,10 +2478,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -40% ед. <knowledge></knowledge> знания."
+    "name": "Исследования <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> стоит -20% ед. <knowledge></knowledge> знания."
    },
    {
-    "name": "Поддержание <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> обходится на 30% дешевле."
+    "name": "Поддержание <caststrategic></caststrategic> <hyperlink>чар для воинов</hyperlink> обходится на 40% дешевле."
    }
   ],
   "enabled": true,
@@ -2505,7 +2512,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +2 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую каменоломню в своих <hyperlink>владениях</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +5 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую каменоломню в своих <hyperlink>владениях</hyperlink>."
    },
    {
     "name": "Особые улучшения провинции стоят -50% ед. <structureprod></structureprod> производство."
@@ -2666,7 +2673,7 @@
     "name": "+10 к <caststrategic></caststrategic> <hyperlink>очкам глобальных заклинаний</hyperlink>."
    },
    {
-    "name": "Использование <hyperlink>боевых заклинаний</hyperlink> стоит на -20% меньше <mana></mana> <hyperlink>маны</hyperlink>."
+    "name": "Использование <hyperlink>боевых заклинаний</hyperlink> стоит на -20% меньше <mana></mana> <hyperlink>маны</hyperlink> и <optactical></optactical> очки боевых заклинаний."
    }
   ],
   "enabled": true,
@@ -2703,7 +2710,7 @@
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
    },
    {
-    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +3 к <mana></mana> <hyperlink>мане</hyperlink> и +3 к <food></food> <hyperlink>пище</hyperlink> за каждый ранг погибших в бою воинов (кроме воинов <hyperlink>магического происхождения</hyperlink>)."
+    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +5 к <mana></mana> <hyperlink>мане</hyperlink> и +5 к <food></food> <hyperlink>пище</hyperlink> за каждый ранг погибших в бою воинов (кроме воинов <hyperlink>магического происхождения</hyperlink>)."
    }
   ],
   "enabled": true,
@@ -2734,7 +2741,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +3 к <gold></gold> <hyperlink>золоту</hyperlink> и +3 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый ранг убитых в бою воинов."
+    "name": "После каждой победы в бою ближайший к месту битвы город этого народа получает +5 к <gold></gold> <hyperlink>золоту</hyperlink> и +5 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый ранг убитых в бою воинов."
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
@@ -2808,7 +2815,7 @@
     "name": "+10<goodact></goodact> очк. <hyperlink>мировоззрения</hyperlink>"
    },
    {
-    "name": "Воины получают +10 ед. <xp></xp> <hyperlink>опыта</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink> при максимальном уровне доброго <goodact></goodact> <hyperlink>мировоззрения</hyperlink>."
+    "name": "Воины, не являющиеся героями, получают +10 ед. <xp></xp> <hyperlink>опыта</hyperlink> за <turn></turn> <hyperlink>ход</hyperlink> при максимальном уровне доброго <goodact></goodact> <hyperlink>мировоззрения</hyperlink>."
    }
   ],
   "enabled": true,
