@@ -5591,7 +5591,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -5684,7 +5684,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -5765,7 +5765,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -5846,7 +5846,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -5927,7 +5927,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
@@ -6008,7 +6008,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Summons an <hyperlink>Affinity Tesseract</hyperlink> onto target location.<br></br>Its damage type matches the caster.<br></br><br></br>This summon lasts for 3 <turn></turn> <hyperlink>Turns</hyperlink>.",
