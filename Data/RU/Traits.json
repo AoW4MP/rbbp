@@ -73,7 +73,7 @@
     "name": "1 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+30 к <mana></mana> <hyperlink>мане</hyperlink>;</bullet><bullet>Книги III ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
-    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
+    "name": "2 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+130 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>Книги IV ранга доступны без требований к приверженностям.</bullet></bulletlist>"
    },
    {
     "name": "3 оч. каждой из <hyperlink>приверженности</hyperlink> дают:<bulletlist><bullet>+200 к <influence></influence> <hyperlink>авторитету</hyperlink>;</bullet><bullet>Книги V ранга доступны без требований к приверженностям.</bullet></bulletlist>"
@@ -1095,6 +1095,51 @@
   "front_end": true,
   "icon": "0000049000000917",
   "display_order": 0
+ },
+ {
+  "affinities": [
+   {
+    "name": "<reputation4></reputation4> <hyperlink>Мировоззрение</hyperlink>"
+   }
+  ],
+  "biography_description": "В эпоху господства <hyperlink>Мирриды</hyperlink> <hyperlink>короли великанов</hyperlink> правили множеством миров по всему <hyperlink>Астральному морю</hyperlink>. Их безраздельная власть над материей не ограничивалась одной лишь природой — они видоизменяли даже тела своих подданных, вживляя в их плоть особые кристаллы, предотвращавшие старение. Впоследствии древние великаны воспользовались этими же кристаллами, чтобы сохранить свои воспоминания и чувства. После падения Мирриды власть над уцелевшими <hyperlink>Предвечными мудрецами</hyperlink> перешла к Советам Предвечных.",
+  "lore_description": "В эпоху господства <hyperlink>Мирриды</hyperlink> <hyperlink>короли великанов</hyperlink> правили множеством миров по всему <hyperlink>Астральному морю</hyperlink>. Их безраздельная власть над материей не ограничивалась одной лишь природой — они видоизменяли даже тела своих подданных, вживляя в их плоть особые кристаллы, предотвращавшие старение. Впоследствии древние великаны воспользовались этими же кристаллами, чтобы сохранить свои воспоминания и чувства. После падения Мирриды власть над уцелевшими <hyperlink>Предвечными мудрецами</hyperlink> перешла к Советам Предвечных.",
+  "DLC": "GIANTKINGS ",
+  "point_cost": 1,
+  "id": "Стражи_Сьялдрикх",
+  "name": "Стражи Сьялдрикх",
+  "incompatible_society_traits": [
+   {
+    "name": "Идейные каннибалы<evilact></evilact>"
+   },
+   {
+    "name": "Избранные объединители <goodact></goodact>"
+   },
+   {
+    "name": "Империалисты"
+   },
+   {
+    "name": "Легендарные охотники"
+   }
+  ],
+  "screen_description": "В тела этих прислужников <hyperlink>Предвечных мудрецов</hyperlink> вживлены магические кристаллы. Волшебство кристаллов укрепляет их плоть, а разум наполняет воспоминаниями давно сгинувших великанов.",
+  "effect_descriptions": [],
+  "enabled": false,
+  "front_end": false,
+  "type": "society",
+  "display_order": -1,
+  "starting_bonuses": [
+   {
+    "empire_progression_slug": "Раскопки"
+   },
+   {
+    "description": "Даёт случайно выбранные предметы для героев (1)."
+   },
+   {
+    "description": "100<influence></influence> "
+   }
+  ],
+  "icon": "0000048F000002E9"
  },
  {
   "lore_description": "Им суждено принести в мир великие перемены.",
