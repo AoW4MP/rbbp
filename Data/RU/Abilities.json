@@ -9274,7 +9274,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9335,7 +9335,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9396,7 +9396,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9457,7 +9457,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9518,7 +9518,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9579,7 +9579,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -9640,7 +9640,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "3",
+  "range": "2",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
@@ -18232,7 +18232,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<leaveoneaction></leaveoneaction>",
-  "range": "4",
+  "range": "3",
   "notes": [
    {
     "note": "Перезарядка: 2 <turn></turn>"
