@@ -8669,7 +8669,7 @@
  {
   "modifiers": [
    {
-    "description": "Применяет эффект «Пробитое сопротивление» на 3 <turn></turn> х.",
+    "description": "С базовой вероятностью 90% может на 3 <turn></turn> х. применить эффект «Пробитое сопротивление».",
     "name": "Пробитое сопротивление",
     "count": 1
    }
@@ -15810,7 +15810,11 @@
   "icon": "000003EB0000040D"
  },
  {
-  "notes": [],
+  "notes": [
+   {
+    "note": "Перезарядка: 2 <turn></turn>"
+   }
+  ],
   "description": "Применивший чары воин перемещается на выбранную клетку.",
   "name": "Стремительный скачок",
   "slug": "fast_phase_ability_0000041B00001492",
@@ -17185,7 +17189,7 @@
   "description": "Наносит урон выбранному воину.",
   "name": "Малый взрыв",
   "slug": "wyvern_burst_ability_000003EC00002919",
-  "damage": "15<damagefire></damagefire> 1<damagephysical></damagephysical> ",
+  "damage": "16<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
@@ -29774,9 +29778,6 @@
  {
   "notes": [
    {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Можно использовать только один раз за битву."
    },
    {
@@ -29790,6 +29791,9 @@
   "requisites": [
    {
     "requisite": "<hyperlink>Неперезаряжаемые^Pa{1}</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Поддержка^F</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
