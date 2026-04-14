@@ -4608,10 +4608,13 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_0000049700000DE0",
-  "damage": "16<damageblight></damageblight> 16<damagefrost></damagefrost> ",
+  "damage": "12<damageblight></damageblight> 12<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Магия^F</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -8453,10 +8456,13 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_000004900000091E",
-  "damage": "8<damagephysical></damagephysical> 8<damageblight></damageblight> ",
+  "damage": "6<damagephysical></damagephysical> 6<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Магия^F</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -11693,18 +11699,26 @@
  {
   "modifiers": [
    {
+    "description": "+40% к урону против <hyperlink>всадников</hyperlink> и <hyperlink>крупных целей</hyperlink>.",
+    "name": "Древковое оружие",
+    "count": 1
+   },
+   {
     "description": "Применяет эффект «Слабость» на 3 <turn></turn> х.",
     "name": "Слабость",
     "count": 1
    }
   ],
-  "description": "Наносит урон воинам в конусе размером 1 кл.",
+  "description": "Наносит урон воинам в конусе размером 1 кл. После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Ослабляющее рассечение",
   "slug": "weakening_cleave_ability_000004900000004C",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "26<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
    }
   ],
   "accuracy": "100%",
@@ -12389,7 +12403,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Привязывается к выбранному дружественному <hyperlink>герою</hyperlink>:<bulletlist><bullet>урон, полученный связанным воином, переходит к этому воину, уменьшаясь при этом на 50%;</bullet><bullet>в начале каждого хода связанный воин получает эффект «Дополнительная сила».</bullet></bulletlist>",
+  "description": "Привязывается к выбранному дружественному <hyperlink>герою</hyperlink>:<bulletlist><bullet>урон, полученный связанным воином, переходит к этому воину, уменьшаясь при этом на 50%;</bullet><bullet>в начале каждого хода оба воина получают эффект «Дополнительная сила» (2) и Регенерация (1).</bullet></bulletlist>",
   "name": "Клятвенная связь",
   "slug": "sworn_bond_ability_0000048D00001227_0000048d00001220",
   "damage": "",
@@ -28262,10 +28276,10 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин (кроме героя) восстанавливает <hyperlink>очки действия</hyperlink>.<br></br>Затем эффект переходит на другие цели (до 1) в радиусе 3 кл.",
+  "description": "Выбранный дружественный воин (кроме героя) восстанавливает <hyperlink>очки действия</hyperlink>.<br></br>Затем эффект переходит на другие цели (до 1) в радиусе 3 кл. После использования встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Координированное командование",
   "slug": "hs_champion_coordinated_command_ability_hs_champion_coordinated_command",
   "damage": "",
@@ -28285,7 +28299,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин (кроме героя) восстанавливает <hyperlink>очки действия</hyperlink>.",
@@ -28350,7 +28364,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин (кроме героя) восстанавливает <hyperlink>очки действия</hyperlink>.",
@@ -37393,10 +37407,13 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_death_beetle_mount_item_tier_ii",
-  "damage": "14<damageblight></damageblight> 8<damagephysical></damagephysical> 6<damagefrost></damagefrost> ",
+  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Магия^F</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -43606,7 +43623,7 @@
   "description": "Вражеские воины в конусе размером в 2 кл. получают урон, к ним применяется эффект «Слабость» (1).",
   "name": "Изнуряющий вой",
   "slug": "enfeebling_howl_mount_ability_white_wolf_mount_item_tier_3",
-  "damage": "18<damagefrost></damagefrost> ",
+  "damage": "24<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Магия^F</hyperlink>"

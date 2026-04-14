@@ -65,10 +65,10 @@
  {
   "requirement_description": "Для постройки требуются провинции с лавовыми улучшениями (3).",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "+20 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink>",
+  "prediction_description": "<bulletlist><bullet>+20 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink></bullet><bullet>Даёт всем <hyperlink>воинам</hyperlink>, созданным в этом <hyperlink>городе</hyperlink>, свойство «<hyperlink>Обсидиановый оружейник</hyperlink>».</bullet></bulletlist>",
   "resid": 5222680232536,
   "id": "Обсидиановый_оружейник",
-  "description": "",
+  "description": "Воины, созданные в этом <hyperlink>городе</hyperlink>, получают +2 ед. урона к базовым атакам (кроме <hyperlink>магических</hyperlink>). Эффект усиливается для однократных атак.",
   "name": "Обсидиановый оружейник",
   "icon": "000004C00000025B",
   "is_sector_upgrade": false,
@@ -76,8 +76,8 @@
  },
  {
   "requirement_description": "Для постройки требуются провинции с лавовыми улучшениями (2).",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "+15 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
+  "cost": "200<gold></gold> 100<structureprod></structureprod> ",
+  "prediction_description": "+30 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink>",
   "resid": 5222680232531,
   "id": "Добыча_базальта",
   "description": "",
@@ -1638,7 +1638,7 @@
  },
  {
   "requirement_description": "Можно построить только в присоединённой <hyperlink>провинции</hyperlink>.<br></br><br></br>Требуется город ранга II.",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 5003636900109,
   "id": "_mine___Круг_трансмутации",
