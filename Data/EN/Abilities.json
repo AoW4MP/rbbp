@@ -4608,10 +4608,13 @@
   "description": "Adjacent enemy units sustain damage. Then this unit moves to target hex and enters <hyperlink>Defense Mode</hyperlink>.",
   "name": "Pestilent Escape",
   "slug": "pestilent_escape_ability_0000049700000DE0",
-  "damage": "16<damageblight></damageblight> 16<damagefrost></damagefrost> ",
+  "damage": "12<damageblight></damageblight> 12<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Movement</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Magic</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -8453,10 +8456,13 @@
   "description": "Adjacent enemy units sustain damage. Then this unit moves to target hex and enters <hyperlink>Defense Mode</hyperlink>.",
   "name": "Pestilent Escape",
   "slug": "pestilent_escape_ability_000004900000091E",
-  "damage": "8<damagephysical></damagephysical> 8<damageblight></damageblight> ",
+  "damage": "6<damagephysical></damagephysical> 6<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Movement</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Magic</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -11693,18 +11699,26 @@
  {
   "modifiers": [
    {
+    "description": "+40% damage to Cavalry and Large Target units.",
+    "name": "Polearm",
+    "count": 1
+   },
+   {
     "description": "Inflict Weakened for 3 <turn></turn> Turns.",
     "name": "Weakened",
     "count": 1
    }
   ],
-  "description": "Deal damage to units in a 1-hex cone.",
+  "description": "Deal damage to units in a 1-hex cone. Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Weakening Cleave",
   "slug": "weakening_cleave_ability_000004900000004C",
-  "damage": "20<damagephysical></damagephysical> ",
+  "damage": "26<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Base</hyperlink>"
    }
   ],
   "accuracy": "100%",
@@ -12389,7 +12403,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Link to target friendly <hyperlink>Hero</hyperlink> unit:<bulletlist><bullet>Damage sustained by the linked unit is dealt to this unit as well but reduced by 50%.</bullet><bullet>At the start of each turn, the linked unit gains Strengthened.</bullet></bulletlist>",
+  "description": "Link to target friendly <hyperlink>Hero</hyperlink> unit:<bulletlist><bullet>Damage sustained by the linked unit is dealt to this unit as well but reduced by 50%.</bullet><bullet>At the start of each turn, this unit and the linked unit gain Strengthened (2) and Regeneration (1).</bullet></bulletlist>",
   "name": "Sworn Bond",
   "slug": "sworn_bond_ability_0000048D00001227_0000048d00001220",
   "damage": "",
@@ -28262,10 +28276,10 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly non-Hero unit regains its <hyperlink>Action Points</hyperlink>.<br></br>This effect jumps to 1 additional target within 3 hexes.",
+  "description": "Target friendly non-Hero unit regains its <hyperlink>Action Points</hyperlink>.<br></br>This effect jumps to 1 additional target within 3 hexes. Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Coordinated Command",
   "slug": "hs_champion_coordinated_command_ability_hs_champion_coordinated_command",
   "damage": "",
@@ -28285,7 +28299,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
   "description": "Target friendly non-Hero unit regains its <hyperlink>Action Points</hyperlink>.",
@@ -28350,7 +28364,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 1 <turn></turn>"
    }
   ],
   "description": "Target friendly non-Hero unit regains its <hyperlink>Action Points</hyperlink>.",
@@ -37393,10 +37407,13 @@
   "description": "Adjacent enemy units sustain damage. Then this unit moves to target hex and enters <hyperlink>Defense Mode</hyperlink>.",
   "name": "Pestilent Escape",
   "slug": "pestilent_escape_ability_death_beetle_mount_item_tier_ii",
-  "damage": "14<damageblight></damageblight> 8<damagephysical></damagephysical> 6<damagefrost></damagefrost> ",
+  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Movement</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Magic</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -43606,7 +43623,7 @@
   "description": "Enemy units in a 2-hex cone sustain damage and gain 1 stack of Weakened.",
   "name": "Enfeebling Howl",
   "slug": "enfeebling_howl_mount_ability_white_wolf_mount_item_tier_3",
-  "damage": "18<damagefrost></damagefrost> ",
+  "damage": "24<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Magic</hyperlink>"
