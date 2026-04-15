@@ -4614,7 +4614,7 @@
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Магия^F</hyperlink>"
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -8462,7 +8462,7 @@
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Магия^F</hyperlink>"
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -37407,13 +37407,13 @@
   "description": "Вражеские воины по соседству получают урон, затем воин перемещается на указанную клетку и встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Чумное бегство",
   "slug": "pestilent_escape_ability_death_beetle_mount_item_tier_ii",
-  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
+  "damage": "10<damagephysical></damagephysical> 10<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Магия^F</hyperlink>"
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
    }
   ],
   "accuracy": "Всегда попадает в цель",
@@ -43623,7 +43623,7 @@
   "description": "Вражеские воины в конусе размером в 2 кл. получают урон, к ним применяется эффект «Слабость» (1).",
   "name": "Изнуряющий вой",
   "slug": "enfeebling_howl_mount_ability_white_wolf_mount_item_tier_3",
-  "damage": "24<damagefrost></damagefrost> ",
+  "damage": "21<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Магия^F</hyperlink>"
