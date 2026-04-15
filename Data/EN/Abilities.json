@@ -4614,7 +4614,7 @@
     "requisite": "<hyperlink>Movement</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Magic</hyperlink>"
+    "requisite": "<hyperlink>Melee</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -8462,7 +8462,7 @@
     "requisite": "<hyperlink>Movement</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Magic</hyperlink>"
+    "requisite": "<hyperlink>Melee</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -37407,13 +37407,13 @@
   "description": "Adjacent enemy units sustain damage. Then this unit moves to target hex and enters <hyperlink>Defense Mode</hyperlink>.",
   "name": "Pestilent Escape",
   "slug": "pestilent_escape_ability_death_beetle_mount_item_tier_ii",
-  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
+  "damage": "10<damagephysical></damagephysical> 10<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Movement</hyperlink>"
    },
    {
-    "requisite": "<hyperlink>Magic</hyperlink>"
+    "requisite": "<hyperlink>Melee</hyperlink>"
    }
   ],
   "accuracy": "Always Hits",
@@ -43623,7 +43623,7 @@
   "description": "Enemy units in a 2-hex cone sustain damage and gain 1 stack of Weakened.",
   "name": "Enfeebling Howl",
   "slug": "enfeebling_howl_mount_ability_white_wolf_mount_item_tier_3",
-  "damage": "24<damagefrost></damagefrost> ",
+  "damage": "21<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Magic</hyperlink>"
