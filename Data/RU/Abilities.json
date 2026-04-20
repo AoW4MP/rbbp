@@ -7555,7 +7555,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>получает +5 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>получает +7 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Атака пылающим натиском",
   "slug": "flaming_charge_strike_ability_0000049000000EA6_0000049700000fb8",
   "damage": "24<damagephysical></damagephysical> ",
@@ -7582,11 +7582,14 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Перемещается на 4 кл. вперёд, нанося урон всем врагам на пути.",
+  "description": "Перемещается на 2 кл. вперёд, нанося урон всем врагам на пути.",
   "name": "Напролом",
   "slug": "bulldoze_ability_0000049000000EA6_0000049700000fb8",
   "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
+   {
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
+   },
    {
     "requisite": "<hyperlink>Перемещение^N</hyperlink>"
    }
@@ -10144,38 +10147,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного крокодила</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного крокодила",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dc",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
   "requisites": [
    {
@@ -10186,6 +10163,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного крокодила</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного крокодила",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dc",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "description": "Духовное исцеление:<bulletlist><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>каждый потраченный уровень особенности «Первобытная ярость» также снимает один отрицательный эффект.</bullet></bulletlist>",
@@ -10235,38 +10238,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного ворона</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного ворона",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002df",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002df",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
   "requisites": [
    {
@@ -10277,6 +10254,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного ворона</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного ворона",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002df",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10320,38 +10323,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного мамонта</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного мамонта",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e1",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
   "requisites": [
    {
@@ -10362,6 +10339,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного мамонта</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного мамонта",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e1",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10405,38 +10408,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного смилодона</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного смилодона",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dd",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
   "requisites": [
    {
@@ -10447,6 +10424,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного смилодона</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного смилодона",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dd",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10490,38 +10493,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного змея</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного змея",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002de",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002de",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
   "requisites": [
    {
@@ -10532,6 +10509,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного змея</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного змея",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002de",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10575,38 +10578,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного паука</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного паука",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e0",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
   "requisites": [
    {
@@ -10617,6 +10594,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного паука</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного паука",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e0",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10660,38 +10663,12 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
-   },
-   {
-    "note": "На перезарядке в начале битвы: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного волка</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
-  "name": "Призыв первобытного волка",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002db",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Призыв^M</hyperlink>"
-   }
-  ],
-  "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   },
-   {
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Духовное исцеление",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002db",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
   "requisites": [
    {
@@ -10702,6 +10679,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
+    "note": "Можно использовать только один раз за битву."
+   },
+   {
+    "note": "На перезарядке в начале битвы: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Призывает на выбранную клетку <hyperlink>первобытного волка</hyperlink>.</bullet><bullet>При призыве на присущем зверю ландшафте даёт свойство «Буйство».</bullet></bulletlist><br></br><br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.",
+  "name": "Призыв первобытного волка",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002db",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Призыв^M</hyperlink>"
+   }
+  ],
+  "accuracy": "Всегда попадает в цель",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -22595,7 +22598,7 @@
   "description": "Выбранный вражеский воин и ещё один в радиусе 3 кл. получают урон.",
   "name": "Проклятие рассечения",
   "slug": "sundering_curse_ability_000003E300005303_0000048d000019de",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ослабление^N</hyperlink>"
@@ -30318,7 +30321,7 @@
  {
   "notes": [
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
   "description": "Выбранный труп дружественного воина возрождается с 60% от максимального значения свойства «Здоровье».",
@@ -30332,7 +30335,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "8",
+  "range": "4",
   "icon": "000004C000000AC1"
  },
  {
@@ -31576,7 +31579,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>получает +5 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>получает +7 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Атака пылающим натиском",
   "slug": "flaming_charge_strike_ability_(item_forge)_flaming_greatclub_2h_item_tier_i",
   "damage": "21<damagephysical></damagephysical> ",
@@ -34952,7 +34955,7 @@
  },
  {
   "modifiers": [],
-  "description": "Натиск:<bulletlist><bullet>получает +5 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
+  "description": "Натиск:<bulletlist><bullet>получает +7 к <damageFire></damageFire> <hyperlink>урону от огня</hyperlink> за каждую пройденную клетку (до 3 кл.);</bullet><bullet>отменяет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
   "name": "Атака пылающим натиском",
   "slug": "flaming_charge_strike_ability_equipment_item_2h_oathsworn_greatclub_base",
   "damage": "24<damagephysical></damagephysical> ",
@@ -40229,7 +40232,7 @@
     "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    },
    {
-    "note": "Можно использовать только один раз за битву."
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин получает один уровень эффекта «Благодать».",
@@ -48916,7 +48919,7 @@
   "description": "Выбранный вражеский воин и ещё один в радиусе 3 кл. получают урон.",
   "name": "Проклятие рассечения",
   "slug": "sundering_curse_ability_not_base_equipment_upgrade_active_staff_sundering_curse",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ослабление^N</hyperlink>"
@@ -49340,7 +49343,7 @@
   "description": "Выбранный вражеский воин и ещё один в радиусе 3 кл. получают урон.",
   "name": "Проклятие рассечения",
   "slug": "sundering_curse_ability_not_base_equipment_upgrade_active_wand_sundering_curse",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ослабление^N</hyperlink>"

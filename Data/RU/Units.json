@@ -18033,10 +18033,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dc"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dc"
    },
    {
     "slug": "000003e300004c97"
@@ -18128,10 +18128,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002df"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002df"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002df"
    },
    {
     "slug": "000003e300004c97"
@@ -18223,10 +18223,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e1"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e1"
    },
    {
     "slug": "000003e300004c97"
@@ -18318,10 +18318,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dd"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dd"
    },
    {
     "slug": "000003e300004c97"
@@ -18413,10 +18413,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002de"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002de"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002de"
    },
    {
     "slug": "000003e300004c97"
@@ -18508,10 +18508,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e0"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e0"
    },
    {
     "slug": "000003e300004c97"
@@ -18603,10 +18603,10 @@
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002db"
+    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "spiritual_healing_ability_000004900000031D_00000497000002db"
+    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002db"
    },
    {
     "slug": "000003e300004c97"
@@ -44323,6 +44323,9 @@
    },
    {
     "slug": "000003fe00000060"
+   },
+   {
+    "slug": "000003e300004864"
    }
   ],
   "medal_rewards_4": [

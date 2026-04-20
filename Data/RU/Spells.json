@@ -7311,7 +7311,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>",
   "id": "Ментальная_метка",
   "tactical": true,
-  "description": "Выбранные враги в радиусе 1 кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (3).</bullet></bulletlist>",
+  "description": "Выбранные враги в радиусе 1 кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (2).</bullet></bulletlist>",
   "name": "Ментальная метка",
   "operation_point_cost": 20,
   "icon": "0000041B00001251"

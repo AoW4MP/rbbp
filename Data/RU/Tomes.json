@@ -3771,7 +3771,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Выбранные враги в радиусе кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (3).</bullet></bulletlist>",
+    "description": "Выбранные враги в радиусе кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (2).</bullet></bulletlist>",
     "name": "Ментальная метка",
     "spell_slug": "Ментальная_метка",
     "tier": 3,
