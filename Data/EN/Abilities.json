@@ -7555,7 +7555,7 @@
  },
  {
   "modifiers": [],
-  "description": "A Charge attack:<bulletlist><bullet>Gains +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
+  "description": "A Charge attack:<bulletlist><bullet>Gains +7 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Flaming Charge Strike",
   "slug": "flaming_charge_strike_ability_0000049000000EA6_0000049700000fb8",
   "damage": "24<damagephysical></damagephysical> ",
@@ -7582,11 +7582,14 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Move 4 hexes forward. Enemies in the way sustain damage.",
+  "description": "Move 2 hexes forward. Enemies in the way sustain damage.",
   "name": "Bulldoze",
   "slug": "bulldoze_ability_0000049000000EA6_0000049700000fb8",
   "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
+   {
+    "requisite": "<hyperlink>Melee</hyperlink>"
+   },
    {
     "requisite": "<hyperlink>Movement</hyperlink>"
    }
@@ -10144,38 +10147,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Crocodile</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Crocodile",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dc",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
   "requisites": [
    {
@@ -10186,6 +10163,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Crocodile</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Crocodile",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dc",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "description": "Spiritual Healing:<bulletlist><bullet>Heals an additional 10<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Each stack of Primal Fury now also dispels a negative status effect.</bullet></bulletlist>",
@@ -10235,38 +10238,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Crow</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Crow",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002df",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002df",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
   "requisites": [
    {
@@ -10277,6 +10254,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Crow</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Crow",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002df",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10320,38 +10323,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Mammoth</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Mammoth",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e1",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
   "requisites": [
    {
@@ -10362,6 +10339,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Mammoth</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Mammoth",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e1",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10405,38 +10408,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Sabertooth</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Sabertooth",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dd",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
   "requisites": [
    {
@@ -10447,6 +10424,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Sabertooth</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Sabertooth",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dd",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10490,38 +10493,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Serpent</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Serpent",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002de",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002de",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
   "requisites": [
    {
@@ -10532,6 +10509,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Serpent</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Serpent",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002de",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10575,38 +10578,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Spider</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Spider",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e0",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
   "requisites": [
    {
@@ -10617,6 +10594,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Spider</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Spider",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e0",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -10660,38 +10663,12 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
-   },
-   {
-    "note": "Starts on cooldown: 1<turn></turn>"
-   }
-  ],
-  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Wolf</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
-  "name": "Summon Primal Wolf",
-  "slug": "summon_totem_animal_ability_000004900000031D_00000497000002db",
-  "damage": "",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Summoning</hyperlink>"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "1",
-  "icon": "0000049700000197"
- },
- {
-  "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
-   {
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "Spiritual Healing",
-  "slug": "spiritual_healing_ability_000004900000031D_00000497000002db",
+  "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
   "requisites": [
    {
@@ -10702,6 +10679,32 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000001C3"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "description": "<bulletlist><bullet>Summon a <hyperlink>Primal Wolf</hyperlink> onto target hex.</bullet><bullet>When summoned on favored terrain gains Frenzy.</bullet></bulletlist><br></br><br></br>This summon lasts for 3 <turn></turn> Turns.",
+  "name": "Summon Primal Wolf",
+  "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002db",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Summoning</hyperlink>"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "1",
+  "icon": "0000049700000197"
  },
  {
   "modifiers": [
@@ -22595,7 +22598,7 @@
   "description": "Target enemy unit and another within 3 hexes sustain damage.",
   "name": "Sundering Curse",
   "slug": "sundering_curse_ability_000003E300005303_0000048d000019de",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Debuff</hyperlink>"
@@ -30318,7 +30321,7 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target friendly corpse is revived with 60% of its max Hit Points.",
@@ -30332,7 +30335,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "8",
+  "range": "4",
   "icon": "000004C000000AC1"
  },
  {
@@ -31576,7 +31579,7 @@
  },
  {
   "modifiers": [],
-  "description": "A Charge attack:<bulletlist><bullet>Gains +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
+  "description": "A Charge attack:<bulletlist><bullet>Gains +7 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Flaming Charge Strike",
   "slug": "flaming_charge_strike_ability_(item_forge)_flaming_greatclub_2h_item_tier_i",
   "damage": "21<damagephysical></damagephysical> ",
@@ -34952,7 +34955,7 @@
  },
  {
   "modifiers": [],
-  "description": "A Charge attack:<bulletlist><bullet>Gains +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
+  "description": "A Charge attack:<bulletlist><bullet>Gains +7 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Flaming Charge Strike",
   "slug": "flaming_charge_strike_ability_equipment_item_2h_oathsworn_greatclub_base",
   "damage": "24<damagephysical></damagephysical> ",
@@ -40229,7 +40232,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Target friendly unit gains a stack of Grace.",
@@ -48916,7 +48919,7 @@
   "description": "Target enemy unit and another within 3 hexes sustain damage.",
   "name": "Sundering Curse",
   "slug": "sundering_curse_ability_not_base_equipment_upgrade_active_staff_sundering_curse",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Debuff</hyperlink>"
@@ -49340,7 +49343,7 @@
   "description": "Target enemy unit and another within 3 hexes sustain damage.",
   "name": "Sundering Curse",
   "slug": "sundering_curse_ability_not_base_equipment_upgrade_active_wand_sundering_curse",
-  "damage": "12<damagefrost></damagefrost> ",
+  "damage": "16<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Debuff</hyperlink>"

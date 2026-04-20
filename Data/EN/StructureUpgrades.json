@@ -2261,7 +2261,7 @@
   "prediction_description": "",
   "resid": 4578435139908,
   "id": "chaos_bolstering_matrix",
-  "description": "Chaos Buff and Healing <hyperlink>Spells</hyperlink> grant 3 Strengthened.",
+  "description": "Chaos Buff and Healing <hyperlink>Spells</hyperlink> grant 2 Strengthened.",
   "name": "Chaos Bolstering Matrix",
   "icon": "0000042A00000946",
   "is_sector_upgrade": false
