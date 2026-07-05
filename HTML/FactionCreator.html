@@ -181,7 +181,10 @@
                 cursor: pointer;
                 position: relative;
             }
-
+            
+            .padded-image{
+                padding:15px;
+            }
             .tome-button-small {
                 width: 60px;
                 height: 70px;
@@ -367,13 +370,77 @@
             .AddSubtract:hover {
                 margin: -2px;
                 font-weight: 1900;
-                color: aqua;
+               filter: brightness(200%);
                 background-color: transparent;
                 border: none;
             }
 
             .sortingButton:hover {
                 background-color: dimgrey;
+            }
+
+            .tome-remove-btn {
+                display: none;
+                position: absolute;
+                top: -18px;
+                right: 2px;
+                color: #ccc;
+                font-size: 13px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 10;
+                line-height: 1;
+                background: rgba(0, 0, 0, 0.55);
+                border-radius: 3px;
+                padding: 0 2px;
+            }
+            .tome-button-small::before {
+                content: '';
+                position: absolute;
+                top: -18px;
+                left: 0;
+                right: 0;
+                height: 18px;
+            }
+            .tome-button-small:hover .tome-remove-btn {
+                display: block;
+            }
+            .tome-remove-btn:hover {
+                color: #ff6666;
+            }
+            .tome-warning-icon {
+                position: absolute;
+                top: -18px;
+                left: 2px;
+                font-size: 12px;
+                font-weight: bold;
+                color: #e05252;
+                pointer-events: none;
+                z-index: 10;
+                text-shadow: 0 0 3px #000;
+            }
+            .tome-invalid {
+                outline: 2px solid #e05252;
+                outline-offset: 3px;
+            }
+            .tome-add-slot {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 70px;
+                border: 2px dashed #555;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #555;
+                font-size: 28px;
+                box-sizing: border-box;
+                align-self: center;
+                transition: border-color 0.15s, color 0.15s;
+            }
+            .tome-add-slot:hover {
+                border-color: #d7c297;
+                color: #d7c297;
             }
         </style>
 
@@ -406,7 +473,7 @@
             }
         </script>
 
-        <title>Age of Wonders 4 Database - Faction Creator</title>
+        <title>Age of Wonders 4 RbbP - Faction Creator</title>
     </head>
 
     <body>
@@ -463,8 +530,8 @@
                                     <div style="display: flex; height: 50px">
                                         <div id="extraOrder"></div>
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('order','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('order','⮟')">⮟</button>
+                                            <button class="AddSubtract" onclick="AddExtra('order','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('order','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
 
@@ -472,40 +539,40 @@
                                         <div id="extraChaos"></div>
 
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('chaos','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('chaos','⮟')">⮟</button>
+                                               <button class="AddSubtract" onclick="AddExtra('chaos','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('chaos','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
 
                                     <div style="display: flex; height: 50px">
                                         <div id="extraNature"></div>
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('nature','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('nature','⮟')">⮟</button>
+                                               <button class="AddSubtract" onclick="AddExtra('nature','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('nature','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
                                     <div style="display: flex; height: 50px">
                                         <div id="extraShadow"></div>
 
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('shadow','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('shadow','⮟')">⮟</button>
+                                               <button class="AddSubtract" onclick="AddExtra('shadow','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('shadow','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
                                     <div style="display: flex; height: 50px">
                                         <div id="extraMaterium"></div>
 
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('materium','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('materium','⮟')">⮟</button>
+                                               <button class="AddSubtract" onclick="AddExtra('materium','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('materium','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
                                     <div style="display: flex; height: 50px">
                                         <div id="extraAstral"></div>
 
                                         <div style="display: flex; flex-direction: column">
-                                            <button class="AddSubtract" onclick="AddExtra('astral','⮝')">⮝</button>
-                                            <button class="AddSubtract" onclick="AddExtra('astral','⮟')">⮟</button>
+                                               <button class="AddSubtract" onclick="AddExtra('astral','⮝')"><img src="/rbbp/Icons/Interface/arrow_up.png" width="15px"></button>
+                                            <button class="AddSubtract" onclick="AddExtra('astral','⮟')"><img src="/rbbp/Icons/Interface/arrow_down.png" width="15px"></button>
                                         </div>
                                     </div>
                                 </div>
@@ -562,13 +629,13 @@
                                             style="float: right; color: red"
                                             class="button"
                                             onclick="ClearAscensionSkill()">
-                                            X
+                                           <img src="/rbbp/Icons/Interface/CloseX.png" height="20px" />
                                         </button>
                                         <button
                                             class="button-inset"
                                             id="originButtonAscension"
                                             onclick="SetupButtons(event,'Ascension')">
-                                            +
+                                            <img class="padded-image" src="/rbbp/Icons/Interface/addsymbol.png" height="20px" />
                                         </button>
                                     </div>
                                     <br><br>
@@ -578,13 +645,13 @@
                                             style="float: right; color: red"
                                             class="button"
                                             onclick="ClearAmbition()">
-                                            X
+                                            <img src="/rbbp/Icons/Interface/CloseX.png" height="20px" />
                                         </button>
                                          <button
                                             class="button-inset"
                                             id="originButtonAmbition"
                                             onclick="SetupButtons(event,'Ambition')">
-                                            +
+                                            <img class="padded-image" src="/rbbp/Icons/Interface/addsymbol.png" height="20px" />
                                         </button>
                                     </div>
                                 </div>
@@ -684,13 +751,8 @@
                         <span class="small_title"> Tome Path</span>
 
                         <button style="float: right; color: red" class="button" onclick="ClearTomePath()">
-                            Clear All
-                        </button>
-                        <button
-                            style="float: right; margin-right: 100px; color: red"
-                            class="button"
-                            onclick="RemoveLastTomePath()">
-                            Clear Last
+
+                            <img src="/rbbp/Icons/Interface/CloseX.png" height="20px" />  Clear All
                         </button>
                         <br />
                         <div
@@ -733,16 +795,19 @@
                 style="float: right; position: relative; top: -20px; color: red"
                 class="button"
                 onclick="toggleOriginButtons()">
-                X
+                 <img src="/rbbp/Icons/Interface/CloseX.png" height="20px" />
             </button>
 
             <div id="originWrapperOptions" class="wrappers"></div>
+
         </div>
         <br /><br />
+        <hr> 
         <div id="buildsSubmitHolder">
         <div id="notesContainer" style="color: white">
             <div>
-                User Submitted Builds are in testing now.
+                <span class=small_title style='display: block; width: 100%;text-align: center;'>Submit your build</span><hr><br>
+Submit your build to the build list using the form below<br>
                 <button
                     class="button-random"
                     style="position: relative; top: 0; left: 50%; transform: translateX(-50%)">
@@ -838,6 +903,10 @@
                 </button>
             </div>
         </div>
+            <br>
+            <hr>
+            <div style='color:white; padding:20px'>
+Contributors: lucasandradz </div>
             </div>
 
         <script>

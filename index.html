@@ -77,6 +77,9 @@
                                     const img = subLink.querySelector("img");
                                       const text = subLink.textContent.trim();
                                       li.innerHTML = `<a id="${subLink.id}" href="${subLink.href}">`+ img.outerHTML + text +`</a>`;
+                              
+                                    //li.innerHTML = `<a href="${subLink.href}">${subLink.textContent.trim()}</a>`;
+                                  
                                     ul.appendChild(li);
                                 });
                                 card2.appendChild(ul);
@@ -101,11 +104,16 @@
                         if (subMenu) {
                             const ul = document.createElement("ul");
                             subMenu.querySelectorAll("li a").forEach((subLink) => {
+                               
                                 const li = document.createElement("li");
                                 li.className = "list";
                                 const img = subLink.querySelector("img");
                                  const text = subLink.textContent.trim();
                                 li.innerHTML = `<a id="${subLink.id}" href="${subLink.href}">`+ img.outerHTML + text +`</a>`;
+                               
+                                 
+                               
+                                
                                 ul.appendChild(li);
                             });
                             card.appendChild(ul);

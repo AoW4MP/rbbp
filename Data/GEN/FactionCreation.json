@@ -330,17 +330,36 @@
     {
         "type": "Culture",
         "id": "reaver",
-        "affinity": "<empirematter></empirematter>,<empirechaos></empirechaos>",
+        "affinity": "<empirematter></empirematter>",
         "name": "Reaver",
         "DLC": "EMPIRESANDASHES ",
         "icon": "reaver",
         "extraLookup": "DLC@EMPIRESANDASHES@CULTURE_REAVER",
-        "extraLookup2": "DLC@EMPIRESANDASHES@CULTURE_REAVER@REAVER",
-        "incompatible": [
-            {
-                "name": "Scions of Evil <evilact></evilact>"
-            }
-        ]
+        "extraLookup2": "DLC@EMPIRESANDASHES@CULTURE_REAVER@REAVER"
+        
+    },
+      {
+        "type": "SubCulture",
+        "id": "reaver_federate",
+        "affinity": "<empireorder></empireorder>",
+        "name": "Reaver - Federated",
+        "icon": "reaver_federate",
+        "requirement": "Reaver",
+          "DLC": "EMPIRESANDASHES ",
+        "extraLookup": "DLC@EMPIRESANDASHES@CULTURE_REAVER@SUBCULTURE@FEDERATE"
+       
+    },
+      {
+        "type": "SubCulture",
+        "id": "reaver_imperial",
+        "affinity": "<empirechaos></empirechaos>",
+        "name": "Reaver - Imperial",
+        "icon": "reaver_imperial",
+        "requirement": "Reaver",
+          "DLC": "EMPIRESANDASHES ",
+         
+       "extraLookup": "DLC@EMPIRESANDASHES@CULTURE_REAVER@SUBCULTURE@IMPERIAL"
+       
     },
     {
         "type": "Culture",
@@ -467,6 +486,16 @@
         "id": "dwarfkin",
         "name": "Dwarfkin",
         "extraLookup": "ESSENCE_STOUT@SKIN_DWARF"
+    },
+     {
+        "type": "Skin",
+        "id": "owlkin",
+        "name": "Owlkin",
+           "DLC": " SECRETSOFTHEARCHMAGES",
+           "extraLookup2" : "DLC@SECRETSOFTHEARCHMAGES@ESSENCE_GRACE@SKIN_OWLKIN",
+         "extraLookup" : "DLC@SECRETSOFTHEARCHMAGES@@ESSENCE_GRACE@SKIN_OWLKIN"
+         
+        
     },
     {
         "type": "Skin",

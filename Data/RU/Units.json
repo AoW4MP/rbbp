@@ -2,6 +2,365 @@
  {
   "medal_rewards_5": [
    {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "300<unitprod></unitprod> 300<mana></mana> ",
+  "resid": 5360119185602,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 11,
+  "upkeep": "60<gold></gold> 7<influence></influence> ",
+  "id": "Гигантский_пингвин",
+  "name": "Гигантский пингвин",
+  "combat_speed": 4,
+  "primary_passives": [
+   {
+    "slug": "0000049700003d70"
+   },
+   {
+    "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "0000049700003d6b"
+   },
+   {
+    "slug": "000003870000001b"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "melee_strike_(base)_ability_000004E0000000C2"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 190,
+  "armor": 7,
+  "resistance": 7,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 5,
+  "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "000003eb0000071f"
+   },
+   {
+    "slug": "000003fe00000018"
+   },
+   {
+    "slug": "0000049700003d5f"
+   },
+   {
+    "slug": "000003e3000061e6"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "400<unitprod></unitprod> 300<gold></gold> ",
+  "resid": 5360119185601,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Fire_resistance_2"
+   },
+   {
+    "slug": "Blight_weakness_4"
+   },
+   {
+    "slug": "Frost_weakness_4"
+   }
+  ],
+  "status_resistance": 11,
+  "upkeep": "60<gold></gold> 7<influence></influence> ",
+  "id": "Фейлор",
+  "name": "Фейлор",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "0000049700000533"
+   },
+   {
+    "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "000003e3000065d9"
+   },
+   {
+    "slug": "0000049700003d7b"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003870000001b"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_000004E0000000C1"
+   },
+   {
+    "slug": "twisted_brand_ability_000004E0000000C1"
+   },
+   {
+    "slug": "rending_mist_ability_000004E0000000C1"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 150,
+  "armor": 7,
+  "resistance": 7,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 5,
+  "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003fe0000001c"
+   },
+   {
+    "slug": "000004970000191a"
+   },
+   {
+    "slug": "000003e3000061e7"
+   },
+   {
+    "slug": "000003fe000000c2"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "400<unitprod></unitprod> 300<gold></gold> ",
+  "resid": 5360119185588,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_4"
+   },
+   {
+    "slug": "Blight_weakness_4"
+   }
+  ],
+  "status_resistance": 11,
+  "upkeep": "60<gold></gold> 7<influence></influence> ",
+  "id": "Омерзительный_туманник",
+  "name": "Омерзительный туманник",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "0000049700000533"
+   },
+   {
+    "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "000003e3000065d9"
+   },
+   {
+    "slug": "0000038700001864"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003870000001b"
+   },
+   {
+    "slug": "000003870000001b"
+   },
+   {
+    "slug": "0000049700003dbf"
+   },
+   {
+    "slug": "00000497000041a6"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_000004E0000000B4"
+   },
+   {
+    "slug": "misty_lunge_ability_000004E0000000B4"
+   },
+   {
+    "slug": "pained_cry_ability_000004E0000000B4"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 150,
+  "armor": 7,
+  "resistance": 7,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 5,
+  "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "000003fe0000001c"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
     "slug": "00000497000037db"
    },
    {
@@ -9,7 +368,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5360119185516,
   "DLC": "RISEFROMRUIN ",
   "medal_rewards_3": [
@@ -22,7 +381,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -122,7 +481,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -133,9 +492,6 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d4"
@@ -267,7 +623,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -394,9 +750,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300004814"
    },
    {
@@ -479,6 +832,337 @@
  {
   "medal_rewards_5": [
    {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "400<unitprod></unitprod> 400<gold></gold> ",
+  "resid": 5291399710084,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Fire_resistance_4"
+   },
+   {
+    "slug": "Spirit_resistance_4"
+   }
+  ],
+  "status_resistance": 7,
+  "upkeep": "30<gold></gold> 3<influence></influence> ",
+  "id": "Страж_солнца",
+  "name": "Страж солнца",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "000003e3000065d9"
+   },
+   {
+    "slug": "0000048b00000258"
+   },
+   {
+    "slug": "000003e300005e31"
+   },
+   {
+    "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003870000001b"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_000004D000000584"
+   },
+   {
+    "slug": "sun_and_life_ability_000004D000000584"
+   },
+   {
+    "slug": "riddle_of_light_ability_000004D000000584"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 130,
+  "armor": 6,
+  "resistance": 6,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 4,
+  "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "000003fe00000018"
+   },
+   {
+    "slug": "000003eb0000071b"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000049700003954"
+   }
+  ],
+  "description": "",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
+  "resid": 5291399710073,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Fire_resistance_2"
+   },
+   {
+    "slug": "Spirit_weakness_4"
+   },
+   {
+    "slug": "Frost_weakness_4"
+   }
+  ],
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
+  "id": "Сожжённая_душа",
+  "name": "Сожжённая душа",
+  "combat_speed": 4,
+  "primary_passives": [
+   {
+    "slug": "000003e300005582"
+   },
+   {
+    "slug": "0000041b00000ab8"
+   },
+   {
+    "slug": "000003e300004814"
+   },
+   {
+    "slug": "0000041b00000cbc"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_000004D000000579"
+   },
+   {
+    "slug": "combust_ability_000004D000000579"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 90,
+  "armor": 3,
+  "resistance": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "0000049700003951"
+   },
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003e300004802"
+   },
+   {
+    "slug": "000003eb00000724"
+   },
+   {
+    "slug": "000004970000191a"
+   },
+   {
+    "slug": "000003e3000061e7"
+   },
+   {
+    "slug": "000003fe000000c2"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006289"
+   }
+  ],
+  "description": "",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
+  "resid": 5291399710034,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 0,
+  "upkeep": "12<gold></gold> ",
+  "id": "Паук-прядильщик",
+  "name": "Паук-прядильщик",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003fe0000007f"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "shoot_bow_ability_000004D000000552"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 65,
+  "armor": 1,
+  "resistance": 1,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 2,
+  "secondary_passives": [
+   {
+    "slug": "000003fe00000018"
+   },
+   {
+    "slug": "000004150000025b"
+   },
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "000003e300006e4a"
+   },
+   {
+    "slug": "0000039f000016f1"
+   },
+   {
+    "slug": "0000049300000407"
+   },
+   {
+    "slug": "000003e100001f7c"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "evolve_target": "Матриарх_пауков-прядильщиков"
+ },
+ {
+  "medal_rewards_5": [
+   {
     "slug": "000003e30000628a"
    },
    {
@@ -499,10 +1183,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -614,10 +1298,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -729,10 +1413,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -847,10 +1531,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -968,10 +1652,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -1083,9 +1767,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000037c6"
    },
    {
@@ -1184,9 +1865,6 @@
   "name": "Разлом",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "00000497000037c6"
    },
@@ -1287,9 +1965,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000037c6"
    },
    {
@@ -1386,7 +2061,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -1492,10 +2167,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -1512,9 +2187,6 @@
   "primary_passives": [
    {
     "slug": "00000497000033d0"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -1591,6 +2263,130 @@
   ]
  },
  {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "400<unitprod></unitprod> 400<gold></gold> ",
+  "resid": 5244155072369,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Physical_resistance_2"
+   },
+   {
+    "slug": "Blight_resistance_2"
+   },
+   {
+    "slug": "Shock_resistance_2"
+   },
+   {
+    "slug": "Fire_resistance_2"
+   },
+   {
+    "slug": "Spirit_resistance_2"
+   },
+   {
+    "slug": "Frost_resistance_2"
+   }
+  ],
+  "status_resistance": 11,
+  "upkeep": "60<gold></gold> 7<influence></influence> ",
+  "id": "Аватар_космоса",
+  "name": "Аватар космоса",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "0000049700003d31"
+   },
+   {
+    "slug": "000003e3000065d9"
+   },
+   {
+    "slug": "0000045e0000063d"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "0000049700003cec"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_bolts_ability_000004C500000F71"
+   },
+   {
+    "slug": "greater_phase_ability_000004C500000F71"
+   },
+   {
+    "slug": "cosmos_beam_ability_000004C500000F71"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 150,
+  "armor": 7,
+  "resistance": 7,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 5,
+  "secondary_passives": [
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "000003eb00000724"
+   },
+   {
+    "slug": "000003e300004968"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
   "resid": 5244155071949,
   "id": "ЧемпионЧемпионы",
   "DLC": "RISEFROMRUIN ",
@@ -1607,9 +2403,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Завоеватели",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000048d00001e6c"
    },
@@ -1988,7 +2781,7 @@
     "slug": "0000048d00001cb4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004C500000D1E_000004c500000dce"
@@ -2077,7 +2870,7 @@
     "slug": "0000048d00001c50"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004C500000D1E_000004c500000dcf"
@@ -2162,9 +2955,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Завоеватели",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004ee3"
    },
@@ -2359,7 +3149,7 @@
     "slug": "0000048d00001cb4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_000004C500000D19_000004c500000dce"
@@ -2448,7 +3238,7 @@
     "slug": "0000048d00001c50"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_000004C500000D19_000004c500000dcf"
@@ -2720,13 +3510,10 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
+    "slug": "000003fe0000007e"
    },
    {
     "slug": "000003e100001533"
-   },
-   {
-    "slug": "000003fe0000007e"
    },
    {
     "slug": "0000045e00000580"
@@ -2813,10 +3600,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -2831,9 +3618,6 @@
   "name": "Кровавый экзарх",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000049700000f8f"
    },
@@ -2858,7 +3642,7 @@
     "slug": "melee_strike_(base)_ability_000004C500000B10"
    },
    {
-    "slug": "siphon_lesser_ability_000004C500000B10"
+    "slug": "siphon_blood_ability_000004C500000B10"
    },
    {
     "slug": "gift_blood_of_the_exarch_ability_000004C500000B10"
@@ -3026,7 +3810,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5244155071237,
   "DLC": "THRONESOFBLOOD ",
   "medal_rewards_3": [
@@ -3125,7 +3909,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -3134,9 +3918,6 @@
   "name": "Расколотый единорогРасколотые единороги",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -3234,10 +4015,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -3257,9 +4038,6 @@
    },
    {
     "slug": "000004c00000052a"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d4"
@@ -3375,10 +4153,10 @@
     "slug": "Spirit_resistance_6"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -3495,10 +4273,10 @@
     "slug": "Spirit_resistance_6"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -3591,13 +4369,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -3703,13 +4481,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -3723,9 +4501,6 @@
    },
    {
     "slug": "000004c0000004cc"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003eb000004c4"
@@ -4045,9 +4820,6 @@
     "slug": "0000049700000533"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -4166,7 +4938,13 @@
     "slug": "000003e300005582"
    },
    {
+    "slug": "000003fe0000007f"
+   },
+   {
     "slug": "00000497000007ca"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "abilities": [
@@ -4340,12 +5118,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -4360,9 +5132,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000cea"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "00000493000003a2"
@@ -4459,6 +5228,883 @@
     "slug": "0000048b00000c6e"
    },
    {
+    "slug": "000003e300006288"
+   }
+  ],
+  "description": "",
+  "cost": "400<unitprod></unitprod> 400<gold></gold> ",
+  "resid": 5046586588262,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Shock_resistance_4"
+   },
+   {
+    "slug": "Frost_resistance_4"
+   }
+  ],
+  "status_resistance": 7,
+  "upkeep": "30<gold></gold> 3<influence></influence> ",
+  "id": "Страж_луны",
+  "name": "Страж луны",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "000003e3000065d9"
+   },
+   {
+    "slug": "0000048b00000258"
+   },
+   {
+    "slug": "000003e300005e31"
+   },
+   {
+    "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003870000001b"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_0000049700003C66"
+   },
+   {
+    "slug": "moon_and_shadow_ability_0000049700003C66"
+   },
+   {
+    "slug": "riddle_of_night_ability_0000049700003C66"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 130,
+  "armor": 6,
+  "resistance": 6,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 4,
+  "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
+   {
+    "slug": "000003e300004e9f"
+   },
+   {
+    "slug": "000003fe00000018"
+   },
+   {
+    "slug": "000003eb0000071b"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006289"
+   }
+  ],
+  "description": "",
+  "cost": "300<unitprod></unitprod> 200<gold></gold> ",
+  "resid": 5046586588166,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 7,
+  "upkeep": "30<gold></gold> 3<influence></influence> ",
+  "id": "Матриарх_пауков-прядильщиков",
+  "name": "Матриарх пауков-прядильщиков",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "shoot_bow_ability_0000049700003C06"
+   },
+   {
+    "slug": "weavers_retreat_ability_0000049700003C06"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 105,
+  "armor": 3,
+  "resistance": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 4,
+  "secondary_passives": [
+   {
+    "slug": "000003fe00000018"
+   },
+   {
+    "slug": "000004150000025b"
+   },
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "0000039f000016f1"
+   },
+   {
+    "slug": "0000049300000407"
+   },
+   {
+    "slug": "000003e100001f7c"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000049700004199"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "description": "",
+  "cost": "300<unitprod></unitprod> 200<gold></gold> ",
+  "resid": 5046586588088,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 9,
+  "upkeep": "30<gold></gold> 3<influence></influence> ",
+  "id": "Жрица_плетения",
+  "name": "Жрица плетения",
+  "combat_speed": 4,
+  "primary_passives": [],
+  "abilities": [
+   {
+    "slug": "magic_blast_(single)_ability_0000049700003BB8"
+   },
+   {
+    "slug": "webbed_transfusion_ability_0000049700003BB8"
+   },
+   {
+    "slug": "spider_rebirth_ability_0000049700003BB8"
+   },
+   {
+    "slug": "000003e300004c97"
+   }
+  ],
+  "mp": 40,
+  "hp": 100,
+  "armor": 3,
+  "resistance": 5,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 4,
+  "secondary_passives": [
+   {
+    "slug": "000003bd000020c0"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000049700003b82"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "description": "",
+  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
+  "resid": 5046586588015,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_4"
+   },
+   {
+    "slug": "Blight_weakness_4"
+   }
+  ],
+  "status_resistance": 2,
+  "upkeep": "8<gold></gold> ",
+  "id": "Утренний_спрайт",
+  "name": "Утренний спрайт",
+  "combat_speed": 4,
+  "primary_passives": [
+   {
+    "slug": "0000049700000533"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_blast_(single)_ability_0000049700003B6F"
+   },
+   {
+    "slug": "morning_boon_ability_0000049700003B6F"
+   },
+   {
+    "slug": "000003e300004c97"
+   }
+  ],
+  "mp": 40,
+  "hp": 50,
+  "armor": 0,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "000003e30000528e"
+   },
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003bd000020c0"
+   },
+   {
+    "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003e300006e4a"
+   },
+   {
+    "slug": "000003fe0000001c"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "evolve_target": "Фея_весныФеи_весны"
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000049700003b8c"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "description": "",
+  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
+  "resid": 5046586588014,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_4"
+   },
+   {
+    "slug": "Blight_weakness_4"
+   }
+  ],
+  "status_resistance": 0,
+  "upkeep": "8<gold></gold> ",
+  "id": "Вечерний_спрайт",
+  "name": "Вечерний спрайт",
+  "combat_speed": 4,
+  "primary_passives": [
+   {
+    "slug": "0000049700000533"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_bolts_ability_0000049700003B6E"
+   },
+   {
+    "slug": "evening_bane_ability_0000049700003B6E"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 50,
+  "armor": 0,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "000003e30000528e"
+   },
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003e300004c86"
+   },
+   {
+    "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003e300006e4a"
+   },
+   {
+    "slug": "000003fe0000001c"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "evolve_target": "Фея_осениФеи_осени"
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000049700003954"
+   }
+  ],
+  "description": "",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "resid": 5046586587914,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
+  "id": "Искусительница",
+  "name": "Искусительница",
+  "combat_speed": 4,
+  "primary_passives": [
+   {
+    "slug": "000003e300005582"
+   },
+   {
+    "slug": "000003fe0000007e"
+   },
+   {
+    "slug": "0000049700003b0c"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_0000049700003B0A"
+   },
+   {
+    "slug": "kiss_of_seduction_ability_0000049700003B0A"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 90,
+  "armor": 3,
+  "resistance": 4,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "0000049700003951"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "description": "",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "resid": 5046586587899,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
+  "id": "Сфера_желания",
+  "name": "Сфера желания",
+  "combat_speed": 3,
+  "primary_passives": [
+   {
+    "slug": "0000041b00000baf"
+   },
+   {
+    "slug": "0000049700003ac8"
+   },
+   {
+    "slug": "0000049700003b01"
+   },
+   {
+    "slug": "0000038700001cfa"
+   },
+   {
+    "slug": "0000048d00000206"
+   },
+   {
+    "slug": "0000048b00000eb6"
+   },
+   {
+    "slug": "000003e1000012f7"
+   },
+   {
+    "slug": "0000041b00000cbc"
+   },
+   {
+    "slug": "0000045e00000580"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "orb_of_desire_taunt_unit_property_ability_0000049700003AFB"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 80,
+  "armor": 3,
+  "resistance": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "0000041b00001910"
+   },
+   {
+    "slug": "000004a600000b7a"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000049700003954"
+   }
+  ],
+  "description": "",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "resid": 5046586587716,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Fire_resistance_2"
+   },
+   {
+    "slug": "Spirit_weakness_4"
+   },
+   {
+    "slug": "Frost_weakness_4"
+   }
+  ],
+  "status_resistance": 0,
+  "upkeep": "8<gold></gold> ",
+  "id": "Прожорливый_бес",
+  "name": "Прожорливый бес",
+  "combat_speed": 5,
+  "primary_passives": [
+   {
+    "slug": "000003e300005582"
+   },
+   {
+    "slug": "0000049700003a7b"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_0000049700003A44"
+   },
+   {
+    "slug": "regurgitate_ability_0000049700003A44"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 65,
+  "armor": 2,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "0000049700003951"
+   },
+   {
+    "slug": "000003e500001adb"
+   },
+   {
+    "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000004970000191a"
+   },
+   {
+    "slug": "000003e3000061e7"
+   },
+   {
+    "slug": "000003fe000000c2"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "description": "",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
+  "resid": 5046586587577,
+  "DLC": "SECRETSOFTHEARCHMAGES ",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 0,
+  "upkeep": "12<gold></gold> ",
+  "id": "Башня_отречения",
+  "name": "Башня отречения",
+  "combat_speed": 3,
+  "primary_passives": [
+   {
+    "slug": "0000041b00000baf"
+   },
+   {
+    "slug": "0000038700001cfa"
+   },
+   {
+    "slug": "0000048d00000206"
+   },
+   {
+    "slug": "0000048b00000eb6"
+   },
+   {
+    "slug": "000003e1000012f7"
+   },
+   {
+    "slug": "0000045e00000580"
+   }
+  ],
+  "abilities": [
+   {
+    "slug": "magic_shield_ability_00000497000039B9"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 70,
+  "armor": 2,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 2,
+  "secondary_passives": [
+   {
+    "slug": "0000041b00001910"
+   },
+   {
+    "slug": "000004a600000b7a"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
     "slug": "000003e300006287"
    }
   ],
@@ -4476,7 +6122,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -4487,9 +6133,6 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e300004814"
@@ -4590,7 +6233,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586587042,
   "DLC": "RISEFROMRUIN ",
   "medal_rewards_3": [
@@ -4690,10 +6333,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Shock_weakness_2"
+   },
+   {
+    "slug": "Spirit_weakness_2"
    },
    {
     "slug": "Frost_weakness_2"
@@ -4713,9 +6359,6 @@
    },
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000041b00000cbc"
@@ -4831,9 +6474,6 @@
   "name": "Военный вождь",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -5039,10 +6679,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -5135,7 +6775,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586586011,
   "DLC": "THRONESOFBLOOD ",
   "medal_rewards_3": [
@@ -5145,10 +6785,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -5238,7 +6878,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586584322,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -5253,9 +6893,6 @@
   "name": "Грифон",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -5325,7 +6962,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586584312,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -5335,13 +6972,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -5468,9 +7105,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -5575,7 +7209,7 @@
   "combat_speed": 6,
   "primary_passives": [],
   "abilities": [],
-  "mp": 6,
+  "mp": 40,
   "hp": 1,
   "armor": 0,
   "resistance": 0,
@@ -5622,7 +7256,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583144,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -5638,7 +7272,7 @@
     "slug": "Frost_resistance_5"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -5649,9 +7283,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -5734,7 +7365,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583142,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -5747,7 +7378,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -5761,9 +7392,6 @@
    },
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -5850,7 +7478,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -5860,13 +7488,7 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -5940,7 +7562,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583126,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -5956,7 +7578,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -5967,9 +7589,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6046,7 +7665,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582491,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -6062,7 +7681,7 @@
     "slug": "Frost_resistance_5"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6073,9 +7692,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6165,7 +7781,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6176,9 +7792,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6262,7 +7875,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Рунный_камень_льдаРунные_камни_льда",
   "name": "Рунный камень льдаРунные камни льда",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -6348,7 +7961,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582162,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -6363,9 +7976,6 @@
   "name": "Обезьяна",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000048b00000b35"
    },
@@ -6447,7 +8057,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582155,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -6573,9 +8183,6 @@
     "slug": "0000041b00000baf"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -6672,7 +8279,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6682,13 +8289,7 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6762,7 +8363,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586578995,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -6775,7 +8376,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6789,9 +8390,6 @@
    },
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6865,7 +8463,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586578993,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -6875,7 +8473,7 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_3"
+    "slug": "Shock_resistance_1"
    },
    {
     "slug": "Spirit_resistance_2"
@@ -6889,9 +8487,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -6987,7 +8582,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6998,9 +8593,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -7087,7 +8679,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7098,9 +8690,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -7187,7 +8776,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7198,9 +8787,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -7284,7 +8870,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Рунный_камень_лавыРунные_камни_лавы",
   "name": "Рунный камень лавыРунные камни лавы",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -7380,7 +8966,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Кристаллический_столпКристаллические_столпы",
   "name": "Кристаллический столпКристаллические столпы",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -7473,7 +9059,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Каменная_стенаКаменные_стены",
   "name": "Каменная стенаКаменные стены",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -7500,7 +9086,7 @@
    }
   ],
   "mp": 40,
-  "hp": 10,
+  "hp": 100,
   "armor": 4,
   "resistance": 3,
   "medal_rewards_2": [
@@ -7560,9 +9146,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Праведность",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "00000497000010f9"
    },
@@ -7656,12 +9239,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -7869,12 +9446,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -7977,12 +9548,6 @@
    }
   ],
   "resistances": [
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
    {
     "slug": "Fire_weakness_2"
    },
@@ -8087,12 +9652,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -8110,9 +9669,6 @@
    },
    {
     "slug": "0000049700000cff"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "00000493000003a2"
@@ -8201,7 +9757,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586576083,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -8212,12 +9768,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -8234,9 +9784,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000cea"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "00000493000003a2"
@@ -8343,9 +9890,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000533"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -8463,9 +10007,6 @@
     "slug": "0000049700000533"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -8581,9 +10122,6 @@
     "slug": "0000049700000533"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -8683,10 +10221,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -8798,7 +10336,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -8811,9 +10349,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
@@ -8821,9 +10356,6 @@
    },
    {
     "slug": "0000038700001864"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -8912,7 +10444,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5029406705254,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -8925,7 +10457,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Башня_пресыщенных_похитителей",
   "name": "Башня пресыщенных похитителей",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -9014,10 +10546,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -9034,9 +10566,6 @@
   "primary_passives": [
    {
     "slug": "000003e300006546"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -9144,13 +10673,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -9161,9 +10690,6 @@
   "primary_passives": [
    {
     "slug": "000004c000000c9f"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -9204,7 +10730,7 @@
   "mp": 40,
   "hp": 150,
   "armor": 7,
-  "resistance": 7,
+  "resistance": 6,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -10019,7 +11545,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000176d"
@@ -10114,7 +11640,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001785"
@@ -10209,7 +11735,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000178f"
@@ -10304,7 +11830,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001797"
@@ -10399,7 +11925,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000179d"
@@ -10494,7 +12020,7 @@
     "slug": "0000048d0000172b"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d000017a1"
@@ -11108,9 +12634,6 @@
   "sub_culture_name": "Зодчие порядка",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001907"
    },
    {
@@ -11196,9 +12719,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Зодчие хаоса",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000048d00001907"
    },
@@ -11286,9 +12806,6 @@
   "sub_culture_name": "Зодчие астрала",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001907"
    },
    {
@@ -11374,9 +12891,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Зодчие материи",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000048d00001907"
    },
@@ -11464,9 +12978,6 @@
   "sub_culture_name": "Зодчие природы",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001907"
    },
    {
@@ -11552,9 +13063,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Зодчие тени",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000048d00001907"
    },
@@ -11645,7 +13153,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000176d"
@@ -11731,7 +13239,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001785"
@@ -11817,7 +13325,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000178f"
@@ -11903,7 +13411,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001797"
@@ -11989,7 +13497,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000179d"
@@ -12075,7 +13583,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d000017a1"
@@ -12718,9 +14226,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300006124"
    },
    {
@@ -13012,9 +14517,6 @@
     "slug": "00000497000024d0"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -13198,9 +14700,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Раздор",
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "00000497000010ff"
    },
@@ -13389,7 +14888,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb5"
@@ -13475,7 +14974,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb2"
@@ -13561,7 +15060,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb8"
@@ -13647,7 +15146,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb5"
@@ -13739,7 +15238,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb2"
@@ -13831,7 +15330,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb8"
@@ -13926,7 +15425,7 @@
     "slug": "0000049700001571"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb5"
@@ -14018,7 +15517,7 @@
     "slug": "0000049700001571"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb2"
@@ -14110,7 +15609,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb8"
@@ -14832,10 +16331,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -14943,10 +16442,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -15054,10 +16553,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -15156,7 +16655,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802795,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15172,7 +16671,7 @@
     "slug": "Blight_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15181,9 +16680,6 @@
   "name": "Первобытный крокодилПервобытные крокодилы",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -15293,7 +16789,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15303,13 +16799,7 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300004814"
-   },
-   {
-    "slug": "cbe7688b000002e1"
    },
    {
     "slug": "0000045e00000664"
@@ -15318,16 +16808,10 @@
     "slug": "0000045e00000580"
    },
    {
-    "slug": "000003e10000139d"
-   },
-   {
     "slug": "00000497000003ab"
    },
    {
-    "slug": "000003eb00000425"
-   },
-   {
-    "slug": "cbe7688b000002f1"
+    "slug": "000003870000001b"
    }
   ],
   "abilities": [
@@ -15349,6 +16833,9 @@
   ],
   "tier": 2,
   "secondary_passives": [
+   {
+    "slug": "000003450000052c"
+   },
    {
     "slug": "000003e500001adb"
    },
@@ -15404,7 +16891,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802793,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15415,9 +16902,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Spirit_resistance_2"
    }
   ],
   "status_resistance": 0,
@@ -15426,9 +16910,6 @@
   "name": "Первобытный волкПервобытные волки",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -15522,7 +17003,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802792,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15538,7 +17019,7 @@
     "slug": "Shock_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15547,9 +17028,6 @@
   "name": "Первобытный воронПервобытные вороны",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -15640,7 +17118,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802791,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15656,7 +17134,7 @@
     "slug": "Fire_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15667,9 +17145,6 @@
   "primary_passives": [
    {
     "slug": "0000040d0000001d"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e300004814"
@@ -15761,7 +17236,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802790,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15777,7 +17252,7 @@
     "slug": "Blight_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15787,19 +17262,25 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300004814"
    },
    {
     "slug": "0000045e00000664"
    },
    {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
     "slug": "0000045e00000580"
    },
    {
     "slug": "00000497000003b1"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "00000497000007ca"
@@ -15838,6 +17319,9 @@
    },
    {
     "slug": "000003fe00000018"
+   },
+   {
+    "slug": "000004150000025b"
    },
    {
     "slug": "0000049300000402"
@@ -15882,7 +17366,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802788,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -15898,7 +17382,7 @@
     "slug": "Frost_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -15907,9 +17391,6 @@
   "name": "Первобытный мамонтПервобытные мамонты",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -17374,16 +18855,13 @@
   "sub_culture_name": "Болотный крокодил",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000001d0"
    },
    {
     "slug": "000004970000024f"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dc"
@@ -17469,13 +18947,10 @@
   "sub_culture_name": "Штормовой ворон",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002df"
@@ -17561,13 +19036,10 @@
   "sub_culture_name": "Ледовый мамонт",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000204"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e1"
@@ -17653,13 +19125,10 @@
   "sub_culture_name": "Пепельный смилодон",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000001dd"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dd"
@@ -17745,13 +19214,10 @@
   "sub_culture_name": "Песчаный змей",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002de"
@@ -17837,13 +19303,10 @@
   "sub_culture_name": "Подземный паук",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000211"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e0"
@@ -17929,13 +19392,10 @@
   "sub_culture_name": "Лесной волк",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000137"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002db"
@@ -18027,16 +19487,16 @@
     "slug": "000004970000024f"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dc"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc"
    },
    {
     "slug": "000003e300004c97"
@@ -18122,16 +19582,16 @@
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002df"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002df"
    },
    {
     "slug": "000003e300004c97"
@@ -18217,16 +19677,16 @@
     "slug": "0000049700000204"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e1"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1"
    },
    {
     "slug": "000003e300004c97"
@@ -18312,16 +19772,16 @@
     "slug": "00000497000001dd"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dd"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd"
    },
    {
     "slug": "000003e300004c97"
@@ -18407,16 +19867,16 @@
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002de"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002de"
    },
    {
     "slug": "000003e300004c97"
@@ -18502,16 +19962,16 @@
     "slug": "0000049700000211"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e0"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0"
    },
    {
     "slug": "000003e300004c97"
@@ -18597,16 +20057,16 @@
     "slug": "0000049700000137"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002db"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002db"
    },
    {
     "slug": "000003e300004c97"
@@ -19995,9 +21455,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000045e00000664"
    },
    {
@@ -20084,7 +21541,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802432,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -20099,9 +21556,6 @@
   "name": "СлонСлоны",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    },
@@ -20175,6 +21629,10 @@
  },
  {
   "resid": 5016521802080,
+  "id": "Магострельная_пушкаМагострельные_пушки",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 3,
+  "name": "Магострельная пушкаМагострельные пушки",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
@@ -20185,16 +21643,13 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "Магострельная пушкаМагострельные пушки",
-  "status_resistance": 3,
   "culture_name": "Корсары",
   "upkeep": "20<gold></gold> ",
-  "id": "Магострельная_пушкаМагострельные_пушки",
   "combat_speed": 4,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
@@ -20206,7 +21661,106 @@
     "slug": "0000049700000f8f"
    },
    {
-    "slug": "0000048b00000eb6"
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003e3000071f0"
+   }
+  ],
+  "cost": "220<unitprod></unitprod> 80<warspoils></warspoils> ",
+  "abilities": [
+   {
+    "slug": "fire_magelock_cannon_ability_0000049000000160_0000048d00001f64"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 85,
+  "description": "",
+  "armor": 4,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "000003e3000071ff"
+   },
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "0000039f000016f1"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006289"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 5016521802080,
+  "id": "Магострельная_пушкаМагострельные_пушки",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 3,
+  "name": "Магострельная пушкаМагострельные пушки",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_2"
+   },
+   {
+    "slug": "Shock_weakness_4"
+   }
+  ],
+  "culture_name": "Корсары",
+  "upkeep": "20<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [
+   {
+    "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "0000049700000f8f"
    },
    {
     "slug": "0000045e00000580"
@@ -20215,10 +21769,10 @@
     "slug": "000003e3000071f0"
    }
   ],
-  "cost": "220<unitprod></unitprod> 100<warspoils></warspoils> ",
+  "cost": "220<unitprod></unitprod> 80<warspoils></warspoils> ",
   "abilities": [
    {
-    "slug": "fire_magelock_cannon_ability_0000049000000160"
+    "slug": "fire_magelock_cannon_ability_0000049000000160_0000048d00001f6f"
    },
    {
     "slug": "0000034500000469"
@@ -20302,7 +21856,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -20313,9 +21867,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -20398,7 +21949,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801767,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -20435,7 +21986,7 @@
    }
   ],
   "mp": 40,
-  "hp": 120,
+  "hp": 130,
   "armor": 5,
   "resistance": 2,
   "medal_rewards_2": [
@@ -20497,7 +22048,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801766,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -20594,7 +22145,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801765,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -20660,6 +22211,383 @@
    }
   ],
   "evolve_target": "Лютый_медведьЛютые_медведи"
+ },
+ {
+  "resid": 5003636908077,
+  "id": "Магострельная_пушкаМагострельные_пушки",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 3,
+  "name": "Магострельная пушкаМагострельные пушки",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_2"
+   },
+   {
+    "slug": "Shock_weakness_4"
+   }
+  ],
+  "culture_name": "Корсары",
+  "upkeep": "20<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [
+   {
+    "slug": "000003fe000008c4"
+   },
+   {
+    "slug": "0000049700000f8f"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003e3000071f0"
+   }
+  ],
+  "cost": "220<unitprod></unitprod> 80<favors></favors> ",
+  "abilities": [
+   {
+    "slug": "fire_magelock_cannon_ability_0000048D0000202D_0000048d00001f6f"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 85,
+  "description": "",
+  "armor": 4,
+  "resistance": 2,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "000003e3000071ff"
+   },
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "0000039f000016f1"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006289"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 5003636907912,
+  "id": "ГромобойГромобои",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 3,
+  "name": "ГромобойГромобои",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "culture_name": "Корсары",
+  "upkeep": "20<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [
+   {
+    "slug": "000003e300005582"
+   },
+   {
+    "slug": "000003e3000071f0"
+   }
+  ],
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "magic_strike_(base)_ability_0000048D00001F88_0000048d00001f6f"
+   },
+   {
+    "slug": "breaching_shot_unit_property_ability_0000048D00001F88_0000048d00001f6f"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 90,
+  "description": "",
+  "armor": 3,
+  "resistance": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 3,
+  "secondary_passives": [
+   {
+    "slug": "0000049700003951"
+   },
+   {
+    "slug": "000003eb0000073f"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000049700003954"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 5003636907911,
+  "id": "СапёрСапёры",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 2,
+  "name": "СапёрСапёры",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "culture_name": "Корсары",
+  "upkeep": "12<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [],
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "marking_blast_(single)_ability_0000048D00001F87_0000048d00001f6f"
+   },
+   {
+    "slug": "patch_up_ability_0000048D00001F87_0000048d00001f6f"
+   },
+   {
+    "slug": "demolition_blast_ability_0000048D00001F87_0000048d00001f6f"
+   },
+   {
+    "slug": "000003e300004c97"
+   }
+  ],
+  "mp": 40,
+  "hp": 60,
+  "description": "",
+  "armor": 1,
+  "resistance": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 2,
+  "secondary_passives": [
+   {
+    "slug": "000003bd000020c0"
+   },
+   {
+    "slug": "000003eb0000073f"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c2d"
+   },
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 5003636907908,
+  "id": "ПистольерПистольеры",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "ПистольерПистольеры",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "culture_name": "Корсары",
+  "upkeep": "8<gold></gold> ",
+  "combat_speed": 5,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
+   },
+   {
+    "slug": "0000048d0000203d"
+   }
+  ],
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "melee_strike_(base)_ability_0000048D00001F84_0000048d00001f6f"
+   },
+   {
+    "slug": "pistol_shot_ability_0000048D00001F84_0000048d00001f6f"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 60,
+  "description": "",
+  "armor": 2,
+  "resistance": 0,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "000003eb0000073f"
+   },
+   {
+    "slug": "000003e600000492"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006284"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
  },
  {
   "medal_rewards_5": [
@@ -20771,7 +22699,7 @@
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_single_strike_(base)_ability_0000048D00001A25_0000048d000019d6"
@@ -20865,7 +22793,7 @@
     "slug": "000003eb0000053e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000048D00001A22_0000048d000019d6"
@@ -20950,7 +22878,7 @@
     "slug": "0000048d000019f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000048D000019EC_0000048d000019d6"
@@ -21025,7 +22953,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905466,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21038,7 +22966,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21130,7 +23058,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905464,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21143,7 +23071,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21235,7 +23163,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905462,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21248,7 +23176,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21340,7 +23268,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905460,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21353,7 +23281,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21445,7 +23373,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905458,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21458,7 +23386,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21550,7 +23478,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905285,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -21563,7 +23491,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Тессеракт_приверженностиТессеракты_приверженности",
   "name": "Тессеракт приверженностиТессеракты приверженности",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -21991,16 +23919,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
-    "slug": "0000049700001571"
+    "slug": "0000048d000011fb"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d000011e2"
@@ -22072,16 +23997,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
-    "slug": "0000049700001571"
+    "slug": "0000048d000011fb"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d00001220"
@@ -22152,7 +24074,7 @@
   "upkeep": "8<gold></gold> ",
   "id": "Астральный_щитАстральные_щиты",
   "name": "Астральный щитАстральные щиты",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -22420,7 +24342,7 @@
    }
   ],
   "description": "{GLOBAL.PROPERTIES.POLEARM_UNIT.Hyperlink}, способный обездвиживать врагов и притягивать их к себе.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636901344,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -22607,7 +24529,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -22624,9 +24546,6 @@
    },
    {
     "slug": "0000049700001b4f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -22716,7 +24635,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -22726,9 +24645,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
@@ -22736,9 +24652,6 @@
    },
    {
     "slug": "0000049700001b4f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -22828,7 +24741,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -22851,9 +24764,6 @@
    },
    {
     "slug": "0000049700001b4f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -22986,9 +24896,9 @@
    }
   ],
   "mp": 40,
-  "hp": 100,
-  "armor": 3,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 4,
+  "resistance": 6,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -23101,9 +25011,9 @@
    }
   ],
   "mp": 40,
-  "hp": 95,
-  "armor": 2,
-  "resistance": 4,
+  "hp": 115,
+  "armor": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -23179,9 +25089,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -23215,9 +25122,9 @@
    }
   ],
   "mp": 40,
-  "hp": 150,
-  "armor": 7,
-  "resistance": 4,
+  "hp": 170,
+  "armor": 8,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -23304,9 +25211,6 @@
   "primary_passives": [
    {
     "slug": "00000497000019cf"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000045e00000580"
@@ -23495,7 +25399,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4986457035632,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -23514,8 +25418,8 @@
     "slug": "Blight_weakness_4"
    }
   ],
-  "status_resistance": 0,
-  "upkeep": "8<gold></gold> ",
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
   "id": "Литориновый_копьеносецЛиториновые_копьеносцы",
   "name": "Литориновый копьеносецЛиториновые копьеносцы",
   "combat_speed": 4,
@@ -23542,15 +25446,15 @@
    }
   ],
   "mp": 40,
-  "hp": 70,
-  "armor": 3,
-  "resistance": 0,
+  "hp": 100,
+  "armor": 5,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
-  "tier": 1,
+  "tier": 3,
   "secondary_passives": [
    {
     "slug": "000003e500001adb"
@@ -23601,7 +25505,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4986457035631,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -23691,11 +25595,14 @@
  {
   "medal_rewards_5": [
    {
+    "slug": "0000048b00000c22"
+   },
+   {
     "slug": "0000048b00000c6e"
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
+  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
   "resid": 4986457035630,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -23714,8 +25621,8 @@
     "slug": "Blight_weakness_4"
    }
   ],
-  "status_resistance": 5,
-  "upkeep": "20<gold></gold> ",
+  "status_resistance": 2,
+  "upkeep": "8<gold></gold> ",
   "id": "Литориновый_сердечникЛиториновые_сердечники",
   "name": "Литориновый сердечникЛиториновые сердечники",
   "combat_speed": 4,
@@ -23739,15 +25646,15 @@
    }
   ],
   "mp": 40,
-  "hp": 90,
-  "armor": 2,
-  "resistance": 4,
+  "hp": 60,
+  "armor": 0,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
-  "tier": 3,
+  "tier": 1,
   "secondary_passives": [
    {
     "slug": "000003e500001adb"
@@ -23808,13 +25715,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -23823,9 +25730,6 @@
   "name": "Дракон процветания",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003eb000004c4"
    },
@@ -23941,13 +25845,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -23956,9 +25860,6 @@
   "name": "Праведный судья",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003eb000004c4"
    },
@@ -24071,13 +25972,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -24182,7 +26083,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035304,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -24192,13 +26093,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -24325,9 +26226,6 @@
   "name": "Дракон погибели",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000041b00000cbc"
    },
@@ -24660,7 +26558,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035300,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -24685,9 +26583,6 @@
   "name": "Проклятый огр",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000041b00000cbc"
    },
@@ -24862,7 +26757,7 @@
    }
   ],
   "description": "Монах^Ml",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035150,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -24945,7 +26840,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457034590,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -24956,12 +26851,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -25073,12 +26962,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -25091,9 +26974,6 @@
   "name": "Мрачный тиранМрачные тираны",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000049700000d20"
    },
@@ -25204,12 +27084,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -25402,7 +27276,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -25412,16 +27286,10 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
     "slug": "0000038700001864"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -25499,34 +27367,35 @@
  },
  {
   "resid": 4986457030820,
+  "id": "НадзирательНадзиратели",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 2,
+  "name": "НадзирательНадзиратели",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "НадзирательНадзиратели",
-  "status_resistance": 2,
   "culture_name": "Корсары",
   "upkeep": "12<gold></gold> ",
-  "id": "НадзирательНадзиратели",
   "combat_speed": 4,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "0000048d0000090a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
-    "slug": "marking_blast_(single)_ability_00000489000000A4"
+    "slug": "marking_blast_(single)_ability_00000489000000A4_0000048d00001f64"
    },
    {
-    "slug": "subdue_ability_00000489000000A4"
+    "slug": "subdue_ability_00000489000000A4_0000048d00001f64"
    },
    {
-    "slug": "patch_up_ability_00000489000000A4"
+    "slug": "patch_up_ability_00000489000000A4_0000048d00001f64"
    },
    {
     "slug": "000003e300004c97"
@@ -25590,31 +27459,114 @@
  },
  {
   "resid": 4986457030819,
+  "id": "МагострелМагострелы",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "МагострелМагострелы",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "МагострелМагострелы",
-  "status_resistance": 0,
   "culture_name": "Корсары",
   "upkeep": "12<gold></gold> ",
-  "id": "МагострелМагострелы",
   "combat_speed": 4,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "0000048d0000090a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
-    "slug": "fire_heavy_magelocks_snap_shot_ability_00000489000000A3"
+    "slug": "fire_heavy_magelocks_snap_shot_ability_00000489000000A3_0000048d00001f64"
    },
    {
-    "slug": "fire_heavy_magelocks_ability_00000489000000A3"
+    "slug": "fire_heavy_magelocks_ability_00000489000000A3_0000048d00001f64"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 65,
+  "description": "",
+  "armor": 1,
+  "resistance": 1,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 2,
+  "secondary_passives": [
+   {
+    "slug": "0000049300000402"
+   },
+   {
+    "slug": "0000039f000016f1"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006289"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 4986457030819,
+  "id": "МагострелМагострелы",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "МагострелМагострелы",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "culture_name": "Корсары",
+  "upkeep": "12<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [],
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "fire_heavy_magelocks_snap_shot_ability_00000489000000A3_0000048d00001f6f"
+   },
+   {
+    "slug": "fire_heavy_magelocks_ability_00000489000000A3_0000048d00001f6f"
    },
    {
     "slug": "0000034500000469"
@@ -25675,19 +27627,20 @@
  },
  {
   "resid": 4986457030818,
+  "id": "НаёмникНаёмники",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "НаёмникНаёмники",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "НаёмникНаёмники",
-  "status_resistance": 0,
   "culture_name": "Корсары",
   "upkeep": "8<gold></gold> ",
-  "id": "НаёмникНаёмники",
   "combat_speed": 4,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "0000048d0000090a"
@@ -25705,10 +27658,102 @@
   "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
-    "slug": "melee_strike_(base)_ability_00000489000000A2"
+    "slug": "melee_strike_(base)_ability_00000489000000A2_0000048d00001f64"
    },
    {
-    "slug": "drive_back_ability_00000489000000A2"
+    "slug": "drive_back_ability_00000489000000A2_0000048d00001f64"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 40,
+  "hp": 80,
+  "description": "",
+  "armor": 3,
+  "resistance": 1,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "0000039f000016f2"
+   },
+   {
+    "slug": "0000049300000402"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000049700001549"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 4986457030818,
+  "id": "НаёмникНаёмники",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "НаёмникНаёмники",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [],
+  "culture_name": "Корсары",
+  "upkeep": "8<gold></gold> ",
+  "combat_speed": 4,
+  "sub_culture_name": "Федерация",
+  "primary_passives": [
+   {
+    "slug": "0000049700001571"
+   },
+   {
+    "slug": "000003fe0000008a"
+   },
+   {
+    "slug": "000003eb0000053e"
+   }
+  ],
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "melee_strike_(base)_ability_00000489000000A2_0000048d00001f6f"
+   },
+   {
+    "slug": "drive_back_ability_00000489000000A2_0000048d00001f6f"
    },
    {
     "slug": "0000034500000469"
@@ -25769,22 +27814,26 @@
  },
  {
   "resid": 4986457030817,
+  "id": "ГрабительГрабители",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "ГрабительГрабители",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "ГрабительГрабители",
-  "status_resistance": 0,
   "culture_name": "Корсары",
   "upkeep": "8<gold></gold> ",
-  "id": "ГрабительГрабители",
   "combat_speed": 5,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "0000048d0000090a"
+   },
+   {
+    "slug": "000003e300004ee3"
    },
    {
     "slug": "000003fe0000007f"
@@ -25796,10 +27845,10 @@
   "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
-    "slug": "melee_strike_(base)_ability_00000489000000A1"
+    "slug": "melee_strike_(base)_ability_00000489000000A1_0000048d00001f64"
    },
    {
-    "slug": "cast_net_ability_00000489000000A1"
+    "slug": "cast_net_ability_00000489000000A1_0000048d00001f64"
    },
    {
     "slug": "0000034500000469"
@@ -25845,8 +27894,113 @@
   ],
   "medal_rewards_6": [
    {
-    "slug": "000003e300007272"
+    "slug": "0000048b00000c6e"
    },
+   {
+    "slug": "0000048b00000c74"
+   },
+   {
+    "slug": "0000048b00000c7b"
+   },
+   {
+    "slug": "0000048b00000c7d"
+   }
+  ]
+ },
+ {
+  "resid": 4986457030816,
+  "id": "НаблюдательНаблюдатели",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "НаблюдательНаблюдатели",
+  "medal_rewards_3": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "resistances": [
+   {
+    "slug": "Spirit_resistance_2"
+   },
+   {
+    "slug": "Shock_weakness_4"
+   }
+  ],
+  "culture_name": "Корсары",
+  "upkeep": "8<gold></gold> ",
+  "combat_speed": 6,
+  "sub_culture_name": "Империя",
+  "primary_passives": [
+   {
+    "slug": "0000048d0000090a"
+   },
+   {
+    "slug": "0000049700000f8f"
+   },
+   {
+    "slug": "0000048d00000206"
+   },
+   {
+    "slug": "0000045e00000580"
+   },
+   {
+    "slug": "000003e3000071f0"
+   },
+   {
+    "slug": "000003e300007248"
+   }
+  ],
+  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "abilities": [
+   {
+    "slug": "marking_ability_00000489000000A0_0000048d00001f64"
+   },
+   {
+    "slug": "0000034500000469"
+   }
+  ],
+  "mp": 48,
+  "hp": 45,
+  "description": "",
+  "armor": 0,
+  "resistance": 0,
+  "medal_rewards_2": [
+   {
+    "slug": "0000048b00000c6e"
+   }
+  ],
+  "tier": 1,
+  "secondary_passives": [
+   {
+    "slug": "000003e3000071ff"
+   },
+   {
+    "slug": "000003eb0000071b"
+   },
+   {
+    "slug": "000003fe00000060"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "000003e300006287"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "0000048b00000c6e"
+   },
+   {
+    "slug": "0000048b00000c7a"
+   },
+   {
+    "slug": "0000048b00000c79"
+   }
+  ],
+  "medal_rewards_6": [
    {
     "slug": "0000048b00000c6e"
    },
@@ -25863,6 +28017,10 @@
  },
  {
   "resid": 4986457030816,
+  "id": "НаблюдательНаблюдатели",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 0,
+  "name": "НаблюдательНаблюдатели",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
@@ -25873,25 +28031,19 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "НаблюдательНаблюдатели",
-  "status_resistance": 0,
   "culture_name": "Корсары",
   "upkeep": "8<gold></gold> ",
-  "id": "НаблюдательНаблюдатели",
   "combat_speed": 6,
+  "sub_culture_name": "Федерация",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000001dc"
-   },
    {
     "slug": "0000049700000f8f"
    },
    {
-    "slug": "0000048b00000eb6"
+    "slug": "0000048d00000206"
    },
    {
     "slug": "0000045e00000580"
@@ -25906,7 +28058,7 @@
   "cost": "60<unitprod></unitprod> 50<gold></gold> ",
   "abilities": [
    {
-    "slug": "marking_ability_00000489000000A0"
+    "slug": "marking_ability_00000489000000A0_0000048d00001f6f"
    },
    {
     "slug": "0000034500000469"
@@ -26182,7 +28334,7 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "Большая_бомбардаБольшие_бомбарды",
   "name": "Большая бомбардаБольшие бомбарды",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000048d00000206"
@@ -26272,7 +28424,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -26285,16 +28437,10 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
     "slug": "0000045e0000063d"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -26499,10 +28645,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -26517,9 +28663,6 @@
   "name": "Корабль-призракКорабли-призраки",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000049700000f8f"
    },
@@ -26717,7 +28860,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4827543240790,
   "medal_rewards_3": [
    {
@@ -26924,12 +29067,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -26997,6 +29134,9 @@
    },
    {
     "slug": "0000049700000cbe"
+   },
+   {
+    "slug": "0000049700003d5f"
    }
   ],
   "medal_rewards_4": [
@@ -27045,13 +29185,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -27062,9 +29202,6 @@
   "primary_passives": [
    {
     "slug": "0000041b00000ab8"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000045e00000664"
@@ -27177,7 +29314,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -27389,9 +29526,6 @@
     "slug": "000003e300005e31"
    },
    {
-    "slug": "00000385000000f6"
-   },
-   {
     "slug": "0000041b000019e0"
    },
    {
@@ -27549,7 +29683,7 @@
    }
   ],
   "description": "Защитное сооружение, которое исцеляет и усиливает дружественную нежить поблизости.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4514010634335,
   "medal_rewards_3": [
    {
@@ -27561,7 +29695,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Некротический_шпиль",
   "name": "Некротический шпиль",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -27656,7 +29790,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -27665,9 +29799,6 @@
   "name": "Живой туман",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -27773,7 +29904,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -27782,9 +29913,6 @@
   "name": "Скачущий зверь",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -27875,7 +30003,7 @@
    }
   ],
   "description": "Башня, которая ведёт огонь по врагам и увеличивает урон от заклинаний.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010633029,
   "medal_rewards_3": [
    {
@@ -27887,7 +30015,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Башня_усиления",
   "name": "Башня усиления",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -27976,7 +30104,7 @@
    }
   ],
   "description": "\\<\\<C:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, поражающий врагов цепными молниями.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010632963,
   "medal_rewards_3": [
    {
@@ -28059,7 +30187,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010632570,
   "medal_rewards_3": [
    {
@@ -28071,7 +30199,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -28085,9 +30213,6 @@
    },
    {
     "slug": "0000048d00000206"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000048b00000eb6"
@@ -28287,9 +30412,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300004a40"
    },
    {
@@ -28476,7 +30598,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -28487,9 +30609,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -28778,7 +30897,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4514010631775,
   "medal_rewards_3": [
    {
@@ -29006,9 +31125,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003eb000006ac"
    },
    {
@@ -29092,13 +31208,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -29197,7 +31313,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4514010630880,
   "medal_rewards_3": [
    {
@@ -29206,13 +31322,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -29229,6 +31345,12 @@
    },
    {
     "slug": "0000041b00001493"
+   },
+   {
+    "slug": "000003fe0000007f"
+   },
+   {
+    "slug": "000003eb00000425"
    }
   ],
   "abilities": [
@@ -29323,7 +31445,7 @@
   "combat_speed": 6,
   "primary_passives": [],
   "abilities": [],
-  "mp": 6,
+  "mp": 40,
   "hp": 1,
   "armor": 0,
   "resistance": 0,
@@ -29383,10 +31505,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -29401,9 +31523,6 @@
   "name": "Костяной кошмарКостяные кошмары",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000049700000f8f"
    },
@@ -29506,7 +31625,7 @@
   "combat_speed": 6,
   "primary_passives": [],
   "abilities": [],
-  "mp": 6,
+  "mp": 40,
   "hp": 1,
   "armor": 0,
   "resistance": 0,
@@ -29569,7 +31688,7 @@
   "combat_speed": 6,
   "primary_passives": [],
   "abilities": [],
-  "mp": 6,
+  "mp": 40,
   "hp": 1,
   "armor": 0,
   "resistance": 0,
@@ -29620,7 +31739,7 @@
    }
   ],
   "description": "Даёт доступ к \\<\\<dat,c:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, способному применять эффект «{GLOBAL.PROPERTIES.FROZEN.Hyperlink}».",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010629896,
   "medal_rewards_3": [
    {
@@ -29706,7 +31825,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 40<gold></gold> 20<souls></souls> ",
+  "cost": "120<unitprod></unitprod> 50<gold></gold> 20<souls></souls> ",
   "resid": 4514010629615,
   "medal_rewards_3": [
    {
@@ -29800,7 +31919,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -29908,7 +32027,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -30016,9 +32135,6 @@
   "combat_speed": 6,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000063b1"
    },
    {
@@ -30093,7 +32209,7 @@
    }
   ],
   "description": "{GLOBAL.PROPERTIES.SUPPORT_UNIT.Hyperlink}, способный призывать \\<\\<gen,cm:{GLOBAL.PROPERTIES.ANIMAL.Hyperlink}\\>\\> и делать их сильнее.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010629029,
   "medal_rewards_3": [
    {
@@ -30182,7 +32298,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010628985,
   "medal_rewards_3": [
    {
@@ -30284,7 +32400,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4488240825326,
   "medal_rewards_3": [
    {
@@ -30300,7 +32416,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Башня_с_баллистойБашни_с_баллистами",
   "name": "Башня с баллистойБашни с баллистами",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000048d00000206"
@@ -30374,7 +32490,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456579876,
   "medal_rewards_3": [
    {
@@ -30386,7 +32502,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Башня_с_многозарядной_баллистой",
   "name": "Башня с многозарядной баллистой",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -30463,7 +32579,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456578439,
   "medal_rewards_3": [
    {
@@ -30479,7 +32595,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Башня_с_катапультойБашни_с_катапультами",
   "name": "Башня с катапультойБашни с катапультами",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000048d00000206"
@@ -30553,7 +32669,7 @@
    }
   ],
   "description": "An immobile siege engine that can hurl large projectiles over large distances. But may be inaccurate.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456576747,
   "medal_rewards_3": [
    {
@@ -30565,7 +32681,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Требюше",
   "name": "Требюше",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000048d00000206"
@@ -30737,7 +32853,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -30746,9 +32862,6 @@
   "name": "Заблудший магЗаблудшие маги",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -30851,7 +32964,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -30860,9 +32973,6 @@
   "name": "Погибель маговПогибели магов",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e300004814"
    },
@@ -30953,7 +33063,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4312147173997,
   "medal_rewards_3": [
    {
@@ -30965,7 +33075,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -31061,7 +33171,7 @@
   "upkeep": "8<gold></gold> ",
   "id": "Горожанин",
   "name": "Горожанин",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [],
   "abilities": [
    {
@@ -31337,10 +33447,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -31357,9 +33467,6 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d4"
@@ -31586,7 +33693,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147171472,
   "medal_rewards_3": [
    {
@@ -31771,7 +33878,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147171461,
   "medal_rewards_3": [
    {
@@ -31780,10 +33887,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -32576,7 +34683,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147169114,
   "medal_rewards_3": [
    {
@@ -32693,9 +34800,6 @@
   "name": "Дух бурьДухи бурь",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e30000665c"
    },
@@ -33033,9 +35137,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e30000665c"
    },
    {
@@ -33217,9 +35318,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -33340,9 +35438,6 @@
     "slug": "0000040d0000001d"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -33453,9 +35548,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -33548,7 +35640,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4312147167437,
   "medal_rewards_3": [
    {
@@ -33647,7 +35739,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4312147167435,
   "medal_rewards_3": [
    {
@@ -33746,7 +35838,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4312147167433,
   "medal_rewards_3": [
    {
@@ -33851,7 +35943,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147167410,
   "medal_rewards_3": [
    {
@@ -33881,8 +35973,8 @@
    }
   ],
   "mp": 40,
-  "hp": 90,
-  "armor": 2,
+  "hp": 95,
+  "armor": 3,
   "resistance": 1,
   "medal_rewards_2": [
    {
@@ -33934,7 +36026,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492489404,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -33947,7 +36039,7 @@
   "upkeep": "30<gold></gold> 3<influence></influence> ",
   "id": "krazura_crystal",
   "name": "Krazura Crystal",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -34030,7 +36122,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492488880,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -34152,9 +36244,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -34162,6 +36251,9 @@
    },
    {
     "slug": "000003e3000073ee"
+   },
+   {
+    "slug": "0000041b00000cbc"
    },
    {
     "slug": "0000045e00000580"
@@ -34263,7 +36355,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -34276,9 +36368,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
@@ -34286,9 +36375,6 @@
    },
    {
     "slug": "0000038700001864"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -34377,7 +36463,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492488731,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -34449,19 +36535,20 @@
  },
  {
   "resid": 4273492488623,
+  "id": "ДрагунДрагуны",
+  "DLC": "EMPIRESANDASHES ",
+  "status_resistance": 3,
+  "name": "ДрагунДрагуны",
   "medal_rewards_3": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
   "resistances": [],
-  "DLC": "EMPIRESANDASHES ",
-  "name": "ДрагунДрагуны",
-  "status_resistance": 3,
   "culture_name": "Корсары",
   "upkeep": "20<gold></gold> ",
-  "id": "ДрагунДрагуны",
   "combat_speed": 6,
+  "sub_culture_name": "Империя",
   "primary_passives": [
    {
     "slug": "0000048d0000090a"
@@ -34482,10 +36569,10 @@
   "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "abilities": [
    {
-    "slug": "melee_strike_(base)_ability_000003E3000071AF"
+    "slug": "melee_strike_(base)_ability_000003E3000071AF_0000048d00001f64"
    },
    {
-    "slug": "harrying_shot_ability_000003E3000071AF"
+    "slug": "harrying_shot_ability_000003E3000071AF_0000048d00001f64"
    },
    {
     "slug": "0000034500000469"
@@ -34566,10 +36653,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -34682,9 +36769,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000060d6"
    },
    {
@@ -34784,9 +36868,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000060d6"
    },
    {
@@ -34885,9 +36966,6 @@
   "name": "Молодой ледяной драконМолодые ледяные драконы",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e3000060d6"
    },
@@ -35209,9 +37287,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300006bf6"
    },
    {
@@ -35345,9 +37420,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300006be6"
    },
    {
@@ -35477,9 +37549,6 @@
   "name": "Молодой огненный драконМолодые огненные драконы",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003e3000060d6"
    },
@@ -35648,7 +37717,13 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_resistance_2"
+    "slug": "Blight_weakness_2"
+   },
+   {
+    "slug": "Spirit_weakness_2"
+   },
+   {
+    "slug": "Frost_weakness_2"
    }
   ],
   "status_resistance": 3,
@@ -35762,10 +37837,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -35891,9 +37966,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
    },
    {
@@ -35986,7 +38058,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484799,
   "medal_rewards_3": [
    {
@@ -36074,16 +38146,16 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_6"
+    "slug": "Spirit_resistance_4"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -36096,9 +38168,6 @@
     "slug": "0000049700002d57"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000049700000f8f"
    },
    {
@@ -36106,9 +38175,6 @@
    },
    {
     "slug": "000003eb000004c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -36200,7 +38266,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492484430,
   "medal_rewards_3": [
    {
@@ -36212,7 +38278,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Исцеляющий_шпильИсцеляющие_шпили",
   "name": "Исцеляющий шпильИсцеляющие шпили",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -36295,7 +38361,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484361,
   "medal_rewards_3": [
    {
@@ -36307,7 +38373,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Божественный_маяк",
   "name": "Божественный маяк",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -36390,7 +38456,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484324,
   "medal_rewards_3": [
    {
@@ -36399,13 +38465,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -36507,10 +38573,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -36527,9 +38593,6 @@
   "primary_passives": [
    {
     "slug": "000003e300006546"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -36642,10 +38705,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -36756,10 +38819,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -36858,10 +38921,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -36963,7 +39026,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4273492483857,
   "medal_rewards_3": [
    {
@@ -37010,6 +39073,9 @@
     "slug": "000003fe00000018"
    },
    {
+    "slug": "0000049700003d5f"
+   },
+   {
     "slug": "000003e3000061e6"
    }
   ],
@@ -37049,7 +39115,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483762,
   "medal_rewards_3": [
    {
@@ -37061,7 +39127,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -37163,7 +39229,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -37265,7 +39331,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -37364,7 +39430,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4273492483608,
   "medal_rewards_3": [
    {
@@ -37376,7 +39442,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -37472,7 +39538,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -37483,9 +39549,6 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000049700000f8f"
@@ -37504,9 +39567,6 @@
    },
    {
     "slug": "000003e30000656b"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -37592,7 +39652,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492483421,
   "medal_rewards_3": [
    {
@@ -37604,7 +39664,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Многозарядная_баллистаМногозарядные_баллисты",
   "name": "Многозарядная баллистаМногозарядные баллисты",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -37696,7 +39756,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -37707,9 +39767,6 @@
   "primary_passives": [
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -37795,7 +39852,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -37812,9 +39869,6 @@
    },
    {
     "slug": "0000049700000f8f"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000045e00000580"
@@ -37888,7 +39942,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 40<gold></gold> 40<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 50<gold></gold> 50<mana></mana> ",
   "resid": 4273492483247,
   "medal_rewards_3": [
    {
@@ -37911,11 +39965,7 @@
   "id": "Горгулья",
   "name": "Горгулья",
   "combat_speed": 5,
-  "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   }
-  ],
+  "primary_passives": [],
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E300005CAF"
@@ -38005,9 +40055,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e300004814"
    },
    {
@@ -38094,7 +40141,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492483158,
   "medal_rewards_3": [
    {
@@ -38108,9 +40155,6 @@
   "name": "Молодой кислотный червьМолодые кислотные черви",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -38173,7 +40217,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483115,
   "medal_rewards_3": [
    {
@@ -38253,7 +40297,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483035,
   "medal_rewards_3": [
    {
@@ -38265,7 +40309,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Тотем_дикой_природы",
   "name": "Тотем дикой природы",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -38295,7 +40339,7 @@
    }
   ],
   "mp": 40,
-  "hp": 100,
+  "hp": 80,
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
@@ -38754,13 +40798,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -38858,13 +40902,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -38875,9 +40919,6 @@
   "primary_passives": [
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -38990,13 +41031,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -39096,9 +41137,6 @@
   "name": "Боевая гончая",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    },
@@ -39257,7 +41295,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492482176,
   "medal_rewards_3": [
    {
@@ -39271,9 +41309,6 @@
   "name": "Корабль с тараномКорабли с таранами",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    },
@@ -39358,7 +41393,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -39546,7 +41581,7 @@
     "slug": "0000048d000006a7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d00000609"
@@ -39634,7 +41669,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d0000061d"
@@ -39725,7 +41760,7 @@
     "slug": "0000048d00001b26"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d00000620"
@@ -39816,7 +41851,7 @@
     "slug": "0000048d000006a7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d00000609"
@@ -39901,7 +41936,7 @@
     "slug": "000003eb00000494"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d0000061d"
@@ -39989,7 +42024,7 @@
     "slug": "000003eb00000494"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d00000620"
@@ -40572,7 +42607,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Мистик",
@@ -40670,7 +42705,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Мистик",
@@ -40765,7 +42800,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Мистик",
@@ -40865,16 +42900,13 @@
   "sub_culture_name": "Культ тирании",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001aa4"
    },
    {
     "slug": "0000048d00001ade"
    }
   ],
-  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E300005305_0000048d000019de"
@@ -40971,7 +43003,7 @@
     "slug": "000003eb0000053e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005304_0000048d000019de"
@@ -41053,7 +43085,7 @@
     "slug": "0000048d00001aa4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_000003E300005303_0000048d000019de"
@@ -41317,9 +43349,6 @@
     "slug": "0000048d00001b16"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001aa4"
    },
    {
@@ -41406,9 +43435,6 @@
   "primary_passives": [
    {
     "slug": "0000048d00001b16"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "0000048d00001a24"
@@ -41794,9 +43820,6 @@
     "slug": "000003e100001533"
    },
    {
-    "slug": "000003e300006a3a"
-   },
-   {
     "slug": "000003fe0000008a"
    },
    {
@@ -41804,6 +43827,9 @@
    },
    {
     "slug": "000003eb0000053e"
+   },
+   {
+    "slug": "000003e300006a3a"
    }
   ],
   "abilities": [
@@ -41832,7 +43858,7 @@
     "slug": "0000049700001549"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -41916,13 +43942,10 @@
     "slug": "0000048b00000c3b"
    },
    {
-    "slug": "cbe7688b00000307"
-   },
-   {
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -41999,9 +44022,6 @@
   ],
   "tier": 1,
   "medal_rewards_5": [
-   {
-    "slug": "cbe7688b000001dd"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -42447,7 +44467,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -42621,7 +44641,7 @@
     "slug": "0000049700001549"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -42757,9 +44777,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048b00000b35"
    },
    {
@@ -42882,7 +44899,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -42966,7 +44983,7 @@
     "slug": "000003e300006289"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -43301,9 +45318,6 @@
   "sub_culture_name": "Монархия",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001205"
    },
    {
@@ -43317,6 +45331,9 @@
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d000011e2"
+   },
+   {
+    "slug": "knights_challenge_ability_000003E3000052D5_0000048d000011e2"
    },
    {
     "slug": "0000034500000469"
@@ -43395,9 +45412,6 @@
   "sub_culture_name": "Аристократия",
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "0000048d00001205"
    },
    {
@@ -43411,6 +45425,9 @@
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E3000052D5_0000048d00001220"
+   },
+   {
+    "slug": "knights_challenge_ability_000003E3000052D5_0000048d00001220"
    },
    {
     "slug": "0000034500000469"
@@ -43580,7 +45597,7 @@
     "slug": "0000048d000012ed"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "banner_smite_ability_000003E3000052D2_0000048d000011e2"
@@ -43668,7 +45685,7 @@
     "slug": "0000048d000012ed"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "banner_smite_ability_000003E3000052D2_0000048d00001220"
@@ -44176,7 +46193,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4273492480709,
   "medal_rewards_3": [
    {
@@ -44271,11 +46288,11 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "000003e300006294"
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492480706,
   "medal_rewards_3": [
    {
@@ -44287,7 +46304,7 @@
   "upkeep": "8<gold></gold> ",
   "id": "Черный_воронЧерные_вороны",
   "name": "Черный воронЧерные вороны",
-  "combat_speed": 6,
+  "combat_speed": 5,
   "primary_passives": [
    {
     "slug": "0000045e00000664"
@@ -44301,8 +46318,8 @@
     "slug": "0000034500000469"
    }
   ],
-  "mp": 48,
-  "hp": 45,
+  "mp": 40,
+  "hp": 60,
   "armor": 0,
   "resistance": 0,
   "medal_rewards_2": [
@@ -44316,16 +46333,13 @@
     "slug": "000003e30000528e"
    },
    {
+    "slug": "000003e300004ea6"
+   },
+   {
     "slug": "000003fe00000018"
    },
    {
     "slug": "000003eb0000071b"
-   },
-   {
-    "slug": "000003fe00000060"
-   },
-   {
-    "slug": "000003e300004864"
    }
   ],
   "medal_rewards_4": [
@@ -44399,9 +46413,6 @@
    },
    {
     "slug": "000003e300005582"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000065d9"
@@ -44746,9 +46757,6 @@
     "slug": "000003fe000008c4"
    },
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000060d4"
    },
    {
@@ -45059,7 +47067,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492479138,
   "medal_rewards_3": [
    {
@@ -45145,7 +47153,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492479113,
   "medal_rewards_3": [
    {
@@ -45237,13 +47245,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -45342,7 +47350,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492478522,
   "medal_rewards_3": [
    {
@@ -45554,7 +47562,16 @@
     "slug": "0000045e00000664"
    },
    {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
     "slug": "000003870000001b"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -45643,7 +47660,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478497,
   "medal_rewards_3": [
    {
@@ -45659,6 +47676,15 @@
   "primary_passives": [
    {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -45746,7 +47772,16 @@
     "slug": "0000045e00000664"
    },
    {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
     "slug": "000003870000001b"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -45835,7 +47870,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478487,
   "medal_rewards_3": [
    {
@@ -45851,6 +47886,15 @@
   "primary_passives": [
    {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -45938,7 +47982,16 @@
     "slug": "0000045e00000664"
    },
    {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
     "slug": "000003870000001b"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -45959,7 +48012,7 @@
    }
   ],
   "mp": 40,
-  "hp": 130,
+  "hp": 125,
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
@@ -46033,7 +48086,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492478473,
   "medal_rewards_3": [
    {
@@ -46049,6 +48102,15 @@
   "primary_passives": [
    {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -46161,7 +48223,16 @@
     "slug": "000003e300004971"
    },
    {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
     "slug": "000003870000001b"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -46250,7 +48321,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492478461,
   "medal_rewards_3": [
    {
@@ -46276,6 +48347,15 @@
    },
    {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "0000048b000005dd"
+   },
+   {
+    "slug": "0000048b000005df"
+   },
+   {
+    "slug": "000003fe0000007f"
    },
    {
     "slug": "000003fe0000007f"
@@ -46351,7 +48431,7 @@
    }
   ],
   "description": "\\<\\<C:{GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink}\\>\\>, распространяющий вокруг себя огонь и способный применять эффект «{GLOBAL.PROPERTIES.BURNING.Hyperlink}».",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492478197,
   "medal_rewards_3": [
    {
@@ -46540,7 +48620,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Рунный_камень_огняРунные_камни_огня",
   "name": "Рунный камень огняРунные камни огня",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "000003e300005582"
@@ -46631,7 +48711,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "000003e300006288"
    }
   ],
   "description": "",
@@ -46650,13 +48730,7 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b0000023f"
-   },
-   {
     "slug": "000003e3000065d9"
-   },
-   {
-    "slug": "0000045e00000664"
    },
    {
     "slug": "0000038700001864"
@@ -46685,7 +48759,7 @@
   "mp": 40,
   "hp": 160,
   "armor": 6,
-  "resistance": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -46697,16 +48771,13 @@
     "slug": "000003450000052c"
    },
    {
+    "slug": "000003e300004e9f"
+   },
+   {
     "slug": "000004a600000b7a"
    },
    {
-    "slug": "000003fe00000018"
-   },
-   {
     "slug": "0000049300000402"
-   },
-   {
-    "slug": "000003bd000028b7"
    }
   ],
   "medal_rewards_4": [
@@ -46759,9 +48830,6 @@
   "name": "Зеркальный Мимик",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000580"
    }
@@ -46837,7 +48905,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4264902529455,
   "medal_rewards_3": [
    {
@@ -46926,7 +48994,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4264902529452,
   "medal_rewards_3": [
    {
@@ -46940,9 +49008,6 @@
   "name": "Молодой вепрьМолодые вепри",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -47005,7 +49070,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529424,
   "medal_rewards_3": [
    {
@@ -47019,9 +49084,6 @@
   "name": "Вепрь-матриархВепри-матриархи",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "0000045e00000664"
    },
@@ -47109,7 +49171,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529411,
   "medal_rewards_3": [
    {
@@ -47134,22 +49196,13 @@
     "slug": "000003e300005582"
    },
    {
-    "slug": "cbe7688b000002e1"
-   },
-   {
-    "slug": "0000045e00000d23"
-   },
-   {
     "slug": "0000045e00000664"
-   },
-   {
-    "slug": "000003e30000665c"
    },
    {
     "slug": "0000042b00000006"
    },
    {
-    "slug": "000003e10000139d"
+    "slug": "000003e10000118a"
    },
    {
     "slug": "000003eb00000425"
@@ -47220,7 +49273,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529380,
   "medal_rewards_3": [
    {
@@ -47245,22 +49298,10 @@
     "slug": "000003e300005582"
    },
    {
-    "slug": "cbe7688b000002e1"
-   },
-   {
-    "slug": "0000045e00000d2f"
-   },
-   {
     "slug": "0000045e00000664"
    },
    {
-    "slug": "0000048b00000086"
-   },
-   {
     "slug": "0000042b00000006"
-   },
-   {
-    "slug": "000003e10000139d"
    },
    {
     "slug": "000003eb00000425"
@@ -47340,13 +49381,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -47355,9 +49396,6 @@
   "name": "ЕдинорогЕдинороги",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b0000023f"
-   },
    {
     "slug": "000003eb000004c4"
    },
@@ -47460,13 +49498,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -47477,9 +49515,6 @@
   "primary_passives": [
    {
     "slug": "0000040d0000001d"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d6"
@@ -47667,9 +49702,6 @@
    },
    {
     "slug": "000003e30000612d"
-   },
-   {
-    "slug": "cbe7688b0000023f"
    },
    {
     "slug": "000003e3000060d4"
@@ -47865,7 +49897,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712707,
   "medal_rewards_3": [
    {
@@ -48028,7 +50060,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712705,
   "medal_rewards_3": [
    {
@@ -48111,7 +50143,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712687,
   "medal_rewards_3": [
    {
@@ -48194,7 +50226,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712644,
   "medal_rewards_3": [
    {
@@ -48274,7 +50306,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712639,
   "medal_rewards_3": [
    {
@@ -48357,7 +50389,7 @@
    }
   ],
   "description": "Мобильное осадное орудие, метающее снаряды на большие расстояния. Не отличается высокой точностью.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4041564236799,
   "medal_rewards_3": [
    {
@@ -48369,7 +50401,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "Онагр",
   "name": "Онагр",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000041b00000baf"
@@ -48458,7 +50490,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "Баллиста",
   "name": "Баллиста",
-  "combat_speed": 2,
+  "combat_speed": 3,
   "primary_passives": [
    {
     "slug": "0000048d00000206"

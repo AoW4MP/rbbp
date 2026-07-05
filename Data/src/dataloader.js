@@ -1,6 +1,6 @@
 const unlockableUnitsMapStructures = {
     wildlife_sanctuary: ["goretusk_piglet", "dread_spider_hatchling", "vampire_spider_hatchling", "razorback", "warg"],
-    demon_gate: ["inferno_puppy", "gremlin", "inferno_hound", "chaos_eater"],
+    demon_gate: ["inferno_puppy", "gremlin", "inferno_hound", "chaos_eater", "gluttonous_imp"],
     wyvern_eyrie: ["fire_wyvern", "frost_wyvern", "gold_wyvern", "obsidian_wyvern"],
     accursed_shrine: ["accursed_ogre", "accursed_blade", "accursed_trickster"],
     shrine_of_prosperity: ["blessed_dragon", "radiant_guardian", "righteous_judge"]
@@ -71,7 +71,15 @@ const extraFormUnitsList = [
     "blood_cultist",
     "subjugator",
     "lieutenant",
-    "warlord"
+    "warlord",
+    "temptress",
+    "priest_of_the_weave"
+];
+
+const secretSpellsList = [
+    "abominable_mistling","colossal_penguin", "feylor", "yakas_feline_infusion","fanfare_of_mercy", "ysariels_fallen_form", "bhajifs_disruption", "zaethyls_paradise",
+    "karissas_immolation", "cinrens_temptation", "ydgaards_trade", "noctus_mastery", "frikkas_revelation", "nimues_failure",
+    "thulyanas_contortion", "belbedors_folly", "articas_ice_age"
 ];
 
 const incorrectIconOverrideList = [
@@ -85,78 +93,22 @@ const incorrectIconOverrideList = [
     "summon_horned_god",
     "summon_corrupt_soul",
     "summon_lesser_light_spirit",
-
     "summon_blessed_soul"
 ];
 
 const extraAbilities = [];
 
 const extraSkills = [
-    {
-        group_name: "Battlesaint - Hero Skill Group",
-        icon: "0000048D000018CC",
-        type: "normal",
-        description: "This and adjecent friendly units gain 50% Morale Resistance",
-
-        resid: 5222680234436,
-        tree_name: "<classBattlesaint></classBattlesaint> Battlesaint",
-        name: "Spiritual Guide",
-        tree_pos_x: 350.0,
-        tree_pos_y: 650.0,
-        id: "hs_battlesaint_spiritual_guide",
-        required_skills: [
-            {
-                resid: 5222680234415
-            },
-            {
-                resid: 5222680234413
-            }
-        ]
-    },
-    {
-  "group_name": "Warlock - Skill Group",
-  "icon": "000004C000000B45",
-  "type": "normal",
-  "resid": 5222680234769,
-  "tree_name": "<classWarlock></classWarlock> Warlock",
-  "name": "Hexseeking Bolts",
-  "tree_pos_x": 250.0,
-  "tree_pos_y": 150.0,
-  "id": "hs_warlock_hexseeking_bolts",
-  "description": "Attacks and <hyperlink>Debuff</hyperlink> abilities against the target of Hex pact:<bulletlist><bullet>Always Hit.</bullet><bullet>Ignore 3 Status Resistance against the target of Hex Pact</bullet></bulletlist>",
-  "required_skills": [
-   {
-    "resid": 5222680234747
-   }
-  ]
- },
-    {
-        group_name: "Ritualist - Hero Skill Group",
-        icon: "0000048B00000336",
-        type: "normal",
-        name: "Fortifying Support",
-        tree_pos_x: 600.0,
-        id: "hs_ritualist_fortifying_support",
-        excluded_skills: [
-            {
-                resid: 4995046966069
-            }
-        ],
-        resid: 5222680235172,
-        tree_name: "<classRitualist></classRitualist> Ritualist",
-        tree_pos_y: 450.0,
-        description:
-            "<bulletlist><hyperlink>Support</hyperlink> abilities now grant:<bullet> +3 Status Resistance for 3 <turn></turn> Turns.</bullet></bulletlist>",
-        required_skills: [
-            {
-                resid: 5222680233603
-            },
-            {
-                resid: 5222680233749
-            }
-        ]
-    }
 ];
+
+function checkSecretSpell(id) {
+    
+    if (secretSpellsList.includes(id) && !showSecretSpells.checked) {
+        return true;
+    }
+   
+    return false;
+}
 
 function fetchJsonFiles(filePaths) {
     return Promise.all(
@@ -215,16 +167,14 @@ const dlcMap = {
     }, RISEFROMRUIN: {
         src: "/rbbp/Icons/Text/RiseFromRuin.png",
         text: "Part of the Rise From Ruin DLC"
+    }, SECRETSOFTHEARCHMAGES: {
+        src: "/rbbp/Icons/Text/SecretsOfTheArchmages.png",
+        text: "Part of the Secrets of the Archmages DLC"
     }
 };
 
 async function GetAllData(selectedLang) {
     let basePathEN = `/rbbp/Data/EN/`;
-
-    /*if (selectedLang == "BETA") {
-        basePathEN = `/rbbp/Data/BETA/`;
-    }
-    */
 
     const basePathGen = `/rbbp/Data/GEN/`;
     // }
@@ -246,7 +196,12 @@ async function GetAllData(selectedLang) {
         "CosmicHappenings.json",
         "CityTree.json",
         "all_spawnsets_strategic.json",
-        "FreeCities.json"
+        "FreeCities.json",
+        "DestinyTraits.json",
+        "Relics.json",
+        "Pantheon_Tree.json",
+        "ExtraLookSpellsOrigin.json"
+        
         
     ];
     const fileNames = [
@@ -299,7 +254,11 @@ async function GetAllData(selectedLang) {
             "jsonCosmicHappenings",
             "jsonCityTreeNodes",
             "jsonSpawnSetsStrat",
-            "jsonFreeCities"
+            "jsonFreeCities",
+              "jsonDestinyTriggers",
+            "jsonRelics",
+            "jsonPantheon",
+            "jsonExtraSpellsLookup"
             
         ];
         const targets = [
@@ -362,6 +321,7 @@ async function CheckData() {
             setUserSettings({
                 tooltipselectable: false,
                 fontSize: "16px",
+                showSecretSpells : false,
                 showBeta: false,
                 language: "EN"
             });
@@ -369,10 +329,12 @@ async function CheckData() {
         }
         //checkboxTooltip = document.getElementById("tooltipCheckbox");
         checkboxTooltip.checked = storedSettings.tooltipselectable;
+            showSecretSpells.checked = storedSettings.showSecretSpells;
 
         //checkboxNumbers = document.getElementById("numbersCheckbox");
         //checkboxNumbers = document.getElementById("numbersCheckbox");
         checkboxNumbers.checked = storedSettings.isolateNumber;
+      
 
    // showBetaTooltip = document.getElementById("showBetaCheckbox");
         showBetaTooltip.checked = storedSettings.showBeta;
@@ -392,17 +354,19 @@ async function CheckData() {
         }
         CheckBoxTooltips();
 
-        /*  if (storedSettings.showBeta) {
+   /*  if (storedSettings.showBeta) {
              await GetAllData("BETA");
        } else {*/
         await GetAllData(storedSettings.language);
-      //  }
+      // }
 
 //await GetAllData("EN");
         AddExtraData();
 
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityMap[a.slug] = a));
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityNameMap[a.name] = a));
+        
+        // maps
         HandlePage();
         if (languageSelect.value != "EN") {
             LocalizeUI();
@@ -410,13 +374,55 @@ async function CheckData() {
     }
 }
 
+const lookupMaps = new Map(); // cache of maps per "array+key" combo
+
+
+function buildLookupMap(array, key) {
+    const mapKey = array === jsonUnits ? "jsonUnits:" + key :
+                   array === jsonUnitAbilities ? "jsonUnitAbilities:" + key :
+                   array === jsonUnitAbilitiesLocalized ? "jsonUnitAbilitiesLocalized:" + key :
+                   array === jsonSpells ? "jsonSpells:" + key :
+                   array === jsonSpellsLocalized ? "jsonSpellsLocalized:" + key :
+                   array === jsonTomes ? "jsonTomes:" + key :
+                   array === jsonTomesLocalized ? "jsonTomesLocalized:" + key :
+                   array === jsonHeroSkills ? "jsonHeroSkills:" + key :
+                   array === jsonAllFromPOLocalized ? "jsonAllFromPOLocalized:" + key :
+                   null;
+
+    if (!mapKey) return null; // not a static array we track
+
+    if (!lookupMaps.has(mapKey)) {
+        const map = new Map();
+        for (const entry of array) {
+            if (entry[key] !== undefined) {
+                map.set(entry[key], entry);
+            }
+        }
+        lookupMaps.set(mapKey, map);
+    }
+    return lookupMaps.get(mapKey);
+}
+
 const patchDates = [
     // date ranges of patches
-    { name: "Gargoyle 1.0", from: new Date("2025-11-11"), to: new Date("2026-11-29") },
-    { name: "Griffon 1.1", from: new Date("2025-08-11"), to: new Date("2025-11-10") },
-    { name: "Griffon 1.0", from: new Date("2025-08-12"), to: new Date("2025-11-14") },
-    { name: "Ogre 1.2.1", from: new Date("2025-05-13"), to: new Date("2025-08-12") },
-    { name: "Ogre 1.2", from: new Date("2025-04-26"), to: new Date("2025-05-13") }
+      { name: "Sprite 1.2", from: new Date("2026-07-02"), to: new Date("2026-11-29") },
+      { name: "Sprite 1.1", from: new Date("2026-06-24"), to: new Date("2026-07-01") },
+      { name: "Sprite 1.0", from: new Date("2026-06-16"), to: new Date("2026-06-23") },
+      { name: "Scorpion 1.2.1", from: new Date("2026-04-01"), to: new Date("2026-06-15") },
+     { name: "Scorpion 1.2", from: new Date("2026-03-24"), to: new Date("2026-03-31") },
+      { name: "Scorpion 1.1", from: new Date("2026-03-12"), to: new Date("2026-03-23") },
+     { name: "Scorpion 1.0", from: new Date("2026-03-09"), to: new Date("2026-03-11") },
+     { name: "Gargoyle 1.2.2", from: new Date("2025-12-09"), to: new Date("2026-03-08") },
+      { name: "Gargoyle 1.2.1", from: new Date("2025-11-26"), to: new Date("2025-12-08") },
+        { name: "Gargoyle 1.2", from: new Date("2025-11-25"), to: new Date("2025-11-25") },
+      { name: "Gargoyle 1.1", from: new Date("2025-11-13"), to: new Date("2025-11-24") },
+      { name: "Gargoyle 1.0", from: new Date("2025-11-11"), to: new Date("2025-11-12") },
+    { name: "Wisp", from: new Date("2025-09-30"), to: new Date("2025-11-10") },
+     { name: "Griffon 1.2", from: new Date("2025-08-26"), to: new Date("2025-09-29") },
+    { name: "Griffon 1.1", from: new Date("2025-08-14"), to: new Date("2025-08-25") },
+    { name: "Griffon 1.0", from: new Date("2025-08-12"), to: new Date("2025-11-13") },
+    { name: "Ogre 1.2.1", from: new Date("2025-04-29"), to: new Date("2025-08-11") },
+    { name: "Ogre 1.2", from: new Date("2025-04-15"), to: new Date("2025-04-28") }
 ];
 
 function LocalizeUI(specific) {

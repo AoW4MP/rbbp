@@ -25,9 +25,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -127,16 +124,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
-   },
-   {
-    "slug": "Spirit_resistance_2"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -145,9 +139,6 @@
   "name": "Feylor",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -276,9 +267,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -380,7 +368,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5360119185516,
   "DLC": "RISEFROMRUIN ",
   "medal_rewards_3": [
@@ -393,7 +381,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -493,7 +481,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -502,9 +490,6 @@
   "name": "Fractured Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -638,7 +623,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -762,9 +747,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "000003870000001b"
    },
    {
@@ -880,9 +862,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -988,10 +967,13 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Spirit_weakness_4"
+   },
+   {
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -1093,7 +1075,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 5291399710034,
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "medal_rewards_3": [
@@ -1201,10 +1183,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -1316,10 +1298,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -1431,10 +1413,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -1549,10 +1531,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -1670,10 +1652,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -1785,9 +1767,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -1886,9 +1865,6 @@
   "name": "Fracture",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -1989,9 +1965,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -2088,7 +2061,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -2194,10 +2167,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -2212,9 +2185,6 @@
   "name": "Rose Knight",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "00000497000033d2"
    },
@@ -2337,9 +2307,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -2436,9 +2403,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Conquerors",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000048d00001c50"
    },
@@ -2817,7 +2781,7 @@
     "slug": "0000048d00001cb4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004C500000D1E_000004c500000dce"
@@ -2906,7 +2870,7 @@
     "slug": "0000048d00001c50"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004C500000D1E_000004c500000dcf"
@@ -2991,9 +2955,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Conquerors",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000048d00001c50"
    },
@@ -3188,7 +3149,7 @@
     "slug": "0000048d00001cb4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_000004C500000D19_000004c500000dce"
@@ -3277,7 +3238,7 @@
     "slug": "0000048d00001c50"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_000004C500000D19_000004c500000dcf"
@@ -3549,9 +3510,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -3642,10 +3600,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -3660,9 +3618,6 @@
   "name": "Blood Exarch",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000004970000341e"
    },
@@ -3855,7 +3810,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5244155071237,
   "DLC": "THRONESOFBLOOD ",
   "medal_rewards_3": [
@@ -3954,7 +3909,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -3963,9 +3918,6 @@
   "name": "Fractured Unicorn",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -4063,10 +4015,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -4081,9 +4033,6 @@
   "name": "Undead Titan",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -4204,10 +4153,10 @@
     "slug": "Spirit_resistance_6"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -4324,10 +4273,10 @@
     "slug": "Spirit_resistance_6"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -4420,13 +4369,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -4532,13 +4481,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -4547,9 +4496,6 @@
   "name": "Titan",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -4871,9 +4817,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -5175,12 +5118,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -5193,9 +5130,6 @@
   "name": "Umbral Mistress",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -5320,9 +5254,6 @@
   "name": "Moon Guardian",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -5986,13 +5917,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -6082,7 +6013,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586587577,
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "medal_rewards_3": [
@@ -6191,7 +6122,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -6200,9 +6131,6 @@
   "name": "Fractured Worm",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -6305,7 +6233,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586587042,
   "DLC": "RISEFROMRUIN ",
   "medal_rewards_3": [
@@ -6405,10 +6333,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
     "slug": "Shock_weakness_2"
+   },
+   {
+    "slug": "Spirit_weakness_2"
    },
    {
     "slug": "Frost_weakness_2"
@@ -6440,9 +6371,6 @@
    },
    {
     "slug": "0000041b00000cbc"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -6548,9 +6476,6 @@
   "primary_passives": [
    {
     "slug": "000003eb0000053e"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000049700003729"
@@ -6754,10 +6679,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -6850,7 +6775,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586586011,
   "DLC": "THRONESOFBLOOD ",
   "medal_rewards_3": [
@@ -6860,10 +6785,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -6953,7 +6878,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586584322,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -6968,9 +6893,6 @@
   "name": "Griffon",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -7040,7 +6962,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586584312,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -7050,13 +6972,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7179,9 +7101,6 @@
   "name": "Frost Giant",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -7337,7 +7256,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583144,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -7353,7 +7272,7 @@
     "slug": "Frost_resistance_5"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7376,9 +7295,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -7449,7 +7365,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583142,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -7462,7 +7378,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7482,9 +7398,6 @@
    },
    {
     "slug": "000003e300004c8a"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -7565,7 +7478,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7575,9 +7488,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -7585,9 +7495,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -7655,7 +7562,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586583126,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -7671,7 +7578,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7688,9 +7595,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -7761,7 +7665,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582491,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -7777,7 +7681,7 @@
     "slug": "Frost_resistance_5"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7794,9 +7698,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -7880,7 +7781,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -7897,9 +7798,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8063,7 +7961,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582162,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -8078,9 +7976,6 @@
   "name": "Ape",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -8162,7 +8057,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586582155,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -8282,9 +8177,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -8387,7 +8279,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -8397,9 +8289,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -8407,9 +8296,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8477,7 +8363,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586578995,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -8490,7 +8376,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -8510,9 +8396,6 @@
    },
    {
     "slug": "000003e300004c8a"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8580,7 +8463,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586578993,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -8590,7 +8473,7 @@
   ],
   "resistances": [
    {
-    "slug": "Shock_resistance_3"
+    "slug": "Shock_resistance_1"
    },
    {
     "slug": "Spirit_resistance_2"
@@ -8616,9 +8499,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8702,7 +8582,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -8719,9 +8599,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8802,7 +8679,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -8819,9 +8696,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -8902,7 +8776,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -8919,9 +8793,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -9215,7 +9086,7 @@
    }
   ],
   "mp": 40,
-  "hp": 10,
+  "hp": 100,
   "armor": 4,
   "resistance": 3,
   "medal_rewards_2": [
@@ -9275,9 +9146,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Righteousness",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "00000497000010f9"
    },
@@ -9371,12 +9239,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -9584,12 +9446,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -9692,12 +9548,6 @@
    }
   ],
   "resistances": [
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
    {
     "slug": "Fire_weakness_2"
    },
@@ -9802,12 +9652,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -9820,9 +9664,6 @@
   "name": "Umbral Juggernaut",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000049700000cc2"
    },
@@ -9916,7 +9757,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5046586576083,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -9927,12 +9768,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -9947,9 +9782,6 @@
   "name": "Abductor",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -10056,9 +9888,6 @@
   "name": "Scourge of Winter",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -10175,9 +10004,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -10293,9 +10119,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -10398,10 +10221,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -10513,7 +10336,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -10522,9 +10345,6 @@
   "name": "Severing Golem",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -10548,9 +10368,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -10627,7 +10444,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5029406705254,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -10729,10 +10546,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -10749,9 +10566,6 @@
   "primary_passives": [
    {
     "slug": "000003e3000063b1"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000045e00000580"
@@ -10859,13 +10673,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -10876,9 +10690,6 @@
   "primary_passives": [
    {
     "slug": "000004c000000c9f"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000045e00000580"
@@ -10919,7 +10730,7 @@
   "mp": 40,
   "hp": 150,
   "armor": 7,
-  "resistance": 7,
+  "resistance": 6,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -11734,7 +11545,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000176d"
@@ -11829,7 +11640,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001785"
@@ -11924,7 +11735,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000178f"
@@ -12019,7 +11830,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d00001797"
@@ -12114,7 +11925,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d0000179d"
@@ -12209,7 +12020,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_00000490000016DE_0000048d000017a1"
@@ -12826,9 +12637,6 @@
     "slug": "0000048d00001907"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d0000172a"
    }
   ],
@@ -12913,9 +12721,6 @@
   "primary_passives": [
    {
     "slug": "0000048d00001907"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000048d0000172a"
@@ -13004,9 +12809,6 @@
     "slug": "0000048d00001907"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d0000172a"
    }
   ],
@@ -13091,9 +12893,6 @@
   "primary_passives": [
    {
     "slug": "0000048d00001907"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000048d0000172a"
@@ -13182,9 +12981,6 @@
     "slug": "0000048d00001907"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d0000172a"
    }
   ],
@@ -13269,9 +13065,6 @@
   "primary_passives": [
    {
     "slug": "0000048d00001907"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000048d0000172a"
@@ -13360,7 +13153,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000176d"
@@ -13446,7 +13239,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001785"
@@ -13532,7 +13325,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000178f"
@@ -13618,7 +13411,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d00001797"
@@ -13704,7 +13497,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d0000179d"
@@ -13790,7 +13583,7 @@
     "slug": "0000048d00001907"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "shoot_bow_ability_00000490000016DB_0000048d000017a1"
@@ -14433,9 +14226,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -14721,9 +14511,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -14914,9 +14701,6 @@
   "sub_culture_name": "Strife",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000049700001555"
    },
    {
@@ -15104,7 +14888,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb5"
@@ -15190,7 +14974,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb2"
@@ -15276,7 +15060,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000049000000E8C_0000049700000fb8"
@@ -15362,7 +15146,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb5"
@@ -15454,7 +15238,7 @@
     "slug": "00000497000010f3"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb2"
@@ -15546,7 +15330,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_0000049000000E8B_0000049700000fb8"
@@ -15641,7 +15425,7 @@
     "slug": "00000497000010f9"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb5"
@@ -15733,7 +15517,7 @@
     "slug": "0000049700001571"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb2"
@@ -15825,7 +15609,7 @@
     "slug": "00000497000010ff"
    }
   ],
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000049000000E8A_0000049700000fb8"
@@ -16547,10 +16331,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -16658,10 +16442,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -16769,10 +16553,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -16871,7 +16655,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802795,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -16887,7 +16671,7 @@
     "slug": "Blight_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -16896,9 +16680,6 @@
   "name": "Primal Crocodile",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -17008,7 +16789,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -17018,16 +16799,10 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000002f1"
-   },
-   {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
-    "slug": "000003e10000139d"
+    "slug": "000003870000001b"
    },
    {
     "slug": "0000045e00000664"
@@ -17036,13 +16811,7 @@
     "slug": "000003e300004814"
    },
    {
-    "slug": "cbe7688b000002e1"
-   },
-   {
     "slug": "00000497000003ab"
-   },
-   {
-    "slug": "000003eb00000425"
    }
   ],
   "abilities": [
@@ -17072,6 +16841,9 @@
    },
    {
     "slug": "0000049300000402"
+   },
+   {
+    "slug": "000003450000052c"
    },
    {
     "slug": "000003e500001adb"
@@ -17119,7 +16891,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802793,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -17130,9 +16902,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Spirit_resistance_2"
    }
   ],
   "status_resistance": 0,
@@ -17141,9 +16910,6 @@
   "name": "Primal Wolf",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -17237,7 +17003,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802792,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -17253,7 +17019,7 @@
     "slug": "Shock_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -17262,9 +17028,6 @@
   "name": "Primal Crow",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -17355,7 +17118,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802791,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -17371,7 +17134,7 @@
     "slug": "Fire_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -17380,9 +17143,6 @@
   "name": "Primal Sabertooth",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -17476,7 +17236,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802790,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -17492,7 +17252,7 @@
     "slug": "Blight_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -17501,9 +17261,6 @@
   "name": "Primal Spider",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -17609,7 +17366,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802788,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -17625,7 +17382,7 @@
     "slug": "Frost_resistance_4"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -17634,9 +17391,6 @@
   "name": "Primal Mammoth",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -19101,16 +18855,13 @@
   "sub_culture_name": "Mire Crocodile",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "00000497000001d0"
    },
    {
     "slug": "000004970000024f"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dc"
@@ -19196,13 +18947,10 @@
   "sub_culture_name": "Storm Crow",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002df"
@@ -19288,13 +19036,10 @@
   "sub_culture_name": "Glacial Mammoth",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000049700000204"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e1"
@@ -19381,12 +19126,9 @@
   "primary_passives": [
    {
     "slug": "00000497000001dd"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002dd"
@@ -19472,13 +19214,10 @@
   "sub_culture_name": "Dune Serpent",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002de"
@@ -19564,13 +19303,10 @@
   "sub_culture_name": "Tunneling Spider",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000049700000211"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002e0"
@@ -19656,13 +19392,10 @@
   "sub_culture_name": "Sylvan Wolf",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000049700000137"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000004900000031E_00000497000002db"
@@ -19754,16 +19487,16 @@
     "slug": "000004970000024f"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dc"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dc"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dc"
    },
    {
     "slug": "000003e300004c97"
@@ -19849,16 +19582,16 @@
     "slug": "00000497000001f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002df"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002df"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002df"
    },
    {
     "slug": "000003e300004c97"
@@ -19944,16 +19677,16 @@
     "slug": "0000049700000204"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e1"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e1"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e1"
    },
    {
     "slug": "000003e300004c97"
@@ -20039,16 +19772,16 @@
     "slug": "00000497000001dd"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002dd"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002dd"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002dd"
    },
    {
     "slug": "000003e300004c97"
@@ -20134,16 +19867,16 @@
     "slug": "00000497000001ea"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002de"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002de"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002de"
    },
    {
     "slug": "000003e300004c97"
@@ -20229,16 +19962,16 @@
     "slug": "0000049700000211"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002e0"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002e0"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002e0"
    },
    {
     "slug": "000003e300004c97"
@@ -20324,16 +20057,16 @@
     "slug": "0000049700000137"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db"
+    "slug": "summon_totem_animal_ability_000004900000031D_00000497000002db"
    },
    {
-    "slug": "rbbp_summon_totem_animal_ability_000004900000031D_00000497000002db"
+    "slug": "spiritual_healing_ability_000004900000031D_00000497000002db"
    },
    {
     "slug": "000003e300004c97"
@@ -21722,9 +21455,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "000003870000001b"
    },
    {
@@ -21811,7 +21541,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521802432,
   "DLC": "PRIMALFURY ",
   "medal_rewards_3": [
@@ -21826,9 +21556,6 @@
   "name": "Elephant",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -21916,7 +21643,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "culture_name": "Reaver",
@@ -21938,9 +21665,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "cost": "220<unitprod></unitprod> 80<warspoils></warspoils> ",
@@ -22024,7 +21748,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "culture_name": "Reaver",
@@ -22043,9 +21767,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "cost": "220<unitprod></unitprod> 80<warspoils></warspoils> ",
@@ -22135,7 +21856,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -22158,9 +21879,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -22231,7 +21949,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801767,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -22330,7 +22048,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801766,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -22427,7 +22145,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5016521801765,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -22510,7 +22228,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "culture_name": "Reaver",
@@ -22529,9 +22247,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "cost": "220<unitprod></unitprod> 80<favors></favors> ",
@@ -22708,7 +22423,7 @@
   "combat_speed": 4,
   "sub_culture_name": "Federate",
   "primary_passives": [],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "marking_blast_(single)_ability_0000048D00001F87_0000048d00001f6f"
@@ -22984,7 +22699,7 @@
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_single_strike_(base)_ability_0000048D00001A25_0000048d000019d6"
@@ -23078,7 +22793,7 @@
     "slug": "0000048d000019f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_0000048D00001A22_0000048d000019d6"
@@ -23163,7 +22878,7 @@
     "slug": "0000048d000019f7"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_0000048D000019EC_0000048d000019d6"
@@ -23238,7 +22953,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905466,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23343,7 +23058,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905464,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23448,7 +23163,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905462,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23553,7 +23268,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905460,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23658,7 +23373,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905458,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -23763,7 +23478,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636905285,
   "DLC": "ARCHONPROPHECY ",
   "medal_rewards_3": [
@@ -24204,16 +23919,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
-    "slug": "0000049700001571"
+    "slug": "0000048d000011fb"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d000011e2"
@@ -24285,16 +23997,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
-    "slug": "0000049700001571"
+    "slug": "0000048d000011fb"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d00001220"
@@ -24633,7 +24342,7 @@
    }
   ],
   "description": "A {GLOBAL.PROPERTIES.POLEARM_UNIT.Hyperlink} capable of pulling in and restraining opponents.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 5003636901344,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -24820,7 +24529,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -24840,9 +24549,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000049700001a42"
@@ -24929,7 +24635,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -24938,9 +24644,6 @@
   "name": "Clay Charger",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -24952,9 +24655,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000049700001a42"
@@ -25041,7 +24741,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -25067,9 +24767,6 @@
    },
    {
     "slug": "00000497000019ad"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000049700001a42"
@@ -25199,9 +24896,9 @@
    }
   ],
   "mp": 40,
-  "hp": 100,
-  "armor": 3,
-  "resistance": 5,
+  "hp": 120,
+  "armor": 4,
+  "resistance": 6,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -25314,9 +25011,9 @@
    }
   ],
   "mp": 40,
-  "hp": 95,
-  "armor": 2,
-  "resistance": 4,
+  "hp": 115,
+  "armor": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -25392,9 +25089,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -25428,9 +25122,9 @@
    }
   ],
   "mp": 40,
-  "hp": 150,
-  "armor": 7,
-  "resistance": 4,
+  "hp": 170,
+  "armor": 8,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -25515,9 +25209,6 @@
   "name": "Lithorine Simulacrum",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -25708,7 +25399,7 @@
    }
   ],
   "description": "",
-  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
+  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
   "resid": 4986457035632,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -25727,8 +25418,8 @@
     "slug": "Blight_weakness_4"
    }
   ],
-  "status_resistance": 0,
-  "upkeep": "8<gold></gold> ",
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
   "id": "lithorine_shardlancer",
   "name": "Lithorine Shardlancer",
   "combat_speed": 4,
@@ -25755,15 +25446,15 @@
    }
   ],
   "mp": 40,
-  "hp": 70,
-  "armor": 3,
-  "resistance": 0,
+  "hp": 100,
+  "armor": 5,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
-  "tier": 1,
+  "tier": 3,
   "secondary_passives": [
    {
     "slug": "000003e300004968"
@@ -25814,7 +25505,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4986457035631,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -25904,11 +25595,14 @@
  {
   "medal_rewards_5": [
    {
+    "slug": "0000048b00000c22"
+   },
+   {
     "slug": "0000048b00000c6e"
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<mana></mana> ",
+  "cost": "80<unitprod></unitprod> 60<mana></mana> ",
   "resid": 4986457035630,
   "DLC": "GIANTKINGS ",
   "medal_rewards_3": [
@@ -25927,8 +25621,8 @@
     "slug": "Blight_weakness_4"
    }
   ],
-  "status_resistance": 5,
-  "upkeep": "20<gold></gold> ",
+  "status_resistance": 2,
+  "upkeep": "8<gold></gold> ",
   "id": "lithorine_core",
   "name": "Lithorine Core",
   "combat_speed": 4,
@@ -25952,15 +25646,15 @@
    }
   ],
   "mp": 40,
-  "hp": 90,
-  "armor": 2,
-  "resistance": 4,
+  "hp": 60,
+  "armor": 0,
+  "resistance": 2,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
    }
   ],
-  "tier": 3,
+  "tier": 1,
   "secondary_passives": [
    {
     "slug": "000003e300004968"
@@ -26021,13 +25715,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -26036,9 +25730,6 @@
   "name": "Prosperity Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -26154,13 +25845,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -26169,9 +25860,6 @@
   "name": "Righteous Judge",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -26284,13 +25972,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -26395,7 +26083,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035304,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -26405,13 +26093,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -26540,9 +26228,6 @@
   "primary_passives": [
    {
     "slug": "0000049700001511"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000045e00000580"
@@ -26873,7 +26558,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035300,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -26900,9 +26585,6 @@
   "primary_passives": [
    {
     "slug": "0000049700001511"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "000003870000001b"
@@ -27075,7 +26757,7 @@
    }
   ],
   "description": "Monk",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457035150,
   "DLC": "WAYSOFWAR ",
   "medal_rewards_3": [
@@ -27158,7 +26840,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4986457034590,
   "DLC": "ELDRITCHREALMS ",
   "medal_rewards_3": [
@@ -27169,12 +26851,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -27286,12 +26962,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -27304,9 +26974,6 @@
   "name": "Umbral Tyrant",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -27417,12 +27084,6 @@
   "resistances": [
    {
     "slug": "Physical_resistance_2"
-   },
-   {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_2"
@@ -27615,7 +27276,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -27624,9 +27285,6 @@
   "name": "Roving Furnace",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -27644,9 +27302,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -27731,7 +27386,7 @@
     "slug": "0000048d0000090a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "marking_blast_(single)_ability_00000489000000A4_0000048d00001f64"
@@ -27823,7 +27478,7 @@
     "slug": "0000048d0000090a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "fire_heavy_magelocks_snap_shot_ability_00000489000000A3_0000048d00001f64"
@@ -27905,7 +27560,7 @@
   "combat_speed": 4,
   "sub_culture_name": "Federate",
   "primary_passives": [],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "fire_heavy_magelocks_snap_shot_ability_00000489000000A3_0000048d00001f6f"
@@ -28268,7 +27923,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "culture_name": "Reaver",
@@ -28286,16 +27941,13 @@
     "slug": "0000049700000f8f"
    },
    {
+    "slug": "0000048d00000206"
+   },
+   {
     "slug": "000003e3000071f0"
    },
    {
-    "slug": "cbe7688b000001dc"
-   },
-   {
     "slug": "000003e300007248"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "cost": "60<unitprod></unitprod> 50<gold></gold> ",
@@ -28379,7 +28031,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "culture_name": "Reaver",
@@ -28394,16 +28046,13 @@
     "slug": "0000049700000f8f"
    },
    {
+    "slug": "0000048d00000206"
+   },
+   {
     "slug": "000003e3000071f0"
    },
    {
-    "slug": "cbe7688b000001dc"
-   },
-   {
     "slug": "000003e300007248"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "cost": "60<unitprod></unitprod> 50<gold></gold> ",
@@ -28775,7 +28424,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -28784,9 +28433,6 @@
   "name": "Ironclad",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -28807,9 +28453,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000039c0000061d"
@@ -29002,10 +28645,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -29020,9 +28663,6 @@
   "name": "Ghost Ship",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -29220,7 +28860,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4827543240790,
   "medal_rewards_3": [
    {
@@ -29427,12 +29067,6 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Shock_resistance_2"
-   },
-   {
-    "slug": "Frost_resistance_2"
-   },
-   {
     "slug": "Fire_weakness_2"
    },
    {
@@ -29551,13 +29185,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -29566,9 +29200,6 @@
   "name": "Infernal Juggernaut",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -29683,7 +29314,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -29892,9 +29523,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "00000385000000f6"
-   },
-   {
     "slug": "000003eb00000425"
    },
    {
@@ -30055,7 +29683,7 @@
    }
   ],
   "description": "A defensive structure that heals and buffs nearby friendly Undead units.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4514010634335,
   "medal_rewards_3": [
    {
@@ -30162,7 +29790,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -30171,9 +29799,6 @@
   "name": "Living Fog",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -30279,7 +29904,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -30288,9 +29913,6 @@
   "name": "Phase Beast",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -30381,7 +30003,7 @@
    }
   ],
   "description": "Stationary tower that shoots enemies and amplifies spell damage.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010633029,
   "medal_rewards_3": [
    {
@@ -30482,7 +30104,7 @@
    }
   ],
   "description": "A {GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink} with offensive chain lightning magic.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010632963,
   "medal_rewards_3": [
    {
@@ -30565,7 +30187,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010632570,
   "medal_rewards_3": [
    {
@@ -30577,7 +30199,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -30600,9 +30222,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000048b00000eb6"
@@ -30793,9 +30412,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -30982,7 +30598,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -31005,9 +30621,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -31509,9 +31122,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "000003870000001b"
    },
    {
@@ -31598,13 +31208,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -31703,7 +31313,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4514010630880,
   "medal_rewards_3": [
    {
@@ -31712,13 +31322,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -31895,10 +31505,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -31913,9 +31523,6 @@
   "name": "Bone Horror",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000004a600000070"
    },
@@ -32132,7 +31739,7 @@
    }
   ],
   "description": "Grants access to a {GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink} that inflicts {GLOBAL.PROPERTIES.FROZEN.Hyperlink}.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010629896,
   "medal_rewards_3": [
    {
@@ -32218,7 +31825,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 40<gold></gold> 20<souls></souls> ",
+  "cost": "120<unitprod></unitprod> 50<gold></gold> 20<souls></souls> ",
   "resid": 4514010629615,
   "medal_rewards_3": [
    {
@@ -32312,7 +31919,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -32404,7 +32011,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "0000049700003954"
    }
   ],
   "description": "",
@@ -32420,20 +32027,23 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
   "upkeep": "8<gold></gold> ",
   "id": "spirit_hawk",
   "name": "Spirit Hawk",
-  "combat_speed": 6,
+  "combat_speed": 5,
   "primary_passives": [
    {
     "slug": "00000385000000f6"
    },
    {
     "slug": "0000045e00000664"
+   },
+   {
+    "slug": "000003e300005582"
    },
    {
     "slug": "000003e300004814"
@@ -32447,10 +32057,10 @@
     "slug": "0000034500000469"
    }
   ],
-  "mp": 48,
-  "hp": 35,
-  "armor": 0,
-  "resistance": 0,
+  "mp": 40,
+  "hp": 50,
+  "armor": 1,
+  "resistance": 1,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -32468,13 +32078,10 @@
     "slug": "000003eb0000071b"
    },
    {
+    "slug": "0000049700003951"
+   },
+   {
     "slug": "000003e500001adb"
-   },
-   {
-    "slug": "000003fe00000060"
-   },
-   {
-    "slug": "000003e300004864"
    }
   ],
   "medal_rewards_4": [
@@ -32529,9 +32136,6 @@
   "primary_passives": [
    {
     "slug": "000003e3000063b1"
-   },
-   {
-    "slug": "cbe7688b000007f4"
    },
    {
     "slug": "0000048d00001010"
@@ -32605,7 +32209,7 @@
    }
   ],
   "description": "A {GLOBAL.PROPERTIES.SUPPORT_UNIT.Hyperlink} that summons and empowers \\<\\<m:{GLOBAL.PROPERTIES.ANIMAL.Hyperlink}\\>\\>.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010629029,
   "medal_rewards_3": [
    {
@@ -32694,7 +32298,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4514010628985,
   "medal_rewards_3": [
    {
@@ -32796,7 +32400,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4488240825326,
   "medal_rewards_3": [
    {
@@ -32886,7 +32490,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456579876,
   "medal_rewards_3": [
    {
@@ -32975,7 +32579,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456578439,
   "medal_rewards_3": [
    {
@@ -33065,7 +32669,7 @@
    }
   ],
   "description": "An immobile siege engine that can hurl large projectiles over large distances. But may be inaccurate.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4389456576747,
   "medal_rewards_3": [
    {
@@ -33181,6 +32785,9 @@
     "slug": "magic_strike_(base)_ability_000003EC00002919"
    },
    {
+    "slug": "wyvern_burst_ability_000003EC00002919"
+   },
+   {
     "slug": "0000034500000469"
    }
   ],
@@ -33246,7 +32853,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -33255,9 +32862,6 @@
   "name": "Lost Wizard",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -33360,7 +32964,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 7,
@@ -33369,9 +32973,6 @@
   "name": "Mage Bane",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -33462,7 +33063,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4312147173997,
   "medal_rewards_3": [
    {
@@ -33474,7 +33075,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -33846,10 +33447,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -33864,9 +33465,6 @@
   "name": "Bone Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -34095,7 +33693,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147171472,
   "medal_rewards_3": [
    {
@@ -34280,7 +33878,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147171461,
   "medal_rewards_3": [
    {
@@ -34289,10 +33887,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -35085,7 +34683,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147169114,
   "medal_rewards_3": [
    {
@@ -35202,9 +34800,6 @@
   "name": "Storm Spirit",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -35542,9 +35137,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "000003e30000665c"
    },
    {
@@ -35723,9 +35315,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -35843,9 +35432,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -35958,9 +35544,6 @@
   "name": "Rock Giant",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -36360,7 +35943,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4312147167410,
   "medal_rewards_3": [
    {
@@ -36390,8 +35973,8 @@
    }
   ],
   "mp": 40,
-  "hp": 90,
-  "armor": 2,
+  "hp": 95,
+  "armor": 3,
   "resistance": 1,
   "medal_rewards_2": [
    {
@@ -36443,7 +36026,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492489404,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -36539,7 +36122,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492488880,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -36658,9 +36241,6 @@
   "combat_speed": 4,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -36775,7 +36355,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -36784,9 +36364,6 @@
   "name": "Progenitor Golem",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -36810,9 +36387,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -36889,7 +36463,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492488731,
   "DLC": "EMPIRESANDASHES ",
   "medal_rewards_3": [
@@ -37079,10 +36653,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -37195,9 +36769,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -37297,9 +36868,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -37398,9 +36966,6 @@
   "name": "Young Frost Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -37719,9 +37284,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -37855,9 +37417,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -37990,9 +37549,6 @@
   "name": "Young Fire Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -38161,7 +37717,13 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_resistance_2"
+    "slug": "Blight_weakness_2"
+   },
+   {
+    "slug": "Spirit_weakness_2"
+   },
+   {
+    "slug": "Frost_weakness_2"
    }
   ],
   "status_resistance": 3,
@@ -38275,10 +37837,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -38404,9 +37966,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -38499,7 +38058,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484799,
   "medal_rewards_3": [
    {
@@ -38587,16 +38146,16 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_6"
+    "slug": "Spirit_resistance_4"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -38605,9 +38164,6 @@
   "name": "Shrine of Smiting",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -38634,9 +38190,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    },
    {
     "slug": "0000041b000019e0"
@@ -38713,7 +38266,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492484430,
   "medal_rewards_3": [
    {
@@ -38808,7 +38361,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484361,
   "medal_rewards_3": [
    {
@@ -38903,7 +38456,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492484324,
   "medal_rewards_3": [
    {
@@ -38912,13 +38465,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -39020,10 +38573,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -39038,9 +38591,6 @@
   "name": "Reaper",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -39155,10 +38705,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -39269,10 +38819,10 @@
   ],
   "resistances": [
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -39371,10 +38921,10 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Blight_resistance_4"
+    "slug": "Blight_resistance_2"
    },
    {
-    "slug": "Frost_resistance_4"
+    "slug": "Frost_resistance_2"
    },
    {
     "slug": "Fire_weakness_4"
@@ -39476,7 +39026,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4273492483857,
   "medal_rewards_3": [
    {
@@ -39565,7 +39115,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483762,
   "medal_rewards_3": [
    {
@@ -39577,7 +39127,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 2,
@@ -39679,7 +39229,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -39781,7 +39331,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -39880,7 +39430,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "140<unitprod></unitprod> 100<mana></mana> ",
   "resid": 4273492483608,
   "medal_rewards_3": [
    {
@@ -39892,7 +39442,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -39988,7 +39538,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -39997,9 +39547,6 @@
   "name": "Golden Golem",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -40032,9 +39579,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -40108,7 +39652,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4273492483421,
   "medal_rewards_3": [
    {
@@ -40212,7 +39756,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -40229,9 +39773,6 @@
    },
    {
     "slug": "000003e3000071f0"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -40311,7 +39852,7 @@
     "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Shock_weakness_2"
+    "slug": "Shock_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -40334,9 +39875,6 @@
    },
    {
     "slug": "000003fe000008c4"
-   },
-   {
-    "slug": "0000048b00000eb6"
    }
   ],
   "abilities": [
@@ -40404,7 +39942,7 @@
    }
   ],
   "description": "",
-  "cost": "110<unitprod></unitprod> 40<gold></gold> 40<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 50<gold></gold> 50<mana></mana> ",
   "resid": 4273492483247,
   "medal_rewards_3": [
    {
@@ -40427,11 +39965,7 @@
   "id": "gargoyle",
   "name": "Gargoyle",
   "combat_speed": 5,
-  "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   }
-  ],
+  "primary_passives": [],
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E300005CAF"
@@ -40517,9 +40051,6 @@
   "name": "Caustic Worm",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -40610,7 +40141,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492483158,
   "medal_rewards_3": [
    {
@@ -40624,9 +40155,6 @@
   "name": "Young Caustic Worm",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -40689,7 +40217,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483115,
   "medal_rewards_3": [
    {
@@ -40769,7 +40297,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492483035,
   "medal_rewards_3": [
    {
@@ -40811,7 +40339,7 @@
    }
   ],
   "mp": 40,
-  "hp": 100,
+  "hp": 80,
   "armor": 4,
   "resistance": 2,
   "medal_rewards_2": [
@@ -41270,13 +40798,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -41374,13 +40902,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 11,
@@ -41389,9 +40917,6 @@
   "name": "Balor",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -41506,13 +41031,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 5,
@@ -41612,9 +41137,6 @@
   "name": "War Hound",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000664"
    },
@@ -41773,7 +41295,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492482176,
   "medal_rewards_3": [
    {
@@ -41787,9 +41309,6 @@
   "name": "Ram Warship",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003e3000064a0"
    },
@@ -41874,7 +41393,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "status_resistance": 0,
@@ -42062,7 +41581,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d00000609"
@@ -42150,7 +41669,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d0000061d"
@@ -42241,7 +41760,7 @@
     "slug": "000003e300004c8a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005451_0000048d00000620"
@@ -42332,7 +41851,7 @@
     "slug": "000003eb00000494"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d00000609"
@@ -42417,7 +41936,7 @@
     "slug": "000003eb00000494"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d0000061d"
@@ -42505,7 +42024,7 @@
     "slug": "000003eb00000494"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_blast_(single)_ability_000003E300005450_0000048d00000620"
@@ -43088,7 +42607,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Mystic",
@@ -43186,7 +42705,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Mystic",
@@ -43281,7 +42800,7 @@
     "slug": "Physical_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    }
   ],
   "culture_name": "Mystic",
@@ -43384,13 +42903,10 @@
     "slug": "0000048d00001aa4"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d00001ade"
    }
   ],
-  "cost": "240<unitprod></unitprod> 160<gold></gold> ",
+  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_000003E300005305_0000048d000019de"
@@ -43487,7 +43003,7 @@
     "slug": "000003fe0000008a"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_strike_(base)_ability_000003E300005304_0000048d000019de"
@@ -43569,7 +43085,7 @@
     "slug": "0000048d00001aa4"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "magic_bolts_ability_000003E300005303_0000048d000019de"
@@ -43833,9 +43349,6 @@
     "slug": "0000048d00001aa4"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d00001a24"
    },
    {
@@ -43920,9 +43433,6 @@
   "combat_speed": 4,
   "sub_culture_name": "Cult of Death",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000048d00001a24"
    },
@@ -44307,13 +43817,13 @@
   "combat_speed": 4,
   "primary_passives": [
    {
+    "slug": "000003e300006a3a"
+   },
+   {
     "slug": "000003eb0000053e"
    },
    {
     "slug": "000003fe0000008a"
-   },
-   {
-    "slug": "000003e300006a3a"
    },
    {
     "slug": "000003e300006558"
@@ -44348,7 +43858,7 @@
     "slug": "0000049700001549"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -44432,13 +43942,10 @@
     "slug": "0000048b00000c3b"
    },
    {
-    "slug": "cbe7688b00000307"
-   },
-   {
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -44515,9 +44022,6 @@
   ],
   "tier": 1,
   "medal_rewards_5": [
-   {
-    "slug": "cbe7688b000001dd"
-   },
    {
     "slug": "0000048b00000c6e"
    },
@@ -44963,7 +44467,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -45137,7 +44641,7 @@
     "slug": "0000049700001549"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -45276,9 +44780,6 @@
     "slug": "000003e3000061fa"
    },
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048b00000b35"
    },
    {
@@ -45398,7 +44899,7 @@
     "slug": "0000048b00000c6e"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -45482,7 +44983,7 @@
     "slug": "000003e300006289"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "description": "",
   "secondary_passives": [
    {
@@ -45817,9 +45318,6 @@
   "sub_culture_name": "Monarchy",
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000048d00001205"
    },
    {
@@ -45913,9 +45411,6 @@
   "combat_speed": 6,
   "sub_culture_name": "Aristocracy",
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000048d00001205"
    },
@@ -46102,7 +45597,7 @@
     "slug": "0000048d000012ed"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "banner_smite_ability_000003E3000052D2_0000048d000011e2"
@@ -46190,7 +45685,7 @@
     "slug": "0000048d000012ed"
    }
   ],
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "abilities": [
    {
     "slug": "banner_smite_ability_000003E3000052D2_0000048d00001220"
@@ -46793,11 +46288,11 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "000003e300006294"
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492480706,
   "medal_rewards_3": [
    {
@@ -46809,7 +46304,7 @@
   "upkeep": "8<gold></gold> ",
   "id": "grimbeak_crow",
   "name": "Grimbeak Crow",
-  "combat_speed": 6,
+  "combat_speed": 5,
   "primary_passives": [
    {
     "slug": "0000045e00000664"
@@ -46823,8 +46318,8 @@
     "slug": "0000034500000469"
    }
   ],
-  "mp": 48,
-  "hp": 45,
+  "mp": 40,
+  "hp": 60,
   "armor": 0,
   "resistance": 0,
   "medal_rewards_2": [
@@ -46838,16 +46333,13 @@
     "slug": "000003fe00000018"
    },
    {
+    "slug": "000003e300004ea6"
+   },
+   {
     "slug": "000003eb0000071b"
    },
    {
-    "slug": "000003fe00000060"
-   },
-   {
     "slug": "000003e30000528e"
-   },
-   {
-    "slug": "000003e300004864"
    }
   ],
   "medal_rewards_4": [
@@ -46913,9 +46405,6 @@
   "name": "Horned God",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -47265,9 +46754,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -47581,7 +47067,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492479138,
   "medal_rewards_3": [
    {
@@ -47667,7 +47153,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492479113,
   "medal_rewards_3": [
    {
@@ -47759,13 +47245,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -47864,7 +47350,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492478522,
   "medal_rewards_3": [
    {
@@ -48174,7 +47660,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478497,
   "medal_rewards_3": [
    {
@@ -48213,7 +47699,7 @@
    }
   ],
   "mp": 40,
-  "hp": 45,
+  "hp": 50,
   "armor": 1,
   "resistance": 0,
   "medal_rewards_2": [
@@ -48384,7 +47870,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478487,
   "medal_rewards_3": [
    {
@@ -48423,7 +47909,7 @@
    }
   ],
   "mp": 40,
-  "hp": 55,
+  "hp": 60,
   "armor": 2,
   "resistance": 0,
   "medal_rewards_2": [
@@ -48600,7 +48086,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4273492478473,
   "medal_rewards_3": [
    {
@@ -48645,7 +48131,7 @@
    }
   ],
   "mp": 40,
-  "hp": 70,
+  "hp": 75,
   "armor": 2,
   "resistance": 1,
   "medal_rewards_2": [
@@ -48835,7 +48321,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492478461,
   "medal_rewards_3": [
    {
@@ -48945,7 +48431,7 @@
    }
   ],
   "description": "A {GLOBAL.PROPERTIES.BATTLE_MAGE.Hyperlink} that spreads fire and inflicts {GLOBAL.PROPERTIES.BURNING.Hyperlink}.",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4273492478197,
   "medal_rewards_3": [
    {
@@ -49225,7 +48711,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "000003e300006288"
    }
   ],
   "description": "",
@@ -49244,9 +48730,6 @@
   "combat_speed": 5,
   "primary_passives": [
    {
-    "slug": "cbe7688b000007f4"
-   },
-   {
     "slug": "0000045e00000580"
    },
    {
@@ -49257,9 +48740,6 @@
    },
    {
     "slug": "0000038700001864"
-   },
-   {
-    "slug": "0000045e00000664"
    }
   ],
   "abilities": [
@@ -49279,7 +48759,7 @@
   "mp": 40,
   "hp": 160,
   "armor": 6,
-  "resistance": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -49287,9 +48767,6 @@
   ],
   "tier": 5,
   "secondary_passives": [
-   {
-    "slug": "000003fe00000018"
-   },
    {
     "slug": "000004a600000b7a"
    },
@@ -49300,7 +48777,7 @@
     "slug": "000003450000052c"
    },
    {
-    "slug": "000003bd000028b7"
+    "slug": "000003e300004e9f"
    }
   ],
   "medal_rewards_4": [
@@ -49353,9 +48830,6 @@
   "name": "Mirror Mimic",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    }
@@ -49431,7 +48905,7 @@
    }
   ],
   "description": "",
-  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
+  "cost": "100<unitprod></unitprod> 90<gold></gold> ",
   "resid": 4264902529455,
   "medal_rewards_3": [
    {
@@ -49520,7 +48994,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4264902529452,
   "medal_rewards_3": [
    {
@@ -49534,9 +49008,6 @@
   "name": "Goretusk Piglet",
   "combat_speed": 4,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000664"
    }
@@ -49599,7 +49070,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529424,
   "medal_rewards_3": [
    {
@@ -49613,9 +49084,6 @@
   "name": "Goretusk Matriarch",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "000003870000001b"
    },
@@ -49703,7 +49171,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529411,
   "medal_rewards_3": [
    {
@@ -49728,25 +49196,16 @@
     "slug": "0000042b00000006"
    },
    {
-    "slug": "0000045e00000d23"
-   },
-   {
-    "slug": "000003e10000139d"
-   },
-   {
     "slug": "0000045e00000664"
    },
    {
     "slug": "000003e300005582"
    },
    {
-    "slug": "cbe7688b000002e1"
-   },
-   {
     "slug": "000003eb00000425"
    },
    {
-    "slug": "000003e30000665c"
+    "slug": "000003e10000118a"
    }
   ],
   "abilities": [
@@ -49814,7 +49273,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4264902529380,
   "medal_rewards_3": [
    {
@@ -49839,25 +49298,13 @@
     "slug": "0000042b00000006"
    },
    {
-    "slug": "0000045e00000d2f"
-   },
-   {
-    "slug": "000003e10000139d"
-   },
-   {
     "slug": "0000045e00000664"
    },
    {
     "slug": "000003e300005582"
    },
    {
-    "slug": "cbe7688b000002e1"
-   },
-   {
     "slug": "000003eb00000425"
-   },
-   {
-    "slug": "0000048b00000086"
    }
   ],
   "abilities": [
@@ -49934,13 +49381,13 @@
   ],
   "resistances": [
    {
-    "slug": "Spirit_resistance_4"
+    "slug": "Spirit_resistance_2"
    },
    {
-    "slug": "Blight_weakness_2"
+    "slug": "Blight_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -49949,9 +49396,6 @@
   "name": "Unicorn",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -50054,13 +49498,13 @@
   ],
   "resistances": [
    {
-    "slug": "Fire_resistance_4"
+    "slug": "Fire_resistance_2"
    },
    {
-    "slug": "Spirit_weakness_2"
+    "slug": "Spirit_weakness_4"
    },
    {
-    "slug": "Frost_weakness_2"
+    "slug": "Frost_weakness_4"
    }
   ],
   "status_resistance": 3,
@@ -50069,9 +49513,6 @@
   "name": "Nightmare",
   "combat_speed": 6,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000040d0000001d"
    },
@@ -50256,9 +49697,6 @@
   "name": "Fire Dragon",
   "combat_speed": 5,
   "primary_passives": [
-   {
-    "slug": "cbe7688b000007f4"
-   },
    {
     "slug": "0000045e00000580"
    },
@@ -50459,7 +49897,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712707,
   "medal_rewards_3": [
    {
@@ -50622,7 +50060,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712705,
   "medal_rewards_3": [
    {
@@ -50705,7 +50143,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712687,
   "medal_rewards_3": [
    {
@@ -50788,7 +50226,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712644,
   "medal_rewards_3": [
    {
@@ -50868,7 +50306,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 100<gold></gold> ",
   "resid": 4110283712639,
   "medal_rewards_3": [
    {
@@ -50951,7 +50389,7 @@
    }
   ],
   "description": "An mobile siege engine that can hurl projectiles over large distances. But may be inaccurate.",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "140<unitprod></unitprod> 110<gold></gold> ",
   "resid": 4041564236799,
   "medal_rewards_3": [
    {

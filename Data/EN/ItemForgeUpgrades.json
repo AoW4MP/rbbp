@@ -1037,7 +1037,7 @@
  {
   "abilities": [
    {
-    "slug": "healing_sap_ability_druids_staff_equipment_upgrade"
+    "slug": "sap_strength_ability_druids_staff_equipment_upgrade"
    }
   ],
   "tag_filter": {
@@ -1051,14 +1051,14 @@
   "resid": 5111011084622,
   "point_cost": 1,
   "id": "druids_staff_equipment_upgrade",
-  "description": "This unit and all friendly adjacent units heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>. This unit then enters Defense Mode.",
-  "name": "Healing Sap",
+  "description": "Enemy units in a 1-hex radius:<bulletlist><bullet>Have a base % chance of receiving 2 stacks of Weakened for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>The caster gains:<bulletlist><bullet>Strengthened for 3 <turn></turn> Turns for each enemy affected.</bullet></bulletlist>",
+  "name": "Sap Strength",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
    }
   ],
-  "icon": "0000041B00000383"
+  "icon": "000003E300005203"
  },
  {
   "tag_filter": {
@@ -4595,7 +4595,7 @@
   "icon": "000004A600000334",
   "unlock_requirements": [
    {
-    "num_required": 3,
+    "num_required": 1,
     "token_name": "Archon Blood"
    }
   ]
@@ -8910,7 +8910,7 @@
    ]
   },
   "resid": 5046586585944,
-  "point_cost": 3,
+  "point_cost": 1,
   "id": "equipment_upgrade_active_staff_cosmic_rescue",
   "DLC": "COSMICWANDERER ",
   "description": "",
@@ -8957,7 +8957,7 @@
    ]
   },
   "resid": 5046586585943,
-  "point_cost": 4,
+  "point_cost": 2,
   "id": "equipment_upgrade_active_wand_cosmic_rescue",
   "DLC": "COSMICWANDERER ",
   "description": "",
@@ -9537,7 +9537,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_frost_single",
   "DLC": "GIANTKINGS ",
-  "description": "Base attacks have:<bulletlist><bullet>+4 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>A base 90% chance of inflicting Slowed.</bullet></bulletlist>",
+  "description": "Base attacks have:<bulletlist><bullet>+4 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>A base 60% chance of inflicting Frozen.</bullet></bulletlist>",
   "name": "Rune of Power: Frost",
   "tags": [
    {
@@ -9633,7 +9633,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_frost_repeating",
   "DLC": "GIANTKINGS ",
-  "description": "Base attacks have:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist>",
+  "description": "Base attacks have:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink></bullet><bullet>A base 30% chance of inflicting Frozen.</bullet></bulletlist>",
   "name": "Rune of Power: Frost",
   "tags": [
    {
@@ -11982,13 +11982,28 @@
    ]
   },
   "resid": 5029406707548,
-  "point_cost": 3,
+  "point_cost": 1,
   "id": "pull_shot_infusion_euipment_upgrade",
   "description": "Deal damage to target unit and pull them adjacent to this unit if able.",
   "name": "Pull Shot",
   "tags": [
    {
+    "tag": "ItemTypeWeapon.RangedPhysical"
+   },
+   {
     "tag": "ItemTypeWeapon.MeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    },
    {
     "tag": "ItemTypeWeapon.MeleeRanged.SwordPistol"
@@ -12035,7 +12050,7 @@
    ]
   },
   "resid": 5029406707547,
-  "point_cost": 3,
+  "point_cost": 1,
   "id": "pierce_shot_infusion_equipment_upgrade",
   "description": "Deal damage to all targets in a 4-hex line from this unit.",
   "name": "Pierce Shot",
@@ -12251,6 +12266,57 @@
    {
     "num_required": 1,
     "token_name": "Arcanium Ore"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "000003e3000056ea"
+   }
+  ],
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains ItemTypeMisc.OtherItem "
+      },
+      {
+       "condition": "Contains ItemTypeJewelry.Amulet "
+      }
+     ]
+    }
+   ]
+  },
+  "resid": 5029406707124,
+  "point_cost": 4,
+  "id": "innate_spell_jammer_infusion_equipment_upgrade",
+  "description": "",
+  "name": "Innate Spell Jammer",
+  "tags": [
+   {
+    "tag": "ItemTypeJewelry.Amulet"
+   },
+   {
+    "tag": "ItemTypeMisc.OtherItem"
+   }
+  ],
+  "icon": "000003E3000056EB",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Astral Dew"
+   },
+   {
+    "num_required": 1,
+    "token_name": "Silvertongue Fruit"
+   },
+   {
+    "num_required": 1,
+    "token_name": "Tranquility Pool"
    }
   ]
  },
@@ -14810,7 +14876,7 @@
    ]
   },
   "resid": 4995046968466,
-  "point_cost": 4,
+  "point_cost": 3,
   "id": "equipment_upgrade_active_staff_greater_dispel_magic",
   "description": "",
   "name": "Greater Dispel Magic",
@@ -14856,7 +14922,7 @@
    ]
   },
   "resid": 4995046968465,
-  "point_cost": 5,
+  "point_cost": 4,
   "id": "equipment_upgrade_active_wand_greater_dispel_magic",
   "description": "",
   "name": "Greater Dispel Magic",
@@ -26288,7 +26354,7 @@
   "point_cost": 3,
   "id": "equipment_upgrade_defense_hp__15",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+24 Hit Points",
+  "name": "+15 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"
@@ -26356,7 +26422,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_defense_hp__10",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+16 Hit Points",
+  "name": "+10 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"
@@ -26424,7 +26490,7 @@
   "point_cost": 1,
   "id": "equipment_upgrade_defense_hp__5",
   "description": "<bulletlist><bullet>Hit Points represent the amount of damage a <hyperlink>Unit</hyperlink> can sustain before it dies.</bullet><bullet>Most units will take <hyperlink>Casualties</hyperlink> as their Hit Points drop.</bullet></bulletlist>",
-  "name": "+8 Hit Points",
+  "name": "+5 Hit Points",
   "tags": [
    {
     "tag": "ItemTypeArmor"

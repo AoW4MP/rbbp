@@ -1,7 +1,18 @@
-function findBy(array, key, value, { all = false } = {}) {
-  return all
-    ? array.filter(item => item[key] === value)  // all matches
-    : array.find(item => item[key] === value);   // first match
+
+
+function findBy(array, key, value, options) {
+    // fast path: try the lookup map first
+    if (!options?.all) {
+        const map = buildLookupMap(array, key);
+        if (map) {
+            return map.get(value);
+        }
+    }
+    // slow path: fallback for untracked arrays or {all:true} queries
+    if (options?.all) {
+        return array.filter(entry => entry[key] === value);
+    }
+    return array.find(entry => entry[key] === value);
 }
 
 function findByFuzzy(array, key, value, { all = false } = {}) {
@@ -17,6 +28,12 @@ function maybeHighlight(text) {
 function tagReplace(text, keyword, tagHTML) {
   const pattern = new RegExp(`\\b${keyword}\\b`, "g");
   return text.replace(pattern, tagHTML);
+}
+
+function Unblur(element, clickerelement, event){
+    
+    element.classList.remove("blurred");
+    clickerelement.setAttribute("style", "display:none");
 }
 
 /**

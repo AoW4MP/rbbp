@@ -1,5 +1,3 @@
-# macOS system files
-.DS_Store
 
-# VS Code settings
-.vscode/
+Data/Test.js
+HTML/Testing.html

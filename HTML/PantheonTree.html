@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-CC3NE8PT7K");
+        </script>
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/rbbp/Data/Hero.js"></script>
+
+        <script src="/rbbp/Data/Init.js"></script>
+
+        <script>
+            function HandlePage() {
+                SetUpPantheonTrees(jsonPantheon);
+            }
+
+            // ── Pantheon Tree Renderer ────────────────────────────────────────────────────
+
+            function SetUpPantheonTrees(jsonPantheonItems, iconBasePath = "/rbbp/Icons/Pantheon") {
+                // Group items by tree_name
+
+                const treeGroups = new Map();
+                for (const item of jsonPantheonItems) {
+                    const name = item.tree_name ?? "Ungrouped";
+                    if (!treeGroups.has(name)) treeGroups.set(name, []);
+                    treeGroups.get(name).push(item);
+                }
+
+                // Build a flat id→item lookup for line drawing
+
+                // Find or create a root container
+                const root = document.getElementById("treespace") ?? document.body;
+                const root2 = document.getElementById("treespace2") ?? document.body;
+
+                for (const [treeName, rawItems] of treeGroups) {
+                    const items = normalisedPositions(rawItems); // ← here, replaces rawItems from this point on
+                    const itemById = new Map(items.map((item) => [item.id, item]));
+
+                    const wrapper = document.createElement("DIV");
+
+                    wrapper.className = "pantheon-tree-wrapper";
+
+                    const title = document.createElement("H3");
+                    title.className = "pantheon-tree-title";
+                    title.textContent = treeName;
+                    wrapper.appendChild(title);
+
+                    // Two layers — nodes on top, lines behind (same pattern as your hero builder)
+                    const lineHolder = document.createElement("DIV");
+                    lineHolder.className = "pantheon-line-holder";
+                    lineHolder.style.cssText =
+                        "position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;";
+
+                    const nodeHolder = document.createElement("DIV");
+                    nodeHolder.className = "pantheon-node-holder";
+                    nodeHolder.style.cssText = "position:relative;";
+
+                    wrapper.appendChild(lineHolder);
+                    wrapper.appendChild(nodeHolder);
+                    if (treeName.indexOf("Page 2") != -1) {
+                        root2.appendChild(wrapper);
+                    } else {
+                        root.appendChild(wrapper);
+                    }
+
+                    // Render all nodes first so DOM positions exist for line drawing
+                    for (const item of items) {
+                        BuildPantheonNode(item, nodeHolder, iconBasePath);
+                    }
+
+                    // Then draw lines (DOM must exist for both endpoints)
+                    for (const item of items) {
+                        if (!item.required_skills?.length) continue;
+                        for (const req of item.required_skills) {
+                            const source = itemById.get(req.id);
+                            if (source) {
+                                DrawPantheonLine(source, item, lineHolder);
+                            } else {
+                                console.warn(`Pantheon: missing required node "${req.id}" for "${item.id}"`);
+                            }
+                        }
+                    }
+
+                    // Resize wrapper to fit its contents (same as your resizeParentToFitChildren)
+                    resizePantheonWrapper(nodeHolder);
+                }
+            }
+
+            function normalisedPositions(items) {
+                const minX = Math.min(...items.map((i) => i.tree_pos_x));
+                const minY = Math.min(...items.map((i) => i.tree_pos_y));
+                const PAD = 40;
+                return items.map((i) => ({
+                    ...i,
+                    tree_pos_x: i.tree_pos_x - minX + PAD,
+                    tree_pos_y: i.tree_pos_y - minY + PAD
+                }));
+            }
+
+            function BuildPantheonNode(item, holder, iconBasePath) {
+                const node = document.createElement("DIV");
+
+                node.setAttribute("id", "pantheon_" + item.id);
+                node.setAttribute(
+                    "style",
+                    `position:absolute; left:${item.tree_pos_x - 10}px; top:${item.tree_pos_y - 50}px;`
+                );
+                // change background based on type
+
+                if (item.id.endsWith("_trait")) {
+                    node.className = "unittype_ic shape-trait pantheon-node";
+                }
+                if (item.id.endsWith("_origin")) {
+                    node.className = "unittype_ic shape-origin pantheon-node";
+                    const TagIcon = document.createElement("div");
+                    TagIcon.innerHTML = "<hero></hero>";
+                    TagIcon.className = "TypeTag";
+
+                    node.appendChild(TagIcon);
+                }
+                if (item.id.endsWith("_mount") || item.icon.endsWith("_mount")) {
+                    node.className = "unittype_ic shape-mount pantheon-node"; // add shape
+
+                    const TagIcon = document.createElement("div");
+                    TagIcon.innerHTML = "<mountSpecial></mountSpecial>";
+                    TagIcon.className = "TypeTag";
+
+                    node.appendChild(TagIcon);
+                }
+                if (item.icon.endsWith("_banner")) {
+                    node.className = "unittype_ic shape-banner pantheon-node";
+                }
+
+                if (item.id.endsWith("_infusion")) {
+                    node.className = "unittype_ic shape-infusion pantheon-node"; // add shape
+
+                    const TagIcon = document.createElement("div");
+                    TagIcon.innerHTML = "<bindingessence></bindingessence>";
+                    TagIcon.className = "TypeTag";
+
+                    node.appendChild(TagIcon);
+                }
+                if (item.id.endsWith("_weapon")) {
+                    node.className = "unittype_ic shape-weapon pantheon-node"; // add shape
+                    const TagIcon = document.createElement("div");
+                    TagIcon.innerHTML = "<weaponskin></weaponskin>";
+                    TagIcon.className = "TypeTag";
+
+                    node.appendChild(TagIcon);
+                }
+                if (item.id.endsWith("_trinket")) {
+                    node.className = "unittype_ic shape-trinket pantheon-node"; // add shape
+                }
+                if (item.id.endsWith("_outfit") || item.icon.endsWith("_outfit")) {
+                    node.className = "unittype_ic shape-outfit pantheon-node"; // add shape
+                    const TagIcon = document.createElement("div");
+                    TagIcon.innerHTML = "<cosmetic></cosmetic>";
+                    TagIcon.className = "TypeTag";
+
+                    node.appendChild(TagIcon);
+                }
+
+                // Icon
+                const img = document.createElement("IMG");
+                img.className = "empireNodeIcon";
+                img.setAttribute("src", `${iconBasePath}/${item.icon}.png`);
+                img.setAttribute("height", "50px");
+                node.appendChild(img);
+
+                // Tooltip — uses your existing tooltip system if extraLookup is present,
+                // otherwise falls back to the icon name
+
+                const tooltipSpan = document.createElement("SPAN");
+                let title = "";
+                let description = "";
+                if (item.extraLookup) {
+                    // Hook into your existing lookup here if you have one, e.g.:
+                    // tooltipSpan.innerHTML = BuildPantheonTooltip(item.extraLookup);
+                    const lookup = findBy(jsonAllFromPOLocalized, "id", item.extraLookup);
+
+                    let name = "";
+                    let innerText = "";
+                    if (lookup == undefined) {
+                        console.log("couldnt find extralookup " + item.id);
+                        return;
+                    }
+                    if (lookup.name != undefined) {
+                        name = lookup.name;
+                    }
+                    if (lookup.trait_name != undefined) {
+                        name = lookup.trait_name;
+                    }
+                    if (lookup.origin_name != undefined) {
+                        name = lookup.origin_name;
+                    }
+
+                    if (lookup.description != undefined) {
+                        innerText = lookup.description;
+                    }
+                    if (lookup.trait_description != undefined) {
+                        innerText = lookup.trait_description;
+                    }
+                    if (lookup.origin_description != undefined) {
+                        innerText = lookup.origin_description;
+                    }
+
+                    description = innerText;
+                    title = `<span style="color:#d7c297">${name.toUpperCase()}</span>`;
+                } else if (item.extraLookupExplicit) {
+                    const mainName = findBy(jsonAllFromPOLocalized, "id", item.extraLookupExplicit)[item.suffix];
+                    title = `<span style="color:#d7c297">${mainName.toUpperCase()}</span>`;
+                } else {
+                    const mainName = findBy(jsonAllFromPOLocalized, "id", "META_EMPIRE@PROGRESSION_ITEM")[item.id];
+                    if (mainName == undefined) {
+                        console.log("couldnt find " + item.id);
+                        return;
+                    }
+                    title = `<span style="color:#d7c297">${mainName.toUpperCase()}</span>`;
+                }
+
+                tooltipSpan.innerHTML = title + "<br>" + description;
+
+                const imgTooltip = document.createElement("IMG");
+
+                imgTooltip.setAttribute("src", `${iconBasePath}/${item.icon}.png`);
+                imgTooltip.setAttribute("height", "100px");
+                tooltipSpan.appendChild(imgTooltip);
+                addTooltipListeners(img, tooltipSpan); // your existing tooltip fn
+
+                if (item.DLC) {
+                    let newDivForMount = AddDLCTag(item.DLC);
+                    newDivForMount.setAttribute("style", "");
+                    newDivForMount.className = "DLCTAG";
+                    node.appendChild(newDivForMount);
+                }
+
+                holder.appendChild(node);
+            }
+
+            function DrawPantheonLine(source, target, lineHolder) {
+                const sourceEl = document.getElementById("pantheon_" + source.id);
+                const targetEl = document.getElementById("pantheon_" + target.id);
+                if (!sourceEl || !targetEl) return;
+
+                // Centre of each node (offsetLeft/Top + half node size)
+                const NODE_HALF = 25; // half of your ~50px node
+
+                const x1 = source.tree_pos_x + NODE_HALF;
+                const y1 = source.tree_pos_y + NODE_HALF;
+                const x2 = target.tree_pos_x + NODE_HALF;
+                const y2 = target.tree_pos_y + NODE_HALF;
+
+                const dx = x2 - x1;
+                const dy = y2 - y1;
+                const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+                const length = Math.sqrt(dx * dx + dy * dy);
+
+                const line = document.createElement("DIV");
+                line.className = "branch-line"; // reuse your existing CSS class
+                line.dataset.source = source.id;
+                line.dataset.target = target.id;
+                line.setAttribute(
+                    "style",
+                    `position:absolute;` +
+                        `left:${x1}px;` +
+                        `top:${y1}px;` +
+                        `width:${length}px;` +
+                        `transform:rotate(${angle}deg);` +
+                        `transform-origin:0 50%;` +
+                        `background-color:#00b7fdc4;` // dimmer than hero tree — adjust to taste
+                );
+
+                lineHolder.appendChild(line);
+            }
+
+            function resizePantheonWrapper(nodeHolder) {
+                // Same logic as your resizeParentToFitChildren but works on the nodeHolder
+                // since that has the absolutely-positioned children
+                let maxRight = 0,
+                    maxBottom = 0;
+                for (const child of nodeHolder.children) {
+                    maxRight = Math.max(maxRight, child.offsetLeft + child.offsetWidth);
+                    maxBottom = Math.max(maxBottom, child.offsetTop + child.offsetHeight);
+                }
+                const PADDING = 30;
+                nodeHolder.style.width = maxRight + PADDING + "px";
+                nodeHolder.style.height = maxBottom + PADDING + "px";
+            }
+
+            function applyPantheonFilters() {
+                const checkboxes = document.querySelectorAll(".pantheon-filter");
+
+                // Build a set of active types
+                const activeTypes = new Set();
+                checkboxes.forEach((cb) => {
+                    if (cb.checked) activeTypes.add(cb.dataset.type);
+                });
+
+                // Update the "All" checkbox state
+                const allBox = document.getElementById("filterAll");
+                allBox.checked = activeTypes.size === checkboxes.length;
+                allBox.indeterminate = activeTypes.size > 0 && activeTypes.size < checkboxes.length;
+
+                // Dim nodes that don't match any active type
+                document.querySelectorAll(".pantheon-node").forEach((node) => {
+                    const nodeType = getNodeType(node);
+                    const visible = activeTypes.has(nodeType);
+                    node.style.opacity = visible ? "1" : "0.35";
+                    node.style.filter = visible ? "saturate(1)" : "saturate(0)";
+                    node.style.pointerEvents = visible ? "" : "none";
+                });
+            }
+
+            function switchTab(targetId, btn) {
+                // Hide all tree-space divs
+                document.querySelectorAll(".tree-space").forEach((el) => (el.style.display = "none"));
+                // Show the target
+                document.getElementById(targetId).style.display = "";
+                // Update active button
+                document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+                btn.classList.add("active");
+            }
+
+            function toggleAllFilters(checked) {
+                document.querySelectorAll(".pantheon-filter").forEach((cb) => {
+                    cb.checked = checked;
+                });
+                applyPantheonFilters();
+            }
+
+            function getNodeType(node) {
+                // Read the type from the shape-* class, e.g. "shape-infusion" → "infusion"
+                const shapeClass = [...node.classList].find((c) => c.startsWith("shape-"));
+                return shapeClass ? shapeClass.replace("shape-", "") : "unknown";
+            }
+        </script>
+
+        <title>Age of Wonders 4 RbbP - Pantheon Reward Tree</title>
+    </head>
+
+    <body>
+        <div id="scripts"></div>
+        <div id="header"></div>
+
+        <div class="tome_name">Pantheon Rewards</div>
+
+        <div style="height: auto; color: white; text-align: center"></div>
+
+        <div class="textblocktitle">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly">
+                <div id="pantheonFilters">
+                    <label class="filter-toggle-all">
+                        <input type="checkbox" id="filterAll" checked onchange="toggleAllFilters(this.checked)" />
+                        All
+                    </label>
+                    <span class="filter-divider">|</span>
+                    <label class="filter-label filter-trait">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="trait"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Trait
+                    </label>
+                    <label class="filter-label filter-origin">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="origin"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Origin
+                    </label>
+                    <label class="filter-label filter-infusion">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="infusion"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        <bindingessence></bindingessence>Infusion
+                    </label>
+
+                    <label class="filter-label filter-outfit">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="outfit"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        <cosmetic></cosmetic> Outfit
+                    </label>
+                    <label class="filter-label filter-mount">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="mount"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Mount
+                    </label>
+                    <label class="filter-label filter-weapon">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="weapon"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Weapon Skin
+                    </label>
+                    <label class="filter-label filter-trinket">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="trinket"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Trinket
+                    </label>
+                    <label class="filter-label filter-banner">
+                        <input
+                            type="checkbox"
+                            class="pantheon-filter"
+                            data-type="banner"
+                            checked
+                            onchange="applyPantheonFilters()" />
+                        Banner
+                    </label>
+                </div>
+            </div>
+            <div id="pantheonTabs">
+                <button class="tab-btn active" onclick="switchTab('treespace', this)">Page 1</button>
+                <button class="tab-btn" onclick="switchTab('treespace2', this)">Page 2</button>
+            </div>
+        </div>
+
+        <div class="tree-space" id="treespace"></div>
+        <div class="tree-space" id="treespace2" style="display: none"></div>
+    </body>
+</html>
+<style>
+    .wrappers {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        /* overflow-y: auto; */
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .choices {
+        position: absolute;
+        font-size: 30px;
+        z-index: 2;
+    }
+
+    .list-name {
+        width: max-content;
+        padding: 10px;
+    }
+    .list-button {
+        border-width: 3px;
+        border-style: solid;
+        border-image: url(/rbbp/Icons/9slicetooltip.png);
+        border-image-slice: 10 10 10 10;
+        border-image-repeat: stretch;
+        width: 100%;
+        background-color: #111;
+        color: #fff;
+        /* border: none; */
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: normal;
+    }
+
+    .TypeTag {
+        text-transform: none;
+        position: absolute;
+        left: 30px;
+        top: 33px;
+        scale: 1.2;
+    }
+
+    .DLCTAG {
+        text-transform: none;
+        width: 1px;
+        position: relative;
+        height: 20px;
+        left: -55px;
+        top: 14px;
+    }
+
+    .pantheon-tree-wrapper {
+        position: relative;
+        display: inline-block; /* trees sit side-by-side or stack naturally */
+        margin: 10px;
+        vertical-align: top;
+    }
+
+    .pantheon-tree-title {
+        color: #d7c297;
+        font-size: 14px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .pantheon-node {
+        cursor: default; /* no pointer since there's no selection */
+    }
+
+    .selections {
+        width: fit-content;
+
+        height: fit-content;
+
+        color: white;
+        display: inline-block;
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        border-image: url(/rbbp/Icons/9slicetooltip.png);
+        border-image-slice: 10 10 10 10;
+        background-color: black;
+        z-index: 10;
+    }
+    .branch-line {
+        height: 6px;
+        margin-top: -6px;
+        position: absolute;
+
+        transform-origin: left center;
+        background-color: black;
+        background-size: 10px;
+        width: 60px;
+    }
+
+    .dotted-line {
+        height: 4px;
+        margin-top: -6px;
+        position: absolute;
+
+        transform-origin: left center;
+        background-image: url(/rbbp/Icons/Interface/talents-arrow-line-gray.png);
+        background-size: 10px;
+        width: 25px;
+    }
+
+    .tree-grid {
+        position: relative; /* Required for children to be positioned relative to the parent */
+        display: inline-block;
+
+        position: relative;
+    }
+
+    .tree-space {
+        width: max-content;
+          min-height: 1000px;
+        height: max-content;
+        min-width: 1500px;
+        padding-bottom: 200px;
+        position: relative;
+        background-size: cover;
+        background-image: url(/rbbp/Icons/Interface/background_Hero.png);
+    }
+
+    .entry {
+        background-color: transparent;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    /* Default style for the node container */
+    .unittype_ic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+        margin: 10px;
+    }
+
+    /* Square shape */
+    .shape-trait {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fed60b;
+        background-color: #442f14;
+        border-radius: 75px;
+    }
+
+    /* Square shape */
+    .shape-outfit {
+        width: 50px;
+        height: 50px;
+
+        background-size: 55px;
+        background-position: center;
+        background-image: url(/rbbp/Icons/Interface/CosmicHappeningPortal.png);
+    }
+    /* Square shape */
+    .shape-infusion {
+        width: 50px;
+        height: 50px;
+        background-color: #33112a;
+        border-radius: 10px;
+        border: 2px solid #d73636;
+    }
+
+    /* Square shape */
+    .shape-weapon {
+        width: 50px;
+        height: 50px;
+        background-image: url(/rbbp/Icons/Interface/ItemBG.png);
+        background-size: contain;
+    }
+    /* Square shape */
+    .shape-origin {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        background-image: url(/rbbp/Icons/Interface/trait_slot.png);
+    }
+
+    /* shield shape */
+    .shape-banner {
+        background-image: url(/rbbp/Icons/Interface/passive.png);
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Diamond shape */
+    .shape-mount {
+        background-image: url(/rbbp/Icons/Interface/ItemBGActive.png);
+        background-size: contain;
+
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Diamond shape */
+    .shape-trinket {
+        background-image: url(/rbbp/Icons/Interface/pantheonIconBG.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+    }
+
+    .empireNodeIcon {
+    }
+    .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Change this color as needed */
+
+        pointer-events: none;
+    }
+
+    /* To prevent the image inside from rotating along with the diamond shape
+    .shape-diamond img {
+        transform: rotate(-45deg);
+    } */
+
+    .empireNodeIcon:hover {
+        filter: brightness(150%);
+    }
+
+    .selectable {
+        filter: brightness(120%);
+    }
+
+    .blocked {
+        filter: grayscale(100);
+    }
+
+    #pantheonFilters {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        background: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #333;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+
+    .filter-label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #ccc;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 3px;
+        border: 1px solid #444;
+        user-select: none;
+        transition: opacity 0.15s;
+    }
+    .filter-label:has(input:not(:checked)) {
+        opacity: 0.45;
+    }
+    .filter-toggle-all {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #d7c297;
+        font-size: 13px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .filter-divider {
+        color: #555;
+        margin: 0 4px;
+    }
+
+    #pantheonTabs {
+        display: flex;
+        gap: 4px;
+        padding: 8px 16px 0;
+        border-bottom: 2px solid #333;
+        background: rgba(0, 0, 0, 0.4);
+        position: sticky;
+
+        justify-content: center;
+
+        top: 48px; /* sit just below the filter bar */
+        z-index: 19;
+    }
+
+    .tab-btn {
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid transparent;
+        color: #888;
+        font-size: 14px;
+        padding: 8px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: -2px; /* overlap the border-bottom of the container */
+        transition:
+            color 0.15s,
+            border-color 0.15s;
+    }
+
+    .tab-btn:hover {
+        color: #ccc;
+    }
+
+    .tab-btn.active {
+        color: #d7c297;
+        border-bottom-color: #d7c297;
+    }
+
+    /* Colour-coded borders to match your node shapes */
+    .filter-trait {
+        border-color: #dad950;
+    }
+    .filter-outfit {
+        border-color: #979ad7;
+    }
+    .filter-infusion {
+        border-color: #d73684;
+    }
+    .filter-weapon {
+        border-color: #a236d7;
+    }
+    .filter-origin {
+        border-color: #3671d7;
+    }
+    .filter-mount {
+        border-color: #5bc277;
+    }
+    .filter-trinket {
+        border-color: #aaa;
+    }
+    .filter-banner {
+        border-color: #aaa;
+    }
+</style>
+<footer>
+    <br />
+    <br />
+</footer>

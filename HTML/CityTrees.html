@@ -247,7 +247,8 @@
                 productionline: ["workshop", "stonemason", "masonic_hall", "workers_guild"],
                 draftline: ["empty", "blacksmith", "armory", "smiths_guild"],
                 fishline: ["shipyard", "fishmonger", "grand_wharf", "seafarers_guild"],
-                lavaline: ["mineral_extractor", "basalt_excavation", "obsidian_weaponsmith", "volcanologists_guild"]
+                lavaline: ["mineral_extractor", "basalt_excavation", "obsidian_weaponsmith", "volcanologists_guild"],
+                extraLine: ["extraBase"]
             };
 
             const wizardTower = {
@@ -377,13 +378,15 @@
                 treespace.appendChild(parentTomes);
                 parentTomes.setAttribute("style", " position: relative;left: 293px;");
                 GetTree("Tome Buildings", GetTomeBuilds(buildingMap), parentTomes, buildingMap);
-
-                for (const [overrideName, list] of Object.entries(overrideBuildings)) {
+                
+              
+                     for (const [overrideName, list] of Object.entries(overrideBuildings)) {
                     for (const entry of list) {
                         const [base, extra] = entry.split(":");
                         connectBottom(base, extra);
                     }
                 }
+                
 
                 SetLevelUpStuff();
                 updateConnector();
@@ -477,6 +480,7 @@
                     color: "rgb(17, 17, 17)",
                     title: "Mystic School of Attunement"
                 },
+               
                 {
                     key: "dark",
                     color: "rgb(17, 17, 17)",
@@ -526,13 +530,22 @@
                     key: "reaver",
                     color: "rgb(17, 17, 17)",
                     title: "Reaver"
-                }
+                }  ,{
+                    key: "reaver_federate",
+                    color: "rgb(17, 17, 17)",
+                    title: "Reaver Federate"
+                },
+                 {
+                    key: "reaver_imperial",
+                    color: "rgb(17, 17, 17)",
+                    title: "Reaver Imperial"
+                },
             ];
 
             
             
              const overrideBuildings = {
-                /*throne: ["town_hall_i_town_center: throne"],*/
+               /*throne: ["town_hall_i_town_center: throne"],*/
                 feudal: [
                     "town_hall_ii:town_hall_ii_castle",
                     "town_hall_iii:town_hall_iii_citadel",
@@ -593,9 +606,16 @@
                     "mana_obelisk:lodestone_foundry",
                     "town_hall_ii:town_hall_ii_steel_hall",
                     "town_hall_iii:town_hall_iii_chained_spire",
-                    "iii_unlock:extraction_nexus",
                     "town_hall_iv:town_hall_iv_ironclad_citadel"
                 ],
+                  reaver_imperial: [
+                     "iii_unlock_2:imperial_academy",
+                      "extraBase:spoils_of_war"
+                  ],
+                       reaver_federate: [
+                     "iii_unlock:extraction_nexus",
+                           
+                  ],
                 primal: [
                     "workshop:woodcarvers_workshop",
                     "stonemason:stonestele",
@@ -629,6 +649,8 @@
                    nomad_conquerors: ["store_house:raider_tents", "granary:trophy_stores", "iii_unlock:conquerors_tower"],
                   nomad_scavengers: ["workshop:salvage_shop", "blacksmith:loot_armory", "iii_unlock_2:scavenger_vault"],
             };
+            
+             
 
             function findResources(text) {
                 const regex = /\+\d+%?\s*<([^>]+)>/g;
@@ -661,8 +683,7 @@
                 const overrideMap = {};
 
                 //
-               // if(showBetaTooltip.checked){
-                
+          
                      for (const [overrideName, list] of Object.entries(overrideBuildings)) {
                     for (const entry of list) {
                         const [base, extra] = entry.split(":");
@@ -670,6 +691,9 @@
                         overrideMap[base].push({ overrideName, extra });
                     }
                 }
+               
+                
+                   
                
                
 
@@ -1026,7 +1050,7 @@
             }
         </script>
 
-        <title>Age of Wonders 4 Database - City Tree</title>
+        <title>Age of Wonders 4 RbbP - City Tree</title>
     </head>
 
     <body>

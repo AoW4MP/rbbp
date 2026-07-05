@@ -22,7 +22,9 @@ const filterMap = {
     worldStructuresCheck: "ws",
     cityStructuresCheck: "cs",
     factionTraitCheck: "ft",
-    empireTreeCheck: "et"
+    empireTreeCheck: "et",
+    artifactCheck : "ar",
+    infusionsCheck: "i"
 };
 
 const input = document.getElementById("searchInput");
@@ -40,6 +42,7 @@ const resistancesChecked = document.getElementById("resistancesCheck");
 // rest checks
 const spellsChecked = document.getElementById("spellsCheck");
 const siegeChecked = document.getElementById("siegeCheck");
+const artifactChecked = document.getElementById("artifactCheck");
 const empireTreeChecked = document.getElementById("empireTreeCheck");
 const heroSkillChecked = document.getElementById("heroSkillsCheck");
 const factionTraitsChecked = document.getElementById("factionTraitCheck");
@@ -47,6 +50,7 @@ const heroItemsChecked = document.getElementById("heroItemsCheck");
 const worldStructuresChecked = document.getElementById("worldStructuresCheck");
 const cityStructuresChecked = document.getElementById("cityStructuresCheck");
 const ambitionsChecked = document.getElementById("ambitionsCheck");
+const infusionsChecked = document.getElementById("infusionsCheck");
 
 const deprecatedCheckList = ["000003e300005fe2", "000003e300005fe5", "000003e300005fe7", "000003e300005fe6"];
 const invalidUnitCheckList = ["fracture", "townsman"];
@@ -144,6 +148,8 @@ function depCheckResID(resid) {
     return false;
 }
 
+
+
 function DLCCheck(fieldToSearch) {
     return fieldToSearch.toUpperCase() in dlcMap;
 }
@@ -186,7 +192,7 @@ function returnUnitList(fieldToSearch) {
     const results = new Set();
 
     if (DLCCheck(fieldToSearch)) {
-        return DLCAdd(jsonUnits, fieldToSearch, "id", false, depCheck = true);
+        return DLCAdd(jsonUnits, fieldToSearch, "id", false, (depCheck = true));
     }
 
     // --- Name-based search ---
@@ -268,6 +274,64 @@ function returnSpellList(fieldToSearch) {
         if (name.includes(search) || description.includes(search)) {
             const spellEN = findBy(jsonSpells, "resid", spell.resid);
             results.add(spellEN.id);
+        }
+    }
+
+    return Array.from(results);
+}
+
+function returnInfusionsList(fieldsToSearch, allMatchingUnitAbilities) {
+    if (!fieldsToSearch) return [];
+
+    const search = fieldsToSearch.replaceAll("_", " ").toUpperCase();
+    const results = new Set();
+
+    // const arrayToTest = [];
+
+    if (DLCCheck(fieldsToSearch)) {
+        return DLCAdd(jsonItemForgeUpgrades, fieldsToSearch, null, true);
+    }
+
+    for (const trait of jsonItemForgeUpgradesLocalized) {
+        const name = trait.name?.toUpperCase() || "";
+        const description = Sanitize(trait.description || "").toUpperCase();
+        if ("abilities" in trait) {
+           for (const slug of trait.abilities) {
+         //      console.log(slug);
+                if (allMatchingUnitAbilities.has(slug.slug)) {
+                    const traitEN = findBy(jsonItemForgeUpgrades, "resid", trait.resid);
+                    results.add(traitEN);
+                }
+            }
+        }
+
+        if (name.includes(search) || description.includes(search)) {
+            const traitEN = findBy(jsonItemForgeUpgrades, "resid", trait.resid);
+            results.add(traitEN);
+            // arrayToTest.push(traitEN);
+        }
+    }
+    //return arrayToTest;
+    return Array.from(results);
+}
+
+function returnArtifactsList(fieldsToSearch){
+      if (!fieldsToSearch) return [];
+
+    const search = fieldsToSearch.replaceAll("_", " ").toUpperCase();
+    const results = new Set();
+
+    if (DLCCheck(fieldsToSearch)) {
+        return DLCAdd(jsonRelics, fieldsToSearch, null, true);
+    }
+
+    for (const trait of jsonRelics) {
+        const name = trait.name?.toUpperCase() || "";
+        const description = Sanitize(trait.description || "").toUpperCase();
+
+        if (name.includes(search) || description.includes(search)) {
+           // const traitEN = findBy(jsonHeroAmbitions, "icon", trait.icon);
+            results.add(trait);
         }
     }
 
@@ -372,11 +436,11 @@ function returnTraitsList(fieldToSearch, locToCheck) {
     return Array.from(results);
 }
 
-function returnSkillList(fieldToSearch) {
+function returnSkillList(fieldToSearch, listMatchingUnitAbilities) {
     if (!fieldToSearch) return [];
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
-    const heroSlugs = new Set();
+  //  const heroSlugs = new Set();
     const results = new Set();
 
     if (DLCCheck(fieldToSearch)) {
@@ -386,7 +450,7 @@ function returnSkillList(fieldToSearch) {
     const matches = (text) => text && text.toUpperCase().includes(search);
 
     // Collect matching unit abilities
-    for (const ability of jsonUnitAbilitiesLocalized) {
+   /* for (const ability of jsonUnitAbilitiesLocalized) {
         if (matches(ability.description) || matches(ability.name)) {
             const abilityEN = findBy(jsonUnitAbilities, "id", ability.id);
             heroSlugs.add(ability.slug);
@@ -402,14 +466,15 @@ function returnSkillList(fieldToSearch) {
                 }
             }
         }
-    }
+    }*/
+
     // console.log(heroSlugs);
 
     // Match hero skills
     for (const skill of jsonHeroSkillsLocalized) {
         // Ability match
-        if (heroSlugs.size && Array.isArray(skill.abilities)) {
-            if (skill.abilities.some((a) => heroSlugs.has(a.slug))) {
+        if (listMatchingUnitAbilities.size && Array.isArray(skill.abilities)) {
+            if (skill.abilities.some((a) => listMatchingUnitAbilities.has(a.slug))) {
                 const skillEN = findBy(jsonHeroSkills, "id", skill.id);
 
                 results.add(skillEN);
@@ -429,11 +494,11 @@ function returnSkillList(fieldToSearch) {
     return Array.from(results);
 }
 
-function returnEquipList(fieldToSearch) {
+function returnEquipList(fieldToSearch, listofAllMatchingUnitAbilities) {
     if (!fieldToSearch) return [];
 
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
-    const equipSet = new Set();
+   
     const resultsSet = new Set();
 
     if (DLCCheck(fieldToSearch)) {
@@ -441,30 +506,13 @@ function returnEquipList(fieldToSearch) {
     }
 
     // Collect abilities matching the search
-    for (const ability of jsonUnitAbilitiesLocalized) {
-        const matches = (text) => text && text.toUpperCase().includes(search);
-
-        if (matches(ability.description) || matches(ability.name)) {
-            const abilityEN = findBy(jsonUnitAbilities, "slug", ability.slug);
-
-            equipSet.add(abilityEN.slug);
-        }
-
-        if (Array.isArray(ability.modifiers)) {
-            for (const mod of ability.modifiers) {
-                if (matches(mod.description) || matches(mod.name)) {
-                    const abilityEN = findBy(jsonUnitAbilities, "slug", ability.slug);
-
-                    equipSet.add(abilityEN.slug);
-                    break; // stop early if already matched
-                }
-            }
-        }
-    }
+    
+    
+   
     // Match items with those abilities
 
     for (const item of jsonHeroItemsLocalized) {
-        if (item.ability_slugs?.some((a) => equipSet.has(a.slug))) {
+        if (item.ability_slugs?.some((a) => listofAllMatchingUnitAbilities.has(a.slug))) {
             const itemEN = findBy(jsonHeroItems, "resid", item.resid);
 
             resultsSet.add(itemEN);
@@ -579,20 +627,25 @@ function searchAll(keyword) {
 
     // return all DLC stuff
 
+    const listMatchingUnitAbilities = GetAllMatchingAbilities(fields[0]);
+  //  console.log(listMatchingUnitAbilities);
+
     if (unitsChecked.checked) {
         listSet = returnUnitList(fields[0]);
-        listSet = returnAbilitiesUnits(fields[0], listSet);
+        listSet = returnAbilitiesUnits(fields[0], listSet, listMatchingUnitAbilities);
     }
     let list = Array.from(listSet);
 
     let listspells = spellsChecked.checked ? returnSpellList(fields[0]) : "";
     let listSiegeProj = siegeChecked.checked ? returnSiegeProj(fields[0]) : "";
-    let listskills = heroSkillChecked.checked ? returnSkillList(fields[0]) : "";
+    let listskills = heroSkillChecked.checked ? returnSkillList(fields[0], listMatchingUnitAbilities) : "";
 
     let listStructures = cityStructuresChecked.checked ? returnStructure(fields[0]) : "";
     let listEmpireTree = empireTreeChecked.checked ? returnEmpireTreeList(fields[0]) : "";
-    let listEquip = heroItemsChecked.checked ? returnEquipList(fields[0]) : "";
+    let listArtifacts = artifactChecked.checked ? returnArtifactsList(fields[0]) : "";
+    let listEquip = heroItemsChecked.checked ? returnEquipList(fields[0],listMatchingUnitAbilities) : "";
     let listAmbtions = ambitionsChecked.checked ? returnAmbitionsList(fields[0]) : "";
+    let listInfusions = infusionsChecked.checked ? returnInfusionsList(fields[0], listMatchingUnitAbilities) : "";
     // javascript exports
     // get all localization and then back
     let listOfLocEntries = returnLocList(fields[0]);
@@ -614,9 +667,9 @@ function searchAll(keyword) {
     });
 
     if (list.length > 0) {
-           SetCollapsibleButtonsAndDivs("Units", list, "unit");
-    SetButtonsAndDivs(list, "Units" + "-button","searchUnit", undefined, undefined, undefined);
-     //   SetButtonsAndDivs(list, "buttonHolder", "searchUnit", undefined, undefined, undefined);
+        SetCollapsibleButtonsAndDivs("Units", list, "unit");
+        SetButtonsAndDivs(list, "Units" + "-button", "searchUnit", undefined, undefined, undefined);
+        //   SetButtonsAndDivs(list, "buttonHolder", "searchUnit", undefined, undefined, undefined);
     }
     if (listspells.length > 0) {
         SetCollapsibleButtonsAndDivs("Spells", listspells, "searchSpell");
@@ -636,8 +689,15 @@ function searchAll(keyword) {
     if (listEquip.length > 0) {
         SetCollapsibleButtonsAndDivs("Hero Equipment", listEquip, "searchItem");
     }
+    if (listInfusions.length > 0) {
+        SetCollapsibleButtonsAndDivs("Item Forge Infusions", listInfusions, "searchInfusion");
+    }
     if (listEmpireTree.length > 0) {
         SetCollapsibleButtonsAndDivs("Empire Tree", listEmpireTree, "searchEmpire");
+    }
+    
+    if(listArtifacts.length > 0){
+         SetCollapsibleButtonsAndDivs("Artifacts/Secret Spells", listArtifacts, "searchRelics");
     }
 
     if (listTraits.length > 0) {
@@ -648,10 +708,10 @@ function searchAll(keyword) {
     }
 
     SetLevelUpStuff();
-      SetCollapsibleStuff();
+    SetCollapsibleStuff();
 }
 
-function returnAbilitiesUnits(fieldToSearch, unitSetToCheckTo) {
+function GetAllMatchingAbilities(fieldToSearch) {
     let abilitiesList = new Set();
     const search = fieldToSearch.replaceAll("_", " ").toUpperCase();
 
@@ -674,9 +734,12 @@ function returnAbilitiesUnits(fieldToSearch, unitSetToCheckTo) {
             }
         }
     }
+    return abilitiesList;
+}
 
+function returnAbilitiesUnits(fieldToSearch, unitSetToCheckTo, allMatchedAbilitiesList) {
     let returnList = new Set();
-    for (const slug of abilitiesList) {
+    for (const slug of allMatchedAbilitiesList) {
         findUnitWithAbility(slug, returnList);
     }
 

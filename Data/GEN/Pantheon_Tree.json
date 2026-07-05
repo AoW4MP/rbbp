@@ -1,0 +1,2745 @@
+[
+ {
+  "icon": "frozen_realm",
+  "tree_pos_x": 0,
+  "id": "frozen_realm",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 0,
+  "extraLookupExplicit": "META_EMPIRE@REALM_FROZEN_REALM",
+  "suffix": "template_name",
+  "required_skills": []
+ },
+ {
+  "icon": "realm_of_city_states",
+  "tree_pos_x": 0,
+  "id": "realm_of_city_states",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 75,
+  "extraLookupExplicit": "META_EMPIRE@REALM_CITY_STATES",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "frozen_realm"
+   }
+  ]
+ },
+ {
+  "icon": "primordial_realm",
+  "tree_pos_x": 0,
+  "id": "primordial_realm",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 150,
+  "extraLookupExplicit": "META_EMPIRE@REALM_YOUNG_REALM",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "realm_of_city_states"
+   }
+  ]
+ },
+ {
+  "icon": "astral_touched_realm",
+  "tree_pos_x": 0,
+  "id": "astral_touched_realm",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 225,
+  "extraLookupExplicit": "META_EMPIRE@REALM_ASTRALTOUCHED_REALM",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "primordial_realm"
+   }
+  ]
+ },
+ {
+  "icon": "deep_dark_realm",
+  "tree_pos_x": 0,
+  "id": "deep_dark_realm",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 300,
+  "extraLookupExplicit": "META_EMPIRE@REALM_DEEP_DARK",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "astral_touched_realm"
+   }
+  ]
+ },
+ {
+  "icon": "realm_of_immortals",
+  "tree_pos_x": 0,
+  "id": "realm_of_immortals",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 375,
+  "extraLookupExplicit": "META_EMPIRE@REALM_REALM_OF_IMMORTALS",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "deep_dark_realm"
+   }
+  ]
+ },
+ {
+  "icon": "desolate_realm",
+  "tree_pos_x": 0,
+  "id": "desolate_realm",
+  "tree_name": "Page 1 Realms",
+  "tree_pos_y": 450,
+  "extraLookupExplicit": "META_EMPIRE@REALM_DESOLATED_REALM",
+  "suffix": "template_name",
+  "required_skills": [
+   {
+    "id": "realm_of_immortals"
+   }
+  ]
+ },
+ {
+  "icon": "barbaric_warlord_head_outfit",
+  "tree_pos_x": 0,
+  "id": "barbaric_warlord_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "barbaric_warlord_banner",
+  "tree_pos_x": 0,
+  "id": "barbaric_warlord_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 75,
+  "required_skills": [
+   {
+    "id": "barbaric_warlord_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "barbaric_warlord_cape_outfit",
+  "tree_pos_x": 0,
+  "id": "barbaric_warlord_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "barbaric_warlord_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "barbaric_warlord_origin",
+  "tree_pos_x": 0,
+  "id": "barbaric_warlord_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_BARBARIC_WARLORD",
+  "required_skills": [
+   {
+    "id": "barbaric_warlord_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "arch_mage_head_outfit",
+  "tree_pos_x": 75,
+  "id": "arch_mage_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "wizard_banner",
+  "tree_pos_x": 75,
+  "id": "wizard_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 75,
+  "required_skills": [
+   {
+    "id": "arch_mage_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "arch_mage_cape_outfit",
+  "tree_pos_x": 75,
+  "id": "arch_mage_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "wizard_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "mana_addicts",
+  "tree_pos_x": 75,
+  "id": "mana_addicts_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_WIZARD",
+  "required_skills": [
+   {
+    "id": "arch_mage_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "knight_head_outfit",
+  "tree_pos_x": 150,
+  "id": "knight_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "knight_banner",
+  "tree_pos_x": 150,
+  "id": "knight_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 75,
+  "required_skills": [
+   {
+    "id": "knight_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "knight_cape_outfit",
+  "tree_pos_x": 150,
+  "id": "knight_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "knight_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "tyrant_knight_origin",
+  "tree_pos_x": 150,
+  "id": "tyrant_knight_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_KNIGHT",
+  "required_skills": [
+   {
+    "id": "knight_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "ranger_cape_outfit",
+  "tree_pos_x": -50,
+  "id": "ranger_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "barbaric_warlord_origin"
+   }
+  ]
+ },
+ {
+  "icon": "ranger_banner",
+  "tree_pos_x": -50,
+  "id": "ranger_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "ranger_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "ranger_crown_outfit",
+  "tree_pos_x": -50,
+  "id": "ranger_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "required_skills": [
+   {
+    "id": "ranger_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "talented_collectors",
+  "tree_pos_x": -50,
+  "id": "talented_collectors_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_RANGER",
+  "required_skills": [
+   {
+    "id": "ranger_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "cryomancer_cape_outfit",
+  "tree_pos_x": -100,
+  "id": "cryomancer_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "required_skills": [
+   {
+    "id": "talented_collectors_trait"
+   }
+  ]
+ },
+ {
+  "icon": "cryomancer_banner",
+  "tree_pos_x": -100,
+  "id": "cryomancer_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "cryomancer_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "cryomancer_crown_outfit",
+  "tree_pos_x": -100,
+  "id": "cryomancer_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "cryomancer_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "cryomancer_origin",
+  "tree_pos_x": -100,
+  "id": "cryomancer_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_CRYOMANCER",
+  "required_skills": [
+   {
+    "id": "cryomancer_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "druid_cape_outfit",
+  "tree_pos_x": 25,
+  "id": "druid_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "barbaric_warlord_origin"
+   },
+   {
+    "id": "mana_addicts_trait"
+   }
+  ]
+ },
+ {
+  "icon": "druid_icon_banner",
+  "tree_pos_x": 25,
+  "id": "druid_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "druid_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "druid_head_outfit",
+  "tree_pos_x": 25,
+  "id": "druid_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "required_skills": [
+   {
+    "id": "druid_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "druid_origin",
+  "tree_pos_x": 25,
+  "id": "druid_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_DRUID",
+  "required_skills": [
+   {
+    "id": "druid_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "geomancer_cape_outfit",
+  "tree_pos_x": -25,
+  "id": "geomancy_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "required_skills": [
+   {
+    "id": "druid_origin"
+   },
+   {
+    "id": "talented_collectors_trait"
+   }
+  ]
+ },
+ {
+  "icon": "geomancer_banner",
+  "tree_pos_x": -25,
+  "id": "geomancer_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "geomancy_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "geomancy_head_outfit",
+  "tree_pos_x": -25,
+  "id": "geomancy_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "geomancer_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "geomancer_origin",
+  "tree_pos_x": -25,
+  "id": "geomancer_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_GEOMANCER",
+  "required_skills": [
+   {
+    "id": "geomancy_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "prophet_cape_outfit",
+  "tree_pos_x": 100,
+  "id": "prophet_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "tyrant_knight_origin"
+   },
+   {
+    "id": "mana_addicts_trait"
+   }
+  ]
+ },
+ {
+  "icon": "prophet_banner",
+  "tree_pos_x": 100,
+  "id": "prophet_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "prophet_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "prophet_head_outfit",
+  "tree_pos_x": 100,
+  "id": "prophet_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "required_skills": [
+   {
+    "id": "prophet_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "bannerlords",
+  "tree_pos_x": 100,
+  "id": "bannerlords_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_PROPHET",
+  "required_skills": [
+   {
+    "id": "prophet_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "necromancer_cape_outfit",
+  "tree_pos_x": 50,
+  "id": "necromancer_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "required_skills": [
+   {
+    "id": "druid_origin"
+   },
+   {
+    "id": "bannerlords_trait"
+   }
+  ]
+ },
+ {
+  "icon": "necromancer_banner",
+  "tree_pos_x": 50,
+  "id": "necromancer_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "necromancer_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "necromancer_head_outfit",
+  "tree_pos_x": 50,
+  "id": "necromancer_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "necromancer_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "necromancer_origin",
+  "tree_pos_x": 50,
+  "id": "necromancer_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_NECROMANCER",
+  "required_skills": [
+   {
+    "id": "necromancer_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "warlock_cape_outfit",
+  "tree_pos_x": 125,
+  "id": "warlock_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "required_skills": [
+   {
+    "id": "perfectionist_artisans_trait"
+   },
+   {
+    "id": "bannerlords_trait"
+   }
+  ]
+ },
+ {
+  "icon": "warlock_banner",
+  "tree_pos_x": 125,
+  "id": "warlock_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "warlock_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "warlock_head_outfit",
+  "tree_pos_x": 125,
+  "id": "warlock_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "warlock_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "chosen_destroyers_trait",
+  "tree_pos_x": 125,
+  "id": "chosen_destroyers_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_WARLOCK",
+  "required_skills": [
+   {
+    "id": "warlock_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "artisan_cape_outfit",
+  "tree_pos_x": 175,
+  "id": "artisan_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "tyrant_knight_origin"
+   },
+   {
+    "id": "captain_hero_origin"
+   }
+  ]
+ },
+ {
+  "icon": "artisan_banner",
+  "tree_pos_x": 175,
+  "id": "artisan_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "artisan_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "artisan_head_outfit",
+  "tree_pos_x": 175,
+  "id": "artisan_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "required_skills": [
+   {
+    "id": "artisan_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "perfectionist_artisans",
+  "tree_pos_x": 175,
+  "id": "perfectionist_artisans_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_ARTISAN",
+  "required_skills": [
+   {
+    "id": "artisan_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "pirates_icon_banner",
+  "tree_pos_x": 250,
+  "id": "pirates_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "veteran_hero_origin",
+  "tree_pos_x": 250,
+  "id": "veteran_hero_origin",
+  "tree_name": "Page 1 Left",
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_VETERAN",
+  "tree_pos_y": 75,
+  "required_skills": [
+   {
+    "id": "pirates_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "commonwealth_philosophers_banner",
+  "tree_pos_x": 280,
+  "id": "commonwealth_philosophers_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "veteran_hero_origin"
+   }
+  ]
+ },
+ {
+  "icon": "commonwealth_remnant_banner",
+  "tree_pos_x": 210,
+  "id": "commonwealth_remnant_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "veteran_hero_origin"
+   }
+  ]
+ },
+ {
+  "icon": "captain_hero_origin",
+  "tree_pos_x": 250,
+  "id": "captain_hero_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_CAPTAINS_BLADE_AND_SHOT",
+  "required_skills": [
+   {
+    "id": "commonwealth_remnant_icon_name"
+   },
+   {
+    "id": "commonwealth_philosophers_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "crowmaster_origin",
+  "tree_pos_x": 400,
+  "id": "crowmaster_origin",
+  "tree_name": "Page 1 Left",
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_CROWMASTER",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "primal_good_banner",
+  "tree_pos_x": 400,
+  "id": "primal_good_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 75,
+  "required_skills": [
+   {
+    "id": "crowmaster_origin"
+   }
+  ]
+ },
+ {
+  "icon": "primal_keeper_head_outfit",
+  "tree_pos_x": 350,
+  "id": "primal_keeper_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "primal_good_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "primal_marauder_head_outfit",
+  "tree_pos_x": 450,
+  "id": "primal_marauder_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 150,
+  "required_skills": [
+   {
+    "id": "primal_good_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "primal_evil_banner",
+  "tree_pos_x": 400,
+  "id": "primal_evil_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 225,
+  "required_skills": [
+   {
+    "id": "primal_marauder_head_name"
+   },
+   {
+    "id": "primal_keeper_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "relentless_crusaders_trait",
+  "tree_pos_x": 325,
+  "id": "relentless_crusaders_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_RELENTLESS_CRUSADERS",
+  "required_skills": [
+   {
+    "id": "primal_evil_icon_name"
+   },
+   {
+    "id": "captain_hero_origin"
+   }
+  ]
+ },
+ {
+  "icon": "krazura_banner",
+  "tree_pos_x": 290,
+  "id": "krazura_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "relentless_crusaders_trait"
+   }
+  ]
+ },
+ {
+  "icon": "avian_reavers_banner",
+  "tree_pos_x": 375,
+  "id": "avian_reavers_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "required_skills": [
+   {
+    "id": "relentless_crusaders_trait"
+   }
+  ]
+ },
+ {
+  "icon": "merciless_slavers_trait",
+  "tree_pos_x": 325,
+  "id": "merciless_slavers_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_MERCILESS_SLAVERS",
+  "required_skills": [
+   {
+    "id": "avian_reavers_icon_name"
+   },
+   {
+    "id": "krazura_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "hunter_origin",
+  "tree_pos_x": 325,
+  "id": "hunter_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_HUNTERS_CROSSBOW",
+  "required_skills": [
+   {
+    "id": "merciless_slavers_trait"
+   }
+  ]
+ },
+ {
+  "icon": "rogue_cape_outfit",
+  "tree_pos_x": 275,
+  "id": "rogue_cape_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "required_skills": [
+   {
+    "id": "hunter_origin"
+   },
+   {
+    "id": "perfectionist_artisans_trait"
+   }
+  ]
+ },
+ {
+  "icon": "rogue_banner",
+  "tree_pos_x": 275,
+  "id": "rogue_icon_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "rogue_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "rogue_head_outfit",
+  "tree_pos_x": 275,
+  "id": "rogue_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "rogue_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "silver_tongue_trait",
+  "tree_pos_x": 275,
+  "id": "silver_tongue_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_ROGUE",
+  "required_skills": [
+   {
+    "id": "rogue_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "druidic_terraformers_trait",
+  "tree_pos_x": 425,
+  "id": "druidic_terraformers_trait",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_DRUID",
+  "required_skills": [
+   {
+    "id": "hunter_origin"
+   },
+   {
+    "id": "umbral_warrior_origin"
+   }
+  ]
+ },{
+  "icon": "tiger_mount",
+  "tree_pos_x": 425,
+  "id": "primal_tiger_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "druidic_terraformers_trait"
+   }
+  ]
+ },{
+  "icon": "lion_mount",
+  "tree_pos_x": 350,
+  "id": "primal_lion_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "druidic_terraformers_trait"
+   }
+  ]
+ },{
+  "icon": "panther_mount",
+  "tree_pos_x": 500,
+  "id": "primal_panther_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 675,
+  "required_skills": [
+   {
+    "id": "druidic_terraformers_trait"
+   }
+  ]
+ },{
+  "icon": "stag_mount",
+  "tree_pos_x": 375,
+  "id": "primal_stag_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "primal_lion_mount_name"
+   }, {
+    "id": "primal_tiger_mount_name"
+   }
+  ]
+ },{
+  "icon": "zebra_mount",
+  "tree_pos_x": 450,
+  "id": "primal_zebra_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 750,
+  "required_skills": [
+   {
+    "id": "primal_panther_mount_name"
+   }, {
+    "id": "primal_tiger_mount_name"
+   }
+  ]
+ },{
+  "icon": "warhound_mount",
+  "tree_pos_x": 425,
+  "id": "primal_warhound_mount_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 825,
+  "required_skills": [
+   {
+    "id": "primal_zebra_mount_name"
+   }, {
+    "id": "primal_stag_mount_name"
+   }
+  ]
+ },{
+  "icon": "godir_head_outfit",
+  "tree_pos_x": 150,
+  "id": "godir_head_name",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 975,
+  "required_skills": [
+   {
+    "id": "primal_warhound_mount_name"
+   }, {
+    "id": "silver_tongue_trait"
+   }, {
+    "id": "chosen_destroyers_trait"
+   }, {
+    "id": "necromancer_origin"
+   }, {
+    "id": "geomancer_origin"
+   }, {
+    "id": "cryomancer_origin"
+   }
+  ]
+ },
+ {
+  "icon": "umbral_lasher_origin",
+  "tree_pos_x": 500,
+  "id": "umbral_lasher_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_LASHER",
+  "required_skills": [
+   {
+    "id": "primal_evil_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "umbral_demonslayer_origin",
+  "tree_pos_x": 500,
+  "id": "umbral_demonslayer_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 375,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_DEMONSLAYER",
+  "required_skills": [
+   {
+    "id": "umbral_lasher_origin"
+   }
+  ]
+ },
+ {
+  "icon": "umbral_direcaster_origin",
+  "tree_pos_x": 500,
+  "id": "umbral_direcaster_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_UMBRAL_DIRECASTER",
+  "required_skills": [
+   {
+    "id": "umbral_demonslayer_origin"
+   }
+  ]
+ },
+ {
+  "icon": "umbral_warrior_origin",
+  "tree_pos_x": 500,
+  "id": "umbral_warrior_origin",
+  "tree_name": "Page 1 Left",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_UMBRAL_WARRIOR",
+  "required_skills": [
+   {
+    "id": "umbral_direcaster_origin"
+   }
+  ]
+ },
+ {
+  "icon": "root_lance",
+  "tree_pos_x": 0,
+  "id": "root_lance_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 0,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@LANCE_GREEN",
+  "required_skills": []
+ },
+ {
+  "icon": "eagle_bow_weapon",
+  "tree_pos_x": -50,
+  "id": "eagle_bow_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@BOW_EAGLE",
+  "required_skills": [ {
+    "id": "root_lance_weapon"
+   }]
+ }, {
+  "icon": "root_crossbow_weapon",
+  "tree_pos_x": 50,
+  "id": "root_crossbow_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@CROSSBOW_RICOCHET",
+  "required_skills": [ {
+    "id": "root_lance_weapon"
+   }]
+ },{
+  "icon": "staff_of_decay_weapon",
+  "tree_pos_x": 0,
+  "id": "staff_of_decay_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 150,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_DECAY",
+  "required_skills": [{
+    "id": "root_crossbow_weapon"
+   },{
+    "id": "eagle_bow_weapon"
+   }]
+ },{
+  "icon": "druid_chestplate_trinket",
+  "tree_pos_x": -50,
+  "id": "druid_chestplate_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@ARMOR_VITALITY",
+  "required_skills": [ {
+    "id": "staff_of_decay_weapon"
+   }]
+ }, {
+  "icon": "seed_worldtree_trinket",
+  "tree_pos_x": 50,
+  "id": "seed_worldtree_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MISC_SEED_YGGRADSYL",
+  "required_skills": [ {
+    "id": "staff_of_decay_weapon"
+   }]
+ },{
+  "icon": "staff_of_blossoms_weapon",
+  "tree_pos_x": 0,
+  "id": "staff_of_blossoms_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_BLOSSOMS",
+  "required_skills": [{
+    "id": "druid_chestplate_trinket"
+   },{
+    "id": "seed_worldtree_trinket"
+   }]
+ },{
+  "icon": "peasant_polearm_weapon",
+  "tree_pos_x": 75,
+  "id": "peasant_polearm_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 375,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@POLEARM_PEASANT",
+  "required_skills": [{
+    "id": "staff_of_blossoms_weapon"
+   },{
+    "id": "ramhead_greathammer_weapon"
+   }]
+ },{
+  "icon": "assassins_dagger_trinket",
+  "tree_pos_x": 25,
+  "id": "assassins_dagger_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 450,
+  "extraLookup": "HERO_ITEM@DAGGER01",
+  "required_skills": [{
+    "id": "peasant_polearm_weapon"
+   }]
+ },{
+  "icon": "demon_mask_trinket",
+  "tree_pos_x": 125,
+  "id": "demon_mask_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MASK_DEMORALIZING",
+  "required_skills": [{
+    "id": "peasant_polearm_weapon"
+   }]
+ },{
+  "icon": "spiked_shield_weapon",
+  "tree_pos_x": 75,
+  "id": "spiked_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_SPIKED",
+  "required_skills": [{
+    "id": "demon_mask_trinket"
+   },{
+    "id": "assassins_dagger_trinket"
+   }]
+ },{
+  "icon": "ring_of_murder_trinket",
+  "tree_pos_x": 25,
+  "id": "ring_of_murder_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_MURDER",
+  "required_skills": [{
+    "id": "spiked_shield_weapon"
+   }]
+ },{
+  "icon": "ring_of_serpents_trinket",
+  "tree_pos_x": 125,
+  "id": "ring_of_serpents_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_POISON_IMMUNITY",
+  "required_skills": [{
+    "id": "spiked_shield_weapon"
+   }]
+ },{
+  "icon": "skull_shield_weapon",
+  "tree_pos_x": 75,
+  "id": "skull_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 675,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_SKULL_HORN",
+  "required_skills": [{
+    "id": "ring_of_murder_trinket"
+   },{
+    "id": "ring_of_serpents_trinket"
+   }]
+ },{
+  "icon": "golden_greatsword_weapon",
+  "tree_pos_x": 0,
+  "id": "golden_greatsword_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 750,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GREATSWORD_GOLDEN",
+  "required_skills": [{
+    "id": "skull_shield_weapon"
+   }]
+ },
+ {
+  "icon": "magnificent_crown_trinket",
+  "tree_pos_x": -50,
+  "id": "magnificent_crown_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@CROWN_ANON",
+  "required_skills": [ {
+    "id": "golden_greatsword_weapon"
+   }]
+ }, {
+  "icon": "golden_quill_trinket",
+  "tree_pos_x": 50,
+  "id": "golden_quill_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MISC_QUILL",
+  "required_skills": [ {
+    "id": "golden_greatsword_weapon"
+   }]
+ },{
+  "icon": "staff_of_radiance_weapon",
+  "tree_pos_x": 0,
+  "id": "staff_of_radiance_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 900,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_RADIANCE",
+  "required_skills": [{
+    "id": "magnificent_crown_trinket"
+   },{
+    "id": "golden_quill_trinket"
+   }]
+ },{
+  "icon": "golden_crossbow_weapon",
+  "tree_pos_x": 0,
+  "id": "golden_crossbow_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 975,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@CROSSBOW_SKYPIERCER",
+  "required_skills": [{
+    "id": "staff_of_radiance_weapon"
+   }]
+ },{
+  "icon": "gilded_shield_weapon",
+  "tree_pos_x": 0,
+  "id": "gilded_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 1050,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_GOLDEN_GOLEM",
+  "required_skills": [{
+    "id": "golden_crossbow_weapon"
+   }]
+ },
+ {
+  "icon": "punisher_halberd",
+  "tree_pos_x": 175,
+  "id": "punisher_halberd_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 0,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@POLEARM_HALBERD",
+  "required_skills": []
+ },{
+  "icon": "juggernaut_greaves_trinket",
+  "tree_pos_x": 125,
+  "id": "juggernaut_greaves_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GREAVES_JUGGERNAUT",
+  "required_skills": [ {
+    "id": "punisher_halberd_weapon"
+   }]
+ }, {
+  "icon": "ring_of_flames_trinket",
+  "tree_pos_x": 225,
+  "id": "ring_of_flames_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_FIRE_IMMUNITY",
+  "required_skills": [ {
+    "id": "punisher_halberd_weapon"
+   }]
+ },{
+  "icon": "dwarven_greathammer_weapon",
+  "tree_pos_x": 175,
+  "id": "dwarven_greathammer_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 150,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GREATHAMMER_INDUSTRIOUS",
+  "required_skills": [{
+    "id": "ring_of_flames_trinket"
+   },{
+    "id": "juggernaut_greaves_trinket"
+   }]
+ },{
+  "icon": "bloodvial_amulet_trinket",
+  "tree_pos_x": 125,
+  "id": "bloodvial_amulet_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MISC_AMULET_VITALITY",
+  "required_skills": [ {
+    "id": "dwarven_greathammer_weapon"
+   }]
+ }, {
+  "icon": "razorback_mail_trinket",
+  "tree_pos_x": 225,
+  "id": "razorback_mail_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@ARMOR_RAZORBACK",
+  "required_skills": [ {
+    "id": "dwarven_greathammer_weapon"
+   }]
+ },{
+  "icon": "ramhead_greathammer_weapon",
+  "tree_pos_x": 175,
+  "id": "ramhead_greathammer_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GREATHAMMER_RAM",
+  "required_skills": [{
+    "id": "razorback_mail_trinket"
+   },{
+    "id": "bloodvial_amulet_trinket"
+   }]
+ },{
+  "icon": "starspear_weapon",
+  "tree_pos_x": 175,
+  "id": "starspear_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 750,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@POLEARM_BLUEGEM",
+  "required_skills": [{
+    "id": "skull_shield_weapon"
+   },{
+    "id": "magi_staff_weapon"
+   }]
+ },
+ {
+  "icon": "ring_of_winds_trinket",
+  "tree_pos_x": 125,
+  "id": "ring_of_winds_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_ESCAPE",
+  "required_skills": [ {
+    "id": "starspear_weapon"
+   }]
+ }, {
+  "icon": "ring_of_concealment_trinket",
+  "tree_pos_x": 225,
+  "id": "ring_of_concealment_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_CONCEALMENT",
+  "required_skills": [ {
+    "id": "starspear_weapon"
+   }]
+ },{
+  "icon": "monsterslayer_bow_weapon",
+  "tree_pos_x": 175,
+  "id": "monsterslayer_bow_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 900,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@BOW_MONSTER_SLAYER",
+  "required_skills": [{
+    "id": "ring_of_concealment_trinket"
+   },{
+    "id": "ring_of_winds_trinket"
+   }]
+ },{
+  "icon": "glaive_weapon",
+  "tree_pos_x": 175,
+  "id": "glaive_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 975,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@POLEARM_GLAIVE",
+  "required_skills": [{
+    "id": "monsterslayer_bow_weapon"
+   }]
+ },{
+  "icon": "crescent_shield_weapon",
+  "tree_pos_x": 175,
+  "id": "crescent_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 1050,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_CRESCENT",
+  "required_skills": [{
+    "id": "glaive_weapon"
+   }]
+ },{
+  "icon": "mirror_shield_weapon",
+  "tree_pos_x": 275,
+  "id": "mirror_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 375,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_SHINING",
+  "required_skills": [{
+    "id": "dark_eye_shield_weapon"
+   },{
+    "id": "ramhead_greathammer_weapon"
+   }]
+ },{
+  "icon": "phase_boots_trinket",
+  "tree_pos_x": 225,
+  "id": "phase_boots_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@BOOTS_TELEPORTATION",
+  "required_skills": [{
+    "id": "mirror_shield_weapon"
+   }]
+ },{
+  "icon": "phase_cloak_trinket",
+  "tree_pos_x": 325,
+  "id": "phase_cloak_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@CLOAK_PHASE",
+  "required_skills": [{
+    "id": "mirror_shield_weapon"
+   }]
+ },{
+  "icon": "circlet_of_mind_protection_trinket",
+  "tree_pos_x": 275,
+  "id": "circlet_of_mind_protection_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@CROWN_MIND_PROTECTION",
+  "required_skills": [{
+    "id": "phase_cloak_trinket"
+   },{
+    "id": "phase_boots_trinket"
+   }]
+ },{
+  "icon": "wand_of_polymorph_trinket",
+  "tree_pos_x": 325,
+  "id": "wand_of_polymorph_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@WAND_POLYMORPH",
+  "required_skills": [{
+    "id": "circlet_of_mind_protection_trinket"
+   }]
+ },{
+  "icon": "wand_of_provocation_trinket",
+  "tree_pos_x": 225,
+  "id": "wand_of_provocation_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@WAND_PROVOCATION",
+  "required_skills": [{
+    "id": "circlet_of_mind_protection_trinket"
+   }]
+ },{
+  "icon": "magi_staff_weapon",
+  "tree_pos_x": 275,
+  "id": "magi_staff_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 675,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_MAGI",
+  "required_skills": [{
+    "id": "wand_of_polymorph_trinket"
+   },{
+    "id": "wand_of_provocation_trinket"
+   }]
+ },
+ {
+  "icon": "necromancer_staff",
+  "tree_pos_x": 350,
+  "id": "necromancer_staff_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 0,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_INIOCH",
+  "required_skills": []
+ },{
+  "icon": "dark_robes_trinket",
+  "tree_pos_x": 300,
+  "id": "dark_robes_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@ROBES_EVOKERS",
+  "required_skills": [ {
+    "id": "necromancer_staff_weapon"
+   }]
+ }, {
+  "icon": "ring_of_vampirism_trinket",
+  "tree_pos_x": 400,
+  "id": "ring_of_vampirism_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 75,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_VAMPIRISM",
+  "required_skills": [ {
+    "id": "necromancer_staff_weapon"
+   }]
+ },{
+  "icon": "gruesome_lance_weapon",
+  "tree_pos_x": 350,
+  "id": "gruesome_lance_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 150,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@LANCE_DARK",
+  "required_skills": [{
+    "id": "ring_of_vampirism_trinket"
+   },{
+    "id": "dark_robes_trinket"
+   }]
+ },{
+  "icon": "wand_of_resurrection_trinket",
+  "tree_pos_x": 300,
+  "id": "wand_of_resurrection_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@WAND_RESURRECTION",
+  "required_skills": [ {
+    "id": "gruesome_lance_weapon"
+   }]
+ }, {
+  "icon": "insect_leg_trinket",
+  "tree_pos_x": 400,
+  "id": "insect_leg_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 225,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MISC_SPIDER_LEG",
+  "required_skills": [ {
+    "id": "gruesome_lance_weapon"
+   }]
+ },{
+  "icon": "dark_eye_shield_weapon",
+  "tree_pos_x": 350,
+  "id": "dark_eye_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_DARK_EYE",
+  "required_skills": [{
+    "id": "insect_leg_trinket"
+   },{
+    "id": "wand_of_resurrection_trinket"
+   }]
+ },{
+  "icon": "godir_sword_weapon",
+  "tree_pos_x": 350,
+  "id": "godir_sword_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 750,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SWORD_GODIR",
+  "required_skills": [{
+    "id": "magi_staff_weapon"
+   }]
+ },
+ {
+  "icon": "ring_of_protection_trinket",
+  "tree_pos_x": 300,
+  "id": "ring_of_protection_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@RING_PROTECTION",
+  "required_skills": [ {
+    "id": "godir_sword_weapon"
+   }]
+ }, {
+  "icon": "godir_mask_trinket",
+  "tree_pos_x": 400,
+  "id": "godir_mask_trinket",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 825,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MASK_GODIR",
+  "required_skills": [ {
+    "id": "godir_sword_weapon"
+   }]
+ },{
+  "icon": "godir_bow_weapon",
+  "tree_pos_x": 350,
+  "id": "godir_bow_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 900,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@BOW_GODIR",
+  "required_skills": [{
+    "id": "ring_of_protection_trinket"
+   },{
+    "id": "godir_mask_trinket"
+   }]
+ },{
+  "icon": "godir_shield_weapon",
+  "tree_pos_x": 350,
+  "id": "godir_shield_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 975,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@SHIELD_GODIR",
+  "required_skills": [{
+    "id": "godir_bow_weapon"
+   }]
+ },{
+  "icon": "godir_greataxe_weapon",
+  "tree_pos_x": 350,
+  "id": "godir_greataxe_weapon",
+  "tree_name": "Page 1 Center",
+  "tree_pos_y": 1050,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GREATAXE_GODIR",
+  "required_skills": [{
+    "id": "godir_shield_weapon"
+   }]
+ },
+ {
+  "icon": "shuriken_banner",
+  "tree_pos_x": 0,
+  "id": "shuriken_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "coin_banner",
+  "tree_pos_x": 100,
+  "id": "coin_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "martial_cestus_origin",
+  "tree_pos_x": 50,
+  "id": "martial_cestus_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 75,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_CESTUS",
+  "required_skills": [{
+    "id": "coin_icon_name"
+   },{
+    "id": "shuriken_icon_name"
+   }]
+ },{
+  "icon": "jade_tiger_mount",
+  "tree_pos_x": 0,
+  "id": "jade_tiger_mount",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 150,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@JADE_TIGER_MOUNT",
+  "required_skills": [{
+    "id": "martial_cestus_origin"
+   }]
+ },
+ {
+  "icon": "horned_bear_mount",
+  "tree_pos_x": 100,
+  "id": "horned_bear_mount",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 150,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@HORNED_BEAR_MOUNT",
+  "required_skills": [{
+    "id": "martial_cestus_origin"
+   }]
+ },{
+  "icon": "cult_of_personality_trait",
+  "tree_pos_x": 50,
+  "id": "cult_of_personality_trait",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 225,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_PERSONALITY",
+  "required_skills": [{
+    "id": "horned_bear_mount"
+   },{
+    "id": "jade_tiger_mount"
+   }]
+ },{
+  "icon": "ogre_banner",
+  "tree_pos_x": 0,
+  "id": "ogre_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 300,
+  "required_skills": [{
+    "id": "cult_of_personality_trait"
+   }]
+ },
+ {
+  "icon": "lindworm_banner",
+  "tree_pos_x": 100,
+  "id": "lindworm_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 300,
+  "required_skills": [{
+    "id": "cult_of_personality_trait"
+   }]
+ },{
+  "icon": "slayer_sword_origin",
+  "tree_pos_x": 50,
+  "id": "slayer_sword_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 375,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_BLOODBLADE",
+  "required_skills": [{
+    "id": "lindworm_icon_name"
+   },{
+    "id": "ogre_icon_name"
+   }]
+ },{
+  "icon": "guardian_helmet",
+  "tree_pos_x": 0,
+  "id": "guardian_helmet_outfit",
+  
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@FOO_DOG_HELMET",
+  
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 450,
+  "required_skills": [{
+    "id": "slayer_sword_origin"
+   }]
+ },
+ {
+  "icon": "oni_mask",
+  "tree_pos_x": 100,
+  "id": "oni_mask_outfit",
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@ONI_MASK",
+  
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 450,
+  "required_skills": [{
+    "id": "slayer_sword_origin"
+   }]
+ },{
+  "icon": "vigilante_knights_trait",
+  "tree_pos_x": 50,
+  "id": "vigilante_knights_trait",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 525,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_VIGILANTE",
+  "required_skills": [{
+    "id": "oni_mask_outfit"
+   },{
+    "id": "guardian_helmet_outfit"
+   }]
+ },
+ {
+  "icon": "cavernbear_mount",
+  "tree_pos_x": 200,
+  "id": "cavernbear_mount",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 0,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@BADGER_MOUNT",
+  "required_skills": []
+ },
+ {
+  "icon": "storm_banner",
+  "tree_pos_x": 250,
+  "id": "storm_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 75,
+  "required_skills": [{
+    "id": "cavernbear_mount"
+   }]
+ },{
+  "icon": "rock_banner",
+  "tree_pos_x": 150,
+  "id": "rock_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 75,
+  "required_skills": [{
+    "id": "cavernbear_mount"
+   }]
+ },{
+  "icon": "magmamancer_origin",
+  "tree_pos_x": 200,
+  "id": "magmamancer_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 150,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@GK_PANTHEON_ITEM_06",
+  "required_skills": [{
+    "id": "rock_icon_name"
+   },{
+    "id": "storm_icon_name"
+   }]
+ },{
+  "icon": "fire_banner",
+  "tree_pos_x": 150,
+  "id": "fire_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 225,
+  "required_skills": [{
+    "id": "magmamancer_origin"
+   }]
+ },{
+  "icon": "frost_banner",
+  "tree_pos_x": 250,
+  "id": "frost_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 225,
+  "required_skills": [{
+    "id": "magmamancer_origin"
+   }]
+ },{
+  "icon": "goldseeker_origin",
+  "tree_pos_x": 200,
+  "id": "goldseeker_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 300,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_GOLDSEEKERPICKAXE",
+  "required_skills": [{
+    "id": "frost_icon_name"
+   },{
+    "id": "fire_icon_name"
+   }]
+ },{
+  "icon": "giant_hunter_origin",
+  "tree_pos_x": 150,
+  "id": "giant_hunter_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 375,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_GIANTSLAYERSPEAR",
+  "required_skills": [{
+    "id": "goldseeker_origin"
+   }]
+ },{
+  "icon": "greatbowman_origin",
+  "tree_pos_x": 250,
+  "id": "greatbowman_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 375,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_TITANGREATBOW",
+  "required_skills": [{
+    "id": "goldseeker_origin"
+   }]
+ },{
+  "icon": "crystalrunner_mount",
+  "tree_pos_x": 200,
+  "id": "crystalrunner_mount",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 450,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CRYSTAL_HORSE_MOUNT",
+  "required_skills": [{
+    "id": "greatbowman_origin"
+   },{
+    "id": "giant_hunter_origin"
+   }]
+ },{
+  "icon": "volatile_summoner_origin",
+  "tree_pos_x": 150,
+  "id": "volatile_summoner_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_LITHORITEORB",
+  "required_skills": [{
+    "id": "crystalrunner_mount"
+   }]
+ },{
+  "icon": "shatter_skirmisher_origin",
+  "tree_pos_x": 250,
+  "id": "shatter_skirmisher_origin",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 525,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_SHATTERBLADES",
+  "required_skills": [{
+    "id": "crystalrunner_mount"
+   }]
+ },{
+  "icon": "subterranean_society_trait",
+  "tree_pos_x": 200,
+  "id": "subterranean_society_trait",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_SUBTERRANEAN_SOCIETY",
+  "required_skills": [{
+    "id": "shatter_skirmisher_origin"
+   },{
+    "id": "volatile_summoner_origin"
+   }]
+ },{
+  "icon": "golden_godir_crown_outfit",
+  "tree_pos_x": 200,
+  "id": "golden_godir_crown_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 675,
+  "required_skills": [{
+    "id": "subterranean_society_trait"
+   },{
+    "id": "vigilante_knights_trait"
+   },{
+    "id": "archon_helmet_name"
+   }]
+ },
+ {
+  "icon": "constellation_banner",
+  "tree_pos_x": 300,
+  "id": "constellation_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "crusader_banner",
+  "tree_pos_x": 400,
+  "id": "crusader_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "cosmos_banner",
+  "tree_pos_x": 350,
+  "id": "cosmos_icon_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 75,
+  "required_skills": [{
+    "id": "crusader_icon_name"
+   },{
+    "id": "constellation_icon_name"
+   }]
+ },{
+  "icon": "fearless_infusion",
+  "tree_pos_x": 300,
+  "id": "fearless_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 150,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@FEARLESS_INFUSION",
+  "required_skills": [{
+    "id": "cosmos_icon_name"
+   }]
+ },{
+  "icon": "farsight_infusion",
+  "tree_pos_x": 400,
+  "id": "farsight_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 150,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@GREATER_FARSIGHT_INFUSION",
+  "required_skills": [{
+    "id": "cosmos_icon_name"
+   }]
+ }, {
+  "icon": "bless_infusion",
+  "tree_pos_x": 350,
+  "id": "bless_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 225,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@BLESS_INFUSION",
+  "required_skills": [{
+    "id": "fearless_infusion"
+   },{
+    "id": "farsight_infusion"
+   }]
+ },{
+  "icon": "inner_grace_infusion",
+  "tree_pos_x": 300,
+  "id": "inner_grace_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 300,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@INNER_GRACE_INFUSION",
+  "required_skills": [{
+    "id": "bless_infusion"
+   }]
+ },{
+  "icon": "mirror_veil_infusion",
+  "tree_pos_x": 400,
+  "id": "mirror_veil_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 300,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@CRYSTAL_REFLECTION_INFUSION",
+  "required_skills": [{
+    "id": "bless_infusion"
+   }]
+ }, {
+  "icon": "astrological_diviners_trait",
+  "tree_pos_x": 350,
+  "id": "astrological_diviners_trait",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 375,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_COSMIC",
+  "required_skills": [{
+    "id": "mirror_veil_infusion"
+   },{
+    "id": "inner_grace_infusion"
+   }]
+ },{
+  "icon": "innate_spelljammer_infusion",
+  "tree_pos_x": 300,
+  "id": "innate_spelljammer_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 450,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@INNATE_SPELL_JAMMER_INFUSION",
+  "required_skills": [{
+    "id": "astrological_diviners_trait"
+   }]
+ },{
+  "icon": "overcharge_cast_infusion",
+  "tree_pos_x": 400,
+  "id": "overcharge_cast_infusion",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 450,
+  "extraLookup" : "META_EMPIRE@PROGRESSION_ITEM@OVERCHARGE_SPELL_INFUSION",
+  "required_skills": [{
+    "id": "astrological_diviners_trait"
+   }]
+ }, 
+ {
+  "icon": "archon_helmet_outfit",
+  "tree_pos_x": 350,
+  "id": "archon_helmet_name",
+  "tree_name": "Page 1 Right",
+  "tree_pos_y": 525,
+  "required_skills": [{
+    "id": "overcharge_cast_infusion"
+   },{
+    "id": "innate_spelljammer_infusion"
+   }]
+ }, 
+ 
+ {
+  "icon": "esoteric_dragon_head",
+  "tree_pos_x": 0,
+  "id": "esoteric_dragon_head_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance1_name",
+  "tree_pos_y": 0,
+  "DLC": "DRAGONLORDS",
+  "required_skills": []
+ },
+ {
+  "icon": "dragon_seals",
+  "tree_pos_x": 0,
+  "id": "dragon_seals_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance2_name",
+  "tree_pos_y": 75,
+  "DLC": "DRAGONLORDS",
+  "required_skills": [
+   {
+    "id": "esoteric_dragon_head_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "manastarved_dragon_body",
+  "tree_pos_x": 0,
+  "id": "manastarved_dragon_body_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance4_name",
+  "tree_pos_y": 150,
+  "DLC": "DRAGONLORDS",
+  "required_skills": [
+   {
+    "id": "dragon_seals_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "manastarved_dragon_ornamentation",
+  "tree_pos_x": 0,
+  "id": "manastarved_dragon_ornamentation_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance5_name",
+  "tree_pos_y": 225,
+  "DLC": "DRAGONLORDS",
+  "required_skills": [
+   {
+    "id": "manastarved_dragon_body_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "manastarved_dragon_horns",
+  "tree_pos_x": 0,
+  "id": "manastarved_dragon_horns_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance6_name",
+  "tree_pos_y": 300,
+  "DLC": "DRAGONLORDS",
+  "required_skills": [
+   {
+    "id": "manastarved_dragon_ornamentation_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "manastarved_dragon_head",
+  "tree_pos_x": 0,
+  "id": "manastarved_dragon_head_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@DRAGONLORDS@META_EMPIRE@PROGRESSION_ITEM",
+  "suffix": "dragon_lord_appearance3_name",
+  "tree_pos_y": 375,
+  "DLC": "DRAGONLORDS",
+  "required_skills": [
+   {
+    "id": "manastarved_dragon_horns_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "eldritch_guardian",
+  "tree_pos_x": 0,
+  "id": "eldritch_guardian_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@ELDRITCHREALMS@META_EMPIRE",
+  "suffix": "eldritch_sovereign_customization1_name",
+  "tree_pos_y": 450,
+  "DLC": "ELDRITCHREALMS",
+  "required_skills": []
+ },
+ {
+  "icon": "eldritch_ogre",
+  "tree_pos_x": 0,
+  "id": "eldritch_ogre_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@ELDRITCHREALMS@META_EMPIRE",
+  "suffix": "eldritch_sovereign_customization2_name",
+  "tree_pos_y": 525,
+  "DLC": "ELDRITCHREALMS",
+  "required_skills": [
+   {
+    "id": "eldritch_guardian_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "eldritch_fractured",
+  "tree_pos_x": 0,
+  "id": "eldritch_fractured_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookupExplicit": "DLC@ELDRITCHREALMS@META_EMPIRE",
+  "suffix": "eldritch_sovereign_customization3_name",
+  "tree_pos_y": 600,
+  "DLC": "ELDRITCHREALMS",
+  "required_skills": [
+   {
+    "id": "eldritch_ogre_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "giant_archon_body",
+  "tree_pos_x": -75,
+  "id": "giant_archon_body_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookup": "DLC@GIANTKINGS@PANTHEON_TREE@GAINT_ARCHON_BODY",
+  "tree_pos_y": 670,
+  "DLC": "GIANTKINGS",
+  "required_skills": []
+ },
+ {
+  "icon": "giant_archon_head",
+  "tree_pos_x": -75,
+  "id": "giant_archon_head_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookup": "DLC@GIANTKINGS@PANTHEON_TREE@GAINT_ARCHON_HELMET",
+  "tree_pos_y": 750,
+  "DLC": "GIANTKINGS",
+  "required_skills": [
+   {
+    "id": "giant_archon_body_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "giant_revenant_body",
+  "tree_pos_x": 75,
+  "id": "giant_revenant_body_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookup": "DLC@GIANTKINGS@PANTHEON_TREE@GAINT_REVENANT_BODY",
+  "tree_pos_y": 670,
+  "DLC": "GIANTKINGS",
+  "required_skills": []
+ },
+ {
+  "icon": "giant_revenant_head",
+  "tree_pos_x": 75,
+  "id": "giant_revenant_head_outfit",
+  "tree_name": "Page 1 Extra's",
+  "extraLookup": "DLC@GIANTKINGS@PANTHEON_TREE@GAINT_REVENANT_HELMET",
+  "tree_pos_y": 750,
+  "DLC": "GIANTKINGS",
+  "required_skills": [
+   {
+    "id": "giant_revenant_body_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "wheel_of_ages_banner",
+  "tree_pos_x": 1,
+  "id": "endturn_icon_name",
+  "tree_name": "Page 2 Small",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "triumph_banner",
+  "tree_pos_x": 1,
+  "id": "triumph_icon_name",
+  "tree_name": "Page 2 Small",
+  "tree_pos_y": 100,
+  "required_skills": [
+   {
+    "id": "endturn_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "chalice_banner",
+  "tree_pos_x": 0,
+  "id": "chalice_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "stake_and_mallet_banner",
+  "tree_pos_x": 100,
+  "id": "stake_mallet_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 0,
+  "required_skills": []
+ },
+ {
+  "icon": "hunter_rapier_whip",
+  "tree_pos_x": -25,
+  "id": "hunter_rapier_whip_weapon",
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@HUNTER_RAPIER_WHIP",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 100,
+  "required_skills": [
+   {
+    "id": "chalice_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "garlic",
+  "tree_pos_x": 50,
+  "id": "garlic_trinket",
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@GARLIC",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 100,
+  "required_skills": [
+   {
+    "id": "chalice_icon_name"
+   },
+   {
+    "id": "stake_mallet_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "hunters_crossbow",
+  "tree_pos_x": 125,
+  "id": "hunters_crossbow_weapon",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 100,
+  "extraLookupExplicit" : "UPGRADES_TEST_UNITPROPERTIES@WEAPON",
+  "suffix" : "huntercrossbow",
+  "required_skills": [
+   {
+    "id": "stake_mallet_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "pull_shot",
+  "tree_pos_x": -100,
+  "id": "pull_shot_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 200,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@PULL_SHOT_INFUSION",
+  "required_skills": [
+   {
+    "id": "hunter_rapier_whip_weapon"
+   }
+  ]
+ },
+ {
+  "icon": "banshee_wail",
+  "tree_pos_x": -25,
+  "id": "banshee_wail_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 200,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@BANSHEE_WAIL_INFUSION",
+  "required_skills": [
+   {
+    "id": "hunter_rapier_whip_weapon"
+   }
+  ]
+ },
+ {
+  "icon": "apex_predators",
+  "tree_pos_x": 50,
+  "id": "apex_predators_trait",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 200,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_APEX_PREDATORS",
+  "required_skills": [
+   {
+    "id": "garlic_trinket"
+   }
+  ]
+ },
+ {
+  "icon": "inspiring_presence",
+  "tree_pos_x": 125,
+  "id": "inspiring_presence_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 200,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@FOLK_HERO_INFUSION",
+  "required_skills": [
+   {
+    "id": "hunters_crossbow_weapon"
+   }
+  ]
+ },
+ {
+  "icon": "pierce_shot",
+  "tree_pos_x": 200,
+  "id": "pierce_shot_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 200,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@PIERCE_SHOT_INFUSION",
+  "required_skills": [
+   {
+    "id": "hunters_crossbow_weapon"
+   }
+  ]
+ },
+ {
+  "icon": "hunters_hat_outfit",
+  "tree_pos_x": 0,
+  "id": "hunter_hat_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "apex_predators_trait"
+   },
+   {
+    "id": "banshee_wail_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "leviathan_banner",
+  "tree_pos_x": 150,
+  "id": "leviathan_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "pierce_shot_infusion"
+   },
+   {
+    "id": "inspiring_presence_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "ouroboros_demon_banner",
+  "tree_pos_x": 225,
+  "id": "hellion_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "pierce_shot_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "mistwalker_icon_banner",
+  "tree_pos_x": 300,
+  "id": "mistwalker_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "pierce_shot_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "hunters_outfit",
+  "tree_pos_x": 75,
+  "id": "hunter_outfit_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "apex_predators_trait"
+   },
+   {
+    "id": "inspiring_presence_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "winds_banner",
+  "tree_pos_x": -75,
+  "id": "winds_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "banshee_wail_infusion"
+   },
+   {
+    "id": "pull_shot_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "molecule_banner",
+  "tree_pos_x": -150,
+  "id": "molecule_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "pull_shot_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "subdue",
+  "tree_pos_x": -125,
+  "id": "subdue_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@SUBDUE_INFUSION",
+  "required_skills": [
+   {
+    "id": "molecule_icon_name"
+   },
+   {
+    "id": "winds_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "ouroboros_banner",
+  "tree_pos_x": -150,
+  "id": "ouroboros_icon_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "required_skills": [
+   {
+    "id": "subdue_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "summon_spirit_hawk",
+  "tree_pos_x": -225,
+  "id": "summon_spirit_hawk_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@SUMMON_SPIRIT_HAWK_INFUSION",
+  "required_skills": [
+   {
+    "id": "ouroboros_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "fractured_eagle",
+  "tree_pos_x": -300,
+  "id": "fractured_eagle_mount",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@FRACTURED_EAGLE_MOUNT",
+  "required_skills": [
+   {
+    "id": "summon_spirit_hawk_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "nullify",
+  "tree_pos_x": -325,
+  "id": "nullify_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@NULLIFY_INFUSION",
+  "required_skills": [
+   {
+    "id": "fractured_eagle_mount"
+   }
+  ]
+ },
+ {
+  "icon": "fractured_cape_outfit",
+  "tree_pos_x": -300,
+  "id": "fractured_cape_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "nullify_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "fractured_body_outfit",
+  "tree_pos_x": -225,
+  "id": "fractured_body_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 300,
+  "required_skills": [
+   {
+    "id": "fractured_cape_name"
+   }
+  ]
+ },
+ {
+  "icon": "fractured_head_outfit",
+  "tree_pos_x": -200,
+  "id": "fractured_head_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "required_skills": [
+   {
+    "id": "fractured_body_name"
+   }
+  ]
+ },
+ {
+  "icon": "fractured_orb",
+  "tree_pos_x": -250,
+  "id": "fractured_orb_origin",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 360,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@HERO_BACKGROUND_FRACTURED_ORB",
+  "required_skills": [
+   {
+    "id": "fractured_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "transformation_ascetics",
+  "tree_pos_x": -250,
+  "id": "transformation_ascetics_trait",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 420,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CULTURE_TRAIT_ASCETICS",
+  "required_skills": [
+   {
+    "id": "fractured_head_name"
+   }
+  ]
+ },
+ {
+  "icon": "mancatcher_staff",
+  "tree_pos_x": -50,
+  "id": "mancatcher_staff_weapon",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@STAFF_MANCATCHER",
+  "required_skills": [
+   {
+    "id": "winds_icon_name"
+   },
+   {
+    "id": "hunter_hat_name"
+   }
+  ]
+ },
+ {
+  "icon": "hunters_cape_outfit",
+  "tree_pos_x": 25,
+  "id": "hunter_cape_name",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "required_skills": [
+   {
+    "id": "hunter_outfit_name"
+   },
+   {
+    "id": "hunter_hat_name"
+   }
+  ]
+ },
+ {
+  "icon": "astral_magic_circle",
+  "tree_pos_x": 100,
+  "id": "astral_magic_cicle_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ASTRAL_MAGIC_CIRCLE",
+  "required_skills": [
+   {
+    "id": "leviathan_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "merlins_grimoire",
+  "tree_pos_x": 175,
+  "id": "merlins_grimoire_weapon",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@MERLIN_GRIMOIRE",
+  "required_skills": [
+   {
+    "id": "magic_shield_infusion"
+   }
+  ]
+ },
+ {
+  "icon": "chaos_magic_circle",
+  "tree_pos_x": 250,
+  "id": "chaos_magic_cicle_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CHAOS_MAGIC_CIRCLE",
+  "required_skills": [
+   {
+    "id": "hellion_icon_name"
+   },
+   {
+    "id": "mistwalker_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "nature_magic_circle",
+  "tree_pos_x": 325,
+  "id": "nature_magic_circle_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 400,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@NATURE_MAGIC_CIRCLE",
+  "required_skills": [
+   {
+    "id": "mistwalker_icon_name"
+   }
+  ]
+ },
+ {
+  "icon": "karissa_orb",
+  "tree_pos_x": 215,
+  "id": "karissa_orb_weapon",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@KARISSA_ORB",
+  "required_skills": [
+   {
+    "id": "chaos_magic_cicle_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "magic_shield",
+  "tree_pos_x": 150,
+  "id": "magic_shield_infusion",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@MAGIC_SHIELD_INFUSION",
+  "required_skills": [
+   {
+    "id": "karissa_orb_weapon"
+   }
+  ]
+ },
+ {
+  "icon": "ysariel_sword",
+  "tree_pos_x": 275,
+  "id": "ysariel_sword_weapon",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ITEM_FORGE@YSARIEL_SWORD",
+  "required_skills": [
+   {
+    "id": "chaos_magic_cicle_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "arachnas_crown",
+  "tree_pos_x": 350,
+  "id": "arachnas_crown_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ARACHNAS_CROWN",
+  "required_skills": [
+   {
+    "id": "nature_magic_circle_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "arachnas_spiderlegs",
+  "tree_pos_x": 350,
+  "id": "arachnas_spiderlegs_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@ARACHNAS_LEGS",
+  "required_skills": [
+   {
+    "id": "arachnas_crown_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "cat_ears_tails",
+  "tree_pos_x": 425,
+  "id": "cat_ears_tails_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@CAT_EARS_AND_TAIL",
+  "required_skills": [
+   {
+    "id": "arachnas_crown_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "bird_nest",
+  "tree_pos_x": 425,
+  "id": "bird_nest_outfit",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 500,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@BIRD_NEST",
+  "required_skills": [
+   {
+    "id": "nature_magic_circle_outfit"
+   }
+  ]
+ },
+ {
+  "icon": "inferno_hound",
+  "tree_pos_x": 225,
+  "id": "inferno_hound_mount",
+  "tree_name": "Page 2 Main",
+  "tree_pos_y": 600,
+  "extraLookup": "META_EMPIRE@PROGRESSION_ITEM@INFERNO_HOUND_MOUNT",
+  "required_skills": [
+   {
+    "id": "ysariel_sword_weapon"
+   },
+   {
+    "id": "karissa_orb_weapon"
+   }
+  ]
+ }
+]

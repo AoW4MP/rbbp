@@ -22,13 +22,17 @@
                             Highlight Numbers:
                             <input type="checkbox" id="numbersCheckbox" onclick="CheckBoxTooltips()" />
                         </label>
+                          <label>
+                            Show Secret Spells:
+                            <input type="checkbox" id="showSecretSpellsCheckbox" onclick="CheckBoxTooltips()" />
+                        </label>
                         <br />
                     </div>
                 </div>
             </div>
             <label style="display: block; position: relative; left: -86px">
-                WIP
-                <select id="languageSelect" class="button-random" onchange="SwitchToBeta()">
+              
+                <select id="languageSelect" style="display:block" class="button-random" onchange="SwitchToBeta()">
                     <option value="EN">English</option>
                     <option value="RU">Pусский</option>
                 </select>
@@ -61,15 +65,15 @@
 
             <a href="/rbbp/" style=" text-decoration: none;"><div class="hero-text">Age of Wonders 4 RbbP</div></a>
             <div class="mid-text" style="display: none; margin: 15px">
-                Switch To Scorpion Beta Dataset:<input type="checkbox" id="showBetaCheckbox" onclick="SwitchToBeta()" />
+                Switch To Sprite Beta Dataset:<input type="checkbox" id="showBetaCheckbox" onclick="SwitchToBeta()" />
                 <br /><i>(only changes exported dataset, images can break, english only)</i>
             </div>
-            <div class="current-version">Updated: 12 MARCH 2026</div>
+            <div class="current-version">Updated: 02 July 2026</div>
 
-            <div class="hero-text" style="display: block">
+            <div class="hero-text" >
                 <img style="
     position: relative;display:block;
-    top: 0px;" src="/rbbp/Icons/Text/RiseFromRuinLogo.png" width="442px" />
+    top: 0px;" src="/rbbp/Icons/Text/SotaLogo.png" width="250px" />
             </div>
             <ul id="menu">
                 <li>
@@ -121,7 +125,7 @@
                                     >
                                 </li>
                                 <li>
-                                    <a id="culture-reaver" href="/rbbp/HTML/ReaverUnits.html?type=observer&"
+                                    <a id="culture-reaver" href="/rbbp/HTML/ReaverUnits.html?type=observerFederate&"
                                         ><img src="/rbbp/Icons/Interface/Header/reaver.png" width="20px" /> Reaver</a
                                     >
                                 </li>
@@ -244,6 +248,10 @@
                                    <li>
                                     <a id="tomesU-rfr" href="/rbbp/HTML/RiseFromRuinTomeUnits.html"
                                         ><img src="/rbbp/Icons/Text/RiseFromRuin.png" width="20px" /> Rise From Ruin</a
+                                    >
+                                </li>  <li>
+                                    <a id="tomesU-sota" href="/rbbp/HTML/SecretsOfTheArchmagesTomeUnits.html"
+                                        ><img src="/rbbp/Icons/Text/SotaLogo.png" width="20px" /> Secrets of the Archmages</a
                                     >
                                 </li>
                             </ul>
@@ -518,7 +526,7 @@
                         <li>
                             <a
                                 id="spells-strategic"
-                                href="/rbbp/HTML/StrategicSpells.html?type=Summon%20Spells&sort=name:true"
+                                href="/rbbp/HTML/StrategicSpells.html?type=<summonspell></summonspell>%20Summon%20Spells&sort=name:true"
                                 ><img src="/rbbp/Icons/Interface/Header/strategiccombatpoints.png" width="20px" /> Strategic
                                 Spells</a
                             >
@@ -592,6 +600,11 @@
                                 ><img src="/rbbp/Icons/Interface/Header/equipment.png" width="15px" /> Equipment</a
                             >
                         </li>
+                          <li>
+                            <a id="hero-skill" href="/rbbp/HTML/Infusions.html"
+                                ><img src="/rbbp/Icons/Interface/Header/piercing_shot.png" width="20px" />Item Forge Infusions</a
+                            >
+                        </li>
                         <li>
                             <a id="hero-ascension" href="/rbbp/HTML/HeroSkills.html"
                                 ><img src="/rbbp/Icons/Interface/Header/ascended_artificer_hero_skill_normal.png" width="20px" /> Ascension
@@ -626,6 +639,11 @@
                     >
                     <ul class="menus">
                         <li>
+                            <a id="empire-pantheon" href="/rbbp/HTML/PantheonTree.html"
+                                ><img src="/rbbp/Icons/Interface/Header/Info.png" width="20px" /> Pantheon Tree</a
+                            >
+                        </li>
+                        <li>
                             <a id="empire-tree" href="/rbbp/HTML/EmpireTree.html"
                                 ><img src="/rbbp/Icons/Interface/Header/EmpireIcon.png" width="20px" /> Empire Tree</a
                             >
@@ -639,6 +657,11 @@
                         <li>
                             <a id="empire-faction" href="/rbbp/HTML/FactionCreation.html"
                                 ><img src="/rbbp/Icons/Interface/Header/adaptable.png" width="20px" />Faction Traits</a
+                            >
+                        </li>
+                        <li>
+                            <a id="empire-relics" href="/rbbp/HTML/Artifacts.html?type=Giants&"
+                                ><img src="/rbbp/Icons/RelicIcons/blue_scroll.png" width="20px" />Artifacts/Secret Spells</a
                             >
                         </li>
                     </ul>

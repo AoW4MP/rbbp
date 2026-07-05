@@ -1445,12 +1445,12 @@
  {
   "category": "General Empire Skill",
   "id": "advanced_logistics",
-  "required_xp": 500,
+  "required_xp": 400,
   "description": "Roads cost 3 <movementgeneral></movementgeneral> <hyperlink>Move Points</hyperlink> instead of 5.<br></br><br></br>Units gain Fast Embark and while embarked they gain Very Fast Movement on the <hyperlink>World Map</hyperlink>.",
   "name": "Advanced Logistics",
   "icon": "0000045E0000097E",
-  "required_level": 10,
-  "cost": "200<influence></influence> "
+  "required_level": 9,
+  "cost": "175<influence></influence> "
  },
  {
   "repeat_cooldown_increase": 0,
@@ -1478,21 +1478,21 @@
  {
   "category": "General Empire Skill",
   "id": "road_building",
-  "required_xp": 60,
+  "required_xp": 100,
   "description": "<hyperlink>Unit</hyperlink> can build roads on the <hyperlink>World Map</hyperlink>. Most terrain costs 6-8 <movementgeneral></movementgeneral> <hyperlink>Move Points</hyperlink> while roads cost 5.<br></br><br></br>Road Building can be enabled in the <hyperlink>Army</hyperlink> panel. Roads are built on hexes along which the <hyperlink>Army</hyperlink> moves and cost 3 <gold></gold> <hyperlink>Gold</hyperlink> per hex.",
   "name": "Road Building",
   "icon": "000003E1000017FA",
-  "required_level": 3,
+  "required_level": 4,
   "cost": "125<influence></influence> "
  },
  {
   "category": "General Empire Skill",
   "id": "basic_seafaring",
-  "required_xp": 15,
+  "required_xp": 40,
   "description": "Unlocks the ability for <hyperlink>Units</hyperlink> to embark and use vessels to cross the water, and for Flying and Floating units to travel over water.",
   "name": "Basic Seafaring",
   "icon": "000003E1000017F9",
-  "required_level": 1,
+  "required_level": 2,
   "cost": "100<influence></influence> "
  },
  {
@@ -1508,12 +1508,12 @@
  {
   "category": "General Empire Skill",
   "id": "diplomatic_focus",
-  "required_xp": 40,
+  "required_xp": 120,
   "description": "Gain +1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>.",
   "name": "Diplomatic Focus",
   "icon": "000003E100001EE8",
-  "required_level": 2,
-  "cost": "100<influence></influence> "
+  "required_level": 5,
+  "cost": "150<influence></influence> "
  },
  {
   "repeat_cooldown_increase": 50,
@@ -1531,12 +1531,12 @@
  {
   "category": "General Empire Skill",
   "id": "advanced_sensing",
-  "required_xp": 400,
+  "required_xp": 160,
   "description": "Your <hyperlink>Units</hyperlink> and <hyperlink>Cities</hyperlink> gain +2 <hyperlink>Vision Range</hyperlink> and +3 <hyperlink>Sensing Range</hyperlink>.",
   "name": "Advanced Sensing",
   "icon": "000003E100001D12",
-  "required_level": 9,
-  "cost": "175<influence></influence> "
+  "required_level": 6,
+  "cost": "150<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -1551,22 +1551,22 @@
  {
   "category": "General Empire Skill",
   "id": "teleporter_infrastructure",
-  "required_xp": 300,
+  "required_xp": 500,
   "description": "<hyperlink>Cities</hyperlink> can now build <teleporter></teleporter> <hyperlink>Teleporters</hyperlink>.<br></br><br></br><hyperlink>Outposts</hyperlink> can build teleporters in a province they annex through a Work Camp.",
   "name": "Teleporter Infrastructure",
   "icon": "000003E100001A16",
-  "required_level": 8,
-  "cost": "175<influence></influence> "
+  "required_level": 10,
+  "cost": "200<influence></influence> "
  },
  {
   "category": "General Empire Skill",
   "id": "siege_specialization",
-  "required_xp": 160,
+  "required_xp": 300,
   "description": "Gain +1 <hyperlink>Siege Project</hyperlink> slot.",
   "name": "Siege Specialization",
   "icon": "000003E1000019CE",
-  "required_level": 6,
-  "cost": "150<influence></influence> "
+  "required_level": 8,
+  "cost": "175<influence></influence> "
  },
  {
   "category": "General Empire Skill",
@@ -1575,319 +1575,5 @@
   "name": "Advanced Seafaring",
   "icon": "000003E1000019AA",
   "cost": "175<influence></influence> "
- },
- {
-  "category": "General Empire Skill",
-  "id": "gesture_of_goodwill",
-  "required_xp": 100,
-  "description": "Gain the Gesture of Goodwill <hyperlink>World Map Spell</hyperlink>",
-  "name": "Gesture of Goodwill",
-  "icon": "CBE7688B0000080C",
-  "required_level": 4,
-  "cost": "125<influence></influence> "
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Chaos Rite. Repeatable +150 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "rite_of_possession",
-  "cooldown": 0,
-  "required_xp": 500,
-  "description": "Your <hyperlink>Throne City</hyperlink> loses -1 <population></population> <hyperlink>Population</hyperlink> but immediately summons a <hyperlink>Balor</hyperlink> with Power from Slaughter.",
-  "name": "Rite of Possession",
-  "repeat_cost_increase": "150<influence></influence> ",
-  "icon": "CBE7688B0000042B",
-  "required_level": 10,
-  "cost": "500<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Chaos Rite. Repeatable +50 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "rite_of_chosen_warriors",
-  "cooldown": 0,
-  "required_xp": 160,
-  "description": "Your <hyperlink>Units</hyperlink> all immediately gain enough <hyperlink><xp></xp> Experience</hyperlink> to level up.<br></br><br></br>Does not affect <hyperlink>Heroes</hyperlink> and units above <medalPlatinum></medalPlatinum>Legendary rank.",
-  "name": "Rite of Chosen Warriors",
-  "repeat_cost_increase": "50<influence></influence> ",
-  "icon": "CBE7688B00000429",
-  "required_level": 6,
-  "cost": "250<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Chaos Rite. Repeatable +50 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "rite_of_war",
-  "cooldown": 0,
-  "required_xp": 100,
-  "description": "All your <hyperlink>Cities</hyperlink> immediately gain <unitprod></unitprod> <hyperlink>Draft</hyperlink>.",
-  "name": "Rite of War",
-  "repeat_cost_increase": "50<influence></influence> ",
-  "icon": "CBE7688B00000427",
-  "required_level": 4,
-  "cost": "175<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "spoils_of_destruction",
-  "required_xp": 500,
-  "description": "Gain the Spoils of Destruction <hyperlink>World Map Spell</hyperlink>",
-  "name": "Spoils of Destruction",
-  "icon": "CBE7688B000003E7",
-  "required_level": 10,
-  "cost": "500<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "destined_conquerors",
-  "required_xp": 400,
-  "description": "+30 <casusBelli></casusBelli> <hyperlink>Grievances</hyperlink> against all other <hyperlink>Empires</hyperlink>. These cannot be traded or lost.<br></br>Gain +50 <gold></gold> <hyperlink>Gold</hyperlink> and +50 <mana></mana> <hyperlink>Mana</hyperlink> per active <rs_war></rs_war> <hyperlink>War</hyperlink> you are involved in.",
-  "name": "Destined Conquerors",
-  "icon": "CBE7688B000003E1",
-  "required_level": 9,
-  "cost": "400<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "reign_of_destruction",
-  "required_xp": 300,
-  "description": "Gain +1 <hyperlink>Siege Project</hyperlink> slot.<br></br><hyperlink>Siege Projects</hyperlink> cost 50% less.",
-  "name": "Reign of Destruction",
-  "icon": "CBE7688B000003DD",
-  "required_level": 8,
-  "cost": "350<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "tireless_marchers",
-  "required_xp": 200,
-  "description": "<hyperlink>Forced March</hyperlink> costs -75% less <mana></mana> <hyperlink>Mana</hyperlink> and inflicts -75% less damage to your <hyperlink>Units</hyperlink>.",
-  "name": "Tireless Marchers",
-  "icon": "CBE7688B000003D9",
-  "required_level": 7,
-  "cost": "300<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "skilled_raiders",
-  "required_xp": 160,
-  "description": "<hyperlink>Pillaging</hyperlink> a <hyperlink>Province</hyperlink> takes -1<turn></turn> turns and yields +20% more rewards.<br></br><hyperlink>Pillaging</hyperlink> <hyperlink>Units</hyperlink> are healed for +20 <hyperlink><hp></hp> Hit Points</hyperlink>.",
-  "name": "Skilled Raiders",
-  "icon": "CBE7688B000003D3",
-  "required_level": 6,
-  "cost": "250<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "lure_of_the_horde",
-  "required_xp": 120,
-  "description": "<hyperlink>Tier</hyperlink> I and II <hyperlink>Units</hyperlink> gain:<bulletlist><bullet>+1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet><bullet>+10 <hyperlink><hp></hp> Hit Points</hyperlink></bullet></bulletlist>",
-  "name": "Lure of the Horde",
-  "icon": "CBE7688B000003CC",
-  "required_level": 5,
-  "cost": "200<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "call_of_chaos",
-  "required_xp": 100,
-  "description": "When you win in battle, you have a 25% chance of gaining a Tier I or II unit that can be produced in a city.<br></br>Defeating an Infestation grants you a unit based on the Infestation defeated.",
-  "name": "Call of Chaos",
-  "icon": "CBE7688B000003C8",
-  "required_level": 4,
-  "cost": "175<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "war_slaves",
-  "required_xp": 60,
-  "description": "<hyperlink>Razing</hyperlink> <hyperlink>Cities</hyperlink> grants +1 <population></population> <hyperlink>Population</hyperlink> to one of your <hyperlink>Cities</hyperlink> for every 3 <population></population> <hyperlink>Population</hyperlink> of the city that was razed.<br></br><hyperlink>Razing</hyperlink> <hyperlink>Cities</hyperlink> takes -1 <turn></turn> <hyperlink>Turn</hyperlink> less.",
-  "name": "War Slaves",
-  "icon": "CBE7688B000003BF",
-  "required_level": 3,
-  "cost": "150<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "battlefield_looting",
-  "required_xp": 40,
-  "description": "Gain +3 <gold></gold> <hyperlink>Gold</hyperlink> per <hyperlink>Unit Tier</Hyperlink> of the <hyperlink>Units</hyperlink> killed in <hyperlink>Combat</hyperlink>.",
-  "name": "Battlefield Looting",
-  "icon": "CBE7688B000003BC",
-  "required_level": 2,
-  "cost": "125<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "category": "Chaos Empire Skill",
-  "id": "impressment",
-  "required_xp": 15,
-  "description": "<hyperlink>Tier</hyperlink> I and II <hyperlink>Units</hyperlink> gain +40% <hyperlink><xp></xp> Experience</hyperlink> from combat.",
-  "name": "Impressment",
-  "icon": "CBE7688B000003B7",
-  "required_level": 1,
-  "cost": "100<influence></influence> ",
-  "required_affinity": "<chaos></chaos>"
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Nature Rite. Repeatable +150 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "wild_expansion",
-  "cooldown": 0,
-  "required_xp": 500,
-  "description": "Immediately summon a at your <hyperlink>Throne City</hyperlink>.",
-  "name": "Wild Expansion",
-  "repeat_cost_increase": "150<influence></influence> ",
-  "icon": "CBE7688B000003A9",
-  "required_level": 10,
-  "cost": "500<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Nature Rite. Repeatable +50 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "rite_of_awakening",
-  "cooldown": 0,
-  "required_xp": 160,
-  "description": "Instantly gain <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, and <gold></gold> <hyperlink>Gold</hyperlink> for each <population></population> <hyperlink>Population</hyperlink> in your empire's <hyperlink>Cities</hyperlink>.",
-  "name": "Rite of Awakening",
-  "repeat_cost_increase": "50<influence></influence> ",
-  "icon": "CBE7688B000003A8",
-  "required_level": 6,
-  "cost": "250<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "repeat_cooldown_increase": 0,
-  "category": "Nature Rite. Repeatable +25 <influence></influence> <hyperlink>Imperium</hyperlink>",
-  "id": "rite_of_the_guardian_spirit",
-  "cooldown": 0,
-  "required_xp": 100,
-  "description": "Immediately summon a <hyperlink>Spirit Wolf</hyperlink> with and Resurgence at your <hyperlink>Throne City</hyperlink>.",
-  "name": "Rite of the Guardian Spirit",
-  "repeat_cost_increase": "25<influence></influence> ",
-  "icon": "CBE7688B000003A6",
-  "required_level": 4,
-  "cost": "175<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "rangers",
-  "required_xp": 500,
-  "description": "Movement cost for friendly <hyperlink>Units</hyperlink> in your <hyperlink>Domain</hyperlink> is reduced by -2 <movementgeneral></movementgeneral> <hyperlink>Move Points</hyperlink>.",
-  "name": "Rangers",
-  "icon": "CBE7688B000003A3",
-  "required_level": 10,
-  "cost": "500<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "druidic_care",
-  "required_xp": 400,
-  "description": "<hyperlink>Provinces</hyperlink> with the Forest <hyperlink>Province Feature</hyperlink> grant +4 <mana></mana> <hyperlink>Mana</hyperlink>.",
-  "name": "Druidic Care",
-  "icon": "CBE7688B000003A0",
-  "required_level": 9,
-  "cost": "400<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "druidic_empire",
-  "required_xp": 300,
-  "description": "<hyperlink>Cities</hyperlink> require -50% <food></food> <hyperlink>Food</hyperlink> for gaining a new <population></population> <hyperlink>Population</hyperlink>.",
-  "name": "Druidic Empire",
-  "icon": "CBE7688B0000039D",
-  "required_level": 8,
-  "cost": "350<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "offerings_to_the_spirits",
-  "required_xp": 200,
-  "description": "Gain +30 <caststrategic></caststrategic> <hyperlink>World Map Casting Points</hyperlink>.",
-  "name": "Offerings to the spirits",
-  "icon": "CBE7688B0000039B",
-  "required_level": 7,
-  "cost": "300<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "natural_order",
-  "required_xp": 160,
-  "description": "<hyperlink>Provinces</hyperlink> with the Forest <hyperlink>Province Feature</hyperlink> grant +2 <happiness></happiness> <hyperlink>City Stability</hyperlink>.",
-  "name": "Natural Order",
-  "icon": "CBE7688B00000398",
-  "required_level": 6,
-  "cost": "250<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "expansive_reach",
-  "required_xp": 120,
-  "description": "<hyperlink>Founding</hyperlink> or <hyperlink>Absorbing</hyperlink> <hyperlink>Cities</hyperlink> takes -3<turn></turn> turns.",
-  "name": "Expansive Reach",
-  "icon": "CBE7688B0000038F",
-  "required_level": 5,
-  "cost": "200<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "expert_sailors",
-  "required_xp": 100,
-  "description": "Coast, River, and Water <hyperlink>Provinces</hyperlink> grant +4 <food></food> <hyperlink>Food</hyperlink> and +2 <gold></gold> <hyperlink>Gold</hyperlink>.<br></br>Rivers count as roads for the purposes of movement for your units.",
-  "name": "Expert Sailors",
-  "icon": "CBE7688B00000388",
-  "required_level": 4,
-  "cost": "175<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "natural_recovery",
-  "required_xp": 60,
-  "description": "Pillaging <hyperlink>Province Improvements</hyperlink> in your domain takes +1 <turn></turn>.<br></br><hyperlink>Cities</hyperlink> may expand to <hyperlink>Provinces</hyperlink> located +2 <hyperlink>Province</hyperlink> further from the center.",
-  "name": "Natural Recovery",
-  "icon": "CBE7688B00000384",
-  "required_level": 3,
-  "cost": "150<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "soiltenders",
-  "required_xp": 40,
-  "description": "<farm></farm> <hyperlink>Farms</hyperlink> grant +7 <food></food> <hyperlink>Food</hyperlink> and +2 <gold></gold> <hyperlink>Gold</hyperlink>.",
-  "name": "Soiltenders",
-  "icon": "CBE7688B00000381",
-  "required_level": 2,
-  "cost": "125<influence></influence> ",
-  "required_affinity": "<nature></nature>"
- },
- {
-  "category": "Nature Empire Skill",
-  "id": "fruitful_integration",
-  "required_xp": 15,
-  "description": "<hyperlink>Newly Founded</hyperlink> or <hyperlink>Absorbed</hyperlink> <hyperlink>Cities</hyperlink> gain +2 <population></population> <hyperlink>Population</hyperlink>.",
-  "name": "Fruitful Integration",
-  "icon": "CBE7688B0000037E",
-  "required_level": 1,
-  "cost": "100<influence></influence> ",
-  "required_affinity": "<nature></nature>"
  }
 ]
