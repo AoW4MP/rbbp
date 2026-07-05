@@ -2328,10 +2328,14 @@
     "resid": 4514010630608
    }
   ],
+  "abilities": [
+   {
+    "slug": "000003eb0000053e"
+   }
+  ],
   "resid": 5003636903814,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 650.0,
-  "description": "While in <hyperlink>Defense Mode</hyperlink>, this unit gains Charge Resistance.",
   "required_skills": [
    {
     "resid": 5003636902934
@@ -2365,17 +2369,13 @@
   "group_name": "Defender - Hero Skill Group",
   "icon": "0000048D00000F7E",
   "type": "normal",
-  "abilities": [
-   {
-    "slug": "0000048d00000f78"
-   }
-  ],
   "resid": 5003636903804,
   "tree_name": "<classDefender></classDefender> Defender",
   "name": "Bladestorm",
   "tree_pos_x": 100.0,
   "tree_pos_y": 450.0,
   "id": "hs_defender_bladestorm",
+  "description": "When entering <hyperlink>Defense Mode</hyperlink>, all adjacent enemy units gain:<bulletlist><bullet>Bleeding</bullet><bullet>Immobilized</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636903785
@@ -2397,10 +2397,14 @@
     "resid": 5003636903785
    }
   ],
+  "abilities": [
+   {
+    "slug": "rbbp_hs_defender_consolidating_push_ability_hs_defender_consolidating_push"
+   }
+  ],
   "resid": 5003636903795,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 350.0,
-  "description": "Modify and enhance Pushing Attack:<bulletlist><bullet>Pushing Attack now heals the caster for +20 <temphp></temphp> Temporary Hit Points.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5003636903775
@@ -2612,7 +2616,7 @@
   "resid": 5003636902874,
   "tree_name": "<classDefender></classDefender> Defender",
   "tree_pos_y": 650.0,
-  "description": "+30 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+35 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636903809
@@ -2632,7 +2636,7 @@
   "tree_pos_x": 400.0,
   "tree_pos_y": 550.0,
   "id": "hs_defender_vigor_ii",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+20 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636902843
@@ -2891,7 +2895,7 @@
   "tree_pos_x": 550.0,
   "tree_pos_y": 50.0,
   "id": "hs_defender_shieldbearer",
-  "description": "When entering <hyperlink>Defense Mode</hyperlink>, this unit and all adjacent allies receive +2 <defense></defense> <hyperlink>Defense</hyperlink> until the start of the next turn."
+  "description": "When entering <hyperlink>Defense Mode</hyperlink>, this unit and all adjacent allies receive +2 <defense></defense> <hyperlink>Defense</hyperlink> until the start of the next turn.<br></br><br></br>While in <hyperlink>Defense Mode</hyperlink>, this unit gains Charge Resistance."
  },
  {
   "group_name": "Defender - Hero Skill Group",
@@ -2967,7 +2971,7 @@
   "tree_pos_x": 300.0,
   "tree_pos_y": 150.0,
   "id": "hs_defender_vigor_i",
-  "description": "+15 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "+20 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.",
   "required_skills": [
    {
     "resid": 5003636903770
@@ -6764,6 +6768,9 @@
   "abilities": [
    {
     "slug": "000004a600000ade"
+   },
+   {
+    "slug": "0000048d000006b0"
    }
   ],
   "resid": 5111011085020,
@@ -7013,7 +7020,7 @@
     "resid": 4273492487889
    },
    {
-    "resid": 5046586584839
+    "resid": 5046586586403
    }
   ]
  },
@@ -7055,7 +7062,7 @@
     "resid": 4273492487896
    },
    {
-    "resid": 5046586584884
+    "resid": 5046586585384
    }
   ]
  },
@@ -7110,7 +7117,7 @@
   "name": "Scarlet Plague",
   "required_skills": [
    {
-    "resid": 5046586584873
+    "resid": 5046586584839
    }
   ],
   "DLC": "THRONESOFBLOOD "
@@ -7129,7 +7136,7 @@
   "name": "Wail of the Banshee",
   "required_skills": [
    {
-    "resid": 5046586586412
+    "resid": 5046586585141
    }
   ]
  },
@@ -7178,7 +7185,7 @@
   "name": "Song of Carnage",
   "required_skills": [
    {
-    "resid": 5046586586403
+    "resid": 5046586586391
    }
   ]
  },
@@ -7199,7 +7206,7 @@
     "resid": 5046586575333
    },
    {
-    "resid": 5046586586510
+    "resid": 5046586586412
    },
    {
     "resid": 5046586586483
@@ -7392,7 +7399,7 @@
     "resid": 5046586575341
    },
    {
-    "resid": 5046586586510
+    "resid": 5046586586412
    },
    {
     "resid": 5046586585273
@@ -7473,7 +7480,7 @@
     "resid": 4273492487857
    },
    {
-    "resid": 5046586584916
+    "resid": 5046586586510
    }
   ]
  },
@@ -7653,10 +7660,10 @@
     "resid": 5046586575294
    },
    {
-    "resid": 5046586585384
+    "resid": 5046586584916
    },
    {
-    "resid": 5046586585141
+    "resid": 5046586584873
    }
   ]
  },
@@ -7962,7 +7969,7 @@
   "description": "Base attacks:<bulletlist><bullet>Inflict +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>+10% damage against targets that are Poisoned or Decaying.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "required_skills": [
    {
-    "resid": 5046586585141
+    "resid": 5046586584916
    },
    {
     "resid": 5046586579070
@@ -8065,7 +8072,7 @@
     "resid": 4273492487897
    },
    {
-    "resid": 5046586586391
+    "resid": 5046586584884
    }
   ]
  },
@@ -8088,7 +8095,7 @@
     "resid": 4273492487889
    },
    {
-    "resid": 5046586584839
+    "resid": 5046586586403
    }
   ]
  },
@@ -8124,19 +8131,19 @@
     "resid": 5046586586423
    },
    {
-    "resid": 5046586586412
+    "resid": 5046586584839
    },
    {
-    "resid": 5046586586403
+    "resid": 5046586586391
    },
    {
-    "resid": 5046586584884
-   },
-   {
-    "resid": 5046586584873
+    "resid": 5046586585384
    },
    {
     "resid": 5046586585176
+   },
+   {
+    "resid": 5046586585141
    }
   ]
  },
@@ -8198,7 +8205,7 @@
     "resid": 4273492487894
    },
    {
-    "resid": 5046586585384
+    "resid": 5046586584873
    }
   ]
  },
@@ -8384,7 +8391,7 @@
     "resid": 5046586575299
    },
    {
-    "resid": 5046586586391
+    "resid": 5046586584884
    }
   ]
  },
@@ -11727,7 +11734,7 @@
   "tree_pos_x": 500.0,
   "tree_pos_y": 50.0,
   "id": "hs_spellblade_arcane_skirmisher",
-  "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink> attacks grant Prepared Spell for 2<turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Magic</hyperlink> attacks grant Prepared Strike for 2<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>"
+  "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink> attacks and <hyperlink>Missile</hyperlink> grant Prepared Spell for 2<turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Magic</hyperlink> attacks grant Prepared Strike and Prepared Shot for 2<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>"
  },
  {
   "group_name": "Spellblade - Hero Skill Group",
@@ -12020,7 +12027,7 @@
   "tree_pos_x": 150.0,
   "tree_pos_y": 350.0,
   "id": "hs_spellblade_spell_penetration",
-  "description": "All attacks ignore 1 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
+  "description": "All attacks ignore 3 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
   "required_skills": [
    {
     "resid": 5111011085218
@@ -14027,7 +14034,7 @@
   "name": "Cosmic Caster",
   "hero_property": "Astral Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Chaos Pulse becomes Cosmic Pulse.</bullet><bullet>Gain Savant Channeling.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.",
+  "description": "<bulletlist><bullet>Chaos Pulse becomes Cosmic Pulse.</bullet><bullet>Gain Savant Channeling.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575303
@@ -14253,6 +14260,9 @@
   "abilities": [
    {
     "slug": "0000049700003527"
+   },
+   {
+    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586586403,
@@ -14301,7 +14311,7 @@
     "slug": "blood_communion_ability_vampire_signature_blood_communion"
    },
    {
-    "slug": "0000049700003215"
+    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586584916,
@@ -14348,6 +14358,9 @@
   "abilities": [
    {
     "slug": "0000049700002f36"
+   },
+   {
+    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586584884,
@@ -14362,6 +14375,9 @@
   "abilities": [
    {
     "slug": "0000049700002f33"
+   },
+   {
+    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586584873,
@@ -14379,9 +14395,6 @@
    },
    {
     "slug": "0000049700002f26"
-   },
-   {
-    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586584839,
@@ -14470,7 +14483,7 @@
   "name": "Havoc Caster",
   "hero_property": "Chaos Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Chaos Pulse becomes Havoc Pulse, increasing the number of triggering effects from 1 to 2.</bullet><bullet>Gain Chaos Channeling</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.",
+  "description": "<bulletlist><bullet>Chaos Pulse becomes Havoc Pulse, increasing the number of triggering effects from 1 to 2.</bullet><bullet>Gain Chaos Channeling</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575303
@@ -14985,7 +14998,7 @@
   "name": "Fleshsculptor",
   "hero_property": "Nature Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Possession becomes Greater Possession.</bullet><bullet>Fleshweave becomes Fleshsculpt.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.",
+  "description": "<bulletlist><bullet>Possession becomes Greater Possession.</bullet><bullet>Fleshweave becomes Fleshsculpt.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575299
@@ -15257,7 +15270,7 @@
   "name": "Enthraller",
   "hero_property": "Order Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Eldritch Truth becomes Enrapturing Truth.</bullet><bullet>Gain Manipulator.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.",
+  "description": "<bulletlist><bullet>Eldritch Truth becomes Enrapturing Truth.</bullet><bullet>Gain Manipulator.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575294
@@ -15359,7 +15372,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967548
@@ -15374,7 +15387,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967546
@@ -15389,7 +15402,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967545
@@ -15404,7 +15417,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967544
@@ -15419,7 +15432,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967543
@@ -15434,7 +15447,7 @@
   "name": "Purebreath",
   "hero_property": "Order Property",
   "DLC": "DRAGONLORDS ",
-  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes their <hyperlink>Negative Status Effects</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "This unit gains:<bulletlist><bullet>+20 <hyperlink><hp></hp> Hit Points</hyperlink></bullet><bullet>Its breath attack:<bulletlist></bullet><bullet>Increases in size.</bullet><bullet>Becomes part <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> if not an Order Dragon.</bullet><bullet>Heals friendly units hit by 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and removes 2 of their negative status effects.</bullet></bulletlist></bulletlist>",
   "required_skills": [
    {
     "resid": 4995046967547
@@ -15458,6 +15471,9 @@
    },
    {
     "slug": "0000049700003596"
+   },
+   {
+    "slug": "0000049700003215"
    }
   ],
   "resid": 5046586586510,
@@ -15526,9 +15542,6 @@
    },
    {
     "slug": "0000049700003519"
-   },
-   {
-    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586586391,
@@ -15563,9 +15576,6 @@
    },
    {
     "slug": "000004970000313a"
-   },
-   {
-    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586585384,
@@ -15633,7 +15643,7 @@
   "name": "Elite March",
   "hero_property": "Shadow Property",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Gravemarch now conjures the bodies of Tier 3 and Tier 4 Undead units and has its cooldown reduced by 2.",
+  "description": "Gravemarch now conjures the bodies of Tier 3 and Tier 4 Undead units.",
   "required_skills": [
    {
     "resid": 5046586585229
@@ -15678,9 +15688,6 @@
    },
    {
     "slug": "0000049700003048"
-   },
-   {
-    "slug": "0000049700003214"
    }
   ],
   "resid": 5046586585141,
@@ -15769,7 +15776,7 @@
   "name": "Mind Devourer",
   "hero_property": "Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Eldritch Truth becomes Mind Shattering Truth.</bullet><bullet>Gain Mindrend.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.",
+  "description": "<bulletlist><bullet>Eldritch Truth becomes Mind Shattering Truth.</bullet><bullet>Gain Mindrend.</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.",
   "required_skills": [
    {
     "resid": 5046586575294
@@ -15784,7 +15791,7 @@
   "name": "Puppeteer",
   "hero_property": "Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "<bulletlist><bullet>Possession becomes Puppeteer's Possession.</bullet><bullet>Eldritch Mind Control becomes Puppeteer's Domination.<br></br><br></br>Increases unit upkeep by 20 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Possession becomes Puppeteer's Possession.</bullet><bullet>Eldritch Mind Control becomes Puppeteer's Domination.<br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist>",
   "required_skills": [
    {
     "resid": 5046586575299
@@ -15990,7 +15997,7 @@
   "name": "Madcaster",
   "hero_property": "Astral/Chaos Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Gain:<bulletlist><bullet>Chaos Pulse</bullet><bullet>Expert Channeling</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 10 <mana></mana> <hyperlink>Mana</hyperlink>."
+  "description": "Gain:<bulletlist><bullet>Chaos Pulse</bullet><bullet>Expert Channeling</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>."
  },
  {
   "resid": 5046586575294,
@@ -16000,7 +16007,7 @@
   "name": "Mindbreaker",
   "hero_property": "Order/Shadow Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Gain:<bulletlist><bullet>Eldritch Truth</bullet><bullet>Eldritch Breach</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 10 <mana></mana> <hyperlink>Mana</hyperlink>."
+  "description": "Gain:<bulletlist><bullet>Eldritch Truth</bullet><bullet>Eldritch Breach</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>."
  },
  {
   "resid": 5046586575299,
@@ -16010,6 +16017,6 @@
   "name": "Fleshweaver",
   "hero_property": "Shadow/Nature Property",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Gain:<bulletlist><bullet>Possession</bullet><bullet>Fleshweave</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 10 <mana></mana> <hyperlink>Mana</hyperlink>."
+  "description": "Gain:<bulletlist><bullet>Possession</bullet><bullet>Fleshweave</bullet></bulletlist><br></br><br></br>Increases unit upkeep by 0 <mana></mana> <hyperlink>Mana</hyperlink>."
  }
 ]

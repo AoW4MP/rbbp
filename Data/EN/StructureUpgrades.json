@@ -65,10 +65,10 @@
  {
   "requirement_description": "Requires 3 Lava improvement provinces to unlock.",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "+20 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income",
+  "prediction_description": "<bulletlist><bullet>+20 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet><bullet>Grants <hyperlink>Obsidian Weaponsmith</hyperlink> to every <hyperlink>Unit</hyperlink> produced in this <hyperlink>City</hyperlink>.</bullet></bulletlist>",
   "resid": 5222680232536,
   "id": "obsidian_weaponsmith",
-  "description": "",
+  "description": "Units built in this <hyperlink>City</hyperlink> gain +2 damage on base non-<hyperlink>Magic</hyperlink> attacks. This effect is increased for Single Shot attacks.",
   "name": "Obsidian Weaponsmith",
   "icon": "000004C00000025B",
   "is_sector_upgrade": false,
@@ -76,8 +76,8 @@
  },
  {
   "requirement_description": "Requires 2 Lava improvement provinces to unlock.",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "+15 <structureprod></structureprod> <hyperlink>Production</hyperlink> income",
+  "cost": "200<gold></gold> 100<structureprod></structureprod> ",
+  "prediction_description": "+30 <structureprod></structureprod> <hyperlink>Production</hyperlink> income",
   "resid": 5222680232531,
   "id": "basalt_excavation",
   "description": "",
@@ -881,7 +881,7 @@
   "resid": 5046586573697,
   "id": "_conduit___glacial_megalith",
   "DLC": "PRIMALFURY ",
-  "description": "<bulletlist><bullet>+6 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent Snow <hyperlink>Province</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+4 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent Snow <hyperlink>Province</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Glacial Megalith",
   "icon": "0000049700000382",
   "is_sector_upgrade": true
@@ -1119,7 +1119,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "<bulletlist><bullet>+10 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+15 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet></bulletlist>",
   "resid": 5016521802591,
   "id": "stonestele",
@@ -1746,7 +1746,7 @@
  },
  {
   "requirement_description": "Must be built on an annexed <hyperlink>Province</hyperlink>.<br></br><br></br>Requires City Tier II.",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 5003636900109,
   "id": "_mine___transmutation_circle",
@@ -1772,10 +1772,10 @@
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4995046966267,
-  "id": "_conduit___monastery",
+  "id": "_farm___monastery",
   "DLC": "WAYSOFWAR ",
-  "description": "<bulletlist><bullet>10 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>10 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet><bullet>Per adjacent <farm></farm> <hyperlink>Farm</hyperlink>:<bulletlist></bullet><bullet>2 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>3 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink></bullet></bulletlist>",
-  "name": "<conduit></conduit> Monastery",
+  "description": "<bulletlist><bullet>10 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>10 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet><bullet>Per adjacent <farm></farm> <hyperlink>Farm</hyperlink>:<bulletlist></bullet><bullet>2 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>3 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink></bullet></bulletlist>",
+  "name": "<farm></farm> Monastery",
   "icon": "0000048B000003FC",
   "is_sector_upgrade": true
  },
@@ -2242,7 +2242,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
+  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
   "prediction_description": "",
   "resid": 4634269712816,
   "id": "_expansionvictory___beacon_of_unity",
@@ -2358,7 +2358,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "nature_bolstering_matrix",
-  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> heal for +10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> dispell <hyperlink>Negative Status Effects</hyperlink> (2).",
   "name": "Nature Bolstering Matrix",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -2369,7 +2369,7 @@
   "prediction_description": "",
   "resid": 4578435139908,
   "id": "chaos_bolstering_matrix",
-  "description": "Chaos Buff and Healing <hyperlink>Spells</hyperlink> grant 3 Strengthened.",
+  "description": "Chaos Buff and Healing <hyperlink>Spells</hyperlink> grant 2 Strengthened.",
   "name": "Chaos Bolstering Matrix",
   "icon": "0000042A00000946",
   "is_sector_upgrade": false
@@ -2380,7 +2380,7 @@
   "prediction_description": "",
   "resid": 4578435139905,
   "id": "order_bolstering_matrix",
-  "description": "Order Buff and Healing <hyperlink>Spells</hyperlink> grant 3 Fortune.",
+  "description": "Order Buff and Healing <hyperlink>Spells</hyperlink> grant 2 Fortune.",
   "name": "Order Bolstering Matrix",
   "icon": "0000042A00000943",
   "is_sector_upgrade": false
@@ -2666,7 +2666,7 @@
   "prediction_description": "-10 <mana></mana> <hyperlink>Mana</hyperlink> income",
   "resid": 4578435139420,
   "id": "_conduit___spell_jammer",
-  "description": "<bulletlist><bullet>Enemies cannot target <hyperlink>World Map Spells</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Enemy <hyperlink>Spells</hyperlink> cost +100% <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> in <hyperlink>Combat</hyperlink> in <hyperlink>Domain</hyperlink>.</bullet><bullet>-10<mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Enemies cannot target <hyperlink>World Map Spells</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Enemy <hyperlink>Spells</hyperlink> cost +50% <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> in <hyperlink>Combat</hyperlink> in <hyperlink>Domain</hyperlink>.</bullet><bullet>-10<mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Spell Jammer",
   "icon": "0000042A0000075D",
   "is_sector_upgrade": true
@@ -2739,7 +2739,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "<bulletlist><bullet>+15 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet><bullet>+10 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139267,
   "id": "stone_conjurer",
@@ -2800,7 +2800,7 @@
  {
   "requirement_description": "",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+40 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+40 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139242,
   "id": "shadowtrade_quarter",
   "description": "",
@@ -2812,7 +2812,7 @@
  {
   "requirement_description": "",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+30 <gold></gold> <hyperlink>Gold</hyperlink> income</bullet><bullet>-20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139237,
   "id": "collector",
   "description": "",
@@ -3177,7 +3177,7 @@
  },
  {
   "requirement_description": "",
-  "cost": "100<gold></gold> 250<structureprod></structureprod> ",
+  "cost": "100<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+15 <structureprod></structureprod> <hyperlink>Production</hyperlink> income",
   "resid": 4578435138479,
   "id": "stonemason",
@@ -3625,7 +3625,7 @@
  },
  {
   "requirement_description": "Requires 3: Water provinces to unlock",
-  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
+  "cost": "300<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+20 <structureprod></structureprod> <hyperlink>Production</hyperlink> income",
   "resid": 4282082401533,
   "id": "grand_wharf",
@@ -3721,7 +3721,7 @@
  {
   "requirement_description": "Requires 2: <conduit></conduit> <hyperlink>Conduits</hyperlink>",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 <mana></mana> <hyperlink>Mana</hyperlink> income per <conduit></conduit> Conduit:",
+  "prediction_description": "<bulletlist><bullet>+20 <optactical></optactical> Combat Casting Point</bullet><bullet>+20 <caststrategic></caststrategic> World Map Casting Point</bullet><bullet>+10 <mana></mana> <hyperlink>Mana</hyperlink> income per <conduit></conduit> Conduit:</bullet></bulletlist>",
   "resid": 4282082401309,
   "id": "mages_guild",
   "description": "",
@@ -3757,7 +3757,7 @@
  {
   "requirement_description": "Requires 2: <mine></mine> <hyperlink>Mines</hyperlink>",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 <gold></gold> <hyperlink>Gold</hyperlink> income per <mine></mine> Mine:",
+  "prediction_description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+1 <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink> income per <mine></mine> Mine:</bullet></bulletlist>",
   "resid": 4282082401272,
   "id": "merchants_guild",
   "description": "",
@@ -3780,8 +3780,8 @@
  },
  {
   "requirement_description": "Requires 4: <quarry></quarry> <hyperlink>Quarry</hyperlink> to unlock.",
-  "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per <quarry></quarry> Quarry:</bullet></bulletlist>",
+  "cost": "500<gold></gold> 400<structureprod></structureprod> ",
+  "prediction_description": "<bulletlist><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+80 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per <quarry></quarry> Quarry:</bullet></bulletlist>",
   "resid": 4282082401262,
   "id": "workers_guild",
   "description": "",
@@ -3792,7 +3792,7 @@
  },
  {
   "requirement_description": "Requires 2:<quarry></quarry> <hyperlink>Quarries</hyperlink>",
-  "cost": "170<gold></gold> 450<structureprod></structureprod> ",
+  "cost": "300<gold></gold> 200<structureprod></structureprod> ",
   "prediction_description": "+20 <structureprod></structureprod> <hyperlink>Production</hyperlink> income",
   "resid": 4282082401258,
   "id": "masonic_hall",
@@ -3805,7 +3805,7 @@
  {
   "requirement_description": "Requires 4: <forester></forester> <hyperlink>Foresters</hyperlink>",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> income per <forester></forester> Forester:</bullet><bullet>+5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per <forester></forester> Forester:</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier I</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier II</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier III</hyperlink>.</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> income per <forester></forester> Forester:</bullet><bullet>+5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per <forester></forester> Forester:</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier I</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier II</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier III</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier IV</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier V</hyperlink>.</bullet></bulletlist>",
   "resid": 4282082401254,
   "id": "smiths_guild",
   "description": "",
@@ -4045,7 +4045,7 @@
  {
   "requirement_description": "Requires 4: <farm></farm> <hyperlink>Farms</hyperlink>.",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "+10 <food></food> <hyperlink>Food</hyperlink> income per <farms></farms> Farm:",
+  "prediction_description": "<bulletlist><bullet>+2 <influence></influence> <hyperlink>Imperium</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>:</bullet><bullet>+10 <food></food> <hyperlink>Food</hyperlink> income per <farms></farms> Farm:</bullet></bulletlist>",
   "resid": 4041564233665,
   "id": "farmers_guild",
   "description": "<bulletlist><bullet>This city produces +30% <food></food> <hyperlink>Food</hyperlink> income.</bullet></bulletlist>",

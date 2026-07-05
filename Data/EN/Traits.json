@@ -332,13 +332,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 1 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+30 <mana></mana> <hyperlink>Mana</hyperlink></bullet><bullet>Tier III tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 2 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+130 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet><bullet>Tier IV tomes have no affinity requirements.</bullet></bulletlist>"
    },
    {
-    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+20 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
+    "name": "Having 3 of each <hyperlink>Affinity</hyperlink> grants:<bulletlist><bullet>+200 <influence></influence> <hyperlink>Imperium</hyperlink></bullet><bullet>Tier V tomes have no affinity requirements.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -350,7 +350,7 @@
  {
   "biography_description": "To some, they are cowards; to themselves, survivors.",
   "lore_description": "<helpcolor>Easier to rout in combat.</helpcolor>",
-  "point_cost": -1,
+  "point_cost": -2,
   "id": "coward",
   "name": "Coward",
   "incompatible_society_traits": [
@@ -528,8 +528,8 @@
  },
  {
   "biography_description": "Their bodies can barely contain their divine origin, sacred light radiates from within them like a purifying flame.",
-  "lore_description": "<helpcolor>Melee attackers sustain <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "inner_radiance",
   "name": "Inner Radiance",
   "incompatible_society_traits": [
@@ -549,10 +549,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>."
-   },
-   {
-    "name": "Melee attackers sustain 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>."
+    "name": "+4 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>."
    }
   ],
   "enabled": true,
@@ -591,7 +588,7 @@
  },
  {
   "biography_description": "Lightning runs through their veins, zapping those who dare to harm them.",
-  "lore_description": "<helpcolor>Melee attackers sustain <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "inner_lightning",
   "name": "Inner Lightning",
@@ -612,10 +609,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink>."
+    "name": "+2 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers sustain 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>."
+    "name": "Melee attackers have a base 60% chance of becoming Electrified."
+   },
+   {
+    "name": "Immunity to becoming Electrified."
    }
   ],
   "enabled": true,
@@ -627,8 +627,8 @@
  },
  {
   "biography_description": "Their skin is cold to the touch, causing frostbite to those who get too close.",
-  "lore_description": "<helpcolor>Melee attackers sustain <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</helpcolor>",
-  "point_cost": 2,
+  "lore_description": "",
+  "point_cost": 1,
   "id": "inner_frost",
   "name": "Inner Frost",
   "incompatible_society_traits": [
@@ -648,10 +648,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
-   },
-   {
-    "name": "Melee attackers sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>."
+    "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
    }
   ],
   "enabled": true,
@@ -663,7 +660,7 @@
  },
  {
   "biography_description": "Their boiling blood scorches anyone who dares to wound them.",
-  "lore_description": "<helpcolor>Melee attackers sustain <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</helpcolor>",
+  "lore_description": "",
   "point_cost": 2,
   "id": "inner_fire",
   "name": "Inner Fire",
@@ -684,10 +681,13 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+3 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>."
+    "name": "+2 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers sustain 3 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>."
+    "name": "Melee attackers have a base 60% chance of becoming Burning."
+   },
+   {
+    "name": "Immunity to becoming Burning."
    }
   ],
   "enabled": true,
@@ -1101,16 +1101,16 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
+    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Pillaging</hyperlink> a <hyperlink>Province Improvement</hyperlink>."
    },
    {
-    "name": "Gain 50 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
+    "name": "Gain 150 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Razing</hyperlink> a conquered <hyperlink>City</hyperlink> per <hyperlink>Province Improvement</hyperlink> it has."
    },
    {
-    "name": "Gain 30 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
+    "name": "Gain 90 <food></food> <hyperlink>Food</hyperlink> on successfully <hyperlink>Migrating</hyperlink> a conquered <hyperlink>City</hyperlink> per <population></population> <hyperlink>Population</hyperlink>. But the City loses additional <population></population> Population afterward."
    },
    {
-    "name": "<hyperlink>Vassals</hyperlink> grant +10 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
+    "name": "<hyperlink>Vassals</hyperlink> grant 30 <food></food> <hyperlink>Food</hyperlink> income per <population></population> <hyperlink>Population</hyperlink>."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -1153,7 +1153,10 @@
  {
   "starting_bonuses": [
    {
-    "description": "Starting <hyperlink>Units</hyperlink> gain +1 rank."
+    "description": "Starting <hyperlink>Units</hyperlink> gain +1 rank and +3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>"
+   },
+   {
+    "description": "Start with an extra Support Unit or Polearm Unit."
    }
   ],
   "affinities": [
@@ -1169,7 +1172,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 100 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
+    "name": "Completing <hyperlink>Bounties</hyperlink> grants +50% <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> and an additional 50 <influence></influence> <hyperlink>Imperium</hyperlink> as rewards."
    },
    {
     "name": "Whenever you have no <hyperlink>Bounties</hyperlink> active, gain a bounty offer targeting a nearby existing <hyperlink>Infestation</hyperlink> that hasn't been targeted before. It will not generate a new bounty if no more Infestations can be found."
@@ -1182,18 +1185,13 @@
   "icon": "00000493000008F8"
  },
  {
-  "starting_bonuses": [
-   {
-    "description": "Start with +1 <unitHero></unitHero> <hyperlink>Hero Cap</hyperlink> and +3 Hero Cap for Pantheon heroes."
-   }
-  ],
   "affinities": [
    {
     "name": "1<shadow></shadow> Shadow Affinity"
    }
   ],
-  "biography_description": "They elevate their heroes above the masses, empowered through dark elation.",
   "lore_description": "They believe in the might of their heroes, the chosen few, elevated above the masses.",
+  "biography_description": "They elevate their heroes above the masses, empowered through dark elation.",
   "point_cost": 1,
   "id": "cult_of_personality",
   "name": "Cult of Personality",
@@ -1203,17 +1201,17 @@
     "name": "<hyperlink>Heroes</hyperlink> gain a bonus Skill Point whenever they gain a <renown></renown> <hyperlink>Renown</hyperlink> Level."
    },
    {
-    "name": "<hyperlink>Heroes</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> whenever they gain a <renown></renown> <hyperlink>Renown</hyperlink> Level."
+    "name": "In combat, <hyperlink>Units</hyperlink> in an <hyperlink>Army</hyperlink> without a Hero suffer -20 <happiness></happiness> <hyperlink>Morale</hyperlink>."
    },
    {
-    "name": "In combat, <hyperlink>Units</hyperlink> in an <hyperlink>Army</hyperlink> without a Hero suffer -20 <happiness></happiness> <hyperlink>Morale</hyperlink>."
+    "name": "<hyperlink>Heroes</hyperlink> assigmented by Governors give:<bulletlist><bullet>+10<happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
   "front_end": false,
+  "icon": "00000493000008F4",
   "type": "society",
-  "display_order": 1,
-  "icon": "00000493000008F4"
+  "display_order": 1
  },
  {
   "affinities": [
@@ -1699,13 +1697,19 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain 2 <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Empire</hyperlink> <hyperlink>Unit</hyperlink> killed after successful combat.<br></br>This reward increases by +1 for each level of <evilact></evilact>evil <hyperlink>Alignment</hyperlink> of the Faction they belonged to."
+    "name": "Gain <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Empire</hyperlink> <hyperlink>Unit</hyperlink> or <hyperlink>Hero</hyperlink> defeated after successful combat.<br></br>This reward increases for each level of <evilact></evilact>evil <hyperlink>Alignment</hyperlink> of the Faction they belonged to.<br></br><br></br>Gain <influence></influence> <hyperlink>Imperium</hyperlink> for each Infernal Fiend, Undead, Umbral Demon, Accursed Fiend defeated after successful combat."
    },
    {
     "name": "Gain +30 <casusBelli></casusBelli> <hyperlink>Grievances</hyperlink> against players with an <evilact></evilact>evil <hyperlink>Alignment</hyperlink>."
    },
    {
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
+   },
+   {
+    "name": "<hyperlink>Units</hyperlink> and <hyperlink>Heroes</hyperlink> gain immune to Umbral Malady."
+   },
+   {
+    "name": "<hyperlink>Missile</hyperlink>:<bulletlist><bullet>+1<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink></bullet><bullet> +1<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet></bulletlist><br></br><bullet><hyperlink>Melee</hyperlink>:<bulletlist></bullet><bullet>+1<damageFire></damageFire> <hyperlink>Fire Damage</hyperlink></bullet><bullet>+1<damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink></bullet><bullet>-2<damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1882,6 +1886,9 @@
   "effect_descriptions": [
    {
     "name": "<hyperlink>Rally of the Lieges</hyperlink> occur twice as often"
+   },
+   {
+    "name": "<hyperlink>Units</hyperlink> recruited through <hyperlink>Rally of the Lieges</hyperlink> gain +2 Rank upon recruitment."
    }
   ],
   "enabled": true,
@@ -1945,7 +1952,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "City Structures cost 100% more <structureprod></structureprod> Production but grant +1 <happiness></happiness> City Stability and +5 <gold></gold> Gold in addition to their normal effects."
+    "name": "City Structures cost 50% more <structureprod></structureprod> Production but grant +1 <happiness></happiness> City Stability and +3 <gold></gold> Gold in addition to their normal effects."
    },
    {
     "name": "Racial <hyperlink>Unit tier</hyperlink> 3 Units have +1 Rank"
@@ -1976,7 +1983,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2101,13 +2108,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain +30% income from <hyperlink>Vassals</hyperlink>."
+    "name": "Gain +60% income from <hyperlink>Vassals</hyperlink>."
    },
    {
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
-   },
-   {
-    "name": "<hyperlink>Units</hyperlink> recruited through <hyperlink>Rally of the Lieges</hyperlink> gain +1 Rank upon recruitment."
    },
    {
     "name": "Gain +1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>."
@@ -2626,7 +2630,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +10% damage."
+    "name": "<casttactical></casttactical> <hyperlink>Damage Spells</hyperlink> gain +20% damage."
    },
    {
     "name": "Battle Mage Units and Support Units provide +5 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
@@ -2739,10 +2743,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -40% <knowledge></knowledge> Knowledge to unlock."
+    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -20% <knowledge></knowledge> Knowledge to unlock."
    },
    {
-    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -30% upkeep."
+    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -40% upkeep."
    }
   ],
   "enabled": true,
@@ -2773,7 +2777,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +2 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +5 <gold></gold> <hyperlink>Gold</hyperlink> per Quarry in their <hyperlink>Domain</hyperlink>."
    },
    {
     "name": "Special Province Improvements cost -50% <structureprod></structureprod> Production."
@@ -2934,7 +2938,7 @@
     "name": "+10 <caststrategic></caststrategic> World Map Casting Points."
    },
    {
-    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> to cast."
+    "name": "<hyperlink>Combat Spells</hyperlink> cost -20% less <mana></mana> <hyperlink>Mana</hyperlink> and <optactical></optactical> Combat Casting Point to cast."
    }
   ],
   "enabled": true,
@@ -2971,7 +2975,7 @@
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "The nearest City owned gains +3 <mana></mana> <hyperlink>Mana</hyperlink> and +3 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
+    "name": "The nearest City owned gains +5 <mana></mana> <hyperlink>Mana</hyperlink> and +5 <food></food> <hyperlink>Food</hyperlink> per tier of non-Magic Origin units killed or lost after successful combat."
    }
   ],
   "enabled": true,
@@ -3002,7 +3006,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "The nearest City owned gains +3 <gold></gold> <hyperlink>Gold</hyperlink> and +3 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
+    "name": "The nearest City owned gains +5 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
@@ -3076,7 +3080,7 @@
     "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>."
    },
    {
-    "name": "Units gain +10 <hyperlink><xp></xp> Experience</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> while you are at the maximum good <goodact></goodact> <hyperlink>Alignment</hyperlink>."
+    "name": "Units other than heroes get +10 <hyperlink><xp></xp> Experience</hyperlink> per <turn></turn> <hyperlink>Turn</hyperlink> while you are at the maximum good <goodact></goodact> <hyperlink>Alignment</hyperlink>."
    }
   ],
   "enabled": true,
