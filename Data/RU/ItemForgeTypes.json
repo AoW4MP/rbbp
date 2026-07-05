@@ -2,10 +2,10 @@
  {
   "resid": 5291399710004,
   "id": "equipment_item_1h_skirmisher_sword_nomad_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -27,10 +27,10 @@
  {
   "resid": 5257039971040,
   "id": "lost_souls_equipment_item_miscimmortality_stone_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Immortality Stone",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Камень бессмертия",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -61,23 +61,23 @@
   "unlock_requirements": [
    {
     "num_required": 1,
-    "token_name": "Fireforge Stone"
+    "token_name": "Кузнечный камень"
    },
    {
     "num_required": 1,
-    "token_name": "Archon Blood"
+    "token_name": "Кровь архонта"
    },
    {
     "num_required": 1,
-    "token_name": "Rainbow Clover"
+    "token_name": "Радужный клевер"
    },
    {
     "num_required": 1,
-    "token_name": "Silvertongue Fruit"
+    "token_name": "Плод среброуста"
    },
    {
     "num_required": 1,
-    "token_name": "Rainbow Clover"
+    "token_name": "Радужный клевер"
    }
   ],
   "base_hero_item_resid": 5257039970991
@@ -85,10 +85,10 @@
  {
   "resid": 5257039971038,
   "id": "lost_souls_equipment_item_torse_forefathers_cloak_type",
-  "slot": "Torso",
+  "slot": "Туловище",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Forefather's Cloak",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Плащ Прародителя",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.LightArmor"
@@ -111,23 +111,23 @@
   "unlock_requirements": [
    {
     "num_required": 1,
-    "token_name": "Fireforge Stone"
+    "token_name": "Кузнечный камень"
    },
    {
     "num_required": 1,
-    "token_name": "Archon Blood"
+    "token_name": "Кровь архонта"
    },
    {
     "num_required": 1,
-    "token_name": "Rainbow Clover"
+    "token_name": "Радужный клевер"
    },
    {
     "num_required": 1,
-    "token_name": "Silvertongue Fruit"
+    "token_name": "Плод среброуста"
    },
    {
     "num_required": 1,
-    "token_name": "Rainbow Clover"
+    "token_name": "Радужный клевер"
    }
   ],
   "base_hero_item_resid": 5257039970588
@@ -135,10 +135,10 @@
  {
   "resid": 5248450035756,
   "id": "equipment_item_bone_obelisk_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Obelisk",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Обелиск",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -166,10 +166,10 @@
  {
   "resid": 5248450035753,
   "id": "equipment_item_bone_warhammer_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Warhammer",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Боевой молот",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -197,10 +197,10 @@
  {
   "resid": 5248450035750,
   "id": "equipment_item_bone_giant_axe_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Giant Axe",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Топор великана",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -228,10 +228,10 @@
  {
   "resid": 5111011085112,
   "id": "equipment_item_warclaw_2_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Warclaw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Боевой коготь",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor.ClawFlavor"
@@ -259,10 +259,10 @@
  {
   "resid": 5111011085111,
   "id": "equipment_item_armored_claw_2_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive or defensive capabilities of the item.<br></br><br></br>Grants Shield Defense and Defense Mode: Shield Wall.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Armored Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими атакующую или оборонительную эффективность предмета в бою.<br></br><br></br>Даёт свойства «Оборона со щитом» и «Защитная позиция: стена щитов».<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Бронированный коготь",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor.ClawFlavor"
@@ -290,10 +290,10 @@
  {
   "resid": 5111011085106,
   "id": "equipment_item_warclaw_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Warclaw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Боевой коготь",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor.ClawFlavor"
@@ -321,10 +321,10 @@
  {
   "resid": 5111011085088,
   "id": "equipment_item_armored_claw_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive or defensive capabilities of the item.<br></br><br></br>Grants Shield Defense and Defense Mode: Shield Wall.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Armored Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими атакующую или оборонительную эффективность предмета в бою.<br></br><br></br>Даёт свойства «Оборона со щитом» и «Защитная позиция: стена щитов».<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Бронированный коготь",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor.ClawFlavor"
@@ -352,9 +352,9 @@
  {
   "resid": 5111011084655,
   "id": "equipment_item_bow_umbral_(base_game)_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -376,9 +376,9 @@
  {
   "resid": 5111011084651,
   "id": "equipment_item_staff_umbral_(base_game)_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -400,9 +400,9 @@
  {
   "resid": 5111011084646,
   "id": "equipment_item_2h_greataxe_umbral_(base_game)_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -430,9 +430,9 @@
  {
   "resid": 5111011084642,
   "id": "equipment_item_1h_sword_umbral_(base_game)_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -454,9 +454,9 @@
  {
   "resid": 5111011084474,
   "id": "equipment_item_2h_pantheon_slayer_sword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -484,9 +484,9 @@
  {
   "resid": 5111011084461,
   "id": "equipment_item_pantheon_cestus_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Cestus",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Цестус",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
@@ -511,10 +511,10 @@
  {
   "resid": 5111011084228,
   "id": "equipment_item_shield_umbral_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -539,10 +539,10 @@
  {
   "resid": 5111011084226,
   "id": "equipment_item_staff_umbral_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -564,10 +564,10 @@
  {
   "resid": 5111011084224,
   "id": "equipment_item_bow_umbral_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -589,10 +589,10 @@
  {
   "resid": 5111011084222,
   "id": "equipment_item_2h_greataxe_umbral_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -620,10 +620,10 @@
  {
   "resid": 5111011084220,
   "id": "equipment_item_1h_sword_umbral_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -645,10 +645,10 @@
  {
   "resid": 5111011084218,
   "id": "equipment_item_ring_ring_of_umbral_runes_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -673,10 +673,10 @@
  {
   "resid": 5111011084216,
   "id": "equipment_item_ring_ring_of_umbral_gem_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -701,10 +701,10 @@
  {
   "resid": 5111011084214,
   "id": "equipment_item_ring_ring_of_umbral_flesh_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -729,10 +729,10 @@
  {
   "resid": 5111011084212,
   "id": "equipment_item_ring_ring_of_umbral_eye_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -757,10 +757,10 @@
  {
   "resid": 5111011084210,
   "id": "equipment_item_ring_ring_of_tentacles_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -785,10 +785,10 @@
  {
   "resid": 5111011084208,
   "id": "equipment_item_ring_ring_of_bone_type",
-  "slot": "Ring",
+  "slot": "Кольцо",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -813,10 +813,10 @@
  {
   "resid": 5111011084206,
   "id": "equipment_item_misc_trinket_umbral_worm_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -846,10 +846,10 @@
  {
   "resid": 5111011084204,
   "id": "equipment_item_misc_trinket_umbral_shard_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -879,10 +879,10 @@
  {
   "resid": 5111011084202,
   "id": "equipment_item_misc_trinket_umbral_scale_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -912,10 +912,10 @@
  {
   "resid": 5111011084200,
   "id": "equipment_item_misc_trinket_umbral_potion_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -945,10 +945,10 @@
  {
   "resid": 5111011084198,
   "id": "equipment_item_misc_trinket_umbral_heart_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -978,10 +978,10 @@
  {
   "resid": 5111011084196,
   "id": "equipment_item_misc_trinket_umbral_hand_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1011,10 +1011,10 @@
  {
   "resid": 5111011084194,
   "id": "equipment_item_misc_trinket_umbral_goop_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1044,10 +1044,10 @@
  {
   "resid": 5111011084192,
   "id": "equipment_item_misc_trinket_umbral_book_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1077,10 +1077,10 @@
  {
   "resid": 5111011084174,
   "id": "equipment_item_misc_trinket_eye_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1110,10 +1110,10 @@
  {
   "resid": 5111011084172,
   "id": "equipment_item_misc_trinket_dragon_heart_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1143,10 +1143,10 @@
  {
   "resid": 5111011084170,
   "id": "equipment_item_misc_trinket_d20_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1176,10 +1176,10 @@
  {
   "resid": 5111011084168,
   "id": "equipment_item_misc_trinket_cosmic_skull_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -1209,10 +1209,10 @@
  {
   "resid": 5111011084166,
   "id": "equipment_item_misc_wand_of_tentacle_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -1245,10 +1245,10 @@
  {
   "resid": 5111011084164,
   "id": "equipment_item_misc_wand_of_flesh_type",
-  "slot": "Miscellaneous",
+  "slot": "Разное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -1281,10 +1281,10 @@
  {
   "resid": 5111011084162,
   "id": "equipment_item_legs_umbral_bones_type",
-  "slot": "Legs",
+  "slot": "Ноги",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs"
@@ -1309,10 +1309,10 @@
  {
   "resid": 5111011084160,
   "id": "equipment_item_legs_umbral_legs_type",
-  "slot": "Legs",
+  "slot": "Ноги",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Greaves"
@@ -1337,10 +1337,10 @@
  {
   "resid": 5111011084156,
   "id": "equipment_item_torse_umbral_plate_type",
-  "slot": "Torso",
+  "slot": "Туловище",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -1365,10 +1365,10 @@
  {
   "resid": 5111011084154,
   "id": "equipment_item_torse_umbral_mail_type",
-  "slot": "Torso",
+  "slot": "Туловище",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -1393,10 +1393,10 @@
  {
   "resid": 5111011084150,
   "id": "equipment_item_head_umbral_crown_type",
-  "slot": "Head",
+  "slot": "Голова",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Crown",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Венец",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Crown"
@@ -1421,10 +1421,10 @@
  {
   "resid": 5111011084148,
   "id": "equipment_item_head_umbral_helm_type",
-  "slot": "Head",
+  "slot": "Голова",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Helmet",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Каска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Helmet"
@@ -1449,10 +1449,10 @@
  {
   "resid": 5111011083824,
   "id": "equipment_item_relic_of_mind_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Eldritch Sovereign <hyperlink>Heroes</hyperlink>.",
-  "name": "Eldritch Relic",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>, который является тёмным повелителем.",
+  "name": "Тёмная реликвия",
   "tags": [
    {
     "tag": "ItemForge.RelicLogic.RelicType.RelicMind"
@@ -1483,10 +1483,10 @@
  {
   "resid": 5111011083822,
   "id": "equipment_item_relic_of_flesh_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Eldritch Sovereign <hyperlink>Heroes</hyperlink>.",
-  "name": "Eldritch Relic",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>, который является тёмным повелителем.",
+  "name": "Тёмная реликвия",
   "tags": [
    {
     "tag": "ItemTypeWeapon.EldritchRelic"
@@ -1517,10 +1517,10 @@
  {
   "resid": 5111011083820,
   "id": "equipment_item_relic_of_havoc_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Eldritch Sovereign <hyperlink>Heroes</hyperlink>.",
-  "name": "Eldritch Relic",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>, который является тёмным повелителем.",
+  "name": "Тёмная реликвия",
   "tags": [
    {
     "tag": "ItemTypeWeapon.EldritchRelic"
@@ -1551,10 +1551,10 @@
  {
   "resid": 5111011083805,
   "id": "equipment_item_relic_of_cosmos_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Eldritch Sovereign <hyperlink>Heroes</hyperlink>.",
-  "name": "Eldritch Relic",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>, который является тёмным повелителем.",
+  "name": "Тёмная реликвия",
   "tags": [
    {
     "tag": "ItemTypeWeapon.EldritchRelic"
@@ -1585,10 +1585,10 @@
  {
   "resid": 5111011083424,
   "id": "equipment_item_dragon_claw_steel_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Dragon Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Коготь дракона",
   "tags": [
    {
     "tag": "ItemTypeWeapon.DragonClaw"
@@ -1616,10 +1616,10 @@
  {
   "resid": 5111011083422,
   "id": "equipment_item_dragon_claw_rusty_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Dragon Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Коготь дракона",
   "tags": [
    {
     "tag": "ItemTypeWeapon.DragonClaw"
@@ -1647,10 +1647,10 @@
  {
   "resid": 5111011083420,
   "id": "equipment_item_dragon_claw_dark_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Dragon Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Коготь дракона",
   "tags": [
    {
     "tag": "ItemTypeWeapon.DragonClaw"
@@ -1678,10 +1678,10 @@
  {
   "resid": 5111011083322,
   "id": "equipment_item_dragon_claw_bone_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "DRAGONLORDS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Dragon Lord <hyperlink>Heroes</hyperlink>.",
-  "name": "Dragon Claw",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-повелителем драконов.",
+  "name": "Коготь дракона",
   "tags": [
    {
     "tag": "ItemTypeWeapon.DragonClaw"
@@ -1709,10 +1709,10 @@
  {
   "resid": 5111011082935,
   "id": "equipment_item_staff_primal_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "PRIMALFURY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -1734,10 +1734,10 @@
  {
   "resid": 5111011082933,
   "id": "equipment_item_shield_primal_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "PRIMALFURY ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -1762,10 +1762,10 @@
  {
   "resid": 5111011082930,
   "id": "equipment_item_polearm_primal_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "PRIMALFURY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Spear",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Копьё",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Spear"
@@ -1790,10 +1790,10 @@
  {
   "resid": 5111011082929,
   "id": "equipment_item_2h_greataxe_primal_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "PRIMALFURY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greataxe",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -1821,10 +1821,10 @@
  {
   "resid": 5111011082928,
   "id": "equipment_item_1h_warclub_primal_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "PRIMALFURY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Axe",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Mace"
@@ -1846,9 +1846,9 @@
  {
   "resid": 5111011082913,
   "id": "equipment_item_blowgun_primal_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Blowpipe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Духовая трубка",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -1870,10 +1870,10 @@
  {
   "resid": 5111011082300,
   "id": "equipment_item_reaver_shield_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -1898,9 +1898,9 @@
  {
   "resid": 5046586589544,
   "id": "equipment_item_pantheon_inferno_orb_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -1925,9 +1925,9 @@
  {
   "resid": 5046586589542,
   "id": "equipment_item_pantheon_merlins_grimoire_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Grimoire",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Гримуар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
@@ -1949,9 +1949,9 @@
  {
   "resid": 5046586589537,
   "id": "equipment_item_2h_pantheon_ysariel_sword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -1979,9 +1979,9 @@
  {
   "resid": 5046586589082,
   "id": "equipment_item_grimoire_arcane_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Grimoire",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Гримуар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
@@ -2003,9 +2003,9 @@
  {
   "resid": 5046586589080,
   "id": "equipment_item_grimoire_good_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Grimoire",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Гримуар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
@@ -2027,9 +2027,9 @@
  {
   "resid": 5046586589078,
   "id": "equipment_item_grimoire_evil_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Grimoire",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Гримуар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
@@ -2051,9 +2051,9 @@
  {
   "resid": 5046586587526,
   "id": "equipment_item_fractured_orb_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -2075,10 +2075,10 @@
  {
   "resid": 5046586586321,
   "id": "equipment_item_vampire_sword_and_whip_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Whip",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и кнут",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -2120,10 +2120,10 @@
  {
   "resid": 5046586586319,
   "id": "equipment_item_vampire_floating_daggers_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Floating Daggers",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Парящие кинжалы",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -2145,10 +2145,10 @@
  {
   "resid": 5046586586317,
   "id": "equipment_item_heavy_morningstar_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatmace",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручная булава",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -2176,10 +2176,10 @@
  {
   "resid": 5046586586314,
   "id": "equipment_item_staff_of_blood_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -2201,10 +2201,10 @@
  {
   "resid": 5046586586309,
   "id": "equipment_item_blood_orb_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -2226,10 +2226,10 @@
  {
   "resid": 5046586586307,
   "id": "equipment_item_vampire_shield_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -2254,10 +2254,10 @@
  {
   "resid": 5046586586305,
   "id": "equipment_item_vampire_sword_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "THRONESOFBLOOD ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -2279,10 +2279,10 @@
  {
   "resid": 5046586585920,
   "id": "equipment_item_staff_of_the_wanderer_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "COSMICWANDERER ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -2304,10 +2304,10 @@
  {
   "resid": 5046586585917,
   "id": "equipment_item_orb_of_the_far_traveler_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "COSMICWANDERER ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -2329,10 +2329,10 @@
  {
   "resid": 5046586582032,
   "id": "equipment_item_obelisk_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Obelisk",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Обелиск",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -2360,10 +2360,10 @@
  {
   "resid": 5046586582030,
   "id": "equipment_item_warhammer_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Warhammer",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Боевой молот",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -2391,10 +2391,10 @@
  {
   "resid": 5046586582028,
   "id": "equipment_item_giant_axe_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "GIANTKINGS ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Can only be equipped by Giant King <hyperlink>Heroes</hyperlink>.",
-  "name": "Giant Axe",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Может использоваться только <hyperlink>героем</hyperlink>-королями великанов.",
+  "name": "Топор великана",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.DontGenerateItem"
@@ -2422,10 +2422,10 @@
  {
   "resid": 5046586579220,
   "id": "equipment_item_staff_oathsworn_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -2447,10 +2447,10 @@
  {
   "resid": 5046586579218,
   "id": "equipment_item_2h_oathsworn_greatclub_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Flaming Greatclub",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Пылающая двуручная дубина",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -2478,10 +2478,10 @@
  {
   "resid": 5046586579216,
   "id": "equipment_item_polearm_oathsworn_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -2506,10 +2506,10 @@
  {
   "resid": 5046586579214,
   "id": "equipment_item_bow_oathsworn_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -2531,10 +2531,10 @@
  {
   "resid": 5046586579212,
   "id": "equipment_item_shield_oathsworn_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -2559,10 +2559,10 @@
  {
   "resid": 5046586579210,
   "id": "equipment_item_1h_oathswron_longsword_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -2584,10 +2584,10 @@
  {
   "resid": 5046586578150,
   "id": "equipment_item_2h_oathsworn_greatsword_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -2615,9 +2615,9 @@
  {
   "resid": 5046586578148,
   "id": "equipment_item_cestus_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Cestus",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Цестус",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
@@ -2642,10 +2642,10 @@
  {
   "resid": 5046586578112,
   "id": "equipment_item_lance_of_glory_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "HERALDOFGLORY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -2667,9 +2667,9 @@
  {
   "resid": 5029406708300,
   "id": "equipment_item_staff_mancatcher_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -2691,9 +2691,9 @@
  {
   "resid": 5029406707568,
   "id": "equipment_item_misc_trinket_garlic_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.OtherItem"
@@ -2726,9 +2726,9 @@
  {
   "resid": 5029406707566,
   "id": "equipment_item_hunter_rapier_and_whip_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Whip",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и кнут",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -2770,9 +2770,9 @@
  {
   "resid": 5029406707564,
   "id": "equipment_item_hunter_crossbow_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.RangedPhysicalFlavor.CrossbowFlavor"
@@ -2794,9 +2794,9 @@
  {
   "resid": 5029406706868,
   "id": "equipment_item_pantheon_magma_orb_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magma Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Сфера магмы",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -2818,9 +2818,9 @@
  {
   "resid": 5029406706841,
   "id": "equipment_item_pantheon_lithorite_orb_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lithorite Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Литоритовая сфера",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -2842,9 +2842,9 @@
  {
   "resid": 5029406706832,
   "id": "equipment_item_1h_pantheon_pickaxe_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Goldseeker's Pickaxe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Кирка золотоискателя",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor.AxeFlavor"
@@ -2866,9 +2866,9 @@
  {
   "resid": 5029406706824,
   "id": "equipment_item_titan_greatbow_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Длинный лук",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.RangedPhysicalFlavor.BowFlavor"
@@ -2890,9 +2890,9 @@
  {
   "resid": 5029406706814,
   "id": "equipment_item_giantslayer_spear-_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Giant Hunter Hero Origin",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Происхождение героя: охотник на великанов",
   "tags": [
    {
     "tag": "ItemForge.SpecificLogic.AvoidPolearmStacking"
@@ -2917,9 +2917,9 @@
  {
   "resid": 5029406706788,
   "id": "equipment_item_shatterblades_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Shatterblades",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Осколочные клинки",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -2955,10 +2955,10 @@
  {
   "resid": 5016521806764,
   "id": "equipment_item_sword_and_kunai_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Kunai",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и кунай",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -2994,9 +2994,9 @@
  {
   "resid": 5016521806762,
   "id": "equipment_item_javelin_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Javelin",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Дротик",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -3032,9 +3032,9 @@
  {
   "resid": 5016521806757,
   "id": "equipment_item_net_and_sword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Net",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и сеть",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -3070,9 +3070,9 @@
  {
   "resid": 5016521806454,
   "id": "equipment_item_crossbow_and_sword_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -3114,9 +3114,9 @@
  {
   "resid": 5016521806453,
   "id": "equipment_item_crossbow_and_sword_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -3158,9 +3158,9 @@
  {
   "resid": 5016521806450,
   "id": "equipment_item_crossbow_and_sword_feudal_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -3202,9 +3202,9 @@
  {
   "resid": 5016521802383,
   "id": "equipment_item_lance_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -3226,9 +3226,9 @@
  {
   "resid": 5016521802381,
   "id": "equipment_item_lance_feudal_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -3250,10 +3250,10 @@
  {
   "resid": 5003636908168,
   "id": "equipment_item_breachgun_and_axe_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Breachgun and Axe",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Громобой и топор(3)",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged.SwordPistol"
@@ -3295,10 +3295,10 @@
  {
   "resid": 5003636908166,
   "id": "equipment_item_staff_staff_reaver_lintstock_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3320,9 +3320,9 @@
  {
   "resid": 5003636907852,
   "id": "equipment_item_stalker_daggers_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Throwing Daggers",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и метательные ножи",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -3358,10 +3358,10 @@
  {
   "resid": 5003636907845,
   "id": "equipment_item_assassins_sword_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "WAYSOFWAR ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Throwing Daggers",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и метательные ножи",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged"
@@ -3397,10 +3397,10 @@
  {
   "resid": 5003636907832,
   "id": "equipment_item_shield_nomad_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -3425,10 +3425,10 @@
  {
   "resid": 5003636907827,
   "id": "equipment_item_1h_sword_nomad_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -3450,10 +3450,10 @@
  {
   "resid": 5003636907825,
   "id": "equipment_item_nomad_staff_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3475,10 +3475,10 @@
  {
   "resid": 5003636907823,
   "id": "equipment_item_crossbow_and_sword_nomad_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword and Crossbow",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч и арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -3520,10 +3520,10 @@
  {
   "resid": 5003636907821,
   "id": "equipment_item_nomad_bow_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -3545,10 +3545,10 @@
  {
   "resid": 5003636907819,
   "id": "equipment_item_nomad_halberd_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Halberd",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Алебарда",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Halberd"
@@ -3573,10 +3573,10 @@
  {
   "resid": 5003636907815,
   "id": "equipment_item_2h_ke-nan_bardiche_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bardiche",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Бердыш",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -3604,10 +3604,10 @@
  {
   "resid": 5003636907813,
   "id": "equipment_item_2h_bardiche_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "RISEFROMRUIN ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bardiche",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Бердыш",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -3635,10 +3635,10 @@
  {
   "resid": 4995046968537,
   "id": "equipment_item_staff_julia_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3660,10 +3660,10 @@
  {
   "resid": 4995046968525,
   "id": "equipment_item_staff_anon_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3685,10 +3685,10 @@
  {
   "resid": 4995046968500,
   "id": "equipment_item_1h_architect_spear_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Short Spear",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Дротик",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.OneHandedFlavor"
@@ -3710,10 +3710,10 @@
  {
   "resid": 4995046968497,
   "id": "equipment_item_orb_architect_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Magical Orb",
-  "name": "Magical Orb",
+  "description": "Магический шар",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.MagicFlavor.MagicalOrbFlavor"
@@ -3735,10 +3735,10 @@
  {
   "resid": 4995046968495,
   "id": "equipment_item_staff_architect_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3760,10 +3760,10 @@
  {
   "resid": 4995046968493,
   "id": "equipment_item_2h_architect_greathammer_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeaponFlavor.TwoHandedHeavyFlavor.GreathammerFlavor"
@@ -3791,10 +3791,10 @@
  {
   "resid": 4995046968491,
   "id": "equipment_item_bow_architect_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -3816,10 +3816,10 @@
  {
   "resid": 4995046968489,
   "id": "equipment_item_shield_architect_type",
-  "slot": "Secondary",
+  "slot": "Дополнительное",
   "DLC": "ARCHONPROPHECY ",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -3844,9 +3844,9 @@
  {
   "resid": 4801773441237,
   "id": "equipment_item_pistol_and_sword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Pistol and Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Пистоль и меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.MeleeRanged.SwordPistol"
@@ -3888,10 +3888,10 @@
  {
   "resid": 4801773441235,
   "id": "equipment_item_staff_reaver_magical_focus-_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -3913,10 +3913,10 @@
  {
   "resid": 4801773441233,
   "id": "equipment_item_polearm_reaver_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Halberd",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Алебарда",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Halberd"
@@ -3941,10 +3941,10 @@
  {
   "resid": 4801773441231,
   "id": "equipment_item_1h_sword_reaver_type",
-  "slot": "Primary",
+  "slot": "Основное",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -3966,9 +3966,9 @@
  {
   "resid": 4801773441067,
   "id": "equipment_item_ring_ring_of_wind_barrier_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -3993,9 +3993,9 @@
  {
   "resid": 4801773441065,
   "id": "equipment_item_ring_ring_of_vicious_killer_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4020,9 +4020,9 @@
  {
   "resid": 4801773441063,
   "id": "equipment_item_ring_ring_of_vampirism_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4047,9 +4047,9 @@
  {
   "resid": 4801773441061,
   "id": "equipment_item_ring_ring_of_resistance_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4074,9 +4074,9 @@
  {
   "resid": 4801773441059,
   "id": "equipment_item_ring_ring_of_regeneration_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4101,9 +4101,9 @@
  {
   "resid": 4801773441057,
   "id": "equipment_item_ring_ring_of_poison_immunity_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4128,9 +4128,9 @@
  {
   "resid": 4801773441055,
   "id": "equipment_item_ring_ring_of_opportunity_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4155,9 +4155,9 @@
  {
   "resid": 4801773441053,
   "id": "equipment_item_ring_ring_of_lightning_immunity_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4185,9 +4185,9 @@
  {
   "resid": 4801773441051,
   "id": "equipment_item_ring_ring_of_frost_immunity_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4215,9 +4215,9 @@
  {
   "resid": 4801773441049,
   "id": "equipment_item_ring_ring_of_flanking_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4242,9 +4242,9 @@
  {
   "resid": 4801773441047,
   "id": "equipment_item_ring_ring_of_fire_immunity_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4272,9 +4272,9 @@
  {
   "resid": 4801773441045,
   "id": "equipment_item_ring_ring_of_escape_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4299,9 +4299,9 @@
  {
   "resid": 4801773441043,
   "id": "equipment_item_ring_ring_of_endurance_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4326,9 +4326,9 @@
  {
   "resid": 4801773441041,
   "id": "equipment_item_ring_ring_of_deflection_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4353,9 +4353,9 @@
  {
   "resid": 4801773441039,
   "id": "equipment_item_ring_ring_of_concealment_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4380,9 +4380,9 @@
  {
   "resid": 4801773441037,
   "id": "equipment_item_ring_ring_of_murder_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4407,9 +4407,9 @@
  {
   "resid": 4801773441035,
   "id": "equipment_item_ring_ring_of_luck_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4434,9 +4434,9 @@
  {
   "resid": 4801773441033,
   "id": "equipment_item_ring_ring_of_inspiring_killer_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -4461,9 +4461,9 @@
  {
   "resid": 4801773441031,
   "id": "equipment_item_misc_trinket_spider_hatchling_bell_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Instrument.Bell"
@@ -4496,9 +4496,9 @@
  {
   "resid": 4801773441029,
   "id": "equipment_item_misc_trinket_spider_flute_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Instrument.Flute"
@@ -4531,9 +4531,9 @@
  {
   "resid": 4801773441027,
   "id": "equipment_item_misc_trinket_seed_of_yggdrasil_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Seed"
@@ -4566,9 +4566,9 @@
  {
   "resid": 4801773441023,
   "id": "equipment_item_misc_trinket_locket_of_channeling_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -4601,9 +4601,9 @@
  {
   "resid": 4801773441021,
   "id": "equipment_item_misc_trinket_horn_of_plenty_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Instrument.Horn"
@@ -4636,9 +4636,9 @@
  {
   "resid": 4801773441019,
   "id": "equipment_item_misc_trinket_halo_of_nekron_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -4671,9 +4671,9 @@
  {
   "resid": 4801773441017,
   "id": "equipment_item_misc_trinket_enchanted_quill_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Quill"
@@ -4706,9 +4706,9 @@
  {
   "resid": 4801773441015,
   "id": "equipment_item_misc_trinket_dessicated_spider_monarch_leg_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Leg"
@@ -4741,9 +4741,9 @@
  {
   "resid": 4801773441013,
   "id": "equipment_item_misc_trinket_cloud_in_a_bottle_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Bottle"
@@ -4776,9 +4776,9 @@
  {
   "resid": 4801773441011,
   "id": "equipment_item_misc_trinket_book_of_siegecraft_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Book"
@@ -4811,9 +4811,9 @@
  {
   "resid": 4801773441009,
   "id": "equipment_item_misc_trinket_belt_of_the_berserker_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.Belt"
@@ -4846,9 +4846,9 @@
  {
   "resid": 4801773441007,
   "id": "equipment_item_misc_trinket_astral_heart_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -4881,9 +4881,9 @@
  {
   "resid": 4801773441005,
   "id": "equipment_item_misc_trinket_assasins_dagger_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeMisc.PhysicalWeapon.Dagger"
@@ -4916,9 +4916,9 @@
  {
   "resid": 4801773441003,
   "id": "equipment_item_misc_trinket_ankh_of_the_phoenix_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -4951,9 +4951,9 @@
  {
   "resid": 4801773441001,
   "id": "equipment_item_misc_wand_of_elm_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -4986,9 +4986,9 @@
  {
   "resid": 4801773440999,
   "id": "equipment_item_misc_wand_of_resurrection_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5021,9 +5021,9 @@
  {
   "resid": 4801773440997,
   "id": "equipment_item_misc_wand_of_raise_dead_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5056,9 +5056,9 @@
  {
   "resid": 4801773440995,
   "id": "equipment_item_misc_wand_of_provocation_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5091,9 +5091,9 @@
  {
   "resid": 4801773440993,
   "id": "equipment_item_misc_wand_of_polymorph_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5126,9 +5126,9 @@
  {
   "resid": 4801773440991,
   "id": "equipment_item_misc_wand_of_inversion_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5161,9 +5161,9 @@
  {
   "resid": 4801773440989,
   "id": "equipment_item_misc_wand_of_hindering_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5196,9 +5196,9 @@
  {
   "resid": 4801773440987,
   "id": "equipment_item_misc_wand_of_healing_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -5231,9 +5231,9 @@
  {
   "resid": 4801773440985,
   "id": "equipment_item_staff_magi_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5255,9 +5255,9 @@
  {
   "resid": 4801773440983,
   "id": "equipment_item_staff_radiance_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5279,9 +5279,9 @@
  {
   "resid": 4801773440981,
   "id": "equipment_item_staff_inioch_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5303,9 +5303,9 @@
  {
   "resid": 4801773440979,
   "id": "equipment_item_staff_decay_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5327,9 +5327,9 @@
  {
   "resid": 4801773440977,
   "id": "equipment_item_staff_blossoms_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5351,9 +5351,9 @@
  {
   "resid": 4801773440973,
   "id": "equipment_item_staff_mystic_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5375,9 +5375,9 @@
  {
   "resid": 4801773440971,
   "id": "equipment_item_staff_industrious_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5399,9 +5399,9 @@
  {
   "resid": 4801773440969,
   "id": "equipment_item_staff_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5423,9 +5423,9 @@
  {
   "resid": 4801773440967,
   "id": "equipment_item_staff_feudal_banner_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5447,9 +5447,9 @@
  {
   "resid": 4801773440965,
   "id": "equipment_item_staff_barbarian_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -5471,9 +5471,9 @@
  {
   "resid": 4801773440963,
   "id": "equipment_item_magelock_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magelock",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магострел",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
@@ -5498,9 +5498,9 @@
  {
   "resid": 4801773440959,
   "id": "equipment_item_crossbow_skypiercer_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -5522,9 +5522,9 @@
  {
   "resid": 4801773440957,
   "id": "equipment_item_crossbow_ricochet_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -5546,9 +5546,9 @@
  {
   "resid": 4801773440955,
   "id": "equipment_item_crossbow_piercing_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -5570,9 +5570,9 @@
  {
   "resid": 4801773440953,
   "id": "equipment_item_crossbow_heavy_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -5594,9 +5594,9 @@
  {
   "resid": 4801773440951,
   "id": "equipment_item_bow_wooden-132_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5618,9 +5618,9 @@
  {
   "resid": 4801773440949,
   "id": "equipment_item_bow_monster_slayer_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5642,9 +5642,9 @@
  {
   "resid": 4801773440947,
   "id": "equipment_item_bow_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5666,9 +5666,9 @@
  {
   "resid": 4801773440945,
   "id": "equipment_item_bow_godir_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5690,9 +5690,9 @@
  {
   "resid": 4801773440943,
   "id": "equipment_item_bow_eagle_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5714,9 +5714,9 @@
  {
   "resid": 4801773440941,
   "id": "equipment_item_bow_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5738,9 +5738,9 @@
  {
   "resid": 4801773440939,
   "id": "equipment_item_bow_barbarian_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Bow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Лук",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Bow"
@@ -5762,9 +5762,9 @@
  {
   "resid": 4801773440935,
   "id": "equipment_item_polearm_punisher_halberd_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Halberd",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Алебарда",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Halberd"
@@ -5789,9 +5789,9 @@
  {
   "resid": 4801773440933,
   "id": "equipment_item_polearm_pike_84_glaive_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Glaive",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Глефа",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Glaive"
@@ -5816,9 +5816,9 @@
  {
   "resid": 4801773440931,
   "id": "equipment_item_polearm_pike_2_blue_gem_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -5843,9 +5843,9 @@
  {
   "resid": 4801773440929,
   "id": "equipment_item_polearm_peasant_hook_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike.Hook"
@@ -5870,9 +5870,9 @@
  {
   "resid": 4801773440927,
   "id": "equipment_item_polearm_peasant_fork_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike.Fork"
@@ -5897,9 +5897,9 @@
  {
   "resid": 4801773440925,
   "id": "equipment_item_polearm_peasant_blade_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Polearm",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Древковое оружие",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -5924,9 +5924,9 @@
  {
   "resid": 4801773440923,
   "id": "equipment_item_polearm_mystic_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -5951,9 +5951,9 @@
  {
   "resid": 4801773440921,
   "id": "equipment_item_polearm_industrious_halberd_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Halberd",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Алебарда",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Halberd"
@@ -5978,9 +5978,9 @@
  {
   "resid": 4801773440919,
   "id": "equipment_item_polearm_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -6005,9 +6005,9 @@
  {
   "resid": 4801773440917,
   "id": "equipment_item_polearm_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -6032,9 +6032,9 @@
  {
   "resid": 4801773440915,
   "id": "equipment_item_lance_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -6056,9 +6056,9 @@
  {
   "resid": 4801773440913,
   "id": "equipment_item_lance_green_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -6080,9 +6080,9 @@
  {
   "resid": 4801773440911,
   "id": "equipment_item_lance_giants_bane_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -6104,9 +6104,9 @@
  {
   "resid": 4801773440909,
   "id": "equipment_item_lance_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -6128,9 +6128,9 @@
  {
   "resid": 4801773440905,
   "id": "equipment_item_2h_greathammer_ram_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -6158,9 +6158,9 @@
  {
   "resid": 4801773440903,
   "id": "equipment_item_2h_greatmace_mystic_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatmace",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручная булава",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -6188,9 +6188,9 @@
  {
   "resid": 4801773440899,
   "id": "equipment_item_2h_greathammer_industrious_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -6218,9 +6218,9 @@
  {
   "resid": 4801773440897,
   "id": "equipment_item_2h_greatsword_golden_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -6248,9 +6248,9 @@
  {
   "resid": 4801773440895,
   "id": "equipment_item_2h_greataxe_godir_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greataxe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -6278,9 +6278,9 @@
  {
   "resid": 4801773440893,
   "id": "equipment_item_2h_greataxe_barbarian_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greataxe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -6308,9 +6308,9 @@
  {
   "resid": 4801773440891,
   "id": "equipment_item_2h_greatsword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -6338,9 +6338,9 @@
  {
   "resid": 4801773440889,
   "id": "equipment_item_2h_greathammer_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greathammer",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный молот",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
@@ -6368,9 +6368,9 @@
  {
   "resid": 4801773440887,
   "id": "equipment_item_2h_greatsword_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greatsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
@@ -6398,9 +6398,9 @@
  {
   "resid": 4801773440881,
   "id": "equipment_item_1h_sword_dark_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -6422,9 +6422,9 @@
  {
   "resid": 4801773440879,
   "id": "equipment_item_1h_mace_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Mace",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Булава",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Mace"
@@ -6446,9 +6446,9 @@
  {
   "resid": 4801773440877,
   "id": "equipment_item_1h_longsword_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -6470,9 +6470,9 @@
  {
   "resid": 4801773440875,
   "id": "equipment_item_1h_hammer_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Mace",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Булава",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Mace"
@@ -6494,9 +6494,9 @@
  {
   "resid": 4801773440873,
   "id": "equipment_item_1h_axe_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Axe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Axe"
@@ -6518,9 +6518,9 @@
  {
   "resid": 4801773440871,
   "id": "equipment_item_1h_sword_godir_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -6542,9 +6542,9 @@
  {
   "resid": 4801773440866,
   "id": "equipment_item_shield_spiked_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6569,9 +6569,9 @@
  {
   "resid": 4801773440864,
   "id": "equipment_item_shield_crescent_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6596,9 +6596,9 @@
  {
   "resid": 4801773440862,
   "id": "equipment_item_shield_skull_horn_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6623,9 +6623,9 @@
  {
   "resid": 4801773440860,
   "id": "equipment_item_shield_shining_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6650,9 +6650,9 @@
  {
   "resid": 4801773440858,
   "id": "equipment_item_shield_mystic_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6677,9 +6677,9 @@
  {
   "resid": 4801773440856,
   "id": "equipment_item_shield_industrious_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6704,9 +6704,9 @@
  {
   "resid": 4801773440854,
   "id": "equipment_item_shield_high_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6731,9 +6731,9 @@
  {
   "resid": 4801773440852,
   "id": "equipment_item_shield_golden_golem_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6758,9 +6758,9 @@
  {
   "resid": 4801773440850,
   "id": "equipment_item_shield_godir_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6785,9 +6785,9 @@
  {
   "resid": 4801773440848,
   "id": "equipment_item_shield_feudal_kite_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6812,9 +6812,9 @@
  {
   "resid": 4801773440846,
   "id": "equipment_item_shield_dark_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6839,9 +6839,9 @@
  {
   "resid": 4801773440844,
   "id": "equipment_item_shield_dark_eye_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6866,9 +6866,9 @@
  {
   "resid": 4801773440842,
   "id": "equipment_item_shield_barbarian_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -6893,9 +6893,9 @@
  {
   "resid": 4801773440840,
   "id": "equipment_item_legs_runed_leggings_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Pants",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Штаны",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Pants"
@@ -6920,9 +6920,9 @@
  {
   "resid": 4801773440838,
   "id": "equipment_item_legs_metal_greaves_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Greaves"
@@ -6947,9 +6947,9 @@
  {
   "resid": 4801773440836,
   "id": "equipment_item_legs_juggernaut_greaves_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Greaves"
@@ -6974,9 +6974,9 @@
  {
   "resid": 4801773440834,
   "id": "equipment_item_legs_heavy_armor_greaves_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Greaves"
@@ -7001,9 +7001,9 @@
  {
   "resid": 4801773440832,
   "id": "equipment_item_legs_boots_of_teleportation_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Boots",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Сапоги",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Feet"
@@ -7028,9 +7028,9 @@
  {
   "resid": 4801773440830,
   "id": "equipment_item_legs_boots_of_freedom_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Boots",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Сапоги",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Feet"
@@ -7055,9 +7055,9 @@
  {
   "resid": 4801773440828,
   "id": "equipment_item_legs_boots_of_fiery_wake_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Boots",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Сапоги",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Feet"
@@ -7082,9 +7082,9 @@
  {
   "resid": 4801773440826,
   "id": "equipment_item_legs_boots_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Boots",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Сапоги",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Feet"
@@ -7109,9 +7109,9 @@
  {
   "resid": 4801773440824,
   "id": "equipment_item_head_paladins_winged_helmet_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Helmet",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Каска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Helmet"
@@ -7136,9 +7136,9 @@
  {
   "resid": 4801773440818,
   "id": "equipment_item_head_mask_of_precision_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Mask",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Маска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Mask"
@@ -7163,9 +7163,9 @@
  {
   "resid": 4801773440815,
   "id": "equipment_item_head_magic_crown_168_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Crown",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Венец",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Crown"
@@ -7190,9 +7190,9 @@
  {
   "resid": 4801773440812,
   "id": "equipment_item_head_helmet_of_the_warrior_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Helmet",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Каска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Helmet"
@@ -7217,9 +7217,9 @@
  {
   "resid": 4801773440810,
   "id": "equipment_item_head_circlet_of_mind_protection_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Crown",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Венец",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Crown"
@@ -7244,9 +7244,9 @@
  {
   "resid": 4801773440809,
   "id": "equipment_item_head_demoralizing_mask_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Mask",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Маска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Mask"
@@ -7271,9 +7271,9 @@
  {
   "resid": 4801773440808,
   "id": "equipment_item_head_helmet_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Helmet",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Каска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Helmet"
@@ -7298,9 +7298,9 @@
  {
   "resid": 4801773440801,
   "id": "equipment_item_head_anons_wisdom_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Crown",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Венец",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Crown"
@@ -7325,9 +7325,9 @@
  {
   "resid": 4801773440799,
   "id": "equipment_item_head_visor_of_farsight_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Mask",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Маска",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Mask"
@@ -7352,9 +7352,9 @@
  {
   "resid": 4801773440759,
   "id": "equipment_item_torse_phase_cloak_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Cloak",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Плащ",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.Cloak"
@@ -7379,9 +7379,9 @@
  {
   "resid": 4801773440757,
   "id": "equipment_item_torse_obscuring_mantle_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Cloak",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Плащ",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.Cloak"
@@ -7406,9 +7406,9 @@
  {
   "resid": 4801773440755,
   "id": "equipment_item_torse_merlins_robes_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Robe",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Одеяние",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.Robe"
@@ -7433,9 +7433,9 @@
  {
   "resid": 4801773440753,
   "id": "equipment_item_torse_mail_of_the_razorback_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -7460,9 +7460,9 @@
  {
   "resid": 4801773440751,
   "id": "equipment_item_torse_leather_cloak_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Cloak",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Плащ",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.LightArmor"
@@ -7487,9 +7487,9 @@
  {
   "resid": 4801773440745,
   "id": "equipment_item_torse_heavy_armor_172_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -7514,9 +7514,9 @@
  {
   "resid": 4801773440742,
   "id": "equipment_item_torse_robe_of_resistance_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Robe",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Одеяние",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.Robe"
@@ -7541,9 +7541,9 @@
  {
   "resid": 4801773440725,
   "id": "equipment_item_torse_blue_cloak_171_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Cloak",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Плащ",
   "tags": [
    {
     "tag": "ItemTypeArmorFlavor.TorsoFlavor.CloakFlavor"
@@ -7568,9 +7568,9 @@
  {
   "resid": 4801773440721,
   "id": "equipment_item_torse_heavy_armor_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -7595,9 +7595,9 @@
  {
   "resid": 4801773440719,
   "id": "equipment_item_torse_evokers_robes_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Robe",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Одеяние",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.Robe"
@@ -7622,9 +7622,9 @@
  {
   "resid": 4801773440715,
   "id": "equipment_item_torse_chestplate_of_vitality_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -7649,9 +7649,9 @@
  {
   "resid": 4801773440713,
   "id": "equipment_item_torse_breastplate_of_the_champion_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.HeavyArmor"
@@ -7676,9 +7676,9 @@
  {
   "resid": 4801773440438,
   "id": "equipment_item_orb_death_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -7703,9 +7703,9 @@
  {
   "resid": 4801773440436,
   "id": "equipment_item_orb_radiant_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -7730,9 +7730,9 @@
  {
   "resid": 4801773440413,
   "id": "equipment_item_orb_arcfire_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -7757,9 +7757,9 @@
  {
   "resid": 4801773440361,
   "id": "equipment_item_1h_axe_barbarian_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Axe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Axe"
@@ -7781,9 +7781,9 @@
  {
   "resid": 4801773440358,
   "id": "equipment_item_1h_mace_mystic_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Mace",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Булава",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Mace"
@@ -7805,9 +7805,9 @@
  {
   "resid": 4801773440356,
   "id": "equipment_item_1h_sword_high_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Sword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
@@ -7829,9 +7829,9 @@
  {
   "resid": 4801773439789,
   "id": "equipment_item_shield_round_type",
-  "slot": "Secondary",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and reflect damage to attackers and Active Infusions that changes the Defense Mode.",
-  "name": "Shield",
+  "slot": "Дополнительное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и отражают урон в атакующих врагов, а также активными усилениями, которые изменяют принцип действия способности «Защитная позиция».",
+  "name": "Щит",
   "tags": [
    {
     "tag": "ItemTypeArmor.Shield"
@@ -7856,9 +7856,9 @@
  {
   "resid": 4801773439782,
   "id": "equipment_item_misc_wand_of_domination_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with an Ability <hyperlink>Infusion</hyperlink>.",
-  "name": "Wand",
+  "slot": "Разное",
+  "description": "Можно <hyperlink>усилить</hyperlink> способностью.",
+  "name": "Жезл",
   "tags": [
    {
     "tag": "ItemTypeMisc.Wand"
@@ -7891,9 +7891,9 @@
  {
   "resid": 4801773439780,
   "id": "equipment_item_ring_ring_of_protection_type",
-  "slot": "Ring",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that give combat properties.",
-  "name": "Ring",
+  "slot": "Кольцо",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые даруют предмету боевые качества.",
+  "name": "Кольцо",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Ring"
@@ -7918,9 +7918,9 @@
  {
   "resid": 4801773439778,
   "id": "equipment_item_misc_trinket_amulet_of_vitality_type",
-  "slot": "Miscellaneous",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that are often good on the world map.",
-  "name": "Trinket",
+  "slot": "Разное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые могут пригодиться на глобальной карте.",
+  "name": "Безделушка",
   "tags": [
    {
     "tag": "ItemTypeJewelry.Amulet"
@@ -7953,9 +7953,9 @@
  {
   "resid": 4801773439744,
   "id": "equipment_item_legs_greaves_type",
-  "slot": "Legs",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and mobility.",
-  "name": "Greaves",
+  "slot": "Ноги",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые повышают живучесть и подвижность.",
+  "name": "Поножи",
   "tags": [
    {
     "tag": "ItemTypeArmor.Legs.Greaves"
@@ -7980,9 +7980,9 @@
  {
   "resid": 4801773439742,
   "id": "equipment_item_torse_leather_armor_type",
-  "slot": "Torso",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability.",
-  "name": "Armor",
+  "slot": "Туловище",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, повышающими живучесть.",
+  "name": "Броня",
   "tags": [
    {
     "tag": "ItemTypeArmor.Torso.ChestArmor.LightArmor"
@@ -8007,9 +8007,9 @@
  {
   "resid": 4801773439740,
   "id": "equipment_item_head_crown_type",
-  "slot": "Head",
-  "description": "Can be infused with Passive <hyperlink>Infusions</hyperlink> that increase survivability and perception",
-  "name": "Crown",
+  "slot": "Голова",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, которые улучшают живучесть и восприятие.",
+  "name": "Венец",
   "tags": [
    {
     "tag": "ItemTypeArmor.Head.Crown"
@@ -8034,9 +8034,9 @@
  {
   "resid": 4801773439622,
   "id": "equipment_item_orb_frost_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -8061,9 +8061,9 @@
  {
   "resid": 4801773439620,
   "id": "equipment_item_orb_spirit_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -8088,9 +8088,9 @@
  {
   "resid": 4801773439618,
   "id": "equipment_item_orb_blight_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -8115,9 +8115,9 @@
  {
   "resid": 4801773439615,
   "id": "equipment_item_orb_fire_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -8142,9 +8142,9 @@
  {
   "resid": 4801773439498,
   "id": "equipment_item_staff_wooden_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive and support capabilities.<br></br><br></br>Grants Defense Mode: Warding.",
-  "name": "Staff",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способность «Защитная позиция: охрана».",
+  "name": "Посох",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
@@ -8166,9 +8166,9 @@
  {
   "resid": 4801773439496,
   "id": "equipment_item_orb_lightning_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Magical Orb",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Магический шар",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
@@ -8193,9 +8193,9 @@
  {
   "resid": 4801773439495,
   "id": "equipment_item_crossbow_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Crossbow",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Арбалет",
   "tags": [
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -8217,9 +8217,9 @@
  {
   "resid": 4801773439490,
   "id": "equipment_item_lance_archons_deliverance_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Lance",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Рыцарская пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
@@ -8241,9 +8241,9 @@
  {
   "resid": 4801773439483,
   "id": "equipment_item_2h_greataxe_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Greataxe",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Двуручный топор",
   "tags": [
    {
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
@@ -8271,9 +8271,9 @@
  {
   "resid": 4801773439481,
   "id": "equipment_item_polearm_pike_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.<br></br><br></br>Grants <hyperlink>First Strike</hyperlink>, Charge Resistance, Cavalry Slayer, and Giant Slayer.",
-  "name": "Pike",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.<br></br><br></br>Даёт способности «<hyperlink>Первый удар</hyperlink>», «Стойкость перед натиском», «Убийца всадников» и «Убийца великанов».",
+  "name": "Пика",
   "tags": [
    {
     "tag": "ItemTypeWeapon.Polearm.Pike"
@@ -8298,9 +8298,9 @@
  {
   "resid": 4801773439477,
   "id": "equipment_item_1h_sword_feudal_type",
-  "slot": "Primary",
-  "description": "Can be infused with Damage, Ability, and Passive <hyperlink>Infusions</hyperlink>, which increase the offensive capabilities of the item.",
-  "name": "Feudal Longsword",
+  "slot": "Основное",
+  "description": "Можно зачаровать пассивными <hyperlink>усилениями</hyperlink>, <hyperlink>усилением</hyperlink> урона или способностями, повышающими боевую эффективность предмета.",
+  "name": "Меч феодала",
   "tags": [
    {
     "tag": "ItemTypeWeapon.OneHanded.Sword"
