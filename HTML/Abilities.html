@@ -180,12 +180,7 @@
                 // Requisites
                 let requisitesDisplay = "";
                 if (requisites.length > 0) {
-                    requisitesDisplay =
-                        "(" +
-                        requisites
-                            .map((r) => cleanTranslation(r.requisite).replace(/<\/?hyperlink>/g, ""))
-                            .join(", ") +
-                        ")";
+                    requisitesDisplay = "(" + requisites.map((r) => r.requisite).join(", ") + ")";
                 }
 
                 // Build button
