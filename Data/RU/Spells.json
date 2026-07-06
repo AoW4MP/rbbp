@@ -9190,17 +9190,6 @@
   "icon": "CBE7688B0000080C"
  },
  {
-  "casting_cost": "",
-  "resid": -3753916818180275193,
-  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
-  "id": "Добыча_разорителя",
-  "tactical": false,
-  "description": "<bulletlist><bullet>Выбранный <hyperlink>Город</hyperlink> вражеской <hyperlink>империи</hyperlink> утрачивает приграничную <hyperlink>провинцию</hyperlink> с потерями среди <population></population> <hyperlink>населения</hyperlink>;</bullet><bullet>Ближайший <hyperlink>Город</hyperlink> вашей <hyperlink>империи</hyperlink> получает 250 <structureprod></structureprod> Производство;</bullet><bullet>Вы получаете 250 <gold></gold> <hyperlink>Золото</hyperlink></bullet></bulletlist>",
-  "name": "Добыча разорителя",
-  "operation_point_cost": 100,
-  "icon": "CBE7688B000003E7"
- },
- {
   "casting_cost": "100<warspoils></warspoils> ",
   "resid": -3753916818180275545,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
