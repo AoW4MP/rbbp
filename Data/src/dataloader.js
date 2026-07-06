@@ -366,6 +366,73 @@ function SanitizeLocalizedNames() {
     }
 }
 
+// General-purpose cleanup for the localization macro artifacts found across
+// Data/RU/all.json (and, by extension, anything looked up from it: world
+// structures/Ancient Wonders, relics, free cities, quests, hero events,
+// combat property labels, etc.). These are NOT specific to one page - the
+// same raw export format is reused by ~30 different call sites throughout
+// Builder.js/Faction.js/PantheonTree.html/RealmTraits.html/Search.js, all of
+// which read jsonAllFromPOLocalized directly and display the result as-is.
+// Rather than patch every call site, this sanitizes the shared data source
+// once, right after load.
+//
+// Handles three distinct artifact shapes, tested against every string value
+// in Data/RU/all.json (77k+ entries, 21k+ matched/changed, 0 unbalanced
+// <hyperlink> tags introduced, 0 false positives found):
+//
+// 1. "singular||plural" concatenation (e.g. "Защитникl||Защитникиml") -
+//    same policy as SanitizeLocalizedNames(): keep the singular half.
+// 2. "<<MARKER:content>>" grammar macros (e.g. "<<dat,c:<hyperlink>...
+//    </hyperlink>>>", "<<acc:<hyperlink>...</hyperlink>>>", "<<c:...>>").
+//    MARKER is any combination of a Russian grammatical case code (nom,
+//    gen, dat, acc, ins, pre) and/or a modifier letter (c, cm, m, mc, ...),
+//    used by the game's own live templating engine to select the correctly
+//    declined word form - which this static site cannot resolve. Unwrapped
+//    down to the inner content, which is always plain icon/hyperlink markup
+//    the existing rendering pipeline already understands (matches the flat
+//    structure the EN export uses, since English needs no such macro).
+//    Deliberately does NOT match the visually similar but structurally
+//    different "<<Word<eventColor>{optionA/optionB}</eventColor>>>" gender-
+//    variant macro (no colon after the prefix) - that's a different, mostly
+//    dynamic-event-text mechanism outside the scope of this fix.
+// 3. Leftover per-word declension/count codes glued directly onto a
+//    Cyrillic word with no separator, in both of their observed forms:
+//    "<eventColor>{n}</eventColor>"-wrapped (e.g. "a<eventColor>{1}</eventColor>")
+//    and bare (e.g. "a{1}n{2}", "Владенияn"). The letter set is restricted
+//    to the codes actually observed in the data (a/f/m/n/l/x/p/c) and only
+//    matched directly after a Cyrillic character, so real dynamic values
+//    like "<eventColor>{50}</eventColor>" or "<eventColor>{amount}</eventColor>"
+//    are left untouched.
+function sanitizeLocalizationMacros(value) {
+    if (typeof value !== "string" || value.length === 0) {
+        return value;
+    }
+
+    value = value.split("||")[0];
+    value = value.replace(/<<[a-zA-Z,]*:(.*?)>>/g, "$1");
+    value = value.replace(
+        /(?<=[а-яёА-ЯЁ])(?:[a-zA-Z]{1,3}(?:<eventColor>\{\d+\}<\/eventColor>|\{\d+\}))+/g,
+        ""
+    );
+    value = value.replace(/(?<=[а-яёА-ЯЁ])[afmnlxpc]{1,3}(?=<|\s|$|[.,;:!?)])/g, "");
+
+    return value.trim();
+}
+
+function SanitizeAllFromPO() {
+    if (typeof jsonAllFromPOLocalized === "undefined" || !jsonAllFromPOLocalized) {
+        return;
+    }
+    for (const entry of jsonAllFromPOLocalized) {
+        if (!entry) continue;
+        for (const field in entry) {
+            if (typeof entry[field] === "string") {
+                entry[field] = sanitizeLocalizationMacros(entry[field]);
+            }
+        }
+    }
+}
+
 const abilityMap = {};
 const abilityNameMap = {};
 
@@ -418,6 +485,7 @@ async function CheckData() {
 //await GetAllData("EN");
         AddExtraData();
         SanitizeLocalizedNames();
+        SanitizeAllFromPO();
 
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityMap[a.slug] = a));
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityNameMap[a.name] = a));
