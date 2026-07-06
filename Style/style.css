@@ -307,7 +307,7 @@ a:hover {
 
 #menu ul.menus {
     height: auto;
-    width: 180px;
+    width: 250px;
     background: black;
     border-image: url(/rbbp/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
@@ -321,7 +321,7 @@ a:hover {
 #menu ul.menus li {
     display: block;
     width: 100%;
-    font: 12px Arial;
+    font: 11px Arial;
     text-transform: uppercase;
 }
 
@@ -354,10 +354,10 @@ a:hover {
 #menu ul.menus .submenu {
     display: none;
     position: absolute;
-    left: 180px;
+    left: 250px;
     background: #111;
     top: 0;
-    width: 180px;
+    width: 250px;
 }
 
 #menu ul.menus .submenu li {
@@ -607,7 +607,7 @@ p {
 
 .w3-bar {
     overflow-y: auto;
-    width: 200px;
+    width: 260px;
     max-height: 800px;
     display: grid;
     grid-auto-columns: auto;
@@ -630,8 +630,8 @@ p {
     padding: 8px 8px;
     float: left;
     position: relative;
-    height: 45px;
-    font-size: 12px;
+    height: 58px;
+    font-size: 11px;
     border: none;
     display: block;
     outline: 0;

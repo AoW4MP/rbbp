@@ -2321,7 +2321,7 @@ function findHeroGovernance() {
     let finalCheckedList = [];
 
     for (let j = 0; j < jsonHeroGovernance.length; j++) {
-        finalCheckedList.push(jsonHeroGovernance[j]);
+        finalCheckedList.push(jsonHeroGovernanceLocalized[j]);
     }
     console.log(finalCheckedList);
     return finalCheckedList;

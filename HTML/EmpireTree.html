@@ -70,7 +70,12 @@ const isRepeatable = jsonEmpire[i].repeat_cost_increase !== undefined;
 
 const previousWasNonRepeatable = levelMap.get(level) === true;
 
-if (!isRepeatable && previousWasNonRepeatable) {
+if (
+    !isRepeatable &&
+    previousWasNonRepeatable &&
+    jsonEmpire[i].name !== "Road Building" &&
+    jsonEmpire[i].name !== "Excavation"
+) {
     // two non-repeatable skills on same level
       connectionLine.className = "branch-line";
     var testLock = document.createElement("img");

@@ -26379,7 +26379,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@DRAGON_LEADER",
-    "description": " <br><bulletlist><bullet>Dragon Lords have access to unique combat Hero Skills.</bullet><bullet>Dragon Lords gain powerful transformation <hyperlink>Hero Signature Skills</hyperlink> based on empire <hyperlink>Affinity</hyperlink>.</bullet><bullet>Gain extra <gold></gold> <hyperlink>Gold</hyperlink> through their <hyperlink>Dragonhoardconcept</hyperlink>.</bullet><bullet>Dragon Lords are <hyperlink>Herotrait governance dragon governor</hyperlink>.</bullet><bullet>Dragon Lords have a 30 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> and cannot equip most Hero Items.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Dragon Lords have access to unique combat Hero Skills.</bullet><bullet>Dragon Lords gain powerful transformation <hyperlink>Hero Signature Skills</hyperlink> based on empire <hyperlink>Affinity</hyperlink>.</bullet><bullet>Gain extra <gold></gold> <hyperlink>Gold</hyperlink> through their <hyperlink>Dragon hoard</hyperlink>.</bullet><bullet>Dragon Lords are <hyperlink>Dragon governor</hyperlink>.</bullet><bullet>Dragon Lords have a 8 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> per level and cannot equip most Hero Items.</bullet></bulletlist>",
     "DLC": "DRAGONLORDS",
     "description_short": "<helpcolor>A mighty Dragon seeking new realms to shape in their vision.</helpcolor>",
     "hyperlink": "<hyperlink>Dragon Lord</hyperlink>"
@@ -28808,7 +28808,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@ELDRITCH_RULER_TYPE",
-    "description": " <br><bulletlist><bullet>Eldritch Sovereigns have access to powerful control Hero Skills.</bullet><bullet>Eldritch Sovereigns gain powerful unique <hyperlink>Hero Signature Skills</hyperlink>.</bullet><bullet>Use <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Start with <hyperlink>Clairvoyance ritual</hyperlink> and <hyperlink>Entrhall population</hyperlink>.</bullet><bullet>Eldritch Sovereigns are <hyperlink>Herotrait governance eldritch governor</hyperlink>.</bullet><bullet>Eldritch Sovereigns have a 5 <mana></mana> <hyperlink>Mana</hyperlink> <hyperlink>Unit Upkeep</hyperlink> and cannot equip Leg and Mount items.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Eldritch Sovereigns have access to powerful control Hero Skills.</bullet><bullet>Eldritch Sovereigns gain powerful unique <hyperlink>Hero Signature Skills</hyperlink>.</bullet><bullet>Use <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Start with <hyperlink>Clairvoyance ritual</hyperlink> and <hyperlink>Enthrall Population</hyperlink>.</bullet><bullet>Eldritch Sovereigns are <hyperlink>Eldritch governor</hyperlink>.</bullet><bullet>Eldritch Sovereigns have a 6 <mana></mana> <hyperlink>Mana</hyperlink> and 2 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> and cannot equip Leg and Mount items.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "description_short": "<helpcolor>An eldritch sorcerer commanding powers beyond mortal comprehension.</helpcolor>",
     "name": "Eldritch Sovereign"
@@ -45013,7 +45013,7 @@
   },
   {
     "id": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING",
-    "description": " <br><bulletlist><bullet>Capital city starts with <hyperlink>Wizard tower item forge</hyperlink>.</bullet><bullet>Has access to a Runestele spell that slowly alters terrain to the Giant's preference.</bullet><bullet>Gains economic bonuses from preferred terrain.</bullet><bullet>Giant Kings are <hyperlink>Herotrait governance giant governor rock</hyperlink>.</bullet><bullet>Giant Kings have a <eventColor>{amount2}</eventColor> <mana></mana> <hyperlink>Mana</hyperlink> <hyperlink>Unit Upkeep</hyperlink> and cannot equip Mount items.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Capital city starts with <hyperlink>Wizard tower: Item forge</hyperlink>.</bullet><bullet>Has access to a Runestele spell that slowly alters terrain to the Giant's preference.</bullet><bullet>Gains economic bonuses from preferred terrain.</bullet><bullet>Giant Kings are <hyperlink>Giant governor</hyperlink>.</bullet><bullet>Giant Kings have a 4 <mana></mana> and 4 <gold></gold> <hyperlink>Gold</hyperlink><hyperlink>Mana</hyperlink> <hyperlink>Unit Upkeep</hyperlink> and cannot equip Mount items.</bullet></bulletlist>",
     "DLC": "GIANTKINGS",
     "description_short": "<helpcolor>A formidable Giant who harnesses the elemental force of the Fire, Rock, Storm, or Frost Clan to refashion realms.</helpcolor>"
   },
@@ -109917,7 +109917,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@RACIAL_LEADER",
-    "description": " <br><bulletlist><bullet>Mortal Champions have access to unique army leadership hero skills.</bullet><bullet>Mortal Champion Rulers gain +20% <hyperlink><xp></xp> Experience</hyperlink>.</bullet><bullet>Start with +100 Relation with <hyperlink>Free Cities</hyperlink>.</bullet><bullet>Mortal Champion Rulers start with the <hyperlink>Spur to action</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Mortal Champions are <hyperlink>Herotrait governance champion governor</hyperlink>.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Mortal Champions have access to unique army leadership hero skills.</bullet><bullet>Mortal Champion Rulers gain +20% <hyperlink><xp></xp> Experience</hyperlink>.</bullet><bullet>Start with +100 Relation with <hyperlink>Free Cities</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +10% <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +20 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Unit Production</hyperlink> in your <hyperlink>Throne City</hyperlink>.</bullet><bullet>Mortal Champion Rulers start with the <hyperlink>Spur to action</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Mortal Champions are <hyperlink>Herotrait governance champion governor</hyperlink>.</bullet></bulletlist>",
     "description_short": "<helpcolor>A Ruler risen from the ranks of their people.</helpcolor>",
     "hyperlink": "<hyperlink>Champion</hyperlink>",
     "relation_modifier": "Ruler Origin: Champion of the People"
@@ -109928,7 +109928,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@WIZARD_KING",
-    "description": " <br><bulletlist><bullet>Wizard Kings have access to unique <hyperlink>Combat Spell</hyperlink> enhancing hero skills.</bullet><bullet>All <conduit></conduit> <hyperlink>Conduit</hyperlink> grant +2 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>Start with +10 <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink> and +10 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink>.</bullet><bullet>Wizard Kings start with the <hyperlink>Overchannel ability</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Wizard Kings are <hyperlink>Herotrait governance wizard governor</hyperlink>.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Wizard Kings have access to unique <hyperlink>Combat Spell</hyperlink> enhancing hero skills.</bullet><bullet>All <conduit></conduit> <hyperlink>Conduit</hyperlink> grant +4 <mana></mana> <hyperlink>Mana</hyperlink> and +2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet>Start with +10 <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink> and +10 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink>.</bullet><bullet>Wizard Kings start with the <hyperlink>Overchannel ability</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Wizard Kings are <hyperlink>Herotrait governance wizard governor</hyperlink>.</bullet></bulletlist>",
     "description_short": "<helpcolor>A powerful Wizard seeking dominion over a new realm.</helpcolor>",
     "hyperlink": "<hyperlink>Wizard King</hyperlink>"
   },
