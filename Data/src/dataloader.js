@@ -13,8 +13,16 @@ function cleanTranslation(text) {
         text
             // Remove ^fa{[1]}fn{[2]} style markers
             .replace(/\^fa\{\[\d+\]\}fn\{\[\d+\]\}/g, "")
-            // Remove any ^ followed by a single letter (e.g. ^m, ^N, ^a)
-            .replace(/\^[a-zA-Z]/g, "")
+            // Remove ^ followed by a declension/count code letter and any
+            // number of attached "letter{digit}" groups, e.g. "^F", "^N",
+            // "^Ma{1}n{2}", "^Pa{1}". These are grammatical agreement
+            // placeholders left over from the game's own localization
+            // engine (mirrors the <eventColor>{n}</eventColor> variant of
+            // the same issue handled in LocalizeUI()). The previous
+            // "^[a-zA-Z]" rule only stripped the leading "^X" and left the
+            // trailing "a{1}n{2}" behind, so the trailing groups are now
+            // consumed too.
+            .replace(/\^[a-zA-Z]([a-z]\{\d+\})*/g, "")
             // Clean up leftover spaces
             .trim()
     );

@@ -1383,7 +1383,7 @@ function GetAbilityToolTip(ability, uniqueMedal) {
                 newReq.setAttribute("style", "background-color:#5d5d5c");
             }
             newReq.className = "requisiteSlot";
-            newReq.innerHTML += requisite.requisite;
+            newReq.innerHTML += cleanTranslation(requisite.requisite).replace(/<\/?hyperlink>/g, "");
             reqs.appendChild(newReq);
         }
     }
