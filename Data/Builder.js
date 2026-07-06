@@ -5921,7 +5921,15 @@ function showSpell(a, showOrigin, divOrigin) {
             imageLinkName = spellFound.icon;
             imageSRC = "/rbbp/Icons/SpellIcons/" + imageLinkName + ".png";
         } else {
-            imageLinkName = spellFound.id;
+            // Use the stable EN id here, not the localized spellFound.id: for
+            // non-English languages spellFound.id is often the Cyrillic (or
+            // other non-Latin) display name rather than a slug (e.g.
+            // "Призыв_поборника"), and the actual files under
+            // /Icons/SummonIcons/ are only ever named after the EN slug
+            // (e.g. "summon_zealot.png"). Using the localized id produced a
+            // 404 - the summoned unit's own icon silently failed to load in
+            // every non-EN language for any spell in incorrectIconOverrideList.
+            imageLinkName = spellFoundEN.id;
             imageSRC = "/rbbp/Icons/SummonIcons/" + imageLinkName + ".png";
         }
 
