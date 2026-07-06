@@ -26401,7 +26401,7 @@
     "count": 1
    }
   ],
-  "description": "Наносит урон и отталкивает воинов в конусе размером 4 кл.",
+  "description": "Наносит урон и отталкивает воинов в конусе размером 4 кл. Переход в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Приливная волна",
   "slug": "tidal_wave_ability_000003E300004E0B",
   "damage": "12<damagephysical></damagephysical> ",

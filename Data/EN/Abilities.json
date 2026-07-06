@@ -26401,7 +26401,7 @@
     "count": 1
    }
   ],
-  "description": "Deals damage and pushes units away in a 4-hex cone.",
+  "description": "Deals damage and pushes units away in a 4-hex cone. Enter <hyperlink>Defense Mode</hyperlink>.",
   "name": "Tidal Wave",
   "slug": "tidal_wave_ability_000003E300004E0B",
   "damage": "12<damagephysical></damagephysical> ",

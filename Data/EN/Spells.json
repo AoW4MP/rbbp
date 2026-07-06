@@ -9190,17 +9190,6 @@
   "icon": "CBE7688B0000080C"
  },
  {
-  "casting_cost": "",
-  "resid": -3753916818180275193,
-  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
-  "id": "spoils_of_destruction",
-  "tactical": false,
-  "description": "<bulletlist><bullet>Target enemy <hyperlink>Empire</hyperlink> <hyperlink>City</hyperlink> loses a border land <hyperlink>Province</hyperlink> and the <population></population> <hyperlink>Population</hyperlink> is lost.</bullet><bullet>The nearest <hyperlink>City</hyperlink> of your <hyperlink>Empire</hyperlink> gains 250 <structureprod></structureprod> Production</bullet><bullet> You gain 250 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist>",
-  "name": "Spoils of Destruction",
-  "operation_point_cost": 100,
-  "icon": "CBE7688B000003E7"
- },
- {
   "casting_cost": "100<warspoils></warspoils> ",
   "resid": -3753916818180275545,
   "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
