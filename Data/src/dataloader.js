@@ -311,6 +311,53 @@ function AddExtraData() {
     jsonUnitAbilitiesLocalized = [...jsonUnitAbilitiesLocalized, ...jsonExtraTooltips];
 }
 
+// The localization export used to build Data/RU (and, rarely, other non-EN
+// language dumps) sometimes concatenates the singular and plural form of a
+// name with no separator at all, e.g. "ЛучницаЛучницы" ("Archer" + "Archers")
+// or "ЧемпионЧемпионы" ("Champion" + "Champions"). The EN dump for the same
+// record is always clean ("Archer"), so this only ever surfaces in localized
+// text. The join point is always a lowercase letter immediately followed by
+// an uppercase letter with nothing in between: a legitimate multi-word Title
+// Case name always has a space (or, for id-style values, an underscore)
+// before every capitalized word, so this pattern only ever occurs at the
+// singular/plural seam. We keep the first (singular) half, which is what the
+// rest of the site already assumes there is exactly one name per record.
+const DUPLICATED_NAME_SEAM = /[а-яё](?=[А-ЯЁ])/;
+
+function splitDuplicatedLocalizedText(value) {
+    if (typeof value !== "string" || value.length === 0) {
+        return value;
+    }
+    const seam = value.match(DUPLICATED_NAME_SEAM);
+    if (!seam) {
+        return value;
+    }
+    return value.slice(0, seam.index + 1);
+}
+
+function SanitizeLocalizedNames() {
+    const fieldsByArray = [
+        [typeof jsonUnitsLocalized !== "undefined" ? jsonUnitsLocalized : null, ["name", "id"]],
+        [typeof jsonSpellsLocalized !== "undefined" ? jsonSpellsLocalized : null, ["name", "id"]],
+        [typeof jsonHeroItemsLocalized !== "undefined" ? jsonHeroItemsLocalized : null, ["name"]],
+        [typeof jsonUnitAbilitiesLocalized !== "undefined" ? jsonUnitAbilitiesLocalized : null, ["name"]],
+        [typeof jsonHeroSkillsLocalized !== "undefined" ? jsonHeroSkillsLocalized : null, ["name"]],
+        [typeof jsonTomesLocalized !== "undefined" ? jsonTomesLocalized : null, ["name"]]
+    ];
+
+    for (const [array, fields] of fieldsByArray) {
+        if (!array) continue;
+        for (const entry of array) {
+            if (!entry) continue;
+            for (const field of fields) {
+                if (field in entry) {
+                    entry[field] = splitDuplicatedLocalizedText(entry[field]);
+                }
+            }
+        }
+    }
+}
+
 const abilityMap = {};
 const abilityNameMap = {};
 
@@ -362,6 +409,7 @@ async function CheckData() {
 
 //await GetAllData("EN");
         AddExtraData();
+        SanitizeLocalizedNames();
 
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityMap[a.slug] = a));
         jsonUnitAbilitiesLocalized.forEach((a) => (abilityNameMap[a.name] = a));
@@ -460,6 +508,18 @@ function LocalizeUI(specific) {
                 value = value.replaceAll("<hyperlink>", "");
                 value = value.replaceAll("</hyperlink>", "");
                 value = value.split("^")[0];
+                // Localized strings (RU and others) can retain raw grammatical
+                // agreement placeholders left over from the game's own localization
+                // engine, e.g. "Приверженность астралуn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>".
+                // These always take the form of 1-3 latin declension/count codes
+                // (a/f/m/n/l/x) glued directly onto the preceding word, immediately
+                // followed by <eventColor>{digit}</eventColor>. The site has no data
+                // to resolve them at runtime, so strip them instead of leaking the
+                // raw tags/placeholders into the UI. The restricted letter set avoids
+                // touching legitimate <eventColor>{...}</eventColor> values (e.g. an
+                // already-substituted number or a named placeholder).
+                value = value.replace(/[afmnlx]{1,3}<eventColor>\{\d+\}<\/eventColor>/g, "");
+                value = value.trim();
             } else if ("unit" in jsonUIGeneric[id]) {
                 let test = jsonUIGeneric[id].unit;
                 const abilityName = findBy(jsonUnitAbilities, "name", test);
