@@ -3781,7 +3781,7 @@
  {
   "requirement_description": "Requires 4: <quarry></quarry> <hyperlink>Quarry</hyperlink> to unlock.",
   "cost": "500<gold></gold> 400<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+80 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per <quarry></quarry> Quarry:</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+15 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per <quarry></quarry> Quarry:</bullet></bulletlist>",
   "resid": 4282082401262,
   "id": "workers_guild",
   "description": "",
