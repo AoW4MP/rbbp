@@ -24204,16 +24204,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "0000049700001571"
-   },
-   {
     "slug": "cbe7688b000007f4"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d000011e2"
@@ -24285,16 +24282,13 @@
     "slug": "000003e300006e7f"
    },
    {
-    "slug": "0000049700001571"
-   },
-   {
     "slug": "cbe7688b000007f4"
    },
    {
     "slug": "000003eb00000425"
    }
   ],
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "abilities": [
    {
     "slug": "melee_charge_strike_(base)_ability_0000048D000011F9_0000048d00001220"

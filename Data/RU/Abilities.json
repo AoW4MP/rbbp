@@ -33193,7 +33193,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_equipment_item_bone_giant_axe_base_",
   "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
@@ -37095,7 +37095,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_giant_king_bone_weapons_giant_axe_tier_i",
   "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
@@ -37186,7 +37186,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_giant_king_frost_giant_axe_tier_i",
   "damage": "12<damagephysical></damagephysical> 12<damagefrost></damagefrost> ",
   "requisites": [
@@ -37741,7 +37741,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_equipment_item_giant_axe_base",
   "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
@@ -37992,7 +37992,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_giant_king_fire_giant_axe_tier_i",
   "damage": "12<damagephysical></damagephysical> 12<damagefire></damagefire> ",
   "requisites": [
@@ -38083,7 +38083,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_giant_king_stone_giant_axe_tier_i",
   "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
@@ -38174,7 +38174,7 @@
    }
   ],
   "description": "Мощный натиск атакует врагов на линии в  кл.:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink>.</bullet></bulletlist>",
-  "name": "Атака мощным натиском",
+  "name": "Атака натиском",
   "slug": "giant_axe_heavy_melee_charge_ability_giant_king_storm_giant_axe_tier_i",
   "damage": "12<damagephysical></damagephysical> 12<damagelightning></damagelightning> ",
   "requisites": [

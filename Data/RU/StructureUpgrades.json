@@ -3781,7 +3781,7 @@
  {
   "requirement_description": "Для постройки требуется <quarry></quarry> <hyperlink>каменоломня</hyperlink> (4).",
   "cost": "500<gold></gold> 400<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+80 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink></bullet><bullet>+10 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+15 к доходу <structureprod></structureprod> <hyperlink>производства</hyperlink> за каждую провинцию типа «<quarry></quarry> Каменоломня» ()</bullet></bulletlist>",
   "resid": 4282082401262,
   "id": "Гильдия_рабочих",
   "description": "",
