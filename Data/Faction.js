@@ -710,7 +710,7 @@ function SetSkillPathInfoSmall(buttonHolder, origin) {
     spa.setAttribute("style", "margin-left:113px");
 
     spa.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
 
     SetSkillPreview(spa, origin);
 
@@ -784,7 +784,7 @@ function SetTomePathInfoSmall(buttonHolder, origin, index, isInvalid) {
     spa.setAttribute("style", "margin-left:113px");
 
     spa.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
 
     SetTomePreview(spa, origin);
 
@@ -916,7 +916,7 @@ function SetTomePathInfo(button, origin) {
     spa.setAttribute("style", "margin-left:113px");
 
     spa.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
 
     SetTomePreview(spa, origin);
 
@@ -973,7 +973,7 @@ function SetSkillPathInfo(button, origin) {
     spa.setAttribute("style", "margin-left:113px");
 
     spa.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
 
     SetSkillPreview(spa, origin);
 
@@ -1607,7 +1607,7 @@ function createTooltip(origin, type) {
 
     tooltip.style = "margin-left:113px";
 
-    tooltip.innerHTML = `<p style="color: #d7c297;"><span style="font-size:20px;"> ${origin.name.toUpperCase()}</p>`;
+    tooltip.innerHTML = `<p style="color: #d7c297;"><span style="font-size:20px;"> ${origin.name}</p>`;
 
     var originLoc = origin; //findOriginLoc(origin, type);
     switch (type) {
@@ -1691,7 +1691,7 @@ function createTooltip(origin, type) {
 
 function SetSkillPreview(span, origin) {
     span.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
     if ("description" in origin) {
         span.innerHTML += origin.description;
     }
@@ -1833,7 +1833,7 @@ function SetTomePreview(span, origin) {
     }
 
     span.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + locOrigin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + locOrigin.name + "</p>";
     span.innerHTML += locOrigin.gameplay_description + "<br>";
     // if ("hero_skills" in origin) {
     //   span.innerHTML += '<p style="color: #97d7a2;>' + '<span style="font-size=20px;">Hero Skills:<br></p>';
@@ -1872,14 +1872,15 @@ function SetTomePreview(span, origin) {
             ) {
                 // can be summon as well
                 if ("spell_slug" in origin.skills[index]) {
-                    const spell = findBy(jsonSpellsLocalized, "id", locOrigin.skills[index].spell_slug);
+                    const spellEN = findBy(jsonSpells, "id", origin.skills[index].spell_slug);
+                    const spell = findBy(jsonSpellsLocalized, "resid", spellEN.resid);
                     let iconLink = "";
                     if ("icon" in spell) {
                         iconLink = spell.icon;
                     }
 
                     if (iconLink == undefined || incorrectIconOverrideList.includes(spell.spell_slug)) {
-                        iconLink = spell.id;
+                        iconLink = spellEN.id;
                         span.innerHTML +=
                             '<bullet> <img width="20px" src="/rbbp/Icons/SummonIcons/' +
                             iconLink +
@@ -1887,7 +1888,7 @@ function SetTomePreview(span, origin) {
                             spell.name +
                             "</bullet>";
                     } else {
-                      
+
                         span.innerHTML +=
                             '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                             iconLink +
@@ -1896,11 +1897,13 @@ function SetTomePreview(span, origin) {
                             "</bullet>";
                     }
                 } else {
+                    const unitEN = findBy(jsonUnits, "id", origin.skills[index].unit_slug);
+                    const unit = findBy(jsonUnitsLocalized, "resid", unitEN.resid);
                     span.innerHTML +=
                         '<bullet> <img width="20px" src="/rbbp/Icons/UnitUnlockIcons/' +
                         origin.skills[index].unit_slug +
                         '.png">' +
-                        findBy(jsonUnitsLocalized, "id", locOrigin.skills[index].unit_slug).name +
+                        unit.name +
                         "</bullet>";
                 }
             }
@@ -1979,7 +1982,7 @@ function SetTomePreview(span, origin) {
                 }
 
                 if (iconLink == undefined || incorrectIconOverrideList.includes(spell.spell_slug)) {
-                    iconLink = spell.id;
+                    iconLink = spellEN.id;
                     span.innerHTML +=
                         '<bullet> <img width="20px" src="/rbbp/Icons/SummonIcons/' +
                         iconLink +
@@ -1987,7 +1990,7 @@ function SetTomePreview(span, origin) {
                         spell.name +
                         "</bullet>";
                 } else {
-                    
+
                     span.innerHTML +=
                         '<bullet> <img width="20px" src="/rbbp/Icons/SpellIcons/' +
                         iconLink +
@@ -2003,7 +2006,7 @@ function SetTomePreview(span, origin) {
 
 function SetFullPreview(span, origin) {
     span.innerHTML =
-        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name.toUpperCase() + "</p>";
+        '<p style="color: #d7c297;>' + '<span style="font-size=20px;">' + origin.name + "</p>";
 
     // if("biography_description" in origin){
 
@@ -2370,7 +2373,7 @@ function CreateUnitIcon(listEntry, colorEntry) {
 
     var emptyList = [];
     allAbilities.innerHTML +=
-        '<span style="font-size: 16px;text-align:center"> ' + listEntryLoc.name.toUpperCase() + " <br></span> ";
+        '<span style="font-size: 16px;text-align:center"> ' + listEntryLoc.name + " <br></span> ";
     allAbilities.innerHTML +=
         '<span style="font-size: 20px ;display:flex" ><img  src="/rbbp/Icons/Text/health.png" width="25 " height="25 ">' +
         listEntry.hp +
@@ -2533,7 +2536,7 @@ function ShowHeroSkillsOverview(list) {
                         );
                     }
                     var title = document.createElement("SPAN");
-                    title.innerHTML = heroSkillIconAndDesc[1].name.toUpperCase();
+                    title.innerHTML = heroSkillIconAndDesc[1].name;
                     title.setAttribute("style", "color:#deb887 ");
 
                     title.innerHTML +=

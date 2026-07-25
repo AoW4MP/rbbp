@@ -28,7 +28,7 @@
                     is_sector_upgrade: false,
                     cost: "",
                     prediction_description:
-                        "<bulletlist><bullet>+20 <unitprod></unitprod> Draft</bullet><bullet>+10 <happiness></happiness> City Stability income</bullet><bullet>+30 <food></food> Food income</bullet><bullet>+20 <production></production> Production income</bullet></bulletlist>"
+                        "<bulletlist><bullet>Units stationed in the city gain 5 <xp></xp> Experience each <turn></turn> Turn</bullet><bullet>+20 <unitprod></unitprod> Draft</bullet><bullet>+10 <happiness></happiness> City Stability income</bullet><bullet>+30 <food></food> Food income</bullet><bullet>+20 <production></production> Production income</bullet></bulletlist>"
                 },
                 {
                     requirement_description: "",
@@ -944,7 +944,7 @@
 
                 newNodeBackground.className = "structureNode";
 
-                spa.innerHTML = '<span style="color:  #d7c297;">' + name.toUpperCase() + "</span>" + "<br>";
+                spa.innerHTML = '<span style="color:  #d7c297;">' + name + "</span>" + "<br>";
 
                 var spa2 = document.createElement("SPAN");
                 spa2.setAttribute("style", "float:right");
@@ -958,7 +958,7 @@
                 description = description.replaceAll("</bullet>", "<br>");
 
                 spa2.innerHTML =
-                    '<span style="color:  #d7c297;">' + structureInfoLoc.name.toUpperCase() + "</span>" + "<br>";
+                    '<span style="color:  #d7c297;">' + structureInfoLoc.name + "</span>" + "<br>";
 
                 spa2.innerHTML += structureInfoLoc.description + "<br>";
 

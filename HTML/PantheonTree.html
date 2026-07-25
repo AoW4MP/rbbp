@@ -216,17 +216,17 @@
                     }
 
                     description = innerText;
-                    title = `<span style="color:#d7c297">${name.toUpperCase()}</span>`;
+                    title = `<span style="color:#d7c297">${name}</span>`;
                 } else if (item.extraLookupExplicit) {
                     const mainName = findBy(jsonAllFromPOLocalized, "id", item.extraLookupExplicit)[item.suffix];
-                    title = `<span style="color:#d7c297">${mainName.toUpperCase()}</span>`;
+                    title = `<span style="color:#d7c297">${mainName}</span>`;
                 } else {
                     const mainName = findBy(jsonAllFromPOLocalized, "id", "META_EMPIRE@PROGRESSION_ITEM")[item.id];
                     if (mainName == undefined) {
                         console.log("couldnt find " + item.id);
                         return;
                     }
-                    title = `<span style="color:#d7c297">${mainName.toUpperCase()}</span>`;
+                    title = `<span style="color:#d7c297">${mainName}</span>`;
                 }
 
                 tooltipSpan.innerHTML = title + "<br>" + description;

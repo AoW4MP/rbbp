@@ -796,7 +796,6 @@ function addUnitTypeIcon(a, holder, origin) {
     iconsrc = unitAbilityLoc.icon;
     iconName = unitAbilityLoc.name;
 
-    iconName = iconName.toUpperCase();
     btn = document.createElement("DIV");
     btn.className = "unittype_icon";
     imag = document.createElement("IMG");
@@ -1166,7 +1165,7 @@ function addAbilityslot(a, holder, list, enchant, uniqueMedal) {
     if (abilityEn.name.indexOf("Defense Mode") > -1) {
         spa.innerHTML =
             '<div class="leftAbility" style="color:#d7c297;"> <p class="abilityHighLighter">' +
-            abilityName.toUpperCase() +
+            abilityName +
             "</p>";
         spa.innerHTML += '<div style="clear:both"> </div>' + "<br>";
         spa.innerHTML += AddTagIconsForStatusEffects(abilityLoc.description);
@@ -1258,7 +1257,7 @@ function GetAbilityToolTip(ability, uniqueMedal) {
 
     // name and damage
     let abilityName = element.querySelector("#abilityName");
-    abilityName.innerHTML = ability.name.toUpperCase();
+    abilityName.innerHTML = ability.name;
 
     let abilityDam = element.querySelector("#abilityDamage");
     abilityDam.innerHTML = ability.damage;
@@ -1528,7 +1527,7 @@ function CreatePassiveSlotToolTip(abilityIcon, abilityName, abilityDescr) {
         abilityIcon +
         '.png"><p style="color: #d7c297;>' +
         '<span style="font-size=20px;">' +
-        abilityName.toUpperCase() +
+        abilityName +
         "</p>" +
         "</div>" +
         "<hr>" +
@@ -2705,7 +2704,7 @@ function showUnit(unitID, subcultureCheck, resID, divOrigin) {
     unitNameDiv.innerHTML = "";
     let name = unitLoc.name;
 
-    unitNameDiv.innerHTML += name.toUpperCase();
+    unitNameDiv.innerHTML += name;
 
     if ("DLC" in unitEN) {
         let newDivForMount = AddDLCTag(unitEN.DLC);
@@ -3961,7 +3960,7 @@ function showExtraTomeSkill(skill, showOrigin, divOrigin) {
     upkeep.innerHTML = "";
 
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = skill.name.toUpperCase();
+    modName.innerHTML = skill.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
     let description = "<hr>" + skill.description;
 
@@ -3986,7 +3985,7 @@ function showEmpireUpgrade(skill, showOrigin, divOrigin) {
     upkeep.innerHTML = "";
 
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = skill.name.toUpperCase();
+    modName.innerHTML = skill.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
     let description = "<hr>" + skill.description;
 
@@ -4155,7 +4154,7 @@ function showTome(a, divOrigin) {
                     );
                 }
                 let title = document.createElement("SPAN");
-                title.innerHTML = heroSkillIconAndDesc[1].name.toUpperCase();
+                title.innerHTML = heroSkillIconAndDesc[1].name;
                 title.setAttribute("style", "color:#deb887 ");
 
                 title.innerHTML += "<br>" + "Ascension Skill" + "<br><br>";
@@ -4468,7 +4467,7 @@ function GetAbilityInfo(ability) {
     let spa;
     if ("accuracy" in ability) {
         let abilityReq = "";
-        let abilityName = ability.name.toUpperCase();
+        let abilityName = ability.name;
         if (ability.requisites === undefined) {
             abilityReq = "";
         } else {
@@ -4555,7 +4554,7 @@ function GetHeroSkillDescription(skillID) {
 }
 
 function populateGenericCard(divOrigin, { name, description, tier = "", cost = "", icon = "", upkeep = "" } = {}) {
-    divOrigin.querySelector("#modname").innerHTML = name.toUpperCase();
+    divOrigin.querySelector("#modname").innerHTML = name;
     divOrigin.querySelector("#moddescription").innerHTML = description;
     divOrigin.querySelector("#modtier").innerHTML = tier;
     divOrigin.querySelector("#modcost").innerHTML = cost;
@@ -4578,7 +4577,7 @@ function showStructure(a, showOrigin, divOrigin) {
     let modcard = divOrigin;
     let modName = divOrigin.querySelector("#modname");
     let nameString = "";
-    nameString = structureLoc.name.toUpperCase();
+    nameString = structureLoc.name;
 
     if (nameString.indexOf("<br>")) {
         nameString = nameString.replace("<br>", "");
@@ -4694,7 +4693,7 @@ function showCosmicHappening(a, divOrigin) {
 
     modName = divOrigin.querySelector("#modname");
     nameString = "";
-    nameString = happening.name.toUpperCase();
+    nameString = happening.name;
 
     if (modName == undefined) {
     }
@@ -4709,7 +4708,7 @@ function showCosmicHappening(a, divOrigin) {
         const valueLookup = findBy(jsonAllFromPOLocalized, "id", happening.extraLookup);
         description = valueLookup.description;
 
-        modName.innerHTML = valueLookup.name.toUpperCase();
+        modName.innerHTML = valueLookup.name;
     }
     descriptionDiv.innerHTML = AddTagIconsForStatusEffects(description);
 
@@ -4753,7 +4752,7 @@ function showRelic(a, divOrigin) {
     }
     modName = divOrigin.querySelector("#modname");
     nameString = "";
-    nameString = relic.name.toUpperCase();
+    nameString = relic.name;
 
     if (modName == undefined) {
     }
@@ -4770,14 +4769,14 @@ function showRelic(a, divOrigin) {
         console.log(valueLookup.description);
         description = valueLookup.description;
 
-        modName.innerHTML = valueLookup.name.toUpperCase();
+        modName.innerHTML = valueLookup.name;
     }
 
     if ("unlock" in relic) {
         const valueLookup = findBy(jsonAllFromPOLocalized, "id", relic.unlock);
         console.log(valueLookup.description);
 
-        description += "<hr>" + valueLookup.name.toUpperCase() + "<br>";
+        description += "<hr>" + valueLookup.name + "<br>";
         description += valueLookup.description;
     }
     if ("unlock2" in relic) {
@@ -4785,7 +4784,7 @@ function showRelic(a, divOrigin) {
         console.log(valueLookup.description);
         description += "<hr>";
         if (valueLookup.name) {
-            description += valueLookup.name.toUpperCase() + "<br>";
+            description += valueLookup.name + "<br>";
         }
 
         description += valueLookup.description;
@@ -4794,7 +4793,7 @@ function showRelic(a, divOrigin) {
         const valueLookup = findBy(jsonAllFromPOLocalized, "id", relic.unlock3);
         console.log(valueLookup.description);
 
-        description += "<hr>" + valueLookup.name.toUpperCase() + "<br>";
+        description += "<hr>" + valueLookup.name + "<br>";
         description += valueLookup.description;
     }
 
@@ -4876,7 +4875,7 @@ function showWorldStructure(a, divOrigin) {
 
     modName = divOrigin.querySelector("#modname");
     nameString = "";
-    nameString = structure.name.toUpperCase();
+    nameString = structure.name;
 
     if (nameString.indexOf("<br>")) {
         nameString = nameString.replace("<br>", "");
@@ -4915,9 +4914,9 @@ function showWorldStructure(a, divOrigin) {
     if ("extraLookup" in structure) {
         const valueLookup = findBy(jsonAllFromPOLocalized, "id", structure.extraLookup);
         if ("hyperlink" in valueLookup) {
-            modName.innerHTML = valueLookup.hyperlink.toUpperCase();
+            modName.innerHTML = valueLookup.hyperlink;
         } else if ("name" in valueLookup) {
-            modName.innerHTML = valueLookup.name.split("^")[0].toUpperCase();
+            modName.innerHTML = valueLookup.name.split("^")[0];
         }
         if ("description_short" in valueLookup) {
             description += valueLookup.description_short;
@@ -5053,7 +5052,7 @@ function showWorldStructure(a, divOrigin) {
     const spaDes2 = document.createElement("span");
 
     if (insertDiv != undefined && spellDesc != "") {
-        spaDes2.innerHTML = insertDiv.innerHTML.toUpperCase() + "<br>" + spellDesc;
+        spaDes2.innerHTML = insertDiv.innerHTML + "<br>" + spellDesc;
         addTooltipListeners(insertDiv, spaDes2);
     }
 
@@ -5628,7 +5627,7 @@ function showDestinyTrait(trait, divOrigin) {
     if (traitEN != undefined) {
         const modName = divOrigin.querySelector("#modname");
         let nameString = "";
-        nameString = traitEN.name.toUpperCase();
+        nameString = traitEN.name;
         nameString += "<br>" + traitEN.category;
 
         modName.innerHTML = nameString;
@@ -5689,7 +5688,7 @@ function showEmpireTree(a, divOrigin) {
     }
     modName = divOrigin.querySelector("#modname");
     nameString = "";
-    nameString = treeEntryLoc.name.toUpperCase();
+    nameString = treeEntryLoc.name;
     nameString += "<br>" + treeEntryLoc.category;
 
     modName.innerHTML = nameString;
@@ -5727,7 +5726,7 @@ function showUnitUnlock(a, divOrigin) {
     const unitEN = findBy(jsonUnits, "id", a.unit_slug);
     const unitLoc = findBy(jsonUnitsLocalized, "resid", unitEN.resid);
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = unitLoc.name.toUpperCase();
+    modName.innerHTML = unitLoc.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
 
     let description = "<hr>" + a.description;
@@ -5795,7 +5794,7 @@ function showSpell(a, showOrigin, divOrigin) {
 
         let modName = modCard.querySelector("#modname");
 
-        modName.innerHTML = spellFound.name.toUpperCase();
+        modName.innerHTML = spellFound.name;
         if (checkSecretSpell(spellFoundEN.id)) {
             const blurPart = divOrigin.querySelector(".mod_image_holder");
             blurPart.classList.add("blurred");
@@ -5842,7 +5841,7 @@ function showSpell(a, showOrigin, divOrigin) {
                 div.setAttribute("style", "margin-right: 20px;");
                 div.innerHTML =
                     '<a href="/rbbp/HTML/Units.html?unit=' +
-                    spellFound.summoned_units[x].slug +
+                    spellFoundEN.summoned_units[x].slug +
                     '" target="_blank">' +
                     GetUnitTierAndName(spellFoundEN.summoned_units[x].slug) +
                     "</a>";
@@ -6174,9 +6173,9 @@ function showItem(itemLoc, divOrigin) {
     let modName = divOrigin.querySelector("#modname");
     // console.log(a.id);
     if (itemLoc.id.indexOf("pantheon") != -1) {
-        modName.innerHTML = "<pantheon></pantheon>" + itemLoc.name.toUpperCase();
+        modName.innerHTML = "<pantheon></pantheon>" + itemLoc.name;
     } else {
-        modName.innerHTML = itemLoc.name.toUpperCase();
+        modName.innerHTML = itemLoc.name;
     }
 
     let descriptionDiv = divOrigin.querySelector("#moddescription");
@@ -6258,7 +6257,7 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
     }
 
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = currentTrait.name.toUpperCase();
+    modName.innerHTML = currentTrait.name;
 
     let descriptionDiv = divOrigin.querySelector("#moddescription");
 
@@ -6308,9 +6307,9 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
             const valueLookup = findBy(jsonAllFromPOLocalized, "id", currentTrait.extraLookup);
             // console.log(currentTrait.extraLookup);
             if ("hyperlink" in valueLookup) {
-                modName.innerHTML = valueLookup.hyperlink.toUpperCase();
+                modName.innerHTML = valueLookup.hyperlink;
             } else if ("name" in valueLookup) {
-                modName.innerHTML = valueLookup.name.toUpperCase();
+                modName.innerHTML = valueLookup.name;
             }
             if ("description_short" in valueLookup) {
                 descriptionDiv.innerHTML += valueLookup.description_short;
@@ -6331,9 +6330,9 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
                 const valueLookup2 = findBy(jsonAllFromPOLocalized, "id", currentTrait.extraLookup2);
                 // console.log(valueLookup2);
                 if ("hyperlink" in valueLookup2) {
-                    modName.innerHTML = valueLookup2.hyperlink.toUpperCase();
+                    modName.innerHTML = valueLookup2.hyperlink;
                 } else if ("name" in valueLookup2) {
-                    modName.innerHTML = valueLookup2.name.toUpperCase();
+                    modName.innerHTML = valueLookup2.name;
                 }
                 if ("lore" in valueLookup2) {
                     descriptionDiv.innerHTML += valueLookup2.lore;
@@ -6506,7 +6505,7 @@ function showFreeCityUpgrade(a, divOrigin) {
     console.log(valueLookup, thisFreeCity);
     let description = valueLookup.description;
 
-    modName.innerHTML = valueLookup.name.toUpperCase();
+    modName.innerHTML = valueLookup.name;
     const tier = divOrigin.querySelector("#modtier");
     tier.innerHTML = "";
 
@@ -6624,7 +6623,7 @@ function showHeroTrait(a, divOrigin) {
     let thisAmbitionLoc = jsonHeroAmbitionsLocalized.find((entry) => entry.icon === thisAmbition.icon);
 
     modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = thisAmbitionLoc.name.toUpperCase();
+    modName.innerHTML = thisAmbitionLoc.name;
 
     let descriptionDiv = divOrigin.querySelector("#moddescription");
 
@@ -6657,7 +6656,7 @@ function showHeroTrait(a, divOrigin) {
             for (let f = 0; f < thisAmbition.ambitions[j].reward_properties.length; f++) {
                 rewardProperty =
                     '<span style="color:#deb887" >' +
-                    thisAmbitionLoc.ambitions[j].reward_properties[f].name.toUpperCase() +
+                    thisAmbitionLoc.ambitions[j].reward_properties[f].name +
                     "</span><hr><span>" +
                     thisAmbitionLoc.ambitions[j].reward_properties[f].screen_description +
                     "</span>";
@@ -6702,7 +6701,7 @@ function showHeroGov(data, check, divOrigin) {
 
     let thisGovernance = data;
     modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = thisGovernance.name.toUpperCase();
+    modName.innerHTML = thisGovernance.name;
 
     let descriptionDiv = divOrigin.querySelector("#moddescription");
 
@@ -6724,7 +6723,7 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name, 
     const skillLoc = jsonHeroSkillsLocalized.find((entry) => entry.resid === skillEN.resid);
     let modName = divOrigin.querySelector("#modname");
 
-    modName.innerHTML = skillLoc.name.toUpperCase();
+    modName.innerHTML = skillLoc.name;
 
     let descriptionDiv = divOrigin.querySelector("#moddescription");
     descriptionDiv.innerHTML = "";
