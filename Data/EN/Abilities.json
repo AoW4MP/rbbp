@@ -4125,7 +4125,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target non-<hyperlink>Hero</hyperlink> enemy unit has a base 90% chance of becoming inflicted with Thrilling Domination. If unsuccessful, the target instead:<bulletlist><bullet>Sustains 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gains 2 Burning for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink>.",
+  "description": "Target non-<hyperlink>Hero</hyperlink> enemy unit has a base 60% chance of becoming inflicted with Thrilling Domination. If unsuccessful, the target instead:<bulletlist><bullet>Sustains 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gains 2 Burning for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink>.",
   "name": "Kiss of Seduction",
   "slug": "kiss_of_seduction_ability_0000049700003B0A",
   "damage": "",
@@ -4147,7 +4147,7 @@
  },
  {
   "notes": [],
-  "description": "Target enemy unit has a base 120% chance of becoming Taunted for 2 <turn></turn> Turns.",
+  "description": "Target enemy unit has a base 90% chance of becoming Taunted for 2 <turn></turn> Turns.",
   "name": "Taunt",
   "slug": "orb_of_desire_taunt_unit_property_ability_0000049700003AFB",
   "damage": "",
@@ -4172,12 +4172,6 @@
   "name": "Blazing Aura",
   "slug": "0000049700003ac8",
   "icon": "0000049700003ACA"
- },
- {
-  "description": "Damage taken is reflected back to the attacker as <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.",
-  "name": "Fiery Reflection",
-  "slug": "0000049700003b01",
-  "icon": "0000049700003B02"
  },
  {
   "description": "This unit cannot move or use <hyperlink>Movement</hyperlink> abilities.",
@@ -22934,7 +22928,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "5",
+  "range": "6",
   "icon": "000003E300005B60"
  },
  {
@@ -24843,12 +24837,6 @@
   "icon": "000003E30000623D"
  },
  {
-  "description": "Ignore 30% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
-  "name": "Piercing",
-  "slug": "cbe7688b000001dd",
-  "icon": "000003E30000627B"
- },
- {
   "notes": [],
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
@@ -24970,12 +24958,12 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
     "name": "Sundered Defense",
     "count": 1
    },
    {
-    "description": "Base 60% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
     "name": "Sundered Resistance",
     "count": 1
    }
@@ -43393,7 +43381,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
   "description": "Target friendly unit gains a stack of Grace.",
@@ -52147,12 +52135,12 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
     "name": "Sundered Defense",
     "count": 1
    },
    {
-    "description": "Base 60% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
     "name": "Sundered Resistance",
     "count": 1
    }
@@ -52182,12 +52170,12 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Defense for 3 <turn></turn> Turns.",
     "name": "Sundered Defense",
     "count": 1
    },
    {
-    "description": "Base 60% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Sundered Resistance for 3 <turn></turn> Turns.",
     "name": "Sundered Resistance",
     "count": 1
    }
@@ -52409,7 +52397,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "5",
+  "range": "6",
   "icon": "000003E300005B60"
  },
  {
@@ -52836,7 +52824,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "5",
+  "range": "6",
   "icon": "000003E300005B60"
  },
  {

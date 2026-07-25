@@ -456,7 +456,7 @@
     "type": "<hyperlink>Siege Project</hyperlink>"
    },
    {
-    "description": "Enchanted units gain:<bulletlist><bullet>+ <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Infernal Might when it attacks.</bullet></bulletlist>",
+    "description": "Enchanted units gain:<bulletlist><bullet>Infernal Might when it attacks.</bullet></bulletlist>",
     "name": "Relentless Might",
     "spell_slug": "relentless_might",
     "tier": 5,
@@ -2335,7 +2335,7 @@
   "icon": "0000048D00000618",
   "skills": [
    {
-    "description": "For 10 <turn></turn> Turns, target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each <turn></turn> Turn.</bullet></bulletlist>",
+    "description": "Target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each <turn></turn> Turn.</bullet></bulletlist>",
     "name": "Arcane Studies",
     "spell_slug": "arcane_studies",
     "tier": 2,
@@ -2586,7 +2586,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Hastened</bullet><bullet>Strengthened</bullet><bullet>This effect then cascades to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
+    "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Gains Hastened for <turn></turn> Turns.</bullet><bullet>Gains Strengthened for <turn></turn> Turns.</bullet><bullet>This effect then cascades to adjacent friendly Construct or Linked Mind units.</bullet></bulletlist>",
     "name": "Cascading Command: Reposition",
     "spell_slug": "cascading_command_reposition",
     "tier": 3,
@@ -2600,7 +2600,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for <turn></turn> Turns.</bullet><bullet>Has <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
+    "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for <turn></turn> Turns.</bullet><bullet>Has <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to adjacent friendly Construct or Linked Mind units.</bullet></bulletlist>",
     "name": "Cascading Command: Defend",
     "spell_slug": "cascading_command_defend",
     "tier": 3,
@@ -4784,7 +4784,7 @@
   "icon": "0000041B000000E5",
   "skills": [
    {
-    "description": "All friendly units lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
+    "description": "Friendly units in a 2-hex radius lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
     "name": "Steelfury Chant",
     "spell_slug": "steelfury_chant",
     "tier": 2,
@@ -5851,7 +5851,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Target enemy unit sustains <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 16).",
+    "description": "Target enemy unit sustains <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 10).",
     "name": "Wrath of the Faithful",
     "spell_slug": "wrath_of_the_faithful",
     "tier": 2,

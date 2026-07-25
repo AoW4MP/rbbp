@@ -41,7 +41,7 @@
  {
   "requirement_description": "",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet><bullet>+40 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+20 <production></production> <hyperlink>Production</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 5 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>+10 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink> income</bullet><bullet>+40 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+20 <production></production> <hyperlink>Production</hyperlink> income</bullet></bulletlist>",
   "resid": 5244155071710,
   "id": "town_hall_ii_castle",
   "DLC": "RISEFROMRUIN ",
@@ -1295,7 +1295,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 15 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
   "resid": 5003636907280,
   "id": "sentry_nests",
   "DLC": "RISEFROMRUIN ",
@@ -2358,7 +2358,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "nature_bolstering_matrix",
-  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> dispell <hyperlink>Negative Status Effects</hyperlink> (2).",
+  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> dispell enemy <hyperlink>Negative Status Effects</hyperlink> (2).",
   "name": "Nature Bolstering Matrix",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -3506,7 +3506,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 15 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+30 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+30 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
   "resid": 4488240825430,
   "id": "stone_walls",
   "description": "<hyperlink>Wall Structure</hyperlink>",
@@ -3578,7 +3578,7 @@
  {
   "requirement_description": "",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 5 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
   "resid": 4389456578758,
   "id": "palisade_walls",
   "description": "<hyperlink>Wall Structure</hyperlink>",
@@ -4033,7 +4033,7 @@
  {
   "requirement_description": "Requires 2: <forester></forester> <hyperlink>Foresters</hyperlink>",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier I</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier II</hyperlink>.</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 10 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>+30 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier I</hyperlink>.</bullet><bullet>+1<medalGold></medalGold> Starting Rank to every <hyperlink>Tier II</hyperlink>.</bullet></bulletlist>",
   "resid": 4041564233887,
   "id": "armory",
   "description": "",

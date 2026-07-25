@@ -1154,7 +1154,7 @@
   "id": "relentless_might",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Enchanted units gain:<bulletlist><bullet>+1 <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Infernal Might when it attacks.</bullet></bulletlist>",
+  "description": "Enchanted units gain:<bulletlist><bullet>Infernal Might when it attacks.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -2540,7 +2540,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "obsidian_weapons",
   "tactical": false,
-  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -2738,7 +2738,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "purging_arrows",
   "tactical": false,
-  "description": "Grants attacks of enchanted units:<bulletlist><bullet>+10% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Grants attacks of enchanted units:<bulletlist><bullet>+20% damage against Magic Origin units.</bullet><bullet>Base 60% chance of removing 1 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -4121,7 +4121,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>City Spell</hyperlink>",
   "id": "arcane_studies",
   "tactical": false,
-  "description": "For 10 <turn></turn> Turns, target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each <turn></turn> Turn.</bullet></bulletlist>",
+  "description": "Target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each <turn></turn> Turn.</bullet></bulletlist>",
   "name": "Arcane Studies",
   "operation_point_cost": 45,
   "icon": "0000048D0000077B"
@@ -4764,27 +4764,27 @@
   "icon": "0000046A0000019C"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4853313044895,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_reposition",
   "DLC": "EMPIRESANDASHES ",
   "tactical": true,
-  "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Hastened</bullet><bullet>Strengthened</bullet><bullet>This effect then cascades to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
+  "description": "Target friendly Construct or Linked Minds unit gains:<bulletlist><bullet>Gains Hastened for 1 <turn></turn> Turn.</bullet><bullet>Gains Strengthened for 3 <turn></turn> Turns.</bullet><bullet>This effect then cascades to 7 adjacent friendly Construct or Linked Mind units.</bullet></bulletlist>",
   "name": "Cascading Command: Reposition",
-  "operation_point_cost": 30,
+  "operation_point_cost": 25,
   "icon": "0000046A00000187"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4853313044885,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "cascading_command_defend",
   "DLC": "EMPIRESANDASHES ",
   "tactical": true,
-  "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for 1 <turn></turn> Turn.</bullet><bullet>Has 2 <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to adjacent friendly Construct or Linked Mind units and is repeated.</bullet></bulletlist>",
+  "description": "Target friendly Construct or Linked Minds unit: <bulletlist><bullet>Gains Defensive Masters for 1 <turn></turn> Turn.</bullet><bullet>Has 2 <hyperlink>Negative Status Effects</hyperlink> dispelled.</bullet><bullet>This effect then applies to 7 adjacent friendly Construct or Linked Mind units.</bullet></bulletlist>",
   "name": "Cascading Command: Defend",
-  "operation_point_cost": 30,
+  "operation_point_cost": 25,
   "icon": "0000046A0000017D"
  },
  {
@@ -6314,7 +6314,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "poison_arrows",
   "tactical": false,
-  "description": "Makes attacks of enchanted units:<bulletlist><bullet>Deal +1 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Gain base 60% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes attacks of enchanted units:<bulletlist><bullet>Deal +2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Gain base 90% chance of inflicting Poisoned, a damage-over-time effect.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -6554,7 +6554,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Damage Spell</hyperlink>",
   "id": "wrath_of_the_faithful",
   "tactical": true,
-  "description": "Target enemy unit sustains 2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 16).",
+  "description": "Target enemy unit sustains 2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> plus 5 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per each friendly Faithful unit in battle (up to 10).",
   "name": "Wrath of the Faithful",
   "operation_point_cost": 15,
   "icon": "000003BD00002E6B"
@@ -7519,13 +7519,16 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "frost_arrows",
   "tactical": false,
-  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+1 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>A base 60% chance of inflicting Slowed.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
    },
    {
     "requisite": "<unitSkirmisher></unitSkirmisher> Skirmisher Unit"
+   },
+   {
+    "requisite": "<unitMagicFighter></unitMagicFighter> Magic Fighter Unit"
    }
   ],
   "name": "Frost Arrows",
@@ -8223,6 +8226,9 @@
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
+   },
+   {
+    "requisite": "<unitRanged></unitRanged> Ranged Unit"
    },
    {
     "requisite": "<unitPolearm></unitPolearm> Polearm Unit"
@@ -9067,7 +9073,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "steelfury_chant",
   "tactical": true,
-  "description": "All friendly units lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
+  "description": "Friendly units in a 2-hex radius lose all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost they gain:<bulletlist><bullet> Strengthened</bullet><bullet> Fortune</bullet></bulletlist>",
   "name": "Steelfury Chant",
   "operation_point_cost": 20,
   "icon": "0000041B00000115"
