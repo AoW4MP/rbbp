@@ -525,7 +525,7 @@ function SetSkillData(nodeElement, skill) {
     // create description span
     var spa = document.createElement("SPAN");
 
-    spa.innerHTML = '<span style="color:  #d7c297;">' + skill.name.toUpperCase() + "</span>" + "<br>";
+    spa.innerHTML = '<span style="color:  #d7c297;">' + skill.name + "</span>" + "<br>";
 
     spa.innerHTML += '<span style="color:  aliceblue;">' + skill.group_name + "</span>" + "<br>";
 

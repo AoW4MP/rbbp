@@ -583,7 +583,7 @@ function SetSkillData(nodeElement, skill, rulerSubType, choice) {
     // create description span
     var spa = document.createElement("SPAN");
 
-    spa.innerHTML = '<span style="display:block;color:  #d7c297;">' + skillLoc.name.toUpperCase() + "</span>" + "<br>";
+    spa.innerHTML = '<span style="display:block;color:  #d7c297;">' + skillLoc.name + "</span>" + "<br>";
 
     if ("group_name" in skill) {
         spa.innerHTML += '<span style=" display:block;color:  aliceblue;">' + skillLoc.group_name + "</span>" + "<br>";
