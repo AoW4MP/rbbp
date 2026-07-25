@@ -234,38 +234,28 @@
    
     {
         "id": "palisade_walls",
-        "connectTo": [ {
-                "id": "town_hall_i_town_center"
-            }]
+        "connectTo": []
     },
      {
         "id": "stone_walls",
         "connectTo": [ {
                 "id": "palisade_walls"
-            },{
-                "id": "town_hall_iii"
             }]
     }, {
         "id": "caltrop_stash",
         "connectTo": [ {
                 "id": "palisade_walls"
-            },{
-                "id": "town_hall_ii"
             }]
     },{
         "id": "arcane_battlements",
         "connectTo": [ {
                 "id": "palisade_walls"
-            },{
-                "id": "town_hall_ii"
             }]
     },
     {
         "id": "archer_battlements",
         "connectTo": [ {
                 "id": "palisade_walls"
-            },{
-                "id": "town_hall_ii"
             }]
     },{
         "id": "ballista_towers",
@@ -289,8 +279,6 @@
         "id": "catapult_towers",
         "connectTo": [ {
                 "id": "ballista_towers"
-            },{
-                "id": "town_hall_iv"
             }]
     }, {
         "id": "beacon_of_valor",
