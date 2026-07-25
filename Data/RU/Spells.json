@@ -1154,7 +1154,7 @@
   "id": "Неустанная_мощь",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Воины под действием чар получают:<bulletlist><bullet>+1 к <hyperlink>ответным ударам</hyperlink>;</bullet><bullet>способность «Чудовищная сила» при атаке.</bullet></bulletlist>",
+  "description": "Воины под действием чар получают:<bulletlist><bullet>способность «Чудовищная сила» при атаке.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Воин со щитом"
@@ -2540,7 +2540,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Обсидиановое_оружие",
   "tactical": false,
-  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+1 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение» на 3 <turn></turn> х.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+2 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение» на 3 <turn></turn> х.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Воин со щитом"
@@ -2738,7 +2738,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Стрелы_очищения",
   "tactical": false,
-  "description": "Атаки воинов под действием чар:<bulletlist><bullet>получают +10% к урону против воинов <hyperlink>магического происхождения</hyperlink>;</bullet><bullet>с базовой вероятностью 60% снимают с цели 1 <hyperlink>положительный эффект</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воинов под действием чар:<bulletlist><bullet>получают +20% к урону против воинов <hyperlink>магического происхождения</hyperlink>;</bullet><bullet>с базовой вероятностью 60% снимают с цели 1 <hyperlink>положительный эффект</hyperlink>.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
@@ -4121,7 +4121,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для города</hyperlink>",
   "id": "Магические_изыскания",
   "tactical": false,
-  "description": "Выбранный принадлежащий вам город в течение 10 <turn></turn> х.:<bulletlist><bullet>раз в <turn></turn> ход даёт +1 ед. <hyperlink>магического вдохновения</hyperlink> к случайно выбранному заклинанию.</bullet></bulletlist>",
+  "description": "Выбранный принадлежащий вам город:<bulletlist><bullet>раз в <turn></turn> ход даёт +1 ед. <hyperlink>магического вдохновения</hyperlink> к случайно выбранному заклинанию.</bullet></bulletlist>",
   "name": "Магические изыскания",
   "operation_point_cost": 45,
   "icon": "0000048D0000077B"
@@ -4764,27 +4764,27 @@
   "icon": "0000046A0000019C"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4853313044895,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Каскадная_команда_перемещение",
   "DLC": "EMPIRESANDASHES ",
   "tactical": true,
-  "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь» получает:<bulletlist><bullet>«Ускорение»;</bullet><bullet>«Дополнительная сила».</bullet><bullet>Эффект последовательно применяется ко всем дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
+  "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь» получает:<bulletlist><bullet>На 1 <turn></turn> х. получает способность «Ускорение»;</bullet><bullet>На 3 <turn></turn> х. получает способность «Дополнительная сила»;</bullet><bullet>Эффект последовательно применяется к 7 дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
   "name": "Каскадная команда: перемещение",
-  "operation_point_cost": 30,
+  "operation_point_cost": 25,
   "icon": "0000046A00000187"
  },
  {
-  "casting_cost": "45<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4853313044885,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Каскадная_команда_оборона",
   "DLC": "EMPIRESANDASHES ",
   "tactical": true,
-  "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь»:<bulletlist><bullet>на 1 <turn></turn> х. получает способность «Мастер обороны»;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink> (2);</bullet><bullet>эффект последовательно применяется ко всем дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
+  "description": "Выбранная дружественная конструкция или воин со способностью «Мысленная связь»:<bulletlist><bullet>на 1 <turn></turn> х. получает способность «Мастер обороны»;</bullet><bullet>избавляется от <hyperlink>отрицательных эффектов</hyperlink> (2);</bullet><bullet>эффект последовательно применяется к 7 дружественным конструкциям или воинам с мысленной связью по соседству.</bullet></bulletlist>",
   "name": "Каскадная команда: оборона",
-  "operation_point_cost": 30,
+  "operation_point_cost": 25,
   "icon": "0000046A0000017D"
  },
  {
@@ -6314,7 +6314,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Отравленные_стрелы",
   "tactical": false,
-  "description": "Атаки воинов под действием чар:<bulletlist><bullet>наносят +1 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Отравление», наносящий длительный урон.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воинов под действием чар:<bulletlist><bullet>наносят +2 ед. <damageBlight></damageBlight> <hyperlink>урона ядом</hyperlink>;</bullet><bullet>с базовой вероятностью 90% могут применить эффект «Отравление», наносящий длительный урон.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
@@ -6554,7 +6554,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание урона</hyperlink>",
   "id": "Гнев_верных",
   "tactical": true,
-  "description": "Выбранный вражеский воин получает 2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>, а также по 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина со способностью «Верный» на поле боя (до 16).",
+  "description": "Выбранный вражеский воин получает 2 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>, а также по 5 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink> за каждого дружественного воина со способностью «Верный» на поле боя (до 10).",
   "name": "Гнев верных",
   "operation_point_cost": 15,
   "icon": "000003BD00002E6B"
@@ -7519,13 +7519,16 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Ледяные_стрелы",
   "tactical": false,
-  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+1 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Скорость снижена».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+2 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Скорость снижена».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
    },
    {
     "requisite": "<unitSkirmisher></unitSkirmisher> Застрельщик"
+   },
+   {
+    "requisite": "<unitMagicFighter></unitMagicFighter> Магический боец"
    }
   ],
   "name": "Ледяные стрелы",
@@ -8223,6 +8226,9 @@
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Воин со щитом"
+   },
+   {
+    "requisite": "<unitRanged></unitRanged> Стрелок"
    },
    {
     "requisite": "<unitPolearm></unitPolearm> Воин с пикой"
@@ -9067,7 +9073,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Песнь_стальной_ярости",
   "tactical": true,
-  "description": "Все дружественные воины теряют все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект они получают:<bulletlist><bullet>«Дополнительная сила»;</bullet><bullet>«Удача»</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 2  кл. теряют все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект они получают:<bulletlist><bullet>«Дополнительная сила»;</bullet><bullet>«Удача»</bullet></bulletlist>",
   "name": "Песнь стальной ярости",
   "operation_point_cost": 20,
   "icon": "0000041B00000115"

@@ -41,7 +41,7 @@
  {
   "requirement_description": "",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet><bullet>+40 к доходу <food></food> <hyperlink>пищи</hyperlink></bullet><bullet>+20 к доходу <production></production> <hyperlink>производство</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 5 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>+10 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet><bullet>+10 к доходу <happiness></happiness> <hyperlink>стабильности города</hyperlink></bullet><bullet>+40 к доходу <food></food> <hyperlink>пищи</hyperlink></bullet><bullet>+20 к доходу <production></production> <hyperlink>производство</hyperlink></bullet></bulletlist>",
   "resid": 5244155071710,
   "id": "Городской_центр_ii_Замок",
   "DLC": "RISEFROMRUIN ",
@@ -1295,7 +1295,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 15 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
   "resid": 5003636907280,
   "id": "Посты_часовых",
   "DLC": "RISEFROMRUIN ",
@@ -2358,7 +2358,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "Укрепляющая_матрица_природы",
-  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы рассеивают <hyperlink>отрицательные эффекты</hyperlink> (2).",
+  "description": "<hyperlink>Заклинания</hyperlink> усиления и исцеления природы рассеивают вражеские <hyperlink>отрицательные эффекты</hyperlink> (2).",
   "name": "Укрепляющая матрица природы",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -3506,7 +3506,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 15 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+30 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+30 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
   "resid": 4488240825430,
   "id": "Каменные_стены",
   "description": "<hyperlink>Городская стена</hyperlink>",
@@ -3578,7 +3578,7 @@
  {
   "requirement_description": "",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 5 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+20 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
   "resid": 4389456578758,
   "id": "Деревянные_стены",
   "description": "<hyperlink>Городская стена</hyperlink>",
@@ -4033,7 +4033,7 @@
  {
   "requirement_description": "Требуются <forester></forester> <hyperlink>лесопилки</hyperlink> (2)",
   "cost": "170<gold></gold> 450<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+30 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink></bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг I</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг II</hyperlink>).</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 10 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>+30 к доходу <unitprod></unitprod> <hyperlink>на́йма</hyperlink></bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг I</hyperlink>).</bullet><bullet>+1 к <medalGold></medalGold> начальному уровню всех начальных юнитов (<hyperlink>ранг II</hyperlink>).</bullet></bulletlist>",
   "resid": 4041564233887,
   "id": "Оружейная",
   "description": "",
