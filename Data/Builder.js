@@ -178,8 +178,19 @@ function AddTagIconsForStatusEffects(text) {
 
 function lookupStatusEffect(name) {
     const effect = findBy(jsonUnitAbilitiesLocalized, "name", name);
-    if (!effect) return name;
-    return createStatusEffectTooltip(effect, "status");
+    if (effect) return createStatusEffectTooltip(effect, "status");
+
+    // Same fallback as buildAbilityTagCache(): a handful of unit-property
+    // status effects (e.g. Taunted/"Оскорблён") only exist as a concept
+    // entry in the general dictionary (all.json), not as their own
+    // Abilities.json record, so the auto-linked mention resolved to a name
+    // with no matching description here.
+    const fallback = jsonAllFromPOLocalized.find(
+        (entry) => entry.id && entry.id.startsWith("STATUSEFFECTS_") && entry.name === name
+    );
+    if (fallback) return createStatusEffectTooltip(fallback, "status");
+
+    return name;
 }
 
 function createStatusEffectTooltip(effectData, handlerType = "status") {
@@ -190,18 +201,26 @@ function createStatusEffectTooltip(effectData, handlerType = "status") {
     let effect = effectData.name;
 
     // let tag = jsonUnitAbilitiesLocalized[i].description;
-    let tag = maybeHighlight(effectData.description);
+    // all.json fallback entries (see lookupStatusEffect) don't always carry
+    // a "description" field, e.g. STATUSEFFECTS_UNITPROPERTIES@GENERAL_JUGGERNAUGHT.
+    let tag = maybeHighlight(effectData.description || "");
 
-    let image = document.createElement("IMG");
-    image.setAttribute("src", "/rbbp/Icons/UnitIcons/" + effectData.icon + ".png");
-    image.setAttribute("width", "30");
-    image.setAttribute("height", "30");
+    // all.json fallback entries also don't carry an "icon" field - skip the
+    // image instead of pointing it at a nonexistent "undefined.png".
+    let imageHTML = "";
+    if (effectData.icon) {
+        let image = document.createElement("IMG");
+        image.setAttribute("src", "/rbbp/Icons/UnitIcons/" + effectData.icon + ".png");
+        image.setAttribute("width", "30");
+        image.setAttribute("height", "30");
+        imageHTML = image.outerHTML;
+    }
 
     tag.replaceAll("<br><br>", "<br>");
 
     let effectplusColor = '<span style="color:white; text-decoration:underline">' + effect + "</span>";
 
-    span.innerHTML = effect.replace(effect, image.outerHTML + effectplusColor + "<br>" + tag);
+    span.innerHTML = effect.replace(effect, imageHTML + effectplusColor + "<br>" + tag);
     // addTooltipListeners(span, name.description, handlerType);
     return span.outerHTML;
 }
