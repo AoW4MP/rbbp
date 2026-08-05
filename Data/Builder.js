@@ -1363,8 +1363,19 @@ function GetAbilityToolTip(ability, uniqueMedal) {
     }
 
     if (uniqueMedal != undefined) {
-        if (uniqueMedal.name.split("Champion ")[1] == ability.name) {
-            let championMedal = uniqueMedal.description;
+        // uniqueMedal (the Champion-medal ability) is always looked up from
+        // the EN data (see the medal_rewards_5 lookup that produces it), so
+        // its name only ever splits on the English "Champion " prefix.
+        // Comparing that against `ability.name` (localized) never matched
+        // on non-EN languages - resolve the current ability's own EN name
+        // via its slug instead, so the comparison stays EN-to-EN regardless
+        // of the site's selected language.
+        const abilityEN = findBy(jsonUnitAbilities, "slug", ability.slug);
+        if (abilityEN && uniqueMedal.name.split("Champion ")[1] == abilityEN.name) {
+            // Show the medal bonus text in the selected language too, not
+            // just the raw EN description.
+            const uniqueMedalLoc = findBy(jsonUnitAbilitiesLocalized, "slug", uniqueMedal.slug) || uniqueMedal;
+            let championMedal = uniqueMedalLoc.description;
 
             abilityMod +=
                 '<br><span style="color:yellow"><medal_champion></medal_champion> Champion Medal ' +
