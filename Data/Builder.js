@@ -24,17 +24,20 @@ function highlightNumbersInDiv(text) {
 // cache maps so we don't rebuild every time
 let abilityTagCache = null;
 
+let abilityTagCombinedRegex = null;
+
 function buildAbilityTagCache() {
     abilityTagCache = new Map();
 
     const underline = '<span style="color:white; text-decoration:underline">';
     const endtag = "</span>";
 
-    for (const ability of jsonUnitAbilitiesLocalized) {
-        if (ability.slug === "0000041b000013b4") continue;
-
-        const abilityName = ability.name.split("^")[0];
-        if (!abilityName || abilityName.includes("%") || abilityName.includes("+")) continue;
+    function addTagCacheEntry(abilityName) {
+        if (!abilityName || abilityName.includes("%") || abilityName.includes("+")) return;
+        // Abilities.json is the more specific/authoritative source for a
+        // unit-ability's own presentation - don't let a same-named fallback
+        // entry from all.json overwrite it.
+        if (abilityTagCache.has(abilityName)) return;
 
         const tag = abilityName.replaceAll(" ", "_").toLowerCase();
         const tooltipspan = `<span class="statusEffectHandler">${abilityName}</span>`;
@@ -49,16 +52,44 @@ function buildAbilityTagCache() {
         const iconTag = /^[a-z_][a-z0-9_]*$/.test(tag) ? `<${tag}></${tag}>` : "";
         const replacement = `${underline}${iconTag}${tooltipspan}${endtag}`;
 
-        // Pre-compile the regex here instead of later.
-        // Plain \b word boundaries only recognize ASCII word characters, so
-        // they never match around Cyrillic (or other non-Latin) letters -
-        // Unicode property lookarounds are used instead so this also works
-        // for RU and other non-EN ability names.
-        const escaped = abilityName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-        const regex = new RegExp(`(?<![\\p{L}\\p{N}_])${escaped}(?![\\p{L}\\p{N}_])`, "gu");
-
-        abilityTagCache.set(abilityName, { replacement, regex }); // store both
+        abilityTagCache.set(abilityName, replacement);
     }
+
+    for (const ability of jsonUnitAbilitiesLocalized) {
+        if (ability.slug === "0000041b000013b4") continue;
+        addTagCacheEntry(ability.name.split("^")[0]);
+    }
+
+    // A handful of unit-property status effects (e.g. Taunted/"Оскорблён")
+    // only exist as a concept entry in the general dictionary (all.json),
+    // not as their own Abilities.json record, so plain-text mentions of
+    // them (in quotes, e.g. «Оскорблён») were never auto-linked in either
+    // language. Pull in that narrow, well-defined category as a fallback.
+    for (const entry of jsonAllFromPOLocalized) {
+        if (entry.id && entry.id.startsWith("STATUSEFFECTS_") && entry.name) {
+            addTagCacheEntry(entry.name.split("^")[0]);
+        }
+    }
+
+    // Names are matched via a single alternation instead of one .replace()
+    // pass per name. Doing N separate passes let a short name (e.g.
+    // "Стойкость") match again *inside* the HTML another pass had just
+    // inserted for a longer name that starts with it (e.g. "Стойкость
+    // перед натиском"), nesting a second, wrong tooltip link inside the
+    // first one. A single combined regex only considers the text once, so
+    // an already-matched stretch can never be re-matched by another
+    // alternative. Longer names are listed first so that, when multiple
+    // alternatives could start at the same position, the longest one wins
+    // (regex alternation is first-match-wins, not longest-match-wins).
+    const names = Array.from(abilityTagCache.keys()).sort((a, b) => b.length - a.length);
+    const alternatives = names.map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+    // Plain \b word boundaries only recognize ASCII word characters, so they
+    // never match around Cyrillic (or other non-Latin) letters - Unicode
+    // property lookarounds are used instead so this also works for RU and
+    // other non-EN names.
+    abilityTagCombinedRegex = alternatives
+        ? new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives})(?![\\p{L}\\p{N}_])`, "gu")
+        : null;
 }
 
 function extractHyperlinks(text) {
@@ -84,16 +115,15 @@ function AddTagIconsForStatusEffects(text) {
     const extracted = extractHyperlinks(text);
     text = extracted.text;
 
-    // Use the pre-compiled regex instead of building it here
-    for (const [abilityName, { replacement, regex }] of abilityTagCache.entries()) {
-        regex.lastIndex = 0; // reset since the regex has the "g" flag
-        text = text.replace(regex, replacement);
+    if (abilityTagCombinedRegex) {
+        abilityTagCombinedRegex.lastIndex = 0; // reset since the regex has the "g" flag
+        text = text.replace(abilityTagCombinedRegex, (match) => abilityTagCache.get(match));
     }
 
     for (const link of extracted.links) {
         let restored = `<hyperlink>${link.inner}</hyperlink>`;
         if (abilityTagCache.has(link.inner)) {
-            restored = abilityTagCache.get(link.inner).replacement; // updated to get just the replacement
+            restored = abilityTagCache.get(link.inner);
         }
         text = text.replace(link.token, restored);
     }
