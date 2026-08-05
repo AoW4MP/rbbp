@@ -641,25 +641,30 @@ function GetAllAvailableSignatureSkills(slot) {
         "Disruption Rune"
     ];
 
-    const listOfFirstChoiceVampire = ["Hemomancer", "Nightsworn", "Dreadful", "Desecrator"];
+    const listOfFirstChoiceVampire = ["Vampiric Rage", "Profane Body Mastery", "Marrow Drinker", "Blood Communion"];
 
     const listOfSecondChoiceVampire = [
         "Nightlord",
-        "Reaper",
-        "Vampiric Rage",
-        "Profane Body Mastery",
-        "Marrow Drinker",
+        "Desecrator",
+        "Nightsworn",
+        "Dreadful",
+        "Hemomancer",
         "Defiler"
     ];
     const listOfThirdChoiceVampire = [
-        "Blood Communion",
+        "Rosebound Noble",
         "Exsanguinate",
         "Bloodblight",
         "Tormenting Mist",
         "Festering Spine",
         "Gravemarch"
     ];
-    const listOfFourthChoiceVampire = ["Supernatural Speed", "Rosebound Noble", "Curse to Undeath"];
+    // Parasitic Communion, Violent Exsanguination, Spreading Blight, Aura of
+    // Torment, Miasmic Spine and Elite March also belong here, but each only
+    // unlocks once its own earlier-tier version (from any of slots 1-3,
+    // per its required_skills entry) has been picked - see the
+    // required_skills check below, not this static list.
+    const listOfFourthChoiceVampire = ["Supernatural Speed", "Reaper", "Curse to Undeath"];
 
     var listOfSkills = [];
     for (var s = 0; s < jsonHeroSkills.length; s++) {
@@ -856,10 +861,16 @@ function GetAllAvailableSignatureSkills(slot) {
                             }
                         } else if (slot == 4) {
                             if ("required_skills" in jsonHeroSkills[s]) {
+                                // The upgraded skill's prerequisite can be
+                                // whichever earlier-tier skill was picked in
+                                // slot 1, 2 or 3 - it isn't always slot 3
+                                // (e.g. Parasitic Communion requires Blood
+                                // Communion, which is a slot 1 choice).
+                                const pickedSignatures = [signature1, signature2, signature3];
                                 for (let j = 0; j < jsonHeroSkills[s].required_skills.length; j++) {
                                     //     console.log(type);
                                     if (
-                                        jsonHeroSkills[s].required_skills[j].resid == signature3 &&
+                                        pickedSignatures.includes(jsonHeroSkills[s].required_skills[j].resid) &&
                                         jsonHeroSkills[s].type == "signature"
                                     ) {
                                         listOfSkills.push(jsonHeroSkills[s]);
