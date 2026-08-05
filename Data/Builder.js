@@ -38,7 +38,16 @@ function buildAbilityTagCache() {
 
         const tag = abilityName.replaceAll(" ", "_").toLowerCase();
         const tooltipspan = `<span class="statusEffectHandler">${abilityName}</span>`;
-        const replacement = `${underline}<${tag}></${tag}>${tooltipspan}${endtag}`;
+        // A custom <tag></tag> is emitted so status effects that share their
+        // name with a CSS icon tag (e.g. <burning>, <poisoned>) show that
+        // icon inline. HTML tag names must start with an ASCII letter -
+        // anything else (Cyrillic RU names, etc.) isn't parsed as a tag at
+        // all: the browser emits the opening "<tag>" as literal visible text
+        // and turns the closing "</tag>" into an HTML comment. Non-ASCII
+        // ability names never matched a CSS icon tag anyway, so it's safe to
+        // just skip the tag wrapper for them.
+        const iconTag = /^[a-z_][a-z0-9_]*$/.test(tag) ? `<${tag}></${tag}>` : "";
+        const replacement = `${underline}${iconTag}${tooltipspan}${endtag}`;
 
         // Pre-compile the regex here instead of later.
         // Plain \b word boundaries only recognize ASCII word characters, so
