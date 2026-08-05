@@ -40,9 +40,13 @@ function buildAbilityTagCache() {
         const tooltipspan = `<span class="statusEffectHandler">${abilityName}</span>`;
         const replacement = `${underline}<${tag}></${tag}>${tooltipspan}${endtag}`;
 
-        // Pre-compile the regex here instead of later
+        // Pre-compile the regex here instead of later.
+        // Plain \b word boundaries only recognize ASCII word characters, so
+        // they never match around Cyrillic (or other non-Latin) letters -
+        // Unicode property lookarounds are used instead so this also works
+        // for RU and other non-EN ability names.
         const escaped = abilityName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-        const regex = new RegExp(`\\b${escaped}\\b`, "g");
+        const regex = new RegExp(`(?<![\\p{L}\\p{N}_])${escaped}(?![\\p{L}\\p{N}_])`, "gu");
 
         abilityTagCache.set(abilityName, { replacement, regex }); // store both
     }
