@@ -555,7 +555,7 @@ function SetSkillData(nodeElement, skill, rulerSubType, choice) {
     if (skill.type == "signature") {
         if (choice != undefined) {
             var name = document.createElement("Div");
-            name.innerHTML = skill.name;
+            name.innerHTML = skillLoc.name;
             name.className = "list-name";
             nodeElement.append(name);
             nodeElement.className = "list-button";
