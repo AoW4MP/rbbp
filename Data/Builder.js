@@ -4605,7 +4605,10 @@ function GetStructure(structureID) {
 }
 
 function GetHeroSkillName(skillID) {
-    return findBy(jsonHeroSkills, "id", skillID).name || undefined;
+    const skillEN = findBy(jsonHeroSkills, "id", skillID);
+    if (skillEN == undefined) return undefined;
+    const skillLoc = findBy(jsonHeroSkillsLocalized, "resid", skillEN.resid);
+    return (skillLoc || skillEN).name;
 }
 
 function GetHeroSkillDescription(skillID) {
@@ -4616,11 +4619,13 @@ function GetHeroSkillDescription(skillID) {
             if ("abilities" in jsonHeroSkills[j]) {
                 for (let k = 0; k < jsonUnitAbilities.length; k++) {
                     if (jsonUnitAbilities[k].slug.indexOf(jsonHeroSkills[j].abilities[0].slug) != -1) {
-                        array[0] = jsonUnitAbilities[k];
+                        const abilityLoc = findBy(jsonUnitAbilitiesLocalized, "slug", jsonUnitAbilities[k].slug);
+                        array[0] = abilityLoc || jsonUnitAbilities[k];
                     }
                 }
             }
-            array[1] = jsonHeroSkills[j];
+            const skillLoc = findBy(jsonHeroSkillsLocalized, "resid", jsonHeroSkills[j].resid);
+            array[1] = skillLoc || jsonHeroSkills[j];
 
             return array;
         }
