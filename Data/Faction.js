@@ -1852,7 +1852,9 @@ function SetTomePreview(span, origin) {
         span.innerHTML += '<p  style="color: #97d7a2;>' + '<span style="font-size=20px;">Initial Upgrades:<br></p>';
 
         for (let index = 0; index < locOrigin.initial_upgrades.length; index++) {
-            const struc = GetStructure(locOrigin.initial_upgrades[index].upgrade_slug);
+            // upgrade_slug is a technical EN identifier, not display text -
+            // always resolve it from the EN object, never the localized one.
+            const struc = GetStructure(origin.initial_upgrades[index].upgrade_slug);
             span.innerHTML +=
                 '<bullet> <img width="20px" src="/rbbp/Icons/UpgradeIcons/' +
                 struc.icon +
@@ -1930,7 +1932,7 @@ function SetTomePreview(span, origin) {
             }
             // city structure
             else if (origin.skills[index].type.indexOf("Structure") != -1) {
-                const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
+                const struc = GetStructure(origin.skills[index].upgrade_slug);
                 let iconLink = "";
                 if ("icon" in struc) {
                     iconLink = struc.icon;
@@ -1944,7 +1946,7 @@ function SetTomePreview(span, origin) {
             }
             // province Improvement
             else if (origin.skills[index].type.indexOf("Province") != -1) {
-                const struc = GetStructure(locOrigin.skills[index].upgrade_slug);
+                const struc = GetStructure(origin.skills[index].upgrade_slug);
                 let iconLink = "";
                 if ("icon" in struc) {
                     iconLink = struc.icon;
@@ -2658,7 +2660,7 @@ function ShowSPIOverview(list) {
                     '<span style="color: #deb887 ;text-transform: uppercase">' +
                     name +
                     "</span>" +
-                    GetStructure(loc.id).description;
+                    GetStructure(structureId).description;
 
                 const newSpan = document.createElement("div");
                 if (list[index + 1] != null) {
