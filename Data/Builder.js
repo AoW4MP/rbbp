@@ -4590,17 +4590,18 @@ function GetAbilityInfo(ability) {
 }
 
 function GetStructure(structureID) {
-    let struc = findBy(jsonStructureUpgradesLocalized, "id", structureID);
-    let strucNameLoc;
-    // if it cant find the EN one, try loc directly
-    if (struc == undefined) {
-        strucNameLoc = findBy(jsonStructureUpgradesLocalized, "id", structureID);
-        return strucNameLoc || "Not found + " + structureID;
-    } else {
-        strucNameLoc = findBy(jsonStructureUpgradesLocalized, "resid", struc.resid);
+    // structureID is always an EN slug, so it must be looked up in the EN
+    // array first - jsonStructureUpgradesLocalized's own "id" field is a
+    // localized slug on non-EN languages (e.g. a Russian slug), which never
+    // matches an EN structureID. Resolve the EN entry's resid, then use
+    // that to find the localized entry.
+    const strucEN = findBy(jsonStructureUpgrades, "id", structureID);
+    if (strucEN == undefined) {
+        return "Not found + " + structureID;
     }
 
-    return strucNameLoc || "Not found + " + structureID;
+    const strucNameLoc = findBy(jsonStructureUpgradesLocalized, "resid", strucEN.resid);
+    return strucNameLoc || strucEN;
 }
 
 function GetHeroSkillName(skillID) {
