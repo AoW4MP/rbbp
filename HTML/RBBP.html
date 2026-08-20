@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-CC3NE8PT7K");
+        </script>
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <meta charset="UTF-8" />
+        <title>Age of Wonders 4 RbbP - RBBP</title>
+
+        <style>
+            .rbbp-page {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 32px;
+                max-width: 1300px;
+                margin: 20px auto 80px auto;
+                padding: 0 20px;
+                color: #d7d2c4;
+            }
+
+            /* ---------- боковое оглавление ---------- */
+            .rbbp-toc {
+                position: sticky;
+                top: 20px;
+                flex: 0 0 260px;
+                max-height: calc(100vh - 40px);
+                overflow-y: auto;
+                background: black;
+                border-style: solid;
+                border-width: 10px;
+                border-image: url(/rbbp/Icons/9slicetooltip.png);
+                border-image-slice: 10 10 10 10 fill;
+                padding: 14px 16px;
+                scrollbar-color: #7a6a3f black;
+                scrollbar-width: thin;
+            }
+
+            .rbbp-toc-title {
+                font-family: "Decorative", sans-serif;
+                color: #deb887;
+                font-size: 15px;
+                letter-spacing: 0.5px;
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #4a3f26;
+            }
+
+            .rbbp-toc ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .rbbp-toc > ul > li {
+                margin-bottom: 2px;
+            }
+
+            .rbbp-toc a {
+                display: block;
+                padding: 5px 6px;
+                font-size: 13px;
+                line-height: 1.3;
+                color: #c9c2ab;
+                text-decoration: none;
+                border-left: 2px solid transparent;
+                transition:
+                    color 0.15s ease,
+                    border-color 0.15s ease,
+                    background-color 0.15s ease;
+            }
+
+            .rbbp-toc a:hover {
+                color: #ffe6a8;
+                background-color: rgba(222, 184, 135, 0.08);
+            }
+
+            .rbbp-toc a.rbbp-toc-active {
+                color: #ffe6a8;
+                border-left-color: #deb887;
+                background-color: rgba(222, 184, 135, 0.12);
+            }
+
+            .rbbp-toc .rbbp-toc-sub {
+                list-style: none;
+                margin: 0 0 4px 0;
+                padding: 0;
+            }
+
+            .rbbp-toc .rbbp-toc-sub a {
+                font-size: 12px;
+                padding-left: 20px;
+                color: #9a927a;
+            }
+
+            /* ---------- основной текст ---------- */
+            .rbbp-article {
+                flex: 1 1 auto;
+                min-width: 0;
+                max-width: 880px;
+            }
+
+            .rbbp-banner {
+                display: flex;
+                align-items: center;
+                gap: 22px;
+                margin-bottom: 18px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #3a3222;
+            }
+
+            .rbbp-banner img {
+                width: 92px;
+                height: 92px;
+                flex-shrink: 0;
+                filter: drop-shadow(0 0 10px rgba(222, 184, 135, 0.25));
+            }
+
+            .rbbp-title {
+                font-family: "Decorative", sans-serif;
+                font-size: 34px;
+                color: whitesmoke;
+                text-shadow:
+                    -1px -1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    2px 2px 5px black,
+                    -2px -2px 5px black,
+                    1px 1px 0 #000;
+                margin: 0 0 4px 0;
+            }
+
+            .rbbp-subtitle {
+                font-family: "Regular", sans-serif;
+                font-size: 14px;
+                color: #a79c7d;
+            }
+
+            .rbbp-patchlink {
+                display: inline-block;
+                margin-top: 6px;
+                font-family: "Regular", sans-serif;
+                font-size: 13px;
+                color: #8fd4c1;
+                text-decoration: none;
+            }
+
+            .rbbp-patchlink:hover {
+                color: #ffe6a8;
+            }
+
+            .rbbp-notice {
+                background: rgba(222, 184, 135, 0.08);
+                border-left: 3px solid #deb887;
+                padding: 10px 14px;
+                margin-bottom: 20px;
+                font-size: 13px;
+                color: #d7c297;
+            }
+
+            #rbbpContent {
+                font-family: "Regular", sans-serif;
+                font-size: 16px;
+                line-height: 1.65;
+                color: #d7d2c4;
+            }
+
+            #rbbpContent h2 {
+                font-family: "Decorative", sans-serif;
+                font-size: 26px;
+                color: #deb887;
+                margin: 46px 0 14px 0;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #4a3f26;
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+            }
+
+            #rbbpContent h2::before {
+                content: "\2696";
+                font-size: 18px;
+                color: #8a7a4f;
+            }
+
+            #rbbpContent h2:first-child {
+                margin-top: 0;
+            }
+
+            #rbbpContent h3 {
+                font-family: "Regular", sans-serif;
+                font-weight: 700;
+                font-size: 19px;
+                color: #f0dfae;
+                margin: 30px 0 10px 0;
+            }
+
+            #rbbpContent p {
+                margin: 0 0 12px 0;
+            }
+
+            #rbbpContent strong {
+                color: #f0dfae;
+            }
+
+            #rbbpContent ul,
+            #rbbpContent ol {
+                margin: 0 0 14px 0;
+                padding-left: 26px;
+            }
+
+            #rbbpContent li {
+                margin-bottom: 5px;
+            }
+
+            #rbbpContent a {
+                color: #8fd4c1;
+            }
+
+            #rbbpContent .statusEffectHandler {
+                cursor: default;
+            }
+
+            .rbbp-entity-icon {
+                width: 16px;
+                height: 16px;
+                vertical-align: -3px;
+                margin-right: 2px;
+            }
+
+            @media (max-width: 900px) {
+                .rbbp-page {
+                    flex-direction: column;
+                }
+                .rbbp-toc {
+                    position: relative;
+                    top: 0;
+                    max-height: none;
+                    flex: 1 1 auto;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        </style>
+
+        <script src="/rbbp/Data/Init.js"></script>
+        <script>
+            async function HandlePage() {
+                const lang = (typeof languageSelect !== "undefined" && languageSelect.value) || "RU";
+                const article = document.getElementById("rbbpContent");
+                const notice = document.getElementById("rbbpNotice");
+
+                let data = null;
+                let usedFallback = false;
+
+                if (lang !== "RU") {
+                    try {
+                        const res = await fetch("/rbbp/Data/" + lang + "/RBBP.json");
+                        if (res.ok) {
+                            data = await res.json();
+                        }
+                    } catch (e) {
+                        // нет перевода для этого языка - используем RU как запасной вариант
+                    }
+                }
+
+                if (!data) {
+                    const res = await fetch("/rbbp/Data/RU/RBBP.json");
+                    data = await res.json();
+                    usedFallback = lang !== "RU";
+                }
+
+                if (usedFallback) {
+                    notice.style.display = "block";
+                    notice.innerHTML =
+                        "This page hasn't been translated to English yet. Showing the Russian version below.";
+                } else {
+                    notice.style.display = "none";
+                }
+
+                let html = data.html;
+                if (typeof AddTagIconsForStatusEffects === "function") {
+                    try {
+                        html = AddTagIconsForStatusEffects(html);
+                    } catch (e) {
+                        // авто-разметка эффектов необязательна, при сбое просто показываем как есть
+                        console.error("AddTagIconsForStatusEffects failed on RBBP content", e);
+                    }
+                }
+                html = RbbpTagResourceIcons(html);
+
+                // содержимое страницы сейчас всегда на этом языке (RU, пока нет EN-перевода),
+                // а глобальный переключатель языка сайта у первого визита - EN, поэтому для
+                // связывания сущностей нельзя полагаться на jsonTomesLocalized/jsonFactionCreation
+                // "как есть" - они следуют ЗА глобальным переключателем, а не за языком этой статьи
+                const contentLang = usedFallback ? "RU" : lang;
+                window.__rbbpContentLang = contentLang;
+                const entityIndex = await BuildRbbpEntityIndex(contentLang);
+                html = LinkRbbpEntities(html, entityIndex);
+
+                article.innerHTML = html;
+
+                if (typeof HandleExtraTooltips === "function") {
+                    HandleExtraTooltips(article);
+                }
+                AttachRbbpEntityTooltips(article, entityIndex);
+
+                BuildRbbpToc(article);
+            }
+
+            // ---------- иконки ресурсов рядом с числами (10 золота -> 10 <gold> золота) ----------
+            const RBBP_RESOURCE_TAGS = [
+                [/(\d+)(\s+)(золот[а-яё]*)/gi, "gold"],
+                [/(\d+)(\s+)(маны|мана\b)/gi, "mana"],
+                [/(\d+)(\s+)(знани[а-яё]*)/gi, "knowledge"],
+                [/(\d+)(\s+)(пищ[а-яё]*)/gi, "food"],
+                [/(\d+)(\s+)(производств[а-яё]*)/gi, "production"],
+                [/(\d+)(\s+)(найм[а-яё]*)/gi, "draft"],
+                [/(\d+)(\s+)(влияни[а-яё]*)/gi, "influence"],
+                [/(\d+)(\s+)(стабильност[а-яё]*)/gi, "happiness"]
+            ];
+
+            function RbbpTagResourceIcons(html) {
+                for (const [regex, tag] of RBBP_RESOURCE_TAGS) {
+                    html = html.replace(regex, (m, num, space, word) => `${num}${space}<${tag}></${tag}>${word}`);
+                }
+                return html;
+            }
+
+            // ---------- ссылки на объекты вики (культуры/происхождения/классы/тома/постройки) ----------
+            // сюда добавлять алиасы, если в тексте встретится название,
+            // отличающееся от канонического имени в данных вики (напр. падежная форма)
+            const RBBP_NAME_ALIASES = {};
+
+            async function BuildRbbpEntityIndex(contentLang) {
+                const index = new Map();
+
+                function add(name, entry) {
+                    if (!name) return;
+                    name = name.split("^")[0].split("{")[0].trim();
+                    if (name.length < 4) return;
+                    if (!index.has(name)) index.set(name, entry);
+                }
+
+                // тома и постройки нужны именно на языке статьи (contentLang), а не на
+                // языке текущего глобального переключателя сайта - грузим напрямую
+                const [tomesLoc, strucLoc] = await Promise.all([
+                    fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
+                    fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json())
+                ]);
+
+                // та же дедупликация имён (singular||pluralСлитоВместе), что и в общем
+                // пайплайне SanitizeLocalizedNames() - тут делаем то же для нашей копии
+                if (typeof splitDuplicatedLocalizedText === "function") {
+                    for (const tome of tomesLoc) {
+                        if ("name" in tome) tome.name = splitDuplicatedLocalizedText(tome.name);
+                    }
+                }
+
+                for (const tome of tomesLoc) {
+                    if (!tome.icon) continue;
+                    add(tome.name, {
+                        type: "tome",
+                        name: tome.name,
+                        icon: `/rbbp/Icons/TomeIcons/${tome.icon}.png`,
+                        obj: tome
+                    });
+                }
+
+                for (const struc of strucLoc) {
+                    if (!struc.icon) continue;
+                    add(struc.name, {
+                        type: "structure",
+                        name: struc.name,
+                        icon: `/rbbp/Icons/UpgradeIcons/${struc.icon}.png`,
+                        obj: struc
+                    });
+                }
+
+                // культуры/происхождения/классы - имена и описания тянутся из all.json
+                // (jsonFactionCreation сам по себе на любом языке одинаков, GEN-файл).
+                // Если глобальный язык сайта уже совпадает с contentLang - переиспользуем
+                // уже загруженный jsonAllFromPOLocalized, иначе догружаем нужный all.json сами.
+                let allLoc;
+                if (
+                    typeof jsonAllFromPOLocalized !== "undefined" &&
+                    typeof languageSelect !== "undefined" &&
+                    languageSelect.value === contentLang
+                ) {
+                    allLoc = jsonAllFromPOLocalized;
+                } else {
+                    allLoc = await fetch(`/rbbp/Data/${contentLang}/all.json`).then((r) => r.json());
+                }
+                const allById = new Map();
+                for (const e of allLoc) {
+                    if (e && e.id && e.name && !allById.has(e.id)) allById.set(e.id, e);
+                }
+
+                if (typeof jsonFactionCreation !== "undefined") {
+                    for (const fc of jsonFactionCreation) {
+                        if (!["Culture", "SubCulture", "Ruler Origin", "Class"].includes(fc.type)) continue;
+                        // некоторые базовые культуры (напр. Reaver/Primal) не имеют имени по
+                        // extraLookup - у них оно есть только по extraLookup2
+                        const loc = (fc.extraLookup && allById.get(fc.extraLookup)) || (fc.extraLookup2 && allById.get(fc.extraLookup2));
+                        if (!loc) continue;
+                        let name = loc.hyperlink || loc.name;
+                        let description = loc.bio || loc.description || loc.fpg_description || "";
+                        if (typeof sanitizeLocalizationMacros === "function") {
+                            name = sanitizeLocalizationMacros(name);
+                            description = sanitizeLocalizationMacros(description);
+                        }
+                        if (!name) continue;
+                        add(name, {
+                            type: "faction",
+                            name,
+                            icon: `/rbbp/Icons/FactionCreation/${fc.icon}.png`,
+                            description,
+                            obj: fc
+                        });
+                    }
+                }
+                for (const [alias, canonical] of Object.entries(RBBP_NAME_ALIASES)) {
+                    if (index.has(canonical)) add(alias, index.get(canonical));
+                }
+
+                return index;
+            }
+
+            function LinkRbbpEntities(html, index) {
+                const names = Array.from(index.keys()).sort((a, b) => b.length - a.length);
+                if (names.length === 0) return html;
+
+                const alternatives = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+                const regex = new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives})(?![\\p{L}\\p{N}_])`, "gu");
+
+                window.__rbbpEntityData = {};
+                let counter = 0;
+
+                return html.replace(regex, (match) => {
+                    const entry = index.get(match);
+                    if (!entry) return match;
+                    counter++;
+                    const key = "rbbp-ent-" + counter;
+                    window.__rbbpEntityData[key] = entry;
+                    return (
+                        '<span class="rbbpEntityHandler" data-rbbp-key="' +
+                        key +
+                        '"><img class="rbbp-entity-icon" src="' +
+                        entry.icon +
+                        '" onerror="this.style.display=\'none\'"><span style="text-decoration:underline;">' +
+                        match +
+                        "</span></span>"
+                    );
+                });
+            }
+
+            function AttachRbbpEntityTooltips(article) {
+                const handlers = article.querySelectorAll(".rbbpEntityHandler");
+                handlers.forEach((el) => {
+                    const key = el.dataset.rbbpKey;
+                    const entry = (window.__rbbpEntityData || {})[key];
+                    if (!entry) return;
+                    const tooltip = document.createElement("span");
+                    tooltip.innerHTML = BuildRbbpEntityTooltip(entry);
+                    addTooltipListeners(el, tooltip, "something");
+                });
+            }
+
+            function BuildRbbpEntityTooltip(entry) {
+                // SetTomePreview() читает АМБИЕНТНЫЙ jsonTomesLocalized (следует за глобальным
+                // переключателем языка сайта). Переиспользуем её только когда глобальный язык
+                // сайта совпадает с языком статьи - иначе тултип на этой RU-странице может
+                // внезапно оказаться на английском. В остальных случаях - свой тултип на
+                // данных, уже загруженных нами именно на языке статьи (entry.obj).
+                const ambientMatchesContent =
+                    typeof languageSelect !== "undefined" && languageSelect.value === window.__rbbpContentLang;
+
+                if (
+                    entry.type === "tome" &&
+                    ambientMatchesContent &&
+                    typeof jsonTomes !== "undefined" &&
+                    typeof SetTomePreview === "function"
+                ) {
+                    // как в основной вики: полноценная карточка тома (пассивки, начальные постройки, аффинити)
+                    const tomeEN = findBy(jsonTomes, "resid", entry.obj.resid);
+                    if (tomeEN) {
+                        const span = document.createElement("span");
+                        try {
+                            SetTomePreview(span, tomeEN);
+                            return span.innerHTML;
+                        } catch (e) {
+                            console.error("SetTomePreview failed for RBBP tooltip", e);
+                        }
+                    }
+                }
+
+                if (entry.type === "tome") {
+                    const underline =
+                        '<span style="color:white; text-decoration:underline; font-size:16px;">' +
+                        entry.name +
+                        "</span><br>";
+                    const icon = '<img src="' + entry.icon + '" width="30" style="float:left;margin-right:8px;">';
+                    const desc = entry.obj.gameplay_description || entry.obj.lore_description || "";
+                    return icon + underline + (desc ? AddTagIconsForStatusEffects(desc) : "");
+                }
+
+                const underline =
+                    '<span style="color:white; text-decoration:underline; font-size:16px;">' + entry.name + "</span><br>";
+                const icon = '<img src="' + entry.icon + '" width="30" style="float:left;margin-right:8px;">';
+                let body = "";
+                if (entry.type === "structure" && entry.obj.description) {
+                    body = AddTagIconsForStatusEffects(entry.obj.description);
+                } else if (entry.type === "faction" && entry.description) {
+                    body = AddTagIconsForStatusEffects(entry.description);
+                }
+                return icon + underline + body;
+            }
+
+            function BuildRbbpToc(article) {
+                const tocRoot = document.getElementById("rbbpToc");
+                const headings = article.querySelectorAll("h2, h3");
+                if (headings.length === 0) {
+                    tocRoot.style.display = "none";
+                    return;
+                }
+
+                const list = document.createElement("ul");
+                let currentH2Sub = null;
+
+                headings.forEach((h, idx) => {
+                    if (!h.id) h.id = "rbbp-sec-" + idx;
+
+                    const link = document.createElement("a");
+                    link.href = "#" + h.id;
+                    link.textContent = h.textContent;
+                    link.addEventListener("click", (evt) => {
+                        evt.preventDefault();
+                        h.scrollIntoView({ behavior: "smooth", block: "start" });
+                        history.replaceState(null, "", "#" + h.id);
+                    });
+
+                    if (h.tagName === "H2") {
+                        const li = document.createElement("li");
+                        li.appendChild(link);
+                        currentH2Sub = document.createElement("ul");
+                        currentH2Sub.className = "rbbp-toc-sub";
+                        li.appendChild(currentH2Sub);
+                        list.appendChild(li);
+                    } else if (currentH2Sub) {
+                        const subLi = document.createElement("li");
+                        subLi.appendChild(link);
+                        currentH2Sub.appendChild(subLi);
+                    }
+                });
+
+                tocRoot.appendChild(list);
+
+                // подсветка текущего раздела при прокрутке
+                const allLinks = Array.from(tocRoot.querySelectorAll("a"));
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            const link = tocRoot.querySelector('a[href="#' + entry.target.id + '"]');
+                            if (!link) return;
+                            if (entry.isIntersecting) {
+                                allLinks.forEach((l) => l.classList.remove("rbbp-toc-active"));
+                                link.classList.add("rbbp-toc-active");
+                            }
+                        });
+                    },
+                    { rootMargin: "0px 0px -70% 0px" }
+                );
+                headings.forEach((h) => observer.observe(h));
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="rbbp-page">
+            <nav class="rbbp-toc" id="rbbpToc">
+                <div class="rbbp-toc-title">Содержание</div>
+            </nav>
+
+            <article class="rbbp-article">
+                <div class="rbbp-banner">
+                    <img src="/rbbp/Icons/Interface/rbbp_emblem.png" alt="RBBP" />
+                    <div>
+                        <div class="rbbp-title">RBBP</div>
+                        <div class="rbbp-subtitle">
+                            Что меняет балансный мультиплеерный мод для Age of Wonders 4
+                        </div>
+                        <a class="rbbp-patchlink" href="/rbbp/HTML/RBBPPatchNotes.html">RbbP Patch Notes &rarr;</a>
+                    </div>
+                </div>
+
+                <div id="rbbpNotice" class="rbbp-notice" style="display: none"></div>
+
+                <div id="rbbpContent">Loading...</div>
+            </article>
+        </div>
+    </body>
+</html>
