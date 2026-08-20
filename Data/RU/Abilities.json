@@ -3949,7 +3949,7 @@
     "note": "Можно использовать только один раз за битву."
    }
   ],
-  "description": "Выбранный мёртвый дружественный воин:<bulletlist><bullet>возрождается в виде <hyperlink>паука-прядильщика</hyperlink> или \\<\\<gen;<></\\<gen;<>ullet><bullet>если это воин IV или V ранга, то вместо этого он возрождается в виде <hyperlink>матриарха пауков-прядильщиков</hyperlink> или <hyperlink>матриарха пауков-охотников</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный мёртвый дружественный воин:<bulletlist><bullet>возрождается в виде <hyperlink>паука-прядильщика</hyperlink> или <hyperlink>паука-охотника</hyperlink>;</bullet><bullet>если это воин IV или V ранга, то вместо этого он возрождается в виде <hyperlink>матриарха пауков-прядильщиков</hyperlink> или <hyperlink>матриарха пауков-охотников</hyperlink>.</bullet></bulletlist>",
   "name": "Перерождение в паука",
   "slug": "spider_rebirth_ability_0000049700003BB8",
   "damage": "",
@@ -12880,7 +12880,11 @@
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -12912,7 +12916,11 @@
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -13164,7 +13172,11 @@
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -14123,6 +14135,9 @@
  {
   "notes": [
    {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
     "note": "Можно использовать только один раз за битву."
    }
   ],
@@ -14137,7 +14152,7 @@
   ],
   "accuracy": "Всегда попадает в цель",
   "actionPoints": "<fullactioncontinue></fullactioncontinue>",
-  "range": "3",
+  "range": "2",
   "icon": "0000048D00000728"
  },
  {
@@ -16576,9 +16591,6 @@
   "notes": [
    {
     "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
   "icon": "0000046A0000012B"
@@ -16616,6 +16628,9 @@
  {
   "notes": [
    {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
     "note": "Можно использовать только один раз за битву."
    }
   ],
@@ -16632,6 +16647,9 @@
  {
   "notes": [
    {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
+   {
     "note": "Можно использовать только один раз за битву."
    }
   ],
@@ -16647,6 +16665,9 @@
  },
  {
   "notes": [
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   },
    {
     "note": "Можно использовать только один раз за битву."
    }
@@ -26389,7 +26410,7 @@
     "count": 1
    }
   ],
-  "description": "Наносит урон и отталкивает воинов в конусе размером 4 кл. Переход в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Наносит урон и отталкивает воинов в конусе размером 2 кл. Переход в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Приливная волна",
   "slug": "tidal_wave_ability_000003E300004E0B",
   "damage": "12<damagephysical></damagephysical> ",
@@ -27242,7 +27263,7 @@
   "description": "Натиск:<bulletlist><bullet>Увеличивает урон на 20% за каждую пройденную клетку до 3 кл.</bullet><bullet>Отменяет <hyperlink>защитную позицию</hyperlink>.</bullet><bullet>Не позволяет нанести <hyperlink>ответный удар</hyperlink></bullet></bulletlist>",
   "name": "Атака натиском",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "33<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
@@ -27265,7 +27286,7 @@
   "description": "Вражеские воины в радиусе 2 кл. получают урон, их <happiness></happiness> <hyperlink>боевой дух</hyperlink> снижается на -5.",
   "name": "Дробящий кости вой",
   "slug": "bone_shattering_howl_ability_000003E300004447",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "33<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Магия^F</hyperlink>"
@@ -49915,12 +49936,6 @@
   "icon": "000004C000000934"
  },
  {
-  "description": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Оглушение».",
-  "name": "Статический щит",
-  "slug": "cbe7688b00000368",
-  "icon": "CBE7688B00000369"
- },
- {
   "description": "Пока жив Первозданный примат, всякий раз, когда погибает обороняющийся воин-литорин ранга 1–3 и на карте присутствует труп другого литорина, последний воскресает как воин-литорин на 1 ранг выше только что погибшего.",
   "name": "Переработка каменных обломков",
   "slug": "000004c0000001ac",
@@ -50309,7 +50324,7 @@
   "icon": "0000049700000A62"
  },
  {
-  "description": "Атаки без промахов.<br></br><br></br>«Верный удар» <hyperlink>противодействует</hyperlink> эффекту «Слепота».",
+  "description": "+30% к <accuracy></accuracy> <hyperlink>точности</hyperlink> атак.<br></br><br></br>«Верный удар» <hyperlink>противодействует</hyperlink> эффекту «Слепота».",
   "name": "Верный удар",
   "slug": "0000041300000cfa",
   "icon": "0000041300000CFC"
@@ -50319,6 +50334,12 @@
   "name": "Праведный дух",
   "slug": "0000049700002d4c",
   "icon": "0000049700002A9E"
+ },
+ {
+  "description": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Оглушение».",
+  "name": "Статический щит",
+  "slug": "cbe7688b000009a6",
+  "icon": "CBE7688B000009A7"
  },
  {
   "description": "В начале боя призывает 2 архонтов ранга III.",

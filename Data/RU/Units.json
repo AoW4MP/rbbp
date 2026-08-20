@@ -39467,7 +39467,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<mana></mana> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4273492483857,
   "medal_rewards_3": [
    {
@@ -40601,7 +40601,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492483158,
   "medal_rewards_3": [
    {
@@ -46785,7 +46785,7 @@
    }
   ],
   "description": "",
-  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492480706,
   "medal_rewards_3": [
    {
@@ -48162,7 +48162,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478497,
   "medal_rewards_3": [
    {
@@ -48201,7 +48201,7 @@
    }
   ],
   "mp": 40,
-  "hp": 45,
+  "hp": 50,
   "armor": 1,
   "resistance": 0,
   "medal_rewards_2": [
@@ -48372,7 +48372,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4273492478487,
   "medal_rewards_3": [
    {
@@ -48411,7 +48411,7 @@
    }
   ],
   "mp": 40,
-  "hp": 55,
+  "hp": 60,
   "armor": 2,
   "resistance": 0,
   "medal_rewards_2": [
@@ -48588,7 +48588,7 @@
    }
   ],
   "description": "",
-  "cost": "140<unitprod></unitprod> 90<gold></gold> ",
+  "cost": "90<unitprod></unitprod> 70<gold></gold> ",
   "resid": 4273492478473,
   "medal_rewards_3": [
    {
@@ -48633,7 +48633,7 @@
    }
   ],
   "mp": 40,
-  "hp": 70,
+  "hp": 75,
   "armor": 2,
   "resistance": 1,
   "medal_rewards_2": [
@@ -49213,7 +49213,7 @@
     "slug": "0000048b00000c6e"
    },
    {
-    "slug": "000003e300006287"
+    "slug": "000003e300006288"
    }
   ],
   "description": "",
@@ -49233,9 +49233,6 @@
   "primary_passives": [
    {
     "slug": "000003e3000065d9"
-   },
-   {
-    "slug": "0000045e00000664"
    },
    {
     "slug": "0000038700001864"
@@ -49267,7 +49264,7 @@
   "mp": 40,
   "hp": 160,
   "armor": 6,
-  "resistance": 3,
+  "resistance": 5,
   "medal_rewards_2": [
    {
     "slug": "0000048b00000c6e"
@@ -49279,16 +49276,13 @@
     "slug": "000003450000052c"
    },
    {
+    "slug": "000003e300004e9f"
+   },
+   {
     "slug": "000004a600000b7a"
    },
    {
-    "slug": "000003fe00000018"
-   },
-   {
     "slug": "0000049300000402"
-   },
-   {
-    "slug": "000003bd000028b7"
    }
   ],
   "medal_rewards_4": [
@@ -49508,7 +49502,7 @@
    }
   ],
   "description": "",
-  "cost": "60<unitprod></unitprod> 50<gold></gold> ",
+  "cost": "80<unitprod></unitprod> 60<gold></gold> ",
   "resid": 4264902529452,
   "medal_rewards_3": [
    {
@@ -49587,7 +49581,7 @@
    }
   ],
   "description": "",
-  "cost": "220<unitprod></unitprod> 140<gold></gold> ",
+  "cost": "120<unitprod></unitprod> 80<gold></gold> ",
   "resid": 4264902529424,
   "medal_rewards_3": [
    {

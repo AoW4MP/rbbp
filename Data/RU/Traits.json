@@ -224,6 +224,9 @@
    },
    {
     "name": "Правитель начинает верхом на расколотом орле."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Призрачный ястреб</hyperlink>"
    }
   ],
   "enabled": false,
@@ -250,6 +253,9 @@
    },
    {
     "name": "Правитель начинает верхом на визжащем нетопыре."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Визжащий нетопырь</hyperlink>"
    }
   ],
   "enabled": true,
@@ -421,6 +427,9 @@
    },
    {
     "name": "Правитель начинает верхом на грифоне."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Грифон</hyperlink>"
    }
   ],
   "enabled": true,
@@ -782,6 +791,9 @@
    },
    {
     "name": "Правитель начинает верхом на орле."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Черный ворон</hyperlink>"
    }
   ],
   "enabled": true,
@@ -836,6 +848,9 @@
    },
    {
     "name": "Правитель начинает верхом на слоне."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Слон</hyperlink>"
    }
   ],
   "enabled": true,
@@ -871,6 +886,9 @@
    },
    {
     "name": "Правитель начинает верхом на мамонте."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Мамонт</hyperlink>"
    }
   ],
   "enabled": true,
@@ -980,6 +998,9 @@
    },
    {
     "name": "Правитель начинает верхом на лютом медведе."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Бурый медведь</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1265,6 +1286,9 @@
    },
    {
     "name": "Правитель начинает верхом на небесном грифоне."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Небесный грифон</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1278,14 +1302,11 @@
   "biography_description": "Солдаты и боевые животные обучены искусству войны на колесницах.",
   "lore_description": "<helpcolor>Чаще используются всадники. Вместо ездовых животных применяются колесницы.</helpcolor>",
   "DLC": "ARCHONPROPHECY ",
-  "point_cost": 2,
+  "point_cost": 3,
   "id": "Колесницы",
   "name": "Колесницы",
   "screen_description": "",
   "effect_descriptions": [
-   {
-    "name": "+5 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
-   },
    {
     "name": "Количество бойцов в отряде сокращается до одного, что обеспечивает невосприимчивость к <hyperlink>потерям</hyperlink>."
    },
@@ -1320,6 +1341,9 @@
    },
    {
     "name": "Правитель начинает верхом на пегасе."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Призрачный ястреб</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1452,7 +1476,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Подземные проходы дают +2 к <influence></influence> <hyperlink>авторитету</hyperlink>."
+    "name": "Подземные проходы дают +4 к <influence></influence> <hyperlink>авторитету</hyperlink>."
    },
    {
     "name": "Города в <hyperlink>подземелье</hyperlink> дают на 20% больше дохода <food></food> <hyperlink>пищи</hyperlink>."
@@ -1737,7 +1761,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +15% к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, +15% к <food></food> <hyperlink>пище</hyperlink>, +15% к <structureprod></structureprod> <hyperlink>производству</hyperlink> и +20 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>, если их <hyperlink>владения</hyperlink> не граничат с <hyperlink>владениями</hyperlink> других <hyperlink>городов</hyperlink> или <hyperlink>форпостов</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +10% к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, +20% к <food></food> <hyperlink>пище</hyperlink>, +15% к <structureprod></structureprod> <hyperlink>производству</hyperlink> и +20 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>, если их <hyperlink>владения</hyperlink> не граничат с <hyperlink>владениями</hyperlink> других <hyperlink>городов</hyperlink> или <hyperlink>форпостов</hyperlink>."
    },
    {
     "name": "Поводы к войне с другими империями, покушающимися на вашу территорию, возрастают на +100%."
@@ -1755,7 +1779,10 @@
     "structure_upgrade_slug": "Башня_мага_кузница_предметов"
    },
    {
-    "description": "200<bindingessence></bindingessence> "
+    "description": "Даёт случайно выбранные предметы для героев (1)."
+   },
+   {
+    "description": "200<bindingessence></bindingessence> 50<bindingfragments></bindingfragments> "
    }
   ],
   "affinities": [
@@ -1826,6 +1853,9 @@
    },
    {
     "name": "Правитель начинает верхом на священном драконе."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Благословенный дракон</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1983,7 +2013,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +10 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +10 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2581,6 +2611,9 @@
    },
    {
     "description": "Дополнительный разведчик в начале игры."
+   },
+   {
+    "empire_progression_slug": "Повышенная_чувствительность"
    }
   ],
   "affinities": [
@@ -3150,6 +3183,9 @@
    },
    {
     "name": "Правитель начинает верхом на белом волке."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Варг</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3184,6 +3220,9 @@
    },
    {
     "name": "Правитель начинает верхом на кошмаре."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Кошмар</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3449,6 +3488,9 @@
    },
    {
     "name": "Правитель начинает верхом на единороге."
+   },
+   {
+    "name": "В городах можно нанимать: <hyperlink>Единорог</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3817,6 +3859,18 @@
   "front_end": false,
   "icon": "000003DF00001363",
   "type": "destiny",
+  "display_order": -1
+ },
+ {
+  "lore_description": "",
+  "biography_description": "",
+  "point_cost": 0,
+  "id": "Наблюдатель",
+  "name": "Наблюдатель",
+  "screen_description": "",
+  "enabled": false,
+  "front_end": true,
+  "type": "society",
   "display_order": -1
  }
 ]

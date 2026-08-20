@@ -932,7 +932,7 @@
   "id": "Преобразование_проклятия",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": true,
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от всех отрицательных эффектов;</bullet><bullet>если у снятого эффекта есть положительный <hyperlink>противодействующий эффект</hyperlink>, он автоматически применяется к воину.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>избавляется от 2 отрицательных эффектов;</bullet><bullet>если у снятого эффекта есть положительный <hyperlink>противодействующий эффект</hyperlink>, он автоматически применяется к воину.</bullet></bulletlist>",
   "name": "Преобразование проклятия",
   "operation_point_cost": 15,
   "icon": "00000497000039C5"
@@ -2540,7 +2540,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Обсидиановое_оружие",
   "tactical": false,
-  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+2 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение» на 3 <turn></turn> х.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки воинов под действием чар получают:<bulletlist><bullet>+1 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение» на 3 <turn></turn> х.</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Воин со щитом"
@@ -3401,7 +3401,7 @@
   "id": "Переместить_портал",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Переместить эту постройку на свободную клетку в пределах ваших <hyperlink>владений</hyperlink>.<br></br>Для перемещения постройка должна быть связана и находиться под контролем вашей <hyperlink>империи</hyperlink>.",
+  "description": "Переместить эту постройку на свободную клетку в провинции с вашим городом.<br></br>Для перемещения постройка должна быть связана и находиться под контролем вашей <hyperlink>империи</hyperlink>.",
   "name": "Переместить портал",
   "operation_point_cost": 0,
   "icon": "00000493000015AA"
@@ -4495,7 +4495,7 @@
   "id": "Повышенная_концентрация",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "Воины под действием чар получают:<bulletlist><bullet>способность «Повышенная концентрация», позволяющую атаковать без промаха.</bullet></bulletlist>",
+  "description": "Воины под действием чар получают:<bulletlist><bullet>способность «Повышенная концентрация».</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
