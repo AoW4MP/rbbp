@@ -761,7 +761,7 @@
   "resid": 5046586574802,
   "id": "_conduit___feywater_pond",
   "DLC": "PRIMALFURY ",
-  "description": "<bulletlist><bullet>Provinces in this city's domain become Misty.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink> per adjacent <forester></forester> <hyperlink>Forester</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Provinces in this city's domain become Misty.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink> per adjacent <forester></forester> <hyperlink>Forester</hyperlink> or <farm></farm> <hyperlink>Farm</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Feywater Pond",
   "icon": "00000497000007D3",
   "is_sector_upgrade": true
@@ -2358,7 +2358,7 @@
   "prediction_description": "",
   "resid": 4578435139911,
   "id": "nature_bolstering_matrix",
-  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> dispell enemy <hyperlink>Negative Status Effects</hyperlink> (2).",
+  "description": "Nature Buff and Healing <hyperlink>Spells</hyperlink> dispell enemy <hyperlink>Negative Status Effects</hyperlink> (1).",
   "name": "Nature Bolstering Matrix",
   "icon": "0000042A00000949",
   "is_sector_upgrade": false
@@ -2910,7 +2910,7 @@
   "prediction_description": "+10 <gold></gold> <hyperlink>Gold</hyperlink> income",
   "resid": 4578435139100,
   "id": "_mine___golem_mine",
-  "description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>+5 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent <quarry></quarry> <hyperlink>Quarry</hyperlink>.</bullet><bullet>Spawns an Iron Golem on the owner's side for <hyperlink>Combat</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Counts as a <mine></mine> <hyperlink>Mine</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>+5 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent <quarry></quarry> <hyperlink>Quarry</hyperlink> or <mine></mine> <hyperlink>Mine</hyperlink>.</bullet><bullet>Spawns an Iron Golem on the owner's side for <hyperlink>Combat</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Counts as a <mine></mine> <hyperlink>Mine</hyperlink>.</bullet></bulletlist>",
   "name": "<mine></mine> Golem Mine",
   "icon": "0000042A0000061D",
   "is_sector_upgrade": true
@@ -2940,10 +2940,10 @@
  {
   "requirement_description": "Must be built on an annexed <hyperlink>Province</hyperlink>.<br></br><br></br>Requires City Tier II.",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "+10 <food></food> <hyperlink>Food</hyperlink> income",
+  "prediction_description": "<bulletlist><bullet>+10 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+10 <mana></mana> <hyperlink>Mana</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435139054,
   "id": "_farm___bountiful_fields",
-  "description": "<bulletlist><bullet>+10<food></food> <hyperlink>Food</hyperlink> income.</bullet><bullet>Per adjacent <hyperlink>Province</hyperlink> with Grasslands or Fungal Fields:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+10<food></food> <hyperlink>Food</hyperlink> income.</bullet><bullet>+10<mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>Per adjacent <hyperlink>Province</hyperlink> with Grasslands or Fungal Fields:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet></bulletlist><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist>",
   "name": "<farm></farm> Bountiful Fields",
   "icon": "0000042A000005EF",
   "is_sector_upgrade": true
@@ -2962,10 +2962,10 @@
  {
   "requirement_description": "Must be built on an annexed <hyperlink>Province</hyperlink>.<br></br><br></br>Requires City Tier II.",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "+10 <food></food> <hyperlink>Food</hyperlink> income",
+  "prediction_description": "+20 <food></food> <hyperlink>Food</hyperlink> income",
   "resid": 4578435139010,
   "id": "_farm___sacred_meadow",
-  "description": "<bulletlist><bullet>+10 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> per adjacent <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet><bullet>Grants Encouraged at start of next <hyperlink>Combat</hyperlink> to friendly <hyperlink>Units</hyperlink> on this hex, 5 <turn></turn> <hyperlink>Turn</hyperlink> cooldown.</bullet><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+20 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+5 <happiness></happiness> <hyperlink>City Stability</hyperlink> per adjacent <conduit></conduit> <hyperlink>Conduit</hyperlink> or <researchpost></researchpost> <hyperlink>Research Post</hyperlink>.</bullet><bullet>Grants Encouraged at start of next <hyperlink>Combat</hyperlink> to friendly <hyperlink>Units</hyperlink> on this hex, 5 <turn></turn> <hyperlink>Turn</hyperlink> cooldown.</bullet><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist>",
   "name": "<farm></farm> Sacred Meadow",
   "icon": "0000042A000005C3",
   "is_sector_upgrade": true
@@ -3020,7 +3020,7 @@
   "prediction_description": "<bulletlist><bullet>+7 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+7 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet></bulletlist>",
   "resid": 4578435138813,
   "id": "_farms___carnival_of_flesh",
-  "description": "<bulletlist><bullet>+7 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+7 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>Per adjacent <farm></farm> <hyperlink>Farm</hyperlink>:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "<bulletlist><bullet>+7 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+7 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>Per adjacent <farm></farm> <hyperlink>Farm</hyperlink>, <quarry></quarry> <hyperlink>Quarry</hyperlink>, <forester></forester> <hyperlink>Forester</hyperlink>:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>Counts as a <farm></farm> <hyperlink>Farm</hyperlink>.</bullet></bulletlist></bulletlist>",
   "name": "<farms></farms> Carnival of Flesh",
   "icon": "0000042A000004FC",
   "is_sector_upgrade": true
@@ -3757,7 +3757,7 @@
  {
   "requirement_description": "Requires 2: <mine></mine> <hyperlink>Mines</hyperlink>",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+1 <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink> income per <mine></mine> Mine:</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+2 <bindingessence></bindingessence> <hyperlink>Binding Essence</hyperlink> income per <mine></mine> Mine:</bullet><bullet>+2 <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink> income per <mine></mine> Mine:</bullet></bulletlist>",
   "resid": 4282082401272,
   "id": "merchants_guild",
   "description": "",
@@ -4087,5 +4087,16 @@
   "name": "Town Hall II: Castle",
   "is_sector_upgrade": false,
   "boost_requirements": "Have 4 <population></population> <hyperlink>Population</hyperlink>"
+ },
+ {
+  "requirement_description": "",
+  "cost": "60<gold></gold> 130<structureprod></structureprod> ",
+  "prediction_description": "",
+  "resid": -3753916818180273691,
+  "id": "shrine_of_fulfilled_promise",
+  "description": "<bulletlist><bullet>The city produces 10% more income</bullet></bulletlist>",
+  "name": "Shrine of Fulfilled Promise",
+  "icon": "CBE7688B000009E7",
+  "is_sector_upgrade": false
  }
 ]

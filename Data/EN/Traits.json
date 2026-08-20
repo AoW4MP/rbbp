@@ -224,6 +224,9 @@
    },
    {
     "name": "Ruler starts with a Fractured Eagle mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Spirit Hawk</hyperlink>"
    }
   ],
   "enabled": false,
@@ -250,6 +253,9 @@
    },
    {
     "name": "Ruler starts with a Shrieking Bat mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Shrieking Bat</hyperlink>"
    }
   ],
   "enabled": true,
@@ -421,6 +427,9 @@
    },
    {
     "name": "Ruler starts with a Griffon Mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Griffon</hyperlink>"
    }
   ],
   "enabled": true,
@@ -782,6 +791,9 @@
    },
    {
     "name": "Ruler starts with an Eagle mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Grimbeak Crow</hyperlink>"
    }
   ],
   "enabled": true,
@@ -836,6 +848,9 @@
    },
    {
     "name": "Ruler starts with an Elephant Mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Elephant</hyperlink>"
    }
   ],
   "enabled": true,
@@ -871,6 +886,9 @@
    },
    {
     "name": "Ruler starts with a Mammoth mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Mammoth</hyperlink>"
    }
   ],
   "enabled": true,
@@ -980,6 +998,9 @@
    },
    {
     "name": "Ruler starts with a Dire Bear mount"
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Brown Bear</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1265,6 +1286,9 @@
    },
    {
     "name": "Ruler starts with a Celestial Griffon Mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Celestial Griffon</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1278,14 +1302,11 @@
   "biography_description": "Their beasts and troops have been trained in the art of chariot warfare.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Chariot mount.</helpcolor>",
   "DLC": "ARCHONPROPHECY ",
-  "point_cost": 2,
+  "point_cost": 3,
   "id": "chariot_mounts",
   "name": "Chariot Mounts",
   "screen_description": "",
   "effect_descriptions": [
-   {
-    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
-   },
    {
     "name": "Reduces members in the unit to one, granting immunity to <hyperlink>Casualties</hyperlink>."
    },
@@ -1320,6 +1341,9 @@
    },
    {
     "name": "Ruler starts with a Pegasus mount"
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Spirit Hawk</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1452,7 +1476,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Underground Passages grant +2 <influence></influence> <hyperlink>Imperium</hyperlink>."
+    "name": "Underground Passages grant +4 <influence></influence> <hyperlink>Imperium</hyperlink>."
    },
    {
     "name": "<hyperlink>Underground</hyperlink> Cities gain +20% <food></food> <hyperlink>Food</hyperlink> income."
@@ -1737,7 +1761,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +15% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, +15% <food></food> <hyperlink>Food</hyperlink>, +15% <structureprod></structureprod> <hyperlink>Production</hyperlink>, and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any other <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +10% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, +20% <food></food> <hyperlink>Food</hyperlink>, +15% <structureprod></structureprod> <hyperlink>Production</hyperlink>, and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any other <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>."
    },
    {
     "name": "Grievances inflicted by other empires encroaching on your territory are increased by +100%."
@@ -1755,7 +1779,10 @@
     "structure_upgrade_slug": "wizard_tower_item_forge"
    },
    {
-    "description": "200<bindingessence></bindingessence> "
+    "description": "Get 1 random hero items."
+   },
+   {
+    "description": "200<bindingessence></bindingessence> 50<bindingfragments></bindingfragments> "
    }
   ],
   "affinities": [
@@ -1826,6 +1853,9 @@
    },
    {
     "name": "Ruler starts with a Blessed Dragon mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Blessed Dragon</hyperlink>"
    }
   ],
   "enabled": true,
@@ -1983,7 +2013,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2581,6 +2611,9 @@
    },
    {
     "description": "Start with an extra Scout Unit."
+   },
+   {
+    "empire_progression_slug": "advanced_sensing"
    }
   ],
   "affinities": [
@@ -3150,6 +3183,9 @@
    },
    {
     "name": "Ruler starts with a White Wolf mount"
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Warg</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3184,6 +3220,9 @@
    },
    {
     "name": "Ruler starts with a Nightmare mount"
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Nightmare</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3449,6 +3488,9 @@
    },
    {
     "name": "Ruler starts with a Unicorn mount."
+   },
+   {
+    "name": "Recruitable in cities: <hyperlink>Unicorn</hyperlink>"
    }
   ],
   "enabled": true,
@@ -3817,6 +3859,18 @@
   "front_end": false,
   "icon": "000003DF00001363",
   "type": "destiny",
+  "display_order": -1
+ },
+ {
+  "lore_description": "",
+  "biography_description": "",
+  "point_cost": 0,
+  "id": "observer",
+  "name": "Observer",
+  "screen_description": "",
+  "enabled": false,
+  "front_end": true,
+  "type": "society",
   "display_order": -1
  }
 ]

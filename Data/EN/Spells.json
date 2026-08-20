@@ -932,7 +932,7 @@
   "id": "curse_reversal",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": true,
-  "description": "Target friendly unit:<bulletlist><bullet>Has its negative status effects removed.</bullet><bullet>If the removed status effects have positive <hyperlink>counters</hyperlink>, the unit gains a stack of it.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Have 2 negative status effects removed.</bullet><bullet>If the removed status effects have positive <hyperlink>counters</hyperlink>, the unit gains a stack of it.</bullet></bulletlist>",
   "name": "Curse Reversal",
   "operation_point_cost": 15,
   "icon": "00000497000039C5"
@@ -2540,7 +2540,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "obsidian_weapons",
   "tactical": false,
-  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
+  "description": "Makes attacks of enchanted units gain:<bulletlist><bullet>+1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Gain a base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -3401,7 +3401,7 @@
   "id": "move_portal",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Move this structure to an unoccupied target position within your empire's <hyperlink>Domain</hyperlink>.<br></br>Requires the <hyperlink>Empire</hyperlink> to own and have bound this structure.",
+  "description": "Move this structure to an unoccupied target position within the province containing your city.<br></br>Requires the <hyperlink>Empire</hyperlink> to own and have bound this structure.",
   "name": "Move Portal",
   "operation_point_cost": 0,
   "icon": "00000493000015AA"
@@ -4495,7 +4495,7 @@
   "id": "focus_aim",
   "DLC": "WAYSOFWAR ",
   "tactical": false,
-  "description": "Grants enchanted units:<bulletlist><bullet>The Focus Aim ability, which allows the unit to make an attack that cannot miss</bullet></bulletlist>",
+  "description": "Grants enchanted units:<bulletlist><bullet>The Focus Aim ability</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"

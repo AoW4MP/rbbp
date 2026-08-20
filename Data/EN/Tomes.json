@@ -354,7 +354,7 @@
     "type": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>"
    },
    {
-    "description": "Target friendly unit:<bulletlist><bullet>Has its negative status effects removed.</bullet><bullet>If the removed status effects have positive <hyperlink>counters</hyperlink>, the unit gains a stack of it.</bullet></bulletlist>",
+    "description": "Target friendly unit:<bulletlist><bullet>Have negative status effects removed.</bullet><bullet>If the removed status effects have positive <hyperlink>counters</hyperlink>, the unit gains a stack of it.</bullet></bulletlist>",
     "name": "Curse Reversal",
     "spell_slug": "curse_reversal",
     "tier": 1,
@@ -2469,7 +2469,7 @@
   "icon": "0000048B000001A3",
   "skills": [
    {
-    "description": "Grants enchanted units:<bulletlist><bullet>The Focus Aim ability, which allows the unit to make an attack that cannot miss</bullet></bulletlist>",
+    "description": "Grants enchanted units:<bulletlist><bullet>The Focus Aim ability</bullet></bulletlist>",
     "name": "Focus Aim",
     "spell_slug": "focus_aim",
     "tier": 2,

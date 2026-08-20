@@ -3949,7 +3949,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Target friendly dead unit:<bulletlist><bullet>Revives into a <hyperlink>Weaver Spider</hyperlink> or unit.</bullet><bullet>If Tier IV or Tier V, revives into a <hyperlink>Weaver Spider Matriarch</hyperlink> or <hyperlink>Hunter Spider Matriarch</hyperlink> unit instead.</bullet></bulletlist>",
+  "description": "Target friendly dead unit:<bulletlist><bullet>Revives into a <hyperlink>Weaver Spider</hyperlink> or <hyperlink>Hunter Spider</hyperlink> unit.</bullet><bullet>If Tier IV or Tier V, revives into a <hyperlink>Weaver Spider Matriarch</hyperlink> or <hyperlink>Hunter Spider Matriarch</hyperlink> unit instead.</bullet></bulletlist>",
   "name": "Spider Rebirth",
   "slug": "spider_rebirth_ability_0000049700003BB8",
   "damage": "",
@@ -12880,7 +12880,11 @@
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -12912,7 +12916,11 @@
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -13164,7 +13172,11 @@
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
   "range": "5",
-  "notes": [],
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "0000048D0000007C"
  },
  {
@@ -14123,6 +14135,9 @@
  {
   "notes": [
    {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
     "note": "Can only be used once per battle."
    }
   ],
@@ -14137,7 +14152,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullactioncontinue></fullactioncontinue>",
-  "range": "3",
+  "range": "2",
   "icon": "0000048D00000728"
  },
  {
@@ -16576,9 +16591,6 @@
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    }
   ],
   "icon": "0000046A0000012B"
@@ -16616,6 +16628,9 @@
  {
   "notes": [
    {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
     "note": "Can only be used once per battle."
    }
   ],
@@ -16632,6 +16647,9 @@
  {
   "notes": [
    {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
     "note": "Can only be used once per battle."
    }
   ],
@@ -16647,6 +16665,9 @@
  },
  {
   "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
    {
     "note": "Can only be used once per battle."
    }
@@ -26389,7 +26410,7 @@
     "count": 1
    }
   ],
-  "description": "Deals damage and pushes units away in a 4-hex cone. Enter <hyperlink>Defense Mode</hyperlink>.",
+  "description": "Deals damage and pushes units away in a 2-hex cone. Enter <hyperlink>Defense Mode</hyperlink>.",
   "name": "Tidal Wave",
   "slug": "tidal_wave_ability_000003E300004E0B",
   "damage": "12<damagephysical></damagephysical> ",
@@ -27242,7 +27263,7 @@
   "description": "A Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Charge Strike",
   "slug": "melee_charge_strike_(base)_ability_000003E300004447",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "33<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -27265,7 +27286,7 @@
   "description": "Enemy units within a 2-hex radius sustain damage and lose -5 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
   "name": "Bone-Shattering Howl",
   "slug": "bone_shattering_howl_ability_000003E300004447",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "33<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Magic</hyperlink>"
@@ -49915,12 +49936,6 @@
   "icon": "000004C000000934"
  },
  {
-  "description": "Melee attackers have a base 60% chance of becoming Stunned.",
-  "name": "Static Shield",
-  "slug": "cbe7688b00000368",
-  "icon": "CBE7688B00000369"
- },
- {
   "description": "While the Primordial Bloodback is alive, whenever a defending Lithorine Tier 1 - Tier 3 Unit dies, if there is another Lithorine Corpse on the map, resurrect that one as a Lithorine unit that is 1 tier higher than the Lithorine unit that just died.",
   "name": "Stoneshard Recycling",
   "slug": "000004c0000001ac",
@@ -50309,7 +50324,7 @@
   "icon": "0000049700000A62"
  },
  {
-  "description": "Attacks cannot miss.<br></br><br></br>True Strike <hyperlink>counters</hyperlink> Blind.",
+  "description": "+30% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> to attacks.<br></br><br></br>True Strike <hyperlink>counters</hyperlink> Blind.",
   "name": "True Strike",
   "slug": "0000041300000cfa",
   "icon": "0000041300000CFC"
@@ -50319,6 +50334,12 @@
   "name": "Virtuous Spirit",
   "slug": "0000049700002d4c",
   "icon": "0000049700002A9E"
+ },
+ {
+  "description": "Melee attackers have a base 60% chance of becoming Stunned.",
+  "name": "Static Shield",
+  "slug": "cbe7688b000009a6",
+  "icon": "CBE7688B000009A7"
  },
  {
   "description": "Conjure 2 Tier III Archon units on combat start.",
