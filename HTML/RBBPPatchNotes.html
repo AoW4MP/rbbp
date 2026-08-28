@@ -317,25 +317,21 @@
                 }
 
                 let html = data.html;
-                if (typeof AddTagIconsForStatusEffects === "function") {
-                    try {
-                        html = AddTagIconsForStatusEffects(html);
-                    } catch (e) {
-                        // авто-разметка эффектов необязательна, при сбое просто показываем как есть
-                        console.error("AddTagIconsForStatusEffects failed on RBBP Patch Notes content", e);
-                    }
-                }
+                // сайтовая AddTagIconsForStatusEffects() тут НЕ используется: она матчит
+                // способности/эффекты по голым RU-подстрокам без учёта контекста предложения
+                // (см. ниже LinkRbbpEntitiesByEnglishName - её place заняла более точная система)
                 html = RbbpTagResourceIcons(html);
 
-                // содержимое страницы сейчас всегда на этом языке (RU, пока нет EN-перевода),
-                // а глобальный переключатель языка сайта у первого визита - EN, поэтому для
+                // содержимое страницы может быть на RU или EN в зависимости от того, какой
+                // JSON реально загрузился (см. usedFallback выше), а глобальный переключатель
+                // языка сайта у первого визита - EN и может не совпадать с этим, поэтому для
                 // связывания сущностей нельзя полагаться на jsonTomesLocalized/jsonFactionCreation
                 // "как есть" - они следуют ЗА глобальным переключателем, а не за языком этой статьи
                 const contentLang = usedFallback ? "RU" : lang;
                 window.__rbbpContentLang = contentLang;
                 ApplyRbbpUiStrings(contentLang);
-                const entityIndex = await BuildRbbpEntityIndex(contentLang);
-                html = LinkRbbpEntities(html, entityIndex);
+                const entityIndex = await BuildRbbpEntityIndexByEnglishName(contentLang);
+                html = LinkRbbpEntitiesByEnglishName(html, entityIndex);
 
                 article.innerHTML = html;
 
@@ -390,128 +386,143 @@
                 return html;
             }
 
-            // ---------- ссылки на объекты вики (культуры/происхождения/классы/тома/постройки) ----------
-            // сюда добавлять алиасы, если в тексте встретится название,
-            // отличающееся от канонического имени в данных вики (напр. падежная форма)
-            const RBBP_NAME_ALIASES = {};
-
-            async function BuildRbbpEntityIndex(contentLang) {
+            // ---------- ссылки на объекты вики: тома/постройки/юниты/заклинания/способности ----------
+            // Триггер - ТОЛЬКО точное совпадение английского названия в скобках, которое
+            // автор текста сам расставляет рядом с русским (напр. "Покров мрака (Pall of
+            // Gloom)"). Раньше матчинг шёл по голым RU-подстрокам - это ловило случайные
+            // совпадения обычных русских слов с названиями сущностей без учёта контекста
+            // предложения (напр. "Призыв" как обычное слово vs субкультура "Призыв", или
+            // "Покров мрака"/"Ритуал ускорения" как части описания vs совпадающее название
+            // способности/заклинания в данных игры). Английские игровые названия гораздо
+            // менее склонны к таким случайным коллизиям с обычной речью.
+            //
+            // Культуры/происхождения/классы/стремления героев сюда сознательно НЕ включены:
+            // в этом документе они и так явно помечены кодами вида [hero]/[warhero] прямо в
+            // заголовках - добавление их же в автопоиск давало задвоенные иконки на той же
+            // строке (код уже вставил иконку, а автопоиск находил то же имя ещё раз).
+            async function BuildRbbpEntityIndexByEnglishName(contentLang) {
                 const index = new Map();
 
-                function add(name, entry) {
-                    if (!name) return;
-                    name = name.split("^")[0].split("{")[0].trim();
-                    if (name.length < 4) return;
-                    if (!index.has(name)) index.set(name, entry);
+                function add(enName, entry) {
+                    if (!enName) return;
+                    enName = enName.trim();
+                    if (enName.length < 3) return;
+                    if (!index.has(enName)) index.set(enName, entry);
                 }
 
-                // тома, постройки и стремления героев нужны именно на языке статьи (contentLang),
-                // а не на языке текущего глобального переключателя сайта - грузим напрямую
-                const [tomesLoc, strucLoc, destiniesLoc] = await Promise.all([
-                    fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
-                    fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json()),
-                    fetch(`/rbbp/Data/${contentLang}/Destinies.json`).then((r) => r.json())
-                ]);
+                function byKey(arr, key) {
+                    const m = new Map();
+                    for (const e of arr) {
+                        if (e && e[key] !== undefined && e[key] !== null && !m.has(e[key])) m.set(e[key], e);
+                    }
+                    return m;
+                }
 
-                // та же дедупликация имён (singular||pluralСлитоВместе), что и в общем
-                // пайплайне SanitizeLocalizedNames() - тут делаем то же для нашей копии
+                const [tomesEN, tomesLoc, strucEN, strucLoc, unitsEN, unitsLoc, spellsEN, spellsLoc, abilitiesEN, abilitiesLoc] =
+                    await Promise.all([
+                        fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/StructureUpgrades.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/Units.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Units.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/Spells.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Spells.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/Abilities.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Abilities.json`).then((r) => r.json())
+                    ]);
+
+                // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
                 if (typeof splitDuplicatedLocalizedText === "function") {
                     for (const tome of tomesLoc) {
                         if ("name" in tome) tome.name = splitDuplicatedLocalizedText(tome.name);
                     }
                 }
 
-                for (const tome of tomesLoc) {
+                const tomesLocByResid = byKey(tomesLoc, "resid");
+                for (const tome of tomesEN) {
                     if (!tome.icon) continue;
                     add(tome.name, {
                         type: "tome",
-                        name: tome.name,
                         icon: `/rbbp/Icons/TomeIcons/${tome.icon}.png`,
-                        obj: tome
+                        obj: tome,
+                        loc: tomesLocByResid.get(tome.resid)
                     });
                 }
 
-                for (const struc of strucLoc) {
+                const strucLocByResid = byKey(strucLoc, "resid");
+                for (const struc of strucEN) {
                     if (!struc.icon) continue;
                     add(struc.name, {
                         type: "structure",
-                        name: struc.name,
                         icon: `/rbbp/Icons/UpgradeIcons/${struc.icon}.png`,
-                        obj: struc
+                        obj: struc,
+                        loc: strucLocByResid.get(struc.resid)
                     });
                 }
 
-                for (const dest of destiniesLoc) {
-                    if (!dest.icon) continue;
-                    add(dest.name, {
-                        type: "ambition",
-                        name: dest.name,
-                        icon: `/rbbp/Icons/AmbitionIcons/${dest.icon}.png`,
-                        obj: dest
+                const unitsLocByResid = byKey(unitsLoc, "resid");
+                for (const unit of unitsEN) {
+                    if (!unit.id) continue;
+                    add(unit.name, {
+                        type: "unit",
+                        icon: `/rbbp/PreviewsAvif/${unit.id}.avif`,
+                        obj: unit,
+                        loc: unitsLocByResid.get(unit.resid)
                     });
                 }
 
-                // культуры/происхождения/классы - имена и описания тянутся из all.json
-                // (jsonFactionCreation сам по себе на любом языке одинаков, GEN-файл).
-                // Если глобальный язык сайта уже совпадает с contentLang - переиспользуем
-                // уже загруженный jsonAllFromPOLocalized, иначе догружаем нужный all.json сами.
-                let allLoc;
-                if (
-                    typeof jsonAllFromPOLocalized !== "undefined" &&
-                    typeof languageSelect !== "undefined" &&
-                    languageSelect.value === contentLang
-                ) {
-                    allLoc = jsonAllFromPOLocalized;
-                } else {
-                    allLoc = await fetch(`/rbbp/Data/${contentLang}/all.json`).then((r) => r.json());
-                }
-                const allById = new Map();
-                for (const e of allLoc) {
-                    if (e && e.id && e.name && !allById.has(e.id)) allById.set(e.id, e);
+                const spellsLocByResid = byKey(spellsLoc, "resid");
+                for (const spell of spellsEN) {
+                    if (!spell.icon) continue;
+                    add(spell.name, {
+                        type: "spell",
+                        icon: `/rbbp/Icons/SpellIcons/${spell.icon}.png`,
+                        obj: spell,
+                        loc: spellsLocByResid.get(spell.resid)
+                    });
                 }
 
-                if (typeof jsonFactionCreation !== "undefined") {
-                    for (const fc of jsonFactionCreation) {
-                        if (!["Culture", "SubCulture", "Ruler Origin", "Class"].includes(fc.type)) continue;
-                        // некоторые базовые культуры (напр. Reaver/Primal) не имеют имени по
-                        // extraLookup - у них оно есть только по extraLookup2
-                        const loc = (fc.extraLookup && allById.get(fc.extraLookup)) || (fc.extraLookup2 && allById.get(fc.extraLookup2));
-                        if (!loc) continue;
-                        let name = loc.hyperlink || loc.name;
-                        let description = loc.bio || loc.description || loc.fpg_description || "";
-                        if (typeof sanitizeLocalizationMacros === "function") {
-                            name = sanitizeLocalizationMacros(name);
-                            description = sanitizeLocalizationMacros(description);
-                        }
-                        if (!name) continue;
-                        add(name, {
-                            type: "faction",
-                            name,
-                            icon: `/rbbp/Icons/FactionCreation/${fc.icon}.png`,
-                            description,
-                            obj: fc
-                        });
-                    }
-                }
-                for (const [alias, canonical] of Object.entries(RBBP_NAME_ALIASES)) {
-                    if (index.has(canonical)) add(alias, index.get(canonical));
+                const abilitiesLocBySlug = byKey(abilitiesLoc, "slug");
+                for (const ability of abilitiesEN) {
+                    if (!ability.icon) continue;
+                    add(ability.name, {
+                        type: "ability",
+                        icon: `/rbbp/Icons/UnitIcons/${ability.icon}.png`,
+                        obj: ability,
+                        loc: abilitiesLocBySlug.get(ability.slug)
+                    });
                 }
 
                 return index;
             }
 
-            function LinkRbbpEntities(html, index) {
-                const names = Array.from(index.keys()).sort((a, b) => b.length - a.length);
-                if (names.length === 0) return html;
+            // Совпадение только на "(Заглавные Английские Слова)" - т.е. ровно тот паттерн,
+            // которым автор документа сам размечает игровые названия в скобках. Одна проходка
+            // по regex + поиск в Map (без сортировки по длине и без риска повторного матчинга
+            // внутри уже вставленной замены - для каждой найденной скобочной группы решение
+            // "есть в индексе или нет" принимается один раз).
+            const RBBP_EN_PAREN_RE = /\(([A-Z][A-Za-z0-9''\-\s]*?)\)/g;
 
-                const alternatives = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-                const regex = new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives})(?![\\p{L}\\p{N}_])`, "gu");
-
+            function LinkRbbpEntitiesByEnglishName(html, index) {
                 window.__rbbpEntityData = {};
                 let counter = 0;
 
-                return html.replace(regex, (match) => {
-                    const entry = index.get(match);
+                // не трогаем текст ВНУТРИ заголовков - там EN-имена в скобках (напр.
+                // "Чемпион (Champion)") уже отмечены вручную кодом [hero] в markdown,
+                // который уже вставил свою иконку; тот же "(Champion)" иногда ЕЩЁ и
+                // совпадает с названием юнита/способности/заклинания в данных игры -
+                // без этой защиты сюда добавлялась бы вторая, лишняя иконка
+                const headings = [];
+                html = html.replace(/<h[234][^>]*>[\s\S]*?<\/h[234]>/g, (m) => {
+                    const token = `__RBBP_HEADING_${headings.length}__`;
+                    headings.push(m);
+                    return token;
+                });
+
+                html = html.replace(RBBP_EN_PAREN_RE, (match, name) => {
+                    const trimmed = name.trim();
+                    const entry = index.get(trimmed);
                     if (!entry) return match;
                     counter++;
                     const key = "rbbp-ent-" + counter;
@@ -521,11 +532,18 @@
                         key +
                         '"><img class="rbbp-entity-icon" src="' +
                         entry.icon +
-                        '" onerror="this.style.display=\'none\'"><span style="text-decoration:underline;">' +
-                        match +
-                        "</span></span>"
+                        '" onerror="this.style.display=\'none\'">(' +
+                        '<span style="text-decoration:underline;">' +
+                        trimmed +
+                        "</span>)</span>"
                     );
                 });
+
+                headings.forEach((h, i) => {
+                    html = html.replace(`__RBBP_HEADING_${i}__`, h);
+                });
+
+                return html;
             }
 
             function AttachRbbpEntityTooltips(article) {
@@ -541,54 +559,40 @@
             }
 
             function BuildRbbpEntityTooltip(entry) {
+                const displayName = (entry.loc && entry.loc.name) || entry.obj.name;
+
                 // SetTomePreview() читает АМБИЕНТНЫЙ jsonTomesLocalized (следует за глобальным
-                // переключателем языка сайта). Переиспользуем её только когда глобальный язык
-                // сайта совпадает с языком статьи - иначе тултип на этой RU-странице может
-                // внезапно оказаться на английском. В остальных случаях - свой тултип на
-                // данных, уже загруженных нами именно на языке статьи (entry.obj).
+                // переключателем языка сайта), а не за языком этой статьи - переиспользуем её
+                // только когда они совпадают, иначе тултип может внезапно оказаться не на том
+                // языке. entry.obj для тома - уже EN-объект, доп. поиск по resid не нужен.
                 const ambientMatchesContent =
                     typeof languageSelect !== "undefined" && languageSelect.value === window.__rbbpContentLang;
 
                 if (
                     entry.type === "tome" &&
                     ambientMatchesContent &&
-                    typeof jsonTomes !== "undefined" &&
                     typeof SetTomePreview === "function"
                 ) {
-                    // как в основной вики: полноценная карточка тома (пассивки, начальные постройки, аффинити)
-                    const tomeEN = findBy(jsonTomes, "resid", entry.obj.resid);
-                    if (tomeEN) {
-                        const span = document.createElement("span");
-                        try {
-                            SetTomePreview(span, tomeEN);
-                            return span.innerHTML;
-                        } catch (e) {
-                            console.error("SetTomePreview failed for RBBP Patch Notes tooltip", e);
-                        }
+                    const span = document.createElement("span");
+                    try {
+                        SetTomePreview(span, entry.obj);
+                        return span.innerHTML;
+                    } catch (e) {
+                        console.error("SetTomePreview failed for RBBP Patch Notes tooltip", e);
                     }
                 }
 
-                if (entry.type === "tome") {
-                    const underline =
-                        '<span style="color:white; text-decoration:underline; font-size:16px;">' +
-                        entry.name +
-                        "</span><br>";
-                    const icon = '<img src="' + entry.icon + '" width="30" style="float:left;margin-right:8px;">';
-                    const desc = entry.obj.gameplay_description || entry.obj.lore_description || "";
-                    return icon + underline + (desc ? AddTagIconsForStatusEffects(desc) : "");
-                }
-
-                const underline =
-                    '<span style="color:white; text-decoration:underline; font-size:16px;">' + entry.name + "</span><br>";
                 const icon = '<img src="' + entry.icon + '" width="30" style="float:left;margin-right:8px;">';
-                let body = "";
-                if (entry.type === "structure" && entry.obj.description) {
-                    body = AddTagIconsForStatusEffects(entry.obj.description);
-                } else if (entry.type === "faction" && entry.description) {
-                    body = AddTagIconsForStatusEffects(entry.description);
-                } else if (entry.type === "ambition" && entry.obj.screen_description) {
-                    body = AddTagIconsForStatusEffects(entry.obj.screen_description);
+                const underline =
+                    '<span style="color:white; text-decoration:underline; font-size:16px;">' + displayName + "</span><br>";
+
+                const descSource = entry.loc || entry.obj;
+                let desc = "";
+                if (descSource) {
+                    desc = descSource.description || descSource.gameplay_description || descSource.lore_description || "";
                 }
+                const body = desc ? AddTagIconsForStatusEffects(desc) : "";
+
                 return icon + underline + body;
             }
 
