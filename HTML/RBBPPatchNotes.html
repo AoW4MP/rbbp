@@ -206,6 +206,14 @@
                 margin: 30px 0 10px 0;
             }
 
+            #rbbpContent h4 {
+                font-family: "Regular", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: #cbb98a;
+                margin: 20px 0 8px 0;
+            }
+
             #rbbpContent p {
                 margin: 0 0 12px 0;
             }
@@ -237,6 +245,25 @@
                 height: 16px;
                 vertical-align: -3px;
                 margin-right: 2px;
+            }
+
+            .rbbp-inline-icon {
+                width: 26px;
+                height: 26px;
+                vertical-align: -6px;
+                margin-right: 4px;
+            }
+
+            .rbbp-toc .rbbp-toc-subsub {
+                list-style: none;
+                margin: 0 0 2px 0;
+                padding: 0;
+            }
+
+            .rbbp-toc .rbbp-toc-subsub a {
+                font-size: 11px;
+                padding-left: 34px;
+                color: #85806c;
             }
 
             @media (max-width: 900px) {
@@ -306,6 +333,7 @@
                 // "как есть" - они следуют ЗА глобальным переключателем, а не за языком этой статьи
                 const contentLang = usedFallback ? "RU" : lang;
                 window.__rbbpContentLang = contentLang;
+                ApplyRbbpUiStrings(contentLang);
                 const entityIndex = await BuildRbbpEntityIndex(contentLang);
                 html = LinkRbbpEntities(html, entityIndex);
 
@@ -317,6 +345,30 @@
                 AttachRbbpEntityTooltips(article, entityIndex);
 
                 BuildRbbpToc(article);
+            }
+
+            // ---------- локализация статичной "рамки" страницы (не JSON-контента) ----------
+            const RBBP_UI_STRINGS = {
+                RU: {
+                    tocTitle: "Содержание",
+                    subtitle: "История изменений мода RbbP по релизам",
+                    backLink: "← Назад к основному руководству RBBP"
+                },
+                EN: {
+                    tocTitle: "Contents",
+                    subtitle: "RbbP mod changelog by release",
+                    backLink: "← Back to the main RBBP guide"
+                }
+            };
+
+            function ApplyRbbpUiStrings(contentLang) {
+                const strings = RBBP_UI_STRINGS[contentLang] || RBBP_UI_STRINGS.RU;
+                const tocTitle = document.querySelector(".rbbp-toc-title");
+                const subtitle = document.querySelector(".rbbp-subtitle");
+                const backLink = document.querySelector(".rbbp-backlink");
+                if (tocTitle) tocTitle.textContent = strings.tocTitle;
+                if (subtitle) subtitle.textContent = strings.subtitle;
+                if (backLink) backLink.textContent = strings.backLink;
             }
 
             // ---------- иконки ресурсов рядом с числами (10 золота -> 10 <gold> золота) ----------
@@ -353,11 +405,12 @@
                     if (!index.has(name)) index.set(name, entry);
                 }
 
-                // тома и постройки нужны именно на языке статьи (contentLang), а не на
-                // языке текущего глобального переключателя сайта - грузим напрямую
-                const [tomesLoc, strucLoc] = await Promise.all([
+                // тома, постройки и стремления героев нужны именно на языке статьи (contentLang),
+                // а не на языке текущего глобального переключателя сайта - грузим напрямую
+                const [tomesLoc, strucLoc, destiniesLoc] = await Promise.all([
                     fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
-                    fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json())
+                    fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json()),
+                    fetch(`/rbbp/Data/${contentLang}/Destinies.json`).then((r) => r.json())
                 ]);
 
                 // та же дедупликация имён (singular||pluralСлитоВместе), что и в общем
@@ -385,6 +438,16 @@
                         name: struc.name,
                         icon: `/rbbp/Icons/UpgradeIcons/${struc.icon}.png`,
                         obj: struc
+                    });
+                }
+
+                for (const dest of destiniesLoc) {
+                    if (!dest.icon) continue;
+                    add(dest.name, {
+                        type: "ambition",
+                        name: dest.name,
+                        icon: `/rbbp/Icons/AmbitionIcons/${dest.icon}.png`,
+                        obj: dest
                     });
                 }
 
@@ -523,13 +586,15 @@
                     body = AddTagIconsForStatusEffects(entry.obj.description);
                 } else if (entry.type === "faction" && entry.description) {
                     body = AddTagIconsForStatusEffects(entry.description);
+                } else if (entry.type === "ambition" && entry.obj.screen_description) {
+                    body = AddTagIconsForStatusEffects(entry.obj.screen_description);
                 }
                 return icon + underline + body;
             }
 
             function BuildRbbpToc(article) {
                 const tocRoot = document.getElementById("rbbpToc");
-                const headings = article.querySelectorAll("h2, h3");
+                const headings = article.querySelectorAll("h2, h3, h4");
                 if (headings.length === 0) {
                     tocRoot.style.display = "none";
                     return;
@@ -537,6 +602,7 @@
 
                 const list = document.createElement("ul");
                 let currentH2Sub = null;
+                let currentH3Sub = null;
 
                 headings.forEach((h, idx) => {
                     if (!h.id) h.id = "rbbp-sec-" + idx;
@@ -557,10 +623,18 @@
                         currentH2Sub.className = "rbbp-toc-sub";
                         li.appendChild(currentH2Sub);
                         list.appendChild(li);
-                    } else if (currentH2Sub) {
+                        currentH3Sub = null;
+                    } else if (h.tagName === "H3" && currentH2Sub) {
                         const subLi = document.createElement("li");
                         subLi.appendChild(link);
+                        currentH3Sub = document.createElement("ul");
+                        currentH3Sub.className = "rbbp-toc-subsub";
+                        subLi.appendChild(currentH3Sub);
                         currentH2Sub.appendChild(subLi);
+                    } else if (h.tagName === "H4" && (currentH3Sub || currentH2Sub)) {
+                        const subSubLi = document.createElement("li");
+                        subSubLi.appendChild(link);
+                        (currentH3Sub || currentH2Sub).appendChild(subSubLi);
                     }
                 });
 
