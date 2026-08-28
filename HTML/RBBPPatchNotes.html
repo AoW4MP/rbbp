@@ -407,6 +407,7 @@
                     if (!enName) return;
                     enName = enName.trim();
                     if (enName.length < 3) return;
+                    if (RBBP_EXCLUDED_EN_NAMES.has(enName)) return;
                     if (!index.has(enName)) index.set(enName, entry);
                 }
 
@@ -417,6 +418,26 @@
                     }
                     return m;
                 }
+
+                // Названия типов оружия из таблицы множителей урона Рейнджера (Sniper
+                // Shot/Scatter Shot) случайно совпадают с реальными именами юнитов/способностей
+                // в данных игры (Magelock - юнит, Javelin - способность броска копья и т.д.) -
+                // в контексте этой таблицы это категория предмета, а не конкретная карточка,
+                // поэтому для них ссылка сознательно не строится вообще.
+                const RBBP_EXCLUDED_EN_NAMES = new Set([
+                    "Crossbow",
+                    "Floating Daggers",
+                    "Magelock",
+                    "Greatbow",
+                    "Bow",
+                    "Blowgun",
+                    "Sword and Crossbow",
+                    "Pistol and Sword",
+                    "Javelin",
+                    "Sword and Daggers",
+                    "Sword and Net",
+                    "Sword and Whip"
+                ]);
 
                 const [tomesEN, tomesLoc, strucEN, strucLoc, unitsEN, unitsLoc, spellsEN, spellsLoc, abilitiesEN, abilitiesLoc] =
                     await Promise.all([
@@ -474,10 +495,18 @@
 
                 const spellsLocByResid = byKey(spellsLoc, "resid");
                 for (const spell of spellsEN) {
-                    if (!spell.icon) continue;
+                    // у заклинаний призыва (Summon Spell) поле icon часто пустое в данных
+                    // игры - для них картинка называется по EN id и лежит в SummonIcons
+                    // (та же особенность, что и incorrectIconOverrideList в Builder.js)
+                    const iconPath = spell.icon
+                        ? `/rbbp/Icons/SpellIcons/${spell.icon}.png`
+                        : spell.id
+                          ? `/rbbp/Icons/SummonIcons/${spell.id}.png`
+                          : null;
+                    if (!iconPath) continue;
                     add(spell.name, {
                         type: "spell",
-                        icon: `/rbbp/Icons/SpellIcons/${spell.icon}.png`,
+                        icon: iconPath,
                         obj: spell,
                         loc: spellsLocByResid.get(spell.resid)
                     });
@@ -508,13 +537,15 @@
                 window.__rbbpEntityData = {};
                 let counter = 0;
 
-                // не трогаем текст ВНУТРИ заголовков - там EN-имена в скобках (напр.
-                // "Чемпион (Champion)") уже отмечены вручную кодом [hero] в markdown,
-                // который уже вставил свою иконку; тот же "(Champion)" иногда ЕЩЁ и
-                // совпадает с названием юнита/способности/заклинания в данных игры -
-                // без этой защиты сюда добавлялась бы вторая, лишняя иконка
+                // не трогаем текст внутри заголовков, которые УЖЕ несут вручную
+                // расставленную иконку (rbbp-inline-icon от кода [hero]/[warhero]/...) -
+                // тот же "(Champion)" иногда ЕЩЁ и совпадает с названием юнита/способности/
+                // заклинания в данных игры, без этой защиты сюда добавлялась бы вторая,
+                // лишняя иконка. Заголовки БЕЗ такого кода (напр. названия книг - для них
+                // отдельного кода нет) через эту защиту не трогаются и линкуются как обычно.
                 const headings = [];
                 html = html.replace(/<h[234][^>]*>[\s\S]*?<\/h[234]>/g, (m) => {
+                    if (m.indexOf("rbbp-inline-icon") === -1) return m;
                     const token = `__RBBP_HEADING_${headings.length}__`;
                     headings.push(m);
                     return token;
@@ -524,10 +555,18 @@
                     const trimmed = name.trim();
                     const entry = index.get(trimmed);
                     if (!entry) return match;
+
+                    // Юниты - просто кликабельная ссылка на карточку юнита в вики (как
+                    // ссылки на книги в самой вики), без иконки и без выпадающего тултипа.
+                    if (entry.type === "unit") {
+                        const unitUrl = "/rbbp/HTML/Units.html?unit=" + encodeURIComponent(entry.obj.id);
+                        return '(<a href="' + unitUrl + '">' + trimmed + "</a>)";
+                    }
+
                     counter++;
                     const key = "rbbp-ent-" + counter;
                     window.__rbbpEntityData[key] = entry;
-                    return (
+                    const handlerSpan =
                         '<span class="rbbpEntityHandler" data-rbbp-key="' +
                         key +
                         '"><img class="rbbp-entity-icon" src="' +
@@ -535,8 +574,16 @@
                         '" onerror="this.style.display=\'none\'">(' +
                         '<span style="text-decoration:underline;">' +
                         trimmed +
-                        "</span>)</span>"
-                    );
+                        "</span>)</span>";
+
+                    // Книги - вдобавок к иконке и тултипу делаем кликабельными: открывают
+                    // карточку тома в вики (та же логика, что и для юнитов).
+                    if (entry.type === "tome") {
+                        const tomeUrl = "/rbbp/HTML/Spells.html?tome=" + encodeURIComponent(entry.obj.id);
+                        return '<a href="' + tomeUrl + '" style="text-decoration:none;">' + handlerSpan + "</a>";
+                    }
+
+                    return handlerSpan;
                 });
 
                 headings.forEach((h, i) => {
