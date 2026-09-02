@@ -241,17 +241,17 @@
             }
 
             .rbbp-entity-icon {
-                width: 16px;
-                height: 16px;
-                vertical-align: -3px;
-                margin-right: 2px;
+                width: 32px;
+                height: 32px;
+                vertical-align: -8px;
+                margin-right: 4px;
             }
 
             .rbbp-inline-icon {
-                width: 26px;
-                height: 26px;
-                vertical-align: -6px;
-                margin-right: 4px;
+                width: 52px;
+                height: 52px;
+                vertical-align: -14px;
+                margin-right: 8px;
             }
 
             .rbbp-toc .rbbp-toc-subsub {
@@ -331,7 +331,7 @@
                 window.__rbbpContentLang = contentLang;
                 ApplyRbbpUiStrings(contentLang);
                 const entityIndex = await BuildRbbpEntityIndexByEnglishName(contentLang);
-                html = LinkRbbpEntitiesByEnglishName(html, entityIndex);
+                html = LinkRbbpEntitiesByEnglishName(html, entityIndex, contentLang);
 
                 article.innerHTML = html;
 
@@ -526,23 +526,41 @@
                 return index;
             }
 
-            // Совпадение только на "(Заглавные Английские Слова)" - т.е. ровно тот паттерн,
-            // которым автор документа сам размечает игровые названия в скобках. Одна проходка
-            // по regex + поиск в Map (без сортировки по длине и без риска повторного матчинга
-            // внутри уже вставленной замены - для каждой найденной скобочной группы решение
-            // "есть в индексе или нет" принимается один раз).
-            const RBBP_EN_PAREN_RE = /\(([A-Z][A-Za-z0-9''\-\s]*?)\)/g;
+            // Основной триггер - "(Заглавные Английские Слова)", ровно тот паттерн, которым
+            // автор документа сам размечает игровые названия в скобках рядом с RU-текстом.
+            //
+            // На EN-версии этих скобок в тексте почти никогда нет - незачем повторять
+            // английское имя английскими же буквами рядом с самим собой, оно и так стоит
+            // прямо в прозе ("Unit - Aspirant Knight T2", без "(Aspirant Knight)"). Поэтому
+            // для EN эта же комбинированная regex-альтернация ДОПОЛНИТЕЛЬНО включает прямое
+            // совпадение по голым именам сущностей - тот же приём longest-first / единый
+            // проход, что и в buildAbilityTagCache() (Builder.js): длинные имена идут первыми
+            // в альтернации, поэтому более короткое имя не может задвоить совпадение внутри
+            // уже найденного длинного (regex-альтернация - first-match-wins, не
+            // longest-match-wins). Список исключений (RBBP_EXCLUDED_EN_NAMES, см. add() выше)
+            // действует одинаково для обеих веток, потому что применяется на этапе построения
+            // индекса, а не самого regex.
+            function BuildRbbpLinkRegex(index, contentLang) {
+                const parenPart = "\\(([A-Z][A-Za-z0-9''\\-\\s]*?)\\)";
+                if (contentLang !== "EN") {
+                    return new RegExp(parenPart, "g");
+                }
+                const names = Array.from(index.keys()).sort((a, b) => b.length - a.length);
+                const bareAlternatives = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+                const barePart = `(?<![\\p{L}\\p{N}_])(?:${bareAlternatives})(?![\\p{L}\\p{N}_])`;
+                return new RegExp(`${parenPart}|${barePart}`, "gu");
+            }
 
-            function LinkRbbpEntitiesByEnglishName(html, index) {
+            function LinkRbbpEntitiesByEnglishName(html, index, contentLang) {
                 window.__rbbpEntityData = {};
                 let counter = 0;
 
                 // не трогаем текст внутри заголовков, которые УЖЕ несут вручную
                 // расставленную иконку (rbbp-inline-icon от кода [hero]/[warhero]/...) -
-                // тот же "(Champion)" иногда ЕЩЁ и совпадает с названием юнита/способности/
-                // заклинания в данных игры, без этой защиты сюда добавлялась бы вторая,
-                // лишняя иконка. Заголовки БЕЗ такого кода (напр. названия книг - для них
-                // отдельного кода нет) через эту защиту не трогаются и линкуются как обычно.
+                // тот же "Champion"/"(Champion)" иногда ЕЩЁ и совпадает с названием юнита/
+                // способности/заклинания в данных игры, без этой защиты сюда добавлялась бы
+                // вторая, лишняя иконка. Заголовки БЕЗ такого кода (напр. названия книг - для
+                // них отдельного кода нет) через эту защиту не трогаются и линкуются как обычно.
                 const headings = [];
                 html = html.replace(/<h[234][^>]*>[\s\S]*?<\/h[234]>/g, (m) => {
                     if (m.indexOf("rbbp-inline-icon") === -1) return m;
@@ -551,30 +569,37 @@
                     return token;
                 });
 
-                html = html.replace(RBBP_EN_PAREN_RE, (match, name) => {
-                    const trimmed = name.trim();
-                    const entry = index.get(trimmed);
+                const regex = BuildRbbpLinkRegex(index, contentLang);
+
+                html = html.replace(regex, (match, parenName) => {
+                    // если сработала скобочная ветка - parenName задан (текст внутри скобок,
+                    // без самих скобок); если голая ветка - parenName === undefined,
+                    // а искомое имя - это весь match целиком
+                    const isParen = parenName !== undefined;
+                    const name = isParen ? parenName.trim() : match;
+                    const entry = index.get(name);
                     if (!entry) return match;
 
                     // Юниты - просто кликабельная ссылка на карточку юнита в вики (как
                     // ссылки на книги в самой вики), без иконки и без выпадающего тултипа.
                     if (entry.type === "unit") {
                         const unitUrl = "/rbbp/HTML/Units.html?unit=" + encodeURIComponent(entry.obj.id);
-                        return '(<a href="' + unitUrl + '">' + trimmed + "</a>)";
+                        const link = '<a href="' + unitUrl + '">' + name + "</a>";
+                        return isParen ? "(" + link + ")" : link;
                     }
 
                     counter++;
                     const key = "rbbp-ent-" + counter;
                     window.__rbbpEntityData[key] = entry;
+                    const nameSpan = '<span style="text-decoration:underline;">' + name + "</span>";
                     const handlerSpan =
                         '<span class="rbbpEntityHandler" data-rbbp-key="' +
                         key +
                         '"><img class="rbbp-entity-icon" src="' +
                         entry.icon +
-                        '" onerror="this.style.display=\'none\'">(' +
-                        '<span style="text-decoration:underline;">' +
-                        trimmed +
-                        "</span>)</span>";
+                        '" onerror="this.style.display=\'none\'">' +
+                        (isParen ? "(" + nameSpan + ")" : nameSpan) +
+                        "</span>";
 
                     // Книги - вдобавок к иконке и тултипу делаем кликабельными: открывают
                     // карточку тома в вики (та же логика, что и для юнитов).
