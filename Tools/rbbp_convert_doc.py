@@ -110,17 +110,18 @@ PORTRAIT_CODES = {
     "sabertooth": "/rbbp/Icons/FactionCreation/primal_ash_sabertooth.png",
     "tunnelingspider": "/rbbp/Icons/FactionCreation/primal_tunneling_spider.png",
     "sylvanwolf": "/rbbp/Icons/FactionCreation/primal_sylvan_wolf.png",
-    # эти 8 субкультур не имеют своей иконки в данных - используем иконку
-    # родительской культуры (Architect/Dark) как наиболее правдоподобный фоллбэк;
-    # если найдёшь их настоящую иконку - заменить здесь
-    "archshadow": "/rbbp/Icons/FactionCreation/architect.png",
-    "archorder": "/rbbp/Icons/FactionCreation/architect.png",
-    "archchaos": "/rbbp/Icons/FactionCreation/architect.png",
-    "archnature": "/rbbp/Icons/FactionCreation/architect.png",
-    "archmaterium": "/rbbp/Icons/FactionCreation/architect.png",
-    "archastral": "/rbbp/Icons/FactionCreation/architect.png",
-    "cultdeath": "/rbbp/Icons/FactionCreation/dark.png",
-    "culttyranny": "/rbbp/Icons/FactionCreation/dark.png",
+    # у этих 8 субкультур нет поля icon в FactionCreation.json, но реальные файлы
+    # на диске всё же есть - под id самой субкультуры (не проверялось через сами
+    # данные, только через файловую систему + сверку с фильтром субкультур на
+    # DarkUnits.html - см. CLAUDE.md, раздел 8.2)
+    "archshadow": "/rbbp/Icons/FactionCreation/architects_of_shadow.png",
+    "archorder": "/rbbp/Icons/FactionCreation/architects_of_order.png",
+    "archchaos": "/rbbp/Icons/FactionCreation/architects_of_chaos.png",
+    "archnature": "/rbbp/Icons/FactionCreation/architects_of_nature.png",
+    "archmaterium": "/rbbp/Icons/FactionCreation/architects_of_materium.png",
+    "archastral": "/rbbp/Icons/FactionCreation/architects_of_astral.png",
+    "cultdeath": "/rbbp/Icons/FactionCreation/cult_of_death.png",
+    "culttyranny": "/rbbp/Icons/FactionCreation/cult_of_tyranny.png",
     # губернаторы (Data/EN/Governance.json) - Icons/GovernanceIcons/{icon}.png
     # (Wizard Governor и Champion Governor делят одну и ту же иконку в данных игры)
     "eldervampiregov": "/rbbp/Icons/GovernanceIcons/0000049700002E2D.png",

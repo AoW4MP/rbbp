@@ -1460,7 +1460,7 @@
 
     - Цена найма увеличена Т3 medium -> Т3 high
 
-## [reaverimperial] Корсары (Reaver)
+## [culturereaver] Корсары (Reaver)
 
 - Юнит -- Наблюдатель Т1 (Observer)
 

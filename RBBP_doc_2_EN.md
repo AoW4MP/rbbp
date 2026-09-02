@@ -78,17 +78,17 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
   - Guard strength increased: Medium -> Strong
 
-  - Tome Fragment now only unlocks spells from the Tome of Eldritch Pact:
+  - Tome Fragment now only unlocks spells from the Tome of {{Eldritch Pact}}:
 
-    - Summon Umbral Juggernaut
+    - {{Summon Umbral Juggernaut}}
 
-    - Ritual of the Gloomveil
+    - {{Ritual of the Gloomveil}}
 
-    - Pall of Gloom
+    - {{Pall of Gloom}}
 
-    - Umbral Exile
+    - {{Umbral Exile}}
 
-    - Umbral Rift
+    - {{Umbral Rift}}
 
 - Fixes:
 
@@ -100,7 +100,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
   - Removed Strategic Artifacts.
 
-  - Lithorine Shardlancer and Lithorine Core swapped trade slots.
+  - {{Lithorine Shardlancer}} and {{Lithorine Core}} swapped trade slots.
 
 - Quests:
 
@@ -110,7 +110,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 ## Shrouded Isles
 
-- Move Portal action:
+- {{Move Portal}} action:
 
   - Can now only target a tile within a province that has a city
 
@@ -134,7 +134,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 - Coast map type: reduced share of sea regions.
 
-## Lost Soul
+## {{Lost Soul}}
 
 - Changed army compositions for these quests (Fair Lady Enemy, Philosopher's Stone, Blighted Village, Headless Horseman, Headless Horseman Graveyard):
 
@@ -146,9 +146,9 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 - Trade:
 
-  - Demon Step: price increased to 350[gold]
+  - {{Demon Step}}: price increased to 350[gold]
 
-  - White Wolf Mount: price reduced 200 -> 100[gold]
+  - {{White Wolf}} Mount: price reduced 200 -> 100[gold]
 
 ## Magic Materials
 
@@ -304,9 +304,9 @@ Thorn Heart:
 
 - Position 3B - (60/125[influence]): Excavation
 
-- Position 4A - (100/125[influence]): New - Gesture of Goodwill
+- Position 4A - (100/125[influence]): New - {{Gesture of Goodwill}}
 
-  - Unlocks the Gesture of Goodwill spell:
+  - Unlocks the {{Gesture of Goodwill}} spell:
 
     - Cast cost 150 [gold]
 
@@ -326,7 +326,7 @@ Thorn Heart:
 
     - Cost per unit increased 10 -> 20 [mana]
 
-- Position 8 - (300/175[influence]): Teleporter Infrastructure
+- Position 8 - (300/175[influence]): {{Teleporter}} Infrastructure
 
 - Position 9 - (400/175[influence]): Advanced Sensing
 
@@ -348,15 +348,15 @@ Thorn Heart:
 
   - +20 [draft] in the throne city
 
-- Active ability - Command:
+- Active ability - {{Command}}:
 
   - Cooldown 2 -> 1 [turn]
 
-- Active ability – Decisive Command:
+- Active ability – {{Decisive Command}}:
 
   - Cooldown 2 -> 1 [turn]
 
-- Active ability - Coordinated Command:
+- Active ability - {{Coordinated Command}}:
 
   - Cooldown 2 -> 1 [turn]
 
@@ -376,9 +376,9 @@ Thorn Heart:
 
     - +5 -> +15 [globalspell]
 
-- Passive ability - Empowered Attuned Godir:
+- Passive ability - {{Empowered Attuned Godir}}:
 
-  - Added passive ability - Arcane Conduit
+  - Added passive ability - {{Arcane Conduit}}
 
 ## [dragonlord] Dragon Lord
 
@@ -412,11 +412,11 @@ Thorn Heart:
 
     - +15% [production]
 
-- Active ability - Terrifying Gorging
+- Active ability - {{Terrifying Gorging}}
 
   - Enters a Defensive stance after use
 
-- Active ability - Dragon's Roar
+- Active ability - {{Dragon's Roar}}
 
   - Costs one action point to use and leaves one action point after use
 
@@ -426,11 +426,11 @@ Thorn Heart:
 
   - Now 6 [mana] and 2 [gold] per level
 
-- No longer has the Magic Origin creature type
+- No longer has the {{Magic Origin}} creature type
 
 - Starting item Relic of Mind
 
-  - Armor Penetration replaced with a 90% chance to apply 2 stacks of Sundered Defense
+  - Armor Penetration replaced with a 90% chance to apply 2 stacks of {{Sundered Defense}}
 
 - Forge:
 
@@ -456,19 +456,19 @@ Thorn Heart:
 
       - +2 [knowledge] per [population] -> +1 [slaves] per turn
 
-- Global spell - Quickening Ritual:
+- Global spell - {{Quickening Ritual}}:
 
   - Changed cost:
 
     - 4 [slaves] 150 [globalspell] -> 2 [slaves] 80 [globalspell]
 
-- Global spell - Dark Knowledge Ritual:
+- Global spell - {{Dark Knowledge Ritual}}:
 
   - Increased bonus:
 
     - 200 -> 260 [knowledge]
 
-- Global spell - Enthrall Population:
+- Global spell - {{Enthrall Population}}:
 
   - Target city:
 
@@ -478,25 +478,25 @@ Thorn Heart:
 
   - You gain 3 -> 8 [slaves]
 
-- Global spell - Phantasmal Ritual:
+- Global spell - {{Phantasmal Ritual}}:
 
   - Changed effect:
 
     - Target enemy army loses -20% -> -3% [hp]
 
-- Global spell - Mass Phantasmal Ritual:
+- Global spell - {{Mass Phantasmal Ritual}}:
 
   - Changed effect:
 
     - Target enemy armies lose -15% -> -2% [hp]
 
-- Active ability – Eldritch Phase I
+- Active ability – {{Eldritch Phase}} I
 
   - On cooldown at the start of battle: 1 [turn]
 
   - Range 3 -> 2 [range]
 
-- Active ability – Eldritch Phase II
+- Active ability – {{Eldritch Phase}} II
 
   - On cooldown at the start of battle: 1 [turn]
 
@@ -534,19 +534,19 @@ Thorn Heart:
 
 - When wielding a Giant Axe-type item
 
-  - Active ability - Charge Strike changed:
+  - Active ability - {{Charge Strike}} changed:
 
     - Now hits one tile within [range] 2 instead of 2 tiles
 
-    - Heavy Charge Strike replaced with Charge Strike
+    - {{Heavy Charge Strike}} replaced with {{Charge Strike}}
 
       - Standard charge bonus
 
-      - No longer ignores Charge Resistance
+      - No longer ignores {{Charge Resistance}}
 
 - Affinity-specific ability – Matter - Brawn Rune
 
-  - Active ability – Mighty Stomp
+  - Active ability – {{Mighty Stomp}}
 
     - Added a 2 [turn] cooldown
 
@@ -558,23 +558,23 @@ Thorn Heart:
 
     - Passive effect – Rune of Power: Frost
 
-      - Frozen (60% chance) replaced with Slowed (90% chance)
+      - Frozen (60% chance) replaced with {{Slowed}} (90% chance)
 
     - Passive effect – Rune of Creation: Frost
 
-      - Unit - Ice Runestone T3
+      - Unit - {{Ice Runestone}} T3
 
-        - Passive ability - Freezing Mist:
+        - Passive ability - {{Freezing Mist}}:
 
-          - Frozen replaced with Slowed
+          - Frozen replaced with {{Slowed}}
 
-    - Passive effect – Rune of Command: Frost
+    - Passive effect – {{Rune of Command: Frost}}
 
       - Removes negative effect (1) replaced with 2 [statuseffectresistance] (Status Resistance)
 
-  - Active ability - Hurl Ice Boulder:
+  - Active ability - {{Hurl Ice Boulder}}:
 
-    - Slowed replaced with Status Vulnerability
+    - {{Slowed}} replaced with {{Status Vulnerability}}
 
 - Rock Giant King
 
@@ -584,13 +584,13 @@ Thorn Heart:
 
     - Passive effect – Rune of Creation: Rock
 
-      - Unit - Stone Wall T3
+      - Unit - {{Stone Wall}} T3
 
         - Health reduced 100 -> 10 [hp]
 
-  - Active ability - Hurl Boulder:
+  - Active ability - {{Hurl Boulder}}:
 
-    - Slowed replaced with Bleeding (1)
+    - {{Slowed}} replaced with {{Bleeding}} (1)
 
 ## [eldervampire] Elder Vampire
 
@@ -598,25 +598,25 @@ Thorn Heart:
 
   - Level 4:
 
-    - Vampiric Rage – moved from level 8
+    - {{Vampiric Rage}} – moved from level 8
 
-      - Inspiring Killer
+      - {{Inspiring Killer}}
 
       - Searing Strikes
 
-    - Blood Communion – moved from level 12
+    - {{Blood Communion}} – moved from level 12
 
       - Souldraining Strikes
 
       - Blight Strikes
 
-    - Profane Body Mastery – moved from level 8
+    - {{Profane Body Mastery}} – moved from level 8
 
       - Frost Strikes
 
-      - Pack Leader
+      - {{Pack Leader}}
 
-    - Marrow Drinker – moved from level 8
+    - {{Marrow Drinker}} – moved from level 8
 
       - Souldraining Strikes
 
@@ -624,125 +624,125 @@ Thorn Heart:
 
   - Level 8:
 
-    - Nightlord
+    - {{Nightlord}}
 
-      - Blink
+      - {{Blink}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
     - Hemomancer – moved from level 4
 
-      - Scarlet Plague
+      - {{Scarlet Plague}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
     - Nightsworn – moved from level 4
 
-      - Song of Carnage
+      - {{Song of Carnage}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
     - Dreadful – moved from level 4
 
-      - Draining Burst
+      - {{Draining Burst}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
-    - Defiler
+    - {{Defiler}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
-      - Investiture of Chaos
+      - {{Investiture of Chaos}}
 
     - Desecrator – moved from level 4
 
-      - Wail of the Banshee
+      - {{Wail of the Banshee}}
 
-      - Unholy Leader
+      - {{Unholy Leader}}
 
   - Level 12:
 
-    - Exsanguinate
+    - {{Exsanguinate}}
 
-      - Adaptive Vigor
+      - {{Adaptive Vigor}}
 
     - Rosebound Noble – moved from level 16
 
-      - Warding Aura
+      - {{Warding Aura}}
 
-    - Bloodblight
+    - {{Bloodblight}}
 
-      - Debilitating Aura
+      - {{Debilitating Aura}}
 
-    - Tormenting Mist
+    - {{Tormenting Mist}}
 
-      - Spiritbreaker Aura
+      - {{Spiritbreaker Aura}}
 
-    - Festering Spine
+    - {{Festering Spine}}
 
       - Withering Decay
 
-    - Gravemarch
+    - {{Gravemarch}}
 
-      - Immobilizing Presence
+      - {{Immobilizing Presence}}
 
   - Level 16:
 
-    - Parasitic Communion – (upgrade of Blood Communion)
+    - Parasitic Communion – (upgrade of {{Blood Communion}})
 
-      - Conjure Vampire Spider Matriarch
+      - {{Conjure Vampire Spider Matriarch}}
 
-      - Arcane Surge
+      - {{Arcane Surge}}
 
-    - Violent Exsanguination - (upgrade of Exsanguinate)
+    - Violent Exsanguination - (upgrade of {{Exsanguinate}})
 
-      - Conjure Vampire Spider Matriarch
+      - {{Conjure Vampire Spider Matriarch}}
 
-      - Arcane Surge
+      - {{Arcane Surge}}
 
-    - Spreading Blight - (upgrade of Bloodblight)
+    - Spreading Blight - (upgrade of {{Bloodblight}})
 
-      - Conjure Vampire Spider Matriarch
+      - {{Conjure Vampire Spider Matriarch}}
 
-      - Ancient One
+      - {{Ancient One}}
 
-    - Aura of Torment - (upgrade of Tormenting Mist)
+    - {{Aura of Torment}} - (upgrade of {{Tormenting Mist}})
 
-      - Phaselock
+      - {{Phaselock}}
 
-      - Controlled Chaos
+      - {{Controlled Chaos}}
 
-    - Miasmic Spine – (upgrade of Festering Spine)
+    - Miasmic Spine – (upgrade of {{Festering Spine}})
 
-      - Conjure Dread Matriarch
+      - {{Conjure Dread Matriarch}}
 
-      - Ancient One
+      - {{Ancient One}}
 
-    - Elite March – (upgrade of Gravemarch)
+    - Elite March – (upgrade of {{Gravemarch}})
 
-      - Exhume Undead
+      - {{Exhume Undead}}
 
-      - Eternal One
+      - {{Eternal One}}
 
-    - Supernatural Speed
+    - {{Supernatural Speed}}
 
-      - Phaselock
+      - {{Phaselock}}
 
-      - Controlled Chaos
+      - {{Controlled Chaos}}
 
-    - Reaper – moved from level 8
+    - {{Reaper}} – moved from level 8
 
-      - Ancient One
+      - {{Ancient One}}
 
-      - Exhume Undead
+      - {{Exhume Undead}}
 
-    - Curse to Undeath
+    - {{Curse to Undeath}}
 
-      - Exhume Undead
+      - {{Exhume Undead}}
 
-      - Eternal One
+      - {{Eternal One}}
 
-- Affinity-specific ability - Gravemarch:
+- Affinity-specific ability - {{Gravemarch}}:
 
   - Now once per battle
 
@@ -756,7 +756,7 @@ Thorn Heart:
 
 - Affinity-specific ability - Hemomancer
 
-  - Active ability – Blood Empowerment:
+  - Active ability – {{Blood Empowerment}}:
 
     - The ability's cooldown can no longer be reduced
 
@@ -818,7 +818,7 @@ Thorn Heart:
 
 # Heroes
 
-- All heroes gained a passive ability - Insanity Immunity
+- All heroes gained a passive ability - {{Insanity}} Immunity
 
 - Updated hireable hero pool
 
@@ -842,17 +842,17 @@ Thorn Heart:
 
   - Discount on defensive structure construction ([gold], [production]) -20% -> -40%
 
-  - Added Lesser Stone Spirit T1 to the recruit pool
+  - Added {{Lesser Stone Spirit}} T1 to the recruit pool
 
 - Renown level 4:
 
-  - Added a city-siege bonus - 4 Iron Golem Assistants T1 fight on your side when defending this city.
+  - Added a city-siege bonus - 4 {{Iron Golem}} Assistants T1 fight on your side when defending this city.
 
 ## [navalgov] Nautical Governor
 
 - Renown level 1:
 
-  - Added Lesser Tide Spirit T1 to the recruit pool
+  - Added {{Lesser Tide Spirit}} T1 to the recruit pool
 
 - Renown level 3:
 
@@ -996,11 +996,11 @@ Thorn Heart:
 
   - No longer refreshes once-per-battle abilities
 
-- Passive ability – Versatile Skirmisher
+- Passive ability – {{Versatile Skirmisher}}
 
   - No longer gets bonuses for attacking obstacles
 
-- Active ability – Sniper Shot
+- Active ability – {{Sniper Shot}}
 
   - Removed the Single Shot tag
 
@@ -1036,7 +1036,7 @@ Thorn Heart:
 
     - Sword and Whip = 1.8
 
-- Active ability – Scatter Shot
+- Active ability – {{Scatter Shot}}
 
   - Added the Can't Be Refreshed tag
 
@@ -1066,17 +1066,17 @@ Thorn Heart:
 
     - Sword and Whip = 0.6
 
-- Active ability – Snapshot
+- Active ability – {{Snapshot}}
 
   - Added the Can't Be Refreshed tag
 
 ## [ritualist] Ritualist
 
-- Active ability – Rejuvenate
+- Active ability – {{Rejuvenate}}
 
   - Removes 1 -> 2 negative effects
 
-- Active ability – Reincarnate
+- Active ability – {{Reincarnate}}
 
   - Now a Free Action
 
@@ -1084,7 +1084,7 @@ Thorn Heart:
 
 ## [battlesaint] Battlesaint
 
-- Active ability – Revive
+- Active ability – {{Revive}}
 
   - Now a Free Action
 
@@ -1092,7 +1092,7 @@ Thorn Heart:
 
 ## [warrior] Warrior
 
-- Passive ability – Graceful Charge
+- Passive ability – {{Graceful Charge}}
 
   - No longer gets bonuses for attacking obstacles
 
@@ -1100,13 +1100,13 @@ Thorn Heart:
 
   - Effects are no longer guaranteed - now apply with a 60% chance
 
-- Active ability – Second Wind
+- Active ability – {{Second Wind}}
 
   - Removed the "refreshes on every kill" property
 
   - Added a 2 [turn] cooldown
 
-  - Slippery replaced with Fleeting
+  - {{Slippery}} replaced with {{Fleeting}}
 
 ## [deathknight] Death Knight
 
@@ -1114,13 +1114,13 @@ Thorn Heart:
 
   - Effects are no longer guaranteed - now apply with a 60% chance
 
-- Active ability – Second Wind
+- Active ability – {{Second Wind}}
 
   - Removed the "refreshes on every kill" property
 
   - Added a 2 [turn] cooldown
 
-  - Slippery replaced with Fleeting
+  - {{Slippery}} replaced with {{Fleeting}}
 
 ## [defenderclass] Defender
 
@@ -1138,27 +1138,27 @@ Thorn Heart:
 
 - Passive ability – Shieldbearer
 
-  - New. While the hero is in a defensive stance, they have Charge Resistance
+  - New. While the hero is in a defensive stance, they have {{Charge Resistance}}
 
 - Passive ability – Braced Defense
 
-  - The hero permanently has Charge Resistance
+  - The hero permanently has {{Charge Resistance}}
 
-  - When the hero enters a defensive stance, adjacent units gain Charge Resistance
+  - When the hero enters a defensive stance, adjacent units gain {{Charge Resistance}}
 
 - Passive ability – Bladestorm
 
   - When the hero enters a defensive stance, adjacent enemy units receive:
 
-    - Bleeding
+    - {{Bleeding}}
 
-    - Immobilized
+    - {{Immobilized}}
 
-- Active ability – Taunt
+- Active ability – {{Taunt}}
 
   - Costs one action point to use and leaves one action point after use
 
-- Active ability – Warding Bond
+- Active ability – {{Warding Bond}}
 
   - Changed property: damage taken by the bonded unit is also dealt to this unit, reduced by 50%
 
@@ -1166,13 +1166,13 @@ Thorn Heart:
 
   - Cooldown 0 [turn]
 
-- Active ability – Stunning Bash
+- Active ability – {{Stunning Bash}}
 
   - Costs one action point to use and leaves one action point after use
 
   - No longer enters a defensive stance after use
 
-- Active ability – Pushing Attack
+- Active ability – {{Pushing Attack}}
 
   - Added the Base tag
 
@@ -1180,11 +1180,11 @@ Thorn Heart:
 
   - Added:
 
-    - Pushing Attack now deals 10 [physical] and knocks back units in a 1-tile cone
+    - {{Pushing Attack}} now deals 10 [physical] and knocks back units in a 1-tile cone
 
 ## [warlock] Warlock
 
-- Active ability – Hex Pact
+- Active ability – {{Hex Pact}}
 
   - Can now be dispelled as a negative effect
 
@@ -1198,15 +1198,15 @@ Thorn Heart:
 
   - No longer gets bonuses for attacking obstacles
 
-  - Magic attacks now grant Prepared Strike and Prepared Shot
+  - Magic attacks now grant {{Prepared Strike}} and {{Prepared Shot}}
 
-  - Melee and ranged attacks now grant Prepared Spell
+  - Melee and ranged attacks now grant {{Prepared Spell}}
 
-- Active ability – Arcfire Burst
+- Active ability – {{Arcfire Burst}}
 
   - Now costs a single action point (Single Action)
 
-- Active ability – Weaver
+- Active ability – {{Weaver}}
 
   - Now a Free Action
 
@@ -1216,29 +1216,29 @@ Thorn Heart:
 
 ## [mage] Elementalist
 
-- Active ability – Ritual of Elements
+- Active ability – {{Ritual of Elements}}
 
   - Now costs a single action point (Single Action)
 
   - No longer refreshes once-per-battle abilities
 
-- Active ability – Inexorable Cast
+- Active ability – {{Inexorable Cast}}
 
   - Now has a 6 [turn] cooldown
 
-- Active ability – Withering Blizzard
+- Active ability – {{Withering Blizzard}}
 
   - Now has a 6 [turn] cooldown
 
-- Active ability – Sunder Earth
+- Active ability – {{Sunder Earth}}
 
   - Now has a 6 [turn] cooldown
 
-- Active ability – Wildfire
+- Active ability – {{Wildfire}}
 
   - Now has a 6 [turn] cooldown
 
-- Active ability – Lightning Bolt
+- Active ability – {{Lightning Bolt}}
 
   - Now has a 6 [turn] cooldown
 
@@ -1246,25 +1246,25 @@ Thorn Heart:
 
 ## [culturefeudal] Feudal
 
-- Unit - Aspirant Knight T2
+- Unit - {{Aspirant Knight}} T2
 
   - Removed passive ability - Isolation Slayer
 
-  - Active ability - Charge Strike
+  - Active ability - {{Charge Strike}}
 
   - Damage reduced to standard 27 -> 21 [physical]
 
 ### [monarchy] Feudal - Monarchy
 
-- Unit - Longbow T3
+- Unit - {{Longbow}} T3
 
-  - Active ability – Shoot Bow
+  - Active ability – {{Shoot Bow}}
 
-    - Increased chance to apply Sundered Defense 30% -> 60%
+    - Increased chance to apply {{Sundered Defense}} 30% -> 60%
 
-  - Active ability – Longshot
+  - Active ability – {{Longshot}}
 
-    - Increased chance to apply Sundered Defense 30% -> 60%
+    - Increased chance to apply {{Sundered Defense}} 30% -> 60%
 
 ### [aristocracysub] Feudal - Aristocracy
 
@@ -1274,19 +1274,19 @@ Thorn Heart:
 
   - 1 -> 5 [xp] (per 10 renown)
 
-- Unit – Liege Guard T3
+- Unit – {{Liege Guard}} T3
 
-  - Active ability – Sworn Bond
+  - Active ability – {{Sworn Bond}}
 
-    - Added property: at the start of each [turn] both units gain Strengthened (2) and Regeneration (1).
+    - Added property: at the start of each [turn] both units gain {{Strengthened}} (2) and {{Regeneration}} (1).
 
 ## [culturehigh] High
 
-- Faction trait - Awaken
+- Faction trait - {{Awaken}}
 
   - Damage bonus +3 → +2 [spirit]
 
-- Faction active ability – Twin Awaken
+- Faction active ability – Twin {{Awaken}}
 
   - Increased cooldown 1 -> 3 [turn]
 
@@ -1294,9 +1294,9 @@ Thorn Heart:
 
   - Bonuses for "Neutral" and "Absolute Evil" swapped.
 
-- Unit - Awakener T3
+- Unit - {{Awakener}} T3
 
-  - Active ability - Exposing Light:
+  - Active ability - {{Exposing Light}}:
 
     - Now applies effects with a 90% chance
 
@@ -1306,49 +1306,49 @@ Thorn Heart:
 
 - Changed starting spell
 
-  - Song of the Reckless -> Vision of Victory
+  - {{Song of the Reckless}} -> {{Vision of Victory}}
 
 ## [cultureindustrious] Industrious
 
-- Faction passive ability - Bolstering replaced with new passive ability - Indestructibility:
+- Faction passive ability - Bolstering replaced with new passive ability - {{Indestructibility}}:
 
   - Once per turn a unit gains:
 
-    - Indestructible Defense, if it took melee or missile damage
+    - {{Indestructible Defense}}, if it took melee or missile damage
 
-      - Indestructible Defense: +1 [defense]. Stacks up to 3 times. Indestructible Defense cannot be dispelled.
+      - {{Indestructible Defense}}: +1 [defense]. Stacks up to 3 times. {{Indestructible Defense}} cannot be dispelled.
 
-    - Indestructible Resistance, if it took magic damage.
+    - {{Indestructible Resistance}}, if it took magic damage.
 
-      - Indestructible Resistance: +1 [resistance]. Stacks up to 3 times. Indestructible Resistance cannot be dispelled.
+      - {{Indestructible Resistance}}: +1 [resistance]. Stacks up to 3 times. {{Indestructible Resistance}} cannot be dispelled.
 
-- Unit - Bastion T3:
+- Unit - {{Bastion}} T3:
 
-  - Active ability - Defensive Sweep
+  - Active ability - {{Defensive Sweep}}
 
     - Removed the Single Shot tag
 
-- Unit - Steelshaper T2:
+- Unit - {{Steelshaper}} T2:
 
-  - Active ability - Strength From Steel:
+  - Active ability - {{Strength From Steel}}:
 
     - Now a Free Action
 
     - At Champion rank removes 2 negative effects
 
-- Combat spell - Steelfury Chant:
+- Combat spell - {{Steelfury Chant}}:
 
   - Now affects a 2-tile radius
 
 ## [culturemystic] Mystic
 
-- Unit – Soother T2
+- Unit – {{Soother}} T2
 
-  - Active ability - Soothing Breeze:
+  - Active ability - {{Soothing Breeze}}:
 
     - At Champion rank additionally removes 1 negative effect
 
-- City building – Stone Conjurer
+- City building – {{Stone Conjurer}}
 
   - Reduced build cost
 
@@ -1360,7 +1360,7 @@ Thorn Heart:
 
   - [xp] cost 1 [xp] = 0.2 [astralecho] → 0.4 [astralecho] (requires twice as much [astralecho])
 
-- Unit - Summoner T3:
+- Unit - {{Summoner}} T3:
 
   - Active ability - Spirit Summon:
 
@@ -1372,7 +1372,7 @@ Thorn Heart:
 
 ### [schoolpotential] Mystic - School of Potential
 
-- City spell - Arcane Studies:
+- City spell - {{Arcane Studies}}:
 
   - Spell duration 10 [turn] → indefinite
 
@@ -1382,9 +1382,9 @@ Thorn Heart:
 
   - Potential of Gilding: 10 [gold] in every city
 
-- Unit – Spellweaver T3
+- Unit – {{Spellweaver}} T3
 
-  - Active ability - Dissonant Weave
+  - Active ability - {{Dissonant Weave}}
 
     - Now hits one unit plus two more within radius 3 along the chain.
 
@@ -1396,81 +1396,81 @@ Thorn Heart:
 
 - Faction passive ability - Exploit Vulnerability
 
-  - Reduced chance to apply Status Vulnerability 90% -> 60%
+  - Reduced chance to apply {{Status Vulnerability}} 90% -> 60%
 
-- Unit – Warlock T2
+- Unit – {{Warlock}} T2
 
-  - Active ability – Sundering Curse
+  - Active ability – {{Sundering Curse}}
 
     - Removed the Base tag
 
     - Removed the Single Shot tag
 
-- Unit - Tyrant Knight T3
+- Unit - {{Tyrant Knight}} T3
 
   - Recruit cost increased T3 medium -> T3 high
 
-  - Active ability – Trample
+  - Active ability – {{Trample}}
 
-    - No longer pushes units with Cannot be Displaced (towers/ballistae)
+    - No longer pushes units with {{Cannot be Displaced}} (towers/ballistae)
 
-  - Passive ability - Despotic Vitality
+  - Passive ability - {{Despotic Vitality}}
 
     - Reduced healing per adjacent enemy unit 15 -> 5 [temphp]
 
-- City building – Collector
+- City building – {{Collector}}
 
   - Increased negative effect -10 -> -20 [happiness]
 
-- City building – Shadowtrade Quarter
+- City building – {{Shadowtrade Quarter}}
 
   - Increased negative effect -10 -> -20 [happiness]
 
 ### [cultdeath] Dark - Cult of Death
 
-- Faction passive ability – Power from Death
+- Faction passive ability – {{Power from Death}}
 
   - Does not trigger on the death of:
 
     - Combat Summons
 
-    - Siegecraft
+    - {{Siegecraft}}
 
     - Tower
 
-  - Mortal Blessing effect
+  - {{Mortal Blessing}} effect
 
     - Reduced bonus +5 -> +3 [hp]
 
-- Faction strategic spell – Morbid Sacrifice
+- Faction strategic spell – {{Morbid Sacrifice}}
 
   - Increased cast cost 1 -> 2 [embalmedsacrifice]
 
   - Now targets a friendly army instead of a province and all armies in it
 
-- Unit - Death Stalker T3
+- Unit - {{Death Stalker}} T3
 
-  - Active ability – Death Stalk
+  - Active ability – {{Death Stalk}}
 
-    - No longer pushes units with Cannot be Displaced (towers/ballistae)
+    - No longer pushes units with {{Cannot be Displaced}} (towers/ballistae)
 
-    - If the target has Cannot be Displaced, the unit teleports to the nearest tile and deals damage
+    - If the target has {{Cannot be Displaced}}, the unit teleports to the nearest tile and deals damage
 
     - Fix: bonus damage from target's missing health now works correctly against displaced targets
 
     - Recruit cost increased T3 medium -> T3 high
 
-## [reaverimperial] Reaver
+## [culturereaver] Reaver
 
 - Unit – Observer T1
 
-  - Removed passive ability – Non-Vital
+  - Removed passive ability – {{Non-Vital}}
 
-  - Added passive ability - Retreat Expert
+  - Added passive ability - {{Retreat Expert}}
 
-- Unit – Magelock Cannon T3
+- Unit – {{Magelock Cannon}} T3
 
-  - Active ability - Fire Cannon
+  - Active ability - {{Fire Cannon}}
 
     - Now doesn't work within an enemy zone of control
 
@@ -1486,13 +1486,13 @@ Thorn Heart:
 
   - During battle on native terrain, the bonus now only applies to friendly heroes with the Avatar of the Primal Beast ability
 
-- Unit – Primal Charger T2
+- Unit – {{Primal Charger}} T2
 
-  - Active ability - Cleaving Charge
+  - Active ability - {{Cleaving Charge}}
 
     - Added the Single Shot tag
 
-- Unit – Animist T2
+- Unit – {{Animist}} T2
 
   - Active ability - Summon Primal Animal
 
@@ -1500,17 +1500,17 @@ Thorn Heart:
 
     - Clears all Primal Fury effects after use
 
-  - Active ability - Spiritual Healing
+  - Active ability - {{Spiritual Healing}}
 
     - Additionally grants 2 stacks of Rising Fury
 
-- Unit – Ancestral Warden T3
+- Unit – {{Ancestral Warden}} T3
 
-  - Active ability – Primal Lunge
+  - Active ability – {{Primal Lunge}}
 
     - Reduced range 3 -> 2 [range]
 
-- City building – Sylvan Stonestele
+- City building – Sylvan {{Stonestele}}
 
   - Reduced build cost
 
@@ -1518,23 +1518,23 @@ Thorn Heart:
 
 ### [duneserpent] Primal - Dune Serpent
 
-- Unit – Primal Serpent T2
+- Unit – {{Primal Serpent}} T2
 
-  - Added passive ability – Slippery
+  - Added passive ability – {{Slippery}}
 
-  - Added passive ability – Hyper-Awareness
+  - Added passive ability – {{Hyper-Awareness}}
 
-  - New passive ability created and added – Quick Reflexes
+  - New passive ability created and added – {{Quick Reflexes}}
 
-  - New passive ability created and added – Barbed Shield
+  - New passive ability created and added – {{Barbed Shield}}
 
 ### [stormcrow] Primal - Storm Crow
 
-- Unit – Primal Crow T2
+- Unit – {{Primal Crow}} T2
 
-  - Active ability - Lightning Bolts
+  - Active ability - {{Lightning Bolts}}
 
-    - Now applies Sundered Resistance with a 90% chance
+    - Now applies {{Sundered Resistance}} with a 90% chance
 
 ### [mammoth] Primal - Glacial Mammoth
 
@@ -1542,7 +1542,7 @@ Thorn Heart:
 
   - +3 -> +2 [production]
 
-- Special province improvement - Glacial Megalith
+- Special province improvement - {{Glacial Megalith}}
 
   - Reduced bonus from adjacent territories
 
@@ -1560,47 +1560,47 @@ Thorn Heart:
 
     - Paragon +40 -> +20 [happiness]
 
-- Unit - Honor Blade T1
+- Unit - {{Honor Blade}} T1
 
   - Recruit cost increased T1 medium -> T1 high
 
-  - Active ability – Defensive Strike
+  - Active ability – {{Defensive Strike}}
 
     - Removed the Single Shot tag
 
-- Unit - Vowkeeper T2
+- Unit - {{Vowkeeper}} T2
 
-  - Active ability – Purging Blast
+  - Active ability – {{Purging Blast}}
 
     - Now has a 90% chance to remove a positive effect
 
-  - Active ability – Vow of Healing
+  - Active ability – {{Vow of Healing}}
 
     - Reduced healing 25 -> 20 [temphp]
 
     - Increased cooldown 2 -> 3 [turn]
 
-  - Active ability – Vow of Purification
+  - Active ability – {{Vow of Purification}}
 
     - Now removes 2 negative effects
 
     - Now a Free Action
 
-    - Removed the Status Protection (3) effect
+    - Removed the {{Status Protection}} (3) effect
 
     - Increased cooldown 1 -> 2 [turn]
 
-- Faction combat spell – Devout Radiance
+- Faction combat spell – {{Devout Radiance}}
 
   - Reduced damage 10 -> 5 [spirit]
 
-- Faction combat spell – Counter Stance
+- Faction combat spell – {{Counter Stance}}
 
   - Increased cost 5 [mana] 10 [combatspell] -> 30 [mana] 25 [combatspell]
 
 ### [oathstrife] Oathsworn - Oath of Strife
 
-- Faction passive ability – Warrior's Soul
+- Faction passive ability – {{Warrior's Soul}}
 
   - Reduced damage bonus
 
@@ -1616,15 +1616,15 @@ Thorn Heart:
 
     - The ability now checks its trigger condition every turn in battle
 
-- Unit – Warbound T3
+- Unit – {{Warbound}} T3
 
-  - Active ability – Bulldoze
+  - Active ability – {{Bulldoze}}
 
     - Reduced range 4 -> 2 [range]
 
 ### [oathrighteousness] Oathsworn - Oath of Righteousness
 
-- Faction passive ability – Nobility
+- Faction passive ability – {{Nobility}}
 
   - Reduced damage bonus
 
@@ -1636,9 +1636,9 @@ Thorn Heart:
 
     - Paragon +5 -> +4 [spirit]
 
-- Unit – Avenger T3
+- Unit – {{Avenger}} T3
 
-  - Active ability – Helmsplitter
+  - Active ability – {{Helmsplitter}}
 
     - Removed the Piercing property
 
@@ -1648,13 +1648,13 @@ Thorn Heart:
 
       - Length 2 -> 1
 
-    - Removed the Sundered Resistance effect
+    - Removed the {{Sundered Resistance}} effect
 
 ### [oathharmony] Oathsworn - Oath of Harmony
 
-- Unit – Peacebringer T3
+- Unit – {{Peacebringer}} T3
 
-  - Active ability – Line Shot
+  - Active ability – {{Line Shot}}
 
     - Added the Base tag
 
@@ -1666,19 +1666,19 @@ Thorn Heart:
 
 ## [culturearchitect] Architect
 
-- Faction combat spell – Resilient Incarnation
+- Faction combat spell – {{Resilient Incarnation}}
 
   - Locked in as the starting spell at game start
 
-- Unit – Earthbreaker T1
+- Unit – {{Earthbreaker}} T1
 
-  - Passive ability - Incarnate Fortitude
+  - Passive ability - {{Incarnate Fortitude}}
 
     - Increased bonus +5 -> +8 [hp]
 
-- Unit – Guardian T2
+- Unit – {{Guardian}} T2
 
-  - Passive ability - Incarnate Disruption
+  - Passive ability - {{Incarnate Disruption}}
 
     - Reworked the ability:
 
@@ -1688,7 +1688,7 @@ Thorn Heart:
 
       - Not shown in the target's stats
 
-  - Passive ability - Incarnate Retaliation
+  - Passive ability - {{Incarnate Retaliation}}
 
     - Increased damage per stack 1 -> 3
 
@@ -1696,9 +1696,9 @@ Thorn Heart:
 
 ## [culturenomad] Nomad
 
-- Unit - Dustweaver T2
+- Unit - {{Dustweaver}} T2
 
-  - Active ability – Recovering Windpull
+  - Active ability – {{Recovering Windpull}}
 
     - Teleport no longer applies to heroes
 
@@ -1712,19 +1712,19 @@ Thorn Heart:
 
   - Restoring depleted nodes costs half as much
 
-- Faction passive ability - Looted Power
+- Faction passive ability - {{Looted Power}}
 
   - Reduced damage bonus 20% → 10%
 
   - Reduced max stacks 5 -> 3
 
-- Faction combat spell - Improvised Remedy
+- Faction combat spell - {{Improvised Remedy}}
 
   - Now removes only 2 negative effects
 
 ### [nomadconquerors] Nomad - Conquerors
 
-- Faction passive ability - Momentum
+- Faction passive ability - {{Momentum}}
 
   - Reduced damage bonus 30% → 20%
 
@@ -1738,24 +1738,24 @@ Thorn Heart:
 
 # Tomes
 
-## Crystal Pact
+## {{Crystal Pact}}
 
-- Unit - Lithorine Shardlancer - now T1
+- Unit - {{Lithorine Shardlancer}} - now T1
 
-  - Active ability - Melee Strike: 8[physical] 4[lightning]
+  - Active ability - {{Melee Strike}}: 8[physical] 4[lightning]
 
-  - Active ability - Pinning Thrust: 10[physical] 10[lightning]
+  - Active ability - {{Pinning Thrust}}: 10[physical] 10[lightning]
 
-- Unit - Lithorine Core - now T3
+- Unit - {{Lithorine Core}} - now T3
 
-  - Active ability - Crystal Blast: 10[physical] 10[lightning]
+  - Active ability - {{Crystal Blast}}: 10[physical] 10[lightning]
 
-  - Active ability - Core Link - splits damage 50/50
+  - Active ability - {{Core Link}} - splits damage 50/50
 
   - Removed champion medal
 
-- Combat spell - Crystallize Essence - changed corpse transformations:
+- Combat spell - {{Crystallize Essence}} - changed corpse transformations:
 
-  - T1 - Lithorine Shardlancer
+  - T1 - {{Lithorine Shardlancer}}
 
-  - T3 - Lithorine Core
+  - T3 - {{Lithorine Core}}
