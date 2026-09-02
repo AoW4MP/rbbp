@@ -254,6 +254,18 @@
                 margin-right: 8px;
             }
 
+            /* заголовки без ручного [код] (напр. названия книг) получают иконку через
+               обычное автосвязывание сущностей (.rbbp-entity-icon, маленький размер) -
+               в контексте заголовка её тоже нужно показывать крупно, как .rbbp-inline-icon */
+            #rbbpContent h2 .rbbp-entity-icon,
+            #rbbpContent h3 .rbbp-entity-icon,
+            #rbbpContent h4 .rbbp-entity-icon {
+                width: 52px;
+                height: 52px;
+                vertical-align: -14px;
+                margin-right: 8px;
+            }
+
             .rbbp-toc .rbbp-toc-subsub {
                 list-style: none;
                 margin: 0 0 2px 0;
@@ -405,7 +417,12 @@
 
                 function add(enName, entry) {
                     if (!enName) return;
-                    enName = enName.trim();
+                    // некоторые постройки (StructureUpgrades.json) хранят готовый инлайн-тег
+                    // прямо в поле name ("<conduit></conduit> Glacial Megalith") - без этой
+                    // очистки такие постройки никогда не совпадут с текстом статьи, где
+                    // просто "Glacial Megalith" без тега (see CLAUDE.md, раздел 8.2 - это
+                    // касается ~100 из 349 построек, не только этой одной)
+                    enName = enName.replace(/^<[a-zA-Z]+><\/[a-zA-Z]+>\s*/, "").trim();
                     if (enName.length < 3) return;
                     if (RBBP_EXCLUDED_EN_NAMES.has(enName)) return;
                     if (!index.has(enName)) index.set(enName, entry);
@@ -427,6 +444,7 @@
                 const RBBP_EXCLUDED_EN_NAMES = new Set([
                     "Crossbow",
                     "Floating Daggers",
+                    "Floating",
                     "Magelock",
                     "Greatbow",
                     "Bow",
@@ -436,7 +454,29 @@
                     "Javelin",
                     "Sword and Daggers",
                     "Sword and Net",
-                    "Sword and Whip"
+                    "Sword and Whip",
+                    // ниже - общеупотребимые английские слова/фразы, которые СЛУЧАЙНО
+                    // совпадают с реальным юнитом/способностью/тегом в данных игры, но в
+                    // контексте документа означают что-то другое (см. фидбек по 1.7.6):
+                    // "Champion"/"Observer" - в игре это ещё и юнит/правитель по имени, но в
+                    // тексте почти всегда просто ранг ("на ранге чемпион...") или заголовок
+                    // раздела ("Observer:" - тип лидера, не юнит Reaver); "Tower"/"Frozen"/
+                    // "Haunted"/"Dragon"/"Construct"/"Animal"/"Fury" - обычные слова описания
+                    // (название события/ландшафта/сущ.), которые ещё и совпадают с именем
+                    // способности или юнита где-то в другом контексте игры; "Frost Giant"/
+                    // "Rock Giant" - юниты-гиганты, но в тексте это часть заголовка вида
+                    // "Frost Giant King" (правитель, не юнит)
+                    "Champion",
+                    "Observer",
+                    "Tower",
+                    "Frozen",
+                    "Haunted",
+                    "Dragon",
+                    "Construct",
+                    "Animal",
+                    "Fury",
+                    "Frost Giant",
+                    "Rock Giant"
                 ]);
 
                 const [tomesEN, tomesLoc, strucEN, strucLoc, unitsEN, unitsLoc, spellsEN, spellsLoc, abilitiesEN, abilitiesLoc] =
@@ -545,10 +585,17 @@
                 if (contentLang !== "EN") {
                     return new RegExp(parenPart, "g");
                 }
-                const names = Array.from(index.keys()).sort((a, b) => b.length - a.length);
-                const bareAlternatives = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-                const barePart = `(?<![\\p{L}\\p{N}_])(?:${bareAlternatives})(?![\\p{L}\\p{N}_])`;
-                return new RegExp(`${parenPart}|${barePart}`, "gu");
+                // EN: только явный маркер {{Name}}, расставленный вручную при переводе -
+                // никакого сканирования всего текста по всем именам индекса. Раньше EN
+                // матчился по голым словам (та же техника, что buildAbilityTagCache), но
+                // обычные английские слова из прозы регулярно СЛУЧАЙНО совпадают с реальным
+                // юнитом/способностью где-то в данных игры (Champion, Observer, Tower,
+                // Dragon, Construct, Fury...) - список исключений расширялся почти на
+                // каждом раунде фидбека и не мог быть полным в принципе. Явная разметка
+                // убирает саму возможность такой коллизии: без {{...}} слово никогда не
+                // станет ссылкой, что бы оно ни совпало (см. CLAUDE.md, раздел 8.2).
+                const explicitPart = "\\{\\{([^}]+)\\}\\}";
+                return new RegExp(`${parenPart}|${explicitPart}`, "g");
             }
 
             function LinkRbbpEntitiesByEnglishName(html, index, contentLang) {
@@ -569,14 +616,25 @@
                     return token;
                 });
 
+                // не трогаем текст уже существующих ссылок (markdown-ссылки из исходника,
+                // напр. "Steam Workshop::RbbP") - названия там иногда случайно содержат
+                // слово, совпадающее с игровой сущностью ("Workshop" - реальная постройка),
+                // и ссылка внутри ссылки только запутывает читателя
+                const links = [];
+                html = html.replace(/<a\s[^>]*>[\s\S]*?<\/a>/g, (m) => {
+                    const token = `__RBBP_LINK_${links.length}__`;
+                    links.push(m);
+                    return token;
+                });
+
                 const regex = BuildRbbpLinkRegex(index, contentLang);
 
-                html = html.replace(regex, (match, parenName) => {
-                    // если сработала скобочная ветка - parenName задан (текст внутри скобок,
-                    // без самих скобок); если голая ветка - parenName === undefined,
-                    // а искомое имя - это весь match целиком
+                html = html.replace(regex, (match, parenName, explicitName) => {
+                    // скобочная ветка (RU) - parenName задан, видимые скобки нужно
+                    // воспроизвести вокруг ссылки; явный маркер {{...}} (EN) - explicitName
+                    // задан, сама разметка невидима, скобки вокруг ссылки не нужны
                     const isParen = parenName !== undefined;
-                    const name = isParen ? parenName.trim() : match;
+                    const name = isParen ? parenName.trim() : explicitName !== undefined ? explicitName.trim() : match;
                     const entry = index.get(name);
                     if (!entry) return match;
 
@@ -609,6 +667,10 @@
                     }
 
                     return handlerSpan;
+                });
+
+                links.forEach((l, i) => {
+                    html = html.replace(`__RBBP_LINK_${i}__`, l);
                 });
 
                 headings.forEach((h, i) => {
