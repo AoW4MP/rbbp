@@ -252,9 +252,9 @@
 
 Подземные памятники (Subterranean Monuments):
 
-- [mine] приносят +10 -> +3 [gold]
+- Рудник [mine] в этой провинции приносит +10 -> +3 [gold]
 
-- [quarry] приносят +10 -> +3 [production]
+- Каменоломня [quarry] в этой провинции приносит +10 -> +3 [production]
 
 Инфернальный вулкан (Infernal Volcano):
 

@@ -252,9 +252,9 @@ Ancient Dragon Hoard/Remains:
 
 Subterranean Monuments:
 
-- [mine] yields +10 -> +3 [gold]
+- A [mine] Mine in this province grants +10 -> +3 [gold]
 
-- [quarry] yields +10 -> +3 [production]
+- A [quarry] Quarry in this province grants +10 -> +3 [production]
 
 Infernal Volcano:
 
@@ -296,13 +296,13 @@ Thorn Heart:
 
 ## General branch
 
-- Position 1 - (15/100[influence]): Basic Seafaring
+- Position 1 - (15/100[influence]): {{Basic Seafaring}}
 
-- Position 2 - (40/100[influence]): Diplomatic Focus
+- Position 2 - (40/100[influence]): {{Diplomatic Focus}}
 
-- Position 3A - (60/125[influence]): Road Building
+- Position 3A - (60/125[influence]): {{Road Building}}
 
-- Position 3B - (60/125[influence]): Excavation
+- Position 3B - (60/125[influence]): {{Excavation}}
 
 - Position 4A - (100/125[influence]): New - {{Gesture of Goodwill}}
 
@@ -314,27 +314,27 @@ Thorn Heart:
 
     - After casting, the spell is locked for one turn
 
-- Position 4B - (100/200[influence]): Expanded Governance
+- Position 4B - (100/200[influence]): {{Expanded Governance}}
 
-- Position 5 - (120/175[influence]): Rite of the Last Stand
+- Position 5 - (120/175[influence]): {{Rite of the Last Stand}}
 
-- Position 6 - (160/150[influence]): Siege Specialization
+- Position 6 - (160/150[influence]): {{Siege Specialization}}
 
-- Position 7 - (200/175[influence]): Forced March
+- Position 7 - (200/175[influence]): {{Forced March}}
 
   - Forced March:
 
     - Cost per unit increased 10 -> 20 [mana]
 
-- Position 8 - (300/175[influence]): {{Teleporter}} Infrastructure
+- Position 8 - (300/175[influence]): {{Teleporter Infrastructure}}
 
-- Position 9 - (400/175[influence]): Advanced Sensing
+- Position 9 - (400/175[influence]): {{Advanced Sensing}}
 
-- Position 10 - (500/200[influence]): Advanced Logistics
+- Position 10 - (500/200[influence]): {{Advanced Logistics}}
 
-- Position 11A - (600/250[influence]): Focused Affinity
+- Position 11A - (600/250[influence]): {{Focused Affinity}}
 
-- Position 11B - (600/250[influence]): Cosmic Affinity
+- Position 11B - (600/250[influence]): {{Cosmic Affinity}}
 
 # Rulers
 
@@ -992,7 +992,7 @@ Thorn Heart:
 
 ## [ranger] Ranger
 
-- Passive ability - Kill Shot
+- Passive ability - {{Kill Shot}}
 
   - No longer refreshes once-per-battle abilities
 
@@ -1096,7 +1096,7 @@ Thorn Heart:
 
   - No longer gets bonuses for attacking obstacles
 
-- Passive ability – Willbreaker
+- Passive ability – {{Willbreaker}}
 
   - Effects are no longer guaranteed - now apply with a 60% chance
 
@@ -1110,7 +1110,7 @@ Thorn Heart:
 
 ## [deathknight] Death Knight
 
-- Passive ability – Willbreaker
+- Passive ability – {{Willbreaker}}
 
   - Effects are no longer guaranteed - now apply with a 60% chance
 
@@ -1132,21 +1132,21 @@ Thorn Heart:
 
   - Bonus increased +15 -> +20 [hp]
 
-- Passive ability – Greater Vigor
+- Passive ability – {{Greater Vigor}}
 
   - Bonus increased +30 -> +35 [hp]
 
-- Passive ability – Shieldbearer
+- Passive ability – {{Shieldbearer}}
 
   - New. While the hero is in a defensive stance, they have {{Charge Resistance}}
 
-- Passive ability – Braced Defense
+- Passive ability – {{Braced Defense}}
 
   - The hero permanently has {{Charge Resistance}}
 
   - When the hero enters a defensive stance, adjacent units gain {{Charge Resistance}}
 
-- Passive ability – Bladestorm
+- Passive ability – {{Bladestorm}}
 
   - When the hero enters a defensive stance, adjacent enemy units receive:
 
@@ -1176,7 +1176,7 @@ Thorn Heart:
 
   - Added the Base tag
 
-- Active ability – Consolidating Push
+- Active ability – {{Consolidating Push}}
 
   - Added:
 
@@ -1190,11 +1190,11 @@ Thorn Heart:
 
 ## [spellblade] Spellblade
 
-- Passive ability – Spell Penetration
+- Passive ability – {{Spell Penetration}}
 
   - Increased penetration: -1 [resistance] -1 [statuseffectresistance] → -3 [resistance] -3 [statuseffectresistance]
 
-- Passive ability – Arcane Skirmisher
+- Passive ability – {{Arcane Skirmisher}}
 
   - No longer gets bonuses for attacking obstacles
 
