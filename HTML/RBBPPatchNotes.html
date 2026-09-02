@@ -465,11 +465,31 @@
                     "Fury",
                     "Frost Giant",
                     "Rock Giant",
-                    "Sword and Whip"
+                    "Sword and Whip",
+                    // "Vigor" (HeroSkills.json) встречается 9 раз в 5 разных классах героев,
+                    // и у части классов РАЗНЫЕ иконки для одного и того же имени (Defender
+                    // отличается от Warrior/Death Knight/Spellblade) - линковка по голому
+                    // имени показала бы неверную иконку для части классов, см. комментарий
+                    // у индексации HeroSkills.json ниже.
+                    "Vigor"
                 ]);
 
-                const [tomesEN, tomesLoc, strucEN, strucLoc, unitsEN, unitsLoc, spellsEN, spellsLoc, abilitiesEN, abilitiesLoc] =
-                    await Promise.all([
+                const [
+                    tomesEN,
+                    tomesLoc,
+                    strucEN,
+                    strucLoc,
+                    unitsEN,
+                    unitsLoc,
+                    spellsEN,
+                    spellsLoc,
+                    abilitiesEN,
+                    abilitiesLoc,
+                    empireEN,
+                    empireLoc,
+                    heroSkillsEN,
+                    heroSkillsLoc
+                ] = await Promise.all([
                         fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/StructureUpgrades.json`).then((r) => r.json()),
@@ -479,7 +499,11 @@
                         fetch(`/rbbp/Data/EN/Spells.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Spells.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/Abilities.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Abilities.json`).then((r) => r.json())
+                        fetch(`/rbbp/Data/${contentLang}/Abilities.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/EmpireProgression.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/EmpireProgression.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/HeroSkills.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json())
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -522,13 +546,24 @@
                     });
                 }
 
+                // "Gesture of Goodwill" (icon-код CBE7688B0000080C) - файла в Icons/SpellIcons/
+                // нет вообще (не заглушка - проверено `find` по всей папке Icons), но тот же
+                // код иконки реально экспортирован в Icons/EmpireProgressionIcons/ (то же
+                // заклинание ещё и перк Дерева империи с тем же именем и тем же icon-кодом).
+                // Не входит в incorrectIconOverrideList (Data/src/dataloader.js) - тот список
+                // редиректит на SummonIcons, а там этого файла тоже нет; похоже, это отдельный,
+                // ранее не замеченный баг данных, который затрагивает и настоящую карточку
+                // заклинания на Spells.html, не только эту страницу.
+                const RBBP_SPELL_ICON_FOLDER_OVERRIDE = { gesture_of_goodwill: "EmpireProgressionIcons" };
+
                 const spellsLocByResid = byKey(spellsLoc, "resid");
                 for (const spell of spellsEN) {
                     // у заклинаний призыва (Summon Spell) поле icon часто пустое в данных
                     // игры - для них картинка называется по EN id и лежит в SummonIcons
                     // (та же особенность, что и incorrectIconOverrideList в Builder.js)
+                    const iconFolder = RBBP_SPELL_ICON_FOLDER_OVERRIDE[spell.id] || "SpellIcons";
                     const iconPath = spell.icon
-                        ? `/rbbp/Icons/SpellIcons/${spell.icon}.png`
+                        ? `/rbbp/Icons/${iconFolder}/${spell.icon}.png`
                         : spell.id
                           ? `/rbbp/Icons/SummonIcons/${spell.id}.png`
                           : null;
@@ -549,6 +584,46 @@
                         icon: `/rbbp/Icons/UnitIcons/${ability.icon}.png`,
                         obj: ability,
                         loc: abilitiesLocBySlug.get(ability.slug)
+                    });
+                }
+
+                // EmpireProgression.json (перки Дерева империи) не имеет поля resid вообще
+                // (как и Governance.json, см. CLAUDE.md раздел 2.4), а RU id - локализованная
+                // строка, не слаг ("Приверженность_космосу"), так что единственный надёжный
+                // способ сопоставить EN-запись с RU-переводом - позиционный индекс массива
+                // (проверено: required_level и cost совпадают попарно на всех 143 записях -
+                // порядок в обоих языках идентичен).
+                for (let i = 0; i < empireEN.length; i++) {
+                    const emp = empireEN[i];
+                    if (!emp.icon) continue;
+                    add(emp.name, {
+                        type: "empire",
+                        icon: `/rbbp/Icons/EmpireProgressionIcons/${emp.icon}.png`,
+                        obj: emp,
+                        loc: empireLoc[i]
+                    });
+                }
+
+                // HeroSkills.json (пассивки/навыки в деревьях классов героев, напр.
+                // Willbreaker/Vigor/Bladestorm) - EN и RU сопоставляются по resid, как обычно
+                // (проверено: 0 из 827 EN-записей без пары в RU по resid). ВАЖНО: некоторые
+                // названия повторяются ОДИНАКОВО у нескольких классов с одной и той же иконкой
+                // (Willbreaker - Warrior/Death Knight/Warlock, icon один и тот же для всех
+                // трёх) - для них линковка по голому имени безопасна. Но "Vigor" - другой
+                // случай: это имя встречается 9 раз в 5 разных классах, и у части классов
+                // РАЗНЫЕ иконки для одного и того же имени (Defender's Vigor I/II отличается
+                // от Warrior/Death Knight/Spellblade) - при линковке по голому имени первое
+                // добавленное в индекс совпадение "выиграет" для всех остальных классов, что
+                // даст неверную иконку. Раз безопасного способа отличить "чья именно Vigor"
+                // по голому имени нет, "Vigor" сознательно в RBBP_EXCLUDED_EN_NAMES.
+                const heroSkillsLocByResid = byKey(heroSkillsLoc, "resid");
+                for (const skill of heroSkillsEN) {
+                    if (!skill.icon) continue;
+                    add(skill.name, {
+                        type: "heroskill",
+                        icon: `/rbbp/Icons/UnitIcons/${skill.icon}.png`,
+                        obj: skill,
+                        loc: heroSkillsLocByResid.get(skill.resid)
                     });
                 }
 
