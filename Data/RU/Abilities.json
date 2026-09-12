@@ -1615,9 +1615,9 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Применивший чары воин перемещается на выбранную клетку.",
-  "name": "Большой скачок",
-  "slug": "greater_phase_ability_000004C500000F71",
+  "description": "Применивший чары воин перемещается на указанную клетку. Остаётся 1 <hyperlink>очко действия</hyperlink>.",
+  "name": "Скачок",
+  "slug": "phase_ability_000004C500000F71",
   "damage": "",
   "requisites": [
    {
@@ -1628,7 +1628,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<freeaction></freeaction>",
+  "actionPoints": "<fullactioncontinue></fullactioncontinue>",
   "range": "6",
   "icon": "000003E3000045B1"
  },
@@ -1987,7 +1987,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляется от всех <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>если выбранная цель не является <hyperlink>героем</hyperlink>, телепортируется на соседнюю клетку.</bullet></bulletlist>",
@@ -2077,7 +2077,7 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 2 <turn></turn>"
+    "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
   "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляется от всех <hyperlink>отрицательных эффектов</hyperlink>;</bullet><bullet>если выбранная цель не является <hyperlink>героем</hyperlink>, телепортируется на соседнюю клетку.</bullet></bulletlist>",
@@ -3010,10 +3010,10 @@
  {
   "notes": [
    {
-    "note": "Перезарядка: 1 <turn></turn>"
+    "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 50 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляется от 2 отрицательных эффектов.</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает 50 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляется от всех отрицательных эффектов.</bullet></bulletlist>",
   "name": "Исцеление",
   "slug": "light_heal_ability_000004C0000004F3",
   "damage": "",
@@ -4383,7 +4383,7 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000037A7"
  },
@@ -8729,7 +8729,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Перемещается на 2 кл. вперёд, нанося урон всем врагам на пути.",
+  "description": "Перемещается на 4 кл. вперёд, нанося урон всем врагам на пути.",
   "name": "Напролом",
   "slug": "bulldoze_ability_0000049000000EA6_0000049700000fb8",
   "damage": "10<damagephysical></damagephysical> ",
@@ -11363,7 +11363,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
@@ -11454,7 +11454,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
@@ -11539,7 +11539,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
@@ -11624,7 +11624,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
@@ -11709,7 +11709,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
@@ -11794,7 +11794,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
@@ -11879,7 +11879,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet><bullet>Заклинатель тратит все накопленные уровни особенности «Первобытная ярость» и за каждый уровень:<bulletlist></bullet><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
@@ -29941,8 +29941,8 @@
    }
   ],
   "accuracy": "Всегда попадает в цель",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
   "icon": "000004C00000066D"
  },
  {
@@ -50038,7 +50038,7 @@
   "icon": "000003E3000049ED"
  },
  {
-  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink> и +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атаки наносят на 10% больше урона;</bullet><bullet>способности <hyperlink>поддержки</hyperlink> восстанавливают +20% <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>может суммироваться до 3 раз.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink> и +1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>;</bullet><bullet>атаки наносят на 20% больше урона;</bullet><bullet>способности <hyperlink>поддержки</hyperlink> восстанавливают +20% <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>может суммироваться до 3 раз.</bullet></bulletlist>",
   "name": "Полезная добыча",
   "slug": "0000048d00001cac",
   "icon": "0000048D00001CD3"
@@ -50324,7 +50324,7 @@
   "icon": "0000049700000A62"
  },
  {
-  "description": "+30% к <accuracy></accuracy> <hyperlink>точности</hyperlink> атак.<br></br><br></br>«Верный удар» <hyperlink>противодействует</hyperlink> эффекту «Слепота».",
+  "description": "+50% к <accuracy></accuracy> <hyperlink>точности</hyperlink> атак.<br></br><br></br>«Верный удар» <hyperlink>противодействует</hyperlink> эффекту «Слепота».",
   "name": "Верный удар",
   "slug": "0000041300000cfa",
   "icon": "0000041300000CFC"
@@ -50581,7 +50581,7 @@
   "icon": "0000049700000146"
  },
  {
-  "description": "<bulletlist><bullet><hyperlink>Атаки в ближнем бою</hyperlink>, <hyperlink>стрельба</hyperlink> и <hyperlink>магические</hyperlink> атаки по этому воину получают -15% от <accuracy></accuracy> <hyperlink>точности</hyperlink>;</bullet><bullet>может суммироваться до 3 раз.</bullet></bulletlist><br></br><br></br>«Прилипчивый туман» <hyperlink>противодействует</hyperlink> эффекту «Помечен».",
+  "description": "<bulletlist><bullet><hyperlink>Атаки в ближнем бою</hyperlink>, <hyperlink>стрельба</hyperlink> и <hyperlink>магические</hyperlink> атаки по этому воину получают -10% от <accuracy></accuracy> <hyperlink>точности</hyperlink>;</bullet><bullet>может суммироваться до 3 раз.</bullet></bulletlist><br></br><br></br>«Прилипчивый туман» <hyperlink>противодействует</hyperlink> эффекту «Помечен».",
   "name": "Прилипчивый туман",
   "slug": "0000049700000553",
   "icon": "0000049700000554"
@@ -51037,7 +51037,7 @@
   "icon": "0000042A000004CD"
  },
  {
-  "description": "<bulletlist><bullet>-1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet><bullet>Может суммироваться до 10 раз.</bullet></bulletlist><br></br><br></br>«Пробитое сопротивление» <hyperlink>противодействует</hyperlink> эффекту «Усиленное сопротивление».",
+  "description": "<bulletlist><bullet>-1 к <resistance></resistance> <hyperlink>сопротивлению</hyperlink>.</bullet><bullet>Может суммироваться до 5 раз.</bullet></bulletlist><br></br><br></br>«Пробитое сопротивление» <hyperlink>противодействует</hyperlink> эффекту «Усиленное сопротивление».",
   "name": "Пробитое сопротивление",
   "slug": "000003e100001403",
   "icon": "000003E100001407"
