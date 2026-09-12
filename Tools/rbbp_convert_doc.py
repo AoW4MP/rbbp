@@ -6,9 +6,18 @@ Data/RU|EN/RBBP.json) и RBBP Patch Notes (Data/RU|EN/RBBPPatchNotes.json).
 Использование:
     python3 Tools/rbbp_convert_doc.py <входной .md> <выходной .json>
 
-Пример:
+Пример (страница RBBP - единый {"html": ...}):
     python3 Tools/rbbp_convert_doc.py RBBP_doc_2.md Data/RU/RBBP.json
     python3 Tools/rbbp_convert_doc.py RBBP_doc_2_EN.md Data/EN/RBBP.json
+
+Patch Notes - отдельная страница на каждый патч (HTML/RBBPPatchNotes.html
+читает {"patches": [{version, date, html}, ...]}), поэтому для них ОБЯЗАТЕЛЬНЫ
+два дополнительных флага - версия и дата патча в формате YYYY-MM-DD:
+    python3 Tools/rbbp_convert_doc.py RBBPPatchNotes_doc_1.md Data/RU/RBBPPatchNotes.json --patch-version 1.7.7 --patch-date 2026-09-12
+
+Если в выходном файле уже есть запись с такой же версией - она ЗАМЕНЯЕТСЯ
+(повторный прогон после правки текста того же патча не плодит дубликаты),
+иначе запись добавляется. Существующие записи других версий не трогаются.
 
 Формат исходного markdown:
     # Заголовок раздела       -> <h2>
@@ -338,11 +347,31 @@ def convert(md_text):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    raw = sys.argv[1:]
+    args = []
+    patch_version = None
+    patch_date = None
+    i = 0
+    while i < len(raw):
+        if raw[i] == "--patch-version" and i + 1 < len(raw):
+            patch_version = raw[i + 1]
+            i += 2
+        elif raw[i] == "--patch-date" and i + 1 < len(raw):
+            patch_date = raw[i + 1]
+            i += 2
+        else:
+            args.append(raw[i])
+            i += 1
+
+    if len(args) != 2:
         print(__doc__)
         sys.exit(1)
-    src = sys.argv[1]
-    dst = sys.argv[2]
+    src, dst = args
+
+    if (patch_version is None) != (patch_date is None):
+        print("ОШИБКА: --patch-version и --patch-date указываются только вместе", file=sys.stderr)
+        sys.exit(1)
+
     with open(src, encoding="utf-8") as f:
         md = f.read()
     html = convert(md)
@@ -351,6 +380,20 @@ if __name__ == "__main__":
     if leftover:
         print(f"ПРЕДУПРЕЖДЕНИЕ: в итоговом HTML остались необработанные [скобки]: {leftover}", file=sys.stderr)
 
-    with open(dst, "w", encoding="utf-8") as f:
-        json.dump({"html": html}, f, ensure_ascii=False)
-    print("OK ->", dst, "| длина html:", len(html))
+    if patch_version is not None:
+        try:
+            with open(dst, encoding="utf-8") as f:
+                existing = json.load(f)
+            patches = existing.get("patches", [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            patches = []
+        patches = [p for p in patches if p.get("version") != patch_version]
+        patches.append({"version": patch_version, "date": patch_date, "html": html})
+        patches.sort(key=lambda p: p["date"], reverse=True)
+        with open(dst, "w", encoding="utf-8") as f:
+            json.dump({"patches": patches}, f, ensure_ascii=False, indent=2)
+        print("OK ->", dst, "| патч", patch_version, "(" + patch_date + ")", "| длина html:", len(html), "| всего патчей:", len(patches))
+    else:
+        with open(dst, "w", encoding="utf-8") as f:
+            json.dump({"html": html}, f, ensure_ascii=False)
+        print("OK ->", dst, "| длина html:", len(html))

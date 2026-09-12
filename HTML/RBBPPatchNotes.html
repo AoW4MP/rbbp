@@ -150,6 +150,7 @@
             .rbbp-backlink {
                 display: inline-block;
                 margin-top: 6px;
+                margin-right: 16px;
                 font-family: "Regular", sans-serif;
                 font-size: 13px;
                 color: #8fd4c1;
@@ -158,6 +159,60 @@
 
             .rbbp-backlink:hover {
                 color: #ffe6a8;
+            }
+
+            /* ---------- список версий на главной странице патчноутов ---------- */
+            .rbbp-patch-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .rbbp-patch-list li {
+                margin-bottom: 10px;
+            }
+
+            .rbbp-patch-list a {
+                display: flex;
+                align-items: baseline;
+                gap: 12px;
+                padding: 16px 20px;
+                background: rgba(222, 184, 135, 0.05);
+                border: 1px solid #3a3222;
+                text-decoration: none;
+                transition:
+                    background-color 0.15s ease,
+                    border-color 0.15s ease;
+            }
+
+            .rbbp-patch-list a:hover {
+                background: rgba(222, 184, 135, 0.12);
+                border-color: #deb887;
+            }
+
+            .rbbp-patch-version {
+                font-family: "Decorative", sans-serif;
+                font-size: 21px;
+                color: #deb887;
+            }
+
+            .rbbp-patch-date {
+                font-family: "Regular", sans-serif;
+                font-size: 14px;
+                color: #a79c7d;
+            }
+
+            .rbbp-patch-badge {
+                margin-left: auto;
+                font-family: "Regular", sans-serif;
+                font-size: 11px;
+                color: #8a7a4f;
+                white-space: nowrap;
+            }
+
+            .rbbp-patch-empty {
+                color: #a79c7d;
+                font-size: 14px;
             }
 
             .rbbp-notice {
@@ -284,32 +339,127 @@
 
         <script src="/rbbp/Data/Init.js"></script>
         <script>
+            // Страница работает в двух режимах в зависимости от query-параметра
+            // ?version= : без него - список всех патчей со ссылками (главная страница
+            // патчноутов), с ним - содержимое одного конкретного патча (TOC + текст,
+            // как раньше была устроена единственная страница целиком).
             async function HandlePage() {
                 const lang = (typeof languageSelect !== "undefined" && languageSelect.value) || "RU";
-                const article = document.getElementById("rbbpContent");
-                const notice = document.getElementById("rbbpNotice");
+                const version = new URLSearchParams(location.search).get("version");
 
-                let data = null;
-                let usedFallback = false;
+                const patches = await LoadRbbpPatches(lang);
 
+                if (!version) {
+                    RenderRbbpPatchIndex(patches, lang);
+                    return;
+                }
+
+                const patch = patches.find((p) => p.version === version);
+                if (!patch) {
+                    RenderRbbpPatchNotFound(version, lang);
+                    return;
+                }
+                await RenderRbbpPatchDetail(patch, lang);
+            }
+
+            // Грузит Data/RU/RBBPPatchNotes.json и Data/<lang>/RBBPPatchNotes.json и
+            // сливает их ПО НОМЕРУ ПАТЧА (не по файлу целиком, как в старой
+            // однопатчевой версии страницы) - так патч, ещё не переведённый на
+            // выбранный язык, всё равно появляется в списке и открывается с
+            // RU-содержимым и пометкой "не переведено", а не пропадает совсем или не
+            // ломает показ уже переведённых патчей рядом с ним.
+            async function LoadRbbpPatches(lang) {
+                const ruData = await fetch("/rbbp/Data/RU/RBBPPatchNotes.json").then((r) => r.json());
+                let langData = null;
                 if (lang !== "RU") {
                     try {
                         const res = await fetch("/rbbp/Data/" + lang + "/RBBPPatchNotes.json");
-                        if (res.ok) {
-                            data = await res.json();
-                        }
+                        if (res.ok) langData = await res.json();
                     } catch (e) {
-                        // нет перевода для этого языка - используем RU как запасной вариант
+                        // файла перевода для этого языка нет вообще - ничего страшного,
+                        // ниже все патчи просто попадут в список как непереведённые
                     }
                 }
 
-                if (!data) {
-                    const res = await fetch("/rbbp/Data/RU/RBBPPatchNotes.json");
-                    data = await res.json();
-                    usedFallback = lang !== "RU";
+                const ruByVersion = new Map((ruData.patches || []).map((p) => [p.version, p]));
+                const langByVersion = new Map(
+                    langData && langData.patches ? langData.patches.map((p) => [p.version, p]) : []
+                );
+                const allVersions = new Set([...ruByVersion.keys(), ...langByVersion.keys()]);
+
+                const merged = [];
+                for (const v of allVersions) {
+                    const langPatch = langByVersion.get(v);
+                    const ruPatch = ruByVersion.get(v);
+                    const translated = lang === "RU" || !!langPatch;
+                    const source = translated ? langPatch || ruPatch : ruPatch;
+                    merged.push({ version: v, date: source.date, html: source.html, translated });
+                }
+                merged.sort((a, b) => b.date.localeCompare(a.date));
+                return merged;
+            }
+
+            function FormatRbbpDate(isoDate) {
+                const [y, m, d] = isoDate.split("-");
+                return d + "." + m + "." + y;
+            }
+
+            function RenderRbbpPatchIndex(patches, lang) {
+                ApplyRbbpUiStrings(lang, { mode: "index" });
+                document.getElementById("rbbpToc").style.display = "none";
+                document.getElementById("rbbpNotice").style.display = "none";
+                document.title = "Age of Wonders 4 RbbP - RBBP Patch Notes";
+
+                const article = document.getElementById("rbbpContent");
+                const strings = RBBP_UI_STRINGS[lang] || RBBP_UI_STRINGS.RU;
+
+                if (patches.length === 0) {
+                    const p = document.createElement("p");
+                    p.className = "rbbp-patch-empty";
+                    p.textContent = strings.empty;
+                    article.innerHTML = "";
+                    article.appendChild(p);
+                    return;
                 }
 
-                if (usedFallback) {
+                const list = document.createElement("ul");
+                list.className = "rbbp-patch-list";
+                for (const p of patches) {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+                    a.href = "/rbbp/HTML/RBBPPatchNotes.html?version=" + encodeURIComponent(p.version);
+
+                    const version = document.createElement("span");
+                    version.className = "rbbp-patch-version";
+                    version.textContent = p.version;
+
+                    const date = document.createElement("span");
+                    date.className = "rbbp-patch-date";
+                    date.textContent = "(" + FormatRbbpDate(p.date) + ")";
+
+                    a.appendChild(version);
+                    a.appendChild(date);
+
+                    if (!p.translated) {
+                        const badge = document.createElement("span");
+                        badge.className = "rbbp-patch-badge";
+                        badge.textContent = strings.notTranslatedBadge;
+                        a.appendChild(badge);
+                    }
+
+                    li.appendChild(a);
+                    list.appendChild(li);
+                }
+                article.innerHTML = "";
+                article.appendChild(list);
+            }
+
+            async function RenderRbbpPatchDetail(patch, lang) {
+                const article = document.getElementById("rbbpContent");
+                const notice = document.getElementById("rbbpNotice");
+                document.getElementById("rbbpToc").style.display = "";
+
+                if (!patch.translated) {
                     notice.style.display = "block";
                     notice.innerHTML =
                         "This page hasn't been translated to English yet. Showing the Russian version below.";
@@ -317,20 +467,20 @@
                     notice.style.display = "none";
                 }
 
-                let html = data.html;
+                let html = patch.html;
                 // сайтовая AddTagIconsForStatusEffects() тут НЕ используется: она матчит
                 // способности/эффекты по голым RU-подстрокам без учёта контекста предложения
-                // (см. ниже LinkRbbpEntitiesByEnglishName - её place заняла более точная система)
+                // (см. ниже LinkRbbpEntitiesByEnglishName - её место заняла более точная система)
                 html = RbbpTagResourceIcons(html);
 
-                // содержимое страницы может быть на RU или EN в зависимости от того, какой
-                // JSON реально загрузился (см. usedFallback выше), а глобальный переключатель
-                // языка сайта у первого визита - EN и может не совпадать с этим, поэтому для
-                // связывания сущностей нельзя полагаться на jsonTomesLocalized/jsonFactionCreation
-                // "как есть" - они следуют ЗА глобальным переключателем, а не за языком этой статьи
-                const contentLang = usedFallback ? "RU" : lang;
+                // контент конкретного патча может быть на RU или EN в зависимости от того,
+                // нашёлся ли перевод (см. patch.translated выше), а глобальный переключатель
+                // языка сайта может не совпадать с этим, поэтому для связывания сущностей
+                // нельзя полагаться на jsonTomesLocalized/jsonFactionCreation "как есть" -
+                // они следуют ЗА глобальным переключателем, а не за языком этой статьи
+                const contentLang = patch.translated ? lang : "RU";
                 window.__rbbpContentLang = contentLang;
-                ApplyRbbpUiStrings(contentLang);
+                ApplyRbbpUiStrings(contentLang, { mode: "detail", version: patch.version, date: patch.date });
                 const entityIndex = await BuildRbbpEntityIndexByEnglishName(contentLang);
                 html = LinkRbbpEntitiesByEnglishName(html, entityIndex, contentLang);
 
@@ -342,30 +492,81 @@
                 AttachRbbpEntityTooltips(article, entityIndex);
 
                 BuildRbbpToc(article);
+
+                document.title = "Age of Wonders 4 RbbP - Patch " + patch.version;
+            }
+
+            function RenderRbbpPatchNotFound(version, lang) {
+                document.getElementById("rbbpToc").style.display = "none";
+                document.getElementById("rbbpNotice").style.display = "none";
+                ApplyRbbpUiStrings(lang, { mode: "index" });
+
+                const article = document.getElementById("rbbpContent");
+                article.innerHTML = "";
+
+                const p1 = document.createElement("p");
+                p1.textContent =
+                    lang === "RU" ? 'Патч "' + version + '" не найден.' : 'Patch "' + version + '" not found.';
+                const p2 = document.createElement("p");
+                const a = document.createElement("a");
+                a.className = "rbbp-backlink";
+                a.href = "/rbbp/HTML/RBBPPatchNotes.html";
+                a.textContent = (RBBP_UI_STRINGS[lang] || RBBP_UI_STRINGS.RU).backToList;
+                p2.appendChild(a);
+
+                article.appendChild(p1);
+                article.appendChild(p2);
             }
 
             // ---------- локализация статичной "рамки" страницы (не JSON-контента) ----------
             const RBBP_UI_STRINGS = {
                 RU: {
                     tocTitle: "Содержание",
-                    subtitle: "История изменений мода RbbP по релизам",
-                    backLink: "← Назад к основному руководству RBBP"
+                    indexSubtitle: "История изменений мода RbbP по релизам",
+                    detailSubtitlePrefix: "Патч ",
+                    backToList: "← Ко всем патчам",
+                    backToGuide: "← Назад к основному руководству RBBP",
+                    notTranslatedBadge: "не переведено",
+                    empty: "Патчноуты пока не опубликованы."
                 },
                 EN: {
                     tocTitle: "Contents",
-                    subtitle: "RbbP mod changelog by release",
-                    backLink: "← Back to the main RBBP guide"
+                    indexSubtitle: "RbbP mod changelog by release",
+                    detailSubtitlePrefix: "Patch ",
+                    backToList: "← All patches",
+                    backToGuide: "← Back to the main RBBP guide",
+                    notTranslatedBadge: "not translated",
+                    empty: "No patch notes published yet."
                 }
             };
 
-            function ApplyRbbpUiStrings(contentLang) {
-                const strings = RBBP_UI_STRINGS[contentLang] || RBBP_UI_STRINGS.RU;
+            function ApplyRbbpUiStrings(chromeLang, view) {
+                const strings = RBBP_UI_STRINGS[chromeLang] || RBBP_UI_STRINGS.RU;
                 const tocTitle = document.querySelector(".rbbp-toc-title");
-                const subtitle = document.querySelector(".rbbp-subtitle");
-                const backLink = document.querySelector(".rbbp-backlink");
                 if (tocTitle) tocTitle.textContent = strings.tocTitle;
-                if (subtitle) subtitle.textContent = strings.subtitle;
-                if (backLink) backLink.textContent = strings.backLink;
+
+                const subtitle = document.getElementById("rbbpSubtitle");
+                const backlinks = document.getElementById("rbbpBacklinks");
+                if (!subtitle || !backlinks) return;
+
+                backlinks.innerHTML = "";
+                const toGuide = document.createElement("a");
+                toGuide.className = "rbbp-backlink";
+                toGuide.href = "/rbbp/HTML/RBBP.html";
+                toGuide.textContent = strings.backToGuide;
+
+                if (view.mode === "detail") {
+                    subtitle.textContent = strings.detailSubtitlePrefix + view.version + " (" + FormatRbbpDate(view.date) + ")";
+                    const toList = document.createElement("a");
+                    toList.className = "rbbp-backlink";
+                    toList.href = "/rbbp/HTML/RBBPPatchNotes.html";
+                    toList.textContent = strings.backToList;
+                    backlinks.appendChild(toList);
+                    backlinks.appendChild(toGuide);
+                } else {
+                    subtitle.textContent = strings.indexSubtitle;
+                    backlinks.appendChild(toGuide);
+                }
             }
 
             // ---------- иконки ресурсов рядом с числами (10 золота -> 10 <gold> золота) ----------
@@ -477,7 +678,9 @@
                     empireEN,
                     empireLoc,
                     heroSkillsEN,
-                    heroSkillsLoc
+                    heroSkillsLoc,
+                    traitsEN,
+                    traitsLoc
                 ] = await Promise.all([
                         fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
@@ -492,7 +695,9 @@
                         fetch(`/rbbp/Data/EN/EmpireProgression.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/EmpireProgression.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/HeroSkills.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json())
+                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/Traits.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json())
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -613,6 +818,30 @@
                         icon: `/rbbp/Icons/UnitIcons/${skill.icon}.png`,
                         obj: skill,
                         loc: heroSkillsLocByResid.get(skill.resid)
+                    });
+                }
+
+                // Traits.json, type "form" (Особенности облика / Form Traits, напр.
+                // Obsidian Wyvern Mounts) - страница FactionCreation.html?type=Form%20Trait
+                // читает их из этого же файла под именем jsonFactionCreation2 (см.
+                // Data/src/dataloader.js - имя переменной вводит в заблуждение, это НЕ
+                // Data/GEN/FactionCreation.json). Как и EmpireProgression.json/
+                // Governance.json, поля resid тут нет вообще - сопоставление EN/RU
+                // позиционное (проверено: icon и point_cost совпадают попарно на всех
+                // 71 записях, порядок идентичен; все 71 icon уникальны, ни одного
+                // повторяющегося кода - в отличие от HeroSkills.json выше, здесь коллизий
+                // как у "Vigor" можно не опасаться). Иконка - Icons/TraitIcons/{icon}.png
+                // (проверено файловой системой, все 71 файла на месте).
+                const traitsFormEN = traitsEN.filter((t) => t.type === "form");
+                const traitsFormLoc = traitsLoc.filter((t) => t.type === "form");
+                for (let i = 0; i < traitsFormEN.length; i++) {
+                    const trait = traitsFormEN[i];
+                    if (!trait.icon) continue;
+                    add(trait.name, {
+                        type: "trait",
+                        icon: `/rbbp/Icons/TraitIcons/${trait.icon}.png`,
+                        obj: trait,
+                        loc: traitsFormLoc[i]
                     });
                 }
 
@@ -862,8 +1091,8 @@
                     <img src="/rbbp/Icons/Interface/rbbp_emblem.png" alt="RBBP" />
                     <div>
                         <div class="rbbp-title">RbbP Patch Notes</div>
-                        <div class="rbbp-subtitle">История изменений мода RbbP по релизам</div>
-                        <a class="rbbp-backlink" href="/rbbp/HTML/RBBP.html">&larr; Назад к основному руководству RBBP</a>
+                        <div class="rbbp-subtitle" id="rbbpSubtitle">История изменений мода RbbP по релизам</div>
+                        <div id="rbbpBacklinks"></div>
                     </div>
                 </div>
 
