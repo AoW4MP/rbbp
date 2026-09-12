@@ -1834,7 +1834,7 @@ Thorn Heart
 
 # Form Traits
 
-## Inner Radiance
+## {{Inner Radiance}}
 
 - Reduced cost 2 -> 1 point
 
@@ -1842,7 +1842,7 @@ Thorn Heart
 
 - Removed the retaliation damage effect against attackers
 
-## Inner Lightning
+## {{Inner Lightning}}
 
 - Reduced resistance bonus +3 -> +2 [lightningresist]
 
@@ -1854,7 +1854,7 @@ Thorn Heart
 
   - Melee attackers have a base 60% chance to gain the Electrified effect
 
-## Inner Frost
+## {{Inner Frost}}
 
 - Reduced cost 2 -> 1 point
 
@@ -1862,7 +1862,7 @@ Thorn Heart
 
 - Removed the retaliation damage effect against attackers
 
-## Inner Fire
+## {{Inner Fire}}
 
 - Reduced resistance bonus +3 -> +2 [fireresist]
 
@@ -1874,11 +1874,11 @@ Thorn Heart
 
   - Melee attackers have a base 60% chance to gain the Burning effect
 
-## Coward
+## {{Coward}}
 
 - Reduced cost -1 -> -2 points
 
-## Death Beetle Mounts
+## {{Death Beetle Mounts}}
 
 - Active ability - {{Pestilent Escape}} for faction riders
 
@@ -1892,79 +1892,79 @@ Thorn Heart
 
   - Weakened is now guaranteed to apply
 
-## Shrieking Bat Mounts
+## {{Shrieking Bat Mounts}}
 
 - Added property
 
   - Can now hire {{Shrieking Bat}} T2 in cities
 
-## Griffon Mounts
+## {{Griffon Mounts}}
 
 - Added property
 
   - Can now hire {{Griffon}} T2 in cities
 
-## Celestial Griffon Mounts
+## {{Celestial Griffon Mounts}}
 
 - Added property
 
   - Can now hire {{Celestial Griffon}} T2 in cities
 
-## Eagle Mounts
+## {{Eagle Mounts}}
 
 - Added property
 
   - Can now hire {{Grimbeak Crow}} T1 in cities
 
-## Fractured Eagle Mount
+## {{Fractured Eagle Mount}}
 
 - Added property
 
   - Can now hire {{Spirit Hawk}} T1 in cities
 
-## Nightmare Mount
+## {{Nightmare Mounts}}
 
 - Added property
 
   - Can now hire {{Nightmare}} T3 in cities
 
-## Unicorn Mount
+## {{Unicorn Mounts}}
 
 - Added property
 
   - Can now hire {{Unicorn}} T3 in cities
 
-## White Wolf Mounts
+## {{White Wolf Mounts}}
 
 - Added property
 
   - Can now hire {{Warg}} T2 in cities
 
-## Elephant Mounts
+## {{Elephant Mounts}}
 
 - Added property
 
   - Can now hire {{Elephant}} T2 in cities
 
-## Mammoth Mounts
+## {{Mammoth Mounts}}
 
 - Added property
 
   - Can now hire {{Mammoth}} T3 in cities
 
-## Blessed Dragon Mounts
+## {{Blessed Dragon Mounts}}
 
 - Added property
 
   - Can now hire {{Blessed Dragon}} T2 in cities
 
-## Pegasus Mounts
+## {{Pegasus Mounts}}
 
 - Added property
 
   - Can now hire {{Spirit Hawk}} T1 in cities
 
-## Chariot Mounts
+## {{Chariot Mounts}}
 
 - Removed property
 

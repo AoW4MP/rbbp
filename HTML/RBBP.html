@@ -487,7 +487,9 @@
                     empireEN,
                     empireLoc,
                     heroSkillsEN,
-                    heroSkillsLoc
+                    heroSkillsLoc,
+                    traitsEN,
+                    traitsLoc
                 ] = await Promise.all([
                         fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
@@ -502,7 +504,9 @@
                         fetch(`/rbbp/Data/EN/EmpireProgression.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/EmpireProgression.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/HeroSkills.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json())
+                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/Traits.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json())
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -623,6 +627,30 @@
                         icon: `/rbbp/Icons/UnitIcons/${skill.icon}.png`,
                         obj: skill,
                         loc: heroSkillsLocByResid.get(skill.resid)
+                    });
+                }
+
+                // Traits.json, type "form" (Особенности облика / Form Traits, напр.
+                // Obsidian Wyvern Mounts) - страница FactionCreation.html?type=Form%20Trait
+                // читает их из этого же файла под именем jsonFactionCreation2 (см.
+                // Data/src/dataloader.js - имя переменной вводит в заблуждение, это НЕ
+                // Data/GEN/FactionCreation.json). Как и EmpireProgression.json/
+                // Governance.json, поля resid тут нет вообще - сопоставление EN/RU
+                // позиционное (проверено: icon и point_cost совпадают попарно на всех
+                // 71 записях, порядок идентичен; все 71 icon уникальны, ни одного
+                // повторяющегося кода - в отличие от HeroSkills.json выше, здесь коллизий
+                // как у "Vigor" можно не опасаться). Иконка - Icons/TraitIcons/{icon}.png
+                // (проверено файловой системой, все 71 файла на месте).
+                const traitsFormEN = traitsEN.filter((t) => t.type === "form");
+                const traitsFormLoc = traitsLoc.filter((t) => t.type === "form");
+                for (let i = 0; i < traitsFormEN.length; i++) {
+                    const trait = traitsFormEN[i];
+                    if (!trait.icon) continue;
+                    add(trait.name, {
+                        type: "trait",
+                        icon: `/rbbp/Icons/TraitIcons/${trait.icon}.png`,
+                        obj: trait,
+                        loc: traitsFormLoc[i]
                     });
                 }
 

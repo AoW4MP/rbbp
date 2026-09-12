@@ -1,5 +1,3 @@
-**1.7.7**
-
 # Strategic map
 
 ## Magic Materials
