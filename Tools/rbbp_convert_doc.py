@@ -56,6 +56,19 @@ INLINE_TAG_CODES = {
     # прочее
     "turn": "turn", "relation": "goodrelation", "hp": "hp", "range": "range",
     "accuracy": "accuracy", "xp": "xp", "temphp": "temphp", "regeneration": "regeneration",
+    # сопротивления конкретным типам урона (Style/icons.css, defenseX-теги) - не
+    # путать с обычным "resistance" (общий щит) выше
+    "fireresist": "defensefire", "coldresist": "defensefrost",
+    "lightningresist": "defenselightning", "poisonresist": "defenseblight",
+    "spiritresist": "defensespirit", "physicalresist": "defensephysical",
+    # приверженности (Affinity) - "плоский" вариант без круглой рамки (Inv-файлы),
+    # тег для astral/materium в CSS называется иначе (arcana/matter), чем сам код
+    "chaos": "chaos", "nature": "nature", "astral": "arcana", "shadow": "shadow",
+    "materium": "matter", "order": "order",
+    # дипломатическая валюта свободных городов
+    "whisperingstone": "whisperingstone",
+    # статус-эффект (не отдельный "ресурс" морали - в игре это Demoralized)
+    "demoralized": "demoralized",
 }
 
 # ---------- полноразмерные "портретные" иконки (правители/классы/губернаторы/ ----------
@@ -165,6 +178,21 @@ PORTRAIT_CODES = {
     "explorer": "/rbbp/Icons/AmbitionIcons/000004AC00000067.png",
     "seneschal": "/rbbp/Icons/AmbitionIcons/000004AC00000066.png",  # EN: Steward
     "conqueror": "/rbbp/Icons/AmbitionIcons/000004AC00000065.png",
+    # магические ресурсы (Data/GEN/WorldStructures.json, type in plant/liquid/ore/
+    # void_stones) - нет поля icon в данных, но файлы реально есть на диске под id
+    # самого ресурса (тот же паттерн, что и субкультуры Architects/Cult выше) -
+    # Icons/WorldStructures/{id}.png, используется Data/Builder.js:5042
+    "fireforgestone": "/rbbp/Icons/WorldStructures/fireforge_stone.png",
+    "bloodglass": "/rbbp/Icons/WorldStructures/blood_glass.png",
+    "focuscrystals": "/rbbp/Icons/WorldStructures/focus_crystals.png",
+    "arcaniumore": "/rbbp/Icons/WorldStructures/arcanium_ore.png",
+    "rainbowclover": "/rbbp/Icons/WorldStructures/rainbow_clover.png",
+    "silvertonguefruit": "/rbbp/Icons/WorldStructures/silvertongue_fruit.png",
+    "hasteberries": "/rbbp/Icons/WorldStructures/haste_berries.png",
+    "tranquilitypool": "/rbbp/Icons/WorldStructures/tranquility_pool.png",
+    "astraldew": "/rbbp/Icons/WorldStructures/astral_dew.png",
+    "archonblood": "/rbbp/Icons/WorldStructures/archon_blood.png",
+    "voidstones": "/rbbp/Icons/WorldStructures/void_stones.png",
 }
 
 CODE_RE = re.compile(r"\[([a-zA-Z]+)\]")

@@ -266,18 +266,6 @@
                 margin-right: 8px;
             }
 
-            .rbbp-toc .rbbp-toc-subsub {
-                list-style: none;
-                margin: 0 0 2px 0;
-                padding: 0;
-            }
-
-            .rbbp-toc .rbbp-toc-subsub a {
-                font-size: 11px;
-                padding-left: 34px;
-                color: #85806c;
-            }
-
             @media (max-width: 900px) {
                 .rbbp-page {
                     flex-direction: column;
@@ -807,7 +795,11 @@
 
             function BuildRbbpToc(article) {
                 const tocRoot = document.getElementById("rbbpToc");
-                const headings = article.querySelectorAll("h2, h3, h4");
+                // Оглавление - двухуровневое (h2 -> h3), h4 в него сознательно не
+                // включаем - в длинных разделах (напр. "Культуры") h4 даёт слишком
+                // мелкую, третью вложенность и превращает панель в нечитаемую простыню.
+                // Сами h4-заголовки на странице остаются, просто не дублируются в TOC.
+                const headings = article.querySelectorAll("h2, h3");
                 if (headings.length === 0) {
                     tocRoot.style.display = "none";
                     return;
@@ -815,7 +807,6 @@
 
                 const list = document.createElement("ul");
                 let currentH2Sub = null;
-                let currentH3Sub = null;
 
                 headings.forEach((h, idx) => {
                     if (!h.id) h.id = "rbbp-sec-" + idx;
@@ -836,24 +827,19 @@
                         currentH2Sub.className = "rbbp-toc-sub";
                         li.appendChild(currentH2Sub);
                         list.appendChild(li);
-                        currentH3Sub = null;
                     } else if (h.tagName === "H3" && currentH2Sub) {
                         const subLi = document.createElement("li");
                         subLi.appendChild(link);
-                        currentH3Sub = document.createElement("ul");
-                        currentH3Sub.className = "rbbp-toc-subsub";
-                        subLi.appendChild(currentH3Sub);
                         currentH2Sub.appendChild(subLi);
-                    } else if (h.tagName === "H4" && (currentH3Sub || currentH2Sub)) {
-                        const subSubLi = document.createElement("li");
-                        subSubLi.appendChild(link);
-                        (currentH3Sub || currentH2Sub).appendChild(subSubLi);
                     }
                 });
 
                 tocRoot.appendChild(list);
 
-                // подсветка текущего раздела при прокрутке
+                // подсветка текущего раздела при прокрутке - следим только за
+                // заголовками, попавшими в TOC (h2/h3); пока читатель листает h4-
+                // подпункты внутри раздела, родительский h3 остаётся подсвеченным -
+                // это и есть корректное поведение для двухуровневого меню
                 const allLinks = Array.from(tocRoot.querySelectorAll("a"));
                 const observer = new IntersectionObserver(
                     (entries) => {
