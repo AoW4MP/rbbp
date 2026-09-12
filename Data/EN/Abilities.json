@@ -1615,9 +1615,9 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Caster moves to target hex.",
-  "name": "Greater Phase",
-  "slug": "greater_phase_ability_000004C500000F71",
+  "description": "Caster moves to target hex. Leaves 1 <hyperlink>Action Point</hyperlink>.",
+  "name": "Phase",
+  "slug": "phase_ability_000004C500000F71",
   "damage": "",
   "requisites": [
    {
@@ -1628,7 +1628,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<freeaction></freeaction>",
+  "actionPoints": "<fullactioncontinue></fullactioncontinue>",
   "range": "6",
   "icon": "000003E3000045B1"
  },
@@ -1987,7 +1987,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target friendly unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Loses all <hyperlink>Negative Status Effects</hyperlink>.</bullet><bullet>If the target is a non-<hyperlink>Hero</hyperlink>: Teleports to an adjacent space.</bullet></bulletlist>",
@@ -2077,7 +2077,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target friendly unit:<bulletlist><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Loses all <hyperlink>Negative Status Effects</hyperlink>.</bullet><bullet>If the target is a non-<hyperlink>Hero</hyperlink>: Teleports to an adjacent space.</bullet></bulletlist>",
@@ -3010,10 +3010,10 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Heals for 50 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Heals for 50 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Has all Negative Status Effects removed.</bullet></bulletlist>",
   "name": "Heal",
   "slug": "light_heal_ability_000004C0000004F3",
   "damage": "",
@@ -4383,7 +4383,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "3",
   "icon": "00000497000037A7"
  },
@@ -8729,7 +8729,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Move 2 hexes forward. Enemies in the way sustain damage.",
+  "description": "Move 4 hexes forward. Enemies in the way sustain damage.",
   "name": "Bulldoze",
   "slug": "bulldoze_ability_0000049000000EA6_0000049700000fb8",
   "damage": "10<damagephysical></damagephysical> ",
@@ -11363,7 +11363,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
@@ -11454,7 +11454,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
@@ -11539,7 +11539,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
@@ -11624,7 +11624,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
@@ -11709,7 +11709,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
@@ -11794,7 +11794,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
@@ -11879,7 +11879,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>For each Primal Fury the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
@@ -29941,8 +29941,8 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
   "icon": "000004C00000066D"
  },
  {
@@ -50038,7 +50038,7 @@
   "icon": "000003E3000049ED"
  },
  {
-  "description": "<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink> and +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +10% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +20% <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Stacks up to 3 times.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink> and +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +20% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +20% <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Stacks up to 3 times.</bullet></bulletlist>",
   "name": "Looted Power",
   "slug": "0000048d00001cac",
   "icon": "0000048D00001CD3"
@@ -50324,7 +50324,7 @@
   "icon": "0000049700000A62"
  },
  {
-  "description": "+30% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> to attacks.<br></br><br></br>True Strike <hyperlink>counters</hyperlink> Blind.",
+  "description": "+50% <hyperlink><accuracy></accuracy> Accuracy</hyperlink> to attacks.<br></br><br></br>True Strike <hyperlink>counters</hyperlink> Blind.",
   "name": "True Strike",
   "slug": "0000041300000cfa",
   "icon": "0000041300000CFC"
@@ -50581,7 +50581,7 @@
   "icon": "0000049700000146"
  },
  {
-  "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink>, <hyperlink>Missile</hyperlink>, and <hyperlink>Magic</hyperlink> attacks targeting this unit suffer -15% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet>Can stack up to 3 times.</bullet></bulletlist><br></br><br></br>Clinging Mist <hyperlink>counters</hyperlink> Marked",
+  "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink>, <hyperlink>Missile</hyperlink>, and <hyperlink>Magic</hyperlink> attacks targeting this unit suffer -10% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet>Can stack up to 3 times.</bullet></bulletlist><br></br><br></br>Clinging Mist <hyperlink>counters</hyperlink> Marked",
   "name": "Clinging Mist",
   "slug": "0000049700000553",
   "icon": "0000049700000554"
@@ -51037,7 +51037,7 @@
   "icon": "0000042A000004CD"
  },
  {
-  "description": "<bulletlist><bullet>-1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Stacks up to 10 times.</bullet></bulletlist><br></br><br></br>Sundered Resistance <hyperlink>counters</hyperlink> Bolstered Resistance.",
+  "description": "<bulletlist><bullet>-1<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br></br><br></br>Sundered Resistance <hyperlink>counters</hyperlink> Bolstered Resistance.",
   "name": "Sundered Resistance",
   "slug": "000003e100001403",
   "icon": "000003E100001407"
