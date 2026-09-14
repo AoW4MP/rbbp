@@ -2052,7 +2052,7 @@
 
 - Бонус к [xp] не применяется к героям.
 
-## [affinitychaos] Социальные особенности Хаоса (Chaos Society Traits)
+## [affinitychaos] Хаос (Chaos)
 
 ### Идейные каннибалы (Ritual Cannibals)
 

@@ -298,6 +298,7 @@
             .rbbp-entity-icon {
                 width: 32px;
                 height: 32px;
+                object-fit: contain;
                 vertical-align: -8px;
                 margin-right: 4px;
             }
@@ -305,6 +306,7 @@
             .rbbp-inline-icon {
                 width: 52px;
                 height: 52px;
+                object-fit: contain;
                 vertical-align: -14px;
                 margin-right: 8px;
             }
@@ -317,6 +319,7 @@
             #rbbpContent h4 .rbbp-entity-icon {
                 width: 52px;
                 height: 52px;
+                object-fit: contain;
                 vertical-align: -14px;
                 margin-right: 8px;
             }
@@ -485,6 +488,7 @@
                 html = LinkRbbpEntitiesByEnglishName(html, entityIndex, contentLang);
 
                 article.innerHTML = html;
+                MoveRbbpHeadingIconsToFront(article);
 
                 if (typeof HandleExtraTooltips === "function") {
                     HandleExtraTooltips(article);
@@ -494,6 +498,26 @@
                 BuildRbbpToc(article);
 
                 document.title = "Age of Wonders 4 RbbP - Patch " + patch.version;
+            }
+
+            // Автосвязывание (см. LinkRbbpEntitiesByEnglishName ниже) вставляет иконку
+            // ровно там, где стоит "(EnglishName)"/{{EnglishName}} в исходном тексте - для
+            // заголовков вида "## Аскеты трансформации (Transformation Ascetics)" это
+            // означает, что иконка оказывается ПОСЛЕ русского названия, а не в самом начале
+            // заголовка, как у [код]-заголовков (Cultures/Classes/...). Простой строковый
+            // regex-фикс на этапе LinkRbbpEntitiesByEnglishName ненадёжен (надо было бы
+            // парсить HTML заголовка внутри regex-колбэка) - проще один раз пройтись по уже
+            // отрендеренному DOM и перенести найденную иконку в начало. [код]-заголовки не
+            // трогаем - они и так защищены от автосвязывания (см. rbbp-inline-icon в
+            // LinkRbbpEntitiesByEnglishName), их первым ребёнком всегда стоит .rbbp-inline-icon,
+            // а .rbbp-entity-icon внутри них попросту не будет найден.
+            function MoveRbbpHeadingIconsToFront(article) {
+                const headings = article.querySelectorAll("h2, h3, h4");
+                headings.forEach((h) => {
+                    const icon = h.querySelector("img.rbbp-entity-icon");
+                    if (!icon || h.firstChild === icon) return;
+                    h.insertBefore(icon, h.firstChild);
+                });
             }
 
             function RenderRbbpPatchNotFound(version, lang) {
@@ -665,7 +689,14 @@
                     // отличается от Warrior/Death Knight/Spellblade) - линковка по голому
                     // имени показала бы неверную иконку для части классов, см. комментарий
                     // у индексации HeroSkills.json ниже.
-                    "Vigor"
+                    "Vigor",
+                    // "Defense" - та же ловушка, что и "Vigor": имя навыка HeroSkills.json
+                    // повторяется в 5+ классах (Warrior/Defender/Mage/Ranger/Battlesaint) с
+                    // РАЗНЫМИ иконками у каждого. Плюс это ещё и заголовок группы Form Traits
+                    // "## Защита (Defense)" - без исключения RU-скобки "(Defense)" в этом
+                    // групповом заголовке (не про конкретный трейт) ложно линковались на
+                    // случайный навык не того класса.
+                    "Defense"
                 ]);
 
                 const [
