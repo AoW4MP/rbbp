@@ -2050,7 +2050,7 @@ Completely reworked properties
 
 - [xp] bonus no longer applies to heroes.
 
-## [affinitychaos] Chaos Society Traits
+## [affinitychaos] Chaos
 
 ### {{Ritual Cannibals}}
 
