@@ -411,6 +411,10 @@
                     // просто "Glacial Megalith" без тега (see CLAUDE.md, раздел 8.2 - это
                     // касается ~100 из 349 построек, не только этой одной)
                     enName = enName.replace(/^<[a-zA-Z]+><\/[a-zA-Z]+>\s*/, "").trim();
+                    // 11 из 53 social-трейтов (Traits.json) хранят тег С ДРУГОЙ стороны имени
+                    // ("Apex Predators <evilact></evilact>") - тот же паттерн, что и выше у
+                    // построек, но суффиксом, а не префиксом (см. CLAUDE.md, раздел 8.3)
+                    enName = enName.replace(/\s*<[a-zA-Z]+><\/[a-zA-Z]+>\s*$/, "").trim();
                     if (enName.length < 3) return;
                     if (RBBP_EXCLUDED_EN_NAMES.has(enName)) return;
                     if (!index.has(enName)) index.set(enName, entry);
@@ -630,27 +634,36 @@
                     });
                 }
 
-                // Traits.json, type "form" (Особенности облика / Form Traits, напр.
-                // Obsidian Wyvern Mounts) - страница FactionCreation.html?type=Form%20Trait
-                // читает их из этого же файла под именем jsonFactionCreation2 (см.
-                // Data/src/dataloader.js - имя переменной вводит в заблуждение, это НЕ
-                // Data/GEN/FactionCreation.json). Как и EmpireProgression.json/
-                // Governance.json, поля resid тут нет вообще - сопоставление EN/RU
-                // позиционное (проверено: icon и point_cost совпадают попарно на всех
-                // 71 записях, порядок идентичен; все 71 icon уникальны, ни одного
-                // повторяющегося кода - в отличие от HeroSkills.json выше, здесь коллизий
-                // как у "Vigor" можно не опасаться). Иконка - Icons/TraitIcons/{icon}.png
-                // (проверено файловой системой, все 71 файла на месте).
-                const traitsFormEN = traitsEN.filter((t) => t.type === "form");
-                const traitsFormLoc = traitsLoc.filter((t) => t.type === "form");
-                for (let i = 0; i < traitsFormEN.length; i++) {
-                    const trait = traitsFormEN[i];
+                // Traits.json, type "form"/"society" (Особенности облика / Form Traits,
+                // напр. Obsidian Wyvern Mounts, и Социальные особенности / Social Traits,
+                // напр. Bannerlords - шесть групп по приверженности на
+                // FactionCreation.html?type=society&affinity=...) - страница
+                // FactionCreation.html читает их из этого же файла под именем
+                // jsonFactionCreation2 (см. Data/src/dataloader.js - имя переменной вводит
+                // в заблуждение, это НЕ Data/GEN/FactionCreation.json). Как и
+                // EmpireProgression.json/Governance.json, поля resid тут нет вообще -
+                // сопоставление EN/RU позиционное (проверено отдельно для каждого type:
+                // icon и point_cost совпадают попарно на всех 71 form-записях и всех 53
+                // society-записях, порядок идентичен в обоих языках, включая единственную
+                // запись без иконки "Observer" (enabled: false, служебная - стоит на той
+                // же позиции в RU)). Иконка - Icons/TraitIcons/{icon}.png (проверено
+                // файловой системой, все 71+52 файла на месте). У form ни одного
+                // повторяющегося icon-кода; у society 8 второстепенных легендарных
+                // трейтов (Cannibals/Malformed/Regenerating/Spider Worshippers/Doomed/
+                // Lucky Ones/Verminous/Chosen) делят один и тот же общий "безликий"
+                // плейсхолдер-значок без уникального арта - это не баг и не Vigor-подобная
+                // коллизия (там разные ИКОНКИ на одно ИМЯ, тут одна и та же иконка на
+                // РАЗНЫЕ уникальные имена - линковка по имени однозначна и безопасна).
+                const traitsLinkableEN = traitsEN.filter((t) => t.type === "form" || t.type === "society");
+                const traitsLinkableLoc = traitsLoc.filter((t) => t.type === "form" || t.type === "society");
+                for (let i = 0; i < traitsLinkableEN.length; i++) {
+                    const trait = traitsLinkableEN[i];
                     if (!trait.icon) continue;
                     add(trait.name, {
                         type: "trait",
                         icon: `/rbbp/Icons/TraitIcons/${trait.icon}.png`,
                         obj: trait,
-                        loc: traitsFormLoc[i]
+                        loc: traitsLinkableLoc[i]
                     });
                 }
 

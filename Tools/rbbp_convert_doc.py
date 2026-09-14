@@ -54,6 +54,10 @@ INLINE_TAG_CODES = {
     "essence": "bindingessence", "fragments": "bindingfragments", "population": "population",
     "warspoils": "warspoils", "favors": "favors", "souls": "souls",
     "embalmedsacrifice": "embalmedsacrifice", "astralecho": "astralechoes",
+    # ранг юнита (медали)
+    "rankregular": "medal_soldier", "rankveteran": "medal_veteran",
+    "rankelite": "medal_elite", "rankchampion": "medal_champion",
+    "ranklegend": "medal_legend",
     # урон и защита
     "physical": "DamagePhysical", "fire": "damagefire", "poison": "damageblight",
     "spirit": "damagespirit", "cold": "damagefrost", "lightning": "damagelightning",
@@ -202,6 +206,17 @@ PORTRAIT_CODES = {
     "astraldew": "/rbbp/Icons/WorldStructures/astral_dew.png",
     "archonblood": "/rbbp/Icons/WorldStructures/archon_blood.png",
     "voidstones": "/rbbp/Icons/WorldStructures/void_stones.png",
+    # приверженности (Affinity) - крупный вариант для заголовков подразделов
+    # Социальных особенностей (## Порядок / Хаос / ...), тот же арт, что и у
+    # мелких инлайн-кодов [order]/[chaos]/... в INLINE_TAG_CODES выше (файлы
+    # *Inv.png - не круглый вариант, см. CLAUDE.md), но отдельные коды, т.к.
+    # PORTRAIT_CODES проверяется только если код не нашёлся в INLINE_TAG_CODES
+    "affinityorder": "/rbbp/Icons/Text/orderInv.png",
+    "affinitychaos": "/rbbp/Icons/Text/chaosInv.png",
+    "affinitynature": "/rbbp/Icons/Text/natureInv.png",
+    "affinityshadow": "/rbbp/Icons/Text/shadowInv.png",
+    "affinitymaterium": "/rbbp/Icons/Text/materiumInv.png",
+    "affinityastral": "/rbbp/Icons/Text/astralInv.png",
 }
 
 CODE_RE = re.compile(r"\[([a-zA-Z]+)\]")
