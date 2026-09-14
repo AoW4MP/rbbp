@@ -715,7 +715,9 @@
                     heroSkillsEN,
                     heroSkillsLoc,
                     traitsEN,
-                    traitsLoc
+                    traitsLoc,
+                    siegeEN,
+                    siegeLoc
                 ] = await Promise.all([
                         fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
@@ -732,7 +734,9 @@
                         fetch(`/rbbp/Data/EN/HeroSkills.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/Traits.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json())
+                        fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/SiegeProjects.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/SiegeProjects.json`).then((r) => r.json())
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -886,6 +890,21 @@
                         icon: `/rbbp/Icons/TraitIcons/${trait.icon}.png`,
                         obj: trait,
                         loc: traitsLinkableLoc[i]
+                    });
+                }
+
+                // SiegeProjects.json (осадные проекты, напр. Construct Onagers) - resid есть,
+                // сопоставление EN/RU обычное (проверено: 0 из 31 записей без пары в RU по
+                // resid, имена уникальны). Иконка - Icons/SiegeProjectIcons/{icon}.png
+                // (см. showSiegeProject() в Data/Builder.js), все 31 файла на месте.
+                const siegeLocByResid = byKey(siegeLoc, "resid");
+                for (const siege of siegeEN) {
+                    if (!siege.icon) continue;
+                    add(siege.name, {
+                        type: "siege",
+                        icon: `/rbbp/Icons/SiegeProjectIcons/${siege.icon}.png`,
+                        obj: siege,
+                        loc: siegeLocByResid.get(siege.resid)
                     });
                 }
 
