@@ -62,7 +62,7 @@ INLINE_TAG_CODES = {
     "physical": "DamagePhysical", "fire": "damagefire", "poison": "damageblight",
     "spirit": "damagespirit", "cold": "damagefrost", "lightning": "damagelightning",
     "resistance": "resistance", "statuseffectresistance": "statuseffectresistance",
-    "defense": "defense",
+    "defense": "defense", "fortification": "garrison",
     # типы построек провинций
     "farm": "farm", "forester": "forester", "quarry": "quarry", "mine": "mine",
     "fishery": "fishery", "portal": "conduit", "sciencestation": "researchpost",
