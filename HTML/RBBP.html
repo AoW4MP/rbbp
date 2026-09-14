@@ -717,6 +717,36 @@
                     });
                 }
 
+                // Town Hall I-IV - культуронезависимые версии ратуши, показанные на
+                // CityTrees.html как отдельный хардкодед список (см. `extraBuildings` в
+                // HTML/CityTrees.html) - настоящие записи StructureUpgrades.json
+                // существуют только в виде культуро-специфичных вариантов ("Town Hall II:
+                // Council Deck" и т.п., см. CLAUDE.md 8.3 "Town Hall I отсутствует в
+                // данных"), поэтому голое "Town Hall II" из текста статьи никогда бы не
+                // совпало через обычный resid-индекс. id/иконка/описание продублированы
+                // из CityTrees.html (там нет резида и локализации для этих 4 записей -
+                // они всегда показываются на EN, даже при RU-языке сайта). Ссылка ведёт
+                // на CityTrees.html#id - браузер сам скроллит к узлу с таким id, отдельный
+                // deep-link механизм не нужен.
+                const RBBP_CITY_TIER_STRUCTURES = [
+                    {
+                        name: "Town Hall I",
+                        id: "town_hall_i_town_center",
+                        description: "Expand your City further and unlock more specialized City Structures"
+                    },
+                    { name: "Town Hall II", id: "town_hall_ii", description: "" },
+                    { name: "Town Hall III", id: "town_hall_iii", description: "" },
+                    { name: "Town Hall IV", id: "town_hall_iv", description: "" }
+                ];
+                for (const tier of RBBP_CITY_TIER_STRUCTURES) {
+                    add(tier.name, {
+                        type: "citytier",
+                        icon: `/rbbp/Icons/ExtraIcons/${tier.id}.png`,
+                        obj: tier,
+                        link: `/rbbp/HTML/CityTrees.html#${tier.id}`
+                    });
+                }
+
                 return index;
             }
 
@@ -818,6 +848,12 @@
                     if (entry.type === "tome") {
                         const tomeUrl = "/rbbp/HTML/Spells.html?tome=" + encodeURIComponent(entry.obj.id);
                         return '<a href="' + tomeUrl + '" style="text-decoration:none;">' + handlerSpan + "</a>";
+                    }
+
+                    // Town Hall I-IV - тоже кликабельны, ведут на CityTrees.html#id
+                    // (см. RBBP_CITY_TIER_STRUCTURES в BuildRbbpEntityIndexByEnglishName).
+                    if (entry.type === "citytier") {
+                        return '<a href="' + entry.link + '" style="text-decoration:none;">' + handlerSpan + "</a>";
                     }
 
                     return handlerSpan;

@@ -1798,7 +1798,7 @@ Thorn Heart
 
   - Removed the [xp] per [turn] bonus property
 
-  - Removed the Town Hall III dependency
+  - Removed the {{Town Hall III}} dependency
 
 ### [nomadscavengers] Nomad - Scavengers
 
@@ -2261,7 +2261,7 @@ Completely reworked properties
 
 ## City structures
 
-### Town Hall I
+### {{Town Hall I}}
 
 - Added property
 
@@ -2273,37 +2273,37 @@ Completely reworked properties
 
 ### {{Caltrop Stash}}
 
-- Removed the Town Hall II dependency
+- Removed the {{Town Hall II}} dependency
 
 ### {{Arcane Battlements}}
 
-- Removed the Town Hall II dependency
+- Removed the {{Town Hall II}} dependency
 
 ### {{Archer Battlements}}
 
-- Removed the Town Hall II dependency
+- Removed the {{Town Hall II}} dependency
 
 ### {{Stone Walls}}
 
 - Removed the [xp] per [turn] bonus property
 
-- Removed the Town Hall III dependency
+- Removed the {{Town Hall III}} dependency
 
 ### {{Ballista Towers}}
 
-- Removed the Town Hall III dependency
+- Removed the {{Town Hall III}} dependency
 
 ### {{Necrotic Spires}}
 
-- Removed the Town Hall III dependency
+- Removed the {{Town Hall III}} dependency
 
 ### {{Healing Spires}}
 
-- Removed the Town Hall III dependency
+- Removed the {{Town Hall III}} dependency
 
 ### {{Catapult Towers}}
 
-- Removed the Town Hall IV dependency
+- Removed the {{Town Hall IV}} dependency
 
 ### {{Grand Wharf}}
 
@@ -2329,7 +2329,7 @@ Completely reworked properties
 
     - (New) Passive ability - Obsidian Weaponsmith
 
-      - This warrior's Melee and Missile attacks deal +1 damage (doubled for single-target attacks)
+      - This warrior's Melee and Missile attacks deal +2 damage (doubled for single-target attacks)
 
 ### {{Stonemason}}
 
@@ -2409,7 +2409,7 @@ Completely reworked properties
 
 - Instead of additional healing, spells now remove 1 enemy negative effect.
 
-## Special province improvements
+## Province Improvement
 
 ### {{Spell Jammer}}
 
