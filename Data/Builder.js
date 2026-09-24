@@ -4027,15 +4027,16 @@ function showSiegeProject(id, showOrigin, divOrigin) {
     }
 }
 
-function showExtraTomeSkill(skill, showOrigin, divOrigin) {
+function showExtraTomeSkill(skill, showOrigin, divOrigin, skillLoc) {
+    skillLoc = skillLoc || skill;
     let upkeep = divOrigin.querySelector("#modupkeep");
 
     upkeep.innerHTML = "";
 
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = skill.name;
+    modName.innerHTML = skillLoc.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
-    let description = "<hr>" + skill.description;
+    let description = "<hr>" + skillLoc.description;
 
     let imagelink = divOrigin.querySelector("#modicon");
 
@@ -4052,15 +4053,16 @@ function showExtraTomeSkill(skill, showOrigin, divOrigin) {
     cost.innerHTML = "";
 }
 
-function showEmpireUpgrade(skill, showOrigin, divOrigin) {
+function showEmpireUpgrade(skill, showOrigin, divOrigin, skillLoc) {
+    skillLoc = skillLoc || skill;
     let upkeep = divOrigin.querySelector("#modupkeep");
 
     upkeep.innerHTML = "";
 
     let modName = divOrigin.querySelector("#modname");
-    modName.innerHTML = skill.name;
+    modName.innerHTML = skillLoc.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
-    let description = "<hr>" + skill.description;
+    let description = "<hr>" + skillLoc.description;
 
     let imagelink = divOrigin.querySelector("#modicon");
 
@@ -4071,7 +4073,7 @@ function showEmpireUpgrade(skill, showOrigin, divOrigin) {
 
     let tier = divOrigin.querySelector("#modtier");
 
-    tier.innerHTML = "<empire></empire> Empire Upgrade";
+    tier.innerHTML = "<empire></empire> " + (skillLoc !== skill ? skillLoc.type.replace(/<\/?hyperlink>/g, "") : "Empire Upgrade");
 
     let cost = divOrigin.querySelector("#modcost");
     cost.innerHTML = "";
@@ -4264,7 +4266,9 @@ function showTome(a, divOrigin) {
         callback(element);
     }
 
-    for (const skill of tomeEN.skills) {
+    for (let skillIndex = 0; skillIndex < tomeEN.skills.length; skillIndex++) {
+        const skill = tomeEN.skills[skillIndex];
+        const skillLoc = (tomeLoc.skills && tomeLoc.skills[skillIndex]) || skill;
         // this one doesnt have a slug for some reason, architect spell
         if (skill.name === "Conjure Elemental") {
             addTomeSkillCard(skillHolder, (el) => showSpell("conjure_elemental", false, el));
@@ -4274,16 +4278,16 @@ function showTome(a, divOrigin) {
             //  console.log(skill.spell_slug);
             addTomeSkillCard(skillHolder, (el) => showSpell(skill.spell_slug, false, el));
         } else if ("unit_slug" in skill) {
-            addTomeSkillCard(skillHolder, (el) => showUnitUnlock(skill, el));
+            addTomeSkillCard(skillHolder, (el) => showUnitUnlock(skill, el, skillLoc));
         } else if ("upgrade_slug" in skill) {
             addTomeSkillCard(skillHolder, (el) => showStructure(skill.upgrade_slug, false, el));
         } else if (skill.type === "<hyperlink>Empire Bonus</hyperlink>") {
-            addTomeSkillCard(skillHolder, (el) => showEmpireUpgrade(skill, false, el));
+            addTomeSkillCard(skillHolder, (el) => showEmpireUpgrade(skill, false, el, skillLoc));
         } else if (skill.type && skill.type.indexOf("Siege") !== -1) {
             addTomeSkillCard(skillHolder, (el) => showSiegeProject(skill.name, false, el));
         } else {
             // something is missing, but display anyway
-            addTomeSkillCard(skillHolder, (el) => showExtraTomeSkill(skill, false, el));
+            addTomeSkillCard(skillHolder, (el) => showExtraTomeSkill(skill, false, el, skillLoc));
         }
     }
 
@@ -5801,14 +5805,15 @@ function GetCostUnit(id) {
     return findBy(jsonUnits, "id", id)?.cost;
 }
 
-function showUnitUnlock(a, divOrigin) {
+function showUnitUnlock(a, divOrigin, aLoc) {
+    aLoc = aLoc || a;
     const unitEN = findBy(jsonUnits, "id", a.unit_slug);
     const unitLoc = findBy(jsonUnitsLocalized, "resid", unitEN.resid);
     let modName = divOrigin.querySelector("#modname");
     modName.innerHTML = unitLoc.name;
     let descriptionDiv = divOrigin.querySelector("#moddescription");
 
-    let description = "<hr>" + a.description;
+    let description = "<hr>" + aLoc.description;
 
     let imagelink = divOrigin.querySelector("#modicon");
 
@@ -5847,7 +5852,7 @@ function showUnitUnlock(a, divOrigin) {
 
     let tier = divOrigin.querySelector("#modtier");
 
-    tier.innerHTML = "<unit></unit> " + a.type;
+    tier.innerHTML = "<unit></unit> " + aLoc.type;
 
     modName.innerHTML += '<span style="color:white;font-size:15px">  Tier ' + romanize(a.tier) + "</span>";
 
