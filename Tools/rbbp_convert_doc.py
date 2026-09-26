@@ -217,6 +217,35 @@ PORTRAIT_CODES = {
     "affinityshadow": "/rbbp/Icons/Text/shadowInv.png",
     "affinitymaterium": "/rbbp/Icons/Text/materiumInv.png",
     "affinityastral": "/rbbp/Icons/Text/astralInv.png",
+    # классы и типы юнитов - те же иконки, что в меню "Воины" (Classes/Types) в
+    # HTML/header.html, файлы лежат в Icons/Interface/Header/. У "Героя" в меню
+    # такого класса нет - взят общий значок героев (HeroIcon.png).
+    "classhero": "/rbbp/Icons/Interface/Header/HeroIcon.png",
+    "classscout": "/rbbp/Icons/Interface/Header/scout_unit.png",
+    "classskirmisher": "/rbbp/Icons/Interface/Header/skirmisher_unit.png",
+    "classfighter": "/rbbp/Icons/Interface/Header/fighter_unit.png",
+    "classmagicfighter": "/rbbp/Icons/Interface/Header/magic_fighter.png",
+    "classranged": "/rbbp/Icons/Interface/Header/ranged_unit.png",
+    "classpolearm": "/rbbp/Icons/Interface/Header/polearm_unit.png",
+    "classshock": "/rbbp/Icons/Interface/Header/shock_unit.png",
+    "classshield": "/rbbp/Icons/Interface/Header/shield_unit.png",
+    "classbattlemage": "/rbbp/Icons/Interface/Header/battle_mage_unit.png",
+    "classsupport": "/rbbp/Icons/Interface/Header/support_unit.png",
+    "classmythic": "/rbbp/Icons/Interface/Header/mythic_unit.png",
+    "typefey": "/rbbp/Icons/Interface/Header/fey.png",
+    "typeanimal": "/rbbp/Icons/Interface/Header/animal.png",
+    "typefiend": "/rbbp/Icons/Interface/Header/infernal_fiend.png",
+    "typedragon": "/rbbp/Icons/Interface/Header/dragon.png",
+    "typegiant": "/rbbp/Icons/Interface/Header/large_target.png",
+    "typeelemental": "/rbbp/Icons/Interface/Header/elemental.png",
+    "typeundead": "/rbbp/Icons/Interface/Header/undead.png",
+    "typeethereal": "/rbbp/Icons/Interface/Header/ethereal.png",
+    "typeplant": "/rbbp/Icons/Interface/Header/plant.png",
+    "typecelestial": "/rbbp/Icons/Interface/Header/celestial.png",
+    "typeconstruct": "/rbbp/Icons/Interface/Header/construct.png",
+    "typeumbral": "/rbbp/Icons/Interface/Header/umbral_demon.png",
+    "typeaccursed": "/rbbp/Icons/Interface/Header/accursed_fiend.png",
+    "typetome": "/rbbp/Icons/Interface/Header/elfkin.png",
 }
 
 CODE_RE = re.compile(r"\[([a-zA-Z]+)\]")
