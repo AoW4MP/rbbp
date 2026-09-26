@@ -526,7 +526,9 @@
                     traitsEN,
                     traitsLoc,
                     siegeEN,
-                    siegeLoc
+                    siegeLoc,
+                    itemsEN,
+                    itemsLoc
                 ] = await Promise.all([
                         fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
@@ -545,7 +547,9 @@
                         fetch(`/rbbp/Data/EN/Traits.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json()),
                         fetch(`/rbbp/Data/EN/SiegeProjects.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/SiegeProjects.json`).then((r) => r.json())
+                        fetch(`/rbbp/Data/${contentLang}/SiegeProjects.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/EN/HeroItems.json`).then((r) => r.json()),
+                        fetch(`/rbbp/Data/${contentLang}/HeroItems.json`).then((r) => r.json())
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -604,17 +608,59 @@
                     // игры - для них картинка называется по EN id и лежит в SummonIcons
                     // (та же особенность, что и incorrectIconOverrideList в Builder.js)
                     const iconFolder = RBBP_SPELL_ICON_FOLDER_OVERRIDE[spell.id] || "SpellIcons";
-                    const iconPath = spell.icon
-                        ? `/rbbp/Icons/${iconFolder}/${spell.icon}.png`
-                        : spell.id
-                          ? `/rbbp/Icons/SummonIcons/${spell.id}.png`
-                          : null;
+                    // заклинания из incorrectIconOverrideList (Data/src/dataloader.js) имеют в
+                    // данных заведомо неверный icon-код - как и сам сайт (Builder.js showSpell),
+                    // берём для них картинку из SummonIcons по EN id
+                    const iconOverridden =
+                        typeof incorrectIconOverrideList !== "undefined" &&
+                        incorrectIconOverrideList.includes(spell.id);
+                    const iconPath =
+                        spell.icon && !iconOverridden
+                            ? `/rbbp/Icons/${iconFolder}/${spell.icon}.png`
+                            : spell.id
+                              ? `/rbbp/Icons/SummonIcons/${spell.id}.png`
+                              : null;
                     if (!iconPath) continue;
                     add(spell.name, {
                         type: "spell",
                         icon: iconPath,
                         obj: spell,
                         loc: spellsLocByResid.get(spell.resid)
+                    });
+                }
+
+                // Предметы героев (HeroItems.json) - ТОЛЬКО явный список имён, а не все 688
+                // записей: имена предметов массово совпадают с категориями оружия
+                // (Staff/Wand/Polearm...) и с одноимёнными способностями/трейтами, которые
+                // в тексте означают другое (Barbed Shield, Fractured Eagle Mount - это
+                // способность и трейт, не предмет). Добавляются ДО способностей, чтобы
+                // предмет "Cryptblade" выиграл у одноимённой способности. Ссылка ведёт на
+                // страницу HeroEquipment.html нужного слота (см. RBBP_ITEM_SLOT_LABEL).
+                // Чтобы добавить предмет - дописать его EN-имя сюда (имя должно быть
+                // уникальным среди HeroItems.json, проверять по данным).
+                const RBBP_ITEM_NAMES = new Set(["Cryptblade", "Druid's Staff", "Relic of Mind", "White Wolf Mount"]);
+                const RBBP_ITEM_SLOT_LABEL = {
+                    Primary: "Primary Weapon",
+                    Secondary: "Secondary Weapon",
+                    Head: "Head",
+                    Torso: "Torso",
+                    Legs: "Legs",
+                    Mount: "Mounts",
+                    Ring: "Rings",
+                    Miscellaneous: "Miscellaneous"
+                };
+                const itemsLocByResid = byKey(itemsLoc, "resid");
+                for (const item of itemsEN) {
+                    if (!item.icon || !RBBP_ITEM_NAMES.has(item.name)) continue;
+                    add(item.name, {
+                        type: "item",
+                        icon: `/rbbp/Icons/UnitIcons/${item.icon}.png`,
+                        obj: item,
+                        loc: itemsLocByResid.get(item.resid),
+                        link:
+                            "/rbbp/HTML/HeroEquipment.html?type=" +
+                            encodeURIComponent(RBBP_ITEM_SLOT_LABEL[item.slot] || item.slot) +
+                            "&"
                     });
                 }
 
@@ -765,7 +811,7 @@
             // действует одинаково для обеих веток, потому что применяется на этапе построения
             // индекса, а не самого regex.
             function BuildRbbpLinkRegex(index, contentLang) {
-                const parenPart = "\\(([A-Z][A-Za-z0-9''\\-\\s]*?)\\)";
+                const parenPart = "\\(([A-Z][A-Za-z0-9''\\-\\s:]*?)\\)";
                 if (contentLang !== "EN") {
                     return new RegExp(parenPart, "g");
                 }
@@ -852,7 +898,7 @@
 
                     // Town Hall I-IV - тоже кликабельны, ведут на CityTrees.html#id
                     // (см. RBBP_CITY_TIER_STRUCTURES в BuildRbbpEntityIndexByEnglishName).
-                    if (entry.type === "citytier") {
+                    if (entry.type === "citytier" || entry.type === "item") {
                         return '<a href="' + entry.link + '" style="text-decoration:none;">' + handlerSpan + "</a>";
                     }
 

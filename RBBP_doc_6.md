@@ -2586,7 +2586,7 @@
 
 ## Классы юнитов (Unit classes)
 
-### Герой (Hero)
+### [classhero] Герой (Hero)
 
 - Добавлена пассивная способность - Иммунитет к эффекту безумия (Insanity Immunity)
 
@@ -2594,13 +2594,13 @@
 
   - Способности Натиск (Charge) наносят -50% урона при Ответных ударах (Retaliation Attacks) и Неплановых атаках (Opportunity Attacks)
 
-### Ударный воин (Shock Units)
+### [classshock] Ударный воин (Shock Units)
 
 - Создана и добавлена пассивная способность - Натиск: Ослабленный ответный удар (Charge: Weakened Retaliation Strike)
 
   - Способности Натиск (Charge) наносят -50% урона при Ответных ударах (Retaliation Attacks) и Неплановых атаках (Opportunity Attacks)
 
-### Мифическое создание (Mythic Units)
+### [classmythic] Мифическое создание (Mythic Units)
 
 - Создана и добавлена пассивная способность - Натиск: Ослабленный ответный удар (Charge: Weakened Retaliation Strike)
 
@@ -2612,7 +2612,7 @@
 
 - Добавлена пассивная способность -- Невосприимчивость к эффекту: пленённая душа (Status Effect Immunity: Soulbound)
 
-### Конструкция (Construct)
+### [typeconstruct] Конструкция (Construct)
 
 - Добавлена пассивная способность -- Невосприимчивость к эффекту: пленённая душа (Status Effect Immunity: Soulbound)
 
@@ -2620,23 +2620,23 @@
 
   - +2 [spirit] -4 [lightning] -> +2 [spirit] -2 [lightning]
 
-### Чудовищный демон (Infernal Fiend)
+### [typefiend] Чудовищный демон (Infernal Fiend)
 
 - +2 [fire] -4 [cold] -4 [spirit] -> +4 [fire] -2 [cold] -2 [spirit]
 
-### Нежить (Undead)
+### [typeundead] Нежить (Undead)
 
 - +2 [poison] +2 [cold] -4 [spirit] -4 [fire] -> +4 [poison] +4 [cold] -4 [spirit] -4 [fire]
 
-### Ангел (Celestial)
+### [typecelestial] Ангел (Celestial)
 
 - +2 [spirit] -4 [poison] -4 [cold] -> +4 [spirit] -2 [poison] -2 [cold]
 
-### Демон мрака (Umbral Demon)
+### [typeumbral] Демон мрака (Umbral Demon)
 
 - -2 [fire] -2 [spirit] -> +2 [lightning] +2 [cold] -2 [fire] -2 [spirit]
 
-### Бесплотный (Ethereal)
+### [typeethereal] Бесплотный (Ethereal)
 
 - +2 [physical] -4 [spirit] -> +2 [physical] -2 [spirit]
 

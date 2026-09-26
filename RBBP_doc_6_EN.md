@@ -150,7 +150,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
   - {{Demon Step}}: price increased to 350[gold]
 
-  - {{White Wolf}} Mount: price reduced 200 -> 100[gold]
+  - {{White Wolf Mount}}: price reduced 200 -> 100[gold]
 
 ## Strategic resources
 
@@ -528,7 +528,7 @@ Thorn Heart
 
 - No longer considered to be of Magic Origin
 
-- Starting item Relic of Mind
+- Starting item {{Relic of Mind}}
 
   - Armor-ignoring replaced with applying 2 stacks of Sundered Defense at 90% chance
 
@@ -1416,13 +1416,13 @@ Thorn Heart
 
 ## Starting items
 
-### Relic of Mind
+### {{Relic of Mind}}
 
 - No longer grants the Defense Bypass property
 
 - Inflicts 2 stacks of {{Sundered Defense}} with a 90% chance when dealing damage
 
-### Druid's Staff
+### {{Druid's Staff}}
 
 - Active ability - {{Sap Strength}} replaced with {{Healing Sap}}
 
@@ -1432,7 +1432,7 @@ Thorn Heart
 
 - The effect no longer applies to combat summons and constructs
 
-### White Wolf Mount
+### {{White Wolf Mount}}
 
 - Reduced item tier 3 -> 2
 
@@ -2586,7 +2586,7 @@ Completely reworked properties
 
 ## Unit classes
 
-### Hero
+### [classhero] Hero
 
 - Added the passive ability - Insanity Immunity
 
@@ -2594,13 +2594,13 @@ Completely reworked properties
 
   - Charge abilities deal -50% damage on Retaliation Attacks and Opportunity Attacks
 
-### Shock Units
+### [classshock] Shock Units
 
 - Created and added the passive ability - Charge: Weakened Retaliation Strike
 
   - Charge abilities deal -50% damage on Retaliation Attacks and Opportunity Attacks
 
-### Mythic Units
+### [classmythic] Mythic Units
 
 - Created and added the passive ability - Charge: Weakened Retaliation Strike
 
@@ -2610,33 +2610,33 @@ Completely reworked properties
 
 ### Combat Summons
 
-- Added the passive ability - Status Effect Immunity: Soulbound
+- Added the passive ability - {{Status Effect Immunity: Soulbound}}
 
-### Construct
+### [typeconstruct] Construct
 
-- Added the passive ability - Status Effect Immunity: Soulbound
+- Added the passive ability - {{Status Effect Immunity: Soulbound}}
 
 - Changed damage type resistance
 
   - +2 [spirit] -4 [lightning] -> +2 [spirit] -2 [lightning]
 
-### {{Infernal Fiend}}
+### [typefiend] Infernal Fiend
 
 - +2 [fire] -4 [cold] -4 [spirit] -> +4 [fire] -2 [cold] -2 [spirit]
 
-### {{Undead}}
+### [typeundead] Undead
 
 - +2 [poison] +2 [cold] -4 [spirit] -4 [fire] -> +4 [poison] +4 [cold] -4 [spirit] -4 [fire]
 
-### {{Celestial}}
+### [typecelestial] Celestial
 
 - +2 [spirit] -4 [poison] -4 [cold] -> +4 [spirit] -2 [poison] -2 [cold]
 
-### {{Umbral Demon}}
+### [typeumbral] Umbral Demon
 
 - -2 [fire] -2 [spirit] -> +2 [lightning] +2 [cold] -2 [fire] -2 [spirit]
 
-### {{Ethereal}}
+### [typeethereal] Ethereal
 
 - +2 [physical] -4 [spirit] -> +2 [physical] -2 [spirit]
 
@@ -2856,7 +2856,7 @@ Completely reworked properties
 
 - Combat spell - {{Necrotize}}
 
-  - (Fix) The effect no longer triggers on units with the passive ability - Status Effect Immunity: Soulbound
+  - (Fix) The effect no longer triggers on units with the passive ability - {{Status Effect Immunity: Soulbound}}
 
 - Unit - {{Necromancer}} T2
 
