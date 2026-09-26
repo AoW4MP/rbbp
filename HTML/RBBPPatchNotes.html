@@ -761,6 +761,25 @@
                     });
                 }
 
+                // Бонусы империи из навыков книг (type "Empire Bonus" в Tomes.json: Skeleton
+                // Reanimation, Mentorship, Bone Dragon Reanimation и т.д., всего 6) - это не
+                // заклинания и не способности, отдельных записей в других файлах у них нет.
+                // Иконка - Icons/ExtraIcons/{имя_в_snake_case}.png (см. showEmpireUpgrade() в
+                // Data/Builder.js), RU-текст - навык с тем же индексом в RU-версии книги
+                // (массивы skills EN/RU совпадают по порядку, проверено 551/551).
+                for (const tome of tomesEN) {
+                    const tomeLocEntry = tomesLocByResid.get(tome.resid);
+                    (tome.skills || []).forEach((skill, i) => {
+                        if (skill.type !== "<hyperlink>Empire Bonus</hyperlink>") return;
+                        add(skill.name, {
+                            type: "tomeskill",
+                            icon: `/rbbp/Icons/ExtraIcons/${skill.name.replaceAll(" ", "_").toLowerCase()}.png`,
+                            obj: skill,
+                            loc: tomeLocEntry && tomeLocEntry.skills ? tomeLocEntry.skills[i] : undefined
+                        });
+                    });
+                }
+
                 const strucLocByResid = byKey(strucLoc, "resid");
                 for (const struc of strucEN) {
                     if (!struc.icon) continue;
