@@ -2822,7 +2822,7 @@ Completely reworked properties
 
 - Replaced starting skill
 
-  - {{Mark as Prey}} -> Summon Wild Animal
+  - {{Mark as Prey}} -> {{Call Wild Animal}}
 
 - Special province improvement - {{Wildlife Sanctuary}}
 
@@ -2852,7 +2852,7 @@ Completely reworked properties
 
 - Replaced starting skill
 
-  - {{Necrotize}} -> Skeleton Reanimation
+  - {{Necrotize}} -> {{Skeleton Reanimation}}
 
 - Combat spell - {{Necrotize}}
 
