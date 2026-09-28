@@ -846,7 +846,7 @@ Thorn Heart
 
   - Now once per battle
 
-  - No longer works on corpses of heroes, combat summons, siege engines, towers, or constructs
+  - No longer works on corpses of heroes, Combat Summons, {{Siegecraft}} units, {{Tower}}s, or {{Construct}}s
 
   - Corpses created by this ability no longer carry the Combat Summons tag
 
@@ -1400,7 +1400,7 @@ Thorn Heart
 
 ### Infecting
 
-- The effect no longer applies to combat summons and constructs
+- The effect no longer applies to Combat Summons and {{Construct}}s
 
 - Now requires 3 Archon Blood to unlock
 
@@ -1430,7 +1430,7 @@ Thorn Heart
 
 ### {{Cryptblade}}
 
-- The effect no longer applies to combat summons and constructs
+- The effect no longer applies to Combat Summons and {{Construct}}s
 
 ### {{White Wolf Mount}}
 
@@ -1632,7 +1632,7 @@ Thorn Heart
 
 - Faction passive ability - {{Power from Death}}
 
-  - No longer triggers on the death of: Combat Summons, Siegecraft units, Towers
+  - No longer triggers on the death of: Combat Summons, {{Siegecraft}} units, {{Tower}}s
 
   - {{Mortal Blessing}} effect
 
@@ -2128,7 +2128,7 @@ Thorn Heart
 
   - Units now get only the minimum bonus at rank 0
 
-    - +5 [hp], +1 damage to repeating attacks, +2 damage to single-target attacks
+    - +5 [hp], +1 damage to repeating attacks, +2 damage to Single Shot attacks
 
 ### {{Vigilante Knights}}
 
@@ -2192,7 +2192,7 @@ Completely reworked properties
 
 - Active ability - Corpse Eating
 
-  - No longer applies to the corpses of: Combat Summons, Constructs, Siegecraft units
+  - No longer applies to the corpses of: Combat Summons, {{Construct}}s, {{Siegecraft}} units
 
 ### {{Ruthless Raiders}}
 
@@ -2354,7 +2354,7 @@ Completely reworked properties
 
   - Passive ability - Mark of Nature
 
-    - No longer triggers on the death of: Combat Summons, Siegecraft units, Towers
+    - No longer triggers on the death of: Combat Summons, {{Siegecraft}} units, {{Tower}}s
 
 ### {{Vision of Promise}}
 
@@ -2424,7 +2424,7 @@ Completely reworked properties
 
 - Combat effect - {{Necrotic Spires}}
 
-  - Does not apply to the corpses of combat summons and constructs
+  - Does not apply to the corpses of Combat Summons and {{Construct}}s
 
 ### {{Healing Spires}}
 
@@ -2458,7 +2458,7 @@ Completely reworked properties
 
     - (New) Passive ability - Obsidian Weaponsmith
 
-      - This warrior's Melee and Missile attacks deal +2 damage (doubled for single-target attacks)
+      - This warrior's Melee and Missile attacks deal +2 damage (doubled for Single Shot attacks)
 
 ### {{Stonemason}}
 
@@ -2842,13 +2842,13 @@ Completely reworked properties
 
     - +1 -> +2 [poison] (repeating attacks)
 
-    - +2 -> +4 [poison] (single-target attacks)
+    - +2 -> +4 [poison] (Single Shot attacks)
 
   - Increased chance to apply {{Poisoned}}
 
     - 60% → 90% (repeating attacks)
 
-    - 90% → 120% (single-target attacks)
+    - 90% → 120% (Single Shot attacks)
 
 ### {{Tome of Beasts}} T1 [nature] [nature]
 
@@ -3008,7 +3008,7 @@ Completely reworked properties
 
     - +1 -> +2 [cold] (repeating attacks)
 
-    - +2 -> +4 [cold] (single-target attacks)
+    - +2 -> +4 [cold] (Single Shot attacks)
 
   - Added application to the unit type
 
@@ -3284,7 +3284,7 @@ Completely reworked properties
 
 - Warrior enchantment - {{Mantle of the Blood Noble}}
 
-  - No longer applies to units with the {{Siegecraft}} or Tower type
+  - No longer applies to units with the {{Siegecraft}} or {{Tower}} type
 
 ### {{Tome of the Revenant}} T4 [order] [shadow]
 

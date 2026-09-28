@@ -1003,6 +1003,32 @@
                     });
                 }
 
+                // Tower/Siegecraft/Construct как ТИП юнита (иконка из шапки меню
+                // Icons/Interface/Header/, та же, что у "Towers"/"Siegecraft" в подменю
+                // "Other" и у "Construct" в подменю "Types", см. HTML/header.html) -
+                // эти три слова сознательно в RBBP_EXCLUDED_EN_NAMES (коллизия с другими
+                // сущностями в прошлых раундах - есть, напр., способность Abilities.json
+                // по имени ровно "Tower"), но в этом документе они последовательно
+                // используются именно как ссылка на категорию типа юнита ("Не применяется
+                // к... Осадные орудия (Siegecraft), Башни (Tower) и Конструкции
+                // (Construct)") - жёстко переопределяем через index.set() в обход
+                // add()/EXCLUDED-проверки и порядка "первый добавленный побеждает",
+                // чтобы гарантированно получить иконку типа, а не что-то случайное.
+                const RBBP_UNIT_TYPE_ICONS = {
+                    Tower: { icon: "tower", ru: "Башни" },
+                    Siegecraft: { icon: "siegecraft", ru: "Осадные орудия" },
+                    Construct: { icon: "construct", ru: "Конструкции" }
+                };
+                for (const [name, def] of Object.entries(RBBP_UNIT_TYPE_ICONS)) {
+                    const locName = contentLang === "RU" ? def.ru : name;
+                    index.set(name, {
+                        type: "unittype",
+                        icon: `/rbbp/Icons/Interface/Header/${def.icon}.png`,
+                        obj: { name, description: "" },
+                        loc: { name: locName, description: "" }
+                    });
+                }
+
                 return index;
             }
 
