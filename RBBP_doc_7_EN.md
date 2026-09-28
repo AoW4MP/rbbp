@@ -144,7 +144,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 ## Traders
 
-- When surrendering a trader's army, the Eldritch Sovereign leader's cost to hire a trader increased 7 -> 30 [slaves]
+- When surrendering a trader's army, the Eldritch Sovereign leader's cost to recruit a trader increased 7 -> 30 [slaves]
 
 - Trade
 
@@ -926,7 +926,7 @@ Thorn Heart
 
 # Actions on heroes
 
-- Updated the hireable hero pool
+- Updated the Hero Recruitment pool
 
   - Reduced cost 100 -> 30 [gold]
 
@@ -1208,7 +1208,7 @@ Thorn Heart
 
   - Discount on defensive structures ([gold], [production]) -20% -> -40%
 
-  - Added hireable unit {{Lesser Stone Spirit}} T1
+  - Added draftable unit {{Lesser Stone Spirit}} T1
 
 - Fame level 4
 
@@ -1218,7 +1218,7 @@ Thorn Heart
 
 - Fame level 1
 
-  - Added hireable unit {{Lesser Tide Spirit}} T1
+  - Added draftable unit {{Lesser Tide Spirit}} T1
 
 - Fame level 3
 
@@ -1610,7 +1610,7 @@ Thorn Heart
 
 - Unit - {{Tyrant Knight}} T3
 
-  - Hire cost increased T3 medium -> T3 high
+  - Draft cost increased T3 medium -> T3 high
 
   - Active ability - {{Trample}}
 
@@ -1654,7 +1654,7 @@ Thorn Heart
 
     - Fix: the damage bonus from missing health now works correctly against displaced targets
 
-    - Hire cost increased T3 medium -> T3 high
+    - Draft cost increased T3 medium -> T3 high
 
 ## [reaverimperial] Reaver
 
@@ -1764,7 +1764,7 @@ Thorn Heart
 
 - Unit - {{Honor Blade}} T1
 
-  - Hire cost increased T1 medium -> T1 high
+  - Draft cost increased T1 medium -> T1 high
 
   - Active ability - {{Defensive Strike}}
 
@@ -2016,73 +2016,73 @@ Thorn Heart
 
 - Added property
 
-  - Can now hire {{Shrieking Bat}} T2 in cities
+  - Can now draft {{Shrieking Bat}} T2 in cities
 
 ### {{Griffon Mounts}}
 
 - Added property
 
-  - Can now hire {{Griffon}} T2 in cities
+  - Can now draft {{Griffon}} T2 in cities
 
 ### {{Celestial Griffon Mounts}}
 
 - Added property
 
-  - Can now hire {{Celestial Griffon}} T2 in cities
+  - Can now draft {{Celestial Griffon}} T2 in cities
 
 ### {{Eagle Mounts}}
 
 - Added property
 
-  - Can now hire {{Grimbeak Crow}} T1 in cities
+  - Can now draft {{Grimbeak Crow}} T1 in cities
 
 ### {{Fractured Eagle Mount}}
 
 - Added property
 
-  - Can now hire {{Spirit Hawk}} T1 in cities
+  - Can now draft {{Spirit Hawk}} T1 in cities
 
 ### {{Nightmare Mounts}}
 
 - Added property
 
-  - Can now hire {{Nightmare}} T3 in cities
+  - Can now draft {{Nightmare}} T3 in cities
 
 ### {{Unicorn Mounts}}
 
 - Added property
 
-  - Can now hire {{Unicorn}} T3 in cities
+  - Can now draft {{Unicorn}} T3 in cities
 
 ### {{White Wolf Mounts}}
 
 - Added property
 
-  - Can now hire {{Warg}} T2 in cities
+  - Can now draft {{Warg}} T2 in cities
 
 ### {{Elephant Mounts}}
 
 - Added property
 
-  - Can now hire {{Elephant}} T2 in cities
+  - Can now draft {{Elephant}} T2 in cities
 
 ### {{Mammoth Mounts}}
 
 - Added property
 
-  - Can now hire {{Mammoth}} T3 in cities
+  - Can now draft {{Mammoth}} T3 in cities
 
 ### {{Blessed Dragon Mounts}}
 
 - Added property
 
-  - Can now hire {{Blessed Dragon}} T2 in cities
+  - Can now draft {{Blessed Dragon}} T2 in cities
 
 ### {{Pegasus Mounts}}
 
 - Added property
 
-  - Can now hire {{Spirit Hawk}} T1 in cities
+  - Can now draft {{Spirit Hawk}} T1 in cities
 
 ### {{Chariot Mounts}}
 
@@ -2562,7 +2562,7 @@ Completely reworked properties
 
 ### Tier II
 
-- Reduced hire cost
+- Reduced draft cost
 
   - Souls: 120 [draft] 30 [souls] -> 110 [draft] 30 [souls]
 
@@ -2858,15 +2858,15 @@ Completely reworked properties
 
 - Special province improvement - {{Wildlife Sanctuary}}
 
-  - Updated the hireable unit roster
+  - Updated the draftable unit roster
 
-    - Now hireable
+    - Now draftable
 
       - {{Hunter Spider}} T2
 
       - {{Dire Penguin}} T2
 
-        - Hire resource [mana] → [gold]
+        - Draft resource [mana] → [gold]
 
       - {{Razorback}} T2
 
@@ -3116,7 +3116,7 @@ Completely reworked properties
 
 - Unit - {{Lieutenant}} T2
 
-  - Hire cost increased T2 medium -> T2 high
+  - Draft cost increased T2 medium -> T2 high
 
   - Active ability - {{Discern Weakness}}
 
