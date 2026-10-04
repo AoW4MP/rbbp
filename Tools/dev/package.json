@@ -1,0 +1,9 @@
+{
+  "name": "rbbp-dev-tools",
+  "private": true,
+  "description": "Dev tooling for the RBBP page: Puppeteer regression/screenshots and md->docx builder (not shipped with the site)",
+  "dependencies": {
+    "docx": "^9.0.0",
+    "puppeteer": "^24.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "theme": "dark",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "context-mode@context-mode": true
+  },
+  "extraKnownMarketplaces": {
+    "context-mode": { "source": { "source": "github", "repo": "mksglu/context-mode" } }
+  }
+}

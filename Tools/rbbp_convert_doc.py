@@ -434,10 +434,10 @@ if __name__ == "__main__":
         patches = [p for p in patches if p.get("version") != patch_version]
         patches.append({"version": patch_version, "date": patch_date, "html": html})
         patches.sort(key=lambda p: p["date"], reverse=True)
-        with open(dst, "w", encoding="utf-8") as f:
+        with open(dst, "w", encoding="utf-8", newline="\n") as f:
             json.dump({"patches": patches}, f, ensure_ascii=False, indent=2)
         print("OK ->", dst, "| патч", patch_version, "(" + patch_date + ")", "| длина html:", len(html), "| всего патчей:", len(patches))
     else:
-        with open(dst, "w", encoding="utf-8") as f:
+        with open(dst, "w", encoding="utf-8", newline="\n") as f:
             json.dump({"html": html}, f, ensure_ascii=False)
         print("OK ->", dst, "| длина html:", len(html))

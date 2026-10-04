@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git fetch*)",
+      "Bash(git pull*)",
+      "Bash(git checkout*)",
+      "Bash(git branch*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(py -3 *)",
+      "Bash(node *)",
+      "Bash(npm install*)",
+      "Bash(npm init*)",
+      "Bash(pandoc *)",
+      "Bash(curl -s*)",
+      "Bash(gh run list*)",
+      "Bash(gh api repos/AoW4MP/rbbp/pages/*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr list*)",
+      "Bash(gh auth status*)"
+    ]
+  }
+}
