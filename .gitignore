@@ -1,3 +1,5 @@
-
 Data/Test.js
-HTML/Testing.html__pycache__/
+HTML/Testing.html
+__pycache__/
+node_modules/
+.claude/settings.local.json
