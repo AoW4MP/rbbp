@@ -46,6 +46,8 @@ def main(src, dst):
     for esc, plain in (("\\[", "["), ("\\]", "]"), ("\\>", ">"), ("\\'", "'"), ('\\"', '"'), ("\\--", "--")):
         t = t.replace(esc, plain)
     t = re.sub(r"^\s*<!-- -->\n", "", t, flags=re.M)
+    # pandoc >= 3.8 пишет у ссылок заголовок: [текст](url "url") -> оставляем только [текст](url)
+    t = re.sub(r'\]\(([^)\s]+) "[^"]*"\)', r"](\1)", t)
     t = re.sub(r"\n{3,}", "\n\n", t)
 
     t = t.replace("Steam:[", "Steam: [").replace("Paradox:[", "Paradox: [")
