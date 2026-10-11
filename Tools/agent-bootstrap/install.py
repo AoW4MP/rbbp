@@ -171,8 +171,18 @@ def smoke() -> bool:
     py = sys.executable
     ok = True
     tmp = Path(tempfile.mkdtemp(prefix="rbbp_smoke_"))
+    # самый свежий опубликованный черновик с EN-парой: Data/*/RBBP.json собран именно из него
+    # (раньше тут был жёстко RBBP_doc_7, и тест краснел после каждой новой публикации)
+    nums = [
+        int(m.group(1))
+        for p in REPO.glob("RBBP_doc_*.md")
+        for m in [re.fullmatch(r"RBBP_doc_(\d+)\.md", p.name)]
+        if m and (REPO / f"RBBP_doc_{m.group(1)}_EN.md").exists()
+    ]
+    latest = max(nums) if nums else 7
+    ru_md, en_md = f"RBBP_doc_{latest}.md", f"RBBP_doc_{latest}_EN.md"
     # 1. конвертер даёт побайтово тот же JSON
-    for lang, md in (("RU", "RBBP_doc_7.md"), ("EN", "RBBP_doc_7_EN.md")):
+    for lang, md in (("RU", ru_md), ("EN", en_md)):
         out = tmp / f"{lang}.json"
         r = run([py, "Tools/rbbp_convert_doc.py", md, str(out)], cwd=REPO)
         same = r.returncode == 0 and out.exists() and out.read_bytes() == (REPO / "Data" / lang / "RBBP.json").read_bytes()
@@ -190,7 +200,7 @@ def smoke() -> bool:
     else:
         print(f"{WARN} чистильщик пропущен (нет pandoc или фикстуры)")
     # 3. верификатор пары RU/EN
-    r = run([py, "Tools/dev/rbbp_verify.py", "RBBP_doc_7.md", "RBBP_doc_7_EN.md"], cwd=REPO)
+    r = run([py, "Tools/dev/rbbp_verify.py", ru_md, en_md], cwd=REPO)
     same = r.returncode == 0
     ok &= same
     print(f"{OK if same else BAD} rbbp_verify: заголовки/коды/маркеры RU-EN согласованы")

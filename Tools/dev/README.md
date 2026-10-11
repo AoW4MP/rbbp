@@ -29,7 +29,9 @@ python Tools/rbbp_convert_doc.py RBBP_doc_N_EN.md Data/EN/RBBP.json
 python Tools/dev/serve.py 8811 &                  # http://localhost:8811/rbbp/HTML/RBBP.html
 node Tools/dev/rbbp_check.js                      # 0 = чисто на RU и EN
 node Tools/dev/rbbp_shot.js RU "Книга некромантии" shot.png
-# 5. исправленный docx обратно мейнтейнеру (чтобы он влил правки в мастер-файл)
+# 5. превью иконок: если в документе появились новые иконки (новые книги/способности/...)
+node Tools/dev/rbbp_make_thumbs.js                # дописывает Icons/RbbpThumbs/** + manifest.json (коммитить вместе)
+# 6. исправленный docx обратно мейнтейнеру (чтобы он влил правки в мастер-файл)
 node Tools/dev/build_docx.js RBBP_doc_N.md RBBP_doc_N_fixed.docx
 ```
 
@@ -42,6 +44,7 @@ node Tools/dev/build_docx.js RBBP_doc_N.md RBBP_doc_N_fixed.docx
 | `rbbp_verify.py` | паритет RU/EN: уровни заголовков, последовательность `[код]`, резолв `{{}}`, нерезолвящиеся `(Name)` |
 | `rbbp_check.js` | Puppeteer-регрессия страницы на RU и EN (код возврата 1 при проблемах) |
 | `rbbp_shot.js` | скриншот места на странице по тексту заголовка |
+| `rbbp_make_thumbs.js` | превью иконок 128px (`Icons/RbbpThumbs/**.webp` + `manifest.json`) для RBBP-страниц; без него иконки грузятся оригиналами |
 | `build_docx.js` | markdown -> docx для мейнтейнера |
 | `launch.js` | общий запуск браузера (`CHROME_PATH`, `RBBP_BASE`) |
 | `fixtures/RBBP_doc_29092026.docx` | эталонный черновик: `rbbp_clean_docx.py` на нём должен воспроизвести `RBBP_doc_7.md` (проверяется `Tools/agent-bootstrap/install.py --smoke`) |

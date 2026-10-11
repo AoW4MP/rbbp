@@ -10,6 +10,22 @@ const { BASE, launch, openPage } = require("./launch");
         const errs = [];
         const { ctx, page } = await openPage(browser, lang, `${BASE}/RBBP.html`);
         page.on("pageerror", (e) => errs.push(e.message));
+        // loading="lazy" не качает картинки вне экрана - без принудительной догрузки
+        // проверка на битые картинки пропустила бы всё ниже первого экрана
+        await page.evaluate(async () => {
+            const imgs = [...document.querySelectorAll("#rbbpContent img")];
+            imgs.forEach((i) => (i.loading = "eager"));
+            await Promise.all(
+                imgs.map((i) =>
+                    i.complete
+                        ? null
+                        : new Promise((res) => {
+                              i.addEventListener("load", res, { once: true });
+                              i.addEventListener("error", res, { once: true });
+                          })
+                )
+            );
+        });
         const r = await page.evaluate(() => {
             const a = document.getElementById("rbbpContent");
             const txt = a.innerText;

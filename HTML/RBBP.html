@@ -285,6 +285,7 @@
         </style>
 
         <script src="/rbbp/Data/Init.js"></script>
+        <script src="/rbbp/Data/src/rbbp_thumbs.js"></script>
         <script>
             async function HandlePage() {
                 const lang = (typeof languageSelect !== "undefined" && languageSelect.value) || "RU";
@@ -335,6 +336,10 @@
                 ApplyRbbpUiStrings(contentLang);
                 const entityIndex = await BuildRbbpEntityIndexByEnglishName(contentLang);
                 html = LinkRbbpEntitiesByEnglishName(html, entityIndex, contentLang);
+
+                // превью иконок + loading="lazy" ДО вставки в DOM (см. Data/src/rbbp_thumbs.js)
+                await LoadRbbpThumbManifest();
+                html = RbbpOptimizeImgHtml(html);
 
                 article.innerHTML = html;
                 MoveRbbpHeadingIconsToFront(article);
@@ -968,7 +973,9 @@
                     const entry = (window.__rbbpEntityData || {})[key];
                     if (!entry) return;
                     const tooltip = document.createElement("span");
-                    tooltip.innerHTML = BuildRbbpEntityTooltip(entry);
+                    // тултипы строятся для всех сущностей сразу, и без lazy/превью браузер
+                    // качает их полноразмерные иконки немедленно
+                    tooltip.innerHTML = RbbpOptimizeImgHtml(BuildRbbpEntityTooltip(entry));
                     addTooltipListeners(el, tooltip, "something");
                 });
             }
@@ -988,7 +995,10 @@
                     ambientMatchesContent &&
                     typeof SetTomePreview === "function"
                 ) {
-                    const span = document.createElement("span");
+                    // <template>, а не <span>: SetTomePreview делает span.innerHTML += '<img ...>',
+                    // и в обычном (даже отсоединённом) элементе браузер сразу качает все
+                    // полноразмерные иконки; содержимое template инертно - запросов нет
+                    const span = document.createElement("template");
                     try {
                         SetTomePreview(span, entry.obj);
                         return span.innerHTML;
