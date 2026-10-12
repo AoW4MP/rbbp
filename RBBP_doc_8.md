@@ -1084,7 +1084,7 @@
 
   - Удалено свойство - Эта способность перезаряжается после каждого убийства
 
-  - Добавлена перезарядка 2 [turn]
+  - Добавлена перезарядка (Cooldown) 2 [turn]
 
   - Свойство Увёртливость (Slippery) заменено на Неуловимый (Fleeting)
 
@@ -1098,7 +1098,7 @@
 
   - Удалено свойство - Эта способность перезаряжается после каждого убийства
 
-  - Добавлена перезарядка 2 [turn]
+  - Добавлена перезарядка (Cooldown) 2 [turn]
 
   - Свойство Увёртливость (Slippery) заменено на Неуловимый (Fleeting)
 
@@ -1518,7 +1518,7 @@
 
 - Фракционная активная способность - Братское пробуждение (Twin Awaken)
 
-  - Увеличена перезарядка
+  - Увеличена перезарядка (Cooldown)
 
     - 1 -> 3 [turn]
 
@@ -1846,7 +1846,7 @@
 
       - 25 -> 20 [temphp]
 
-    - Увеличена перезарядка
+    - Увеличена перезарядка (Cooldown)
 
       - 2 -> 3 [turn]
 
@@ -1858,7 +1858,7 @@
 
     - Удален эффект Защита от эффектов (Status Protection) (3)
 
-    - Увеличена перезарядка
+    - Увеличена перезарядка (Cooldown)
 
       - 1 -> 2 [turn]
 
@@ -1996,7 +1996,7 @@
 
     - Телепортация не применяется к героям
 
-    - Увеличена перезарядка
+    - Увеличена перезарядка (Cooldown)
 
       - 2 -> 3 [turn]
 
@@ -2056,7 +2056,7 @@
 
     - 20 -> 15 [temphp]
 
-  - Добавлена перезарядка 2 [turn]
+  - Добавлена перезарядка (Cooldown) 2 [turn]
 
 ### Внутренний свет (Inner Radiance)
 
@@ -2116,7 +2116,7 @@
 
 - Активная способность - Касание благодати (Touch of Grace)
 
-  - Добавлена перезарядка 4 [turn]
+  - Добавлена перезарядка (Cooldown) 4 [turn]
 
 ### Верхом на гибельном жуке (Death Beetle Mounts)
 
@@ -2748,27 +2748,27 @@
 
 - Изменено сопротивление к типу урона
 
-  - +2 [spirit] -4 [lightning] -> +2 [spirit] -2 [lightning]
+  - +2 [spiritresist] -4 [lightningresist] -> +2 [spiritresist] -2 [lightningresist]
 
 ### [typefiend] Чудовищный демон (Infernal Fiend)
 
-- +2 [fire] -4 [cold] -4 [spirit] -> +4 [fire] -2 [cold] -2 [spirit]
+- +2 [fireresist] -4 [coldresist] -4 [spiritresist] -> +4 [fireresist] -2 [coldresist] -2 [spiritresist]
 
 ### [typeundead] Нежить (Undead)
 
-- +2 [poison] +2 [cold] -4 [spirit] -4 [fire] -> +4 [poison] +4 [cold] -4 [spirit] -4 [fire]
+- +2 [poisonresist] +2 [coldresist] -4 [spiritresist] -4 [fireresist] -> +4 [poisonresist] +4 [coldresist] -4 [spiritresist] -4 [fireresist]
 
 ### [typecelestial] Ангел (Celestial)
 
-- +2 [spirit] -4 [poison] -4 [cold] -> +4 [spirit] -2 [poison] -2 [cold]
+- +2 [spiritresist] -4 [poisonresist] -4 [coldresist] -> +4 [spiritresist] -2 [poisonresist] -2 [coldresist]
 
 ### [typeumbral] Демон мрака (Umbral Demon)
 
-- -2 [fire] -2 [spirit] -> +2 [lightning] +2 [cold] -2 [fire] -2 [spirit]
+- -2 [fireresist] -2 [spiritresist] -> +2 [lightningresist] +2 [coldresist] -2 [fireresist] -2 [spiritresist]
 
 ### [typeethereal] Бесплотный (Ethereal)
 
-- +2 [physical] -4 [spirit] -> +2 [physical] -2 [spirit]
+- +2 [physicalresist] -4 [spiritresist] -> +2 [physicalresist] -2 [spiritresist]
 
 ## Подтипы юнитов (Unit subtypes)
 
@@ -3318,7 +3318,7 @@
 
       - 3 -> 1 [range]
 
-    - Добавлена перезарядка 2 [turn]
+    - Добавлена перезарядка (Cooldown) 2 [turn]
 
 ### Книга архонтов Т4 (Tome of the Archon) [order] [order]
 
@@ -3342,7 +3342,7 @@
 
     - Удален эффект Приговор (Condemned)
 
-    - Увеличена перезарядка
+    - Увеличена перезарядка (Cooldown)
 
       - 1 -> 2 [turn]
 
@@ -3656,7 +3656,7 @@
 
   - Активная способность - Повышенная концентрация (Focus Aim)
 
-    - Увеличена Перезарядка 2 -> 4 [turn]
+    - Увеличена Перезарядка (Cooldown) 2 -> 4 [turn]
 
 - Юнит - Монах Т2 (Monk)
 

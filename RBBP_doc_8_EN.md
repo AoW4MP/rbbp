@@ -2748,27 +2748,27 @@ Completely reworked properties
 
 - Changed damage type resistance
 
-  - +2 [spirit] -4 [lightning] -> +2 [spirit] -2 [lightning]
+  - +2 [spiritresist] -4 [lightningresist] -> +2 [spiritresist] -2 [lightningresist]
 
 ### [typefiend] Infernal Fiend
 
-- +2 [fire] -4 [cold] -4 [spirit] -> +4 [fire] -2 [cold] -2 [spirit]
+- +2 [fireresist] -4 [coldresist] -4 [spiritresist] -> +4 [fireresist] -2 [coldresist] -2 [spiritresist]
 
 ### [typeundead] Undead
 
-- +2 [poison] +2 [cold] -4 [spirit] -4 [fire] -> +4 [poison] +4 [cold] -4 [spirit] -4 [fire]
+- +2 [poisonresist] +2 [coldresist] -4 [spiritresist] -4 [fireresist] -> +4 [poisonresist] +4 [coldresist] -4 [spiritresist] -4 [fireresist]
 
 ### [typecelestial] Celestial
 
-- +2 [spirit] -4 [poison] -4 [cold] -> +4 [spirit] -2 [poison] -2 [cold]
+- +2 [spiritresist] -4 [poisonresist] -4 [coldresist] -> +4 [spiritresist] -2 [poisonresist] -2 [coldresist]
 
 ### [typeumbral] Umbral Demon
 
-- -2 [fire] -2 [spirit] -> +2 [lightning] +2 [cold] -2 [fire] -2 [spirit]
+- -2 [fireresist] -2 [spiritresist] -> +2 [lightningresist] +2 [coldresist] -2 [fireresist] -2 [spiritresist]
 
 ### [typeethereal] Ethereal
 
-- +2 [physical] -4 [spirit] -> +2 [physical] -2 [spirit]
+- +2 [physicalresist] -4 [spiritresist] -> +2 [physicalresist] -2 [spiritresist]
 
 ## Unit subtypes
 
