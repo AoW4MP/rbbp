@@ -118,17 +118,34 @@ function checkSecretSpell(id) {
     return false;
 }
 
+// Один сетевой запрос на URL за время жизни страницы. Раньше при языке EN загрузчик
+// качал каждый файл дважды параллельно (путь EN и путь "локального" языка совпадают),
+// а страницы RBBP после загрузчика повторно запрашивали те же файлы для индекса сущностей.
+// Кэшируем именно ТЕКСТ ответа, а JSON.parse делаем на каждый вызов: вызывающие код
+// мутирует объекты (санитайзеры локализации), общий объект сломал бы EN/Localized.
+const sharedTextFetches = new Map();
+
+function fetchTextShared(url) {
+    let promise = sharedTextFetches.get(url);
+    if (!promise) {
+        promise = fetch(url).then((response) => {
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return response.text();
+        });
+        promise.catch(() => sharedTextFetches.delete(url));
+        sharedTextFetches.set(url, promise);
+    }
+    return promise;
+}
+
+function fetchJsonShared(url) {
+    return fetchTextShared(url).then((text) => JSON.parse(text));
+}
+
 function fetchJsonFiles(filePaths) {
-    return Promise.all(
-        filePaths.map((filePath) =>
-            fetch(filePath).then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Network response was not ok: ${response.statusText}`);
-                }
-                return response.json();
-            })
-        )
-    );
+    return Promise.all(filePaths.map((filePath) => fetchJsonShared(filePath)));
 }
 var jsonSiegeProjects;
 

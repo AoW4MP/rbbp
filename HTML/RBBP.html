@@ -287,30 +287,110 @@
         <script src="/rbbp/Data/Init.js"></script>
         <script src="/rbbp/Data/src/rbbp_thumbs.js"></script>
         <script>
+            // ---------- двухэтапная загрузка ----------
+            // Этап 1 (RenderRbbpEarly): как только скачан RBBP.json (один файл, ~130 КБ),
+            // показываем текст как есть - без ссылок/иконок сущностей. Этап 2 (HandlePage,
+            // его вызывает CheckData() после загрузки ВСЕХ данных вики) подменяет содержимое
+            // полной версией с индексом сущностей. Раньше текст не показывался вообще, пока
+            // не скачаются все ~50 JSON (в т.ч. all.json на 7-10 МБ), хотя ему они не нужны.
+            const rbbpDataPromises = {};
+
+            // {data, usedFallback}: JSON документа на выбранном языке или RU как запасной вариант
+            function LoadRbbpData(lang) {
+                if (!rbbpDataPromises[lang]) {
+                    rbbpDataPromises[lang] = (async () => {
+                        let data = null;
+                        let usedFallback = false;
+
+                        if (lang !== "RU") {
+                            try {
+                                const res = await fetch("/rbbp/Data/" + lang + "/RBBP.json");
+                                if (res.ok) {
+                                    data = await res.json();
+                                }
+                            } catch (e) {
+                                // нет перевода для этого языка - используем RU как запасной вариант
+                            }
+                        }
+
+                        if (!data) {
+                            const res = await fetch("/rbbp/Data/RU/RBBP.json");
+                            data = await res.json();
+                            usedFallback = lang !== "RU";
+                        }
+                        return { data, usedFallback };
+                    })();
+                }
+                return rbbpDataPromises[lang];
+            }
+
+            // тот же язык, который потом выставит CheckData() в languageSelect (там же дефолт EN)
+            function RbbpStoredLanguage() {
+                try {
+                    const s = JSON.parse(localStorage.getItem("userSettings"));
+                    return (s && s.language) || "EN";
+                } catch (e) {
+                    return "EN";
+                }
+            }
+
+            async function RenderRbbpEarly() {
+                try {
+                    const lang = RbbpStoredLanguage();
+                    const [{ data, usedFallback }] = await Promise.all([LoadRbbpData(lang), LoadRbbpThumbManifest()]);
+                    if (window.__rbbpFullRendered) return; // полная версия уже успела - не затираем
+
+                    const article = document.getElementById("rbbpContent");
+                    const notice = document.getElementById("rbbpNotice");
+                    if (usedFallback) {
+                        notice.style.display = "block";
+                        notice.textContent =
+                            "This page hasn't been translated to English yet. Showing the Russian version below.";
+                    }
+                    const contentLang = usedFallback ? "RU" : lang;
+                    ApplyRbbpUiStrings(contentLang);
+                    article.innerHTML = RbbpOptimizeImgHtml(RbbpTagResourceIcons(data.html));
+                    BuildRbbpToc(article);
+
+                    // якорь вида #rbbp-sec-N (id проставляет BuildRbbpToc): без этого браузер
+                    // не прокрутит к нему, т.к. при загрузке страницы контента ещё не было
+                    if (location.hash) {
+                        const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+                        if (target) target.scrollIntoView();
+                    }
+                } catch (e) {
+                    console.error("RBBP early render failed (полная версия отрисуется позже)", e);
+                }
+            }
+            document.addEventListener("DOMContentLoaded", RenderRbbpEarly);
+
+            // при подмене ранней версии полной высота строк меняется (иконки сущностей
+            // выше текста) - запоминаем ближайший к верху экрана заголовок и возвращаем
+            // его на прежнее место, чтобы читателя не уносило
+            function RbbpCaptureScrollAnchor(article) {
+                if (window.scrollY < 5) return null;
+                const headings = article.querySelectorAll("h2, h3, h4");
+                for (let i = 0; i < headings.length; i++) {
+                    const top = headings[i].getBoundingClientRect().top;
+                    if (headings[i].getBoundingClientRect().bottom > 0) return { i, top };
+                }
+                return null;
+            }
+
+            function RbbpRestoreScrollAnchor(article, anchor) {
+                if (!anchor) return;
+                const h = article.querySelectorAll("h2, h3, h4")[anchor.i];
+                if (!h) return;
+                const delta = h.getBoundingClientRect().top - anchor.top;
+                if (delta) window.scrollTo({ top: window.scrollY + delta, behavior: "instant" });
+            }
+
             async function HandlePage() {
                 const lang = (typeof languageSelect !== "undefined" && languageSelect.value) || "RU";
                 const article = document.getElementById("rbbpContent");
                 const notice = document.getElementById("rbbpNotice");
 
-                let data = null;
-                let usedFallback = false;
-
-                if (lang !== "RU") {
-                    try {
-                        const res = await fetch("/rbbp/Data/" + lang + "/RBBP.json");
-                        if (res.ok) {
-                            data = await res.json();
-                        }
-                    } catch (e) {
-                        // нет перевода для этого языка - используем RU как запасной вариант
-                    }
-                }
-
-                if (!data) {
-                    const res = await fetch("/rbbp/Data/RU/RBBP.json");
-                    data = await res.json();
-                    usedFallback = lang !== "RU";
-                }
+                const { data, usedFallback } = await LoadRbbpData(lang);
 
                 if (usedFallback) {
                     notice.style.display = "block";
@@ -341,6 +421,10 @@
                 await LoadRbbpThumbManifest();
                 html = RbbpOptimizeImgHtml(html);
 
+                // ранняя версия (RenderRbbpEarly) уже на экране - подменяем без прыжка прокрутки
+                const scrollAnchor = RbbpCaptureScrollAnchor(article);
+                window.__rbbpFullRendered = true;
+
                 article.innerHTML = html;
                 MoveRbbpHeadingIconsToFront(article);
 
@@ -350,6 +434,7 @@
                 AttachRbbpEntityTooltips(article, entityIndex);
 
                 BuildRbbpToc(article);
+                RbbpRestoreScrollAnchor(article, scrollAnchor);
             }
 
             // Автосвязывание (см. LinkRbbpEntitiesByEnglishName ниже) вставляет иконку
@@ -535,26 +620,26 @@
                     itemsEN,
                     itemsLoc
                 ] = await Promise.all([
-                        fetch(`/rbbp/Data/EN/Tomes.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Tomes.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/StructureUpgrades.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/StructureUpgrades.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/Units.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Units.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/Spells.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Spells.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/Abilities.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Abilities.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/EmpireProgression.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/EmpireProgression.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/HeroSkills.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/HeroSkills.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/Traits.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/Traits.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/SiegeProjects.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/SiegeProjects.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/EN/HeroItems.json`).then((r) => r.json()),
-                        fetch(`/rbbp/Data/${contentLang}/HeroItems.json`).then((r) => r.json())
+                        fetchJsonShared(`/rbbp/Data/EN/Tomes.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/Tomes.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/StructureUpgrades.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/StructureUpgrades.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/Units.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/Units.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/Spells.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/Spells.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/Abilities.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/Abilities.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/EmpireProgression.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/EmpireProgression.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/HeroSkills.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/HeroSkills.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/Traits.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/Traits.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/SiegeProjects.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/SiegeProjects.json`),
+                        fetchJsonShared(`/rbbp/Data/EN/HeroItems.json`),
+                        fetchJsonShared(`/rbbp/Data/${contentLang}/HeroItems.json`)
                     ]);
 
                 // та же дедупликация имён, что и в общем пайплайне SanitizeLocalizedNames()
@@ -1027,11 +1112,16 @@
                 // включаем - в длинных разделах (напр. "Культуры") h4 даёт слишком
                 // мелкую, третью вложенность и превращает панель в нечитаемую простыню.
                 // Сами h4-заголовки на странице остаются, просто не дублируются в TOC.
+                // BuildRbbpToc вызывается дважды (ранняя и полная версия) - чистим прежнее
+                tocRoot.querySelectorAll(":scope > ul").forEach((ul) => ul.remove());
+                if (window.__rbbpTocObserver) window.__rbbpTocObserver.disconnect();
+
                 const headings = article.querySelectorAll("h2, h3");
                 if (headings.length === 0) {
                     tocRoot.style.display = "none";
                     return;
                 }
+                tocRoot.style.display = "";
 
                 const list = document.createElement("ul");
                 let currentH2Sub = null;
@@ -1082,6 +1172,7 @@
                     },
                     { rootMargin: "0px 0px -70% 0px" }
                 );
+                window.__rbbpTocObserver = observer;
                 headings.forEach((h) => observer.observe(h));
             }
         </script>
