@@ -347,8 +347,30 @@
             // ?version= : без него - список всех патчей со ссылками (главная страница
             // патчноутов), с ним - содержимое одного конкретного патча (TOC + текст,
             // как раньше была устроена единственная страница целиком).
-            async function HandlePage() {
-                const lang = (typeof languageSelect !== "undefined" && languageSelect.value) || "RU";
+            // ?section=old - архив патчноутов старого формата (Data/*/RBBPOldPatchNotes.json):
+            // чистый текст для истории, без автосвязывания сущностей и иконок
+            const RBBP_OLD = new URLSearchParams(location.search).get("section") === "old";
+
+            // архив не зависит от данных вики - показываем сразу, не дожидаясь загрузчика
+            function RbbpStoredLanguage() {
+                try {
+                    const s = JSON.parse(localStorage.getItem("userSettings"));
+                    return (s && s.language) || "EN";
+                } catch (e) {
+                    return "EN";
+                }
+            }
+            if (RBBP_OLD) {
+                document.addEventListener("DOMContentLoaded", () => {
+                    HandlePage(RbbpStoredLanguage()).catch((e) => console.error(e));
+                });
+            }
+
+            async function HandlePage(forcedLang) {
+                const lang =
+                    (typeof forcedLang === "string" && forcedLang) ||
+                    (typeof languageSelect !== "undefined" && languageSelect.value) ||
+                    "RU";
                 const version = new URLSearchParams(location.search).get("version");
 
                 const patches = await LoadRbbpPatches(lang);
@@ -373,11 +395,12 @@
             // RU-содержимым и пометкой "не переведено", а не пропадает совсем или не
             // ломает показ уже переведённых патчей рядом с ним.
             async function LoadRbbpPatches(lang) {
-                const ruData = await fetch("/rbbp/Data/RU/RBBPPatchNotes.json").then((r) => r.json());
+                const fileName = RBBP_OLD ? "RBBPOldPatchNotes.json" : "RBBPPatchNotes.json";
+                const ruData = await fetch("/rbbp/Data/RU/" + fileName).then((r) => r.json());
                 let langData = null;
                 if (lang !== "RU") {
                     try {
-                        const res = await fetch("/rbbp/Data/" + lang + "/RBBPPatchNotes.json");
+                        const res = await fetch("/rbbp/Data/" + lang + "/" + fileName);
                         if (res.ok) langData = await res.json();
                     } catch (e) {
                         // файла перевода для этого языка нет вообще - ничего страшного,
@@ -412,7 +435,7 @@
                 ApplyRbbpUiStrings(lang, { mode: "index" });
                 document.getElementById("rbbpToc").style.display = "none";
                 document.getElementById("rbbpNotice").style.display = "none";
-                document.title = "Age of Wonders 4 RbbP - RBBP Patch Notes";
+                document.title = "Age of Wonders 4 RbbP - RBBP " + (RBBP_OLD ? "Old " : "") + "Patch Notes";
 
                 const article = document.getElementById("rbbpContent");
                 const strings = RBBP_UI_STRINGS[lang] || RBBP_UI_STRINGS.RU;
@@ -431,7 +454,11 @@
                 for (const p of patches) {
                     const li = document.createElement("li");
                     const a = document.createElement("a");
-                    a.href = "/rbbp/HTML/RBBPPatchNotes.html?version=" + encodeURIComponent(p.version);
+                    a.href =
+                        "/rbbp/HTML/RBBPPatchNotes.html?" +
+                        (RBBP_OLD ? "section=old&" : "") +
+                        "version=" +
+                        encodeURIComponent(p.version);
 
                     const version = document.createElement("span");
                     version.className = "rbbp-patch-version";
@@ -456,6 +483,16 @@
                 }
                 article.innerHTML = "";
                 article.appendChild(list);
+
+                if (!RBBP_OLD) {
+                    const more = document.createElement("p");
+                    more.className = "rbbp-patch-old-link";
+                    const a = document.createElement("a");
+                    a.href = "/rbbp/HTML/RBBPPatchNotes.html?section=old";
+                    a.textContent = strings.oldLink;
+                    more.appendChild(a);
+                    article.appendChild(more);
+                }
             }
 
             async function RenderRbbpPatchDetail(patch, lang) {
@@ -472,6 +509,18 @@
                 }
 
                 let html = patch.html;
+                if (RBBP_OLD) {
+                    // архив старого формата: без связывания сущностей и иконок
+                    ApplyRbbpUiStrings(patch.translated ? lang : "RU", {
+                        mode: "detail",
+                        version: patch.version,
+                        date: patch.date
+                    });
+                    article.innerHTML = html;
+                    BuildRbbpToc(article);
+                    document.title = "Age of Wonders 4 RbbP - Old patch " + patch.version;
+                    return;
+                }
                 // сайтовая AddTagIconsForStatusEffects() тут НЕ используется: она матчит
                 // способности/эффекты по голым RU-подстрокам без учёта контекста предложения
                 // (см. ниже LinkRbbpEntitiesByEnglishName - её место заняла более точная система)
@@ -556,6 +605,9 @@
                     backToList: "← Ко всем патчам",
                     backToGuide: "← Назад к основному руководству RBBP",
                     notTranslatedBadge: "не переведено",
+                    oldLink: "Старые патчноуты (архив старого формата) →",
+                    oldIndexSubtitle: "Архив патчноутов старого формата, для истории",
+                    backToNew: "← К актуальным патчноутам",
                     empty: "Патчноуты пока не опубликованы."
                 },
                 EN: {
@@ -565,6 +617,9 @@
                     backToList: "← All patches",
                     backToGuide: "← Back to the main RBBP guide",
                     notTranslatedBadge: "not translated",
+                    oldLink: "Old patch notes (legacy format archive) →",
+                    oldIndexSubtitle: "Archive of old-format patch notes, kept for history",
+                    backToNew: "← Current patch notes",
                     empty: "No patch notes published yet."
                 }
             };
@@ -588,12 +643,19 @@
                     subtitle.textContent = strings.detailSubtitlePrefix + view.version + " (" + FormatRbbpDate(view.date) + ")";
                     const toList = document.createElement("a");
                     toList.className = "rbbp-backlink";
-                    toList.href = "/rbbp/HTML/RBBPPatchNotes.html";
+                    toList.href = "/rbbp/HTML/RBBPPatchNotes.html" + (RBBP_OLD ? "?section=old" : "");
                     toList.textContent = strings.backToList;
                     backlinks.appendChild(toList);
                     backlinks.appendChild(toGuide);
                 } else {
-                    subtitle.textContent = strings.indexSubtitle;
+                    subtitle.textContent = RBBP_OLD ? strings.oldIndexSubtitle : strings.indexSubtitle;
+                    if (RBBP_OLD) {
+                        const toNew = document.createElement("a");
+                        toNew.className = "rbbp-backlink";
+                        toNew.href = "/rbbp/HTML/RBBPPatchNotes.html";
+                        toNew.textContent = strings.backToNew;
+                        backlinks.appendChild(toNew);
+                    }
                     backlinks.appendChild(toGuide);
                 }
             }
