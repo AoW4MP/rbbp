@@ -210,6 +210,57 @@
                 white-space: nowrap;
             }
 
+            .rbbp-search input {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 9px 12px;
+                margin-bottom: 14px;
+                background: rgba(0, 0, 0, 0.35);
+                border: 1px solid #5a4d2c;
+                border-radius: 4px;
+                color: #e8dcc0;
+                font-family: "Regular", sans-serif;
+                font-size: 15px;
+            }
+            .rbbp-search-group {
+                margin-bottom: 16px;
+            }
+            .rbbp-search-group > a {
+                color: #deb887;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .rbbp-search-group > a:hover {
+                text-decoration: underline;
+            }
+            .rbbp-search-hit {
+                display: block;
+                padding: 5px 0 5px 12px;
+                border-left: 2px solid #5a4d2c;
+                margin: 4px 0;
+                color: #d8ccb0;
+                font-size: 14px;
+                text-decoration: none;
+            }
+            .rbbp-search-hit:hover {
+                background: rgba(222, 184, 135, 0.08);
+            }
+            .rbbp-search-ctx {
+                display: block;
+                font-size: 11px;
+                color: #8a7a4f;
+            }
+            .rbbp-search-hit mark {
+                background: rgba(222, 184, 135, 0.35);
+                color: inherit;
+                border-radius: 2px;
+            }
+            .rbbp-search-count {
+                color: #a79c7d;
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
             .rbbp-patch-empty {
                 color: #a79c7d;
                 font-size: 14px;
@@ -342,6 +393,7 @@
 
         <script src="/rbbp/Data/Init.js"></script>
         <script src="/rbbp/Data/src/rbbp_thumbs.js"></script>
+        <script src="/rbbp/Data/src/rbbp_patch_search.js"></script>
         <script>
             // Страница работает в двух режимах в зависимости от query-параметра
             // ?version= : без него - список всех патчей со ссылками (главная страница
@@ -394,8 +446,8 @@
             // выбранный язык, всё равно появляется в списке и открывается с
             // RU-содержимым и пометкой "не переведено", а не пропадает совсем или не
             // ломает показ уже переведённых патчей рядом с ним.
-            async function LoadRbbpPatches(lang) {
-                const fileName = RBBP_OLD ? "RBBPOldPatchNotes.json" : "RBBPPatchNotes.json";
+            async function LoadRbbpPatches(lang, old = RBBP_OLD) {
+                const fileName = old ? "RBBPOldPatchNotes.json" : "RBBPPatchNotes.json";
                 const ruData = await fetch("/rbbp/Data/RU/" + fileName).then((r) => r.json());
                 let langData = null;
                 if (lang !== "RU") {
@@ -424,6 +476,13 @@
                 }
                 merged.sort((a, b) => b.date.localeCompare(a.date));
                 return merged;
+            }
+
+            // переход по ссылке из поиска (?version=X#rbbp-hN): контент вставляется уже после загрузки
+            function ScrollToRbbpHash() {
+                const id = decodeURIComponent(location.hash.slice(1));
+                const el = id && document.getElementById(id);
+                if (el) el.scrollIntoView();
             }
 
             function FormatRbbpDate(isoDate) {
@@ -482,7 +541,18 @@
                     list.appendChild(li);
                 }
                 article.innerHTML = "";
-                article.appendChild(list);
+                const listWrap = document.createElement("div");
+                listWrap.appendChild(list);
+                article.appendChild(
+                    BuildRbbpPatchSearch({
+                        lang,
+                        strings,
+                        loadPatches: LoadRbbpPatches,
+                        formatDate: FormatRbbpDate,
+                        listWrap
+                    })
+                );
+                article.appendChild(listWrap);
 
                 if (!RBBP_OLD) {
                     const more = document.createElement("p");
@@ -491,7 +561,7 @@
                     a.href = "/rbbp/HTML/RBBPPatchNotes.html?section=old";
                     a.textContent = strings.oldLink;
                     more.appendChild(a);
-                    article.appendChild(more);
+                    listWrap.appendChild(more);
                 }
             }
 
@@ -518,6 +588,7 @@
                     });
                     article.innerHTML = html;
                     BuildRbbpToc(article);
+                    ScrollToRbbpHash();
                     document.title = "Age of Wonders 4 RbbP - Old patch " + patch.version;
                     return;
                 }
@@ -550,6 +621,7 @@
                 AttachRbbpEntityTooltips(article, entityIndex);
 
                 BuildRbbpToc(article);
+                ScrollToRbbpHash();
 
                 document.title = "Age of Wonders 4 RbbP - Patch " + patch.version;
             }
@@ -606,6 +678,11 @@
                     backToGuide: "← Назад к основному руководству RBBP",
                     notTranslatedBadge: "не переведено",
                     oldLink: "Старые патчноуты (архив старого формата) →",
+                    searchPlaceholder: "Поиск по всем патчноутам (старым и новым)…",
+                    searchNone: "Ничего не найдено",
+                    searchCount: "Найдено фрагментов: ",
+                    searchMore: "Показаны первые ",
+                    searchOldBadge: "архив",
                     oldIndexSubtitle: "Архив патчноутов старого формата, для истории",
                     backToNew: "← К актуальным патчноутам",
                     empty: "Патчноуты пока не опубликованы."
@@ -618,6 +695,11 @@
                     backToGuide: "← Back to the main RBBP guide",
                     notTranslatedBadge: "not translated",
                     oldLink: "Old patch notes (legacy format archive) →",
+                    searchPlaceholder: "Search all patch notes (old and new)…",
+                    searchNone: "Nothing found",
+                    searchCount: "Fragments found: ",
+                    searchMore: "Showing the first ",
+                    searchOldBadge: "archive",
                     oldIndexSubtitle: "Archive of old-format patch notes, kept for history",
                     backToNew: "← Current patch notes",
                     empty: "No patch notes published yet."
