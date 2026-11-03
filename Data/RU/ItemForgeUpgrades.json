@@ -124,13 +124,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -155,13 +149,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -186,13 +174,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -217,13 +199,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -248,13 +224,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -406,13 +376,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -437,13 +401,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -468,13 +426,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -499,13 +451,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -530,13 +476,7 @@
     "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -595,6 +535,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -606,6 +549,9 @@
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000049700000DB5"
@@ -1025,7 +971,7 @@
   "resid": 5111011084624,
   "point_cost": 1,
   "id": "cryomancers_staff_equipment_upgrade",
-  "description": "Наносит урон выбранному врагу.",
+  "description": "Выбранный воин:<bulletlist><bullet>получает урон;</bullet><bullet>с базовой вероятностью 60% может подвергнуться эффекту «Заморожен» на 1 <turn></turn> х. В случае неудачи получает эффект «Озноб».</bullet></bulletlist><br></br>Вражеские воины по соседству: <bulletlist><bullet>получают 50% от нанесённого урона;</bullet><bullet>подвергаются эффекту «Озноб» на 3 <turn></turn> х.</bullet></bulletlist>",
   "name": "Взрыв холода",
   "tags": [
    {
@@ -1051,7 +997,7 @@
   "resid": 5111011084622,
   "point_cost": 1,
   "id": "druids_staff_equipment_upgrade",
-  "description": "Этот воин и все дружественные воины по соседству восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>. Затем воин встаёт в защитную позицию.",
+  "description": "На этой клетке и клетках по соседству:<bulletlist><bullet>дружественные воины восстанавливают +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>создаёт растительное <hyperlink>укрытие</hyperlink>.</bullet></bulletlist><br></br><br></br>После этого воин встаёт в защитную позицию.",
   "name": "Исцеляющий росток",
   "tags": [
    {
@@ -1260,6 +1206,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000007F9",
@@ -1281,6 +1230,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -1299,6 +1251,9 @@
    },
    {
     "tag": "ItemAbility.Summon"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000004A60000081B",
@@ -1375,7 +1330,7 @@
   "point_cost": 3,
   "id": "equipment_upgrade_passive_splitterling_infection",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Воины, убитые этим оружием, превращаются в <hyperlink>исчадиев</hyperlink> до конца боя. Не действует в боях на воде.",
+  "description": "Воины, убитые этим оружием, превращаются в <hyperlink>исчадиев</hyperlink> до конца боя.",
   "name": "Зараза исчадия",
   "tags": [
    {
@@ -1485,6 +1440,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000007F7",
@@ -1663,6 +1621,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000007F5",
@@ -1704,7 +1665,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_boon_stealing_(2)",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Базовые атаки похищают у цели 2 <hyperlink>положительный эффект</hyperlink>.",
+  "description": "Базовые атаки похищают у цели до 2 <hyperlink>положительных эффектов</hyperlink>.",
   "name": "Кража даров",
   "tags": [
    {
@@ -1809,6 +1770,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -1816,7 +1780,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_boon_stealing_(1)",
   "DLC": "ELDRITCHREALMS ",
-  "description": "Базовые атаки похищают у цели 1 <hyperlink>положительный эффект</hyperlink>.",
+  "description": "Базовые атаки похищают у цели до 1 <hyperlink>положительных эффектов</hyperlink>.",
   "name": "Кража даров",
   "tags": [
    {
@@ -1872,6 +1836,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000007F4",
@@ -2081,13 +2048,7 @@
     "tag": "ItemForge.RelicLogic.RelicDamage.RelicSpirit"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -2115,13 +2076,7 @@
     "tag": "ItemForge.RelicLogic.RelicDamage.RelicBlight"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -2149,13 +2104,7 @@
     "tag": "ItemForge.RelicLogic.RelicDamage.RelicFrost"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -2183,13 +2132,7 @@
     "tag": "ItemTheme.Magical.Lightning"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -2217,13 +2160,7 @@
     "tag": "ItemTypeWeapon.EldritchRelic"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -2350,13 +2287,7 @@
     "tag": "ItemTypeWeapon.DragonClaw"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -2381,13 +2312,7 @@
     "tag": "ItemTypeWeapon.DragonClaw"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -2412,13 +2337,7 @@
     "tag": "ItemTypeWeapon.DragonClaw"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -2443,13 +2362,7 @@
     "tag": "ItemTypeWeapon.DragonClaw"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -2474,13 +2387,7 @@
     "tag": "ItemTypeWeapon.DragonClaw"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -3417,13 +3324,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -3447,13 +3348,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -3477,13 +3372,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -3507,13 +3396,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -3537,13 +3420,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -3580,6 +3457,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3594,6 +3474,9 @@
    },
    {
     "tag": "ItemAbility.Summon.RaiseUndead"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B00001BA7",
@@ -3610,6 +3493,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3624,6 +3510,9 @@
    },
    {
     "tag": "ItemPassive.Support.SupportStrengthened"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E0000109D",
@@ -3640,6 +3529,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3654,6 +3546,9 @@
    },
    {
     "tag": "ItemPassive.Support.SupportStatusResistance"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E0000109A",
@@ -3670,6 +3565,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3684,6 +3582,9 @@
    },
    {
     "tag": "ItemPassive.Support.SupportResistance"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E0000109C",
@@ -3700,6 +3601,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3714,6 +3618,9 @@
    },
    {
     "tag": "ItemPassive.Support.SupportDefense"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E0000109B",
@@ -3730,6 +3637,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -3744,6 +3654,9 @@
    },
    {
     "tag": "ItemPassive.Support.SupportRegeneration"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E00001092",
@@ -3853,7 +3766,7 @@
   "resid": 5111011083023,
   "point_cost": 2,
   "id": "equipment_upgrade_passive_crit_damage__40%",
-  "description": "Базовые атаки наносят на 40% больше урона при <hyperlink>критическииых ударах</hyperlink>.",
+  "description": "Базовые атаки наносят на 40% больше урона при <hyperlink>критических ударах</hyperlink>.",
   "name": "+40% к урону от критического удара",
   "tags": [
    {
@@ -3966,6 +3879,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000003A1",
@@ -3991,7 +3907,7 @@
   "resid": 5111011083018,
   "point_cost": 1,
   "id": "equipment_upgrade_passive_crit_damage__20%",
-  "description": "Базовые атаки наносят на 20% больше урона при <hyperlink>критическииых ударах</hyperlink>.",
+  "description": "Базовые атаки наносят на 20% больше урона при <hyperlink>критических ударах</hyperlink>.",
   "name": "+20% к урону от критического удара",
   "tags": [
    {
@@ -4104,6 +4020,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A6000003A1",
@@ -4486,7 +4405,7 @@
   "resid": 5111011082991,
   "point_cost": 3,
   "id": "equipment_upgrade_passive_infecting",
-  "description": "Воины, убитые этим оружием, воскресают как <hyperlink>гниющие зомби</hyperlink> и остаются под вашим контролем до конца боя. Не действует в боях на воде.",
+  "description": "Воины, убитые этим оружием, воскресают в качестве <hyperlink>гниющие зомби</hyperlink> и остаются под вашим контролем до конца боя.",
   "name": "Заражение",
   "tags": [
    {
@@ -4590,6 +4509,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A600000334",
@@ -4722,6 +4644,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A600000333",
@@ -4854,6 +4779,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A600000332",
@@ -4986,6 +4914,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A600000330",
@@ -5121,6 +5052,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A60000032F",
@@ -6453,7 +6387,7 @@
   "unlock_requirements": [
    {
     "num_required": 2,
-    "token_name": "Астральная роса"
+    "token_name": "Кровь архонта"
    }
   ]
  },
@@ -7501,6 +7435,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -7515,6 +7452,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005382",
@@ -7522,6 +7465,832 @@
    {
     "num_required": 1,
     "token_name": "Астральная роса"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "00000497000045eb"
+   }
+  ],
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
+    }
+   ]
+  },
+  "resid": 5046586590723,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_tempests_chorus",
+  "DLC": "WITCHOFTHEWAVES ",
+  "description": "Каждый раз, когда враг получает эффект «Наэлектризованность» впервые за ход, он также получает 12 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.<br></br><br></br>Эффект снимается, если воин покидает сражение.",
+  "name": "Хор ненастья",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   }
+  ],
+  "icon": "00000497000045F5",
+  "unlock_requirements": [
+   {
+    "num_required": 2,
+    "token_name": "Астральная роса"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "00000497000045c6"
+   }
+  ],
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    }
+   ]
+  },
+  "resid": 5046586590670,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_flying_staff",
+  "description": "Даёт способность «Летающий».<br></br><br></br>Блокируется <caststrategic></caststrategic> <hyperlink>Трансформациями народа</hyperlink>, которые удаляют ездовых животных.",
+  "name": "Парящий посох",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "Logic.RequisiteLogic.Movement.FlyingMovement"
+   }
+  ],
+  "icon": "00000497000046C7"
+ },
+ {
+  "abilities": [
+   {
+    "slug": "00000497000045c3"
+   }
+  ],
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains ItemTypeMisc.OtherItem "
+      },
+      {
+       "condition": "Contains ItemTypeJewelry.Amulet "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveSingleUpgrade "
+    }
+   ]
+  },
+  "resid": 5046586590657,
+  "point_cost": 3,
+  "id": "equipment_upgrade_passive_death_surge",
+  "DLC": "SILVERSEAS ",
+  "description": "Когда этот воин убивает другого, перезарядка умений ускоряется на 1<turn></turn>.<br></br><br></br>Срабатывает только 1 раз за ход.",
+  "name": "Волна смерти",
+  "tags": [
+   {
+    "tag": "ItemTypeJewelry.Amulet"
+   },
+   {
+    "tag": "ItemTypeMisc.OtherItem"
+   },
+   {
+    "tag": "ItemPassive.DeathSurge"
+   }
+  ],
+  "icon": "00000497000045C2",
+  "unlock_requirements": [
+   {
+    "num_required": 3,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "dirge_of_the_damned_item_forge_ability_equipment_upgrade_active_staff_dirge_of_the_damned"
+   }
+  ],
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
+    }
+   ]
+  },
+  "resid": 5046586590647,
+  "point_cost": 2,
+  "id": "equipment_upgrade_active_staff_dirge_of_the_damned",
+  "DLC": "SILVERSEAS ",
+  "description": "",
+  "name": "Плач проклятых",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemAbility.Summon"
+   },
+   {
+    "tag": "ItemAbility.DirgeoftheDamned"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
+   }
+  ],
+  "icon": "00000497000042DB",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "dirge_of_the_damned_item_forge_ability_equipment_upgrade_active_wand_dirge_of_the_damned"
+   }
+  ],
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains ItemTypeMisc.Wand "
+      },
+      {
+       "condition": "Contains ItemTypeMisc.Instrument "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveSingleUpgrade "
+    }
+   ]
+  },
+  "resid": 5046586590646,
+  "point_cost": 3,
+  "id": "equipment_upgrade_active_wand_dirge_of_the_damned",
+  "DLC": "SILVERSEAS ",
+  "description": "",
+  "name": "Плач проклятых",
+  "tags": [
+   {
+    "tag": "ItemForge.Exclusivities.ExclusiveSingleUpgrade"
+   },
+   {
+    "tag": "ItemTypeMisc.Wand"
+   },
+   {
+    "tag": "ItemAbility.Summon"
+   },
+   {
+    "tag": "ItemAbility.DirgeoftheDamned"
+   }
+  ],
+  "icon": "00000497000042DB",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "000004970000448d"
+   }
+  ],
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains ItemTypeArmor "
+    },
+    {
+     "condition": "Contains inherited ItemTypeArmor.Torso "
+    }
+   ]
+  },
+  "resid": 5046586590644,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_rime_healing",
+  "DLC": "SILVERSEAS ",
+  "description": "",
+  "name": "Исцеление инеем",
+  "tags": [
+   {
+    "tag": "ItemTypeArmor.Torso"
+   },
+   {
+    "tag": "ItemPassive.RimeHealing"
+   }
+  ],
+  "icon": "00000497000045B5",
+  "unlock_requirements": [
+   {
+    "num_required": 2,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "wail_of_the_banshee_ability_equipment_upgrade_active_staff_wail_of_the_banshee"
+   }
+  ],
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+    }
+   ]
+  },
+  "resid": 5046586590643,
+  "point_cost": 1,
+  "id": "equipment_upgrade_active_staff_wail_of_the_banshee",
+  "DLC": "SILVERSEAS ",
+  "description": "",
+  "name": "Вопль баньши",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemAbility.WailoftheBanshee"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
+   }
+  ],
+  "icon": "000003E300005F65",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "abilities": [
+   {
+    "slug": "wail_of_the_banshee_ability_equipment_upgrade_active_wand_wail_of_the_banshee"
+   }
+  ],
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains ItemTypeMisc.Wand "
+      },
+      {
+       "condition": "Contains ItemTypeMisc.Instrument "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveSingleUpgrade "
+    }
+   ]
+  },
+  "resid": 5046586590642,
+  "point_cost": 2,
+  "id": "equipment_upgrade_active_wand_wail_of_the_banshee",
+  "DLC": "SILVERSEAS ",
+  "description": "",
+  "name": "Вопль баньши",
+  "tags": [
+   {
+    "tag": "ItemForge.Exclusivities.ExclusiveSingleUpgrade"
+   },
+   {
+    "tag": "ItemTypeMisc.Wand"
+   },
+   {
+    "tag": "ItemAbility.WailoftheBanshee"
+   }
+  ],
+  "icon": "000003E300005F65",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.TwoHandedHeavy "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Crossbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Magelock "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.EldritchRelic "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.Warclaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
+    }
+   ]
+  },
+  "resid": 5046586590635,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_ember_dust_(single)",
+  "DLC": "SILVERSEAS ",
+  "description": "Базовые атаки с вероятностью 60% могут применить эффект «Обжигающая пыль».",
+  "name": "Применить «Обжигающую пыль»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemPassive.InflictEmberDust"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
+   }
+  ],
+  "icon": "00000497000045A8",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.OneHanded "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Polearm "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Bow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Greatbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+    }
+   ]
+  },
+  "resid": 5046586590633,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_ember_dust_(repeating)",
+  "DLC": "SILVERSEAS ",
+  "description": "Третья базовая атака с вероятностью 90% может применить эффект «Обжигающая пыль».",
+  "name": "Применить «Обжигающую пыль»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemPassive.InflictEmberDust"
+   },
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   }
+  ],
+  "icon": "00000497000045A8",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains ItemTypeWeapon.RangedPhysical.Magelock "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.Magic.Staff "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.RangedPhysical.Crossbow "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greatsword "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greathammer "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Lance "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greataxe "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.EldritchRelic "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveBurning "
+    }
+   ]
+  },
+  "resid": 5046586590626,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_ghostfire_(single)",
+  "DLC": "SILVERSEAS ",
+  "description": "Базовые атаки с вероятностью 90% могут применить эффект «Призрачный огонь».",
+  "name": "Применить «Призрачный огонь»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemPassive.InflictGhostfire"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.Warclaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
+   }
+  ],
+  "icon": "000004970000459F",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Polearm "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.RangedPhysical.Bow "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.OneHanded "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.DragonClaw "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.RangedPhysical.Greatbow "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+      },
+      {
+       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveBurning "
+    }
+   ]
+  },
+  "resid": 5046586590624,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_ghostfire_(repeating)",
+  "DLC": "SILVERSEAS ",
+  "description": "Базовые атаки с вероятностью 60% могут применить эффект «Призрачный огонь».",
+  "name": "Применить «Призрачный огонь»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemPassive.InflictGhostfire"
+   },
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   }
+  ],
+  "icon": "000004970000459F",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Бледный волноцвет"
    }
   ]
  },
@@ -7722,13 +8491,7 @@
     "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -7752,13 +8515,7 @@
     "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -7782,13 +8539,7 @@
     "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -7812,13 +8563,7 @@
     "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -7842,13 +8587,7 @@
     "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -7950,13 +8689,7 @@
     "tag": "ItemTheme.Physical"
    }
   ],
-  "icon": "0000045E00000D17",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Арканитовая руда"
-   }
-  ]
+  "icon": "0000045E00000D17"
  },
  {
   "tag_filter": {
@@ -7980,13 +8713,7 @@
     "tag": "ItemTheme.Physical"
    }
   ],
-  "icon": "0000045E00000D17",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Арканитовая руда"
-   }
-  ]
+  "icon": "0000045E00000D17"
  },
  {
   "tag_filter": {
@@ -8150,6 +8877,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -8224,6 +8954,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000049700003498",
@@ -8245,6 +8978,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -8263,6 +8999,9 @@
    },
    {
     "tag": "ItemAbility.Summon.SummonRoseKnight"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000049700003494",
@@ -8485,6 +9224,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -8556,6 +9298,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004970000362A",
@@ -8814,6 +9559,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -8885,6 +9633,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004970000347D",
@@ -9174,13 +9925,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -9204,13 +9949,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -9234,13 +9973,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -9264,13 +9997,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -9294,13 +10021,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -9518,18 +10239,12 @@
        "condition": "Contains ItemTypeWeapon.EldritchRelic "
       },
       {
-       "condition": "Contains ItemTypeWeapon.DragonClaw.Warclaw "
-      },
-      {
        "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
       }
      ]
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveFrozen "
-    },
-    {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveWet "
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveBurning "
     }
    ]
   },
@@ -9537,14 +10252,14 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_frost_single",
   "DLC": "GIANTKINGS ",
-  "description": "Базовые атаки воина:<bulletlist><bullet>+4 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% могут применить эффект «Скорость снижена».</bullet></bulletlist>",
+  "description": "Базовые атаки воина:<bulletlist><bullet>+4 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 90% могут применить эффект «Озноб».</bullet></bulletlist>",
   "name": "Руна силы: холод",
   "tags": [
    {
-    "tag": "ItemPassive.Inflict.InflictFrozen"
+    "tag": "ItemTheme.Magical.Frost"
    },
    {
-    "tag": "ItemTheme.Magical.Frost"
+    "tag": "ItemPassive.Inflict.InflictChilled"
    },
    {
     "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
@@ -9587,9 +10302,6 @@
      "condition": "One or More of the following must be True",
      "children": [
       {
-       "condition": "Contains inherited ItemTypeWeapon.OneHanded "
-      },
-      {
        "condition": "Contains inherited ItemTypeWeapon.Polearm "
       },
       {
@@ -9600,6 +10312,9 @@
       },
       {
        "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.OneHanded "
       },
       {
        "condition": "Contains ItemTypeWeapon.DragonClaw "
@@ -9618,14 +10333,14 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveWet "
-    },
-    {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveFrozen "
+     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveBurning "
     }
    ]
   },
@@ -9633,14 +10348,14 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_frost_repeating",
   "DLC": "GIANTKINGS ",
-  "description": "Базовые атаки воина:<bulletlist><bullet>+2 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Скорость снижена».</bullet></bulletlist>",
+  "description": "Базовые атаки воина:<bulletlist><bullet>+2 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Озноб».</bullet></bulletlist>",
   "name": "Руна силы: холод",
   "tags": [
    {
     "tag": "ItemTheme.Magical.Frost"
    },
    {
-    "tag": "ItemPassive.Inflict.InflictFrozen"
+    "tag": "ItemPassive.Inflict.InflictChilled"
    },
    {
     "tag": "ItemTypeWeapon.OneHanded"
@@ -9671,6 +10386,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000049700002606"
@@ -9832,13 +10550,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -9863,13 +10575,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -9894,13 +10600,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -9925,13 +10625,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -9956,13 +10650,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -10114,13 +10802,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -10145,13 +10827,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -10176,13 +10852,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -10207,13 +10877,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -10238,13 +10902,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -10396,13 +11054,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -10427,13 +11079,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -10458,13 +11104,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -10489,13 +11129,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -10520,13 +11154,7 @@
     "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -10910,7 +11538,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_protection_rock",
   "DLC": "GIANTKINGS ",
-  "description": "Даёт:<bulletlist><bullet>+2 ед. <defense></defense> <hyperlink>защиты</hyperlink>;</bullet><bullet>«Невосприимчивость к эффекту: кровотечение»;</bullet></bulletlist>«».",
+  "description": "Даёт:<bulletlist><bullet>+1 к <defense></defense> <hyperlink>защите</hyperlink>;</bullet><bullet>+2 к <defensephysical></defensephysical> <hyperlink>защите от физического урона</hyperlink>;</bullet><bullet>Невосприимчивость к эффекту: кровотечение</bullet></bulletlist>;",
   "name": "Руна защиты: камень",
   "tags": [
    {
@@ -11171,6 +11799,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -11221,6 +11852,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004970000179B"
@@ -11273,7 +11907,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_rock_single",
   "DLC": "GIANTKINGS ",
-  "description": "Базовые атаки воина:<bulletlist><bullet>+6 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 90% могут применить эффект «Кровотечение».</bullet></bulletlist>",
+  "description": "Базовые атаки воина:<bulletlist><bullet>+4 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 90% могут применить эффект «Кровотечение».</bullet></bulletlist>",
   "name": "Руна силы: камень",
   "tags": [
    {
@@ -11354,6 +11988,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -11366,7 +12003,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_rune_of_power_rock_repeating",
   "DLC": "GIANTKINGS ",
-  "description": "Базовые атаки воина:<bulletlist><bullet>+3 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение».</bullet></bulletlist>",
+  "description": "Базовые атаки воина:<bulletlist><bullet>+2 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>с базовой вероятностью 60% могут применить эффект «Кровотечение».</bullet></bulletlist>",
   "name": "Руна силы: камень",
   "tags": [
    {
@@ -11404,6 +12041,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000049700001792"
@@ -11517,6 +12157,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -11562,6 +12205,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000049700001781"
@@ -12139,6 +12785,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -12150,6 +12799,9 @@
   "tags": [
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000048D000008C9",
@@ -12486,7 +13138,7 @@
   "resid": 5029406706830,
   "point_cost": 1,
   "id": "goldseeker_pickaxe-_equipment_upgrade",
-  "description": "Третья атака за ход с базовой вероятностью 60% может на 2 применить эффект «Позолота».",
+  "description": "Третья атака за ход с базовой вероятностью 60% может на 1 <turn></turn> х. применить эффект «Позолота».",
   "name": "Позолота",
   "tags": [
    {
@@ -12521,6 +13173,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000003E300005D92"
@@ -12572,6 +13227,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001089"
@@ -12603,6 +13261,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -12644,6 +13305,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001070"
@@ -12675,6 +13339,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -12716,6 +13383,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004970000158F"
@@ -12803,6 +13473,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -12819,6 +13492,311 @@
   "icon": "00000493000008C6"
  },
  {
+  "abilities": [
+   {
+    "slug": "000003e300005582"
+   }
+  ],
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+    }
+   ]
+  },
+  "resid": 4995046971408,
+  "point_cost": 2,
+  "id": "equipment_upgrade_passive_melee_mage",
+  "description": "Воин может использовать <hyperlink>магические</hyperlink> способности и способности <hyperlink>поддержки</hyperlink> в <hyperlink>ближнем бою</hyperlink>.",
+  "name": "Маги ближнего боя",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemPassive.MeleeMage"
+   }
+  ],
+  "icon": "000003E300005580"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "Does not contain inherited ItemTypeWeapon.MeleeRanged.Breachgun "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+    }
+   ]
+  },
+  "resid": 4995046971404,
+  "point_cost": 1,
+  "id": "equipment_upgrade_passive_range__1_(magic_melee_only)",
+  "description": "Базовые <hyperlink>магические</hyperlink> атаки и <hyperlink>стрельба</hyperlink> получают +1 к <range></range> <hyperlink>дальности</hyperlink>.",
+  "name": "+1 к <range></range> <hyperlink>дальности</hyperlink>",
+  "tags": [
+   {
+    "tag": "ItemPassive.IncreaseRange"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   }
+  ],
+  "icon": "0000045E0000108F",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Фокусирующие кристаллы"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.TwoHandedHeavy "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Crossbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Magelock "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.EldritchRelic "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.Warclaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
+    }
+   ]
+  },
+  "resid": 4995046971345,
+  "point_cost": 1,
+  "id": "equipment_upgrade_passive_inflict_chilled_90%",
+  "description": "Базовые атаки с вероятностью 90% могут применить эффект «Озноб».",
+  "name": "Применяет эффект «Озноб»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Crossbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greatsword"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greataxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.TwoHandedHeavy.Lance"
+   },
+   {
+    "tag": "ItemTypeWeapon.EldritchRelic"
+   },
+   {
+    "tag": "ItemPassive.Inflict.InflictChilled"
+   },
+   {
+    "tag": "ItemForge.Exclusivities.ExclusiveChilled"
+   },
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   }
+  ],
+  "icon": "0000048B000017C9",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Кровь архонта"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.OneHanded "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Polearm "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Bow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Greatbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+    }
+   ]
+  },
+  "resid": 4995046971336,
+  "point_cost": 1,
+  "id": "equipment_upgrade_passive_inflict_chilled_60%",
+  "description": "Базовые атаки с вероятностью 60% могут применить эффект «Озноб».",
+  "name": "Применяет эффект «Озноб»",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemPassive.Inflict.InflictChilled"
+   },
+   {
+    "tag": "ItemForge.Exclusivities.ExclusiveChilled"
+   },
+   {
+    "tag": "ItemTypeWeapon.OneHanded"
+   },
+   {
+    "tag": "ItemTypeWeapon.Polearm"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Bow"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.MagicalOrb"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.DragonClaw.ArmoredClaw"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.RangedPhysical.Greatbow"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.GiantAxe"
+   },
+   {
+    "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   }
+  ],
+  "icon": "0000048B000017C9",
+  "unlock_requirements": [
+   {
+    "num_required": 1,
+    "token_name": "Кровь архонта"
+   }
+  ]
+ },
+ {
   "tag_filter": {
    "condition": "All of the following must be True",
    "children": [
@@ -12826,42 +13804,364 @@
      "condition": "One or More of the following must be True",
      "children": [
       {
-       "condition": "Contains ItemTypeWeapon.RangedPhysical.Magelock "
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       },
       {
-       "condition": "Contains ItemTypeWeapon.Magic.Staff "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.RangedPhysical.Crossbow "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greatsword "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greathammer "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Lance "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.TwoHandedHeavy.Greataxe "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.EldritchRelic "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.DragonClaw.Warclaw "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
       }
      ]
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveFrozen "
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970538,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_fire_spirit",
+  "description": "Заменяет тип урона на <damageFire></damageFire> <hyperlink>огненный</hyperlink> и <damageSpirit></damageSpirit> <hyperlink>урон магией духа</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон от сияния",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Fire"
+   },
+   {
+    "tag": "ItemTheme.Magical.Spirit"
+   }
+  ],
+  "icon": "0000045E00000D1A",
+  "unlock_requirements": [
+   {
+    "num_required": 2,
+    "token_name": "Радужный клевер"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveWet "
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970526,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_frost_blight",
+  "description": "Заменяет тип урона на <damageBlight></damageBlight> <hyperlink>ядовитый</hyperlink> и <damageFrost></damageFrost> <hyperlink>урон от холода</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон от смерти",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Blight"
+   },
+   {
+    "tag": "ItemTheme.Magical.Frost"
+   }
+  ],
+  "icon": "0000045E00000D19",
+  "unlock_requirements": [
+   {
+    "num_required": 2,
+    "token_name": "Кровь архонта"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970520,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_fire_lightning",
+  "description": "Заменяет тип урона на <damageFire></damageFire> <hyperlink>огненный</hyperlink> и <damageLightning></damageLightning> <hyperlink>электрический</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон от огненной дуги",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Fire"
+   },
+   {
+    "tag": "ItemTheme.Magical.Lightning"
+   }
+  ],
+  "icon": "0000045E00000D1B",
+  "unlock_requirements": [
+   {
+    "num_required": 2,
+    "token_name": "Кузнечный камень"
+   }
+  ]
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970514,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_physical",
+  "description": "Заменяет тип урона на <damagePhysical></damagePhysical> <hyperlink>физический</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Физический урон",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Physical"
+   }
+  ],
+  "icon": "0000045E00000D17"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970508,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_blight",
+  "description": "Заменяет тип урона на <damageBlight></damageBlight> <hyperlink>ядовитый</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон ядом",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Blight"
+   }
+  ],
+  "icon": "0000045E00000D13"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970502,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_spirit",
+  "description": "Заменяет тип урона на <damageSpirit></damageSpirit> <hyperlink>урон магией духа</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон магией духа",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Spirit"
+   }
+  ],
+  "icon": "0000045E00000D18"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970496,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_lightning",
+  "description": "Заменяет тип урона на <damageLightning></damageLightning> <hyperlink>электрический</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Электрический урон",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Lightning"
+   }
+  ],
+  "icon": "0000045E00000D16"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970490,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_frost",
+  "description": "Заменяет тип урона на <damageFrost></damageFrost> <hyperlink>урон от холода</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон от холода",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Frost"
+   }
+  ],
+  "icon": "0000045E00000D15"
+ },
+ {
+  "tag_filter": {
+   "condition": "All of the following must be True",
+   "children": [
+    {
+     "condition": "One or More of the following must be True",
+     "children": [
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.Magic.MagicalOrb "
+      }
+     ]
+    },
+    {
+     "condition": "Does not contain ItemForge.SpecificLogic.NotDualWeapon "
+    }
+   ]
+  },
+  "resid": 4995046970484,
+  "point_cost": 1,
+  "id": "equipment_upgrade__damage_channel_magic_melee_ranged_fire",
+  "description": "Заменяет тип урона на <damageFire></damageFire> <hyperlink>огненный</hyperlink>.<br></br><br></br>+2 к урону за каждый <hyperlink>ранг предмета</hyperlink>.",
+  "name": "Урон от огня",
+  "tags": [
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTheme.Magical.Fire"
+   }
+  ],
+  "icon": "0000045E00000D14"
+ },
+ {
+  "tag_filter": {
+   "condition": "One or More of the following must be True",
+   "children": [
+    {
+     "condition": "Contains inherited ItemTypeWeapon.TwoHandedHeavy "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Crossbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Magelock "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.EldritchRelic "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.Warclaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -12942,51 +14242,43 @@
  },
  {
   "tag_filter": {
-   "condition": "All of the following must be True",
+   "condition": "One or More of the following must be True",
    "children": [
     {
-     "condition": "One or More of the following must be True",
-     "children": [
-      {
-       "condition": "Contains inherited ItemTypeWeapon.OneHanded "
-      },
-      {
-       "condition": "Contains inherited ItemTypeWeapon.Polearm "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.RangedPhysical.Bow "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
-      },
-      {
-       "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.DragonClaw "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.RangedPhysical.Greatbow "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.GiantAxe "
-      },
-      {
-       "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
-      }
-     ]
+     "condition": "Contains inherited ItemTypeWeapon.OneHanded "
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveWet "
+     "condition": "Contains inherited ItemTypeWeapon.MeleeRanged "
     },
     {
-     "condition": "Does not contain ItemForge.Exclusivities.ExclusiveFrozen "
+     "condition": "Contains inherited ItemTypeWeapon.Polearm "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Bow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.Magic.MagicalOrb "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.DragonClaw.ArmoredClaw "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Warhammer "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.RangedPhysical.Greatbow "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+    },
+    {
+     "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13049,6 +14341,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000048B00000E46",
@@ -13070,6 +14365,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13084,6 +14382,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300004DEC",
@@ -13154,6 +14458,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13168,6 +14475,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B0000070D",
@@ -13189,6 +14502,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13203,6 +14519,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E10000155E",
@@ -13224,6 +14543,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13238,6 +14560,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005EB4",
@@ -13259,6 +14584,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13273,6 +14601,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B00000E69",
@@ -13294,6 +14625,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13308,6 +14642,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005A5A",
@@ -13329,6 +14666,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13343,6 +14683,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005A62",
@@ -13364,6 +14707,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13378,6 +14724,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B00000405",
@@ -13399,6 +14751,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -13413,6 +14768,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005B60",
@@ -13434,6 +14792,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13448,6 +14809,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E3000050EA",
@@ -13469,6 +14836,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13483,6 +14853,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E600000566",
@@ -13504,6 +14880,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13518,6 +14897,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300006018",
@@ -13539,6 +14924,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -13553,6 +14941,12 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E3000063B5",
@@ -14515,7 +15909,7 @@
   "resid": 4995046968732,
   "point_cost": 3,
   "id": "equipment_upgrade_passive_unleash_the_hounds",
-  "description": "В начале боя призывает <hyperlink>боевую гончую</hyperlink> — ударного воина, чьи атаки применяют эффекты «Помечен» и «Кровотечение».<br></br><br></br>Не действует в боях на воде, а на вызванных воинов не действуют чары.",
+  "description": "В начале боя призывает <hyperlink>боевую гончую</hyperlink> — ударного воина, чьи атаки применяют эффекты «Помечен» и «Кровотечение».<br></br><br></br>На вызванных воинов не действуют чары.",
   "name": "Спустить гончих",
   "tags": [
    {
@@ -14890,6 +16284,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -14904,6 +16301,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Staff"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000048B00000C8A"
@@ -14987,13 +16387,7 @@
     "tag": "ItemTypeWeapon.MeleeRanged"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -15031,13 +16425,7 @@
     "tag": "ItemTypeWeapon.MeleeRanged"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -15075,13 +16463,7 @@
     "tag": "ItemTypeWeapon.MeleeRanged"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -15119,13 +16501,7 @@
     "tag": "ItemTypeWeapon.MeleeRanged"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -15163,13 +16539,7 @@
     "tag": "ItemTypeWeapon.MeleeRanged"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -15231,13 +16601,7 @@
     "tag": "ItemTheme.Magical.Spirit"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -15261,13 +16625,7 @@
     "tag": "ItemTheme.Magical.Blight"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -15291,13 +16649,7 @@
     "tag": "ItemTheme.Magical.Frost"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -15321,13 +16673,7 @@
     "tag": "ItemTheme.Magical.Lightning"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -15351,13 +16697,7 @@
     "tag": "ItemTypeWeapon.RangedPhysical.Magelock"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -15443,6 +16783,9 @@
       },
       {
        "condition": "Contains inherited ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     }
@@ -15516,6 +16859,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001094",
@@ -15556,6 +16902,9 @@
       },
       {
        "condition": "Contains inherited ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     }
@@ -15629,6 +16978,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001094",
@@ -15669,6 +17021,9 @@
       },
       {
        "condition": "Contains inherited ItemTypeWeapon.GiantKingWeapons.GiantAxe "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     }
@@ -15748,6 +17103,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001094"
@@ -15788,6 +17146,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -15847,6 +17208,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107F",
@@ -16058,7 +17422,7 @@
   "resid": 4801773440483,
   "point_cost": 1,
   "id": "equipment_upgrade_passive_slip_away",
-  "description": "Когда <hp></hp> <hyperlink>здоровье</hyperlink> этого воина опускается до нуля, он смещается на 3 кл. и восстанавливает +15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.<br></br>Действует один раз за бой.",
+  "description": "Когда <hp></hp> <hyperlink>здоровье</hyperlink> этого воина опускается до нуля, он смещается на 3 кл. и восстанавливает 15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.<br></br><br></br>Действует один раз за бой. Не действует при статусе «На борту».",
   "name": "Исчезновение",
   "tags": [
    {
@@ -17685,6 +19049,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000108E",
@@ -17817,6 +19184,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000108C",
@@ -17949,6 +19319,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000106B",
@@ -18081,6 +19454,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001069",
@@ -18213,6 +19589,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001068",
@@ -18345,6 +19724,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001065",
@@ -18477,6 +19859,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001064",
@@ -18609,6 +19994,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001031"
@@ -18624,6 +20012,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18638,6 +20029,9 @@
    },
    {
     "tag": "ItemAbility.MindControl"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E000003E6",
@@ -18659,6 +20053,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18673,6 +20070,9 @@
    },
    {
     "tag": "ItemAbility.Polymorph"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E000003CD",
@@ -18694,6 +20094,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -18708,6 +20111,12 @@
    },
    {
     "tag": "ItemAbility.HinderingBlizzards"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E3000052A8",
@@ -18729,6 +20138,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -18743,6 +20155,12 @@
    },
    {
     "tag": "ItemAbility.LightningStrike"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E30000453F",
@@ -18764,6 +20182,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18778,6 +20199,9 @@
    },
    {
     "tag": "ItemAbility.Summon.ConjureAnimal"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B000003B2",
@@ -18799,6 +20223,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18816,6 +20243,9 @@
    },
    {
     "tag": "ItemStrength.Strong"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005801",
@@ -18837,6 +20267,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18854,6 +20287,9 @@
    },
    {
     "tag": "ItemStrength.Medium"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005801",
@@ -18875,6 +20311,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18892,6 +20331,9 @@
    },
    {
     "tag": "ItemStrength.Weak"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E3000057F8"
@@ -18907,6 +20349,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18921,6 +20366,9 @@
    },
    {
     "tag": "ItemAbility.Summon.RaiseUndead"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E300005FC8",
@@ -18942,6 +20390,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18956,6 +20407,9 @@
    },
    {
     "tag": "ItemAbility.Summon.AwakenFlora"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B00000EC9",
@@ -18977,6 +20431,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -18991,6 +20448,9 @@
    },
    {
     "tag": "ItemAbility.Resurrection"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E000003E1",
@@ -19012,6 +20472,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -19026,6 +20489,9 @@
    },
    {
     "tag": "ItemAbility.InversionAbility"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E000003AB",
@@ -19047,6 +20513,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -19061,6 +20530,9 @@
    },
    {
     "tag": "ItemAbility.Heal.MassHeal"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000041B00001523",
@@ -19082,6 +20554,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.Magic.Grimoire "
     }
    ]
   },
@@ -19096,6 +20571,9 @@
    },
    {
     "tag": "ItemAbility.Heal"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "000003E30000579C"
@@ -20214,6 +21692,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001071",
@@ -20346,6 +21827,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001070",
@@ -20483,6 +21967,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000109E",
@@ -20558,6 +22045,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001095",
@@ -20595,6 +22085,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -20651,6 +22144,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001095",
@@ -20774,6 +22270,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -20830,6 +22329,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Warhammer"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E000010ED",
@@ -20965,6 +22467,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A60000039F",
@@ -21100,6 +22605,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A60000039F",
@@ -21235,6 +22743,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000004A60000039F"
@@ -21275,6 +22786,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21334,6 +22848,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001087",
@@ -21380,6 +22897,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21439,6 +22959,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001086",
@@ -21485,6 +23008,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21544,6 +23070,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001083",
@@ -21590,6 +23119,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21649,6 +23181,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107E",
@@ -21698,6 +23233,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -21768,13 +23306,16 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107C",
   "unlock_requirements": [
    {
     "num_required": 2,
-    "token_name": "Астральная роса"
+    "token_name": "Кровь архонта"
    }
   ]
  },
@@ -21814,6 +23355,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21873,6 +23417,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107B",
@@ -21919,6 +23466,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -21978,6 +23528,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001080",
@@ -22024,6 +23577,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22083,6 +23639,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001084",
@@ -22129,6 +23688,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22188,6 +23750,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001085",
@@ -22234,6 +23799,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22293,6 +23861,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001082",
@@ -22339,6 +23910,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22398,6 +23972,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107A",
@@ -22444,6 +24021,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22503,6 +24083,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001079",
@@ -22552,6 +24135,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -22619,6 +24205,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001088",
@@ -22665,6 +24254,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22724,6 +24316,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001081",
@@ -22770,6 +24365,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22829,6 +24427,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E0000107D",
@@ -22875,6 +24476,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -22934,6 +24538,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001077",
@@ -22983,6 +24590,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -23053,6 +24663,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001076",
@@ -23099,6 +24712,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -23170,6 +24786,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001075",
@@ -23219,6 +24838,9 @@
       },
       {
        "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+      },
+      {
+       "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
       }
      ]
     },
@@ -23292,6 +24914,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001074"
@@ -23332,6 +24957,9 @@
     },
     {
      "condition": "Contains ItemTypeWeapon.GiantKingWeapons.Obelisk "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -23391,6 +25019,9 @@
    },
    {
     "tag": "ItemTypeWeapon.GiantKingWeapons.Obelisk"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "0000045E00001078",
@@ -23522,6 +25153,9 @@
    },
    {
     "tag": "ItemTypeWeapon.Magic.Grimoire"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
    }
   ],
   "icon": "000003E300004EFF",
@@ -24391,6 +26025,9 @@
    "children": [
     {
      "condition": "Contains ItemTypeWeapon.Magic.Staff "
+    },
+    {
+     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
     }
    ]
   },
@@ -24405,6 +26042,12 @@
    },
    {
     "tag": "ItemAbility.MagicMissile"
+   },
+   {
+    "tag": "ItemTypeWeapon.MagicMeleeRanged"
+   },
+   {
+    "tag": "ItemTypeWeapon.Magic.Grimoire"
    }
   ],
   "icon": "0000045E000007B1"
@@ -26508,13 +28151,7 @@
     "tag": "ItemTypeWeapon.Magic.Staff"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -26538,13 +28175,7 @@
     "tag": "ItemTypeWeapon.Magic.Staff"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -26568,13 +28199,7 @@
     "tag": "ItemTypeWeapon.Magic.Staff"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -26598,13 +28223,7 @@
     "tag": "ItemTypeWeapon.Magic.Staff"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -26634,13 +28253,7 @@
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -26670,13 +28283,7 @@
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -26706,13 +28313,7 @@
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -26772,13 +28373,7 @@
     "tag": "ItemTypeWeapon.Magic.MagicalOrb"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -26802,13 +28397,7 @@
     "tag": "ItemTheme.Magical.Blight"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -26832,13 +28421,7 @@
     "tag": "ItemTheme.Magical.Frost"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -26862,13 +28445,7 @@
     "tag": "ItemTheme.Magical.Lightning"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -26892,13 +28469,7 @@
     "tag": "ItemTheme.Magical.Fire"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -26946,13 +28517,7 @@
     "tag": "ItemTheme.Magical.Spirit"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -26976,13 +28541,7 @@
     "tag": "ItemTheme.Magical.Spirit"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -27006,13 +28565,7 @@
     "tag": "ItemTheme.Magical.Blight"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -27036,13 +28589,7 @@
     "tag": "ItemTheme.Magical.Frost"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -27066,13 +28613,7 @@
     "tag": "ItemTheme.Magical.Lightning"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -27096,13 +28637,7 @@
     "tag": "ItemTheme.Magical.Fire"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -27150,13 +28685,7 @@
     "tag": "ItemTheme.Magical.Spirit"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -27180,13 +28709,7 @@
     "tag": "ItemTheme.Magical.Blight"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -27210,13 +28733,7 @@
     "tag": "ItemTheme.Magical.Frost"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -27240,13 +28757,7 @@
     "tag": "ItemTheme.Magical.Lightning"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -27270,13 +28781,7 @@
     "tag": "ItemTheme.Magical.Fire"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -27336,13 +28841,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -27378,13 +28877,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -27420,13 +28913,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -27462,13 +28949,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  },
  {
   "tag_filter": {
@@ -27504,13 +28985,7 @@
     "tag": "ItemTypeWeapon.TwoHandedHeavy.Greathammer"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -27576,13 +29051,7 @@
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
    }
   ],
-  "icon": "0000045E00000D18",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Радужный клевер"
-   }
-  ]
+  "icon": "0000045E00000D18"
  },
  {
   "tag_filter": {
@@ -27612,13 +29081,7 @@
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
    }
   ],
-  "icon": "0000045E00000D13",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Плод среброуста"
-   }
-  ]
+  "icon": "0000045E00000D13"
  },
  {
   "tag_filter": {
@@ -27648,13 +29111,7 @@
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
    }
   ],
-  "icon": "0000045E00000D15",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кровь архонта"
-   }
-  ]
+  "icon": "0000045E00000D15"
  },
  {
   "tag_filter": {
@@ -27684,13 +29141,7 @@
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
    }
   ],
-  "icon": "0000045E00000D14",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Кузнечный камень"
-   }
-  ]
+  "icon": "0000045E00000D14"
  },
  {
   "tag_filter": {
@@ -27750,12 +29201,6 @@
     "tag": "ItemTypeWeapon.OneHanded.Cestus"
    }
   ],
-  "icon": "0000045E00000D16",
-  "unlock_requirements": [
-   {
-    "num_required": 1,
-    "token_name": "Астральная роса"
-   }
-  ]
+  "icon": "0000045E00000D16"
  }
 ]

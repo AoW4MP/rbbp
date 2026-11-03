@@ -300,11 +300,11 @@
     "level": 2
    },
    {
-    "effect_description": "Прибрежные и водные провинции дают +5 к <mana></mana> мане",
+    "effect_description": "Океанские и подземные водные провинции дают +5 ед. <mana></mana> маны.",
     "level": 3
    },
    {
-    "effect_description": "Прибрежные и водные провинции дают +5 к <gold></gold> золоту",
+    "effect_description": "Океанские и подземные водные провинции дают +5 ед. <gold></gold> золота.",
     "level": 4
    }
   ],
@@ -324,7 +324,7 @@
     "level": 2
    },
    {
-    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания",
+    "effect_description": "Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>",
     "level": 3
    },
    {
