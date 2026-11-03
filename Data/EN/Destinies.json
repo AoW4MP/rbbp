@@ -56,6 +56,13 @@
     "reward_renown": 50,
     "repeatable": true,
     "reward_properties": []
+   },
+   {
+    "screen_description": "",
+    "type": "minor",
+    "reward_renown": 3,
+    "repeatable": true,
+    "reward_properties": []
    }
   ]
  },

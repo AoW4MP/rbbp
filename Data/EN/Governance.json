@@ -300,11 +300,11 @@
     "level": 2
    },
    {
-    "effect_description": "Coast or Water provinces grant +5<mana></mana> Mana",
+    "effect_description": "Ocean or Underground Water provinces grant +5<mana></mana> Mana",
     "level": 3
    },
    {
-    "effect_description": "Coast or Water provinces grant +5<gold></gold> Gold",
+    "effect_description": "Ocean or Underground Water provinces grant +5<gold></gold> Gold",
     "level": 4
    }
   ],
