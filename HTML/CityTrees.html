@@ -331,9 +331,9 @@
                 ]
             };
             const Fortifications = {
-                walls: ["empty*4", "palisade_walls", "empty*4", "stone_walls", "empty*3", "catapult_towers"],
-                Towers: ["empty*7", "caltrop_stash", "empty*2", "ballista_towers"],
-                Battlements: ["empty*7", "arcane_battlements", "empty*2", "necrotic_spires", "beacon_of_valor"],
+                walls: ["empty*4", "palisade_walls", "empty*5", "stone_walls", "empty*3", "catapult_towers"],
+                Towers: ["empty*7", "caltrop_stash", "empty*3", "ballista_towers"],
+                Battlements: ["empty*7", "arcane_battlements", "empty*3", "necrotic_spires", "beacon_of_valor"],
                 Spires: ["empty*7", "archer_battlements", "empty*2", "healing_spires"]
             };
 
@@ -374,6 +374,7 @@
                 // tome stuff
                 //  if(tomeCheck)
                 const parentWizard = document.createElement("div");
+                parentWizard.setAttribute("style", "width:1000px");
                 treespace.appendChild(parentWizard);
                 GetTree("", TownHalls, parentWizard, buildingMap);
                 GetTree("", Bath, parentWizard, buildingMap);
