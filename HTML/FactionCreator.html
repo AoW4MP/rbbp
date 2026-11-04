@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC3NE8PT7K"></script>
         <script>
@@ -298,6 +299,22 @@
             }
 
             @media (max-width: 800px) {
+                html, body {
+                    overflow-x: clip;
+                }
+                #shareLink {
+                    max-width: 95vw;
+                }
+                #capture .container {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                #capture .subDivider {
+                    flex-wrap: wrap;
+                }
+                #tomePathButton {
+                    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)) !important;
+                }
                 #selectionsHolder {
                     position: fixed;
                     inset: auto 0 0 !important;
