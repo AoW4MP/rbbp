@@ -23,6 +23,12 @@
   "culture-mystic": {
     "lookup": "INTERFACE@TEXT@MYSTIC"
   },
+  "culture-nomad": {
+    "lookup": "DLC@RISEFROMRUIN@CULTURE_NOMAD@NOMAD&name"
+  },
+  "culture-mercantile": {
+    "lookup": "DLC@SILVERSEAS@CULTURE_MERCANTILE&name"
+  },
   "culture-reaver": {
      "lookup": "DLC@EMPIRESANDASHES@CULTURE_REAVER@REAVER&name"
   },
