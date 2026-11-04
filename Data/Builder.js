@@ -7259,7 +7259,9 @@ function spawnerUnitLine(name) {
 
 function getSpawnerPools(s, categoryKey) {
     if (!categoryKey) return [];
-    if (s.pools && categoryKey === s.poolCategory) return s.pools; // already joined by the extractor
+    if (s.pools && categoryKey === s.poolCategory) {
+        return s.pools.map((pool) => findBy(jsonSpawnSetsStrat, "pool", pool.pool) ?? pool);
+    }
 
     const names = jsonSpawnerPoolDetails.categories[categoryKey]?.pools ?? [];
     return names.map((n) => {
