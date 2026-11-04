@@ -4459,7 +4459,7 @@ function ShowPossibleEnchantments(evt) {
 
 function hasPassiveForEnchantment(unitData, type) {
     // type to slug dictionary
-    const thisAb = jsonUnitAbilitiesLocalized.find((entry) => entry.name === type);
+    const thisAb = jsonUnitAbilities.find((entry) => entry.name === type);
     if (thisAb == undefined) {
         return false;
     }
@@ -4490,6 +4490,7 @@ function isCompatibleForEnchantment(enchant, unitData, unitType, activeEnchantLi
 }
 
 function createTooltipForEnchant(item) {
+    const localized = findBy(jsonSpellsLocalized, "resid", item.resid) ?? item;
     let span = document.createElement("span");
     let enchantEntry = document.createElement("Button");
     enchantEntry.className = "enchantButton";
@@ -4498,11 +4499,11 @@ function createTooltipForEnchant(item) {
     image.setAttribute("width", "20");
     image.setAttribute("height", "20");
     image.setAttribute("src", "/rbbp/Icons/SpellIcons/" + item.icon + ".png");
-    text.textContent = item.name;
+    text.textContent = localized.name;
     text.className = "tooltip";
     text.setAttribute("style", "padding:0px");
 
-    span.innerHTML = AddTagIconsForStatusEffects(item.description);
+    span.innerHTML = AddTagIconsForStatusEffects(localized.description);
 
     addTooltipListeners(enchantEntry, span);
 
@@ -4528,7 +4529,8 @@ function SetEnchantment(evt) {
         activeEnch.className = "tooltip";
         activeEnch.setAttribute("style", "padding: 0px");
         let span = document.createElement("span");
-        span.innerHTML = evt.currentTarget.enchant.name + "<hr>" + evt.currentTarget.enchant.description;
+        const localized = findBy(jsonSpellsLocalized, "resid", evt.currentTarget.enchant.resid) ?? evt.currentTarget.enchant;
+        span.innerHTML = localized.name + "<hr>" + AddTagIconsForStatusEffects(localized.description);
         span.setAttribute("style", "left: 50px;");
 
         addTooltipListeners(activeEnch, span);
