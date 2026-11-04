@@ -20,9 +20,12 @@
         
         <script>
           
-            function HandlePage() {
-                showWorldStructuresWithArgument(undefined, "Spawner", undefined, "Bronze");
+            async function HandlePage() {
+                await showSpawnersWithArgument("Bronze", "Bronze");
+                await showSpawnersWithArgument("Silver", "Silver");
+                await showSpawnersWithArgument("Gold", "Gold");
                 SetLevelUpStuff();
+                HandleExtraTooltips(document.getElementById("dataHolder"));
             }
         </script>
 
@@ -37,12 +40,16 @@
                     id="Bronze-button"
                     class="w3-bar-item w3-button tablink w3-red"
                     onclick="openDiv(event,'Bronze')">
-                    Infestations
+                    Bronze
                 </button>
+                <button class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Silver')">Silver</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Gold')">Gold</button>
               
             </div>
             <div id="dataHolder">
                 <div id="Bronze" class="w3-container w3-border city"></div>
+                <div id="Silver" class="w3-container w3-border city" style="display:none"></div>
+                <div id="Gold" class="w3-container w3-border city" style="display:none"></div>
 
                 
             </div>

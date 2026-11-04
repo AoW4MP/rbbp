@@ -1,7 +1,7 @@
 searchParams = new URLSearchParams(window.location.search);
 searchKeyword = searchParams.get("u");
 
-var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal", "Dark", "Nomad", "Reaver"];
+var ListOfSubcultureHolders = ["Architect", "Primal", "Mystic", "Oathsworn", "Feudal", "Dark", "Nomad", "Reaver", "Mercantile"];
 var ListOfSubsocietyHolders = ["Vision of Promise", "Vision of Ruin", "Vision of Destiny"];
 
 var currentOrigin = "";
@@ -884,7 +884,8 @@ function SetTomePathInfo(button, origin) {
     const buttonText = document.createElement("span");
     const newDivButton = document.createElement("div");
     buttonText.innerHTML = romanize(origin.tier) + ": ";
-    var clearname = origin.name.replace("Tome of the", "");
+    const tomeName = findBy(jsonTomesLocalized, "resid", origin.resid)?.name ?? origin.name;
+    var clearname = tomeName.replace("Tome of the", "");
     buttonText.innerHTML += clearname.replace("Tome of", "");
     buttonText.style = "display: block;font-size: 15px;position: relative;text-align: center; top: -40px;";
 
@@ -921,8 +922,6 @@ function SetTomePathInfo(button, origin) {
     SetTomePreview(spa, origin);
 
     newDivButton.className = "list-button-long";
-
-    newDivButton.addEventListener("click", (event) => SetTomePathOptions(event));
 
     //  newDivButton.append(spa);
 
@@ -1513,15 +1512,15 @@ function findOriginLocName(origin, type) {
                 if ("extraLookup2" in origin) {
                     const valueLookup2 = findBy(jsonAllFromPOLocalized, "id", origin.extraLookup2);
 
-                    newOrigin = valueLookup2.hyperlink || valueLookup2.name || valueLookup2.title;
+                    newOrigin = valueLookup2?.hyperlink || valueLookup2?.name || valueLookup2?.title;
                 } else {
-                    newOrigin = valueLookup.hyperlink || valueLookup.name;
+                    newOrigin = valueLookup?.hyperlink || valueLookup?.name || valueLookup?.title;
                 }
             } else {
                 newOrigin = origin.name;
             }
           
-            newOrigin = newOrigin.split("{")[0];
+            newOrigin = (newOrigin || origin.name || origin.id).split("{")[0];
             break;
 
         case "Tome":

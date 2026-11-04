@@ -1,5 +1,34 @@
 [
     {
+        "type": "Culture",
+        "id": "mercantile",
+        "icon": "mercantile",
+        "DLC": "SILVERSEAS",
+        "name": "Mercantile",
+        "extraLookup": "DLC@SILVERSEAS@CULTURE_MERCANTILE",
+        "affinity": "<empireshadow></empireshadow>"
+    },
+    {
+        "type": "SubCulture",
+        "id": "cartel",
+        "icon": "cartel",
+        "DLC": "SILVERSEAS",
+        "name": "Cartel",
+        "requirement": "Mercantile",
+        "extraLookup": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_CARTEL",
+        "affinity": "<empirechaos></empirechaos>"
+    },
+    {
+        "type": "SubCulture",
+        "id": "barony",
+        "icon": "barony",
+        "name": "Barony",
+        "DLC": "SILVERSEAS",
+        "requirement": "Mercantile",
+        "affinity": "<empirematter></empirematter>",
+        "extraLookup": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_BARONY"
+    },
+    {
         "type": "Class",
         "id": "ranger",
         "name": "Ranger",

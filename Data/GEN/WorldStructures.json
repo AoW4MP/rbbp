@@ -1,4 +1,67 @@
 [
+  {
+    "id": "pale_tidebloom",
+    "name": "Pale Tidebloom",
+    "type": "plant",
+    "dlc": "SILVERSEAS ",
+    "extraLookup": "DLC@SILVERSEAS@NODES_STRATEGIC@PALE_TIDEBLOOM",
+    "combat": "DLC@SILVERSEAS@COMBATPROPERTIES_TACTICAL@GHOSTFIRE_CURSE"
+  },
+  {
+    "id": "pearltide_dome",
+    "extraLookup": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@PEARLTIDE_DOME",
+    "nodeType": "research_post&+25 <knowledge></knowledge>",
+    "DLC": "SILVERSEAS ",
+    "name": "Pearltide Dome",
+    "type": "<goldwonder></goldwonder> Gold Ancient Wonder",
+    "unit_unlocks": [
+      {
+        "slug": "storm_rune_crab"
+      }
+    ]
+  },
+  {
+    "id": "uncharted_harbor",
+    "extraLookup": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@UNCHARTED_HARBOR",
+    "nodeType": "research_post&+25 <knowledge></knowledge>",
+    "DLC": "SILVERSEAS ",
+    "name": "Uncharted Harbor",
+    "type": "<bronzewonder></bronzewonder> Bronze Ancient Wonder",
+    "unit_unlocks": [
+      {
+        "slug": "seamare"
+      }
+    ]
+  },
+  {
+    "id": "tempestuous_vortex",
+    "DLC": "SILVERSEAS ",
+    "spell_unlocks": [
+      {
+        "id": "vortex_storm"
+      }
+    ],
+    "unit_unlocks": [
+      {
+        "slug": "lightning_rune_crab"
+      }
+    ],
+    "name": "Tempestuous Vortex",
+    "extraLookup": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@TEMPESTUOUS_VORTEX",
+    "type": "Landmark"
+  },
+  {
+    "id": "armadas_fall",
+    "DLC": "SILVERSEAS ",
+    "spell_unlocks": [
+      {
+        "id": "rampant_debris"
+      }
+    ],
+    "name": "Armada's Fall",
+    "extraLookup": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@ARMADAS_FALL",
+    "type": "Landmark"
+  },
     {
         "id": "rainbow_clover",
         "name": "Rainbow Clover",

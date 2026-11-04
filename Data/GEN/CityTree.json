@@ -1,4 +1,76 @@
 [
+  {
+    "id": "trade_post",
+    "connectTo": [
+      {
+        "id": "town_hall_ii"
+      }
+    ]
+  },
+  {
+    "id": "outpost_supply_hub",
+    "connectTo": [
+      {
+        "id": "trade_post"
+      }
+    ]
+  },
+  {
+    "id": "diplomatic_embassy",
+    "connectTo": [
+      {
+        "id": "trade_post"
+      }
+    ]
+  },
+  {
+    "id": "trade_quarters",
+    "connectTo": [
+      {
+        "id": "town_hall_iii"
+      }
+    ]
+  },
+  {
+    "id": "food_importers",
+    "connectTo": [
+      {
+        "id": "trade_quarters"
+      }
+    ]
+  },
+  {
+    "id": "wizards_exchange",
+    "connectTo": [
+      {
+        "id": "trade_quarters"
+      }
+    ]
+  },
+  {
+    "id": "trade_bazaar",
+    "connectTo": [
+      {
+        "id": "town_hall_iv"
+      }
+    ]
+  },
+  {
+    "id": "caravaneers_guild",
+    "connectTo": [
+      {
+        "id": "trade_bazaar"
+      }
+    ]
+  },
+  {
+    "id": "taxation_offices",
+    "connectTo": [
+      {
+        "id": "trade_bazaar"
+      }
+    ]
+  },
     {
         "id": "vendor",
         "connectTo": [ {

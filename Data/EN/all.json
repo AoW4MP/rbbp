@@ -1,5 +1,132 @@
 [
   {
+    "id": "DLC@SILVERSEAS@ARTIFACT@ACCURSED_HEAD",
+    "description": "<bulletlist><bullet>Unlocks recruitment of the [spellref,GLOBAL.UNITS.ACCURSED_WISP]Accursed wisp[/spellref] and [spellref,GLOBAL.UNITS.ACCURSED_LAMENTER]Accursed lamenter[/spellref] in all of your [hyperlink,GLOBAL.CityConcept]City[/hyperlink].</bullet><bullet>Your [hyperlink,GLOBAL.LeaderConcept]Ruler[/hyperlink] and [hyperlink,GLOBAL.HeroConcept]Hero[/hyperlink] gain [spellref,GLOBAL.PROPERTIES.DAMNED_BODY]Damned Body[/spellref], [spellref,GLOBAL.PROPERTIES.DAMNED_CONDUIT]Damned conduit[/spellref], and [spellref,GLOBAL.PROPERTIES.DIRGE_OF_THE_DAMNED]Dirge of the damned[/spellref].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"Oh my Queen, you look mean,<br>Sing no woeful song.<br>For your head, wicked, dead,<br>Paid accursed wrong.\"",
+    "name": "Head of Ceaseless Laments"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@COMPASS",
+    "description": "<bulletlist><bullet>Rewards from [hyperlink,GLOBAL.PickupConcept]Pickup[/hyperlink] on the water are increased by +100%.</bullet><bullet>Every 4-6 <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink], a new [hyperlink,GLOBAL.PickupConcept]Pickup[/hyperlink] is revealed in a water province close to your [hyperlink,GLOBAL.DomainConcept]Domain[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"No north it shows, no course it keeps,<br>It points to gold past bluest deeps!<br>So sail off me Jack, where'er it boasts,<br>To treasure, adventure, and bounteous coasts!\"",
+    "name": "Compass of Bounteous Coasts"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@DEMONIC_CONTRACT",
+    "description": "At the start of water combat, a random pirate unit with [spellref,GLOBAL.PROPERTIES.DEMONKIN]Demonkin[/spellref] joins you in battle.",
+    "DLC": "SILVERSEAS",
+    "lore": "\"For lies we signed, for gold we sold,<br>For vengeance pledged our souls once bold,<br>Now murder, reap, and pillage untold,<br>Our Nether Master us does scold!<br>\"",
+    "name": "Free Captain's Demonic Contract"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@FROZEN_PAW",
+    "description": "<bulletlist><bullet>You have +50 <caststrategic></caststrategic> [hyperlink,GLOBAL.WorldMapCastingPointConcept]World Map Casting Point[/hyperlink] and +50 <optactical></optactical> [hyperlink,GLOBAL.CombatCastingPointConcept]Combat Casting Point[/hyperlink].</bullet><bullet>Whenever you cast a strategic spell, the [hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] of your [hyperlink,GLOBAL.LeaderConcept]Ruler[/hyperlink] is affected by the following:<bulletlist></bullet><bullet>Alter land provinces to [hyperlink,GLOBAL.SnowConcept]Snow[/hyperlink] and [hyperlink,GLOBAL.FrozenWasteConcept]Ice[/hyperlink].<bulletlist></bullet><bullet>Loses [hyperlink,GLOBAL.ChasmConcept]Chasm[/hyperlink], [hyperlink,GLOBAL.SwampConcept]Swamp[/hyperlink], [hyperlink,GLOBAL.AshlandsConcept]Ashlands[/hyperlink], [hyperlink,GLOBAL.SandConcept]Sand[/hyperlink], [hyperlink,GLOBAL.CavernFloorConcept]Cavern Floor[/hyperlink], and [hyperlink,GLOBAL.GloomTerrainConcept]Gloom[/hyperlink].</bullet></bulletlist><bullet></bullet>All [hyperlink,GLOBAL.UnitConcept]Unit[/hyperlink] in the [hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] gain [spellref,GLOBAL.PROPERTIES.WHITEOUT_UNIT_PROP]Whiteout unit prop[/spellref] for 2 <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink].[/bulletlist][/bulletlist]",
+    "DLC": "SILVERSEAS",
+    "lore": "\"At the realm's black end, death whites out the sea,<br>Hark, the Doomray cometh, me boys.<br>When the wind dies out and stars cease to be,<br>The Doomray cometh—for you and me!\"",
+    "name": "Hoarfrozen Paw"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@JADE_PROSPEROUS_REIGN",
+    "description": "<bulletlist><bullet>[hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] between your <<m:[hyperlink,GLOBAL.CityConcept]City[/hyperlink] >> and [hyperlink,GLOBAL.OutpostConcept]Outpost[/hyperlink] grant +3 <influence></influence> [hyperlink,GLOBAL.ImperiumConcept]Imperium[/hyperlink].</bullet><bullet>When obtaining this <artifact></artifact> [hyperlink,GLOBAL.ArtifactConcept]Artifact[/hyperlink] for the first time, you unlock 2 random high Tier [hyperlink,GLOBAL.EmpireSkillConcept]Empire Skill[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"Jade crowned the Emperor, gold blessed his reign,<br>His harbors knew plenty, his folk knew no pain,<br>Till Greed spread its wings and took all for its hoard—<br>Sail wary, ye fortunate: here dragons bound aboard.\"",
+    "name": "Jade of Prosperous Reign"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@MAER_HEART",
+    "description": "<bulletlist><bullet>Unlocks the [spellref,GLOBAL.SPECIAL_OPERATIONS.NEVERMOOR_CURSE_SPELL]Nevermoor curse spell[/spellref] <caststrategic></caststrategic> [hyperlink,GLOBAL.MajorRaceTransformationConcept]Major Race Transformation[/hyperlink].</bullet><bullet>Unlocks the recruitment of [spellref,GLOBAL.UNITS.GHOST_SHIP_UNIT]Ghost ship unit[/spellref] in all your cities.</bullet><bullet>Yields +20 <souls></souls> [hyperlink,GLOBAL.SoulConcept]Soul[/hyperlink] each <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"If I could dream, I would dream of you,<br>But I cannot rest, nor moor once more,<br>And sometimes I abhor this life I woo,<br>For you were the price this dream called for.\"",
+    "name": "Heart of the Maer"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@ROTTEN_GOLD",
+    "description": "<bulletlist><bullet>Unlocks the [spellref,GLOBAL.SPECIAL_OPERATIONS.GOLDEN_TOUCHED]Golden touched[/spellref] and [spellref,GLOBAL.SPECIAL_OPERATIONS.WIGHTBORN]Glint of the Wightborn[/spellref] [hyperlink,GLOBAL.SpellConcept]Spell[/hyperlink].</bullet><bullet>Units with [spellref,GLOBAL.SPECIAL_OPERATIONS.GOLDEN_TOUCHED]Golden touched[/spellref] or [spellref,GLOBAL.SPECIAL_OPERATIONS.WIGHTBORN]Glint of the Wightborn[/spellref] will gain [spellref,GLOBAL.PROPERTIES.GOLDEN_CURSE]Golden curse[/spellref].</bullet><bullet>Killing unit reward increases an additional 6 <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink] per [hyperlink,GLOBAL.UnitTierConcept]Unit tier[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"The curse falls upon you, the gold thickens fast,<br>Your fingers twitch turning to skeletal hands,<br>Damnation is killing you, but won't let you die,<br>Another hexed soul for My'dhas' gold pile.\"",
+    "name": "The Rotten Gold"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@WIND_CONCH",
+    "description": "Unlocks the spell: [spellref,GLOBAL.SPECIAL_OPERATIONS.GUST_OF_SEVEN_SEAS]Gust of seven seas[/spellref].",
+    "DLC": "SILVERSEAS",
+    "lore": "\"Blow once the conch for the homeless at sea,<br>Blow deep for the winds that'll carry us free,<br>Though ports forsake us, where'er we roam,<br>May fair winds bear us to fairer shores home.\"",
+    "name": "Conch of Fair Winds",
+    "spell_description": "All your [hyperlink,GLOBAL.ArmyConcept]Army[/hyperlink] regain all their movement points if they are on water. Half if they are on land.<br>A unit cannot benefit from this spell more than once per turn.",
+    "spell_name": "Gust of the Seven Seas"
+  },
+  {
+    "id": "DLC@SILVERSEAS@COMBATPROPERTIES_TACTICAL@GHOSTFIRE_CURSE",
+    "description": "When a unit is inflicted with [spellref,GLOBAL.PROPERTIES.GHOSTFIRE]Ghostfire[/spellref], it has a base <eventColor>{GHOSTFIRE_RESISTANCE>ResolvedStrength}</eventColor>% chance of gaining another [spellref,GLOBAL.PROPERTIES.GHOSTFIRE]Ghostfire[/spellref] stack.",
+    "DLC": "SILVERSEAS",
+    "name": "Ghostfire Curse"
+  },
+  {
+    "id": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@PEARLTIDE_DOME",
+    "description": "<bulletlist><bullet>Unlocks the [spellref,GLOBAL.SPECIAL_OPERATIONS.PEARLTIDE_BOMB]Pearltide Bomb[/spellref] [hyperlink,GLOBAL.CombatSpellConcept]Combat Spell[/hyperlink].</bullet><bullet>Adds the [spellref,GLOBAL.UNITS.STORM_RUNE_CRAB]Storm Rune Crab[/spellref] unit to the [hyperlink,GLOBAL.RequestMilitaryAidConcept]Rally of the Lieges[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "<helpcolor>An alluring sphere of unknown origin, perched high above the tumultuous waves so its mysterious gleam is cast far and away. Towering shells of a gargantuan oyster fail to contain the orb's beckoning light. A pearl of this size is bound to attract attention from all that travel the high seas.</helpcolor>",
+    "name": "Pearltide Dome"
+  },
+  {
+    "id": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@UNCHARTED_HARBOR",
+    "description": "<bulletlist><bullet>Friendly Embarked [hyperlink,GLOBAL.UnitConcept]Unit[/hyperlink] in the [hyperlink,GLOBAL.DomainConcept]Domain[/hyperlink] gain [spellref,GLOBAL.PROPERTIES.FAMILIAR_WATERS]Familiar Waters[/spellref].</bullet><bullet>Adds the [spellref,GLOBAL.UNITS.SEAMARE]Seamare Mount[/spellref] unit to the [hyperlink,GLOBAL.RequestMilitaryAidConcept]Rally of the Lieges[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "<helpcolor>The ominous rock formation that crowns this remote isle, whether man-made or sculpted by winds and water, portend the inhospitality of its shores. A waterway pulls ships towards the gaping mouth of the skull-like mountain: a hideout that often harbors refugees and castaways that are either content or forced to live far removed from civilization.</helpcolor>",
+    "name": "Uncharted Harbor"
+  },
+  {
+    "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@ARMADAS_FALL",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>+2 <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink], +2 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink], and +1 <souls></souls> [hyperlink,GLOBAL.SoulConcept]Soul[/hyperlink] income if available.</bullet><bullet>A <quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] or <mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] can be constructed in this province.</bullet><bullet>Every 10 <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink], a random water [hyperlink,GLOBAL.PickupConcept]Pickup[/hyperlink] spawns in this province if able.</bullet><bullet>The {GLOBAL.PROPERTIES.RAMPANT_DEBRIS.Hyperlink} <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet><quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] in the [hyperlink,GLOBAL.DomainConcept]Domain[/hyperlink] grant +5 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink] income.</bullet><bullet><mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] in the Domain grant +5 <unitprod></unitprod> [hyperlink,GLOBAL.UnitProductionConcept]Draft[/hyperlink] income.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"When I first saw the Armada's Fall, I understood where all the treasures lost at sea end up. Swept away by a Tempestuous Vortex, the graveyard of ships and treasures is a blessing to the pockets of whoever finds it. For uncontested gold is the most profitable of all.\"<br><br>—Marinus Lord of the Waters, Ventures in the Seas.",
+    "name": "Armada's Fall"
+  },
+  {
+    "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@TEMPESTUOUS_VORTEX",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>Allows the construction of a <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province.</bullet><bullet>A <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province grants +5 <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink] income.</bullet><bullet>The {GLOBAL.PROPERTIES.VORTEX_STORM.Hyperlink} <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet><bullet>[hyperlink,GLOBAL.UnitConcept]Unit[/hyperlink] starting their <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink] in this Province gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 3 <turn></turn> [hyperlink,GLOBAL.TurnConcept]Turn[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]Province[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet>The ability to draft [spellref,GLOBAL.UNITS.LIGHTNING_RUNE_CRAB]Lightning Rune Crab[/spellref] in the City for <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink].</bullet><bullet>Friendly Units starting their <turn></turn> Turn in the Domain gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 3 <turn></turn> Turns.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"Half of the king's fleet was behind us when we heard the cry from the crow's nest: 'The sea has opened to swallow us! A maelstrom as vast as an empire!' With death behind us, we set sail for the vortex, to ride its current and escape our fate. But our ship cracked, the helm broke, and the sea swallowed us whole.\"<br><br>—Amaro Arieta, ghost of the Haunted Armada, Wisdom of the Fallen: As cited by Noctus.",
+    "name": "Tempestuous Vortex"
+  },
+  {
+    "id": "DLC@SILVERSEAS@NODES_STRATEGIC@PALE_TIDEBLOOM",
+    "description": "Unique global effect:<bulletlist><bullet>Cost of [hyperlink,GLOBAL.EmpireSkillConcept]Empire Skill[/hyperlink] is reduced by 10%.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "\"By what means the Pale Tidebloom attains its full maturity remains much disputed among scholars and is the subject of no few legends. This light-bearing seaweed gives forth a great measure of vital essence from the earliest days of its growth, yet only upon coming into contact with accursed devils does it begin to burn with fiendish fire.\"<br><br>— Roderick Finwing, Local Flora and Its Applications: Part IV, Breeding and Harvesting.",
+    "name": "Pale Tideblooms"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE",
+    "bio": "They believe that gold lords over all and will trade with nearly anyone to maximize their profit.",
+    "DLC": "SILVERSEAS",
+    "hero_female_title_01": "Stadtholder",
+    "hero_title_01": "Stadtholder",
+    "lore": "<br><helpcolor>A culture driven by commerce and profit, commanded by savvy entrepreneurs. Their cunning and resourcefulness allows them to found cities on water.</helpcolor>",
+    "player_female_title_01": "Merchant Princess",
+    "player_female_title_02": "Guild Patricissa",
+    "player_female_title_03": "Trade Plutocratesse",
+    "player_title_01": "Merchant Prince",
+    "player_title_02": "Guild Patrician",
+    "player_title_03": "Trade Plutocrat"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_BARONY",
+    "fpg_description": "Your people are talented merchants, negotiating shrewdly with free cities and extracting profit from outposts:<bulletlist><bullet>Non-Support, Non-Hero units gain [spellref,GLOBAL.PROPERTIES.BOUNTY_HUNTER]Bounty Hunter[/spellref].</bullet><bullet>Support and Hero units gain [spellref,GLOBAL.PROPERTIES.ASSIGN_BOUNTY]Assign Bounty[/spellref].</bullet><bullet>[hyperlink,GLOBAL.OutpostConcept]Outpost[/hyperlink] gain access to an Advanced Work Camp upgrade.</bullet><bullet>[hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] cost -20% less to establish in their cities.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lorename": "Mercantile Barony",
+    "name": "Barony"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_CARTEL",
+    "fpg_description": "Your people are cunning merchants, bending the laws to their benefit, profiting unnoticed from their rivals:<bulletlist><bullet>[spellref,GLOBAL.PROPERTIES.OBSERVANT]Observant[/spellref] units apply [spellref,GLOBAL.PROPERTIES.LEVERAGE]Leverage[/spellref] to enemy units when not engaged in combat, before delivering powerful [hyperlink,GLOBAL.FlankingConcept]<flank></flank> Flanking[/hyperlink] attacks.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] are invisible to other factions unless one of their units stands on top of the Route.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] can be established to other [hyperlink,GLOBAL.EmpireConcept]Empire[/hyperlink] without needing a [hyperlink,GLOBAL.TradeAgreementConcept]Free Trade Agreement[/hyperlink].</bullet><bullet>Access to the [spellref,GLOBAL.SIEGE_PROJECTS.EXPLOIT_NETWORKS]Exploit Networks[/spellref] Siege Project when besieging cities with which you have a [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lorename": "Mercantile Cartel",
+    "name": "Cartel"
+  },
+  {
     "id": "ABILITIES@ACTIVE_ABILITY_TOUCH",
     "reload_name": "Reload"
   },

@@ -23,6 +23,7 @@
                 showAllRelics("GIANTKINGS ", "Giants");
                   showAllRelics("RISEFROMRUIN ", "Fractured");
                   showAllRelics("SECRETSOFTHEARCHMAGES ", "Secret");
+                  showAllRelics("SILVERSEAS ", "Pirate");
                 SetLevelUpStuff();
             }
         </script>
@@ -46,12 +47,16 @@
                  <button id="Secret-button" class="w3-bar-item w3-button tablink w3-red" onclick="openDiv(event,'Secret')">
                     Secret Spells
                 </button>
+                <button id="Pirate-button" class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Pirate')">
+                    Pirate &amp; Ocean
+                </button>
                
             </div>
-             <div id="dataHolder" style="margin-top: -150px">
+             <div id="dataHolder" style="margin-top: -200px">
                 <div id="Giants" class="w3-container w3-border city"></div>
                  <div id="Fractured" class="w3-container w3-border city"></div>
                  <div id="Secret" class="w3-container w3-border city"></div>
+                 <div id="Pirate" class="w3-container w3-border city" style="display:none"></div>
 
                
             </div>

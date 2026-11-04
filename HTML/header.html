@@ -8,6 +8,7 @@
     </head>
 
     <body>
+        <div id="topbarAnchor"></div>
         <div class="topbar">
             <div style="display: flex">
                 <div class="dropdown">
@@ -75,6 +76,8 @@
     position: relative;display:block;
     top: 0px;" src="/rbbp/Icons/Text/SotaLogo.png" width="250px" />
             </div>
+            <button type="button" id="menuToggle" class="menu-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false">☰</button>
+            <div id="menuBackdrop" class="menu-backdrop"></div>
             <ul id="menu">
                 <li>
                     <a class="prett" id="menu-units"
@@ -152,6 +155,11 @@
                                     <a id="culture-nomad" href="/rbbp/HTML/NomadUnits.html?type=duneriderConquerors&"
                                         ><img src="/rbbp/Icons/Interface/Header/nomad.png" width="20px" /> Nomad</a
                                     >
+                                </li>
+                                <li>
+                                    <a id="culture-mercantile" href="/rbbp/HTML/MercantileUnits.html">
+                                        <img src="/rbbp/Icons/Interface/Header/mercantile.png" width="20px" /> Mercantile
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -253,6 +261,11 @@
                                     <a id="tomesU-sota" href="/rbbp/HTML/SecretsOfTheArchmagesTomeUnits.html"
                                         ><img src="/rbbp/Icons/Text/SotaLogo.png" width="20px" /> Secrets of the Archmages</a
                                     >
+                                </li>
+                                <li>
+                                    <a id="tomesU-ss" href="/rbbp/HTML/SilverSeasUnits.html">
+                                        <img src="/rbbp/Icons/Interface/Header/the_silver_seas.png" width="20px" /> Silver Seas
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -738,6 +751,7 @@
                             width="40px" />Search</a
                     >
                 </li>
+                <li id="menuExtras"></li>
             </ul>
         </div>
 
