@@ -1,5 +1,133 @@
 [
   {
+    "id": "DLC@SILVERSEAS@ARTIFACT@ACCURSED_HEAD",
+    "description": "<bulletlist><bullet>Позволяет нанимать <<acc,mc:[spellref,GLOBAL.UNITS.ACCURSED_WISP]Accursed wisp[/spellref]>> и <<acc,mc:[spellref,GLOBAL.UNITS.ACCURSED_LAMENTER]Accursed lamenter[/spellref]>> во всех ваших <<pre,mc:[hyperlink,GLOBAL.CityConcept]Город[/hyperlink]>>.</bullet><bullet>Ваш <<c:[hyperlink,GLOBAL.LeaderConcept]Правительl[/hyperlink]>> и все ваши <<mc:[hyperlink,GLOBAL.HeroConcept]Героиpl[/hyperlink]>> получают способности «[spellref,GLOBAL.PROPERTIES.DAMNED_BODY]Окаянная плоть[/spellref]», «[spellref,GLOBAL.PROPERTIES.DAMNED_CONDUIT]Damned conduit[/spellref]» и «[spellref,GLOBAL.PROPERTIES.DIRGE_OF_THE_DAMNED]Dirge of the damned[/spellref]».</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Моя королева, ужасен твой лик,<br>Не пой твою грозную песню.<br>Черно твоё сердце, остёр твой язык,<br>Средь проклятых нет прелестней».",
+    "name": "Голова бесконечных стенанийn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@COMPASS",
+    "description": "<bulletlist><bullet>Содержимое <<gen,mc:[hyperlink,GLOBAL.PickupConcept]находка[/hyperlink]>> на воде увеличивается на 100%.</bullet><bullet>Каждые 4-6 [hyperlink,GLOBAL.TurnConcept]х.[/hyperlink] в водной провинции рядом с вашими <<ins,c:[hyperlink,GLOBAL.DomainConcept]Владенияn[/hyperlink]>> появляется новая [hyperlink,GLOBAL.PickupConcept]находка[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Не к северу укажет он,<br>а к злату под волнами.<br>Плыви же на сокровищ звон<br>над моря берегами!»",
+    "name": "Компас щедрых береговn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@DEMONIC_CONTRACT",
+    "description": "В начале боя на воде к вам присоединяется случайный воин-пират со способностью «[spellref,GLOBAL.PROPERTIES.DEMONKIN]Демоническая трансформация[/spellref]».",
+    "DLC": "SILVERSEAS",
+    "lore": "«Мы души продали за ложь,<br>За месть, за кровь и злато,<br>Добычу — в трюм, врагов — под нож,<br>Да, мы живем богато!»<br>",
+    "name": "Демонический контракт вольного капитанаa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>x<eventColor>{4}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@FROZEN_PAW",
+    "description": "<bulletlist><bullet>Вы получаете +50 <<gen,mc:<caststrategic></caststrategic> [hyperlink,GLOBAL.WorldMapCastingPointConcept]Очки глобальных заклинанийn{1}x{2}x{3}[/hyperlink]>> и +50 <<gen,mc:<optactical></optactical> [hyperlink,GLOBAL.CombatCastingPointConcept]Очки боевых заклинанийn{1}x{2}x{3}[/hyperlink]>>.</bullet><bullet>Когда вы используете стратегическое заклинание, <<mc:[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink]>> вашего <<gen,c:[hyperlink,GLOBAL.LeaderConcept]Правительl[/hyperlink]>> подвергаются следующим эффектам:<bulletlist></bullet><bullet>наземные провинции превращаются в <<acc,mc:[hyperlink,GLOBAL.SnowConcept]Снег[/hyperlink]>> и <<acc,mc:[hyperlink,GLOBAL.FrozenWasteConcept]Лёд[/hyperlink]>>;<bulletlist></bullet><bullet>провинции теряют типы «[hyperlink,GLOBAL.ChasmConcept]Пропасть[/hyperlink]», «[hyperlink,GLOBAL.SwampConcept]Болото[/hyperlink]», «[hyperlink,GLOBAL.AshlandsConcept]Пепелище[/hyperlink]», «[hyperlink,GLOBAL.SandConcept]Пески[/hyperlink]», «[hyperlink,GLOBAL.CavernFloorConcept]Поверхность пещерыn{1}x{2}[/hyperlink] и «[hyperlink,GLOBAL.GloomTerrainConcept]Мрак[/hyperlink]».</bullet></bulletlist><bullet></bullet>Все <<mc:[hyperlink,GLOBAL.UnitConcept]Воинl[/hyperlink]>> в <<ins,c:[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink]>> получают свойство «[spellref,GLOBAL.PROPERTIES.WHITEOUT_UNIT_PROP]Whiteout unit prop[/spellref]» на 2 [hyperlink,GLOBAL.TurnConcept]х.[/hyperlink].[/bulletlist][/bulletlist]",
+    "DLC": "SILVERSEAS",
+    "lore": "«Заходит солнце, смерть пятнает море,<br>И cмертокол поживу ищет под волнами.<br>Когда затихнет ветер, сгинут звёзды,<br>Он поживится нашими сердцами!»",
+    "name": "Лапа вечной мерзлотыn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@JADE_PROSPEROUS_REIGN",
+    "description": "<bulletlist><bullet>[hyperlink,GLOBAL.TradeRouteConcept]Торговый путьa{1}n{2}[/hyperlink] между вашими <<ins,mc:[hyperlink,GLOBAL.CityConcept]Город[/hyperlink]>> и <<ins,mc:[hyperlink,GLOBAL.OutpostConcept]Форпост[/hyperlink]>> приносят +3 ед. <<gen,c:<influence></influence> [hyperlink,GLOBAL.ImperiumConcept]Авторитет[/hyperlink]>>.</bullet><bullet>Получив этот <<acc,c:<artifact></artifact> [hyperlink,GLOBAL.ArtifactConcept]Артефакт[/hyperlink]>> в первый раз, вы откроете не менее 2 случайных <<gen,mc:[hyperlink,GLOBAL.EmpireSkillConcept]Умение империиn{1}x{2}[/hyperlink]>> высокого уровня.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Чело увенчано нефритовым венцом,<br>Казна полна неслыханных сокровищ,<br>Но злая участь уготована творцом —<br>Пасть жертвою драконов и чудовищ».",
+    "name": "Нефрит благоденствующего правленияn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@MAER_HEART",
+    "description": "<bulletlist><bullet>Открывает <<acc,c:<caststrategic></caststrategic> [hyperlink,GLOBAL.MajorRaceTransformationConcept]Значительная трансформация народаa{1}n{2}x{3}[/hyperlink]>> «[spellref,GLOBAL.SPECIAL_OPERATIONS.NEVERMOOR_CURSE_SPELL]Nevermoor curse spell[/spellref]».</bullet><bullet>Позволяет нанимать во всех ваших городах <<acc,cm:[spellref,GLOBAL.UNITS.GHOST_SHIP_UNIT]Ghost ship unit[/spellref]>>.</bullet><bullet>Приносит +20 <<gen,cm:<souls></souls> [hyperlink,GLOBAL.SoulConcept]Душа[/hyperlink]>> каждый <turn></turn> [hyperlink,GLOBAL.TurnConcept]Ход[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Когда б мне выпало мечтать,<br>Тобой исполнились бы грёзы,<br>Вовек покоя мне не знать,<br>И якоря нигде не бросить,<br>Презрю я жизни путь земной,<br>Ведь жизнь твоя была ценой».",
+    "name": "Сердце Маэрn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@ROTTEN_GOLD",
+    "description": "<bulletlist><bullet>Открывает <<acc,cm:[hyperlink,GLOBAL.SpellConcept]Заклинание[/hyperlink]>> «[spellref,GLOBAL.SPECIAL_OPERATIONS.GOLDEN_TOUCHED]Golden touched[/spellref]» и «[spellref,GLOBAL.SPECIAL_OPERATIONS.WIGHTBORN]Отблеск умертвийn{1}x{2}[/spellref]».</bullet><bullet>Воины под действием эффектов «[spellref,GLOBAL.SPECIAL_OPERATIONS.GOLDEN_TOUCHED]Golden touched[/spellref]» и «[spellref,GLOBAL.SPECIAL_OPERATIONS.WIGHTBORN]Отблеск умертвийn{1}x{2}[/spellref]» получают свойство «[spellref,GLOBAL.PROPERTIES.GOLDEN_CURSE]Golden curse[/spellref]».</bullet><bullet>Убийство воинов дополнительно приносит 6 ед. <<gen,c:<gold></gold> [hyperlink,GLOBAL.GoldConcept]Золото[/hyperlink]>> за каждый <<acc,c:[hyperlink,GLOBAL.UnitTierConcept]Ранг воинаn{1}x{2}[/hyperlink]>>.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Настигнет проклятие мигом глупца, как золото вмиг тяжелеет,<br>И длань обратится во длань мертвеца, костей позабытых белее,<br>Удел твой — не смерть, но посмертья проказа,<br>Узилище душ средь сокровищ Мидхаса».",
+    "name": "Гнилое золотоa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@ARTIFACT@WIND_CONCH",
+    "description": "Открывает заклинание: [spellref,GLOBAL.SPECIAL_OPERATIONS.GUST_OF_SEVEN_SEAS]Gust of seven seas[/spellref].",
+    "DLC": "SILVERSEAS",
+    "lore": "«Дунь ради тех, кто нынче вышел в море,<br>Дунь дважды, чтобы нас услышал ветер,<br>Дунь трижды, чтобы горе отвести<br>Пусть курс в родную гавань будет светел».",
+    "name": "Раковина попутных ветровn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{2}</eventColor>",
+    "spell_description": "Все ваши <<cm:[hyperlink,GLOBAL.ArmyConcept]Армия[/hyperlink]>> восстанавливают все очки перемещения, если находятся на воде, и половину очков перемещения, если находятся на суше.<br>Это заклинание действует на каждого воина лишь один раз за ход.",
+    "spell_name": "Ветер семи морей"
+  },
+  {
+    "id": "DLC@SILVERSEAS@COMBATPROPERTIES_TACTICAL@GHOSTFIRE_CURSE",
+    "description": "Когда к воину применяется эффект «[spellref,GLOBAL.PROPERTIES.GHOSTFIRE]Призрачный огонь[/spellref]», он с базовой вероятностью <eventColor>{GHOSTFIRE_RESISTANCE>ResolvedStrength}</eventColor>% может получить дополнительный заряд эффекта «[spellref,GLOBAL.PROPERTIES.GHOSTFIRE]Призрачный огонь[/spellref]».",
+    "DLC": "SILVERSEAS",
+    "name": "Проклятие призрачного огняn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>x<eventColor>{3}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@PEARLTIDE_DOME",
+    "description": "<bulletlist><bullet>Открывает <<acc,c:[hyperlink,GLOBAL.CombatSpellConcept]Боевое заклинаниеa{1}n{2}[/hyperlink]>> «[spellref,GLOBAL.SPECIAL_OPERATIONS.PEARLTIDE_BOMB]Жемчужная бомбаa{1}n{2}[/spellref]».</bullet><bullet>В <<pre,c:[hyperlink,GLOBAL.RequestMilitaryAidConcept]Сбор сеньоровn{1}x{2}[/hyperlink]>> появляется <<c:[spellref,GLOBAL.UNITS.STORM_RUNE_CRAB]Штормовой рунный крабla{1}a{2}n{3}[/spellref]>>.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "<helpcolor>Обворожительная сфера неизвестного происхождения, парящая высоко над бурлящими волнами и заметная издалека. Даже огромные створки гигантской устрицы не способны прикрыть манящий свет этого шара. Жемчужина таких размеров непременно привлечёт внимание всех, кто бороздит океаны.</helpcolor>",
+    "name": "Жемчужный куполa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@EXPLORATIONSITES_STRATEGIC@ANCIENT_WONDERS@UNCHARTED_HARBOR",
+    "description": "<bulletlist><bullet>Дружественные <<mc:[hyperlink,GLOBAL.UnitConcept]Воинl[/hyperlink]>> на борту во <<pre,c:[hyperlink,GLOBAL.DomainConcept]Владенияn[/hyperlink]>> получают эффект «[spellref,GLOBAL.PROPERTIES.FAMILIAR_WATERS]Знакомые водыFa{1}n{2}[/spellref]».</bullet><bullet>В <<pre,c:[hyperlink,GLOBAL.RequestMilitaryAidConcept]Сбор сеньоровn{1}x{2}[/hyperlink]>> появляется воин [spellref,GLOBAL.UNITS.SEAMARE]Ездовая морская кобылицаa{1}a{2}n{3}[/spellref].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "<helpcolor>Высокий скалистый массив над этим островом — созданный ли ветрами и волнами, воздвигнутый ли чьей-то рукой — предупреждает о его негостеприимстве. Течение влечёт корабли к зияющей щели в скале, напоминающей череп: в этом укрытии нередко находят приют беженцы и заблудшие моряки, которые живут вдали от цивилизации либо по принуждению, либо по собственной воле.</helpcolor>",
+    "name": "Укромная гаваньa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@ARMADAS_FALL",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink] по соседству с этой достопримечательностью получают:<bulletlist><bullet>+2 ед. <<gen,c:<gold></gold> [hyperlink,GLOBAL.GoldConcept]Золото[/hyperlink]>>, +2 ед. <<gen,c:<structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Производство[/hyperlink]>> и +1 ед. <<gen,c:<souls></souls> [hyperlink,GLOBAL.SoulConcept]Душа[/hyperlink]>> (если применимо).</bullet><bullet>В этой провинции можно построить <<acc,c:<quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Каменоломня[/hyperlink]>> или <<acc,c:<mine></mine> [hyperlink,GLOBAL.MineConcept]Рудник[/hyperlink]>>.</bullet><bullet>Если применимо, каждые 10 [hyperlink,GLOBAL.TurnConcept]х.[/hyperlink] в провинции появляется <<c:[hyperlink,GLOBAL.PickupConcept]находка[/hyperlink]>>.</bullet><bullet><casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Чары для битвыn{1}x{2}x{3}[/hyperlink] ({GLOBAL.PROPERTIES.RAMPANT_DEBRIS.Hyperlink}).</bullet></bulletlist><br>[hyperlink,GLOBAL.CityConcept]Город[/hyperlink] с 3 <<ins,mc:[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink]>> по соседству с этой достопримечательностью получает:<bulletlist><bullet><<cm:<quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Каменоломня[/hyperlink]>> во <<pre,c:[hyperlink,GLOBAL.DomainConcept]Владенияn[/hyperlink]>> приносят +5 ед. <<gen,c:<structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Производство[/hyperlink]>>;</bullet><bullet><<cm:<mine></mine> [hyperlink,GLOBAL.MineConcept]Рудник[/hyperlink]>> во владениях приносят +5 ед. <<gen,c:<unitprod></unitprod> [hyperlink,GLOBAL.UnitProductionConcept]Наём[/hyperlink]>>.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Когда я впервые увидел Крах Армады, то понял, куда в конечном итоге попадают все потерянные в море сокровища. Кладбище унесённых ураганным вихрем кораблей и сокровищ становится настоящей находкой для тех, кому посчастливится его обрести, ведь золото, у которого нет владельца, — самая ценная добыча».<br><br>— Маринус, владыка вод, «Приключения на море».",
+    "name": "Крах Армады"
+  },
+  {
+    "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@TEMPESTUOUS_VORTEX",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink] по соседству с этой достопримечательностью получают:<bulletlist><bullet>доступ к строительству <<gen,c:<conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Портал[/hyperlink]>> в этой провинции.</bullet><bullet><conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Портал[/hyperlink] в этой провинции приносит +5 ед. <<gen, c:<mana></mana> [hyperlink,GLOBAL.ManaConcept]Мана[/hyperlink]>>.</bullet><bullet><casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Чары для битвыn{1}x{2}x{3}[/hyperlink].({GLOBAL.PROPERTIES.VORTEX_STORM.Hyperlink})</bullet><bullet>[hyperlink,GLOBAL.UnitConcept]Воинl[/hyperlink], которые начинают <<c:<turn></turn> [hyperlink,GLOBAL.TurnConcept]Ход[/hyperlink]>> в этой провинции, получают «[spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Ускоренное перемещениеa{1}n{2}[/spellref]» на 3 [hyperlink,GLOBAL.TurnConcept]х.[/hyperlink].</bullet></bulletlist><br>[hyperlink,GLOBAL.CityConcept]Город[/hyperlink] с 3 <<ins,mc:[hyperlink,GLOBAL.ProvinceConcept]Провинция[/hyperlink]>> по соседству с этой достопримечательностью получает:<bulletlist><bullet>возможность нанимать <<acc,mc:[spellref,GLOBAL.UNITS.LIGHTNING_RUNE_CRAB]Грозовой рунный крабla{1}a{2}n{3}[/spellref]>> в этом городе за <<acc,c:<mana></mana> [hyperlink,GLOBAL.ManaConcept]Мана[/hyperlink]>>.</bullet><bullet>Дружественные воины, которые начинают <turn></turn> ход во владениях, получают эффект «[spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Ускоренное перемещениеa{1}n{2}[/spellref]» на 3 <turn></turn> [hyperlink,GLOBAL.TurnConcept]х.[/hyperlink].</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«За нами гналась половина королевского флота, когда мы услышали крик с мачты: „Море разверзлось, чтобы поглотить нас! Прямо по курсу водоворот размером с целую империю!“ Смерть дышала нам в спину, и мы поплыли навстречу вихрю, чтобы поймать течение и спастись. Но наш корабль треснул, руль сломался, и море поглотило нас всех».<br><br>— Амаро Ариета, фантом Призрачной армады, «Запечатлённая Ноктусом мудрость падших».",
+    "name": "Ураганный вихрьa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@NODES_STRATEGIC@PALE_TIDEBLOOM",
+    "description": "Уникальный глобальный эффект:<bulletlist><bullet>cтоимость <<gen,cm:[hyperlink,GLOBAL.EmpireSkillConcept]Умение империиn{1}x{2}[/hyperlink]>> снижается на 10%.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lore": "«Способ, которым бледный волноцвет достигает зрелости, по-прежнему вызывает споры среди учёных и служит предметом многих легенд. Эта светящаяся водоросль излучает огромное количество жизненной энергии уже с первых дней роста, но только при соприкосновении с проклятыми демонами начинает гореть страшным огнём».<br><br>— Родерик Плавнокрыл, «Местная флора и её применение, часть четвёртая: размножение и сбор урожая».",
+    "name": "Бледный волноцветa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE",
+    "bio": "Они уверены, что золото важнее всего, и ради выгоды готовы торговать почти с кем угодно.",
+    "DLC": "SILVERSEAS",
+    "hero_female_title_01": "Штатгальтер",
+    "hero_title_01": "Штатгальтер",
+    "lore": "<br><helpcolor>Эта культура ставит во главе угла торговлю и прибыль. У власти в ней стоят предприимчивые дельцы — настолько смекалистые, что построить город на воде для них не проблема.</helpcolor>",
+    "player_female_title_01": "Принцесса-купчиха",
+    "player_female_title_02": "Патрицисса гильдииFn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>",
+    "player_female_title_03": "Торговая плутократессаFa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>",
+    "player_title_01": "Принц-купец",
+    "player_title_02": "Патриций гильдииMn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>",
+    "player_title_03": "Торговый плутократMa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>",
+    "name": "Торговцы"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_BARONY",
+    "fpg_description": "Ваш народ — талантливые торговцы, которые умело ведут переговоры со свободными городами и извлекают прибыль из форпостов.<bulletlist><bullet>Воины, не являющиеся героями или бойцами поддержки, получают свойство «[spellref,GLOBAL.PROPERTIES.BOUNTY_HUNTER]Охотник за головамиn{1}x{2}x{3}[/spellref]».</bullet><bullet>Герои и бойцы поддержки получают способность «[spellref,GLOBAL.PROPERTIES.ASSIGN_BOUNTY]Назначить награду[/spellref]».</bullet><bullet>[hyperlink,GLOBAL.OutpostConcept]Форпост[/hyperlink] получают доступ к улучшению «Расширенный лагерь рабочих».</bullet><bullet>[hyperlink,GLOBAL.TradeRouteConcept]Торговый путьa{1}n{2}[/hyperlink] в их городах стоят на 20% меньше.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lorename": "Вотчина торговцевn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>",
+    "name": "Баронство"
+  },
+  {
+    "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_CARTEL",
+    "fpg_description": "Ваш народ — хитроумные купцы, для которых выгода превыше закона. Их идеал: заработать как можно больше, привлекая как можно меньше внимания.<bulletlist><bullet>Воины с особенностью «[spellref,GLOBAL.PROPERTIES.OBSERVANT]Наблюдательность[/spellref]» перед боем применяют к вражеским воинам <<acc,c:[spellref,GLOBAL.PROPERTIES.LEVERAGE]Давление[/spellref]>>, а затем идут в <<acc,cm:<flank></flank> [hyperlink,GLOBAL.FlankingConcept]Атака с флангаn{1}x{2}x{3}[/hyperlink]>>.</bullet><bullet>Ваши <<mc:[hyperlink,GLOBAL.TradeRouteConcept]Торговый путьa{1}n{2}[/hyperlink]>> невидимы для других фракций, пока любой их воин не окажется на пути.</bullet><bullet>Вы можете прокладывать <<acc,mc:[hyperlink,GLOBAL.TradeRouteConcept]Торговый путьa{1}n{2}[/hyperlink]>> в другие <<acc,mc:[hyperlink,GLOBAL.EmpireConcept]Империя[/hyperlink]>> без заключения соглашения о свободной торговле.</bullet><bullet>Вы получаете доступ к осадному проекту «[spellref,GLOBAL.SIEGE_PROJECTS.EXPLOIT_NETWORKS]Полезные контактыFa{1}n{2}[/spellref]» во время осады городов, в которые ведёт ваш <<c:[hyperlink,GLOBAL.TradeRouteConcept]Торговый путьa{1}n{2}[/hyperlink]>>.</bullet></bulletlist>",
+    "DLC": "SILVERSEAS",
+    "lorename": "Торговый картельa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>",
+    "name": "Картель"
+  },
+  {
     "id": "@@@@@@@@@@@@@@@@@@@",
     "": "@@@@"
   },

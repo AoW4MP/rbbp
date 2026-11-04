@@ -195,6 +195,9 @@ const dlcMap = {
     }, SECRETSOFTHEARCHMAGES: {
         src: "/rbbp/Icons/Text/SecretsOfTheArchmages.png",
         text: "Part of the Secrets of the Archmages DLC"
+    }, SILVERSEAS: {
+        src: "/rbbp/Icons/Text/the_silver_seas.png",
+        text: "Part of the Silver Seas DLC"
     }
 };
 
@@ -225,7 +228,9 @@ async function GetAllData(selectedLang) {
         "DestinyTraits.json",
         "Relics.json",
         "Pantheon_Tree.json",
-        "ExtraLookSpellsOrigin.json"
+        "ExtraLookSpellsOrigin.json",
+        "all_spawners.json",
+        "all_spawnsets_strategic_detailed.json"
         
         
     ];
@@ -247,7 +252,8 @@ async function GetAllData(selectedLang) {
          "ItemForgeUpgrades.json",
         // non-ingame-dump-json-files
         "UI.json",
-        "all.json"
+        "all.json",
+        "concept_tooltips.json"
     ];
 
     // Create file paths
@@ -283,7 +289,9 @@ async function GetAllData(selectedLang) {
               "jsonDestinyTriggers",
             "jsonRelics",
             "jsonPantheon",
-            "jsonExtraSpellsLookup"
+            "jsonExtraSpellsLookup",
+            "jsonSpawners",
+            "jsonSpawnerPoolDetails"
             
         ];
         const targets = [
@@ -302,7 +310,8 @@ async function GetAllData(selectedLang) {
              "jsonItemForgeTypes",
              "jsonItemForgeUpgrades",
             "jsonUI",
-            "jsonAllFromPO"
+            "jsonAllFromPO",
+            "jsonConceptTooltips"
         ];
 
         // Assign data to global vars

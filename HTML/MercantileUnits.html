@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/rbbp/Data/Init.js"></script>
+        <script>
+            const listOfSub = ["Cartel", "Barony"];
+            const listOfIcons = ["mercantile_"];
+            const listOfName = [""];
+
+            function HandlePage() {
+                // create parts
+
+                CreateParts(listOfSub, listOfIcons, listOfName);
+
+                listOfSub.forEach((sub, i) => {
+                    const unitarray = GetCultureUnitsOf("Mercantile", sub);
+                    SetButtonsAndDivs(unitarray, "buttonHolder" + i, "unit", "dataHolder" + i, sub);
+                });
+
+                SetLevelUpStuff();
+            }
+        </script>
+
+        <title>Age of Wonders 4 Database - Mercantile Units</title>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <div class="textblocktitle">
+            <img src="/rbbp/Icons/Text/mercantile.png" height="40px" /> Mercantile Culture Units
+            <img src="/rbbp/Icons/Text/mercantile.png" height="40px" />
+        </div>
+
+        <div class="w3-container">
+            <div id="buttonHolder" class="w3-bar w3-black"></div>
+            <div id="dataHolder" style="margin-top: -250px"></div>
+        </div>
+
+        <div id="presetPoint"></div>
+    </body>
+</html>
+<footer>
+    <br />
+    <br />
+</footer>

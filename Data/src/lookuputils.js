@@ -265,8 +265,10 @@ async function SetLevelUpStuff() {
 
     if (product != undefined) {
         let splits = product.split("&");
+        const tabButton = document.getElementById(splits[0] + "-button");
+        if (!tabButton) return;
         closeTabLinks(product);
-        document.getElementById(splits[0] + "-button").className += " w3-red";
+        tabButton.classList.add("w3-red");
         // grab the subculture if available
 
         let subCulture = splits[0].split(/(?=[A-Z])/);

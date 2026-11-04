@@ -325,7 +325,7 @@ EMPIRESANDASHES,
 ARCHONPROPHECY,
 COSMICWANDERER,
 THRONESOFBLOOD,
-RISEFROMRUIN,SECRETSOFTHEARCHMAGES {
+RISEFROMRUIN,SECRETSOFTHEARCHMAGES,SILVERSEAS {
     max-width: 20px;
     top: 7px;
     position: relative;
@@ -342,6 +342,10 @@ GIANTKINGS {
 
 EMPIRESANDASHES {
     content: url(/rbbp/Icons/Text/empireAshes.png);
+}
+
+SILVERSEAS {
+    content: url(/rbbp/Icons/Text/the_silver_seas.png);
 }
 
 SECRETSOFTHEARCHMAGES {

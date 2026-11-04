@@ -96,9 +96,10 @@ function extractHyperlinks(text) {
     const links = [];
     let index = 0;
 
-    text = text.replace(/<hyperlink>(.*?)<\/hyperlink>/g, (_, inner) => {
+    text = text.replace(/<hyperlink>(.*?)<\/hyperlink>|\[(hyperlink|spellref),([\w.@:-]+)\]([\s\S]*?)\[\/\2\]/g,
+        (_, inner, kind, key, label) => {
         const token = `__HYPERLINK_${index}__`;
-        links.push({ token, inner });
+        links.push({ token, inner: inner ?? label, kind, key });
         index++;
         return token;
     });
@@ -122,7 +123,9 @@ function AddTagIconsForStatusEffects(text) {
 
     for (const link of extracted.links) {
         let restored = `<hyperlink>${link.inner}</hyperlink>`;
-        if (abilityTagCache.has(link.inner)) {
+        if (link.kind) {
+            restored = `<hyperlink class="gameReference" data-kind="${link.kind}" data-key="${link.key}">${link.inner}</hyperlink>`;
+        } else if (abilityTagCache.has(link.inner)) {
             restored = abilityTagCache.get(link.inner);
         }
         text = text.replace(link.token, restored);
@@ -226,6 +229,23 @@ function createStatusEffectTooltip(effectData, handlerType = "status") {
 }
 
 function HandleExtraTooltips(specificDiv) {
+    (specificDiv ?? document).querySelectorAll(".gameReference").forEach((el) => {
+        if (el.dataset.tooltipBound) return;
+        const name = el.textContent.trim();
+        const entry = el.dataset.kind === "hyperlink"
+            ? jsonConceptTooltipsLocalized?.[el.dataset.key]
+            : findBy(jsonUnitAbilitiesLocalized, "name", name) ?? findBy(jsonSpellsLocalized, "name", name);
+        if (!entry?.description) return;
+
+        const content = document.createElement("span");
+        const title = document.createElement("strong");
+        title.textContent = sanitizeLocalizationMacros(entry.name || name);
+        const description = document.createElement("div");
+        description.innerHTML = cleanTranslation(sanitizeLocalizationMacros(entry.description));
+        content.append(title, description);
+        addTooltipListeners(el, content, "something");
+        el.dataset.tooltipBound = "true";
+    });
     // Add event listeners after elements exist in the DOM
     if (specificDiv != undefined) {
         specificDiv.querySelectorAll(".statusEffectHandler").forEach((el) => {
@@ -2753,12 +2773,11 @@ function showUnit(unitID, subcultureCheck, resID, divOrigin) {
         clicker.addEventListener("click", (event) => Unblur(unitCard, clickerHolder, event));
     }
 
-    imagelink = unitCard.querySelector("img#vid");
-    imagelink.setAttribute("src", "/rbbp/PreviewsAvif/" + unitEN.id + ".avif");
-    if (imagelink.getAttribute("src") === "/rbbp/PreviewsAvif/undefined") {
-        imagelink.setAttribute("src", "/rbbp/PreviewsAvif/abductor.avif");
-    }
-    // }
+    const portrait = unitCard.querySelector("img#vid");
+    portrait.hidden = !unitEN.id;
+    portrait.onerror = () => { portrait.hidden = true; };
+    if (unitEN.id) portrait.src = "/rbbp/PreviewsAvif/" + unitEN.id + ".avif";
+    else portrait.removeAttribute("src");
     if (subcultureCheck == undefined) {
         unitCard.setAttribute("id", "unitCard" + unitID);
     } else {
@@ -3331,7 +3350,8 @@ function backtrackUnitOrigins(unitData, name, holder) {
     if (subculture != "") {
         const capitalized = subculture.charAt(0).toUpperCase() + subculture.slice(1);
         const tooltipText = `Subculture Unit from <hyperlink>${capitalized}</hyperlink>`;
-        const imgSrc = `/rbbp/Icons/Text/${subculture}.png`;
+        const iconName = culture === "mercantile" ? `mercantile_${subculture}` : subculture;
+        const imgSrc = `/rbbp/Icons/Text/${iconName}.png`;
         const imgFallbackSrc = `/rbbp/Icons/Text/mp.png`;
         //  const link = `/rbbp/HTML/${capitalized}Units.html`;
         createFoundUnitInHereIcon(holderOrigin, imgSrc, imgFallbackSrc, null, tooltipText);
@@ -6518,7 +6538,9 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
         }
     }
 
-    // descriptionDiv.innerHTML =  AddTagIconsForStatusEffects(descriptionDiv.innerHTML);
+    if (/\[(?:hyperlink|spellref),/.test(descriptionDiv.innerHTML)) {
+        descriptionDiv.innerHTML = AddTagIconsForStatusEffects(descriptionDiv.innerHTML);
+    }
 
     let tier = divOrigin.querySelector("#modtier");
     tier.innerHTML = "";
@@ -7110,4 +7132,294 @@ function backtraceStructureToTomeNameAndTier(structure) {
 
 function backtraceTomeNameAndTier(spell) {
     return findParentByNested(jsonTomesLocalized, "skills", "spell_slug", spell) || "";
+}
+
+const spawnerPreviewMap = {
+    "SPAWNERS@ASTRALRIFT_SPAWNER": "astral_rift_spawner",
+    "SPAWNERS@BANDIT_SPAWNER": "bandit_spawner",
+    "SPAWNERS@BIRD_SPAWNER": "bird_spawner",
+    "SPAWNERS@CULTIST_SPAWNER": "cultist_spawner",
+    "SPAWNERS@DRAGON_SPAWNER": "dragon_spawner",
+    "SPAWNERS@FORSAKEN_COVE_SPAWNER": "forsaken_cove",
+    "SPAWNERS@MONSTER_SPAWNER": "monster_spawner",
+    "SPAWNERS@MONSTER_SPAWNER_LARGE": "monster_spawner_large",
+    "SPAWNERS@PIRATE_SPAWNER": "pirate_spawner",
+    "SPAWNERS@UNDEAD_SPAWNER": "undead_spawner",
+    "DLC@EMPIRESANDASHES@SPAWNERS@WORSKHOP_SPAWNER": "derelict_workshop",
+    "DLC@GIANTKINGS@SPAWNERS@LITHORINE_SPAWNER": "lithorine_spawner",
+    "DLC@ELDRITCHREALMS@SPAWNERS_STRATEGIC@SHADOW_INFESTATION": "umbral_nest",
+    "DLC@ARCHONPROPHECY@SPAWNERS_STRATEGIC@CRUSADER_HOST": "crusader_host",
+    "DLC@RISEFROMRUIN@SPAWNERS_STRATEGIC@FLEETING_FRACTURED_INFESTATION": "fleeting_fractured_infestation",
+    "DLC@RISEFROMRUIN@SPAWNERS_STRATEGIC@FRACTURED_INFESTATION": "fractured_infestation",
+    "DLC@RISEFROMRUIN@SPAWNERS_STRATEGIC@GREAT_WORM_INFESTATION": "great_worm_infestation",
+    "DLC@SECRETSOFTHEARCHMAGES@SPAWNERS@MSITWALKER_CAMP": "mistwalker_camp"
+};
+
+const spawnerResourceIcons = ["production", "mana", "food", "gold", "knowledge"];
+
+const msgidBase = (msgid) => (msgid ? msgid.split("@").slice(0, -1).join("@") : "");
+
+// Text of any msgid: "SPAWNERS@MONSTER_SPAWNER@NAME" -> entry "SPAWNERS@MONSTER_SPAWNER", field "name".
+// Also works for ids without NAME/DESCRIPTION suffix (e.g. DLC@THRONESOFBLOOD@SPAWNERS@PROCESSION).
+function poText(msgid) {
+    if (!msgid) return undefined;
+    const parts = msgid.split("@");
+    const entry = findBy(jsonAllFromPOLocalized, "id", parts.slice(0, -1).join("@"));
+    return entry?.[parts[parts.length - 1].toLowerCase()];
+}
+
+// "Spawners_Strategic_Empires_And_Ashes.rpk" -> "EMPIRESANDASHES"
+function dlcFromSource(source) {
+    const m = /^Spawners_Strategic_(.+)\.rpk$/i.exec(source ?? "");
+    return m ? m[1].replaceAll("_", "").toUpperCase() : undefined;
+}
+
+// accepts both extractor shapes (python: snake_case, spawners.js: camelCase)
+function normalizeSpawner(key, raw) {
+    const msgids = raw.msgids ?? {
+        name: raw.name_msgid,
+        description: raw.desc_msgid,
+        type: raw.type_msgid,
+        lore: raw.lore_msgid
+    };
+    const us = raw.unit_spawner ?? raw.spawner ?? {};
+    const inf = raw.infestation ?? {};
+    const tags = raw.tags ?? [];
+    const nameParts = (msgids.name ?? "").split("@");
+
+    return {
+        key: key.trim(),
+        id: (raw.structurename ?? raw.structure ?? key).trim().toLowerCase(),
+        tags,
+        tier: ["Bronze", "Silver", "Gold"].find((t) => tags.some((tag) => tag.endsWith("." + t))),
+        msgids,
+        displayName: (poText(msgids.name) ?? key.trim()).split("^")[0],
+        dlc: nameParts[0] === "DLC" ? nameParts[1] : dlcFromSource(raw.source),
+        spawnStrength: us.spawn_strength ?? us.spawnStrength,
+        maxSpawnStrength: us.max_spawn_strength ?? us.maxSpawnStrength,
+        poolCategory: us.pool_category ?? us.poolCategory,
+        excavatedCategory: us.excavated_pool_category ?? us.excavatedPoolCategory,
+        reward: raw.reward,
+        infestation: {
+            delay: inf.delay,
+            delayDelta: inf.delay_delta ?? inf.delayDelta,
+            range: inf.range,
+            growthSpeed: inf.growth_speed ?? inf.growthSpeed
+        },
+        pools: raw.pools, // only present in the spawners.js output
+        source: raw.source
+    };
+}
+
+let spawnerListCache = null;
+function getSpawnerList() {
+    if (spawnerListCache) return spawnerListCache;
+
+    const list = [];
+    for (const group of Object.values(jsonSpawners)) {
+        for (const [key, raw] of Object.entries(group)) list.push(normalizeSpawner(key, raw));
+    }
+
+    // spawners that share the same text (Mistwalker seasons, "Lost Soul" copies): show which variant it is
+    const counts = {};
+    for (const s of list) counts[s.msgids.name] = (counts[s.msgids.name] ?? 0) + 1;
+    for (const s of list) s.isVariant = counts[s.msgids.name] > 1;
+
+    const order = { Bronze: 0, Silver: 1, Gold: 2 };
+    list.sort(
+        (a, b) =>
+            (order[a.tier] ?? 9) - (order[b.tier] ?? 9) ||
+            a.displayName.localeCompare(b.displayName) ||
+            (a.dlc ? 1 : 0) - (b.dlc ? 1 : 0) || // base game version before DLC copies
+            a.key.localeCompare(b.key)
+    );
+    spawnerListCache = list;
+    return list;
+}
+
+// pool names in the spawn sets are english resource names -> english unit name -> id
+let unitIdByNameCache = null;
+function findUnitByPoolName(name) {
+    if (!unitIdByNameCache) {
+        unitIdByNameCache = new Map();
+        for (const u of jsonUnits) {
+            const n = (u.name ?? "").split("^")[0];
+            if (n && !unitIdByNameCache.has(n) && !depCheckResID(u.resid)) unitIdByNameCache.set(n, u);
+        }
+    }
+    return unitIdByNameCache.get(name);
+}
+
+function spawnerUnitLine(name) {
+    const unit = findUnitByPoolName(name);
+    if (!unit) return `<bullet> <unit></unit>${localizeSpawnerPoolText(name)}</bullet>`;
+    const shown = jsonUnitsLocalized.find((e) => e.resid === unit.resid)?.name ?? name;
+    return `<bullet><a href="/rbbp/HTML/Units.html?unit=${unit.id}" target="_blank"><unit></unit> ${shown}</a></bullet>`;
+}
+
+function getSpawnerPools(s, categoryKey) {
+    if (!categoryKey) return [];
+    if (s.pools && categoryKey === s.poolCategory) {
+        return s.pools.map((pool) => findBy(jsonSpawnSetsStrat, "pool", pool.pool) ?? pool);
+    }
+
+    const names = jsonSpawnerPoolDetails.categories[categoryKey]?.pools ?? [];
+    return names.map((n) => {
+        const p = findBy(jsonSpawnSetsStrat, "pool", n);
+        return { pool: n, units: p?.units ?? [], others: p?.others ?? [] };
+    });
+}
+
+function localizeSpawnerPoolText(text) {
+    if (getUserSettings().language !== "RU") return text;
+
+    const cultureNames = {
+        Barbarian: "Варвары",
+        Dark: "Тьма",
+        Feudal: "Феодалы",
+        High: "Высшие",
+        Industrious: "Индустриалисты",
+        Mercantile: "Торговцы",
+        Mystic: "Мистики",
+        Nomad: "Кочевники",
+        Oathsworn: "Хранители клятв",
+        Primal: "Первобытные",
+        Reaver: "Налётчики"
+    };
+    return text
+        .replace(/^Bandits(?=\s*-)/, "Бандиты")
+        .replace(/^Heroes$/, "Герои")
+        .replace(/^Hero$/, "Герой")
+        .replace(/^All Base (\w+) Units$/, (match, culture) =>
+            cultureNames[culture] ? `Все базовые юниты (${cultureNames[culture]})` : match)
+        .replace(/^(\w+) Enchantments$/, (match, culture) =>
+            cultureNames[culture] ? `Чары (${cultureNames[culture]})` : match)
+        .replace(/^(Бандиты\s*-\s*)(.+)$/, (_, prefix, cultures) =>
+            prefix + cultures.split(" + ").map((culture) => cultureNames[culture] ?? culture).join(" + "));
+}
+
+function buildPoolHtml(pools) {
+    return pools
+        .map((p) => {
+            const units = p.units.map(spawnerUnitLine).join("");
+            const others = p.others.map((o) => `<bullet> <ench></ench>${localizeSpawnerPoolText(o)}</bullet>`).join("");
+            return `<yellowText>${localizeSpawnerPoolText(p.pool)}</yellowText><br>${units}${others}<br>`;
+        })
+        .join("");
+}
+
+// same markup as the ancient wonder events: button.collapsible + div.combatEnchantment
+function createSpawnerCollapsible(title, bodyHtml) {
+    const holder = document.createElement("div");
+    const button = document.createElement("button");
+    button.className = "collapsible";
+    button.innerHTML = title;
+    button.onclick = SetUpCombatEnc;
+    const content = document.createElement("div");
+    content.className = "combatEnchantment";
+    content.innerHTML = bodyHtml;
+    holder.append(button, content);
+    return holder;
+}
+
+// "Spawner - Production + Garuanteed Item Reward" -> "<production></production> Production + Guaranteed Item Reward"
+function formatSpawnerReward(reward, ru) {
+    if (!reward?.link) return "";
+    const link = reward.link.trim();
+    const m = /^(?:Big )?Spawner - (.+?) \+ (.+)$/.exec(link);
+    let text = link;
+    if (m) {
+        const icon = spawnerResourceIcons.includes(m[1].toLowerCase()) ? `<${m[1].toLowerCase()}></${m[1].toLowerCase()}> ` : "";
+        const resourceNames = { Production: "Производство", Mana: "Мана", Food: "Пища", Gold: "Золото", Knowledge: "Знания" };
+        const resource = ru ? resourceNames[m[1]] ?? m[1] : m[1];
+        const item = ru && /^(?:Garuanteed|Guaranteed) Item Reward$/.test(m[2])
+            ? "гарантированный предмет" : m[2].replace("Garuanteed", "Guaranteed");
+        text = `${icon}${resource} + ${item}`;
+    }
+    return reward.tier ? `${text} (${reward.tier})` : text;
+}
+
+function showSpawner(s, divOrigin) {
+    const ru = getUserSettings().language === "RU";
+    // name (+ DLC tag)
+    const modName = divOrigin.querySelector("#modname");
+    modName.className = "mod_name";
+    modName.innerHTML = s.displayName;
+    if (s.dlc) modName.append(AddDLCTag(s.dlc));
+
+    // type line (Bronze/Silver/Gold infestation) + which variant this is
+    const tier = divOrigin.querySelector("#modtier");
+    tier.innerHTML = poText(s.msgids.type) ?? (s.tier ? `${s.tier} Infestation` : "");
+    if (s.isVariant) tier.innerHTML += `<br><span style="font-size:12px;color:grey;text-transform:none">${s.key}</span>`;
+
+    divOrigin.querySelector("#modcost").innerHTML = "";
+
+    // description + lore from the PO text, then the numbers from the game data
+    const descriptionDiv = divOrigin.querySelector("#moddescription");
+    descriptionDiv.setAttribute("style", "max-width:467px;");
+
+    let text = poText(s.msgids.description) ?? "";
+    const lore = poText(s.msgids.lore);
+    if (lore) text += "<br><br><helpColor>" + lore + "</helpColor>";
+
+    const strength = s.spawnStrength
+        ? s.spawnStrength + (s.maxSpawnStrength ? ` (up to ${s.maxSpawnStrength})` : "")
+        : "";
+    const inf = s.infestation;
+    const spread = [
+        inf.range !== undefined ? `${ru ? "Радиус" : "Range"} ${inf.range}` : "",
+        inf.growthSpeed !== undefined ? `${ru ? "Скорость роста" : "Growth speed"} ${inf.growthSpeed}` : "",
+        inf.delay !== undefined ? `${ru ? "Задержка" : "Delay"} ${inf.delay}${inf.delayDelta ? ` (±${inf.delayDelta})` : ""}` : ""
+    ]
+        .filter(Boolean)
+        .join(", ");
+
+    const details = [
+        strength && `<bullet>${ru ? "Сила отряда" : "Spawn strength"}: ${strength}</bullet>`,
+        s.reward?.link && `<bullet>${ru ? "Награда" : "Reward"}: ${formatSpawnerReward(s.reward, ru)}</bullet>`,
+        spread && `<bullet>${spread}</bullet>`
+    ]
+        .filter(Boolean)
+        .join("");
+
+    descriptionDiv.innerHTML =
+        AddTagIconsForStatusEffects(text) +
+        (details ? `<br><br><yellowText>${ru ? "Данные ванильной игры" : "Base game data"}</yellowText><bulletlist>${details}</bulletlist>` : "");
+
+    // icons / preview picture
+    const icon = divOrigin.querySelector("#modicon");
+    icon.setAttribute("src", "/rbbp/Icons/Interface/Header/Infestation.png");
+    icon.setAttribute("style", "background-image: none");
+
+    const preview = divOrigin.querySelector("#structurepreview");
+    const previewId = spawnerPreviewMap[msgidBase(s.msgids.name)];
+    if (previewId) {
+        preview.setAttribute("src", "/rbbp/Icons/StructurePics/" + previewId + ".png");
+        preview.setAttribute("onerror", "this.style.display='none'");
+    } else {
+        preview.style.display = "none";
+    }
+
+    // what can spawn
+    const eventDiv = divOrigin.querySelector("#event");
+    eventDiv.innerHTML = "";
+    const main = getSpawnerPools(s, s.poolCategory);
+    if (main.length) {
+        eventDiv.appendChild(createSpawnerCollapsible(`${ru ? "Возможные отряды" : "Possible Spawns"} (${main.length})`, buildPoolHtml(main)));
+    }
+    if (s.excavatedCategory && s.excavatedCategory !== s.poolCategory) {
+        const excavated = getSpawnerPools(s, s.excavatedCategory);
+        if (excavated.length) {
+            eventDiv.appendChild(createSpawnerCollapsible(`${ru ? "Отряды при раскопках" : "Excavation Spawns"} (${excavated.length})`, buildPoolHtml(excavated)));
+        }
+    }
+}
+
+// tier: "Bronze" | "Silver" | "Gold" | undefined (= all)
+async function showSpawnersWithArgument(tier, divID) {
+    const list = getSpawnerList().filter((s) => tier === undefined || s.tier === tier);
+    const cards = await spawnStructureCards(list, divID);
+    for (let i = 0; i < list.length; i++) {
+        showSpawner(list[i], cards[i]);
+    }
 }
