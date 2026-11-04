@@ -128,7 +128,7 @@ const sharedTextFetches = new Map();
 function fetchTextShared(url) {
     let promise = sharedTextFetches.get(url);
     if (!promise) {
-        promise = fetch(url).then((response) => {
+        promise = fetch(url, { cache: "no-cache" }).then((response) => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
             }
@@ -575,6 +575,28 @@ const patchDates = [
     { name: "Ogre 1.2", from: new Date("2025-04-15"), to: new Date("2025-04-28") }
 ];
 
+function localizeCultureUnitLabels(root) {
+    const cultureId = location.pathname.split("/").pop().replace(/Units\.html$/, "").toLowerCase();
+    const culture = jsonFactionCreation.find((entry) => entry.type === "Culture" && entry.id === cultureId);
+    if (!culture) return;
+
+    const heading = root.querySelector(".textblocktitle");
+    if (heading) {
+        const name = document.getElementById("culture-" + cultureId)?.textContent.trim() || culture.name;
+        const text = [...heading.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+        if (text) text.textContent = ` Юниты культуры «${name}» `;
+    }
+
+    const normalize = (value) => value.toLowerCase().replaceAll(" ", "_");
+    root.querySelectorAll(".subCultureName").forEach((element) => {
+        const suffix = normalize(element.id.replace("subCultureName", ""));
+        const entry = jsonFactionCreation.find((candidate) =>
+            candidate.type === "SubCulture" && candidate.requirement === culture.name &&
+            (candidate.id === suffix || candidate.id.endsWith("_" + suffix)));
+        if (entry) element.textContent = findOriginLocName(entry, "SubCulture").replace(/<[^>]*>/g, "");
+    });
+}
+
 function LocalizeUI(specific) {
     // general ui lookup first
     for (const id in jsonUIGeneric) {
@@ -633,7 +655,8 @@ function LocalizeUI(specific) {
                 value = jsonUIGeneric[id].label;
             }
 
-            el.childNodes[1].nodeValue = " " + value;
+            const textNode = [...el.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+            if (textNode) textNode.nodeValue = " " + value;
         }
     }
     // then specific for ones that arent in the po file translations
@@ -645,8 +668,12 @@ function LocalizeUI(specific) {
             // Assumes the image is first, text second
             value = jsonUILocalized[id].label;
 
-            el.childNodes[1].nodeValue = " " + value;
+            const textNode = [...el.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+            if (textNode) textNode.nodeValue = " " + value;
         }
+    }
+    if (getUserSettings().language === "RU") {
+        localizeCultureUnitLabels(specific ?? document);
     }
 }
 
