@@ -5291,6 +5291,14 @@ const pantheonList = [
     "fearless_infusion_equipment_upgrade",
     "magic_shield_infusion_equipment_upgrade"
 ];
+const capitalizedInfusionIcons = new Set(["head", "legs", "obelisk", "polearm", "ring", "shield", "staff", "wand", "warhammer"]);
+
+function infusionItemIconPath(entry) {
+    const name = entry.toLowerCase();
+    const filename = capitalizedInfusionIcons.has(name) ? name[0].toUpperCase() + name.slice(1) : name;
+    return "/rbbp/Icons/ItemForge/" + filename + ".png";
+}
+
 function showInfusionListEntrySmall(infusion, selectedTreeFilter, selectedSubTreeFilter, selectedMMTreeFilter) {
     const div = document.createElement("div");
     div.className = "list_abilityslot";
@@ -5408,7 +5416,7 @@ function showInfusionListEntrySmall(infusion, selectedTreeFilter, selectedSubTre
         name.setAttribute("style", "text-align: center; font-size:12px");
         name.innerHTML = entry;
         const img = document.createElement("img");
-        img.setAttribute("src", "/rbbp/Icons/ItemForge/" + entry.toLowerCase() + ".png");
+        img.setAttribute("src", infusionItemIconPath(entry));
         img.setAttribute("style", "width:30px;height:30px");
         const spa = document.createElement("span");
         spa.innerHTML = entry;
@@ -5428,7 +5436,7 @@ function showInfusionListEntrySmall(infusion, selectedTreeFilter, selectedSubTre
         const weaponHolder = document.createElement("div");
         //weaponHolder.setAttribute("style", "background-color:black");
         const img = document.createElement("img");
-        img.setAttribute("src", "/rbbp/Icons/ItemForge/" + entry.toLowerCase() + ".png");
+        img.setAttribute("src", infusionItemIconPath(entry));
         img.setAttribute("style", "width:30px;height:30px");
         const spa = document.createElement("span");
         spa.innerHTML = entry;
