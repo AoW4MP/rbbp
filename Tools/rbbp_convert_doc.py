@@ -87,6 +87,8 @@ INLINE_TAG_CODES = {
 # ---------- полноразмерные "портретные" иконки (правители/классы/губернаторы/ ----------
 # ---------- стремления героев/культуры/субкультуры) - <img class="rbbp-inline-icon"> ----------
 PORTRAIT_CODES = {
+    "consequencesofdefeat": "/rbbp/Icons/Interface/Header/RbbP_RealmTraits_ConsequencesofDefeat.png",
+    "martialdiscipline": "/rbbp/Icons/Interface/Header/RbbP_RealmTraits_MartialDiscipline.png",
     # правители (Ruler Origin) - Data/GEN/FactionCreation.json, Icons/FactionCreation/{icon}.png
     "hero": "/rbbp/Icons/FactionCreation/champion.png",
     "wizardking": "/rbbp/Icons/FactionCreation/wizard_king.png",
