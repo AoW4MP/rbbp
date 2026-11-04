@@ -178,7 +178,7 @@ function updateHoverDivPosition(event, secondary) {
     }
 
 
-    var selectionsHolder = document.getElementById("selectionsHolder");
+    var selectionsHolder = document.querySelector("#selectionsHolder > .selections") ?? document.getElementById("selectionsHolder");
     if (selectionsHolder && event.target.closest && event.target.closest("#selectionsHolder")) {
         var holderRect = selectionsHolder.getBoundingClientRect();
         var dialogRect = hoverDiv.getBoundingClientRect();
