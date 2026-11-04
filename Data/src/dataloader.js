@@ -128,7 +128,7 @@ const sharedTextFetches = new Map();
 function fetchTextShared(url) {
     let promise = sharedTextFetches.get(url);
     if (!promise) {
-        promise = fetch(url).then((response) => {
+        promise = fetch(url, { cache: "no-cache" }).then((response) => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
             }
