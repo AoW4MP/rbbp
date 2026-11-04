@@ -448,11 +448,12 @@
             // ломает показ уже переведённых патчей рядом с ним.
             async function LoadRbbpPatches(lang, old = RBBP_OLD) {
                 const fileName = old ? "RBBPOldPatchNotes.json" : "RBBPPatchNotes.json";
-                const ruData = await fetch("/rbbp/Data/RU/" + fileName).then((r) => r.json());
+                const options = { cache: "no-cache" };
+                const ruData = await fetch("/rbbp/Data/RU/" + fileName, options).then((r) => r.json());
                 let langData = null;
                 if (lang !== "RU") {
                     try {
-                        const res = await fetch("/rbbp/Data/" + lang + "/" + fileName);
+                        const res = await fetch("/rbbp/Data/" + lang + "/" + fileName, options);
                         if (res.ok) langData = await res.json();
                     } catch (e) {
                         // файла перевода для этого языка нет вообще - ничего страшного,
