@@ -1137,12 +1137,6 @@
   "icon": "0000048D000021CF"
  },
  {
-  "description": "This unit will become Cavalry if the race has a special mount trait.",
-  "name": "Optional Cavalry",
-  "slug": "000003eb0000073f",
-  "icon": "000003EB0000073E"
- },
- {
   "description": "An attack unit that takes out targets from afar. It is somewhat vulnerable.<bulletlist><bullet>Its <hyperlink><accuracy></accuracy> Accuracy</hyperlink> is affected by <hyperlink>Line of Sight</hyperlink>.</bullet><bullet>Cannot fire its main ranged attack when <hyperlink>Engaged in Melee</hyperlink>.</bullet></bulletlist>",
   "name": "Ranged Unit",
   "slug": "0000039f000016f1",
@@ -1339,6 +1333,12 @@
   "name": "Observant",
   "slug": "0000048d000020d4",
   "icon": "0000048D000020D3"
+ },
+ {
+  "description": "This unit will become Cavalry if the race has a special mount trait.",
+  "name": "Optional Cavalry",
+  "slug": "000003eb0000073f",
+  "icon": "000003EB0000073E"
  },
  {
   "description": "Unit has:<bulletlist><bullet>+10% damage</bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
@@ -12873,7 +12873,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
@@ -12914,7 +12914,7 @@
   "icon": "0000049700000197"
  },
  {
-  "description": "Spiritual Healing:<bulletlist><bullet>Heals an additional 10<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Each stack of Primal Fury now also dispels a negative status effect.</bullet></bulletlist>",
+  "description": "Spiritual Healing:<bulletlist><bullet>Heals an additional 10<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Removes 2 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
   "name": "Champion Spiritual Healing",
   "slug": "0000048b00000c04",
   "icon": "000003E30000627B"
@@ -12964,7 +12964,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
@@ -13049,7 +13049,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
@@ -13134,7 +13134,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
@@ -13219,7 +13219,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
@@ -13304,7 +13304,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
@@ -13389,7 +13389,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
+  "description": "Target unit:<bulletlist><bullet>Gains 2 stacks of Rising Fury if it has a Primal Animal Boon.</bullet><bullet>Heals for 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet></bulletlist>",
   "name": "Spiritual Healing",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
@@ -18241,12 +18241,6 @@
   "icon": "0000048D00000170"
  },
  {
-  "description": "This unit is harder to turn during combat meaning:<bulletlist><bullet>Each turn made during movement costs 1 point.</bullet><bullet>Rotating the unit on the spot reduces move points to 0.</bullet><bullet>The unit cannot make <hyperlink>Opportunity Attacks</hyperlink> or <hyperlink>Retaliation Attack</hyperlink> to hexes behind it.</bullet></bulletlist>",
-  "name": "Limited Maneuverability",
-  "slug": "0000048b00001394",
-  "icon": "0000048B00001396"
- },
- {
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
@@ -18381,6 +18375,12 @@
    }
   ],
   "icon": "000003E3000064FA"
+ },
+ {
+  "description": "This unit is harder to turn during combat meaning:<bulletlist><bullet>Each turn made during movement costs 1 point.</bullet><bullet>Rotating the unit on the spot reduces move points to 0.</bullet><bullet>The unit cannot make <hyperlink>Opportunity Attacks</hyperlink> or <hyperlink>Retaliation Attack</hyperlink> to hexes behind it.</bullet></bulletlist>",
+  "name": "Limited Maneuverability",
+  "slug": "0000048b00001394",
+  "icon": "0000048B00001396"
  },
  {
   "description": "When a non-Summon non-Undead unit dies, the ability Summon Ghost can be used again. Only triggers once per turn.",
@@ -25264,7 +25264,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit and another within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Target friendly unit and 2 others within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
   "name": "Soothing Breeze",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d00000609",
   "damage": "",
@@ -25335,7 +25335,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit and another within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Target friendly unit and 2 others within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
   "name": "Soothing Breeze",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d0000061d",
   "damage": "",
@@ -25387,7 +25387,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit and another within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Target friendly unit and 2 others within 2 hexes heal +20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
   "name": "Soothing Breeze",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d00000620",
   "damage": "",
@@ -26272,7 +26272,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit loses all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost:<bulletlist><bullet>Heals +8 <temphp></temphp> Temporary Hit Points.</bullet><bullet>Gains 1 Strengthened.</bullet></bulletlist>",
+  "description": "Target friendly unit loses all stacks of Bolstered Defense and Bolstered Resistance. For each stack lost:<bulletlist><bullet>Heals +10 <temphp></temphp> Temporary Hit Points.</bullet><bullet>Gains 1 Strengthened.</bullet></bulletlist>",
   "name": "Strength From Steel",
   "slug": "strength_of_steel_property_ability_000003E3000052F7",
   "damage": "",
@@ -26637,7 +26637,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Heals +30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Becomes Awakened for 3 <turn></turn>.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Heals +45 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Becomes Awakened for 3 <turn></turn>.</bullet></bulletlist>",
   "name": "Mending Awakening",
   "slug": "mending_awakening_ability_000003E3000052EB",
   "damage": "",
@@ -26865,7 +26865,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Grants friendly units in a 1-hex radius:<bulletlist><bullet>10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Strengthened</bullet><bullet>Regeneration</bullet></bulletlist>",
+  "description": "Grants friendly units in a 1-hex radius:<bulletlist><bullet>20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Strengthened</bullet><bullet>Regeneration</bullet></bulletlist>",
   "name": "Invigorate",
   "slug": "invigorate_ability_000003E3000052E0",
   "damage": "",
@@ -27234,7 +27234,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit gains:<bulletlist><bullet>+25<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
+  "description": "Target friendly unit gains:<bulletlist><bullet>+40<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Soothing Standard",
   "slug": "soothing_standard_ability_000003E3000052D2_0000048d000011e2",
   "damage": "",
@@ -27302,7 +27302,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit gains:<bulletlist><bullet>+25<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
+  "description": "Target friendly unit gains:<bulletlist><bullet>+40<hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>10 <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Soothing Standard",
   "slug": "soothing_standard_ability_000003E3000052D2_0000048d00001220",
   "damage": "",
@@ -33162,7 +33162,7 @@
   "description": "Deal damage to target unit.",
   "name": "Draining Bite",
   "slug": "draining_bite_ability_hs_draining_bite",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -33175,7 +33175,7 @@
    }
   ],
   "accuracy": "100%",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
   "notes": [
    {
@@ -38016,7 +38016,7 @@
   "icon": "000003E3000057D6"
  },
  {
-  "description": "The first time each turn an enemy gains Electrified they sustain an extra 12 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.<br></br><br></br>Removed if this unit leaves the battle.",
+  "description": "The first time each turn an enemy gains Electrified they sustain an extra 6 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.<br></br><br></br>Removed if this unit leaves the battle.",
   "name": "Tempest's Chorus",
   "slug": "00000497000045eb",
   "icon": "00000497000045F5"

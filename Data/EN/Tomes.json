@@ -2188,7 +2188,7 @@
     "name": "Rending Shadows",
     "spell_slug": "rending_shadows",
     "tier": 5,
-    "type": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>"
+    "type": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>"
    },
    {
     "description": "Attacks of enchanted units:<bulletlist><bullet>Deal +<damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> when <hyperlink><flank></flank> Flanking</hyperlink> or attacking Blind units.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for Single Shot attacks.",
@@ -4490,7 +4490,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    },
    {
-    "description": "Target Enemies in a -hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>2 Sundered Resistance.</bullet></bulletlist>",
+    "description": "Target Enemies in a -hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>Have a base % chance of gaining 2 Sundered Resistance.</bullet></bulletlist>",
     "name": "Mental Mark",
     "spell_slug": "mental_mark",
     "tier": 3,
@@ -4641,7 +4641,7 @@
     "name": "Static Shields",
     "spell_slug": "static_shields",
     "tier": 3,
-    "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
+    "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
     "description": "Summons a <hyperlink>Phantasm Warrior</hyperlink>, a Shield Unit that strikes with <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.",

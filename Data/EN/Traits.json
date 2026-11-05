@@ -396,7 +396,7 @@
  {
   "biography_description": "Hunting in the Ashlands taught them to conceal their steps and swiftly rush their prey.",
   "lore_description": "<helpcolor>Cannot be easily detected and has increased combat movement speed when in Ashlands.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "ashland_hunters",
   "name": "Ashland Hunters",
   "incompatible_society_traits": [
@@ -419,7 +419,7 @@
     "name": "Ashland Camouflage"
    },
    {
-    "name": "Has 6 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Ashlands</hyperlink>."
+    "name": "Has 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Ashlands</hyperlink>."
    }
   ],
   "enabled": true,
@@ -432,7 +432,7 @@
  {
   "biography_description": "Desert winds obscure their movements yet quicken their steps when stalking their quarry.",
   "lore_description": "<helpcolor>Cannot be easily detected and has increased combat movement speed when in Sand.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "sand_hunters",
   "name": "Sand Hunters",
   "incompatible_society_traits": [
@@ -455,7 +455,7 @@
     "name": "Sand Camouflage"
    },
    {
-    "name": "Has 6 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Sand</hyperlink>."
+    "name": "Has 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Sand</hyperlink>."
    }
   ],
   "enabled": true,
@@ -468,7 +468,7 @@
  {
   "biography_description": "Enemies barely notice them in snowy lands, despite the frost enhancing their speed in combat.",
   "lore_description": "<helpcolor>Cannot be easily detected and has increased combat movement speed when in Snow.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "snow_hunters",
   "name": "Snow Hunters",
   "incompatible_society_traits": [
@@ -491,7 +491,7 @@
     "name": "Snow Camouflage"
    },
    {
-    "name": "Has 6 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Snow</hyperlink> or <hyperlink>Ice</hyperlink>."
+    "name": "Has 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Snow</hyperlink> or <hyperlink>Ice</hyperlink>."
    }
   ],
   "enabled": true,
@@ -504,7 +504,7 @@
  {
   "biography_description": "Their fellowship with forests hastens them in combat and hides their presence among trees.",
   "lore_description": "<helpcolor>Cannot be easily detected and has increased combat movement speed when in Forests.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "forest_hunters",
   "name": "Forest Hunters",
   "incompatible_society_traits": [
@@ -527,7 +527,7 @@
     "name": "Forest Camouflage"
    },
    {
-    "name": "Has 6 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Forest</hyperlink> or <hyperlink>Mushroom Forest</hyperlink>."
+    "name": "Has 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on <hyperlink>Forest</hyperlink> or <hyperlink>Mushroom Forest</hyperlink>."
    }
   ],
   "enabled": true,
@@ -540,7 +540,7 @@
  {
   "biography_description": "They are deadly in water, which conceals them and propels them at great speeds in battle.",
   "lore_description": "<helpcolor>Cannot be easily detected and has increased combat movement speed when in Water.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "water_hunters",
   "name": "Water Hunters",
   "incompatible_society_traits": [
@@ -563,7 +563,7 @@
     "name": "Water Camouflage."
    },
    {
-    "name": "Has 6 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on Water."
+    "name": "Has 5 <combatspeed></combatspeed><hyperlink>Combat Speed</hyperlink> when on Water."
    }
   ],
   "enabled": true,
@@ -1310,7 +1310,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gains the Overwhelm passive."

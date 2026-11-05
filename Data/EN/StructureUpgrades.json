@@ -1257,7 +1257,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Units stationed in the city gain 15 <hyperlink><xp></xp> Experience</hyperlink> each <hyperlink><turn></turn> Turn</hyperlink>.</bullet><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+30 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>A <hyperlink>Wall Structure</hyperlink> in a <hyperlink>City</hyperlink> forces enemies to enter a <hyperlink>siege</hyperlink> when attacking the city.</bullet><bullet>+30 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>",
   "resid": 5003636908874,
   "id": "fortified_harbor",
   "DLC": "SILVERSEAS ",

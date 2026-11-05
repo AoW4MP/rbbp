@@ -1,6 +1,6 @@
 [
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056582,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_adventurer_captain",
@@ -8,11 +8,11 @@
   "tactical": true,
   "description": "Conjure the Adventurer <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Adventurer Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007B6"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056579,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_protector_captain",
@@ -20,11 +20,11 @@
   "tactical": true,
   "description": "Conjure the Protector <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Protector Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007B1"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056576,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_family_captain",
@@ -32,11 +32,11 @@
   "tactical": true,
   "description": "Conjure the Family <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Family Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007AC"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056573,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_maniac-hunter_captain",
@@ -44,11 +44,11 @@
   "tactical": true,
   "description": "Conjure the Maniac-Hunter <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Maniac-Hunter Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007A7"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056570,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_demonic_captain",
@@ -56,11 +56,11 @@
   "tactical": true,
   "description": "Conjure the Demonic <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Demonic Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007A2"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056541,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_gold-cursed_captain",
@@ -68,7 +68,7 @@
   "tactical": true,
   "description": "Conjure the Gold-Cursed <hyperlink>Free Captain</hyperlink> into combat as a Combat Summon. Cannot be used when that captain is already in combat.",
   "name": "Conjure Gold-Cursed Captain",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E400000799"
  },
  {
@@ -5229,7 +5229,7 @@
  {
   "casting_cost": "30<mana></mana> ",
   "resid": 4995046965803,
-  "spellType": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>",
+  "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "rending_shadows",
   "DLC": "WAYSOFWAR ",
   "tactical": true,
@@ -8880,7 +8880,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "mental_mark",
   "tactical": true,
-  "description": "Target Enemies in a 1-hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>2 Sundered Resistance.</bullet></bulletlist>",
+  "description": "Target Enemies in a 1-hex radius gain:<bulletlist><bullet>2 Marked.</bullet><bullet>Have a base % chance of gaining 2 Sundered Resistance.</bullet></bulletlist>",
   "name": "Mental Mark",
   "operation_point_cost": 20,
   "icon": "0000041B00001251"
