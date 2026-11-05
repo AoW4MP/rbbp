@@ -396,7 +396,7 @@
  {
   "biography_description": "Годы охоты на пепелищах учат ступать бесшумно и настигать добычу в мгновение ока.",
   "lore_description": "<helpcolor>Этого воина сложнее обнаружить. Его скорость перемещения в бою на пепелищах возрастает.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "Знатоки_пепелищ",
   "name": "Знатоки пепелищ",
   "incompatible_society_traits": [
@@ -419,7 +419,7 @@
     "name": "Пепельный камуфляж"
    },
    {
-    "name": "Получает 6 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>пепелище</hyperlink>."
+    "name": "Получает 5 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>пепелище</hyperlink>."
    }
   ],
   "enabled": true,
@@ -432,7 +432,7 @@
  {
   "biography_description": "Шаги этого воина сливаются с дыханием пустынного ветра и неумолимо быстры для врагов.",
   "lore_description": "<helpcolor>Этого воина сложнее обнаружить. Его скорость перемещения в бою на песчаных ландшафтах возрастает.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "Знатоки_песков",
   "name": "Знатоки песков",
   "incompatible_society_traits": [
@@ -455,7 +455,7 @@
     "name": "Песчаный камуфляж"
    },
    {
-    "name": "Получает 6 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>песчаном</hyperlink> ландшафте."
+    "name": "Получает 5 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>песчаном</hyperlink> ландшафте."
    }
   ],
   "enabled": true,
@@ -468,7 +468,7 @@
  {
   "biography_description": "Среди снегов этот воин едва различим, а мороз лишь ускоряет его в бою.",
   "lore_description": "<helpcolor>Этого воина сложнее обнаружить. Его скорость перемещения в бою на снежных ландшафтах возрастает.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "Знатоки_снегов",
   "name": "Знатоки снегов",
   "incompatible_society_traits": [
@@ -491,7 +491,7 @@
     "name": "Снежный камуфляж"
    },
    {
-    "name": "Получает 6 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>снежном</hyperlink> или <hyperlink>ледяном</hyperlink> ландшафте."
+    "name": "Получает 5 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на <hyperlink>снежном</hyperlink> или <hyperlink>ледяном</hyperlink> ландшафте."
    }
   ],
   "enabled": true,
@@ -504,7 +504,7 @@
  {
   "biography_description": "Родство этого воина с лесом позволяет ему стремительнее действовать в бою, оставаясь незримым среди деревьев.",
   "lore_description": "<helpcolor>Этого воина сложнее обнаружить. Его скорость перемещения в бою на лесных ландшафтах возрастает.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "Знатоки_лесов",
   "name": "Знатоки лесов",
   "incompatible_society_traits": [
@@ -527,7 +527,7 @@
     "name": "Лесной камуфляж"
    },
    {
-    "name": "Получает 6 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится в <hyperlink>обычном</hyperlink> или в <hyperlink>грибном лесу</hyperlink>."
+    "name": "Получает 5 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится в <hyperlink>обычном</hyperlink> или в <hyperlink>грибном лесу</hyperlink>."
    }
   ],
   "enabled": true,
@@ -540,7 +540,7 @@
  {
   "biography_description": "В воде этот воин смертоносен и развивает огромную скорость, не выдавая своего присутствия.",
   "lore_description": "<helpcolor>Этого воина сложнее обнаружить. Его скорость перемещения в бою на водных ландшафтах возрастает.</helpcolor>",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "Знатоки_вод",
   "name": "Знатоки вод",
   "incompatible_society_traits": [
@@ -563,7 +563,7 @@
     "name": "Водный камуфляж"
    },
    {
-    "name": "Получает 6 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на водном ландшафте."
+    "name": "Получает 5 ед. <combatspeed></combatspeed><hyperlink>Боевая скорость</hyperlink>, когда находится на водном ландшафте."
    }
   ],
   "enabled": true,
@@ -1310,7 +1310,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
+    "name": "+5 ед. <hyperlink><hp></hp> здоровья</hyperlink>."
    },
    {
     "name": "Даёт пассивную способность «Сокрушительный натиск»."

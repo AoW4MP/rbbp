@@ -2188,7 +2188,7 @@
     "name": "Раздирающие тени",
     "spell_slug": "Раздирающие_тени",
     "tier": 5,
-    "type": "<casttactical></casttactical> <hyperlink>Заклинание урона и ослабления</hyperlink>"
+    "type": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>"
    },
    {
     "description": "Атаки воинов под действием чар:<bulletlist><bullet>наносят + ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink> при <flank></flank> <hyperlink>атаке с фланга</hyperlink> или атаке против цели под воздействием эффекта «Слепота».</bullet></bulletlist><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
@@ -4490,7 +4490,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание призыва</hyperlink>"
    },
    {
-    "description": "Выбранные враги в радиусе кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (2).</bullet></bulletlist>",
+    "description": "Выбранные враги в радиусе кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>с базовой вероятностью % получают эффект «Пробитое сопротивление» (2).</bullet></bulletlist>",
     "name": "Ментальная метка",
     "spell_slug": "Ментальная_метка",
     "tier": 3,
@@ -4641,7 +4641,7 @@
     "name": "Статические щиты",
     "spell_slug": "Статические_щиты",
     "tier": 3,
-    "type": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>"
+    "type": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>"
    },
    {
     "description": "Призывает <hyperlink>фантазм-воин</hyperlink>. Это воин со щитом, наносящий <damageLightning></damageLightning> <hyperlink>электрический урон</hyperlink>.",

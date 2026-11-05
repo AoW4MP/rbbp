@@ -1,6 +1,6 @@
 [
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056582,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана-авантюриста",
@@ -8,11 +8,11 @@
   "tactical": true,
   "description": "Призвать на поле боя <hyperlink>Вольный капитан</hyperlink>-авантюриста. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана-авантюриста",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007B6"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056579,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана-защитника",
@@ -20,11 +20,11 @@
   "tactical": true,
   "description": "<hyperlink>Вольный капитан</hyperlink>-защитник призвается на поле боя. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана-защитника",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007B1"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056576,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана-семьянина",
@@ -32,11 +32,11 @@
   "tactical": true,
   "description": "<hyperlink>Вольный капитан</hyperlink>-семьянин призвается на поле боя. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана-семьянина",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007AC"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056573,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана —_безумного_охотника",
@@ -44,11 +44,11 @@
   "tactical": true,
   "description": "<hyperlink>Вольный капитан</hyperlink> безумный охотник призвается на поле боя. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана — безумного охотника",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007A7"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056570,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана-демона",
@@ -56,11 +56,11 @@
   "tactical": true,
   "description": "Демонический <hyperlink>Вольный капитан</hyperlink> призвается на поле боя. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана-демона",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E4000007A2"
  },
  {
-  "casting_cost": "100<mana></mana> ",
+  "casting_cost": "200<mana></mana> ",
   "resid": 5377299056541,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Призвать_капитана_с_золотым_проклятием",
@@ -68,7 +68,7 @@
   "tactical": true,
   "description": "<hyperlink>Вольный капитан</hyperlink> с золотым проклятием призвается на поле боя. Воин получит тип «Призванный на бой». Нельзя использовать, если этот капитан уже участвует в бою.",
   "name": "Призвать капитана с золотым проклятием",
-  "operation_point_cost": 40,
+  "operation_point_cost": 65,
   "icon": "000004E400000799"
  },
  {
@@ -5229,7 +5229,7 @@
  {
   "casting_cost": "30<mana></mana> ",
   "resid": 4995046965803,
-  "spellType": "<casttactical></casttactical> <hyperlink>Заклинание урона и ослабления</hyperlink>",
+  "spellType": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>",
   "id": "Раздирающие_тени",
   "DLC": "WAYSOFWAR ",
   "tactical": true,
@@ -8880,7 +8880,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>",
   "id": "Ментальная_метка",
   "tactical": true,
-  "description": "Выбранные враги в радиусе 1 кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>«Пробитое сопротивление» (2).</bullet></bulletlist>",
+  "description": "Выбранные враги в радиусе 1 кл. получают:<bulletlist><bullet>«Помечен» (2);</bullet><bullet>с базовой вероятностью % получают эффект «Пробитое сопротивление» (2).</bullet></bulletlist>",
   "name": "Ментальная метка",
   "operation_point_cost": 20,
   "icon": "0000041B00001251"

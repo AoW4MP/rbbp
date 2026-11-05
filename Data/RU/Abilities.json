@@ -1137,12 +1137,6 @@
   "icon": "0000048D000021CF"
  },
  {
-  "description": "Этот воин может стать <hyperlink>всадником</hyperlink>, если у его народа есть особенность, дающая доступ к особым скакунам.",
-  "name": "Дополнительная кавалерия",
-  "slug": "000003eb0000073f",
-  "icon": "000003EB0000073E"
- },
- {
   "description": "Воин, поражающий вражеские цели на расстоянии. Довольно уязвим.<bulletlist><bullet><hyperlink>Точность</hyperlink> его стрельбы зависит от <hyperlink>прямой видимости</hyperlink>.</bullet><bullet><hyperlink>Вступив в ближний бой</hyperlink>, стрелок не может использовать свою основную дистанционную атаку.</bullet></bulletlist>",
   "name": "Стрелок",
   "slug": "0000039f000016f1",
@@ -1333,6 +1327,12 @@
   "name": "Магический боец",
   "slug": "0000049700003951",
   "icon": "0000049700003952"
+ },
+ {
+  "description": "Этот воин может стать <hyperlink>всадником</hyperlink>, если у его народа есть особенность, дающая доступ к особым скакунам.",
+  "name": "Дополнительная кавалерия",
+  "slug": "000003eb0000073f",
+  "icon": "000003EB0000073E"
  },
  {
   "description": "В конце хода этого воина все вражеские воины в радиусе 4 кл. от этого воина:<bulletlist><bullet>получают эффект «Давление».</bullet></bulletlist><br></br>Недоступно, если этот воин <hyperlink>участвует в ближнем бою</hyperlink>.",
@@ -12873,7 +12873,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dc",
   "damage": "",
@@ -12914,7 +12914,7 @@
   "icon": "0000049700000197"
  },
  {
-  "description": "Духовное исцеление:<bulletlist><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>каждый потраченный уровень особенности «Первобытная ярость» также снимает один отрицательный эффект.</bullet></bulletlist>",
+  "description": "Духовное исцеление:<bulletlist><bullet>дополнительно восстанавливает 10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>снимает 2 <hyperlink>отрицательный эффект</hyperlink>.</bullet></bulletlist>",
   "name": "Героическое духовное исцеление",
   "slug": "0000048b00000c04",
   "icon": "000003E30000627B"
@@ -12964,7 +12964,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002df",
   "damage": "",
@@ -13049,7 +13049,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e1",
   "damage": "",
@@ -13134,7 +13134,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002dd",
   "damage": "",
@@ -13219,7 +13219,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002de",
   "damage": "",
@@ -13304,7 +13304,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002e0",
   "damage": "",
@@ -13389,7 +13389,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный воин:<bulletlist><bullet>получает 2 ур. особенности «Растущая ярость», если у него есть дар первобытного животного;</bullet><bullet>восстанавливает 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.</bullet></bulletlist>",
   "name": "Духовное исцеление",
   "slug": "rbbp_spiritual_healing_ability_000004900000031D_00000497000002db",
   "damage": "",
@@ -18241,12 +18241,6 @@
   "icon": "0000048D00000170"
  },
  {
-  "description": "Этому воину сложнее маневрировать в бою. Он: <bulletlist><bullet>во время движения тратит дополнительно 1 оч. за каждый поворот;</bullet><bullet>тратит все очки перемещения, выполняя разворот на месте;</bullet><bullet>не может проводить <hyperlink>неплановые атаки</hyperlink> против врагов у себя за спиной или <hyperlink>отвечать</hyperlink> на их удары.</bullet></bulletlist>",
-  "name": "Ограничение подвижности",
-  "slug": "0000048b00001394",
-  "icon": "0000048B00001396"
- },
- {
   "notes": [
    {
     "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
@@ -18381,6 +18375,12 @@
    }
   ],
   "icon": "000003E3000064FA"
+ },
+ {
+  "description": "Этому воину сложнее маневрировать в бою. Он: <bulletlist><bullet>во время движения тратит дополнительно 1 оч. за каждый поворот;</bullet><bullet>тратит все очки перемещения, выполняя разворот на месте;</bullet><bullet>не может проводить <hyperlink>неплановые атаки</hyperlink> против врагов у себя за спиной или <hyperlink>отвечать</hyperlink> на их удары.</bullet></bulletlist>",
+  "name": "Ограничение подвижности",
+  "slug": "0000048b00001394",
+  "icon": "0000048B00001396"
  },
  {
   "description": "Когда погибает воин, не являющийся призванным существом или нежитью, можно снова использовать способность «Призыв привидения». Срабатывает один раз за ход.",
@@ -25264,7 +25264,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин и ещё один воин в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
+  "description": "Выбранный дружественный воин, а также до 2 других воинов в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "name": "Целительный бриз",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d00000609",
   "damage": "",
@@ -25335,7 +25335,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин и ещё один воин в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
+  "description": "Выбранный дружественный воин, а также до 2 других воинов в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "name": "Целительный бриз",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d0000061d",
   "damage": "",
@@ -25387,7 +25387,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин и ещё один воин в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
+  "description": "Выбранный дружественный воин, а также до 2 других воинов в радиусе 2 кл. восстанавливают +20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>.",
   "name": "Целительный бриз",
   "slug": "soothing_breeze_ability_000003E300005450_0000048d00000620",
   "damage": "",
@@ -26272,7 +26272,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин теряет все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект он:<bulletlist><bullet>восстанавливает +8 ед. <temphp></temphp> временного здоровья;</bullet><bullet>получает эффект «Дополнительная сила» (1).</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин теряет все накопленные уровни эффектов «Усиленная защита» и «Усиленное сопротивление». За каждый потраченный эффект он:<bulletlist><bullet>восстанавливает +10 ед. <temphp></temphp> временного здоровья;</bullet><bullet>получает эффект «Дополнительная сила» (1).</bullet></bulletlist>",
   "name": "Сила стали",
   "slug": "strength_of_steel_property_ability_000003E3000052F7",
   "damage": "",
@@ -26637,7 +26637,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>на 3 <turn></turn> получает способность «Пробуждённый».</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>восстанавливает +45 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>на 3 <turn></turn> получает способность «Пробуждённый».</bullet></bulletlist>",
   "name": "Пробуждающее лечение",
   "slug": "mending_awakening_ability_000003E3000052EB",
   "damage": "",
@@ -26865,7 +26865,7 @@
     "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл. получают:<bulletlist><bullet>10 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>«Дополнительная сила»;</bullet><bullet>«Регенерация».</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл. получают:<bulletlist><bullet>20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>«Дополнительная сила»;</bullet><bullet>«Регенерация».</bullet></bulletlist>",
   "name": "Второе дыхание",
   "slug": "invigorate_ability_000003E3000052E0",
   "damage": "",
@@ -27234,7 +27234,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+25 к <temphp></temphp> <hyperlink>временному здоровью</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+40 к <temphp></temphp> <hyperlink>временному здоровью</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Успокаивающий штандарт",
   "slug": "soothing_standard_ability_000003E3000052D2_0000048d000011e2",
   "damage": "",
@@ -27302,7 +27302,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+25 к <temphp></temphp> <hyperlink>временному здоровью</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Выбранный дружественный воин получает:<bulletlist><bullet>+40 к <temphp></temphp> <hyperlink>временному здоровью</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>.</bullet></bulletlist><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Успокаивающий штандарт",
   "slug": "soothing_standard_ability_000003E3000052D2_0000048d00001220",
   "damage": "",
@@ -33162,7 +33162,7 @@
   "description": "Наносит урон выбранному воину.",
   "name": "Иссушающий укус",
   "slug": "draining_bite_ability_hs_draining_bite",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
@@ -33175,7 +33175,7 @@
    }
   ],
   "accuracy": "100%",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
   "notes": [
    {
@@ -38016,7 +38016,7 @@
   "icon": "000003E3000057D6"
  },
  {
-  "description": "Каждый раз, когда враг получает эффект «Наэлектризованность» впервые за ход, он также получает 12 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.<br></br><br></br>Эффект снимается, если воин покидает сражение.",
+  "description": "Каждый раз, когда враг получает эффект «Наэлектризованность» впервые за ход, он также получает 6 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.<br></br><br></br>Эффект снимается, если воин покидает сражение.",
   "name": "Хор ненастья",
   "slug": "00000497000045eb",
   "icon": "00000497000045F5"

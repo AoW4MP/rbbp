@@ -10774,7 +10774,7 @@
     "slug": "pistol_shot_(item_forge)_ability_equipment_item_pantheon_saber_and_pistol_base"
    }
   ],
-  "icon": "000004A60000088F",
+  "icon": "0000048D00002358",
   "disabled_slots": [
    {
     "slot_name": "Дополнительное"
@@ -22712,7 +22712,7 @@
     "slug": "0000048b00000b35"
    },
    {
-    "slug": "000003e300004ef4"
+    "slug": "000003e3000049bf"
    }
   ],
   "icon": "0000041B00001429",

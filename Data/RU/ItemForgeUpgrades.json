@@ -7489,7 +7489,7 @@
   "point_cost": 2,
   "id": "equipment_upgrade_passive_tempests_chorus",
   "DLC": "WITCHOFTHEWAVES ",
-  "description": "Каждый раз, когда враг получает эффект «Наэлектризованность» впервые за ход, он также получает 12 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.<br></br><br></br>Эффект снимается, если воин покидает сражение.",
+  "description": "Каждый раз, когда враг получает эффект «Наэлектризованность» впервые за ход, он также получает 6 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>.<br></br><br></br>Эффект снимается, если воин покидает сражение.",
   "name": "Хор ненастья",
   "tags": [
    {

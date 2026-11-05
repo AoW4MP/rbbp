@@ -1257,7 +1257,7 @@
  {
   "requirement_description": "",
   "cost": "85<gold></gold> 200<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>Воины, находящиеся в этом городе, получают 15 ед. <xp></xp> <hyperlink>опыта</hyperlink> каждый <hyperlink><turn></turn> ход</hyperlink>.</bullet><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+30 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>Если в <hyperlink>городе</hyperlink> есть <hyperlink>городская стена</hyperlink>, напавшие на него вражеские армии будут вынуждены начать <hyperlink>осаду</hyperlink>.</bullet><bullet>+30 к <garrison></garrison><hyperlink>состоянию укреплений</hyperlink></bullet></bulletlist>",
   "resid": 5003636908874,
   "id": "Укреплённая_гавань",
   "DLC": "SILVERSEAS ",
