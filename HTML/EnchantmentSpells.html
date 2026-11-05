@@ -26,6 +26,14 @@
                 showSpellsWithArgument("matter", "unit enchantment", "<matter></matter> Materium");
                 showSpellsWithArgument("arcana", "unit enchantment", "<arcana></arcana> Astral");
                 showSpellsWithArgument("Shadow", "unit enchantment", "<shadow></shadow> Shadow");
+                const categorized = new Set([
+                    "General Research", "Culture", "Order", "Chaos", "Nature", "matter", "arcana", "Shadow"
+                ].flatMap(affinity => findSpellsWithArgument(affinity, "unit enchantment")));
+                const otherEnchantments = findSpellsWithArgument("", "Unit Enchantment")
+                    .filter(id => !categorized.has(id));
+                if (otherEnchantments.length) {
+                    SetCollapsibleButtonsAndDivs("Other Enchantments", otherEnchantments, "spell");
+                }
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
                 $("#filterInput").on("change input", function () {

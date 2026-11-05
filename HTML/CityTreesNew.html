@@ -43,38 +43,28 @@
                                return path;
                            }
 
-                           function updateConnector() {
-
-                               const holder = document.getElementById("holder");
-                                 const holderSVG = document.getElementById("holderSVG");
-                                for (let i = 0; i < jsonCityTreeNodes.length; i++) {
-                             
-                                   const newDiv = document.createElement("div");
-                                   newDiv.className = "box";
-                                   newDiv.innerHTML = jsonCityTreeNodes[i].id;
-                                   newDiv.setAttribute("id", jsonCityTreeNodes[i].id);
-                                  for (let j = 0; j < jsonCityTreeNodes[i].connectTo.length; j++) {
-                                        const path = document.createElement("path");
-                                       const div = document.getElementById(jsonCityTreeNodes[i].connectTo[j].id)
-                                          path.setAttribute("d", generatePathSettings(div, newDiv, 100));
-                          holderSVG.appendChild(path);
-                                       
-                                   }
-                                   
-                                   holder.appendChild(newDiv);
-                                  
-                                  
-                                   
-
+                           const holder = document.getElementById("holder");
+                           const holderSVG = document.getElementById("holderSVG");
+                           const nodes = new Map();
+                           for (const entry of jsonCityTreeNodes) {
+                               const node = document.createElement("div");
+                               node.className = "box";
+                               node.textContent = entry.id;
+                               node.id = entry.id;
+                               holder.appendChild(node);
+                               nodes.set(entry.id, node);
+                           }
+                           for (const entry of jsonCityTreeNodes) {
+                               for (const connection of entry.connectTo) {
+                                   const target = nodes.get(connection.id);
+                                   if (!target) continue;
+                                   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                                   path.setAttribute("d", generatePathSettings(target, nodes.get(entry.id), 100));
+                                   path.setAttribute("fill", "none");
+                                   path.setAttribute("stroke", "white");
+                                   holderSVG.appendChild(path);
                                }
                            }
-
-                           // Initial render
-                           updateConnector();
-
-                           // Recompute on resize or scroll
-                          // window.addEventListener("resize", updateConnector);
-                          // window.addEventListener("scroll", updateConnector);
                        }
         </script>
 

@@ -240,7 +240,7 @@ arcanium_ore,
 focus_crystals,
 fireforge_stone,
 blood_glass,
-astral_dew, tranquility_pool,rainbow_clover {
+astral_dew, tranquility_pool,rainbow_clover,pale_tidebloom {
     max-width: 25px;
     top: 7px;
     position: relative;
@@ -1522,4 +1522,8 @@ summonspell {
     content: url(/rbbp/Icons/Text/spelltype_summon.png);
     position: relative;
     top: 3px;
+}
+
+pale_tidebloom {
+    content: url(/rbbp/Icons/WorldStructures/pale_tidebloom.png);
 }

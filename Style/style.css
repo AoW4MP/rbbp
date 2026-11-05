@@ -2154,21 +2154,161 @@ span.number-highlight {
         left: 0 !important;
     }
 
-     .tooltiptextnew {
-        position: fixed !important;
-       /* left: 0 !important;
-      /*  right: 0 !important;
-        bottom: 0 !important;
-        top: auto !important;*/
-        width: 100% !important;
-        max-width: 100% !important;
-        max-height: 45vh;
-        overflow-y: auto;
-        border-radius: 12px 12px 0 0;
-        box-sizing: border-box;
-        z-index: 1001; /* above the selections popup */
-          /* Smooth out stuttering transitions during zoom */
-    transform-origin: bottom left;
-    will-change: transform, top, left, width;
+    .w3-container {
+        grid-template-columns: minmax(0, 1fr);
     }
+
+    div:has(> .searchbar),
+    .searchbar {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #buttonHolder.w3-bar {
+        position: static;
+        display: flex;
+        width: 100% !important;
+        overflow-x: auto;
+    }
+
+    #buttonHolder.w3-bar > button {
+        flex: 0 0 auto;
+    }
+
+    #buttonHolder.w3-bar + #dataHolder,
+    #buttonHolder.w3-bar + #dataHolder > .city {
+        margin: 0 !important;
+    }
+
+    .mod_card,
+    .tome_card,
+    .unit_card {
+        display: flow-root;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .mod_image_holder,
+    .structure_image_holder {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .mod_image_holder > div,
+    .mod_image_holder > div > div,
+    .structure_image_holder > div,
+    .structure_image_holder > div > div {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .mod_image_holder div:has(> #originTome),
+    .structure_image_holder div:has(> #originTome),
+    .structure_image_holder > #modcost {
+        position: static !important;
+    }
+
+    .mod_description {
+        float: none;
+        box-sizing: border-box;
+    }
+
+    .tome-summary-grid,
+    #tome_unlocks,
+    #affectUnitTypes {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .tome-summary-grid .InitialBonus {
+        margin-right: 0;
+    }
+
+    .unit_card .unit_image_holder,
+    .unit_card .unit_name,
+    .unit_card .unit_ability_holder {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0;
+    }
+
+    .unit_card .unit_ability_holder {
+        border-width: 12px;
+    }
+
+    .unit_card .unit_preview_vid,
+    .unit_card .unit_abilityslot,
+    .unit_card .unit_elite_skill,
+    .unit_card .unit_stats {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .unit_card .unit_preview_vid {
+        height: auto;
+    }
+
+    .unit_card .medals,
+    .unit_card #activeEnchants {
+        right: 0 !important;
+    }
+
+    #treeFilterGroup,
+    #treeFilterGroupMM,
+    #treeFilterGroupSub {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .ability-list-scroll,
+    .infusion-list-scroll {
+        overflow-x: auto;
+    }
+
+    .ability-list-scroll .list_abilityslot,
+    .ability-list-scroll .list_abilityslotfilter {
+        min-width: 1050px;
+    }
+
+    .infusion-list-scroll .list_abilityslot,
+    .infusion-list-scroll .list_abilityslotfilter {
+        min-width: 750px;
+    }
+
+    .tooltiptextnew,
+    .tooltiptextnew.wide {
+        position: fixed;
+        inset: auto auto 0 0;
+        margin: 0;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: 55dvh;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        z-index: 1001;
+    }
+
+    .tooltip-close {
+        position: sticky;
+        top: 0;
+        float: right;
+        margin-left: 8px;
+        min-width: 36px;
+        min-height: 36px;
+        background: #21172c;
+        color: white;
+        border: 1px solid currentColor;
+        font-size: 22px;
+    }
+}
+
+.catalog-tree-scroll {
+    max-width: 100%;
+    overflow-x: auto;
 }

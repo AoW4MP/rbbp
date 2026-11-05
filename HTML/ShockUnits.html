@@ -17,16 +17,7 @@
        <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("shock_unit");
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(unitarray[i], "Shock Tier " + romanize(parseInt(parseInt(i) + 1)) + " ");
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("shock_unit", "Shock Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

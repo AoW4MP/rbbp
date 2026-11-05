@@ -17,18 +17,7 @@
        <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-              
-                unitarray = FindUnitsWithSecondaryPassive("magic_fighter_unit");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(unitarray[i], "Magic Fighter Tier " + romanize(parseInt(parseInt(i) + 1)) + " ");
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("magic_fighter_unit", "Magic Fighter Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

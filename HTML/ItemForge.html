@@ -154,6 +154,26 @@
         color:red;
     }
 
+    @media (hover: none), (max-width: 800px) {
+        .itemforgeBG {
+            flex-direction: column;
+        }
+
+        .itemforgeBG .grid {
+            grid: none;
+            grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        }
+
+        .itemforgeBG .selections {
+            min-width: 0;
+            width: auto;
+            min-height: 0;
+        }
+
+        .infusionsHolder {
+            flex-wrap: wrap;
+        }
+    }
 </style>
 <footer>
     <br>

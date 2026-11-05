@@ -1,4 +1,33 @@
+const tooltipTouchLayout = window.matchMedia("(max-width: 800px), (hover: none)");
 
+function closeTooltips() {
+    document.getElementById("hoverDiv").close();
+    document.getElementById("hoverDiv2").close();
+}
+
+document.addEventListener("pointerdown", event => {
+    if (tooltipTouchLayout.matches && !event.target.closest("dialog.tooltiptextnew")) closeTooltips();
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeTooltips();
+});
+
+function positionTouchTooltip(dialog) {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    dialog.style.left = `${viewport.offsetLeft}px`;
+    dialog.style.width = `${viewport.width}px`;
+    dialog.style.maxHeight = `${viewport.height * 0.55}px`;
+    dialog.style.top = `${viewport.offsetTop + viewport.height - dialog.offsetHeight}px`;
+}
+
+for (const event of ["resize", "scroll"]) {
+    window.visualViewport?.addEventListener(event, () => {
+        if (!tooltipTouchLayout.matches) return;
+        document.querySelectorAll("dialog.tooltiptextnew[open]").forEach(positionTouchTooltip);
+    });
+}
 
 function addTooltipListeners(tooltip, span, secondary) {
     let hoverDiv2 = document.getElementById("hoverDiv2");
@@ -77,6 +106,16 @@ function TurnOnTooltip(spa, secondary) {
             HandleExtraTooltips(hoverDiv);
         }
     }
+    if (spa && tooltipTouchLayout.matches) {
+        const dialog = secondary != undefined ? hoverDiv2 : hoverDiv;
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "tooltip-close";
+        button.setAttribute("aria-label", getUserSettings()?.language?.toLowerCase() === "ru" ? "Закрыть подсказку" : "Close tooltip");
+        button.textContent = "×";
+        button.addEventListener("click", closeTooltips);
+        dialog.prepend(button);
+    }
 }
 
 
@@ -84,6 +123,7 @@ function TurnOffTooltip(secondary, origin) {
     let hoverDiv2 = document.getElementById("hoverDiv2");
     let hoverDiv = document.getElementById("hoverDiv");
 
+    if (tooltipTouchLayout.matches) return;
     if (secondary != undefined) {
         if (checkboxTooltip.checked) {
             if (origin == hoverDiv2 && hoverDiv2.open) hoverDiv2.close();
@@ -144,7 +184,6 @@ function getNormalizedPosition(event) {
 }
 function updateHoverDivPosition(event, secondary) {
     const settings = getUserSettings();
-    const isTouch = window.matchMedia('(max-width: 800px), (hover: none)').matches;
 
     let hoverDiv = secondary != undefined
         ? document.getElementById("hoverDiv2")
@@ -156,27 +195,11 @@ function updateHoverDivPosition(event, secondary) {
         hoverDiv.setAttribute("Style", "pointer-events: none;");
     }
 
-    // Mobile: CSS pins this as a fixed bottom sheet (see below) — no JS positioning needed.
-    if (isTouch) {
-         const vv = window.visualViewport;
-
-        // Calculate current viewport dimensions considering zoom scale
-        const currentWidth = vv.width;
-        const currentHeight = vv.height;
-
-        // Force layout size and position relative to current visual viewport offset
-        hoverDiv.style.width = `${currentWidth}px`;
-        hoverDiv.style.left = `${vv.offsetLeft}px`;
-        hoverDiv.style.top = `${vv.offsetTop + currentHeight - hoverDiv.offsetHeight}px`;
-
-        // Scale the inner content so text remains readable when zoomed out
-        hoverDiv.style.transform = `scale(${1 / vv.scale})`;
-        hoverDiv.style.transformOrigin = 'bottom left';
-        hoverDiv.style.width = `${currentWidth * vv.scale}px`;
-
+    if (tooltipTouchLayout.matches) {
+        hoverDiv.style.pointerEvents = "auto";
+        positionTouchTooltip(hoverDiv);
         return;
     }
-
 
     var selectionsHolder = document.querySelector("#selectionsHolder > .selections") ?? document.getElementById("selectionsHolder");
     if (selectionsHolder && event.target.closest && event.target.closest("#selectionsHolder")) {

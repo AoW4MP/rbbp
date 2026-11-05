@@ -383,12 +383,18 @@ function GetTomeTierAndNameTome(id) {
 }
 
 function ShowUnitFromLink() {
-    let unitID = searchParams.get("unit");
-    let unitName = findBy(jsonUnits, "id", unitID);
-    let unitNameLoc = findBy(jsonUnitsLocalized, "resid", unitName.resid);
-
-    document.title = "Age of Wonders 4 RbbP - " + unitNameLoc.name;
-    showUnitFromString(unitID, "dataHolder");
+    const unitId = searchParams.get("unit");
+    const unit = unitId && findBy(jsonUnits, "id", unitId);
+    if (!unit) {
+        const link = document.createElement("a");
+        link.href = "/rbbp/HTML/Search.html";
+        link.textContent = getUserSettings()?.language === "RU" ? "Поиск юнитов" : "Search for units";
+        document.getElementById("dataHolder").appendChild(link);
+        return;
+    }
+    const localized = findBy(jsonUnitsLocalized, "resid", unit.resid) ?? unit;
+    document.title = "Age of Wonders 4 RbbP - " + localized.name;
+    showUnitFromString(unitId, "dataHolder");
 }
 
 function ShowSpellFromLink() {
@@ -2515,7 +2521,8 @@ function findSpellsWithArgument(argumentaffinity, argumentType) {
                         jsonTomes[i].name.toUpperCase().indexOf("Reaver".toUpperCase()) !== -1 ||
                         jsonTomes[i].name.toUpperCase().indexOf("Oathsworn".toUpperCase()) !== -1 ||
                         jsonTomes[i].name.toUpperCase().indexOf("Architect".toUpperCase()) !== -1 ||
-                        jsonTomes[i].name.toUpperCase().indexOf("Nomad".toUpperCase()) !== -1
+                        jsonTomes[i].name.toUpperCase().indexOf("Nomad".toUpperCase()) !== -1 ||
+                        jsonTomes[i].id.startsWith("mercantile_")
                     ) {
                         for (let k = 0; k < jsonTomes[i].skills.length; k++) {
                             listMod.push(jsonTomes[i].skills[k].spell_slug);
@@ -2624,33 +2631,14 @@ function findTraitsWithArgument(argumentType, affinity) {
     return finalCheckedList;
 }
 
-function findStructuresWithArgument(income, argumentType, includeprovince) {
-    let output,
-        affinity,
-        textvalue,
-        result = "";
-
-    let finalCheckedList = [];
-    if (argumentType != "") {
-        for (let j = 0; j < jsonStructureUpgrades.length; j++) {
-            if (jsonStructureUpgrades[j].name.toUpperCase().indexOf(argumentType.toUpperCase()) !== -1) {
-                if (includeprovince === jsonStructureUpgrades[j].is_sector_upgrade) {
-                    finalCheckedList.push(jsonStructureUpgrades[j].id);
-                }
-            }
-        }
-    }
-    if (income != "") {
-        for (let k = 0; k < jsonStructureUpgrades.length; k++) {
-            if (jsonStructureUpgrades[k].id.toUpperCase().indexOf(income.toUpperCase()) !== -1) {
-                if (includeprovince === jsonStructureUpgrades[k].is_sector_upgrade) {
-                    finalCheckedList.push(jsonStructureUpgrades[k].id);
-                }
-            }
-        }
-    }
-
-    return finalCheckedList;
+function findStructuresWithArgument(income, argumentType, includeProvince) {
+    const nameFilter = argumentType.toUpperCase();
+    const idFilter = income.toUpperCase();
+    return jsonStructureUpgrades.filter(structure =>
+        structure.is_sector_upgrade === includeProvince &&
+        ((nameFilter && structure.name.toUpperCase().includes(nameFilter)) ||
+         (idFilter && structure.id.toUpperCase().includes(idFilter)))
+    ).map(structure => structure.resid);
 }
 
 function findCosmicHappeningsWithArgument(argumentType) {
@@ -4669,13 +4657,16 @@ function populateGenericCard(divOrigin, { name, description, tier = "", cost = "
 }
 
 function showStructure(a, showOrigin, divOrigin) {
-    const structureEN = jsonStructureUpgrades.find((entry) => entry.id == a);
+    const structureEN = typeof a === "number"
+        ? findBy(jsonStructureUpgrades, "resid", a)
+        : findBy(jsonStructureUpgrades, "id", a);
     if (structureEN === undefined) {
         console.log("Couldn't find structure: " + a);
         return;
     }
 
-    const structureLoc = jsonStructureUpgradesLocalized.find((entry) => entry.resid == structureEN.resid);
+    const structureLoc = findBy(jsonStructureUpgradesLocalized, "resid", structureEN.resid) ?? structureEN;
+    a = structureEN.id;
 
     //populateGenericCard(divOrigin, {})
 
@@ -6207,80 +6198,26 @@ function FindFormUnits() {
     return sortedUnitListArray;
 }
 
-function FindUnitsWithSecondaryPassive(trait) {
-    // lookup slug
-    const ability = jsonUnitAbilities.find((entry) => entry.name.replaceAll(" ", "_").toLowerCase() === trait);
-    // need to find a way to check tiers as well
-    let unitsList = [];
+function ShowUnitsWithSecondaryPassive(trait, tierLabel, additionalUnitIds = []) {
+    const passiveSlugs = new Set(jsonUnitAbilities
+        .filter(ability => ability.name.replaceAll(" ", "_").toLowerCase() === trait)
+        .map(ability => ability.slug.toLowerCase()));
+    const unitsByTier = new Map();
 
-    for (let i = 0; i < jsonUnits.length; i++) {
-        for (let j = 0; j < jsonUnits[i].secondary_passives.length; j++) {
-            if (jsonUnits[i].secondary_passives[j].slug === ability.slug && !depCheckResID(jsonUnits[i].resid)) {
-                //  if (!isInArray(unitsList, jsonUnits[i])) {
+    for (const unit of jsonUnits) {
+        const matchesPassive = unit.secondary_passives?.some(passive => passiveSlugs.has(passive.slug.toLowerCase()));
+        if ((!matchesPassive && !additionalUnitIds.includes(unit.id)) || depCheckResID(unit.resid)) continue;
 
-                unitsList.push(jsonUnits[i]);
-                //  }
-            }
-        }
+        if (!unitsByTier.has(unit.tier)) unitsByTier.set(unit.tier, new Set());
+        const entry = unit.sub_culture_name && !architectCultureUnits.includes(unit.id)
+            ? unit.id + "," + unit.sub_culture_name
+            : unit.id;
+        unitsByTier.get(unit.tier).add(entry);
     }
 
-    // Sort the units list by tier
-    unitsList.sort((a, b) => a.tier - b.tier);
-
-    // Define the maximum length of each subarray
-    const maxLength = 10;
-
-    // Split the array into smaller arrays by tier
-    let splitArrays = [];
-    let currentArray = [];
-
-    let skip = false;
-    if (unitsList.length > maxLength) {
-        unitsList.forEach((item, index) => {
-            currentArray.push(item);
-
-            // Check if it's the last item or the tier changes
-            if (index === unitsList.length - 1 || unitsList[index + 1].tier !== item.tier) {
-                // Check if there's a gap of more than 1 in the tier
-                if (index < unitsList.length - 1 && unitsList[index + 1].tier - item.tier > 1) {
-                    // Insert "empty" entry
-                    const gap = unitsList[index + 1].tier - item.tier;
-                    for (let i = 1; i < gap; i++) {
-                        splitArrays.push(currentArray);
-                        currentArray = [];
-                    }
-                }
-
-                splitArrays.push(currentArray);
-                currentArray = [];
-            }
-        });
-    } else {
-        splitArrays.push(unitsList);
+    for (const tier of [...unitsByTier.keys()].sort((a, b) => a - b)) {
+        showUnitsFromList([...unitsByTier.get(tier)], tierLabel + romanize(tier));
     }
-
-    let sortedUnitListArray = [];
-
-    for (let z = 0; z < splitArrays.length; z++) {
-        let unitsSorted = [];
-
-        for (let x = 0; x < splitArrays[z].length; x++) {
-            if ("sub_culture_name" in splitArrays[z][x] && !architectCultureUnits.includes(splitArrays[z][x].id)) {
-                let newEntry = splitArrays[z][x].id + "," + splitArrays[z][x].sub_culture_name;
-
-                if (!isInArray(unitsSorted, newEntry)) {
-                    unitsSorted.push(newEntry);
-                }
-            } else {
-                if (!isInArray(unitsSorted, splitArrays[z][x].id)) {
-                    unitsSorted.push(splitArrays[z][x].id);
-                }
-            }
-        }
-        sortedUnitListArray.push(unitsSorted);
-    }
-
-    return sortedUnitListArray;
 }
 
 function showItem(itemLoc, divOrigin) {

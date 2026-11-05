@@ -18,22 +18,7 @@
         <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("elemental");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        if (unitarray[i].length > 0) {
-                            showUnitsFromList(
-                                unitarray[i],
-                                "Elementals Tier " + romanize(parseInt(parseInt(i) + 1)) + " "
-                            );
-                        }
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("elemental", "Elementals Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

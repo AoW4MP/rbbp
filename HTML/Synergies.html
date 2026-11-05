@@ -14,10 +14,10 @@
             function HandlePage() {
                 const select = document.getElementById("statusEffectSelect");
                 jsonStatusEffects.forEach((ability) => {
-                    var ab = lookupSlugFull(ability.slug);
+                    const ab = findBy(jsonUnitAbilitiesLocalized, "slug", ability.slug);
+                    if (!ab?.name) return;
                     const option = document.createElement("option");
                     option.value = ab.name;
-                    let tag = ab.name.replaceAll(" ", "_").toLowerCase();
                     option.innerHTML = ab.name;
                     select.appendChild(option);
                 });
@@ -33,21 +33,21 @@
                 let matches = [];
 
                 // Check jsonHeroSkills
-                jsonHeroSkills.forEach((skill) => {
+                jsonHeroSkillsLocalized.forEach((skill) => {
                     if (skill.description && skill.description.toLowerCase().includes(selected)) {
                         matches.push({ source: "Hero Skill", name: skill.name, description: skill.description });
                     }
                 });
 
                 // Check jsonUnits
-                jsonUnits.forEach((unit) => {
+                jsonUnitsLocalized.forEach((unit) => {
                     if (unit.description && unit.description.toLowerCase().includes(selected)) {
                         matches.push({ source: "Unit", name: unit.name, description: unit.description });
                     }
                 });
 
                 // Check abilities list
-                jsonUnitAbilities.forEach((ability) => {
+                jsonUnitAbilitiesLocalized.forEach((ability) => {
                     if (ability.description && ability.description.toLowerCase().includes(selected)) {
                         matches.push({ source: "Ability", name: ability.name, description: ability.description });
                     }
