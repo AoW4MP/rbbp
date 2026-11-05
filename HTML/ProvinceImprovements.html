@@ -25,7 +25,8 @@
                 showStructuresWithArgument("research", "Research", "", true);
                 showStructuresWithArgument("quarry", "Quarry", "", true);
                 showStructuresWithArgument("teleporter_", "Teleport", "", true);
-                //showStructuresWithArgument("victory", "Magic", "", true);
+                showStructuresWithArgument("monument_", "Monuments", "", true);
+                showStructuresWithArgument("_ruins", "Ruins", "", true);
                 SetLevelUpStuff();
 
                 $("#filterInput").on("change input", function () {
@@ -75,6 +76,12 @@
                 <button id="Teleport-button" class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Teleport')">
                     <teleporter></teleporter>Teleporters
                 </button>
+                <button id="Monuments-button" class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Monuments')">
+                    Monuments
+                </button>
+                <button id="Ruins-button" class="w3-bar-item w3-button tablink" onclick="openDiv(event,'Ruins')">
+                    Ruins
+                </button>
             </div>
             <div id="dataHolder" style="margin-top: -300px">
                 <div id="Foresters" class="w3-container w3-border city"></div>
@@ -86,7 +93,8 @@
                 <div id="Research" class="w3-container w3-border city"></div>
                 <div id="Quarry" class="w3-container w3-border city"></div>
                 <div id="Teleport" class="w3-container w3-border city"></div>
-                <div id="Magic" class="w3-container w3-border city"></div>
+                <div id="Monuments" class="w3-container w3-border city"></div>
+                <div id="Ruins" class="w3-container w3-border city"></div>
             </div>
         </div>
     </body>

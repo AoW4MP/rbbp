@@ -15,6 +15,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="/rbbp/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="/rbbp/Style/style.css" />
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="/rbbp/Data/Hero.js"></script>
       
@@ -259,7 +260,7 @@
             </div>
         </div>
 
-        <div class="tree-space" id="treespace">
+        <div class="hero-tree-panel">
             <div class="choices" style="left: 100px; top: 20px">
                 <label style="color: white">Ruler Type:</label>
                 <select class="button-random" id="actionDropdownOrigin">
@@ -295,30 +296,34 @@
                 <label style="color: white">Class:</label>
                 <select class="button-random" id="actionDropdownClass"></select>
             </div>
-            <div style="position: relative; display: flex; justify-content: flex-start">
-                <div style="position: relative; top: 20px">
-                    <div class="tree-grid" id="treeHolder"></div>
-                    <div class="" id="treeLineHolder"></div>
-                </div>
+            <div class="hero-tree-scroll" tabindex="0" role="region" aria-label="Hero skill trees">
+                <div class="tree-space" id="treespace">
+                    <div style="position: relative; display: flex; justify-content: flex-start">
+                        <div style="position: relative; top: 20px">
+                            <div class="tree-grid" id="treeHolder"></div>
+                            <div class="" id="treeLineHolder"></div>
+                        </div>
 
-                <div style="position: relative; top: 20px">
-                    <div class="tree-grid" id="treeHolderClass"></div>
-                    <div class="" id="treeLineHolderClass"></div>
-                </div>
-                <div style="postion: relative; top: 20px">
-                    <div class="tree-grid" style="width: 350px" id="treeHolderSignature1"></div>
-                    <div class="" style="position: relative" id="treeLineHolderSignature1"></div>
-                    <div class="tree-grid" id="treeHolderSignature2"></div>
-                    <div class="" style="position: relative" id="treeLineHolderSignature2"></div>
-                    <div class="tree-grid" id="treeHolderSignature3"></div>
-                    <div class="" style="position: relative" id="treeLineHolderSignature3"></div>
-                    <div class="tree-grid" id="treeHolderSignature4"></div>
-                    <div class="" style="position: relative" id="treeLineHolderSignature4"></div>
-                </div>
-            </div>
+                        <div style="position: relative; top: 20px">
+                            <div class="tree-grid" id="treeHolderClass"></div>
+                            <div class="" id="treeLineHolderClass"></div>
+                        </div>
+                        <div style="position: relative; top: 20px">
+                            <div class="tree-grid" style="width: 350px" id="treeHolderSignature1"></div>
+                            <div class="" style="position: relative" id="treeLineHolderSignature1"></div>
+                            <div class="tree-grid" id="treeHolderSignature2"></div>
+                            <div class="" style="position: relative" id="treeLineHolderSignature2"></div>
+                            <div class="tree-grid" id="treeHolderSignature3"></div>
+                            <div class="" style="position: relative" id="treeLineHolderSignature3"></div>
+                            <div class="tree-grid" id="treeHolderSignature4"></div>
+                            <div class="" style="position: relative" id="treeLineHolderSignature4"></div>
+                        </div>
+                    </div>
 
-            <div class="choices" style="left: 1400px; top: 20px">
-                <label style="color: white">Affinity Skills:</label>
+                    <div class="choices" style="left: 1400px; top: 20px">
+                        <label style="color: white">Affinity Skills:</label>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="summaryHolder" style="position: absolute; top: 718px; width: 400px; left: 70px; color: white"></div>
@@ -420,6 +425,10 @@
         position: relative; /* Required for children to be positioned relative to the parent */
         display: inline-block;
 
+        position: relative;
+    }
+
+    .hero-tree-panel {
         position: relative;
     }
 
@@ -556,6 +565,54 @@
 
     .blocked {
         filter: grayscale(100);
+    }
+    @media (hover: none), (max-width: 1000px) {
+        .hero-tree-panel > .choices {
+            position: static;
+            display: inline-block;
+            margin: 4px 8px 4px 0;
+            font-size: 1rem;
+        }
+
+        .hero-tree-scroll {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .tree-space {
+            min-width: 1550px;
+            padding-bottom: 40px;
+        }
+
+        #shareSection > div {
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        #shareLink {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #summaryHolder {
+            position: static !important;
+            width: auto !important;
+            overflow-wrap: anywhere;
+        }
+
+        #selectionsHolder {
+            position: fixed;
+            inset: 5dvh 0 auto !important;
+            max-width: 100%;
+            max-height: 85dvh;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        #choicesPanel {
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(min(145px, 100%), 1fr));
+        }
     }
 </style>
 <footer>

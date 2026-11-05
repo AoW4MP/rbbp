@@ -18,17 +18,7 @@
        
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("skirmisher_unit");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(unitarray[i], "Skirmisher Tier " + romanize(parseInt(parseInt(i) + 1)) + " ");
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("skirmisher_unit", "Skirmisher Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

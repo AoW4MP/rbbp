@@ -18,20 +18,7 @@
         <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("infernal_fiend");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(
-                            unitarray[i],
-                            "Infernal Fiends Tier " + romanize(parseInt(parseInt(i) + 1)) + " "
-                        );
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("infernal_fiend", "Infernal Fiends Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }
@@ -45,7 +32,7 @@
 
         <div class="textblocktitle">
             <img src="/rbbp/Icons/Interface/Header/infernal_fiend.png" height="40px" /> Infernal Fiend Units
-            <img src="/rbbp/Icons/UnitIcons/fiend.png" height="40px" />
+            <img src="/rbbp/Icons/Interface/Header/infernal_fiend.png" height="40px" />
         </div>
 
         <div class="w3-container">

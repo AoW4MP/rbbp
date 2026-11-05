@@ -17,17 +17,7 @@
       <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("scout_unit");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(unitarray[i], "Scout Tier " + romanize(parseInt(parseInt(i) + 1)) + " ");
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                ShowUnitsWithSecondaryPassive("scout_unit", "Scout Tier ");
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

@@ -46,7 +46,8 @@
                     const topItem = child;
 
                     const titleLink = topItem.querySelector("a");
-                    const titleText = titleLink ? titleLink.textContent.trim() : "Untitled";
+                    if (!titleLink) continue;
+                    const titleText = titleLink.textContent.trim();
 
                     if (titleLink.id == "menu-units") {
                         for (const unitChild of titleLink.nextElementSibling.children) {

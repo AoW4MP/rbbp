@@ -18,17 +18,9 @@
      <script src="/rbbp/Data/Init.js"></script>
         <script>
             function HandlePage() {
-                unitarray = FindUnitsWithSecondaryPassive("celestial");
-                console.log(unitarray);
-
-                if (unitarray.length > 1) {
-                    for (i in unitarray) {
-                        showUnitsFromList(unitarray[i], "Celestial Tier " + romanize(parseInt(parseInt(i) + 1)));
-                    }
-                } else {
-                    SetButtonsAndDivs(unitarray[0], undefined, "unit");
-                }
-
+                // The RbBP export omits Celestial for these entries in the base-game roster.
+                const celestialFromBaseGame = ["astra", "celestial_griffon", "lesser_light_spirit", "light_spirit", "unicorn"];
+                ShowUnitsWithSecondaryPassive("celestial", "Celestial Tier ", celestialFromBaseGame);
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
             }

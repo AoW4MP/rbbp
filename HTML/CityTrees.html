@@ -77,18 +77,11 @@
             const baseGrid = [["town_hall_i_town_center"], ["throne:throne"]];
 
             // generation of lines
-            function getCenter(el) {
-                const rect = el.getBoundingClientRect();
-                return {
-                    x: rect.left + window.scrollX + rect.width / 2,
-                    y: rect.top + window.scrollY + rect.height / 2
-                };
-            }
-
             function getAnchor(el, side = "center") {
                 const rect = el.getBoundingClientRect();
-                const x = rect.left + window.scrollX;
-                const y = rect.top + window.scrollY;
+                const svgRect = document.getElementById("SVGHolder").getBoundingClientRect();
+                const x = rect.left - svgRect.left;
+                const y = rect.top - svgRect.top;
 
                 switch (side) {
                     case "top":
@@ -359,7 +352,7 @@
                 holderSVG.innerHTML = "";
                 const buildingMap = GetAllBuildings();
                 var treespace = document.getElementById("treespacegeneral");
-                treespace.innerHTML = "";
+                treespace.replaceChildren(holderSVG);
                 // parent fortifications
                 const parentFort = document.createElement("div");
                 treespace.appendChild(parentFort);
@@ -1091,17 +1084,10 @@
 
     <body>
         <div id="header"></div>
-        <svg
-            height="4000px"
-            width="6000px"
-            id="SVGHolder"
-            style="position: absolute; top: 0px; left: 1px; z-index: 1; pointer-events: none"></svg>
-
         <div id="General" class="w3-container w3-border city">
             <div class="textblocktitle">City Tree</div>
 
-            <div class="tree-space" id="treespacegeneral"></div>
-            <div style="display: flex; justify-content: center">
+            <div class="city-tree-filters">
                 <label class="switch">
                     <input
                         type="checkbox"
@@ -1224,6 +1210,11 @@
                     Mercantile
                 </label>
             </div>
+            <div class="catalog-tree-scroll" tabindex="0" role="region" aria-label="City tree">
+                <div class="tree-space" id="treespacegeneral">
+                    <svg id="SVGHolder" aria-hidden="true"></svg>
+                </div>
+            </div>
         </div>
     </body>
 </html>
@@ -1250,14 +1241,26 @@
     }
 
     .tree-space {
-        width: auto;
-        height: auto;
+        width: max-content;
         display: flex;
-        position: absolute;
+        position: relative;
         flex-direction: row;
         flex-wrap: wrap;
-        transform: scale(0.9);
-        transform-origin: left;
+    }
+
+    .city-tree-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #SVGHolder {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
     }
 
     .entry {

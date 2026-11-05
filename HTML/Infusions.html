@@ -13,6 +13,24 @@
             let selectedMMTreeFilter = "all";
             function HandlePage() {
                // CheckLengths(jsonItemForgeUpgrades);
+                const materialLabels = new Map();
+                for (const infusion of jsonItemForgeUpgrades) {
+                    if (!infusion.unlock_requirements) continue;
+                    const localized = findBy(jsonItemForgeUpgradesLocalized, "resid", infusion.resid);
+                    infusion.unlock_requirements.forEach(({ token_name }, index) => {
+                        const label = localized?.unlock_requirements?.[index]?.token_name ?? token_name;
+                        materialLabels.set(token_name, label);
+                    });
+                }
+                const materialFilters = document.getElementById("treeFilterGroupMM");
+                for (const [token, label] of materialLabels) {
+                    const button = document.createElement("button");
+                    button.type = "button";
+                    button.className = "treeFilterButtonMM";
+                    button.dataset.tree = token;
+                    button.textContent = label;
+                    materialFilters.appendChild(button);
+                }
                 CreateAllInfusions();
 
                 $("#filterInput").on("change input", function () {
@@ -133,7 +151,7 @@
         <div style="height: auto; color: white; text-align: center">
             <br />
             Filter<br />
-            <div style="margin-right: auto; margin-left: auto; width: 500px">
+            <div style="margin-right: auto; margin-left: auto; width: min(500px, 100%)">
                 <input type="text" class="searchbar" id="filterInput" />
             </div>
         </div>
@@ -169,20 +187,6 @@
                 <button class="treeFilterButtonMM" data-tree="Always">Always</button>
                 <button class="treeFilterButtonMM" data-tree="Pantheon">Pantheon</button>
                <button class="treeFilterButtonMM" data-tree="GiantKing">Giant King</button>
-                 <button class="treeFilterButtonMM" data-tree="Arcanium Ore">Arcanium Ore</button>
-                 <button class="treeFilterButtonMM" data-tree="Focus Crystal">Focus Crystal</button>
-               <button class="treeFilterButtonMM" data-tree="Fireforge Stone">Fireforge Stone</button>
-                 <button class="treeFilterButtonMM" data-tree="Blood Glass">Blood Glass</button>
-            <button class="treeFilterButtonMM" data-tree="Archon Blood">Archon Blood</button>
-             <button class="treeFilterButtonMM" data-tree="Astral Dew">Astral Dew</button>
-             <button class="treeFilterButtonMM" data-tree="Tranquility Pool">Tranquility Pool</button>
-                  <button class="treeFilterButtonMM" data-tree="Haste Berries">Haste Berries</button>
-             <button class="treeFilterButtonMM" data-tree="Silvertongue Fruit">Silvertongue Fruit</button>
-             <button class="treeFilterButtonMM" data-tree="Rainbow Clover">Rainbow Clover</button>
-                <button class="treeFilterButtonMM" data-tree="Void Stone">Void Stone</button>
-           
-            
-
         </div>
 
         <div id="treeFilterGroupSub" style="margin: 20px; display: flex; justify-content: center; align-items: start">
@@ -193,7 +197,7 @@
             <!-- Add more as needed -->
         </div>
 
-       <div class="w3-container" style="">
+       <div class="w3-container infusion-list-scroll">
             <div class="w3-bar w3-black" id="buttonHolder"></div>
            <div class="list_abilityslotfilter">
                 <button style="width: 80px" class="sortingButton" id="type-button" onclick="sortDivsList('type')">

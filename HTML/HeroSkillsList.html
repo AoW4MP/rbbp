@@ -50,7 +50,7 @@
 
                 $("#filterInput").on("change input", function () {
                 
-                    ShowAllAbilitiesWithFilters();
+                    CreateAllHeroSkills();
                     SetLevelUpStuff();
                 });
             }
@@ -66,44 +66,39 @@
             function CreateAllHeroSkills() {
                 document.getElementById("dataHolder").innerHTML = ""; // Clear existing
 
-                jsonHeroSkillsLocalized.forEach((skill) => {
-                    //  if (!("tree_pos_y" in skill || skill.type === "signature")  || skill.type === "signature")) return;
+                const query = document.getElementById("filterInput").value.trim().toLowerCase();
+                const englishSkills = new Map(jsonHeroSkills.map(skill => [skill.id, skill]));
+                const englishAbilities = new Map(jsonUnitAbilities.map(ability => [ability.slug, ability]));
+                const localizedAbilities = new Map(jsonUnitAbilitiesLocalized.map(ability => [ability.slug, ability]));
 
-                    var treeName = skill.tree_name?.toLowerCase() || "";
-
-                    // check if its actually passive or not
-
-                    var skillType = Array.isArray(skill.abilities) ? "active" : "passive";
-                    if (skillType == "active") {
-                        var skillFound = jsonUnitAbilities.find((entry) => entry.slug == skill.abilities[0].slug);
-
-                        skillType = "actionPoints" in skillFound ? "active" : "passive";
+                for (const skill of jsonHeroSkillsLocalized) {
+                    const englishSkill = englishSkills.get(skill.id) ?? skill;
+                    let treeName = englishSkill.tree_name?.toLowerCase() || "";
+                    if (selectedTreeFilter === "Signature") {
+                        treeName = englishSkill.type === "signature" ? "signature" : "";
                     }
-
-                    if (selectedTreeFilter == "Signature") {
-                        treeName = skill.type == "signature" ? "signature" : "";
+                    if (selectedTreeFilter === "Affinity") {
+                        treeName = englishSkill.group_name?.includes("Affinity") ? "affinity" : "";
                     }
-                    if (selectedTreeFilter == "Affinity" && "group_name" in skill) {
-                        console.log(skill.group_name.indexOf("Affinity"));
-                        treeName = skill.group_name.indexOf("Affinity") != -1 ? "affinity" : "";
+                    if (selectedTreeFilter !== "all" && !treeName.includes(selectedTreeFilter.toLowerCase())) continue;
+
+                    const abilities = (englishSkill.abilities ?? [])
+                        .map(({ slug }) => englishAbilities.get(slug))
+                        .filter(Boolean);
+                    const skillMatches = !query || [skill, englishSkill].some(entry => matchesFilter(entry, query));
+                    for (const englishAbility of abilities.length ? abilities : [null]) {
+                        const type = englishAbility && "actionPoints" in englishAbility ? "Active" : "Passive";
+                        if (selectedSubTreeFilter !== "all" && selectedSubTreeFilter !== type) continue;
+
+                        const ability = localizedAbilities.get(englishAbility?.slug) ?? englishAbility;
+                        if (!skillMatches && !(ability && [ability, englishAbility].some(entry => matchesFilter(entry, query)))) continue;
+                        if (ability) {
+                            addHeroSkillAbility(ability, skill);
+                        } else {
+                            addStandaloneHeroSkill(skill);
+                        }
                     }
-                    // skillType = skill.type === "signature" ? "signature" : skillType;
-
-                    // Main tree filter
-                    if (selectedTreeFilter !== "all" && !treeName.includes(selectedTreeFilter.toLowerCase())) return;
-
-                    // Sub-type filter
-                    if (selectedSubTreeFilter !== "all" && skillType !== selectedSubTreeFilter.toLowerCase()) return;
-
-                    // Add skill: either with abilities or standalone
-                    if (Array.isArray(skill.abilities) && skill.abilities.length > 0) {
-                        skill.abilities.forEach(({ slug }) => {
-                            addHeroSkillAbility(slug, skill);
-                        });
-                    } else {
-                        addStandaloneHeroSkill(skill);
-                    }
-                });
+                }
             }
             function GetSimpleHeroSkillTooltip(name, description) {
                 const wrapper = document.createElement("div");
@@ -113,40 +108,16 @@
 
            
 
-            function ShowAllAbilitiesWithFilters() {
-                
-                 document.querySelectorAll(".list_abilityslot").forEach((div) => (div.style.display = "none"));
-         
-                const filterText = document.getElementById("filterInput").value.toLowerCase();
-                const list = [];
-
-                jsonUnitAbilitiesLocalized.forEach((ability) => {
-                    if (!filterText || matchesFilter(ability, filterText)) {
-                        if (!list.includes(ability.slug)) list.push(ability.slug);
-                    }
-                });
-
-                const listHero = [];
-
-                jsonHeroSkillsLocalized.forEach((ability) => {
-                    if (!filterText || matchesFilter(ability, filterText)) {
-                        if (!listHero.includes(ability.id)) listHero.push(ability.id);
-                    }
-                });
-
-                ProcessList(list, listHero);
-            }
-
             function matchesFilter(ability, filterText) {
                 const fieldsToCheck = ["name", "accuracy", "range", "description", "actionPoints", "damage"];
                 for (const field of fieldsToCheck) {
-                    if (field in ability && ability[field].toLowerCase().includes(filterText)) return true;
+                    if (field in ability && String(ability[field] ?? "").toLowerCase().includes(filterText)) return true;
                 }
                 if ("modifiers" in ability) {
                     for (const mod of ability.modifiers) {
                         if (
-                            mod.description.toLowerCase().includes(filterText) ||
-                            mod.name.toLowerCase().includes(filterText)
+                            (mod.description ?? "").toLowerCase().includes(filterText) ||
+                            (mod.name ?? "").toLowerCase().includes(filterText)
                         ) {
                             return true;
                         }
@@ -154,22 +125,10 @@
                 }
                 if ("requisites" in ability) {
                     for (const req of ability.requisites) {
-                        if (req.requisite.toLowerCase().includes(filterText)) return true;
+                        if ((req.requisite ?? "").toLowerCase().includes(filterText)) return true;
                     }
                 }
                 return false;
-            }
-
-            function ProcessList(list, listHero) {
-                list.forEach((slug) => {
-                    const abilityDiv = document.getElementById(`${slug}btn`);
-                    if (abilityDiv) abilityDiv.style.display = "flex";
-                });
-
-                listHero.forEach((id) => {
-                    const abilityDiv = document.getElementById(`${id}btn`);
-                    if (abilityDiv) abilityDiv.style.display = "flex";
-                });
             }
 
             function findSource(slug) {
@@ -219,11 +178,8 @@
                 sorting = `${sortType}:${ascendingOrder}`;
             }
 
-            function addHeroSkillAbility(slug, skillMeta) {
+            function addHeroSkillAbility(abilityData, skillMeta) {
                 const holder = document.getElementById("dataHolder");
-
-                const abilityData = jsonUnitAbilities.find((item) => item.slug === slug);
-                if (!abilityData) return;
 
                 const {
                     name = "",
@@ -263,7 +219,7 @@
                     requisitesDisplay = "(" + requisites.map((r) => r.requisite).join(", ") + ")";
                 }
 
-                const btn = createElement("div", "list_abilityslot", { id: `${slug}btn` });
+                const btn = createElement("div", "list_abilityslot");
 
                 const img = createElement("img", "unit_ability_icon");
                 const iconType = GetAbilityBackground(damage);
@@ -339,7 +295,7 @@
                 const { name = "Unknown Skill", icon = "mp", description = "No description available." } = skill;
 
                 const holder = document.getElementById("dataHolder");
-                const btn = createElement("div", "list_abilityslot", { id: `${skill.id}btn` });
+                const btn = createElement("div", "list_abilityslot");
 
                 const img = createElement("img", "unit_ability_icon");
                 img.src = `/rbbp/Icons/UnitIcons/${icon}.png`;
@@ -404,7 +360,7 @@
             <br />
             <br />
             Filter<br />
-            <div style="margin-right: auto; margin-left: auto; width: 500px">
+            <div style="margin-right: auto; margin-left: auto; width: min(500px, 100%)">
                 <input type="text" class="searchbar" id="filterInput" />
             </div>
         </div>
@@ -457,7 +413,7 @@
             <!-- Add more as needed 
         </div> -->
 
-        <div class="w3-container" style="justify-content: center">
+        <div class="w3-container ability-list-scroll" style="justify-content: center">
             <div class="w3-bar w3-black" id="buttonHolder"></div>
             <div class="list_abilityslotfilter">
                 <button style="width: 50px" class="sortingButton" id="depth-button" onclick="sortDivsList('depth')">
