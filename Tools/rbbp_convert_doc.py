@@ -87,6 +87,10 @@ INLINE_TAG_CODES = {
 # ---------- полноразмерные "портретные" иконки (правители/классы/губернаторы/ ----------
 # ---------- стремления героев/культуры/субкультуры) - <img class="rbbp-inline-icon"> ----------
 PORTRAIT_CODES = {
+    "pale_tidebloom": "/rbbp/Icons/WorldStructures/pale_tidebloom.png",
+    "mercantile": "/rbbp/Icons/FactionCreation/mercantile.png",
+    "mercantile_barony": "/rbbp/Icons/Text/mercantile_barony.png",
+    "combat_speed": "/rbbp/Icons/Text/combat_speed.png",
     "consequencesofdefeat": "/rbbp/Icons/Interface/Header/RbbP_RealmTraits_ConsequencesofDefeat.png",
     "martialdiscipline": "/rbbp/Icons/Interface/Header/RbbP_RealmTraits_MartialDiscipline.png",
     # правители (Ruler Origin) - Data/GEN/FactionCreation.json, Icons/FactionCreation/{icon}.png
@@ -250,7 +254,7 @@ PORTRAIT_CODES = {
     "typetome": "/rbbp/Icons/Interface/Header/elfkin.png",
 }
 
-CODE_RE = re.compile(r"\[([a-zA-Z]+)\]")
+CODE_RE = re.compile(r"\[([a-zA-Z_]+)\]")
 
 
 def esc(text):
