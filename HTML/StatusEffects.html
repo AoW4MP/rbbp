@@ -19,6 +19,7 @@
             function HandlePage() {
                 CreateAllPassive();
                 SetLevelUpStuff();
+                if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
                 $("#filterInput").on("change input", function () {
                     ShowAllPassivesWithFilters();
                     SetLevelUpStuff();

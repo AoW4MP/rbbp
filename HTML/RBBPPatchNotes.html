@@ -334,6 +334,11 @@
                 padding-left: 26px;
             }
 
+            #rbbpContent li > ul,
+            #rbbpContent li > ol {
+                margin-bottom: 0;
+            }
+
             #rbbpContent li {
                 margin-bottom: 5px;
             }
@@ -392,6 +397,7 @@
         </style>
 
         <script src="/rbbp/Data/Init.js"></script>
+        <script src="/rbbp/Data/src/rbbp_release_entities.js"></script>
         <script src="/rbbp/Data/src/rbbp_thumbs.js"></script>
         <script src="/rbbp/Data/src/rbbp_patch_search.js"></script>
         <script>
@@ -1179,6 +1185,8 @@
                     });
                 }
 
+                await AddRbbpReleaseEntities(index, contentLang, abilitiesEN, abilitiesLoc,
+                    heroSkillsEN, heroSkillsLoc, false);
                 return index;
             }
 
@@ -1284,7 +1292,7 @@
 
                     // Town Hall I-IV - тоже кликабельны, ведут на CityTrees.html#id
                     // (см. RBBP_CITY_TIER_STRUCTURES в BuildRbbpEntityIndexByEnglishName).
-                    if (entry.type === "citytier" || entry.type === "item") {
+                    if (entry.link) {
                         return '<a href="' + entry.link + '" style="text-decoration:none;">' + handlerSpan + "</a>";
                     }
 

@@ -72,7 +72,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 # Realm traits
 
-## Umbral Abyss
+## {{Umbral Abyss}}
 
 - Pickups
 
@@ -90,7 +90,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
     - {{Umbral Rift}}
 
-## Crystal Dwelling
+## {{Crystal Dwelling}}
 
 - Trade
 
@@ -104,7 +104,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
   - Reward for declining a quest reduced 4x.
 
-## Shrouded Isles
+## {{Shrouded Isles}}
 
 - {{Move Portal}} action
 
@@ -137,7 +137,7 @@ This mod is built for MULTIPLAYER games; balance changes are aimed at a comforta
 
 ## Traders
 
-- When surrendering a trader's army, the Eldritch Sovereign leader's cost to recruit a trader increased
+- When surrendering a trader's army, the {{Eldritch Sovereign}} leader's cost to recruit a trader increased
 
   - 7 -> 30 [slaves]
 
@@ -306,11 +306,11 @@ All free cities have walls
 
 ## Infestations
 
-### Crusader Host
+### {{Crusader Host}}
 
 - Reduced strength of armies summoned by the player.
 
-### Umbral Nest
+### {{Umbral Nest}}
 
 - Reward reduced to Silver tier.
 
@@ -318,7 +318,7 @@ All free cities have walls
 
 ### Changed Ancient Wonder rewards
 
-Wizard Tower T3
+{{Wizard Tower}} T3
 
 - Warping Tower event
 
@@ -326,7 +326,7 @@ Wizard Tower T3
 
     - Tome → a spell from that tome
 
-Forsaken Temple T2
+{{Forsaken Temple}} T2
 
 - Cabal of Casting event
 
@@ -334,7 +334,7 @@ Forsaken Temple T2
 
     - Tome → a spell from that tome
 
-Hidden Wellspring T1
+{{Hidden Wellspring}} T1
 
 - Frozen Lake event
 
@@ -342,7 +342,7 @@ Hidden Wellspring T1
 
     - Tome → a spell from that tome
 
-World Tree T3
+{{World Tree}} T3
 
 - Thundered Timber event
 
@@ -350,7 +350,7 @@ World Tree T3
 
     - Tome → a spell from that tome
 
-Vaultsphere T3
+{{Vaultsphere}} T3
 
 - Sequestered Developments event
 
@@ -360,49 +360,49 @@ Vaultsphere T3
 
 ## Landmarks
 
-Ancient Dragon Hoard/Remains
+{{Ancient Dragon Hoard}}
 
 - Adjacent provinces grant +5 → +1 [gold]
 
-Subterranean Monuments
+{{Subterranean Monuments}}
 
 - A [mine] Mine in this province grants +10 -> +3 [gold]
 
 - A [quarry] Quarry in this province grants +10 -> +3 [production]
 
-Infernal Volcano
+{{Infernal Volcano}}
 
 - Adjacent provinces grant +10 -> +3 [mana]
 
-Lithorite Peaks
+{{Lithorite Peaks}}
 
 - Adjacent provinces grant +3 [mana] +3 [knowledge] -> +1 [mana] +1 [knowledge]
 
-Haunted Battlefield
+{{Haunted Battlefield}}
 
 - Adjacent provinces grant +10 -> +3 [draft]
 
-Icebound Behemoth
+{{Icebound Behemoth}}
 
 - Adjacent provinces grant +5 -> +1 [knowledge]
 
 - +5 [knowledge] per [sciencestation]
 
-Grand Statuary
+{{Grand Statuary}}
 
 - Adjacent provinces grant +10 → +3 [happiness]
 
-Cascade Falls
+{{Cascade Falls}}
 
 - [farm] and [forester] grant +10 → +3 [food]
 
-Fountain of Creation
+{{Fountain of Creation}}
 
 - Adjacent provinces grant +5 -> +1 [food]
 
 - [farm] grants +5 -> +2 [mana]
 
-Thorn Heart
+{{Thorn Heart}}
 
 - Adjacent provinces grant +5 [mana] +5 [food] -> +1 [mana] +1 [food]
 
@@ -678,7 +678,7 @@ Thorn Heart
 
   - Passive effect - {{Rune of Command: Frost}}
 
-    - Negative Effect Cleanse (1) replaced with Status Resistance (2)
+    - Negative Effect Cleanse (1) replaced with {{Status Resistance}} (2)
 
 ### Rock Giant King
 
@@ -1403,7 +1403,7 @@ Thorn Heart
 
 ## Passive abilities
 
-### Hit Points
+### {{Hit Points}}
 
 - +5 -> +8 [hp]
 
@@ -1411,7 +1411,7 @@ Thorn Heart
 
 - +15 -> +24 [hp]
 
-### Infecting
+### {{Infecting}}
 
 - The effect no longer applies to Combat Summons and {{Construct}}s
 
@@ -1421,16 +1421,16 @@ Thorn Heart
 
 - No longer available for item crafting
 
-## Item types
-
-### Eldritch Relic
-
-- (Fix) The physical damage modifier no longer grants the Defense Bypass property
-
 ### {{Tempest's Chorus}}
 
 - Reduced damage
   - 12 -> 6 [lightning]
+
+## Item types
+
+### {{Eldritch Relic}}
+
+- (Fix) The physical damage modifier no longer grants the Defense Bypass property
 
 ## Starting items
 
@@ -2090,7 +2090,7 @@ Thorn Heart
 
 - Added a faction trait
   - Trade routes in their cities cost 20% less.
-  - Trade routes originating from their cities grant the following per province they pass through
+  - Trade routes originating from their cities grant [mana] and [gold] per province they pass through
     - 1 [mana]
     - 1 [gold]
 - Faction effect - {{Leverage}}
@@ -2844,7 +2844,7 @@ Completely reworked properties
 
 ### [classhero] Hero
 
-- Added the passive ability - Insanity Immunity
+- Added the passive ability - {{Insanity Immunity}}
 
 - Created and added the passive ability - Charge: Weakened Retaliation Strike
 
