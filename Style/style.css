@@ -868,10 +868,20 @@ tab {
 }
 
 .unit_passiveslot {
-    overflow: hidden;
+    display: flex;
+    align-items: center;
     width: 328px;
-    height: 40px;
+    min-height: 40px;
     margin: 1px;
+}
+
+.unit_passiveslot > .unit_ability_icon {
+    flex-shrink: 0;
+}
+
+.unit_passiveslot > .tooltip {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .unit_resistanceslot {
