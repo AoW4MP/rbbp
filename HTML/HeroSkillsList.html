@@ -21,6 +21,8 @@
             let selectedSubTreeFilter = "all";
 
             function HandlePage() {
+                const skillQuery = new URLSearchParams(location.search).get("skill");
+                if (skillQuery !== null) document.getElementById("filterInput").value = skillQuery;
                 CreateAllHeroSkills();
                 SetLevelUpStuff();
 

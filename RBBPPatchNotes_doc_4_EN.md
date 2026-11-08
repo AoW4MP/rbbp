@@ -38,7 +38,7 @@
 
 - Added a faction trait
   - Trade routes in their cities cost 20% less.
-  - Trade routes originating from their cities grant the following per province they pass through
+  - Trade routes originating from their cities grant [mana] and [gold] per province they pass through
     - 1 [mana]
     - 1 [gold]
 - Faction effect - {{Leverage}}
