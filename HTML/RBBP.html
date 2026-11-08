@@ -432,7 +432,7 @@
                 window.__rbbpFullRendered = true;
 
                 article.innerHTML = html;
-                MoveRbbpHeadingIconsToFront(article);
+                MoveRbbpTitleIconsToFront(article);
 
                 if (typeof HandleExtraTooltips === "function") {
                     HandleExtraTooltips(article);
@@ -454,12 +454,14 @@
             // трогаем - они и так защищены от автосвязывания (см. rbbp-inline-icon в
             // LinkRbbpEntitiesByEnglishName), их первым ребёнком всегда стоит .rbbp-inline-icon,
             // а .rbbp-entity-icon внутри них попросту не будет найден.
-            function MoveRbbpHeadingIconsToFront(article) {
-                const headings = article.querySelectorAll("h2, h3, h4");
-                headings.forEach((h) => {
-                    const icon = h.querySelector("img.rbbp-entity-icon");
-                    if (!icon || h.firstChild === icon) return;
-                    h.insertBefore(icon, h.firstChild);
+            function MoveRbbpTitleIconsToFront(article) {
+                const titles = article.querySelectorAll(
+                    'h2, h3, h4, p:has(> a:is([href="/rbbp/HTML/AncientWonders.html"], [href="/rbbp/HTML/Landmarks.html"]))'
+                );
+                titles.forEach((title) => {
+                    const icon = title.querySelector("img.rbbp-entity-icon");
+                    if (!icon || title.firstChild === icon) return;
+                    title.prepend(icon);
                 });
             }
 
