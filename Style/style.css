@@ -2176,8 +2176,34 @@ span.number-highlight {
     }
 
     #buttonHolder.w3-bar + #dataHolder,
-    #buttonHolder.w3-bar + #dataHolder > .city {
+    #buttonHolder.w3-bar + #dataHolder > .city,
+    .subculture-unit-list + .dataholder {
         margin: 0 !important;
+    }
+
+    #buttonHolder.w3-bar:empty {
+        display: none;
+    }
+
+    #buttonHolder.unit-tier-list {
+        display: grid;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .unit-tier-list .contentUnits,
+    .subculture-unit-list {
+        max-height: 220px;
+        overflow: auto;
+    }
+
+    .subculture-unit-list {
+        position: static;
+        width: 100%;
+    }
+
+    .unit-tier-list .contentUnits > button {
+        white-space: normal;
     }
 
     .mod_card,
@@ -2243,6 +2269,7 @@ span.number-highlight {
 
     .unit_card .unit_preview_vid,
     .unit_card .unit_abilityslot,
+    .unit_card .unit_passiveslot,
     .unit_card .unit_elite_skill,
     .unit_card .unit_stats {
         max-width: 100%;
@@ -2251,6 +2278,17 @@ span.number-highlight {
 
     .unit_card .unit_preview_vid {
         height: auto;
+    }
+
+    .unit_card #enchantButton,
+    .unit_card #enchantButton + .contentLevelup {
+        left: auto !important;
+        right: 0 !important;
+        max-width: 100%;
+    }
+
+    .unit_card .unit_image_holder > .unit_image_holder {
+        clear: both;
     }
 
     .unit_card .medals,

@@ -25,7 +25,7 @@
 
             async function GenerateLandingPage() {
                 // Load your header HTML
-                const response = await fetch("/rbbp/HTML/header.html");
+                const response = await fetch("/rbbp/HTML/header.html", { cache: "no-cache" });
                 const headerHTML = await response.text();
 
                 // Create a hidden DOM from header.html

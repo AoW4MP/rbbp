@@ -102,6 +102,12 @@
   "types-animal": {
     "unit": "Animal"
   },
+  "types-spider": {
+    "unit": "Spider"
+  },
+  "types-penguin": {
+    "unit": "Penguin"
+  },
   "types-infernal-fiend": {
     "unit": "Infernal Fiend"
   },

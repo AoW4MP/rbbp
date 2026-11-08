@@ -2,18 +2,19 @@ let searchParams = new URLSearchParams(window.location.search);
 let searchKeyword = searchParams.get("u");
 
 
+if (!document.querySelector('meta[name="viewport"]')) {
+    const viewport = document.createElement("meta");
+    viewport.name = "viewport";
+    viewport.content = "width=device-width, initial-scale=1";
+    document.head.appendChild(viewport);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Load header
-    fetch("/rbbp/HTML/header.html")
+    fetch("/rbbp/HTML/header.html", { cache: "no-cache" })
         .then((res) => res.text())
         .then((html) => {
             document.body.insertAdjacentHTML("afterbegin", html);
-            if (!document.querySelector('meta[name="viewport"]')) {
-                const viewport = document.createElement("meta");
-                viewport.name = "viewport";
-                viewport.content = "width=device-width, initial-scale=1";
-                document.head.appendChild(viewport);
-            }
             GetHamburgerMenu();
             requireAjax("/rbbp/Data/src/settings.js", function () {
                 requireAjax("/rbbp/Data/src/dataloader.js", function () {

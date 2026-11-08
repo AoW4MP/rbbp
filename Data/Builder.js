@@ -774,6 +774,7 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
             break;
 
         case "unit":
+            buttonHolder.classList.add("unit-tier-list");
             btn.className = "collapsibleUnits";
             let content = document.createElement("DIV");
             content.setAttribute("id", overwrite + "-button");
@@ -822,13 +823,10 @@ async function openDiv(evt, cityName, search) {
             currentEl.style.display = "block";
         }
 
-        let currenturl = window.location.href.split("?")[0];
-        let currentadditive = currenturl.split("&")[1];
-        if (currentadditive === undefined) {
-            currentadditive = "";
-        }
         if (search === undefined) {
-            window.history.replaceState({}, "foo", currenturl + "?type=" + cityName + "&" + currentadditive);
+            const url = new URL(window.location.href);
+            url.searchParams.set("type", cityName);
+            window.history.replaceState({}, "", url);
         }
 
         if (sorting != undefined) {
