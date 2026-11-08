@@ -12079,7 +12079,7 @@
   "tree_pos_x": 150.0,
   "tree_pos_y": 350.0,
   "id": "hs_spellblade_spell_penetration",
-  "description": "All attacks ignore 3 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 3 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
+  "description": "All attacks ignore 2 <resistance></resistance> <hyperlink>Resistance</hyperlink> and 2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
   "required_skills": [
    {
     "resid": 5111011085218
