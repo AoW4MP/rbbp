@@ -1622,8 +1622,7 @@ function CreatePassiveSlotToolTip(abilityIcon, abilityName, abilityDescr) {
     spa.innerHTML =
         '<div class="abilityHighLighter"><img style="float:left; position:relative; top:-7px; height:30px; width:30px" src="/rbbp/Icons/UnitIcons/' +
         abilityIcon +
-        '.png"><p style="color: #d7c297;>' +
-        '<span style="font-size=20px;">' +
+        '.png"><p style="color: #d7c297; font-size: 20px;">' +
         abilityName +
         "</p>" +
         "</div>" +
