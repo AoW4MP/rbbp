@@ -70,13 +70,13 @@ async function AddRbbpReleaseEntities(index, lang, abilitiesEN, abilitiesLoc, sk
     fromPO(ruler.name, ruler.extraLookup, "Icons/FactionCreation/" + ruler.icon + ".png",
         "HTML/FactionCreation.html");
 
-    for (const [name, id, emblem] of [
-        ["Umbral Abyss", "DLC@ELDRITCHREALMS@META_EMPIRE@TRAIT_SHADOW_ENABLED", "EldritchRealms"],
-        ["Crystal Dwelling", "DLC@GIANTKINGS@REALM_TRAIT@CRYSTAL_DWELLING", "GKLogo"],
-        ["Shrouded Isles", "DLC@SECRETSOFTHEARCHMAGES@META_EMPIRE@TRAIT_SHROUDED_REGIONS", "SecretsOfTheArchmages"]
+    for (const [name, id, icon] of [
+        ["Umbral Abyss", "DLC@ELDRITCHREALMS@META_EMPIRE@TRAIT_SHADOW_ENABLED", "umbral_abyss"],
+        ["Crystal Dwelling", "DLC@GIANTKINGS@REALM_TRAIT@CRYSTAL_DWELLING", "crystal_dwelling"],
+        ["Shrouded Isles", "DLC@SECRETSOFTHEARCHMAGES@META_EMPIRE@TRAIT_SHROUDED_REGIONS", "shrouded_isles"]
     ]) {
-        // The export has no per-trait art for these entries; use the owning DLC emblem.
-        fromPO(name, id, "Icons/Text/" + emblem + ".png");
+        // Art from the Age of Wonders Fandom realms gallery (RU).
+        fromPO(name, id, "Icons/RealmTraits/" + icon + ".png");
     }
 
     for (const [name, id] of Object.entries({
