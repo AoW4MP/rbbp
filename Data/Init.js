@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function GetHamburgerMenu(){
 
-    var isMobile = window.matchMedia('(max-width: 800px)');
+    var isMobile = window.matchMedia('(hover: none), (max-width: 800px)');
     var menu = document.getElementById('menu');
     var toggle = document.getElementById('menuToggle');
     var backdrop = document.getElementById('menuBackdrop');
@@ -107,11 +107,8 @@ function GetHamburgerMenu(){
         placeTopbar(e.matches);
     });
 
-     var isTouch = window.matchMedia('(hover: none), (max-width: 800px)');
-
-
     extras.addEventListener('click', function (e) {
-        if (!isTouch.matches) return;
+        if (!isMobile.matches) return;
 
         var title = e.target.closest('.dropdown-title');
         if (!title) return;

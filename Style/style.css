@@ -273,7 +273,7 @@ a:hover {
     text-decoration: none;
     color: #eee;
 }
-@media (min-width:800px) {
+@media (hover: hover) and (width > 800px) {
     #menu li:hover > a,
     #menu li a:hover {
         background: #111;
@@ -1694,7 +1694,7 @@ silver {
     margin-top: 0;
 }
 
-@media (max-width: 800px) {
+@media (hover: none), (max-width: 800px) {
     .header-brand .hero-text {
         font-size: 22px;
     }
@@ -2008,7 +2008,7 @@ span.number-highlight {
     }
 
 
-@media (max-width: 800px) {
+@media (hover: none), (max-width: 800px) {
 
     .factioncreator {
         flex-direction: column;   /* stack instead of side-by-side */
@@ -2125,19 +2125,6 @@ span.number-highlight {
         right: 0; /* was right:-152px, meant for the old wide desktop bar */
         text-align: center;
     }
-    /* dropdowns rely on :hover, which doesn't exist on touch —
-       just show their contents inline since they're already tucked
-       away behind the hamburger */
-    #menuExtras .dropdown-content {
-        position: static;
-        display: block !important;
-        box-shadow: none;
-        background: transparent;
-        padding-left: 12px;
-    }
-}
-
-@media (hover: none), (max-width: 800px) {
     #menuExtras .dropdown-content {
         display: none;           /* closed by default now, not forced open */
         position: static;
