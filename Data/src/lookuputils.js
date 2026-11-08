@@ -131,9 +131,9 @@ function sortDivs(sortType, savedOrder) {
         })
         .forEach((element) => parentElement.appendChild(element));
 
-    let currenturl = window.location.href.split("&")[0];
-
-    window.history.replaceState({}, "foo", currenturl + "&sort=" + sortType + ":" + ascendingOrder);
+    const url = new URL(window.location.href);
+    url.searchParams.set("sort", sortType + ":" + ascendingOrder);
+    window.history.replaceState({}, "", url);
     sorting = sortType + ":" + ascendingOrder;
 }
 
@@ -454,7 +454,7 @@ function ConvertSpawnTable(input, subtractName) {
 
                     div.innerHTML = `
     <div class="w3-container">
-      <div id="buttonHolder${i}" class="w3-bar w3-black"></div>
+      <div id="buttonHolder${i}" class="w3-bar w3-black subculture-unit-list"></div>
       <div id="dataHolder${i}" class="dataholder" style="margin-top:-250px"></div>
     </div>
   `;
