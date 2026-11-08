@@ -89,6 +89,7 @@ INLINE_TAG_CODES = {
 PORTRAIT_CODES = {
     "pale_tidebloom": "/rbbp/Icons/WorldStructures/pale_tidebloom.png",
     "mercantile": "/rbbp/Icons/FactionCreation/mercantile.png",
+    "mercantile_cartel": "/rbbp/Icons/Text/mercantile_cartel.png",
     "mercantile_barony": "/rbbp/Icons/Text/mercantile_barony.png",
     "combat_speed": "/rbbp/Icons/Text/combat_speed.png",
     "consequencesofdefeat": "/rbbp/Icons/Interface/Header/RbbP_RealmTraits_ConsequencesofDefeat.png",
