@@ -25288,7 +25288,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@COMET_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Ranged breath that deals damage to all units in a <eventColor>{COMET_BREATH_TARGETER>AREA>Radius}</eventColor>-hex radius.",
+    "ability_description": "Ranged breath that deals damage to all units in a <eventColor>2</eventColor>-hex radius.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25315,7 +25315,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@CONE_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Deals damage to all units in a <eventColor>{CONE_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone.",
+    "ability_description": "Deals damage to all units in a <eventColor>4</eventColor>-hex cone.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25413,7 +25413,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@LIMITED_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Deals damage in a <eventColor>{LIMITED_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone.",
+    "ability_description": "Deals damage in a <eventColor>3</eventColor>-hex cone.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -39102,7 +39102,7 @@
   },
   {
     "id": "DLC@EMPIRESANDASHES@WILDLIFE_PROPERTIES@PROGENITOR_GOLEM@ABILITY01",
-    "description": "Unleashes a magical bolt at target enemy. Deals <eventColor>{BREACH_BOLT_CIRCLE>ResolvedEffectMultiplier}</eventColor>% of the damage to adjacent enemies.",
+    "description": "Unleashes a magical bolt at target enemy. Deals <eventColor>50</eventColor>% of the damage to adjacent enemies.",
     "DLC": "EMPIRESANDASHES",
     "name": "Breach Bolt"
   },
@@ -43079,7 +43079,7 @@
     "description": "Link to target friendly unit. While linked, all damage that unit takes is transferred to this unit with a <eventColor>{CORE_LINK_MARTYR_EFFECT>ResolvedDamageMultiplier}</eventColor>% reduction.",
     "DLC": "GIANTKINGS",
     "description_2": "Link to target friendly unit. While linked, that unit:<bulletlist><bullet>Transfers all damage to this unit with a <eventColor>{CORE_LINK_MARTYR_EFFECT>ResolvedDamageMultiplier}</eventColor>% reduction.</bullet><bullet>Deals <eventColor>{CORE_LINK_CHAMPION_MEDAL>ResolvedMultiplier}</eventColor>% more damage.</bullet></bulletlist>",
-    "description_champion": "Core Link:<bulletlist><bullet>Reduces incoming damage by an additional <eventColor>{reductionPercentage}</eventColor>%.</bullet><bullet>Boosts the target's damage by <eventColor>{damagePercentage}</eventColor>%.</bullet></bulletlist>",
+    "description_champion": "Core Link:<bulletlist><bullet>Reduces incoming damage by an additional <eventColor>10</eventColor>%.</bullet><bullet>Boosts the target's damage by <eventColor>10</eventColor>%.</bullet></bulletlist>",
     "name": "Core Link",
     "name_champion": "Champion Core Link",
     "prop_description": "All damage this unit takes is transferred to the linked unit with a 20% reduction.",
@@ -70982,7 +70982,7 @@
   },
   {
     "id": "DLC@WAYSOFWAR@UNITS_OATHSWORN@ABILITY13",
-    "description": "Move <eventColor>{BULLDOZE_MOVE_TARGETER>AREA>Offset}</eventColor> hexes forward. Enemies in the way sustain damage.",
+    "description": "Move <eventColor>4</eventColor> hexes forward. Enemies in the way sustain damage.",
     "DLC": "WAYSOFWAR",
     "name": "Bulldoze"
   },
@@ -75829,7 +75829,7 @@
   },
   {
     "id": "HERO_ITEM@MISC04",
-    "description": "Deals damage in a <eventColor>{WAND_OF_LIGHTNING_STRIKES_OBSTACLE_TARGETER_LINE>AREA>Length}</eventColor>-hex line.",
+    "description": "Deals damage in a <eventColor>3</eventColor>-hex line.",
     "name": "Wand of Lightning Strike"
   },
   {
@@ -94500,7 +94500,7 @@
   },
   {
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@PUSH_BACK",
-    "description": "Target is pushed back by <eventColor>{PUSH_BACK_DISPLACE>MaxDistance}</eventColor> hex.",
+    "description": "Target is pushed back by <eventColor>1</eventColor> hex.",
     "name": "Push Back"
   },
   {
@@ -110044,7 +110044,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@RACIAL_LEADER",
-    "description": " <br><bulletlist><bullet>Mortal Champions have access to unique army leadership hero skills.</bullet><bullet>Mortal Champion Rulers gain +20% <hyperlink><xp></xp> Experience</hyperlink>.</bullet><bullet>Start with +100 Relation with <hyperlink>Free Cities</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +10% <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +20 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Unit Production</hyperlink> in your <hyperlink>Throne City</hyperlink>.</bullet><bullet>Mortal Champion Rulers start with the <hyperlink>Spur to action</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Mortal Champions are <hyperlink>Herotrait governance champion governor</hyperlink>.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Mortal Champions have access to unique army leadership hero skills.</bullet><bullet>Mortal Champion Rulers gain +20% <hyperlink><xp></xp> Experience</hyperlink>.</bullet><bullet>Start with +100 Relation with <hyperlink>Free Cities</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +10% <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>All <hyperlink>Cities</hyperlink> of your <hyperlink>Empire</hyperlink> gain +20 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Unit Production</hyperlink> in your <hyperlink>Throne City</hyperlink>.</bullet><bullet>Mortal Champion Rulers start with the <hyperlink>Spur to action</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Mortal Champions are <hyperlink>Champion Governor</hyperlink>.</bullet></bulletlist>",
     "description_short": "<helpcolor>A Ruler risen from the ranks of their people.</helpcolor>",
     "hyperlink": "<hyperlink>Champion</hyperlink>",
     "relation_modifier": "Ruler Origin: Champion of the People"
@@ -110055,7 +110055,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@WIZARD_KING",
-    "description": " <br><bulletlist><bullet>Wizard Kings have access to unique <hyperlink>Combat Spell</hyperlink> enhancing hero skills.</bullet><bullet>All <conduit></conduit> <hyperlink>Conduit</hyperlink> grant +4 <mana></mana> <hyperlink>Mana</hyperlink> and +2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet>Start with +10 <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink> and +10 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink>.</bullet><bullet>Wizard Kings start with the <hyperlink>Overchannel ability</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Wizard Kings are <hyperlink>Herotrait governance wizard governor</hyperlink>.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Wizard Kings have access to unique <hyperlink>Combat Spell</hyperlink> enhancing hero skills.</bullet><bullet>All <conduit></conduit> <hyperlink>Conduit</hyperlink> grant +4 <mana></mana> <hyperlink>Mana</hyperlink> and +2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet>Start with +10 <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink> and +10 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink>.</bullet><bullet>Wizard Kings start with the <hyperlink>Overchannel</hyperlink> ability in <hyperlink>Combat</hyperlink>.</bullet><bullet>Wizard Kings are <hyperlink>Wizard Governor</hyperlink>.</bullet></bulletlist>",
     "description_short": "<helpcolor>A powerful Wizard seeking dominion over a new realm.</helpcolor>",
     "hyperlink": "<hyperlink>Wizard King</hyperlink>"
   },
@@ -114052,7 +114052,7 @@
   },
   {
     "id": "UNIT_UPGRADES_CORE@FLOATING",
-    "description": "This unit is Floating:<bulletlist><bullet>Moves through any type of terrain at a movement cost of <eventColor>{FLOATING_MOVEMENT_FERTILE>CostOverride}</eventColor>, apart from Mountains, which cost <eventColor>{FLOATING_MOVEMENT_MOUNTAIN>CostOverride}</eventColor>.</bullet><bullet>Requires Seafaring to traverse the water.</bullet></bulletlist>",
+    "description": "This unit is Floating:<bulletlist><bullet>Moves through any type of terrain at a movement cost of <eventColor>6</eventColor>, apart from Mountains, which cost <eventColor>8</eventColor>.</bullet><bullet>Requires Seafaring to traverse the water.</bullet></bulletlist>",
     "name": "Floating"
   },
   {
@@ -114334,7 +114334,7 @@
   },
   {
     "id": "UPGRADES@LINE_ATTACK@MODIFIER",
-    "description": "Damages units in a <eventColor>{LINE_ATTACK_UNIT_TARGETER_LINE>AREA>Length}</eventColor>-hex line."
+    "description": "Damages units in a <eventColor>3</eventColor>-hex line."
   },
   {
     "id": "UPGRADES@MAGIC_DAMAGE",
