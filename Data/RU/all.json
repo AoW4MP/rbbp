@@ -15550,7 +15550,7 @@
     "low": "Этот воин сомневается в победе, его боевой дух слаб.<br><br>Эффекты:<bulletlist><bullet>шанс неудачной атаки — 20%.</bullet></bulletlist>",
     "normal": "Этот воин спокоен и готов к бою.<br><br>Эффекты:<bulletlist><bullet>нет.</bullet></bulletlist>",
     "routing": "Этот воин в панике, он спасается бегством!<br><br>Эффекты:<bulletlist><bullet>игнорирует зоны контроля и неплановые атаки;</bullet><bullet>его на 25% труднее поразить дистанционными атаками;</bullet><bullet>двигается к ближайшей <hyperlink>точке отступления</hyperlink>.</bullet></bulletlist>",
-    "very_low": "Этот воин в отчаянии, он вот-вот дрогнет.<br><br>Эффекты:<bulletlist><bullet>шанс неудачной атаки — 20%.</bullet></bulletlist>"
+    "very_low": "Этот воин в отчаянии, он вот-вот дрогнет.<br><br>Эффекты:<bulletlist><bullet>шанс неудачной атаки — 40%.</bullet></bulletlist>"
   },
   {
     "id": "DIPLOMACY@MORALE_NAME",
@@ -44069,7 +44069,7 @@
     "governance_training_description": "Выбранный герой немедленно получает 100 к <<dat,c:<renown></renown> <hyperlink>Слава</hyperlink>>>.",
     "governance_training_max_renown": "Герой уже достиг максимального уровня славы!",
     "intensive_training": "Интенсивное обучение",
-    "intensive_training_description": "Выбранный герой немедленно получает 100 оч. навыка.",
+    "intensive_training_description": "Выбранный герой немедленно получает 1 оч. навыка.",
     "learn_hero_skill": "Выбранный герой немедленно изучит навык «<eventColor>{HeroSkill}</eventColor>».",
     "name": "Тренировочный лагерьa<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>",
     "no_leaders": "Правители не могут менять класс.",
@@ -60743,7 +60743,7 @@
     "description": "Выбранный дружественный воин:<bulletlist><bullet>получает эффект «<hyperlink>Regeneration</hyperlink>» на <eventColor>{REGENERATION_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> х.;</bullet><bullet>получает эффект «<hyperlink>Strengthened</hyperlink>» на <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> х.;</bullet><bullet>избавляется от отрицательных эффектов (1).</bullet></bulletlist>",
     "name": "Утренний дар",
     "name_champion": "Героический утренний дар",
-    "rank_champion": "Теперь способность «Утренний дар» действует на ещё одного дружественного воина в радиусе 1 кл."
+    "rank_champion": "Теперь способность «Утренний дар» действует на ещё одного дружественного воина в радиусе 2 кл."
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@TOME_SPRITE@ABILITY2",
@@ -60752,7 +60752,7 @@
     "description": "Выбранный вражеский воин:<bulletlist><bullet>получает эффект «<hyperlink>Blinded</hyperlink>» на <eventColor>{BLINDED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> х.;</bullet><bullet>получает эффект «<hyperlink>Slowed</hyperlink>» на <eventColor>{SLOWED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> х.</bullet></bulletlist>",
     "name": "Вечернее проклятие",
     "name_champion": "Героическое вечернее проклятие",
-    "rank_champion": "Теперь способность «Вечернее проклятие» действует на ещё одного вражеского воина в радиусе 0000049700003 кл."
+    "rank_champion": "Теперь способность «Вечернее проклятие» действует на ещё одного вражеского воина в радиусе 2 кл."
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@TOME_SPRITE@ABILITY3",
@@ -75708,7 +75708,7 @@
   },
   {
     "id": "HERO@AMBITION",
-    "collector_major": "Полностью экипироваться предметами ранга 4",
+    "collector_major": "Полностью экипироваться предметами ранга 2",
     "collector_minor": "Использовать предмет не менее 3 ходов",
     "conqueror_major": "Провести успешную осаду тронного города",
     "conqueror_minor": "Провести успешную осаду",
@@ -75726,7 +75726,7 @@
     "elitist_minor": "Сражаться бок о бок с правителем",
     "explorer_major": "Исследовать золотое древнее чудо",
     "explorer_minor": "Исследовать древнее чудо",
-    "fearmonger_major": "Выиграть сражение, обратив 5 вражеских воинов в бегство",
+    "fearmonger_major": "Выиграть сражение, обратив 2 вражеских воинов в бегство",
     "fearmonger_minor": "В бою обратить вражеских воинов в бегство",
     "imperialist_major": "Провести успешную осаду свободного города",
     "imperialist_minor": "Выиграть битву против свободного города",
@@ -75740,7 +75740,7 @@
     "prospector_major": "Доход золота от города под управлением должен быть 200 и выше",
     "prospector_minor": "Освободить источник ресурсов",
     "prosperity_major": "Поднять численность населения города под управлением до 16",
-    "prosperity_minor": "Удерживать положительную стабильность в городе под управлением не менее 3 ходов",
+    "prosperity_minor": "Удерживать положительную стабильность в городе под управлением не менее 5 ходов",
     "raider_major": "Победить в битве на вражеской территории",
     "raider_minor": "Разграбить провинцию",
     "shepherd_major": "Победить в бою, командуя только животными, растениями, феями и элементалями",
@@ -75749,7 +75749,7 @@
     "slayer_minor": "Лично сразить в бою воина элитного уровня",
     "teacher_major": "Возглавить полноценную армию из воинов легендарного уровня",
     "teacher_minor": "Повысить уровень воинов в своей армии",
-    "warrior_major": "Выиграть сражение против армии, превосходящей силы героя минимум на 500",
+    "warrior_major": "Выиграть сражение против армии, превосходящей силы героя минимум на 250",
     "warrior_minor": "Выиграть сражение против армии, превосходящей силы героя"
   },
   {
@@ -79653,7 +79653,7 @@
     "id": "INTERFACE@COMBAT_ADVANTAGE",
     "description": "Воины этой фракции наносят +15% урона и получают -15% урона.",
     "major_advantage": "Значительный перевес",
-    "major_advantage_description": "Воины этой фракции наносят +15% урона и получают -15% урона.",
+    "major_advantage_description": "Воины этой фракции наносят +30% урона и получают -30% урона.",
     "major_handicap": "Значительное ослабление",
     "minor_advantage": "Небольшой перевес",
     "minor_handicap": "Небольшое ослабление",
