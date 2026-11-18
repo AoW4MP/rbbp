@@ -6368,7 +6368,9 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
             if ("bio" in valueLookup) {
                 descriptionDiv.innerHTML += valueLookup.bio;
             }
-            if ("fpg_description" in valueLookup) {
+            if (originalTrait.type === "SubCulture" && valueLookup.description) {
+                descriptionDiv.innerHTML += valueLookup.description;
+            } else if ("fpg_description" in valueLookup) {
                 descriptionDiv.innerHTML += valueLookup.fpg_description;
             } else if ("description" in valueLookup) {
                 descriptionDiv.innerHTML += valueLookup.description;
