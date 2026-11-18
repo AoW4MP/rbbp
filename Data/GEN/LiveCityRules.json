@@ -1,0 +1,5657 @@
+{
+  "buildings": {
+    "5244155071730": {
+      "required_structure": [
+        {
+          "property": "5244155071726",
+          "providers": [
+            "5244155071723"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5244155071723": {
+      "required_structure": [
+        {
+          "property": "5244155071719",
+          "providers": [
+            "5244155071716"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5244155071716": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "5244155071710": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5222680232542": {
+      "required_structure": [
+        {
+          "property": "5222680232529",
+          "providers": [
+            "5222680232536"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5222680232536": {
+      "required_structure": [
+        {
+          "property": "5222680232528",
+          "providers": [
+            "5222680232531"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5222680232531": {
+      "required_structure": [
+        {
+          "property": "5222680232527",
+          "providers": [
+            "5222680232521"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5222680232521": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5068061409598": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5068061409426"
+      ],
+      "must_have_structure": [
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586590863": {
+      "required_structure": [],
+      "required_side": [
+        "5046586590846"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586590355": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586590354"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586589983": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586589982"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586589844": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586589843"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586589698": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586589697"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586588192": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586588081": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586588080"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586587960": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586587959"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586587876": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586587875"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586587784": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586587783"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586587639": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586587638"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586586869": {
+      "required_structure": [],
+      "required_side": [
+        "5046586586838"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586586841": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586586840"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586586798": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586586790"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586586281": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5046586586167"
+      ],
+      "must_have_structure": [
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585978": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5046586585964"
+      ],
+      "must_have_structure": [
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585852": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586585851"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585766": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586585765"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585096": {
+      "required_structure": [
+        {
+          "property": "4578435139839",
+          "providers": [
+            "4784593569056",
+            "5046586584638"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139839",
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585087": {
+      "required_structure": [
+        {
+          "property": "4578435139839",
+          "providers": [
+            "4784593569056",
+            "5046586584638"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139839",
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585080": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139838",
+          "providers": [
+            "4784593569007",
+            "5046586584637"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139838"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585064": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139837",
+          "providers": [
+            "4784593568990",
+            "5046586584636"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585059": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139837",
+          "providers": [
+            "4784593568990",
+            "5046586584636"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585051": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585047": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585044": {
+      "required_structure": [
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586585039": {
+      "required_structure": [
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584638": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139838",
+          "providers": [
+            "4784593569007",
+            "5046586584637"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139838"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584637": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139837",
+          "providers": [
+            "4784593568990",
+            "5046586584636"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584636": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584584": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435137981"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584136": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586584134"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584092": {
+      "required_structure": [],
+      "required_side": [
+        "5046586584086"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586584068": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586584075"
+      ],
+      "forbidden_structure": [
+        "4256312598859"
+      ],
+      "population": 0
+    },
+    "5046586583858": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586583857"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586583739": {
+      "required_structure": [],
+      "required_side": [
+        "5046586583737"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586579740": {
+      "required_structure": [],
+      "required_side": [
+        "5046586579552"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586579319": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586579318"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586579308": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586579307"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586579297": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586579296"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586579280": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586579279"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586578404": {
+      "required_structure": [],
+      "required_side": [
+        "5046586578353"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577862": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586577861"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577809": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586577808"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577772": {
+      "required_structure": [],
+      "required_side": [
+        "5046586577751"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577569": {
+      "required_structure": [],
+      "required_side": [
+        "4995046965816"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577200": {
+      "required_structure": [],
+      "required_side": [
+        "5046586576832"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577192": {
+      "required_structure": [],
+      "required_side": [
+        "5046586576833"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586577185": {
+      "required_structure": [],
+      "required_side": [
+        "5046586576829"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576921": {
+      "required_structure": [
+        {
+          "property": "5046586576847",
+          "providers": [
+            "5046586576844"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576920": {
+      "required_structure": [
+        {
+          "property": "5046586576847",
+          "providers": [
+            "5046586576844"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576907": {
+      "required_structure": [
+        {
+          "property": "5046586576847",
+          "providers": [
+            "5046586576844"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576863": {
+      "required_structure": [
+        {
+          "property": "4286377361863",
+          "providers": [
+            "4041564233023",
+            "5003636908380",
+            "5046586576858"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576858": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576851": {
+      "required_structure": [
+        {
+          "property": "5046586576847",
+          "providers": [
+            "5046586576844"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576844": {
+      "required_structure": [
+        {
+          "property": "5046586576840",
+          "providers": [
+            "5046586576837"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586576837": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "5046586576540": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5046586576539"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574802": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574441": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573151"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574439": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573150"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574437": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573149"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574435": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573148"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574433": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573146"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574431": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573147"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574422": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573145"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586574314": {
+      "required_structure": [],
+      "required_side": [
+        "5046586574242"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573700": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573151"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573697": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573150"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573694": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573149"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573691": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573148"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573687": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573146"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573681": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573147"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5046586573669": {
+      "required_structure": [],
+      "required_side": [
+        "5046586573145"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406710180": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406706511": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406706506": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406705242": {
+      "required_structure": [
+        {
+          "property": "5029406705248",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406705237": {
+      "required_structure": [
+        {
+          "property": "5029406705248",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406704867": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5029406704872",
+        "5029406704873"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406704864": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5029406704872"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5029406704860": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807261": {
+      "required_structure": [
+        {
+          "property": "5016521807238",
+          "providers": [
+            "5016521807235"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807254": {
+      "required_structure": [
+        {
+          "property": "4286377362301",
+          "providers": [
+            "4286377362297",
+            "5016521807249"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807249": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807242": {
+      "required_structure": [
+        {
+          "property": "5016521807238",
+          "providers": [
+            "5016521807235"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807235": {
+      "required_structure": [
+        {
+          "property": "5016521807231",
+          "providers": [
+            "5016521807228"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521807228": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "5016521802596": {
+      "required_structure": [
+        {
+          "property": "5016521802577",
+          "providers": [
+            "5016521802574"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521802481"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521802591": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521802586": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521802580": {
+      "required_structure": [
+        {
+          "property": "5016521802577",
+          "providers": [
+            "5016521802574"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521802574": {
+      "required_structure": [
+        {
+          "property": "5016521802571",
+          "providers": [
+            "5016521802568"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5016521802568": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "5003636908874": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758",
+            "4488240825430"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908715": {
+      "required_structure": [
+        {
+          "property": "5003636908626",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908673"
+      ],
+      "population": 0
+    },
+    "5003636908671": {
+      "required_structure": [
+        {
+          "property": "5003636908626",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908713"
+      ],
+      "population": 0
+    },
+    "5003636908664": {
+      "required_structure": [
+        {
+          "property": "5003636908620",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908661"
+      ],
+      "population": 0
+    },
+    "5003636908659": {
+      "required_structure": [
+        {
+          "property": "5003636908620",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908666"
+      ],
+      "population": 0
+    },
+    "5003636908650": {
+      "required_structure": [
+        {
+          "property": "5003636908607",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908646"
+      ],
+      "population": 0
+    },
+    "5003636908644": {
+      "required_structure": [
+        {
+          "property": "5003636908607",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "5003636908652"
+      ],
+      "population": 0
+    },
+    "5003636908624": {
+      "required_structure": [
+        {
+          "property": "5003636908620",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908618": {
+      "required_structure": [
+        {
+          "property": "5003636908607",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908605": {
+      "required_structure": [
+        {
+          "property": "4041564232988",
+          "providers": [
+            "4041564232980",
+            "4282082401405",
+            "4578435138041",
+            "4578435138239",
+            "4578435138266",
+            "4578435138331",
+            "4578435138579",
+            "4986457030794",
+            "5003636908251",
+            "5016521802568",
+            "5016521807228",
+            "5046586576837",
+            "5244155071716"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908597": {
+      "required_structure": [],
+      "required_side": [
+        "5291399711339"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908589": {
+      "required_structure": [
+        {
+          "property": "5003636908261",
+          "providers": [
+            "5003636908258"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908582": {
+      "required_structure": [
+        {
+          "property": "4286377361855",
+          "providers": [
+            "4282082401233",
+            "4578435139252",
+            "5003636904555",
+            "5003636907244",
+            "5003636908577"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908577": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908400": {
+      "required_structure": [],
+      "required_side": [
+        "5291399711340"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908390": {
+      "required_structure": [
+        {
+          "property": "5003636908261",
+          "providers": [
+            "5003636908258"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908383": {
+      "required_structure": [
+        {
+          "property": "4286377361863",
+          "providers": [
+            "4041564233023",
+            "5003636908380",
+            "5046586576858"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908380": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908265": {
+      "required_structure": [
+        {
+          "property": "5003636908261",
+          "providers": [
+            "5003636908258"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908258": {
+      "required_structure": [
+        {
+          "property": "5003636908254",
+          "providers": [
+            "5003636908251"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636908251": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "5003636907999": {
+      "required_structure": [],
+      "required_side": [
+        "5003636899948"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907989": {
+      "required_structure": [],
+      "required_side": [
+        "4986457030812"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907977": {
+      "required_structure": [
+        {
+          "property": "4986457030803",
+          "providers": [
+            "4986457030800"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636907880"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907805": {
+      "required_structure": [
+        {
+          "property": "5244155071726",
+          "providers": [
+            "5244155071723"
+          ]
+        }
+      ],
+      "required_side": [
+        "5244155071954"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907795": {
+      "required_structure": [
+        {
+          "property": "5244155071726",
+          "providers": [
+            "5244155071723"
+          ]
+        }
+      ],
+      "required_side": [
+        "5244155071955"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907534": {
+      "required_structure": [],
+      "required_side": [
+        "5244155071954"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907526": {
+      "required_structure": [
+        {
+          "property": "4286377361871",
+          "providers": [
+            "4041564232980",
+            "4041564234654",
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907521": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907290": {
+      "required_structure": [],
+      "required_side": [
+        "5244155071955"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907280": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758",
+            "4488240825430"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907250": {
+      "required_structure": [
+        {
+          "property": "4286377361855",
+          "providers": [
+            "4282082401233",
+            "4578435139252",
+            "5003636904555",
+            "5003636907244",
+            "5003636908577"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636907244": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636906640": {
+      "required_structure": [],
+      "required_side": [
+        "5003636906452"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636906588": {
+      "required_structure": [
+        {
+          "property": "4578435138276",
+          "providers": [
+            "4578435138273"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636906452"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636906268": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905931": {
+      "required_structure": [
+        {
+          "property": "5003636905627",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905769": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905661": {
+      "required_structure": [
+        {
+          "property": "5003636905595",
+          "providers": [
+            "5003636905651"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905659": {
+      "required_structure": [
+        {
+          "property": "5003636905593",
+          "providers": [
+            "5003636905649"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905657": {
+      "required_structure": [
+        {
+          "property": "5003636905591",
+          "providers": [
+            "5003636905647"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905655": {
+      "required_structure": [
+        {
+          "property": "5003636905589",
+          "providers": [
+            "5003636905645"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905653": {
+      "required_structure": [
+        {
+          "property": "5003636905587",
+          "providers": [
+            "5003636905643"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905651": {
+      "required_structure": [
+        {
+          "property": "5003636905579",
+          "providers": [
+            "5003636905641"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905649": {
+      "required_structure": [
+        {
+          "property": "5003636905578",
+          "providers": [
+            "5003636905639"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905647": {
+      "required_structure": [
+        {
+          "property": "5003636905577",
+          "providers": [
+            "5003636905637"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905645": {
+      "required_structure": [
+        {
+          "property": "5003636905576",
+          "providers": [
+            "5003636905635"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905643": {
+      "required_structure": [
+        {
+          "property": "5003636905575",
+          "providers": [
+            "5003636905633"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905641": {
+      "required_structure": [
+        {
+          "property": "5003636906240",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905639": {
+      "required_structure": [
+        {
+          "property": "5003636905572",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905637": {
+      "required_structure": [
+        {
+          "property": "5003636905571",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905635": {
+      "required_structure": [
+        {
+          "property": "5003636905570",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905633": {
+      "required_structure": [
+        {
+          "property": "5003636905569",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905631": {
+      "required_structure": [
+        {
+          "property": "5003636905585",
+          "providers": [
+            "5003636905596"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905596": {
+      "required_structure": [
+        {
+          "property": "5003636905574",
+          "providers": [
+            "5003636905518"
+          ]
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905526": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636905518": {
+      "required_structure": [
+        {
+          "property": "5003636905567",
+          "providers": []
+        }
+      ],
+      "required_side": [
+        "5016521807186"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636904565": {
+      "required_structure": [
+        {
+          "property": "4578435137957",
+          "providers": [
+            "4282082401410"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636904426"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636904560": {
+      "required_structure": [
+        {
+          "property": "4286377361855",
+          "providers": [
+            "4282082401233",
+            "4578435139252",
+            "5003636904555",
+            "5003636907244",
+            "5003636908577"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636904555": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636902395": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435138613"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636902181": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435138613"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636902045": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "5003636902044"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636902030": {
+      "required_structure": [],
+      "required_side": [
+        "5003636902039"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636901613": {
+      "required_structure": [],
+      "required_side": [
+        "5003636901381"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636901604": {
+      "required_structure": [],
+      "required_side": [
+        "5003636901380"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636901354": {
+      "required_structure": [],
+      "required_side": [
+        "5003636901290"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636900133": {
+      "required_structure": [],
+      "required_side": [
+        "4986457030812"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636900109": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "5003636899988": {
+      "required_structure": [],
+      "required_side": [
+        "5003636899987"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4995046966267": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4995046966266"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4995046965611": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4995046965610"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4986457030806": {
+      "required_structure": [
+        {
+          "property": "4986457030803",
+          "providers": [
+            "4986457030800"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4986457030800": {
+      "required_structure": [
+        {
+          "property": "4986457030797",
+          "providers": [
+            "4986457030794"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4986457030794": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4986457030787": {
+      "required_structure": [
+        {
+          "property": "4986457030803",
+          "providers": [
+            "4986457030800"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636907881"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4986457030782": {
+      "required_structure": [
+        {
+          "property": "4286377361867",
+          "providers": [
+            "4578435138489",
+            "4578435139194",
+            "4986457030777"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4986457030777": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4853313044937": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4853313044936"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4853313044734": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4853313044733"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773440705": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773439444": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4801773439433",
+        "4801773439440",
+        "4578435137983"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773439439": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4801773439433",
+        "4801773439435",
+        "4578435137982"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773439434": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4801773439433",
+        "4801773439430",
+        "4578435137981"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773439429": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4801773439433"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4801773437629": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4801773437628"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4784593569056": {
+      "required_structure": [
+        {
+          "property": "4578435139838",
+          "providers": [
+            "4784593569007",
+            "5046586584637"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139838"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4784593569007": {
+      "required_structure": [
+        {
+          "property": "4578435139837",
+          "providers": [
+            "4784593568990",
+            "5046586584636"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4784593568990": {
+      "required_structure": [
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4784593568946": {
+      "required_structure": [],
+      "required_side": [
+        "4784593569119"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4256312598859"
+      ],
+      "population": 0
+    },
+    "4784593568937": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4634269713455": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4634269713387": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713388"
+      ],
+      "population": 0
+    },
+    "4634269713383": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713384"
+      ],
+      "population": 0
+    },
+    "4634269713379": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713380"
+      ],
+      "population": 0
+    },
+    "4634269713375": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713376"
+      ],
+      "population": 0
+    },
+    "4634269713371": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713372"
+      ],
+      "population": 0
+    },
+    "4634269713367": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713368"
+      ],
+      "population": 0
+    },
+    "4634269713363": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713364"
+      ],
+      "population": 0
+    },
+    "4634269713359": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713360"
+      ],
+      "population": 0
+    },
+    "4634269713355": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713356"
+      ],
+      "population": 0
+    },
+    "4634269713351": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713352"
+      ],
+      "population": 0
+    },
+    "4634269713347": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713348"
+      ],
+      "population": 0
+    },
+    "4634269713343": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713344"
+      ],
+      "population": 0
+    },
+    "4634269713339": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713340"
+      ],
+      "population": 0
+    },
+    "4634269713335": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713336"
+      ],
+      "population": 0
+    },
+    "4634269713331": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713332"
+      ],
+      "population": 0
+    },
+    "4634269713319": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713320"
+      ],
+      "population": 0
+    },
+    "4634269713315": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713316"
+      ],
+      "population": 0
+    },
+    "4634269713303": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4634269713304"
+      ],
+      "population": 0
+    },
+    "4634269713301": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4634269712816": {
+      "required_structure": [
+        {
+          "property": "4634269712830",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435140196": {
+      "required_structure": [
+        {
+          "property": "4578435140194",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435140191": {
+      "required_structure": [
+        {
+          "property": "4286377361867",
+          "providers": [
+            "4578435138489",
+            "4578435139194",
+            "4986457030777"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435140064": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435140063"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435140052": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435140051"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139926": {
+      "required_structure": [
+        {
+          "property": "4578435139839",
+          "providers": [
+            "4784593569056",
+            "5046586584638"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139839",
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139923": {
+      "required_structure": [
+        {
+          "property": "4578435139839",
+          "providers": [
+            "4784593569056",
+            "5046586584638"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139839",
+        "4496830760027"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139920": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139909",
+        "4578435139918",
+        "4578435139912",
+        "4578435139906"
+      ],
+      "population": 0
+    },
+    "4578435139917": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139909",
+        "4578435139912",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139914": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139909",
+        "4578435139918",
+        "4578435139912",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139911": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139909",
+        "4578435139918",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139908": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139918",
+        "4578435139912",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139905": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139838",
+        "4496830760027"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139909",
+        "4578435139918",
+        "4578435139912",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139899": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139839",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139885"
+      ],
+      "population": 0
+    },
+    "4578435139896": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139839",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139894",
+        "4578435139888",
+        "4578435139891",
+        "4578435139885",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139893": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139839",
+        "4496830760027",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139885",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139890": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139839",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139885",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139887": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139839",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139894",
+        "4578435139897",
+        "4578435139891",
+        "4578435139885",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139884": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139839",
+        "4801773439469"
+      ],
+      "forbidden_structure": [
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139881": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139837",
+          "providers": [
+            "4784593568990",
+            "5046586584636"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139878": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139837",
+        "4496830760027",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139873",
+        "4578435139867",
+        "4578435139876",
+        "4578435139870",
+        "4578435139864",
+        "4578435139915",
+        "4578435139909",
+        "4578435139918",
+        "4578435139912",
+        "4578435139906",
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139885"
+      ],
+      "population": 0
+    },
+    "4578435139875": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139837",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139915",
+        "4578435139909",
+        "4578435139912",
+        "4578435139906",
+        "4578435139921",
+        "4578435139873",
+        "4578435139867",
+        "4578435139870",
+        "4578435139864",
+        "4578435139879",
+        "4578435139900",
+        "4578435139894",
+        "4578435139888",
+        "4578435139891",
+        "4578435139885"
+      ],
+      "population": 0
+    },
+    "4578435139872": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139837",
+        "4496830760027",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139879",
+        "4578435139867",
+        "4578435139876",
+        "4578435139870",
+        "4578435139864",
+        "4578435139918",
+        "4578435139906",
+        "4578435139921",
+        "4578435139912",
+        "4578435139909",
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139885",
+        "4578435139900"
+      ],
+      "population": 0
+    },
+    "4578435139869": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139837",
+        "4496830760027",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139879",
+        "4578435139873",
+        "4578435139867",
+        "4578435139876",
+        "4578435139864",
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139885",
+        "4578435139900",
+        "4578435139915",
+        "4578435139909",
+        "4578435139918",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139866": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139837",
+        "4496830760027",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139873",
+        "4578435139876",
+        "4578435139870",
+        "4578435139864",
+        "4578435139879",
+        "4578435139894",
+        "4578435139897",
+        "4578435139885",
+        "4578435139891",
+        "4578435139900",
+        "4578435139915",
+        "4578435139918",
+        "4578435139912",
+        "4578435139906",
+        "4578435139921"
+      ],
+      "population": 0
+    },
+    "4578435139863": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139837",
+        "4496830760027",
+        "4801773438831"
+      ],
+      "forbidden_structure": [
+        "4578435139873",
+        "4578435139867",
+        "4578435139876",
+        "4578435139870",
+        "4578435139879",
+        "4578435139894",
+        "4578435139888",
+        "4578435139897",
+        "4578435139891",
+        "4578435139900",
+        "4578435139921",
+        "4578435139912",
+        "4578435139918",
+        "4578435139909",
+        "4578435139915"
+      ],
+      "population": 0
+    },
+    "4578435139852": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        },
+        {
+          "property": "4578435139838",
+          "providers": [
+            "4784593569007",
+            "5046586584637"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139838"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139848": {
+      "required_structure": [
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139842": {
+      "required_structure": [
+        {
+          "property": "4578435139836",
+          "providers": [
+            "4578435139831",
+            "5046586584584"
+          ]
+        },
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139836"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139831": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435137981"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139666": {
+      "required_structure": [
+        {
+          "property": "4110283707989",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4496830760027",
+        "4578435139665"
+      ],
+      "forbidden_structure": [
+        "4801773437626"
+      ],
+      "population": 0
+    },
+    "4578435139655": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139654"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139643": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139642"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139535": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435138613"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139498": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139497"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139487": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139486"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139475": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139474"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139458": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139457"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139420": {
+      "required_structure": [
+        {
+          "property": "4578435139432",
+          "providers": [
+            "4578435138246"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139413": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139412"
+      ],
+      "forbidden_structure": [
+        "4256312598859"
+      ],
+      "population": 0
+    },
+    "4578435139396": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139395"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139384": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139383"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139364": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139363"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139351": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139350"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139298": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4578435139322"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139267": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139262": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [
+        "4801773438831"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139257": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139252": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139247": {
+      "required_structure": [
+        {
+          "property": "4286377361855",
+          "providers": [
+            "4282082401233",
+            "4578435139252",
+            "5003636904555",
+            "5003636907244",
+            "5003636908577"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139242": {
+      "required_structure": [
+        {
+          "property": "4286377361864",
+          "providers": [
+            "4578435138484",
+            "4578435139237",
+            "5003636908383",
+            "5046586576863"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139237": {
+      "required_structure": [
+        {
+          "property": "4286377361863",
+          "providers": [
+            "4041564233023",
+            "5003636908380",
+            "5046586576858"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139219": {
+      "required_structure": [
+        {
+          "property": "4286377361871",
+          "providers": [
+            "4041564232980",
+            "4041564234654",
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139204": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139199": {
+      "required_structure": [
+        {
+          "property": "4286377361867",
+          "providers": [
+            "4578435138489",
+            "4578435139194",
+            "4986457030777"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139194": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139189": {
+      "required_structure": [
+        {
+          "property": "4286377361871",
+          "providers": [
+            "4041564232980",
+            "4041564234654",
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139183": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139166": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632688"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139100": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632683"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139089": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632676"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139078": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632675"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139054": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4380866642976"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139030": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4380866642985"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139010": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632388"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435139003": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4380866642969"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138946": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632386"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138854": {
+      "required_structure": [],
+      "required_side": [
+        "4784593569119"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4256312598859"
+      ],
+      "population": 0
+    },
+    "4578435138843": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4380866642955"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138813": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4514010632385"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138731": {
+      "required_structure": [],
+      "required_side": [
+        "4273492478985"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138726": {
+      "required_structure": [],
+      "required_side": [
+        "4273492478987"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138721": {
+      "required_structure": [],
+      "required_side": [
+        "5003636901379"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138716": {
+      "required_structure": [],
+      "required_side": [
+        "4273492478986"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138711": {
+      "required_structure": [],
+      "required_side": [
+        "4110283713772"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138710": {
+      "required_structure": [],
+      "required_side": [
+        "4110283713279"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138616": {
+      "required_structure": [
+        {
+          "property": "4578435138621",
+          "providers": [
+            "4578435138579"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138608": {
+      "required_structure": [
+        {
+          "property": "4578435138613",
+          "providers": [
+            "4578435138616"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138579": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4578435138508": {
+      "required_structure": [
+        {
+          "property": "4286377361855",
+          "providers": [
+            "4282082401233",
+            "4578435139252",
+            "5003636904555",
+            "5003636907244",
+            "5003636908577"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138494": {
+      "required_structure": [
+        {
+          "property": "4286377362301",
+          "providers": [
+            "4286377362297",
+            "5016521807249"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138489": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138484": {
+      "required_structure": [
+        {
+          "property": "4286377361863",
+          "providers": [
+            "4041564233023",
+            "5003636908380",
+            "5046586576858"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138479": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138474": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138463": {
+      "required_structure": [
+        {
+          "property": "4801773438483",
+          "providers": [
+            "4282082401520"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138371": {
+      "required_structure": [
+        {
+          "property": "4578435138342",
+          "providers": [
+            "4578435138339"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138360": {
+      "required_structure": [
+        {
+          "property": "4578435138342",
+          "providers": [
+            "4578435138339"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138339": {
+      "required_structure": [
+        {
+          "property": "4578435138334",
+          "providers": [
+            "4578435138331"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138331": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4578435138297": {
+      "required_structure": [
+        {
+          "property": "4578435138276",
+          "providers": [
+            "4578435138273"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636906453"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138280": {
+      "required_structure": [
+        {
+          "property": "4578435138276",
+          "providers": [
+            "4578435138273"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138273": {
+      "required_structure": [
+        {
+          "property": "4578435138269",
+          "providers": [
+            "4578435138266"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138266": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4578435138253": {
+      "required_structure": [
+        {
+          "property": "4578435138249",
+          "providers": [
+            "4578435138246"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138246": {
+      "required_structure": [
+        {
+          "property": "4578435138242",
+          "providers": [
+            "4578435138239"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138239": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4578435138079": {
+      "required_structure": [
+        {
+          "property": "4578435138249",
+          "providers": [
+            "4578435138246"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138055": {
+      "required_structure": [
+        {
+          "property": "4578435138051",
+          "providers": [
+            "4578435138048"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138048": {
+      "required_structure": [
+        {
+          "property": "4578435138044",
+          "providers": [
+            "4578435138041"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435138041": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4578435137616": {
+      "required_structure": [
+        {
+          "property": "4041564233501",
+          "providers": [
+            "4578435137610"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4578435137610": {
+      "required_structure": [
+        {
+          "property": "4041564232988",
+          "providers": [
+            "4041564232980",
+            "4282082401405",
+            "4578435138041",
+            "4578435138239",
+            "4578435138266",
+            "4578435138331",
+            "4578435138579",
+            "4986457030794",
+            "5003636908251",
+            "5016521802568",
+            "5016521807228",
+            "5046586576837",
+            "5244155071716"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010634952": {
+      "required_structure": [],
+      "required_side": [
+        "4514010634651"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010634900": {
+      "required_structure": [],
+      "required_side": [
+        "4264902529734"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010634872": {
+      "required_structure": [],
+      "required_side": [
+        "4514010634577"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010634332": {
+      "required_structure": [],
+      "required_side": [
+        "4514010633994"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010633377": {
+      "required_structure": [],
+      "required_side": [
+        "4514010632824"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4514010631796": {
+      "required_structure": [],
+      "required_side": [
+        "4514010631542"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4488240825449": {
+      "required_structure": [
+        {
+          "property": "4488240825433",
+          "providers": [
+            "4488240825430",
+            "5003636907280",
+            "5003636908874"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4488240825435": {
+      "required_structure": [
+        {
+          "property": "4488240825433",
+          "providers": [
+            "4488240825430",
+            "5003636907280",
+            "5003636908874"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4488240825430": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4488240825426": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758",
+            "4488240825430"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4389456578777"
+      ],
+      "population": 0
+    },
+    "4488240824794": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4389456578787": {
+      "required_structure": [
+        {
+          "property": "4488240825437",
+          "providers": [
+            "4488240825435"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4389456578782": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758",
+            "4488240825430"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4389456578775": {
+      "required_structure": [
+        {
+          "property": "4389456578768",
+          "providers": [
+            "4389456578758",
+            "4488240825430"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4488240825428"
+      ],
+      "population": 0
+    },
+    "4389456578758": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4286377362305": {
+      "required_structure": [
+        {
+          "property": "4286377362302",
+          "providers": [
+            "4578435138494",
+            "5016521807254"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4286377362297": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401545": {
+      "required_structure": [
+        {
+          "property": "4801773438485",
+          "providers": [
+            "4282082401533"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401533": {
+      "required_structure": [
+        {
+          "property": "4801773438484",
+          "providers": [
+            "4578435138463"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401520": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401414": {
+      "required_structure": [
+        {
+          "property": "4578435137957",
+          "providers": [
+            "4282082401410"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401410": {
+      "required_structure": [
+        {
+          "property": "4282082401422",
+          "providers": [
+            "4282082401405"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401405": {
+      "required_structure": [
+        {
+          "property": "4110283712782",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 3
+    },
+    "4282082401401": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401320": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401316": {
+      "required_structure": [
+        {
+          "property": "4286377362303",
+          "providers": [
+            "4286377362305"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401309": {
+      "required_structure": [
+        {
+          "property": "4286377361869",
+          "providers": [
+            "4282082401300",
+            "4578435140196"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401300": {
+      "required_structure": [
+        {
+          "property": "4286377361868",
+          "providers": [
+            "4282082401294",
+            "4578435139199",
+            "4578435140191",
+            "4986457030782"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401294": {
+      "required_structure": [
+        {
+          "property": "4286377361867",
+          "providers": [
+            "4578435138489",
+            "4578435139194",
+            "4986457030777"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401272": {
+      "required_structure": [
+        {
+          "property": "4286377361865",
+          "providers": [
+            "4282082401268",
+            "4578435139242"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401268": {
+      "required_structure": [
+        {
+          "property": "4286377361864",
+          "providers": [
+            "4578435138484",
+            "4578435139237",
+            "5003636908383",
+            "5046586576863"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401262": {
+      "required_structure": [
+        {
+          "property": "4282082401259",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401258": {
+      "required_structure": [
+        {
+          "property": "4578435138480",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401254": {
+      "required_structure": [
+        {
+          "property": "4286377361873",
+          "providers": [
+            "4041564233887",
+            "4041564236955"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401250": {
+      "required_structure": [
+        {
+          "property": "4578435138475",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401242": {
+      "required_structure": [
+        {
+          "property": "4286377361856",
+          "providers": [
+            "4578435138508",
+            "4578435139247",
+            "5003636904560",
+            "5003636907250",
+            "5003636908582"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082401233": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4282082400540": {
+      "required_structure": [
+        {
+          "property": "4578435137957",
+          "providers": [
+            "4282082401410"
+          ]
+        }
+      ],
+      "required_side": [
+        "5003636904425"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492488663": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4273492488662"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492487110": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [
+        "4273492487109"
+      ],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492484497": {
+      "required_structure": [],
+      "required_side": [
+        "4514010634685"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492484421": {
+      "required_structure": [],
+      "required_side": [
+        "4514010634633"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492484300": {
+      "required_structure": [],
+      "required_side": [
+        "4273492484286"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492483625": {
+      "required_structure": [],
+      "required_side": [
+        "4514010632799"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492483521": {
+      "required_structure": [],
+      "required_side": [
+        "4273492483400"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492483518": {
+      "required_structure": [],
+      "required_side": [
+        "4273492483392"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4273492483449": {
+      "required_structure": [],
+      "required_side": [
+        "4273492483337"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4264902531026": {
+      "required_structure": [],
+      "required_side": [
+        "4514010632899"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564236955": {
+      "required_structure": [
+        {
+          "property": "4041564232989",
+          "providers": [
+            "4041564232996",
+            "4282082401410",
+            "4578435138048",
+            "4578435138246",
+            "4578435138273",
+            "4578435138339",
+            "4578435138616",
+            "4986457030800",
+            "5003636908258",
+            "5016521802574",
+            "5016521807235",
+            "5046586576844",
+            "5244155071723"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 12
+    },
+    "4041564236812": {
+      "required_structure": [],
+      "required_side": [
+        "4041564236694"
+      ],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564236468": {
+      "required_structure": [
+        {
+          "property": "4578435138051",
+          "providers": [
+            "4578435138048"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564234659": {
+      "required_structure": [
+        {
+          "property": "4286377361871",
+          "providers": [
+            "4041564232980",
+            "4041564234654",
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564234654": {
+      "required_structure": [
+        {
+          "property": "4286377362258",
+          "providers": [
+            "4488240824794",
+            "4578435139183",
+            "4578435139204",
+            "4578435139257",
+            "5003636907521",
+            "5016521802586"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [
+        "4801773438831"
+      ],
+      "population": 0
+    },
+    "4041564233887": {
+      "required_structure": [
+        {
+          "property": "4286377361872",
+          "providers": [
+            "4041564232996",
+            "4041564234659",
+            "4578435139189",
+            "4578435139219",
+            "5003636907526"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564233665": {
+      "required_structure": [
+        {
+          "property": "4286377361858",
+          "providers": [
+            "4282082401242"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564233023": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    },
+    "4041564232996": {
+      "required_structure": [
+        {
+          "property": "4041564232988",
+          "providers": [
+            "4041564232980",
+            "4282082401405",
+            "4578435138041",
+            "4578435138239",
+            "4578435138266",
+            "4578435138331",
+            "4578435138579",
+            "4986457030794",
+            "5003636908251",
+            "5016521802568",
+            "5016521807228",
+            "5046586576837",
+            "5244155071716"
+          ]
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 12
+    },
+    "4041564232980": {
+      "required_structure": [
+        {
+          "property": "4041564232987",
+          "providers": []
+        }
+      ],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 4
+    },
+    "-3753916818180273691": {
+      "required_structure": [],
+      "required_side": [],
+      "must_have_structure": [],
+      "forbidden_structure": [],
+      "population": 0
+    }
+  },
+  "culture_tables": [
+    {
+      "settings": "4209067951197",
+      "culture": "4110283713277",
+      "subculture": "5003636904418",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4282082401405"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4282082401410"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4282082401414"
+        },
+        {
+          "base": "4488240824794",
+          "replacement": "4578435139183"
+        },
+        {
+          "base": "4041564234659",
+          "replacement": "4578435139189"
+        }
+      ]
+    },
+    {
+      "settings": "4209067951198",
+      "culture": "4110283713769",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138041"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138048"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138055"
+        },
+        {
+          "base": "4578435138489",
+          "replacement": "4578435139194"
+        },
+        {
+          "base": "4282082401294",
+          "replacement": "4578435139199"
+        }
+      ]
+    },
+    {
+      "settings": "4273492478984",
+      "culture": "4273492478979",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138239"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138246"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138253"
+        },
+        {
+          "base": "4041564234659",
+          "replacement": "4578435139219"
+        },
+        {
+          "base": "4488240824794",
+          "replacement": "4578435139204"
+        }
+      ]
+    },
+    {
+      "settings": "4273492480834",
+      "culture": "4273492480830",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138579"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138616"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138608"
+        },
+        {
+          "base": "4578435138479",
+          "replacement": "4578435139267"
+        },
+        {
+          "base": "4488240824794",
+          "replacement": "4578435139257"
+        }
+      ]
+    },
+    {
+      "settings": "4514010628411",
+      "culture": "4514010628407",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138331"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138339"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138360"
+        },
+        {
+          "base": "4578435138508",
+          "replacement": "4578435139247"
+        },
+        {
+          "base": "4282082401233",
+          "replacement": "4578435139252"
+        }
+      ]
+    },
+    {
+      "settings": "4982162064469",
+      "culture": "4110283713277",
+      "subculture": null,
+      "replacements": []
+    },
+    {
+      "settings": "4982162064629",
+      "culture": "4273492480830",
+      "subculture": "5003636901385",
+      "replacements": []
+    },
+    {
+      "settings": "4982162064630",
+      "culture": "4273492480830",
+      "subculture": "5003636901405",
+      "replacements": []
+    },
+    {
+      "settings": "4982162064631",
+      "culture": "4273492480830",
+      "subculture": "5003636901408",
+      "replacements": []
+    },
+    {
+      "settings": "4986457034960",
+      "culture": "4986457034955",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5046586576837"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5046586576844"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5046586576851"
+        },
+        {
+          "base": "4041564233023",
+          "replacement": "5046586576858"
+        },
+        {
+          "base": "4578435138484",
+          "replacement": "5046586576863"
+        }
+      ]
+    },
+    {
+      "settings": "5003636904571",
+      "culture": "4110283713277",
+      "subculture": "5003636904480",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4282082401405"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4282082401410"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4282082401414"
+        },
+        {
+          "base": "4282082401233",
+          "replacement": "5003636904555"
+        },
+        {
+          "base": "4578435138508",
+          "replacement": "5003636904560"
+        }
+      ]
+    },
+    {
+      "settings": "5003636906461",
+      "culture": "4273492480192",
+      "subculture": "5003636906454",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138266"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138273"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138280"
+        },
+        {
+          "base": "4282082401294",
+          "replacement": "4578435140191"
+        },
+        {
+          "base": "4282082401300",
+          "replacement": "4578435140196"
+        }
+      ]
+    },
+    {
+      "settings": "5003636906465",
+      "culture": "4273492480192",
+      "subculture": "5003636906462",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4578435138266"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4578435138273"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4578435138280"
+        },
+        {
+          "base": "4578435138484",
+          "replacement": "4578435139237"
+        },
+        {
+          "base": "4282082401268",
+          "replacement": "4578435139242"
+        }
+      ]
+    },
+    {
+      "settings": "5003636906587",
+      "culture": "4273492480192",
+      "subculture": null,
+      "replacements": []
+    },
+    {
+      "settings": "5003636907886",
+      "culture": "4986457030766",
+      "subculture": "5003636907876",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4986457030794"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4986457030800"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4986457030806"
+        },
+        {
+          "base": "4578435138489",
+          "replacement": "4986457030777"
+        },
+        {
+          "base": "4282082401294",
+          "replacement": "4986457030782"
+        }
+      ]
+    },
+    {
+      "settings": "5003636907905",
+      "culture": "4986457030766",
+      "subculture": "5003636907887",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "4986457030794"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "4986457030800"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "4986457030806"
+        },
+        {
+          "base": "4578435138489",
+          "replacement": "4986457030777"
+        },
+        {
+          "base": "4282082401294",
+          "replacement": "4986457030782"
+        }
+      ]
+    },
+    {
+      "settings": "5003636907913",
+      "culture": "4986457030766",
+      "subculture": null,
+      "replacements": []
+    },
+    {
+      "settings": "5003636908250",
+      "culture": "5291399711261",
+      "subculture": "5291399711286",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5003636908251"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5003636908258"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5003636908265"
+        },
+        {
+          "base": "4282082401233",
+          "replacement": "5003636908577"
+        },
+        {
+          "base": "4578435138508",
+          "replacement": "5003636908582"
+        }
+      ]
+    },
+    {
+      "settings": "5003636908272",
+      "culture": "5291399711261",
+      "subculture": "5291399711296",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5003636908251"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5003636908258"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5003636908265"
+        },
+        {
+          "base": "4041564233023",
+          "replacement": "5003636908380"
+        },
+        {
+          "base": "4578435138484",
+          "replacement": "5003636908383"
+        }
+      ]
+    },
+    {
+      "settings": "5003636908293",
+      "culture": "5291399711261",
+      "subculture": null,
+      "replacements": []
+    },
+    {
+      "settings": "5016521802488",
+      "culture": "5016521802482",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5016521802568"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5016521802574"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5016521802580"
+        },
+        {
+          "base": "4488240824794",
+          "replacement": "5016521802586"
+        },
+        {
+          "base": "4578435138479",
+          "replacement": "5016521802591"
+        }
+      ]
+    },
+    {
+      "settings": "5016521807183",
+      "culture": "5016521807179",
+      "subculture": null,
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5016521807228"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5016521807235"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5016521807242"
+        },
+        {
+          "base": "4286377362297",
+          "replacement": "5016521807249"
+        },
+        {
+          "base": "4578435138494",
+          "replacement": "5016521807254"
+        }
+      ]
+    },
+    {
+      "settings": "5244155071709",
+      "culture": "5244155071702",
+      "subculture": null,
+      "replacements": []
+    },
+    {
+      "settings": "5244155071972",
+      "culture": "5244155071702",
+      "subculture": "5244155071950",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5244155071716"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5244155071723"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5244155071730"
+        },
+        {
+          "base": "4488240825430",
+          "replacement": "5003636907280"
+        },
+        {
+          "base": "4488240824794",
+          "replacement": "5003636907521"
+        },
+        {
+          "base": "4041564234659",
+          "replacement": "5003636907526"
+        }
+      ]
+    },
+    {
+      "settings": "5244155071973",
+      "culture": "5244155071702",
+      "subculture": "5244155071951",
+      "replacements": [
+        {
+          "base": "4041564232980",
+          "replacement": "5244155071716"
+        },
+        {
+          "base": "4041564232996",
+          "replacement": "5244155071723"
+        },
+        {
+          "base": "4041564236955",
+          "replacement": "5244155071730"
+        },
+        {
+          "base": "4282082401233",
+          "replacement": "5003636907244"
+        },
+        {
+          "base": "4578435138508",
+          "replacement": "5003636907250"
+        },
+        {
+          "base": "4488240825430",
+          "replacement": "5003636907280"
+        }
+      ]
+    }
+  ],
+  "faction_properties": {
+    "4084513900119": [],
+    "4110283713277": [
+      "4110283713279",
+      "4286377362672"
+    ],
+    "4110283713633": [],
+    "4110283713711": [],
+    "4110283713714": [],
+    "4110283713715": [],
+    "4110283713717": [],
+    "4110283713769": [
+      "4110283713772",
+      "4286377362672"
+    ],
+    "4273492478979": [
+      "4273492478985",
+      "4286377362672",
+      "5046586576755"
+    ],
+    "4273492480192": [
+      "4273492478987",
+      "4286377362672"
+    ],
+    "4273492480830": [
+      "4273492480847",
+      "4286377362672"
+    ],
+    "4273492486877": [],
+    "4312147169583": [],
+    "4312147169585": [],
+    "4312147170640": [],
+    "4312147171522": [],
+    "4312147172707": [],
+    "4479650890711": [],
+    "4479650890833": [],
+    "4479650890857": [],
+    "4479650890937": [],
+    "4514010628407": [
+      "4273492478986",
+      "4286377362672",
+      "4801773439191"
+    ],
+    "4986457030766": [
+      "4286377362672",
+      "4986457030812",
+      "5338644349532",
+      "5338644349544"
+    ],
+    "4986457030968": [],
+    "4986457033193": [],
+    "4986457033195": [],
+    "4986457034955": [
+      "4286377362672",
+      "4986457034800"
+    ],
+    "5003636901385": [
+      "5003636901379",
+      "5003636901462",
+      "5003636901464",
+      "5003636901465"
+    ],
+    "5003636901405": [
+      "5003636901380",
+      "5003636901581",
+      "5003636902082"
+    ],
+    "5003636901408": [
+      "5003636901381",
+      "5003636901462",
+      "5003636902194",
+      "5003636902220"
+    ],
+    "5003636904418": [
+      "5003636904425",
+      "5003636904427",
+      "5003636904436"
+    ],
+    "5003636904480": [
+      "5003636904426",
+      "5003636904484",
+      "5003636904602",
+      "5003636904609",
+      "5003636904610",
+      "5003636904611"
+    ],
+    "5003636905837": [
+      "5003636906166"
+    ],
+    "5003636905861": [
+      "5003636906167"
+    ],
+    "5003636905871": [
+      "5003636906168"
+    ],
+    "5003636905879": [
+      "5003636906169"
+    ],
+    "5003636905885": [
+      "5003636906170"
+    ],
+    "5003636905889": [
+      "5003636906171"
+    ],
+    "5003636906454": [
+      "5003636906452",
+      "5003636906571",
+      "5003636906575"
+    ],
+    "5003636906462": [
+      "5003636906453",
+      "5003636906724",
+      "5003636906725",
+      "5003636906884"
+    ],
+    "5003636907876": [
+      "5003636899948",
+      "5003636899954",
+      "5003636899982",
+      "5003636899983",
+      "5003636899995",
+      "5003636900136",
+      "5003636907880",
+      "5003636907890"
+    ],
+    "5003636907887": [
+      "5003636907881",
+      "5003636907892",
+      "5003636907897",
+      "5003636907898",
+      "5003636907904",
+      "5003636907967",
+      "5003636907976",
+      "5003636908087",
+      "5003636908175"
+    ],
+    "5016521802482": [
+      "4286377362672",
+      "5016521802481"
+    ],
+    "5016521804669": [],
+    "5016521804671": [],
+    "5016521807179": [
+      "4286377362672",
+      "4995046968645",
+      "5003636905046",
+      "5003636905047",
+      "5003636905048",
+      "5003636905049",
+      "5003636905050",
+      "5003636905051",
+      "5003636905385",
+      "5003636905805",
+      "5016521807186"
+    ],
+    "5016521807303": [
+      "5029406707402"
+    ],
+    "5016521807305": [],
+    "5046586573531": [
+      "4995046968674",
+      "4995046968704",
+      "5046586573145",
+      "5046586587354"
+    ],
+    "5046586573532": [
+      "4995046968677",
+      "4995046968698",
+      "5046586573147",
+      "5046586574453",
+      "5046586587291"
+    ],
+    "5046586573533": [
+      "4995046968680",
+      "5029406706557",
+      "5046586573146",
+      "5046586574404",
+      "5046586574455",
+      "5046586587292"
+    ],
+    "5046586573534": [
+      "4479650895121",
+      "4995046968683",
+      "5046586573148",
+      "5046586574454",
+      "5046586587290"
+    ],
+    "5046586573535": [
+      "4995046968686",
+      "4995046968701",
+      "5046586573149",
+      "5046586587355"
+    ],
+    "5046586573536": [
+      "4578435138573",
+      "4995046968692",
+      "4995046968695",
+      "5029406706557",
+      "5046586573151",
+      "5046586587288",
+      "5046586587354"
+    ],
+    "5046586573537": [
+      "4479650895118",
+      "4995046968689",
+      "4995046968707",
+      "5046586573150",
+      "5046586574452",
+      "5046586587289"
+    ],
+    "5046586576818": [
+      "5046586576829",
+      "5046586577556",
+      "5046586577559",
+      "5046586577972"
+    ],
+    "5046586576821": [
+      "4956392260141",
+      "5046586576833",
+      "5046586577962"
+    ],
+    "5046586576824": [
+      "5046586576832",
+      "5046586577541",
+      "5046586577695",
+      "5046586578168",
+      "5046586578170",
+      "5046586578185",
+      "5046586578186",
+      "5046586578187"
+    ],
+    "5093831213208": [],
+    "5093831213210": [],
+    "5244155071671": [],
+    "5244155071702": [
+      "4286377362672",
+      "5003636907372",
+      "5003636907374",
+      "5003636907489",
+      "5244155071705",
+      "5244155071781"
+    ],
+    "5244155071950": [
+      "14692827255529277046",
+      "5003636907220",
+      "5244155071954"
+    ],
+    "5244155071951": [
+      "5003636900136",
+      "5003636907240",
+      "5003636907487",
+      "5244155071955"
+    ],
+    "5248450037563": [],
+    "5248450039921": [],
+    "5291399711169": [],
+    "5291399711261": [
+      "4286377362672",
+      "4904852653351",
+      "5291399711338"
+    ],
+    "5291399711286": [
+      "4995046971026",
+      "5003636908526",
+      "5003636908565",
+      "5003636908567",
+      "5003636908658",
+      "5291399711339"
+    ],
+    "5291399711296": [
+      "4995046971026",
+      "4995046971049",
+      "5003636908657",
+      "5291399711340"
+    ]
+  }
+}
