@@ -15443,7 +15443,7 @@
     "low": "The unit is wavering and doubtful of victory.<br><br>Effects:<bulletlist><bullet>Fumble Chance: 20%.</bullet></bulletlist>",
     "normal": "The unit is content and ready for battle.<br><br>Effects:<bulletlist><bullet>None.</bullet></bulletlist>",
     "routing": "The unit is terrified and is fleeing for its life!<br><br>Effects:<bulletlist><bullet>Ignores zones of control and attacks of opportunity.</bullet><bullet>25% harder to hit with ranged attacks.</bullet><bullet>Moves toward nearest <hyperlink>Retreat Point.</hyperlink></bullet></bulletlist>",
-    "very_low": "The unit is despairing and close to breaking.<br><br>Effects:<bulletlist><bullet>Fumble Chance: 20%.</bullet></bulletlist>"
+    "very_low": "The unit is despairing and close to breaking.<br><br>Effects:<bulletlist><bullet>Fumble Chance: 40%.</bullet></bulletlist>"
   },
   {
     "id": "DIPLOMACY@MORALE_NAME",
@@ -43818,7 +43818,7 @@
     "governance_training_description": "The selected hero immediately gains 100<renown></renown> <hyperlink>Renown</hyperlink>.",
     "governance_training_max_renown": "Hero is already at max renown!",
     "intensive_training": "Intensive Training",
-    "intensive_training_description": "The selected hero immediately gains 100 skill point.",
+    "intensive_training_description": "The selected hero immediately gains 1 skill point.",
     "learn_hero_skill": "The selected hero immediately learns <eventColor>{HeroSkill}</eventColor>.",
     "name": "Training Camp",
     "no_leaders": "Leaders cannot change their class.",
@@ -60442,7 +60442,7 @@
     "description": "Target friendly unit:<bulletlist><bullet>Gains <hyperlink>Regeneration</hyperlink> for <eventColor>{REGENERATION_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gains <hyperlink>Strengthened</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Has 1 Negative Status Effect removed.</bullet></bulletlist>",
     "name": "Morning Boon",
     "name_champion": "Champion Morning Boon",
-    "rank_champion": "Morning Boon now targets another friendly unit within 1 hexes."
+    "rank_champion": "Morning Boon now targets another friendly unit within 2 hexes."
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@TOME_SPRITE@ABILITY2",
@@ -60451,7 +60451,7 @@
     "description": "Target enemy unit:<bulletlist><bullet>Becomes <hyperlink>Blinded</hyperlink> for <eventColor>{BLINDED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Becomes <hyperlink>Slowed</hyperlink> for <eventColor>{SLOWED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Evening Bane",
     "name_champion": "Champion Evening Bane",
-    "rank_champion": "Evening Bane now targets another enemy unit within 0000049700003 hexes."
+    "rank_champion": "Evening Bane now targets another enemy unit within 2 hexes."
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@TOME_SPRITE@ABILITY3",
@@ -75327,7 +75327,7 @@
   },
   {
     "id": "HERO@AMBITION",
-    "collector_major": "Fully equip with Tier 4+ items",
+    "collector_major": "Fully equip with Tier 2+ items",
     "collector_minor": "Have an item equipped for 3 turns",
     "conqueror_major": "Win a siege battle against a Throne City",
     "conqueror_minor": "Win a siege battle",
@@ -75345,7 +75345,7 @@
     "elitist_minor": "Fight alongside their Ruler",
     "explorer_major": "Explore a Golden Ancient Wonder",
     "explorer_minor": "Explore an Ancient Wonder",
-    "fearmonger_major": "Win a battle where 5 enemies routed",
+    "fearmonger_major": "Win a battle where 2 enemies routed",
     "fearmonger_minor": "Rout enemy units in battle",
     "imperialist_major": "Win a siege battle against a free city",
     "imperialist_minor": "Win a battle against a free city",
@@ -75359,7 +75359,7 @@
     "prospector_major": "Governed City has a gold income of 200+",
     "prospector_minor": "Clear a resource node",
     "prosperity_major": "Grow governed city to 16 population",
-    "prosperity_minor": "Governed City maintains positive stability for 3 turns",
+    "prosperity_minor": "Governed City maintains positive stability for 5 turns",
     "raider_major": "Win a combat in enemy territory",
     "raider_minor": "Pillage a province",
     "shepherd_major": "Win a combat with only animal, plants, Fey, and elementals units on your side",
@@ -75368,7 +75368,7 @@
     "slayer_minor": "Personally slay a unit of elite rank in combat",
     "teacher_major": "Hero leads a full army of Legendary rank units",
     "teacher_minor": "Rank up units in this Hero's army",
-    "warrior_major": "Win a combat against an army with 500 more power",
+    "warrior_major": "Win a combat against an army with 250 more power",
     "warrior_minor": "Win a battle against an army with more power"
   },
   {
@@ -79270,7 +79270,7 @@
     "id": "INTERFACE@COMBAT_ADVANTAGE",
     "description": "Units of this faction deal +15% damage and take -15% damage.",
     "major_advantage": "Major Advantage",
-    "major_advantage_description": "Units of this faction deal +15% damage and take -15% damage.",
+    "major_advantage_description": "Units of this faction deal +30% damage and take -30% damage.",
     "major_handicap": "Major Handicap",
     "minor_advantage": "Minor Advantage",
     "minor_handicap": "Minor Handicap",
