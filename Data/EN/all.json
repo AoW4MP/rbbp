@@ -11278,7 +11278,7 @@
   },
   {
     "id": "CULTURE_FEUDAL@SUBCULTURE@ARISTOCRACY",
-    "description": "Your cities form powerful Houses, able to field efficient armies when led by their Liege Lords:<bulletlist><bullet>Each city has a <hyperlink>Feudal House</hyperlink> led by its governor, who becomes the House's <hyperlink>Liege lord</hyperlink>.<Bullet></Bullet>Units produced in Feudal cities become part of that city's <hyperlink>Feudal House</hyperlink>, gaining <hyperlink><xp></xp> Experience</hyperlink> as their Liege Lord gains <renown></renown> <hyperlink>Renown</hyperlink>.<Bullet></Bullet>Certain units can promote into higher Tier units on attaining Legendary Rank.</bullet></bulletlist>",
+    "description": "Your cities form powerful Houses, able to field efficient armies when led by their Liege Lords:<bulletlist><bullet>Each city has a <hyperlink>Feudal House</hyperlink> led by its governor, who becomes the House's <hyperlink>Liege lord</hyperlink>.<Bullet></Bullet>Units produced in Feudal cities become part of that city's <hyperlink>Feudal House</hyperlink>, gaining <hyperlink><xp></xp> Experience</hyperlink> as their Liege Lord gains <renown></renown> <hyperlink>Renown</hyperlink>.<Bullet></Bullet>Certain units can promote into higher Tier units on attaining Legendary Rank.</bullet></bulletlist><br><br>In RbBP, House units gain 5 experience per 10 Renown earned by their Liege Lord. The Liege Lord bonus applies only to units in their army.",
     "lorename": "Aristocracy",
     "name": "Aristocracy",
     "tome_name": "Feudal - Aristocracy"
@@ -50725,7 +50725,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@SUBCULTURE@CONQUERERS",
-    "description": "To your people, survival is an eternal conflict, one they excel at:<bulletlist><bullet>Annex pillaged enemy provinces to gain <unitprod></unitprod> <hyperlink>Draft</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, and <gold></gold> <hyperlink>Gold</hyperlink> through <hyperlink>Aggressive Expansion</hyperlink>.</bullet><bullet>Pillaging provinces provides <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>Movement grants units <hyperlink>Empowering momentum</hyperlink>.</bullet><bullet><hyperlink>Total War</hyperlink></bullet></bulletlist>",
+    "description": "To your people, survival is an eternal conflict, one they excel at:<bulletlist><bullet>Annex pillaged enemy provinces to gain <unitprod></unitprod> <hyperlink>Draft</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, and <gold></gold> <hyperlink>Gold</hyperlink> through <hyperlink>Aggressive Expansion</hyperlink>.</bullet><bullet>Pillaging provinces provides <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>Movement grants units <hyperlink>Empowering momentum</hyperlink>.</bullet><bullet><hyperlink>Total War</hyperlink></bullet></bulletlist><br><br>In RbBP, Momentum grants +20% damage. Aggressive Annexation grants 5 Gold and 5 Knowledge, plus 5 of each per Population.",
     "DLC": "RISEFROMRUIN",
     "fpg_description": "<bulletlist><bullet>Mobile cities that favor aggressive settlement near hostile domains.</bullet><bullet>Empowered by movement in combat.</bullet></bulletlist>",
     "lorename": "Conquerors",
@@ -50759,7 +50759,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@SUBCULTURE@SCAVENGERS",
-    "description": "Survival is measured in what can be scavenged from the ruined world, your people know this well:<bulletlist><bullet>Use <hyperlink>Wonder Scavenging</hyperlink> to extract unique <hyperlink>Essence</hyperlink> from <hyperlink>Ancient Wonder</hyperlink>, further empowering your cities as they collect Essence.</bullet><bullet>In combat, pickup loot from defeated units to heal and gain <hyperlink>Looted power</hyperlink>.</bullet></bulletlist>",
+    "description": "Survival is measured in what can be scavenged from the ruined world, your people know this well:<bulletlist><bullet>Use <hyperlink>Wonder Scavenging</hyperlink> to extract unique <hyperlink>Essence</hyperlink> from <hyperlink>Ancient Wonder</hyperlink>, further empowering your cities as they collect Essence.</bullet><bullet>In combat, pickup loot from defeated units to heal and gain <hyperlink>Looted power</hyperlink>.</bullet></bulletlist><br><br>In RbBP, restoring depleted sources costs half as much. Looted Power grants up to 3 effects, and Improvised Remedy removes up to 2 negative status effects.",
     "DLC": "RISEFROMRUIN",
     "fpg_description": "<bulletlist><bullet>Mobile cities that favor settlement near Ancient Wonders to extract their Essence.</bullet><bullet>Empowered by picking up loot dropped by slain units in combat.</bullet></bulletlist>",
     "lorename": "Scavengers",
