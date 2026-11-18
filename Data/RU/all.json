@@ -25401,7 +25401,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@COMET_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Дистанционная атака выдохом, наносящая урон всем воинам в радиусе <eventColor>{COMET_BREATH_TARGETER>AREA>Radius}</eventColor> кл.",
+    "ability_description": "Дистанционная атака выдохом, наносящая урон всем воинам в радиусе <eventColor>2</eventColor> кл.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25428,7 +25428,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@CONE_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Наносит урон всем воинам в конусе размером <eventColor>{CONE_BREATH_TARGETER>AREA>Length}</eventColor> кл.",
+    "ability_description": "Наносит урон всем воинам в конусе размером <eventColor>4</eventColor> кл.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25526,7 +25526,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@LIMITED_BREATH_MAJOR_MATERIUM",
-    "ability_description": "Наносит урон в конусе размером <eventColor>{LIMITED_BREATH_TARGETER>AREA>Length}</eventColor> кл.",
+    "ability_description": "Наносит урон в конусе размером <eventColor>3</eventColor> кл.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -39329,7 +39329,7 @@
   },
   {
     "id": "DLC@EMPIRESANDASHES@WILDLIFE_PROPERTIES@PROGENITOR_GOLEM@ABILITY01",
-    "description": "Выпускает в выбранного вражеского воина волшебную стрелу. Вражеские воины по соседству получают <eventColor>{BREACH_BOLT_CIRCLE>ResolvedEffectMultiplier}</eventColor>% от этого урона.",
+    "description": "Выпускает в выбранного вражеского воина волшебную стрелу. Вражеские воины по соседству получают <eventColor>50</eventColor>% от этого урона.",
     "DLC": "EMPIRESANDASHES",
     "name": "Пробивной снаряд"
   },
@@ -43306,7 +43306,7 @@
     "description": "Устанавливает связь с выбранным дружественным воином. Пока связь действует, полученный выбранным воином урон переходит к этому воину, уменьшаясь при этом на <eventColor>{CORE_LINK_MARTYR_EFFECT>ResolvedDamageMultiplier}</eventColor>%.",
     "DLC": "GIANTKINGS",
     "description_2": "Устанавливает связь с выбранным дружественным воином. Связанный воин:<bulletlist><bullet>передаёт заклинателю весь полученный урон, при этом уменьшая его на <eventColor>{CORE_LINK_MARTYR_EFFECT>ResolvedDamageMultiplier}</eventColor>%;</bullet><bullet>наносит на <eventColor>{CORE_LINK_CHAMPION_MEDAL>ResolvedMultiplier}</eventColor>% больше урона.</bullet></bulletlist>",
-    "description_champion": "Связанные сердечники:<bulletlist><bullet>дополнительно уменьшает получаемый урон на <eventColor>{reductionPercentage}</eventColor>%;</bullet><bullet>увеличивает наносимый связанным воином урон на <eventColor>{damagePercentage}</eventColor>%.</bullet></bulletlist>",
+    "description_champion": "Связанные сердечники:<bulletlist><bullet>дополнительно уменьшает получаемый урон на <eventColor>10</eventColor>%;</bullet><bullet>увеличивает наносимый связанным воином урон на <eventColor>10</eventColor>%.</bullet></bulletlist>",
     "name": "Связанные сердечники",
     "name_champion": "Героические связанные сердечники",
     "prop_description": "Весь урон, полученный этим воином, переходит к связанному с ним воину, уменьшаясь при этом на 20%.",
@@ -71355,7 +71355,7 @@
   },
   {
     "id": "DLC@WAYSOFWAR@UNITS_OATHSWORN@ABILITY13",
-    "description": "Перемещается на <eventColor>{BULLDOZE_MOVE_TARGETER>AREA>Offset}</eventColor> кл. вперёд, нанося урон всем врагам на пути.",
+    "description": "Перемещается на <eventColor>4</eventColor> кл. вперёд, нанося урон всем врагам на пути.",
     "DLC": "WAYSOFWAR",
     "name": "Напролом"
   },
@@ -76212,7 +76212,7 @@
   },
   {
     "id": "HERO_ITEM@MISC04",
-    "description": "Наносит урон по линии в <eventColor>{WAND_OF_LIGHTNING_STRIKES_OBSTACLE_TARGETER_LINE>AREA>Length}</eventColor> кл.",
+    "description": "Наносит урон по линии в <eventColor>3</eventColor> кл.",
     "name": "Жезл молнийn<eventColor>{1}</eventColor>x<eventColor>{2}</eventColor>"
   },
   {
@@ -76866,12 +76866,12 @@
   {
     "id": "HERO_SKILLS@CHAMPION_COORDINATED_COMMAND",
     "ability_description": "Выбранный дружественный воин (кроме <<gen,c:<hyperlink>Hero</hyperlink>>>) восстанавливает <<acc,cm:<hyperlink>Очки действияn{1}x{2}</hyperlink>>>.<br>Затем эффект переходит на другие цели (до <eventColor>{COORDINATED_COMMAND_TARGETER>MaxJumps}</eventColor>) в радиусе <eventColor>{COORDINATED_COMMAND_TARGETER>MaxDistance}</eventColor> кл.",
-    "description": "Заменяет способность «<hyperlink>Spur to action</hyperlink>»",
+    "description": "Заменяет способность «<hyperlink>Побуждение к действию</hyperlink>»",
     "name": "Координированное командование"
   },
   {
     "id": "HERO_SKILLS@CHAMPION_DECISIVE_COMMAND",
-    "description": "Заменяет способность «<hyperlink>Spur to action</hyperlink>»",
+    "description": "Заменяет способность «<hyperlink>Побуждение к действию</hyperlink>»",
     "name": "Решительное командование"
   },
   {
@@ -78238,7 +78238,7 @@
   {
     "id": "HERO_SKILLS@SPUR_TO_ACTION",
     "ability_description": "Выбранный дружественный воин (кроме <<gen,c:<hyperlink>Hero</hyperlink>>>) восстанавливает <<acc,cm:<hyperlink>Очки действияn{1}x{2}</hyperlink>>>.",
-    "description": "Даёт способность «<hyperlink>Spur to action</hyperlink>».",
+    "description": "Даёт способность «<hyperlink>Побуждение к действию</hyperlink>».",
     "name": "Побуждение к действию"
   },
   {
@@ -94917,7 +94917,7 @@
   },
   {
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@PUSH_BACK",
-    "description": "Цель отбрасывается назад на <eventColor>{PUSH_BACK_DISPLACE>MaxDistance}</eventColor> кл.",
+    "description": "Цель отбрасывается назад на <eventColor>1</eventColor> кл.",
     "name": "Толчок"
   },
   {
@@ -110461,7 +110461,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@RACIAL_LEADER",
-    "description": " <br><bulletlist><bullet>Смертные правители имеют доступ к уникальным навыкам командования для героев.</bullet><bullet>Смертные правители получают +20% к <<dat,c:<xp></xp> <hyperlink>Опыт</hyperlink>>>.</bullet><bullet>Получают +100 к отношениям со <hyperlink>свободными городами</hyperlink> в начале игры.</bullet><bullet>Все <hyperlink>Города</hyperlink> вашей <hyperlink>Империи</hyperlink> получают +10% к доходу <gold></gold> <hyperlink>Золото</hyperlink>.</bullet><bullet>Все <hyperlink>Города</hyperlink> вашей <hyperlink>Империи</hyperlink> получают +20 <happiness></happiness> <hyperlink>Стабильность города</hyperlink>.</bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Наём</hyperlink> в вашем <hyperlink>Тронный город</hyperlink>.</bullet><bullet>В <<pre,c:<hyperlink>Сражение</hyperlink>>> смертные правители обладают способностью «<hyperlink>Spur to action</hyperlink>» с начала игры.</bullet><bullet>Смертные правители обладают свойством «<hyperlink>Herotrait governance champion governor</hyperlink>».</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Смертные правители имеют доступ к уникальным навыкам командования для героев.</bullet><bullet>Смертные правители получают +20% к <<dat,c:<xp></xp> <hyperlink>Опыт</hyperlink>>>.</bullet><bullet>Получают +100 к отношениям со <hyperlink>свободными городами</hyperlink> в начале игры.</bullet><bullet>Все <hyperlink>Города</hyperlink> вашей <hyperlink>Империи</hyperlink> получают +10% к доходу <gold></gold> <hyperlink>Золото</hyperlink>.</bullet><bullet>Все <hyperlink>Города</hyperlink> вашей <hyperlink>Империи</hyperlink> получают +20 <happiness></happiness> <hyperlink>Стабильность города</hyperlink>.</bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Наём</hyperlink> в вашем <hyperlink>Тронный город</hyperlink>.</bullet><bullet>В <<pre,c:<hyperlink>Сражение</hyperlink>>> смертные правители обладают способностью «<hyperlink>Побуждение к действию</hyperlink>» с начала игры.</bullet><bullet>Смертные правители обладают свойством «<hyperlink>Губернатор-герой</hyperlink>».</bullet></bulletlist>",
     "description_short": "<helpcolor>Правитель, проявивший себя среди своего народа и ставший его лидером.</helpcolor>",
     "hyperlink": "<hyperlink>Геройl</hyperlink>",
     "relation_modifier": "Происхождение правителя: народный герой"
@@ -110472,7 +110472,7 @@
   },
   {
     "id": "TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@WIZARD_KING",
-    "description": " <br><bulletlist><bullet>Короли-волшебники имеют доступ к уникальным <<dat,cm:<hyperlink>Боевое заклинаниеa{1}n{2}</hyperlink>>>, которые улучшают навыки героя.</bullet><bullet>Все <<cm:<conduit></conduit> <hyperlink>Портал</hyperlink>>> получают +4 <<gen,c:<mana></mana> <hyperlink>Мана</hyperlink>>> и +2 <knowledge></knowledge> <hyperlink>Знания</hyperlink> к доходу.</bullet><bullet>+10 к <<dat,c:<optactical></optactical> <hyperlink>Очки боевых заклинанийn{1}x{2}x{3}</hyperlink>>> и +10 к <<dat,c:<caststrategic></caststrategic> <hyperlink>Очки глобальных заклинанийn{1}x{2}x{3}</hyperlink>>> в начале игры.</bullet><bullet>В <<pre,c:<hyperlink>Сражение</hyperlink>>> короли-волшебники обладают способностью «<hyperlink>Overchannel ability</hyperlink>» с начала игры.</bullet><bullet>Короли-волшебники обладают свойством «<hyperlink>Herotrait governance wizard governor</hyperlink>».</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Короли-волшебники имеют доступ к уникальным <<dat,cm:<hyperlink>Боевое заклинаниеa{1}n{2}</hyperlink>>>, которые улучшают навыки героя.</bullet><bullet>Все <<cm:<conduit></conduit> <hyperlink>Портал</hyperlink>>> получают +4 <<gen,c:<mana></mana> <hyperlink>Мана</hyperlink>>> и +2 <knowledge></knowledge> <hyperlink>Знания</hyperlink> к доходу.</bullet><bullet>+10 к <<dat,c:<optactical></optactical> <hyperlink>Очки боевых заклинанийn{1}x{2}x{3}</hyperlink>>> и +10 к <<dat,c:<caststrategic></caststrategic> <hyperlink>Очки глобальных заклинанийn{1}x{2}x{3}</hyperlink>>> в начале игры.</bullet><bullet>В <<pre,c:<hyperlink>Сражение</hyperlink>>> короли-волшебники обладают способностью «<hyperlink>Концентрация потоков</hyperlink>» с начала игры.</bullet><bullet>Короли-волшебники обладают свойством «<hyperlink>Губернатор-волшебник</hyperlink>».</bullet></bulletlist>",
     "description_short": "<helpcolor>Могущественный король-волшебник, стремящийся покорить новый мир.</helpcolor>",
     "hyperlink": "<hyperlink>Король-волшебникln<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor></hyperlink>"
   },
@@ -114473,7 +114473,7 @@
   },
   {
     "id": "UNIT_UPGRADES_CORE@FLOATING",
-    "description": "Этот воин парит в воздухе:<bulletlist><bullet>Перемещение по любому ландшафту, кроме горного, стоит <eventColor>{FLOATING_MOVEMENT_FERTILE>CostOverride}</eventColor>. Перемещение по горам стоит <eventColor>{FLOATING_MOVEMENT_MOUNTAIN>CostOverride}</eventColor>.</bullet><bullet>Для перемещения над водой требуется знание мореходства.</bullet></bulletlist>",
+    "description": "Этот воин парит в воздухе:<bulletlist><bullet>Перемещение по любому ландшафту, кроме горного, стоит <eventColor>6</eventColor>. Перемещение по горам стоит <eventColor>8</eventColor>.</bullet><bullet>Для перемещения над водой требуется знание мореходства.</bullet></bulletlist>",
     "name": "Парящий"
   },
   {
@@ -114755,7 +114755,7 @@
   },
   {
     "id": "UPGRADES@LINE_ATTACK@MODIFIER",
-    "description": "Наносит урон воинам на линии в <eventColor>{LINE_ATTACK_UNIT_TARGETER_LINE>AREA>Length}</eventColor> кл."
+    "description": "Наносит урон воинам на линии в <eventColor>3</eventColor> кл."
   },
   {
     "id": "UPGRADES@MAGIC_DAMAGE",
