@@ -76,6 +76,51 @@
 
             const baseGrid = [["town_hall_i_town_center"], ["throne:throne"]];
 
+            function cityText(en, ru) {
+                return getUserSettings()?.language?.toUpperCase() === "RU" ? ru : en;
+            }
+
+            function cultureName(key) {
+                const culture = document.getElementById("cultureSelect").value;
+                const entry = jsonFactionCreation.find((entry) => entry.id === key || culture + "_" + entry.id === key);
+                return entry ? findOriginLocName(entry, entry.type).replace(/<[^>]*>/g, "") : key;
+            }
+
+            function selectedOverrides() {
+                const culture = document.getElementById("cultureSelect").value;
+                const sub = document.getElementById("subcultureSelect").value;
+                const replacements = new Map();
+                for (const key of [culture, sub]) {
+                    for (const entry of overrideBuildings[key] || []) {
+                        const [base, id] = entry.split(":");
+                        replacements.set(base, {id, key});
+                    }
+                }
+                return replacements;
+            }
+
+            function structureElement(id) {
+                return document.getElementById(selectedOverrides().get(id)?.id || id);
+            }
+
+            function setSubcultures(preferred) {
+                const culture = document.getElementById("cultureSelect").value;
+                const entry = jsonFactionCreation.find((entry) => entry.id === culture);
+                const select = document.getElementById("subcultureSelect");
+                select.replaceChildren();
+                for (const sub of jsonFactionCreation.filter((sub) => sub.type === "SubCulture" && sub.requirement === entry.name)) {
+                    const key = sub.id.startsWith(culture + "_") ? sub.id : culture + "_" + sub.id;
+                    select.add(new Option(cultureName(key), key));
+                }
+                select.disabled = select.options.length === 0;
+                if ([...select.options].some((option) => option.value === preferred)) select.value = preferred;
+            }
+
+            function changeCulture() {
+                setSubcultures();
+                reDrawAll();
+            }
+
             // generation of lines
             function getAnchor(el, side = "center") {
                 const rect = el.getBoundingClientRect();
@@ -114,14 +159,33 @@
                                               `;
             }
 
+            let liveCityRules;
+
+            function cityConnections() {
+                const nodes = new Map([...document.querySelectorAll(".entry[data-resid]")]
+                    .map(node => [node.dataset.resid, node]));
+                const connections = new Map(jsonCityTreeNodes.map(row => [row.id, row]));
+                for (const [resid, node] of nodes) {
+                    const requirements = liveCityRules?.buildings[resid]?.required_structure || [];
+                    if (!requirements.length) continue;
+                    const candidates = requirements.map(rule =>
+                        rule.providers.filter(provider => nodes.has(provider)));
+                    // Keep the curated layout when a property has several visible sources or no visible provider.
+                    if (candidates.some(group => group.length !== 1)) continue;
+                    const targets = [...new Set(candidates.flat())].map(id => ({id: nodes.get(id).id}));
+                    connections.set(node.id, {id: node.id, connectTo: targets, live: true});
+                }
+                return [...connections.values()];
+            }
+
             function updateConnector() {
                 const holderSVG = document.getElementById("SVGHolder");
 
-                for (let i = 0; i < jsonCityTreeNodes.length; i++) {
-                    for (let j = 0; j < jsonCityTreeNodes[i].connectTo.length; j++) {
+                for (const connection of cityConnections()) {
+                    for (let j = 0; j < connection.connectTo.length; j++) {
                         const affinity = ["materium", "astral", "nature", "chaos", "shadow", "order"];
 
-                        if (jsonCityTreeNodes[i].id.startsWith("*")) {
+                        if (connection.id.startsWith("*")) {
                             // affinity lenses/bolstering
                             for (const af of affinity) {
                                 const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
@@ -130,13 +194,13 @@
                                 path.setAttribute("fill", "none");
                                 path.setAttribute("stroke-width", "3");
 
-                                const affPath = jsonCityTreeNodes[i].id.replace("*", af + "_");
+                                const affPath = connection.id.replace("*", af + "_");
 
-                                const divOG = document.getElementById(affPath);
+                                const divOG = structureElement(affPath);
 
-                                const divTO = document.getElementById(jsonCityTreeNodes[i].connectTo[j].id);
+                                const divTO = structureElement(connection.connectTo[j].id);
                                 if (divOG == undefined || divTO == undefined) {
-                                    break;
+                                    continue;
                                 }
                                 path.setAttribute(
                                     "d",
@@ -160,30 +224,30 @@
                             path.setAttribute("stroke", "white");
                             path.setAttribute("fill", "none");
                             path.setAttribute("stroke-width", "2");
-                            if (jsonCityTreeNodes[i].id.indexOf("wizard_tower") != -1) {
+                            if (connection.id.indexOf("wizard_tower") != -1) {
                                 path.setAttribute("stroke", "green");
                             }
-                            if (jsonCityTreeNodes[i].id.indexOf("vampire_castle") != -1) {
+                            if (connection.id.indexOf("vampire_castle") != -1) {
                                 path.setAttribute("stroke", "red");
                             }
-                              if (jsonCityTreeNodes[i].id.indexOf("desecration_chambers") != -1) {
+                              if (connection.id.indexOf("desecration_chambers") != -1) {
                                 path.setAttribute("stroke", "red");
                                   path.setAttribute("stroke-dasharray", "6,10");
                             }
                             for (const [lineName, buildings] of Object.entries(Fortifications)) {
-                                if (buildings.includes(jsonCityTreeNodes[i].connectTo[j].id)) {
+                                if (buildings.includes(connection.connectTo[j].id)) {
                                     path.setAttribute("stroke", "rgb(100 100 100)");
                                     path.setAttribute("stroke-width", "4");
                                     extraOffset = 15;
                                 }
                             }
 
-                            const divOG = document.getElementById(jsonCityTreeNodes[i].id);
+                            const divOG = structureElement(connection.id);
 
-                            const divTO = document.getElementById(jsonCityTreeNodes[i].connectTo[j].id);
+                            const divTO = structureElement(connection.connectTo[j].id);
 
                             if (divOG == undefined || divTO == undefined) {
-                                break;
+                                continue;
                             }
 
                             path.setAttribute(
@@ -198,6 +262,10 @@
                                     j * extraOffset + 30
                                 )
                             );
+                            if (connection.live) {
+                                path.dataset.from = divTO.id;
+                                path.dataset.to = divOG.id;
+                            }
                             holderSVG.appendChild(path);
                         }
                     }
@@ -299,13 +367,16 @@
 
             const TownHalls = {
                 townHallsline: [
+                    "town_hall_i_town_center",
                     "town_hall_ii",
-                    "empty*2",
                     "town_hall_iii",
+                    "town_hall_iv"
+                ],
+                specialLine: [
+                    "empty*2",
                     "iii_unlock",
                     "iii_unlock_2",
-                    "iii_unlock_3",
-                    "town_hall_iv"
+                    "iii_unlock_3"
                 ]
             };
 
@@ -360,42 +431,35 @@
                 GetTree("Fortifications", Fortifications, parentFort, buildingMap);
                 // parent base
                 const parentBase = document.createElement("div");
-                parentBase.setAttribute("style", "display:flex");
                 treespace.appendChild(parentBase);
-                GetTree("", Start, parentBase, buildingMap);
-                GetTree("Base Buildings", TestBase, parentBase, buildingMap);
-                // tome stuff
-                //  if(tomeCheck)
+                GetTree("City", {...TownHalls, ...TestBase, ...Bath}, parentBase, buildingMap);
+                GetTree("Trade", TradeRoute, parentBase, buildingMap);
                 const parentWizard = document.createElement("div");
-                parentWizard.setAttribute("style", "width:1000px");
                 treespace.appendChild(parentWizard);
-                GetTree("", TownHalls, parentWizard, buildingMap);
-                GetTree("", Bath, parentWizard, buildingMap);
-                GetTree("", TradeRoute, parentWizard, buildingMap);
-                // wizard tower base
-
-                GetTree("Wizard Tower", wizardTower, parentWizard, buildingMap);
+                GetTree("Wizard Tower", {...wizardTower, ...affinity}, parentWizard, buildingMap);
                 // if vampire check
                 if (document.getElementById("vampireCheck").checked) {
                     GetTree("Vampire Castle", vampireTower, parentWizard, buildingMap);
                 }
-                GetTree("", affinity, parentWizard, buildingMap);
-                const parentTomes = document.createElement("div");
-                treespace.appendChild(parentTomes);
-                parentTomes.setAttribute("style", " position: relative;left: 293px;");
-                GetTree("Tome Buildings", GetTomeBuilds(buildingMap), parentTomes, buildingMap);
-                
-              
-                     for (const [overrideName, list] of Object.entries(overrideBuildings)) {
-                    for (const entry of list) {
-                        const [base, extra] = entry.split(":");
-                        connectBottom(base, extra);
-                    }
+                if (document.getElementById("tomeCheck").checked) {
+                    const parentTomes = document.createElement("div");
+                    treespace.appendChild(parentTomes);
+                    GetTree("Tome Buildings", GetTomeBuilds(buildingMap), parentTomes, buildingMap);
                 }
-                
-
                 SetLevelUpStuff();
                 updateConnector();
+                const params = new URLSearchParams({
+                    culture: document.getElementById("cultureSelect").value,
+                    sub: document.getElementById("subcultureSelect").value,
+                    tomes: document.getElementById("tomeCheck").checked ? "1" : "0",
+                    vampire: document.getElementById("vampireCheck").checked ? "1" : "0"
+                });
+                // Preserve legacy building anchors used by the RBBP guide.
+                const anchor = new URLSearchParams(location.hash.slice(1)).get("building") ||
+                    (location.hash && !location.hash.includes("=") ? location.hash.slice(1) : "");
+                if (anchor) params.set("building", anchor);
+                history.replaceState(null, "", "#" + params);
+                if (anchor) structureElement(anchor)?.scrollIntoView({block: "center", inline: "center"});
             }
 
             function GetAllBuildings() {
@@ -428,10 +492,34 @@
                 return TomeBuildings;
             }
 
-            function HandlePage() {
+            async function HandlePage() {
+                try {
+                    liveCityRules = await fetchJsonShared("/rbbp/Data/GEN/LiveCityRules.json");
+                } catch (error) {
+                    console.warn("City rules unavailable; using the bundled tree", error);
+                }
                 // combine extra additions
                 jsonStructureUpgrades = [...jsonStructureUpgrades, ...extraBuildings];
 
+                const select = document.getElementById("cultureSelect");
+                for (const culture of jsonFactionCreation.filter((entry) => entry.type === "Culture")) {
+                    select.add(new Option(cultureName(culture.id), culture.id));
+                }
+                const params = new URLSearchParams(location.hash.slice(1));
+                select.value = [...select.options].some((option) => option.value === params.get("culture")) ? params.get("culture") : "feudal";
+                setSubcultures(params.get("sub"));
+                document.getElementById("tomeCheck").checked = params.get("tomes") === "1";
+                document.getElementById("vampireCheck").checked = params.get("vampire") === "1";
+                const labels = {
+                    cityTreeTitle: cityText("City Tree", "Дерево построек города"),
+                    cultureLabel: cityText("Culture", "Культура"),
+                    subcultureLabel: cityText("Subculture", "Субкультура"),
+                    vampireLabel: cityText("Elder Vampire", "Древний вампир"),
+                    tomeLabel: cityText("Tome Buildings", "Постройки книг"),
+                    scrollHint: cityText("Scroll sideways to explore. Select a building for details.", "Прокручивайте схему по горизонтали. Нажмите на постройку, чтобы узнать подробности.")
+                };
+                for (const [id, text] of Object.entries(labels)) document.getElementById(id).textContent = text;
+                document.querySelector(".catalog-tree-scroll").setAttribute("aria-label", labels.cityTreeTitle);
                 reDrawAll();
             }
 
@@ -690,126 +778,50 @@
                     resources.add(`<${match[1]}></${match[1]}>`);
                 }
 
-                return Array.from(resources);
+                return Array.from(resources).join("");
             }
 
             function GetTree(nameOverride, lines, parent, buildingMap) {
-                var Holder = document.createElement("DIV");
-                Holder.className = "tree-grid";
-
-                const text = document.createElement("div");
-                text.className = "textTitle";
-
-                if (nameOverride != "") {
-                    text.innerHTML = nameOverride;
-                    Holder.className = "tree-grid2";
-                }
-
-                Holder.appendChild(text);
-                //Holder.setAttribute("style", "top: " + offset[0] + "px; left:" + offset[1] + "px;");
-
-                // Convert overrideBuildings into a lookup map for easy matching
-                const overrideMap = {};
-
-                //
-          
-                     for (const [overrideName, list] of Object.entries(overrideBuildings)) {
-                    for (const entry of list) {
-                        const [base, extra] = entry.split(":");
-                        if (!overrideMap[base]) overrideMap[base] = [];
-                        overrideMap[base].push({ overrideName, extra });
-                    }
-                }
-               
-                
-                   
-               
-               
-
-                // Now loop through TestBase
+                const holder = document.createElement("div");
+                holder.className = "tree-grid2";
+                holder.dataset.section = nameOverride;
+                const title = document.createElement("div");
+                title.className = "textTitle";
+                const titles = {
+                    Fortifications: "Укрепления", City: "Город", "Wizard Tower": "Башня волшебника",
+                    "Vampire Castle": "Замок вампира", "Tome Buildings": "Постройки книг", Trade: "Торговля"
+                };
+                title.textContent = cityText(nameOverride, titles[nameOverride]);
+                holder.append(title);
+                const replacements = selectedOverrides();
                 let row = 0;
-
                 for (const [lineName, buildings] of Object.entries(lines)) {
-                    let offsetby = [];
                     let col = 0;
-
-                    buildings.forEach((building) => {
-                        // Regular building
-                        // check if skipping
-                        let tomeID = "";
-                        let buildingName = "";
-                        if (nameOverride.indexOf("Tome") != -1) {
-                            tomeID = building.tomeId;
-                            buildingName = building.buildingId;
-                        } else {
-                            buildingName = building;
+                    const countBefore = holder.querySelectorAll(".entry").length;
+                    for (const building of buildings) {
+                        const tomeID = typeof building === "object" ? building.tomeId : "";
+                        const buildingName = typeof building === "object" ? building.buildingId : building;
+                        if (buildingName.startsWith("empty")) {
+                            col += Number(buildingName.split("*")[1] || 1);
+                            continue;
                         }
-
-                        const split = buildingName.split("*");
-                        if (split[1] != undefined) {
-                            // if theres a split, add to column and break
-                            col += parseInt(split[1]);
-                        } else {
-                            if (buildingMap.some((b) => b.buildingId === buildingName)) {
-                                if (document.getElementById("tomeCheck").checked) {
-                                    handleStructure(buildingName, row, col, Holder, undefined, tomeID, lineName);
-                                }
-                            } else {
-                                handleStructure(buildingName, row, col, Holder, undefined, tomeID, lineName);
-                            }
-
-                            //  row++; // move down one row for each building
-
-                            // Check if this building has overrides
-
-                            // After finishing the line, reset col for next line (if you need multiple columns)
-
-                            if (overrideMap[buildingName]) {
-                                for (const { overrideName, extra } of overrideMap[buildingName]) {
-                                    const name = overrideName.split("_")[0];
-                                    const checkmark = document.getElementById(name + "Check");
-                                    if (checkmark === null) {
-                                        if (!offsetby.includes(name)) {
-                                            offsetby.push(name);
-                                        }
-
-                                        handleStructure(
-                                            extra,
-                                            row + offsetby.indexOf(name) + 1,
-                                            col,
-                                            Holder,
-                                            overrideName,
-                                            tomeID,
-                                            lineName
-                                        );
-                                    } else if (checkmark.checked) {
-                                        if (!offsetby.includes(name)) {
-                                            offsetby.push(name);
-                                        }
-
-                                        handleStructure(
-                                            extra,
-                                            row + offsetby.indexOf(name) + 1,
-                                            col,
-                                            Holder,
-                                            overrideName,
-                                            tomeID,
-                                            lineName
-                                        );
-                                    }
-                                }
-                            }
-                            col++;
+                        const replacement = replacements.get(buildingName);
+                        if (buildingName.startsWith("iii_unlock") && !replacement) continue;
+                        const id = replacement?.id || buildingName;
+                        if (!buildingMap.some((b) => b.buildingId === id) || document.getElementById("tomeCheck").checked) {
+                            handleStructure(id, row, col, holder, replacement?.key, tomeID, lineName);
                         }
-                    });
-
-                    row = row + offsetby.length;
-
-                    row++;
+                        col++;
+                    }
+                    if (holder.querySelectorAll(".entry").length > countBefore) row++;
                 }
-
-                parent.appendChild(Holder);
-                resizeParentToFitChildren(Holder);
+                // Remove columns left empty by the old full-culture comparison layout.
+                const nodes = [...holder.querySelectorAll(".entry")];
+                const columns = [...new Set(nodes.map((node) => parseFloat(node.style.left)))].sort((a, b) => a - b);
+                for (const node of nodes) node.style.left = columns.indexOf(parseFloat(node.style.left)) * 210 + "px";
+                if (!nodes.length) return;
+                parent.append(holder);
+                resizeParentToFitChildren(holder);
             }
 
             function resizeParentToFitChildren(parent) {
@@ -838,34 +850,25 @@
                 var structure = splits[0];
                 var affinity = splits[1];
 
-                var overwrite = "";
-
-                for (i in jsonStructureUpgrades) {
-                    if (jsonStructureUpgrades[i].id === structure) {
-                        // no icon skips the unused ones that are still in the data
-                        if ("icon" in jsonStructureUpgrades[i]) {
-                            SetUpStructureNodeNew(
-                                jsonStructureUpgrades[i],
-                                rowIndex,
-                                columnIndex,
-                                Holder,
-                                override,
-                                tomeID,
-                                lineName
-                            );
-                        }
-                    }
+                // The dump reuses slugs for Town Center and the three Oathsworn quarters.
+                const variants = {
+                    town_hall_ii_castle: 4282082401405,
+                    paragon_quarters: {
+                        oathsworn_oath_of_strife: 5046586576921,
+                        oathsworn_oath_of_righteousness: 5046586576920,
+                        oathsworn_oath_of_harmony: 5046586576907
+                    }[document.getElementById("subcultureSelect").value]
+                };
+                const info = jsonStructureUpgrades.find((entry) => entry.id === structure && entry.icon &&
+                    (!variants[structure] || entry.resid === variants[structure]));
+                if (info) {
+                    SetUpStructureNodeNew(info, rowIndex, columnIndex, Holder, override, tomeID, lineName);
                 }
             }
 
             function SetUpStructureNodeNew(structureInfo, rowIndex, columnIndex, holder, override, tomeID, lineName) {
-                var i,
-                    x = "";
-
-                var nodeHeight = 120;
-                var nodeWidth = 300;
-
-                var tomeInfo = null;
+                var nodeHeight = 112;
+                var nodeWidth = 210;
 
                 var structureInfoLoc = jsonStructureUpgradesLocalized.find(
                     (entry) => entry.resid == structureInfo.resid
@@ -873,24 +876,9 @@
                 if (structureInfoLoc == undefined) {
                     structureInfoLoc = structureInfo;
                 }
-                var name = structureInfoLoc.name;
-
-                if (name.indexOf("<br>")) {
-                    name = name.replaceAll("</br>", " ");
-                    name = name.replaceAll("<br>", " ");
-                }
-
                 var newNode = CreateStructureNode(structureInfo, structureInfoLoc, override, tomeID, lineName);
-
-                //insert connection line
-                let extra = 0;
-                if (override) {
-                    extra = 20;
-                }
-                const top = rowIndex * nodeHeight;
-                const left = extra + columnIndex * nodeWidth;
-
-                //  newNode.setAttribute("style", "grid-row:" + rowIndex + "; grid-column:" + columnIndex + ";");
+                const top = 36 + rowIndex * nodeHeight;
+                const left = columnIndex * nodeWidth;
 
                 newNode.style.position = "absolute";
                 newNode.style.left = left + "px";
@@ -935,6 +923,18 @@
             ];
 
             function CreateStructureNode(structureInfo, structureInfoLoc, override, tomeID, lineName) {
+                if (extraBuildings.includes(structureInfo)) {
+                    const names = {
+                        town_hall_i_town_center: "Ратуша I: Центр города", town_hall_ii: "Ратуша II",
+                        town_hall_iii: "Ратуша III", town_hall_iv: "Ратуша IV", throne: "Престол"
+                    };
+                    structureInfoLoc = {...structureInfo, name: cityText(structureInfo.name, names[structureInfo.id])};
+                    if (structureInfo.id === "town_hall_i_town_center") {
+                        structureInfoLoc.description = cityText(structureInfo.description, "Расширяет город и открывает специализированные городские постройки.");
+                        structureInfoLoc.prediction_description = cityText(structureInfo.prediction_description,
+                            "<bulletlist><bullet>Войска в городе получают 5 <xp></xp> опыта каждый <turn></turn> ход</bullet><bullet>+20 <unitprod></unitprod> найма</bullet><bullet>+10 <happiness></happiness> стабильности города</bullet><bullet>+30 <food></food> пищи</bullet><bullet>+20 <production></production> производства</bullet></bulletlist>");
+                    }
+                }
                 var i,
                     x = "";
                 var name = structureInfoLoc.name;
@@ -957,9 +957,11 @@
                      img.setAttribute("src", "/rbbp/Icons/UpgradeIcons/" + structureInfo.icon + ".png");
                 }
           
-                img.setAttribute("height", "60px");
+                img.setAttribute("height", "40px");
+                img.alt = "";
                 img.className = "structureNodeIcon";
                 newNode.setAttribute("id", structureInfo.id);
+                if (Number.isSafeInteger(structureInfo.resid)) newNode.dataset.resid = String(structureInfo.resid);
 
                 var spa = document.createElement("SPAN");
                 spa.className = "structureNodeTitle";
@@ -992,17 +994,17 @@
                 spa2.innerHTML += structureInfoLoc.description + "<br>";
 
                 if (structureInfo.id.indexOf("town_hall_iii_") != -1) {
-                    description += "<br><br> Unlocks T3 Culture Units";
+                    description += cityText("<br><br>Unlocks T3 Culture Units", "<br><br>Открывает войска культуры III ранга");
                 }
                 if (structureInfo.id.indexOf("town_hall_ii_") != -1) {
-                    description += "<br><br> Unlocks T2 Culture Units";
+                    description += cityText("<br><br>Unlocks T2 Culture Units", "<br><br>Открывает войска культуры II ранга");
                 }
 
                 spa2.innerHTML += description + "<br>";
 
                 if (structureInfo.requirement_description != "") {
                     spa2.innerHTML +=
-                        "<br>Requirements:<bulletlist>" +
+                        cityText("<br>Requirements:<bulletlist>", "<br>Требования:<bulletlist>") +
                         "<bullet>" +
                         structureInfoLoc.requirement_description +
                         "</bullet></bulletlist><br>";
@@ -1010,7 +1012,7 @@
 
                 if ("boost_requirements" in structureInfo) {
                     spa2.innerHTML +=
-                        "<br>Boost Requirements:<bulletlist>" +
+                        cityText("<br>Boost Requirements:<bulletlist>", "<br>Условия ускорения:<bulletlist>") +
                         "<bullet>" +
                         structureInfoLoc.boost_requirements +
                         "</bullet></bulletlist>";
@@ -1042,7 +1044,7 @@
                 for (const { key, color, title } of iconBackgroundMap) {
                     if (key == override) {
                         newNodeBackground.style.backgroundColor = color;
-                        spa2.innerHTML += "<br>" + title;
+                        spa2.innerHTML += "<br>" + cultureName(key);
                     }
                 }
 
@@ -1052,7 +1054,7 @@
                     var Type = document.createElement("DIV");
                     Type.innerHTML += "+" + type;
 
-                    Type.setAttribute("style", "position:absolute; bottom:40px; left:75px; z-index:3;");
+                    Type.setAttribute("style", "position:absolute; bottom:30px; left:50px; right:4px; z-index:3;");
                     //Type.setAttribute("style", "float:left; z-index:3");
                     newNodeBackground.append(Type);
                 }
@@ -1063,20 +1065,19 @@
                 newNodeBackground.append(img);
 
                 addTooltipListeners(newNode, spa2);
+                newNode.tabIndex = 0;
+                newNode.setAttribute("role", "button");
+                newNode.setAttribute("aria-label", name.replace(/<[^>]*>/g, ""));
+                newNode.addEventListener("focus", () => TurnOnTooltip(spa2));
+                newNode.addEventListener("keydown", (event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        TurnOnTooltip(spa2);
+                    }
+                });
                 return newNode;
             }
 
-            function toggle(source) {
-                checkboxes = document.getElementsByName("checkToggle");
-                // Create a new 'change' event
-
-                // Dispatch it.
-
-                for (var checkbox in checkboxes) {
-                    checkboxes[checkbox].checked = source.checked;
-                }
-                reDrawAll();
-            }
         </script>
 
         <title>Age of Wonders 4 RbbP - City Tree</title>
@@ -1085,131 +1086,18 @@
     <body>
         <div id="header"></div>
         <div id="General" class="w3-container w3-border city">
-            <div class="textblocktitle">City Tree</div>
-
+            <div class="textblocktitle" id="cityTreeTitle">City Tree</div>
             <div class="city-tree-filters">
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="toggleAllCheck"
-                        checked="checked"
-                        onchange="toggle(this)" />
-                    Toggle All
+                <label><span id="cultureLabel">Culture</span>
+                    <select id="cultureSelect" onchange="changeCulture()"></select>
                 </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="vampireCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Elder Vampire
+                <label><span id="subcultureLabel">Subculture</span>
+                    <select id="subcultureSelect" onchange="reDrawAll()"></select>
                 </label>
-                <label class="switch">
-                    <input type="checkbox" name="checkToggle" id="tomeCheck" checked="checked" onchange="reDrawAll()" />
-                    Tomes
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="barbarianCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Barbarian
-                </label>
-                <label class="switch">
-                    <input type="checkbox" name="checkToggle" id="darkCheck" checked="checked" onchange="reDrawAll()" />
-                    Dark
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="feudalCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Feudal
-                </label>
-                <label class="switch">
-                    <input type="checkbox" name="checkToggle" id="highCheck" checked="checked" onchange="reDrawAll()" />
-                    High
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="industriousCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Industrious
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="mysticCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Mystic
-                </label>
-
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="reaverCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Reaver
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="primalCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Primal
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="oathswornCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Oathsworn
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="architectCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Architect
-                </label>
-                   <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="nomadCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Nomad
-                </label>
-                <label class="switch">
-                    <input
-                        type="checkbox"
-                        name="checkToggle"
-                        id="mercantileCheck"
-                        checked="checked"
-                        onchange="reDrawAll()" />
-                    Mercantile
-                </label>
+                <label class="switch"><input type="checkbox" id="vampireCheck" onchange="reDrawAll()" /><span id="vampireLabel">Elder Vampire</span></label>
+                <label class="switch"><input type="checkbox" id="tomeCheck" onchange="reDrawAll()" /><span id="tomeLabel">Tome Buildings</span></label>
             </div>
+            <p id="scrollHint" class="city-tree-hint"></p>
             <div class="catalog-tree-scroll" tabindex="0" role="region" aria-label="City tree">
                 <div class="tree-space" id="treespacegeneral">
                     <svg id="SVGHolder" aria-hidden="true"></svg>
@@ -1221,37 +1109,68 @@
 <style>
     .tree-grid2 {
         position: relative;
-        margin: 80px;
+        margin: 0 8px 24px;
+        padding-bottom: 8px;
 
-        background-color: #1c645d59;
-        border-width: 5px;
+        background-color: #1c645d22;
+        border-width: 1px;
         border-style: solid;
         border-image: url(/rbbp/Icons/9slicetooltip.png);
         border-image-slice: 10 10 10 10;
     }
-    .tree-grid {
-        position: relative;
-        margin: 80px;
-    }
-
     .textTitle {
-        color: white;
-        position: relative;
-        top: -20px;
+        color: #d7c297;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        font-size: 15px;
     }
 
     .tree-space {
         width: max-content;
         display: flex;
         position: relative;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     .city-tree-filters {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: end;
+        gap: 10px 20px;
+        margin: 12px auto;
+    }
+    .city-tree-filters label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 13px;
+        color: #d7c297;
+    }
+    .city-tree-filters label.switch {
+        flex-direction: row;
+        align-items: center;
+        min-height: 44px;
+    }
+    .city-tree-filters select {
+        font: inherit;
+        color: #edf2fa;
+        background: #18232e;
+        border: 1px solid #687688;
+        padding: 8px;
+        min-height: 44px;
+        max-width: 100%;
+    }
+    .city-tree-hint {
+        text-align: center;
+        font-size: 13px;
+        color: #bbcdf6;
+        margin: 12px;
+    }
+    .catalog-tree-scroll {
+        padding: 8px 0;
     }
 
     #SVGHolder {
@@ -1273,17 +1192,17 @@
         position: relative;
 
         background-image: url(/rbbp/Icons/tooltipBG.png);
-        font-size: 11px;
+        box-sizing: border-box;
+        font-size: 12px;
         color: #bbcdf6;
-        min-height: 60px;
-        max-height: 130px;
-        width: 225px;
+        height: 96px;
+        width: 184px;
         text-align: left;
         border-style: solid;
         border-image: url(/rbbp/Icons/9slicetooltip.png);
         border-image-slice: 4 10 4 10 fill;
         text-shadow: 2px 2px black;
-        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
         padding: 5px;
         z-index: 2;
@@ -1304,6 +1223,9 @@
         padding-top: 4px;
         background-image: linear-gradient(to right, rgba(44, 60, 78, 0.6), rgba(97, 47, 162, 0));
         position: relative;
+        min-height: 30px;
+        line-height: 15px;
+        overflow-wrap: anywhere;
     }
 
     .structureNodeDesc {
@@ -1321,6 +1243,15 @@
 
     .structureNode:hover {
         filter: brightness(150%);
+    }
+    .entry:focus-visible {
+        outline: 2px solid #d7c297;
+        outline-offset: 2px;
+    }
+    @media (max-width: 600px) {
+        .city-tree-filters { justify-content: start; margin: 12px 8px; }
+        .city-tree-filters label { max-width: 100%; }
+        .city-tree-filters select { max-width: calc(100vw - 40px); }
     }
 </style>
 <footer>
