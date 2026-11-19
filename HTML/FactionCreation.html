@@ -16,38 +16,321 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
        <script src="/rbbp/Data/Init.js"></script>
+        <style>
+            #buttonHolder .w3-bar-item {
+                height: auto;
+                min-height: 36px;
+                padding: 5px 8px;
+            }
+
+            #dataHolder .mod_card {
+                padding: 2px;
+            }
+
+            #dataHolder .faction-card-body {
+                box-sizing: border-box;
+                min-width: 0;
+                margin: 2px 0;
+                padding: 6px 8px;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                column-gap: 10px;
+                row-gap: 4px;
+                align-items: start;
+            }
+
+            #Cultures .faction-card-body:has(> .culture-options) {
+                grid-template-columns: 52px minmax(0, 1fr);
+            }
+
+            .faction-card-header {
+                grid-column: 1 / -1;
+                display: flex;
+                flex-wrap: nowrap !important;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .faction-card-header .mod_image {
+                flex: 0 0 52px;
+                box-sizing: border-box;
+                width: 52px;
+                height: 52px;
+                padding: 0;
+                background: none;
+                object-fit: contain;
+            }
+
+            .faction-card-heading {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+                gap: 2px 8px;
+                min-width: 0;
+            }
+
+            .faction-card-heading .spell_cost {
+                margin: 0;
+            }
+
+            .faction-card-heading .spell_cost:empty {
+                display: none;
+            }
+
+            .faction-card-header .mod_name,
+            .faction-card-header .abilityLineSlot {
+                margin: 0;
+                padding: 0 !important;
+                overflow-wrap: anywhere;
+            }
+
+            .faction-card-header .abilityLineSlot {
+                display: flex;
+                flex: none;
+                gap: 2px;
+            }
+
+            .faction-card-header .mountToolTip {
+                align-self: flex-start;
+                flex: none;
+                margin-left: auto;
+            }
+
+            .faction-card-content {
+                grid-column: -2 / -1;
+                min-width: 0;
+                overflow-wrap: anywhere;
+            }
+
+            #dataHolder .faction-card-body .mod_description {
+                float: none;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #dataHolder .faction-card-body .mod_description > br:first-child {
+                display: none;
+            }
+
+            .culture-options {
+                grid-column: 1;
+                grid-row: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+            }
+
+            .culture-options button {
+                position: relative;
+                width: 34px;
+                height: 34px;
+                padding: 2px;
+                background: transparent;
+                border: 0;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .culture-options button:hover,
+            .culture-options button[aria-pressed="true"] {
+                box-shadow: 0 0 0 1px #e5c482;
+            }
+
+            .culture-options button:focus-visible {
+                outline: 2px solid #e5c482;
+                outline-offset: 2px;
+            }
+
+            .culture-options button:is(:hover, :focus-visible)::after {
+                content: attr(aria-label);
+                position: absolute;
+                z-index: 2;
+                left: calc(100% + 6px);
+                top: 50%;
+                transform: translateY(-50%);
+                width: max-content;
+                max-width: min(200px, 55vw);
+                padding: 4px 7px;
+                border-radius: 3px;
+                background: #21182f;
+                color: #f5e9d2;
+                font: inherit;
+                text-align: left;
+                pointer-events: none;
+            }
+
+            .culture-options button img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            #Cultures [data-subculture-card] {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0;
+                margin-top: 6px;
+            }
+
+            #Cultures [data-subculture-card] .faction-card-body {
+                float: none;
+                width: 100%;
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            #Cultures [data-subculture-card] .faction-card-content {
+                grid-column: 1;
+            }
+        </style>
         <script>
-            function HandlePage() {
-                showTraitsWithArgument("Form", "Form Trait", "");
-                showTraitsWithArgument("society", "Order Society Traits", "order");
-                showTraitsWithArgument("society", "Chaos Society Traits", "chaos");
-                showTraitsWithArgument("society", "Nature Society Traits", "nature");
-                showTraitsWithArgument("society", "Shadow Society Traits", "shadow");
-                showTraitsWithArgument("society", "Materium Society Traits", "matter");
-                showTraitsWithArgument("society", "Astral Society Traits", "arcana");
-                  showTraitsWithArgument("Visions", "Prophecy Traits", "visions");
-                showTraitsWithArgument("Ruler Origin", "Ruler Origins", "");
-                showTraitsWithArgument("Culture", "Cultures", "");
-                showTraitsWithArgument("SubCulture", "Subcultures", "");
+            function layoutFactionCard(card) {
+                const body = card.querySelector(".mod_image_holder");
+                const name = body.querySelector("#modname");
+                const icon = body.querySelector("#modicon");
+                const affinities = body.querySelector("#modtier");
+                const dlc = name.querySelector(".mountToolTip");
+                const header = document.createElement("div");
+                header.className = "faction-card-header";
+                const heading = document.createElement("div");
+                heading.className = "faction-card-heading";
+                heading.append(name, body.querySelector("#modcost"));
+                header.append(icon, affinities, heading);
+                if (dlc) {
+                    dlc.removeAttribute("style");
+                    header.append(dlc);
+                }
+
+                const content = document.createElement("div");
+                content.className = "faction-card-content";
+                content.append(body.querySelector("#moddescription"));
+                body.classList.add("faction-card-body");
+                const units = body.querySelector("#affectUnitTypes");
+                if (units.childNodes.length) content.append(units);
+                body.replaceChildren(header, content);
+                return content;
+            }
+
+            async function HandlePage() {
+                const ru = getUserSettings().language === "RU";
+                const sections = [
+                    ["Form", "Form Trait", "", "Особенности облика"],
+                    ["society", "Order Society Traits", "order", "Социальные особенности порядка"],
+                    ["society", "Chaos Society Traits", "chaos", "Социальные особенности хаоса"],
+                    ["society", "Nature Society Traits", "nature", "Социальные особенности природы"],
+                    ["society", "Shadow Society Traits", "shadow", "Социальные особенности тени"],
+                    ["society", "Materium Society Traits", "matter", "Социальные особенности материи"],
+                    ["society", "Astral Society Traits", "arcana", "Социальные особенности астрала"],
+                    ["Visions", "Prophecy Traits", "visions", "Пророчества"],
+                    ["Ruler Origin", "Ruler Origins", "", "Происхождение правителя"],
+                    ["Culture", "Cultures", "", "Культуры"],
+                ];
+                for (const [type, tab, affinity, localized] of sections) {
+                    await showTraitsWithArgument(type, tab, affinity);
+                    if (type !== "Culture") {
+                        const panel = document.getElementById(tab);
+                        for (const card of panel.querySelectorAll(".mod_card")) layoutFactionCard(card);
+                    }
+                    if (ru) {
+                        const button = document.getElementById(tab + "-button");
+                        button.textContent = button.textContent.replace(tab, localized);
+                    }
+                }
+
+                const cultures = jsonFactionCreation.filter(trait => trait.type === "Culture");
+                const subcultures = jsonFactionCreation.filter(trait => trait.type === "SubCulture");
+                const cards = document.querySelectorAll("#Cultures > .mod_card");
+                const cultureFilters = new Map();
+                cultures.forEach((culture, index) => {
+                    const children = subcultures.filter(trait => trait.requirement === culture.name);
+                    const card = cards[index];
+                    const content = layoutFactionCard(card);
+                    if (!children.length) return;
+                    const parentText = card.textContent.toLocaleLowerCase();
+                    const picker = document.createElement("div");
+                    picker.className = "culture-options";
+                    picker.setAttribute("role", "group");
+                    picker.setAttribute("aria-label", ru ? "Подкультуры" : "Subcultures");
+                    content.before(picker);
+
+                    const choices = children.map(trait => {
+                        const fragment = spell_card_template.content.cloneNode(true);
+                        const preview = fragment.firstElementChild;
+                        preview.dataset.subcultureCard = trait.id;
+                        showTrait(trait.id, preview);
+                        layoutFactionCard(preview);
+                        preview.style.display = "none";
+
+                        const name = preview.querySelector("#modname").textContent.trim();
+                        const button = document.createElement("button");
+                        button.type = "button";
+                        button.setAttribute("aria-label", name);
+                        button.setAttribute("aria-pressed", "false");
+                        const icon = document.createElement("img");
+                        icon.src = preview.querySelector("#modicon").src;
+                        icon.alt = "";
+                        button.append(icon);
+                        picker.append(button);
+                        content.append(fragment);
+                        return { preview, button };
+                    });
+                    const showSelected = selected => {
+                        for (const choice of choices) {
+                            const active = choice === selected;
+                            choice.button.setAttribute("aria-pressed", active);
+                            choice.preview.style.display = active ? "block" : "none";
+                        }
+                    };
+                    for (const choice of choices) {
+                        choice.button.addEventListener("click", () => {
+                            showSelected(choice.button.getAttribute("aria-pressed") === "true" ? null : choice);
+                        });
+                    }
+                    cultureFilters.set(card, query => {
+                        if (!query || parentText.includes(query)) return true;
+                        const match = choices.find(({ preview }) => preview.textContent.toLocaleLowerCase().includes(query));
+                        if (match) showSelected(match);
+                        return Boolean(match);
+                    });
+                });
+
+                const url = new URL(location.href);
+                if (url.searchParams.get("type") === "Subcultures") {
+                    url.searchParams.set("type", "Cultures");
+                    history.replaceState({}, "", url);
+                }
+
+                if (ru) {
+                    document.getElementById("faction-title").textContent = "Особенности фракции";
+                    document.title = "Age of Wonders 4 RbbP - Особенности фракции";
+                    document.getElementById("faction-filter-label").textContent = "Фильтр";
+                    document.getElementById("name-button").textContent = "Название";
+                }
                 SetLevelUpStuff();
                 SetCollapsibleStuff();
-                $("#filterInput").on("change input", function () {
-                    ShowAllDivsWithFilters("mod_card");
-                    SetLevelUpStuff();
+                const filter = document.getElementById("filterInput");
+                filter.addEventListener("input", () => {
+                    const query = filter.value.trim().toLocaleLowerCase();
+                    for (const card of document.querySelectorAll("#dataHolder .mod_card:not([data-subculture-card])")) {
+                        const matches = cultureFilters.get(card)?.(query) ?? card.textContent.toLocaleLowerCase().includes(query);
+                        card.style.display = matches ? "table" : "none";
+                    }
                 });
             }
         </script>
 
-        <title>Age of Wonders 4 RbbP - Faction Creation</title>
+        <title>Age of Wonders 4 RbbP - Faction Traits</title>
     </head>
 
     <body>
         <div id="header"></div>
 
-        <div class="textblocktitle">Faction Creation</div>
+        <div class="textblocktitle" id="faction-title">Faction Traits</div>
         <div style="height: auto; color: white; text-align: center">
             <br />
-            Filter<br />
+            <label for="filterInput" id="faction-filter-label">Filter</label><br />
             <div style="margin-right: auto; margin-left: auto; width: 500px">
                 <input type="text" class="searchbar" id="filterInput" />
             </div>

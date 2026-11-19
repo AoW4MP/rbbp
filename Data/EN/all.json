@@ -121,7 +121,7 @@
   },
   {
     "id": "DLC@SILVERSEAS@CULTURE_MERCANTILE@MERCANTILE_CARTEL",
-    "fpg_description": "Your people are cunning merchants, bending the laws to their benefit, profiting unnoticed from their rivals:<bulletlist><bullet>[spellref,GLOBAL.PROPERTIES.OBSERVANT]Observant[/spellref] units apply [spellref,GLOBAL.PROPERTIES.LEVERAGE]Leverage[/spellref] to enemy units when not engaged in combat, before delivering powerful [hyperlink,GLOBAL.FlankingConcept]<flank></flank> Flanking[/hyperlink] attacks.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] are invisible to other factions unless one of their units stands on top of the Route.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] can be established to other [hyperlink,GLOBAL.EmpireConcept]Empire[/hyperlink] without needing a [hyperlink,GLOBAL.TradeAgreementConcept]Free Trade Agreement[/hyperlink].</bullet><bullet>Access to the [spellref,GLOBAL.SIEGE_PROJECTS.EXPLOIT_NETWORKS]Exploit Networks[/spellref] Siege Project when besieging cities with which you have a [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink].</bullet></bulletlist>",
+    "fpg_description": "Your people are cunning merchants, bending the laws to their benefit, profiting unnoticed from their rivals:<bulletlist><bullet>[spellref,GLOBAL.PROPERTIES.OBSERVANT]Observant[/spellref] units apply [spellref,GLOBAL.PROPERTIES.LEVERAGE]Leverage[/spellref] to enemy units when not engaged in combat, before delivering powerful [hyperlink,GLOBAL.FlankingConcept]Flanking[/hyperlink] attacks.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Routes[/hyperlink] are invisible to other factions unless one of their units stands on top of the Route.</bullet><bullet>Your [hyperlink,GLOBAL.TradeRouteConcept]Trade Routes[/hyperlink] can be established to other [hyperlink,GLOBAL.EmpireConcept]Empires[/hyperlink] without needing a [hyperlink,GLOBAL.TradeAgreementConcept]Free Trade Agreement[/hyperlink].</bullet><bullet>Access to the [spellref,GLOBAL.SIEGE_PROJECTS.EXPLOIT_NETWORKS]Exploit Networks[/spellref] Siege Project when besieging cities with which you have a [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink].</bullet><bullet>[hyperlink,GLOBAL.TradeRouteConcept]Trade Routes[/hyperlink] cost 20% less to establish in their cities.</bullet><bullet>Each [hyperlink,GLOBAL.TradeRouteConcept]Trade Route[/hyperlink] originating from their cities gains <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink] and <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink] for each province it passes through.</bullet></bulletlist>",
     "DLC": "SILVERSEAS",
     "lorename": "Mercantile Cartel",
     "name": "Cartel"
@@ -5567,7 +5567,7 @@
   },
   {
     "id": "COLONYUPGRADES_STRATEGIC@NATURE_FORTIFIER",
-    "description": "Nature Buff and Healing <hyperlink>Spell</hyperlink> heal for 10 <hyperlink>{<temphp></temphp>}</hyperlink>.",
+    "description": "Nature Buff and Healing <hyperlink>Spell</hyperlink> dispell enemy <hyperlink>Negative Status Effect</hyperlink> (1).",
     "name": "Nature Fortifier"
   },
   {
@@ -5837,7 +5837,7 @@
   },
   {
     "id": "COLONYUPGRADES_STRATEGIC@PROVINCE_IMPROVEMENT_GOLEM_MINE",
-    "description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>+5 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent <quarry></quarry> <hyperlink>Quarry</hyperlink>.</bullet><bullet>Spawns an Iron Golem on the owner's side for <hyperlink>Combat</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Counts as a <mine></mine> <hyperlink>Mine</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink>.</bullet><bullet>+5 <structureprod></structureprod> <hyperlink>Production</hyperlink> per adjacent <quarry></quarry> <hyperlink>Quarry</hyperlink> or <mine></mine> <hyperlink>Mine</hyperlink>.</bullet><bullet>Spawns an Iron Golem on the owner's side for <hyperlink>Combat</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Counts as a <mine></mine> <hyperlink>Mine</hyperlink>.</bullet></bulletlist>",
     "display_description": "Spawns an Iron Golem on the owner's side for <hyperlink>Combat</hyperlink> in this <hyperlink>Domain</hyperlink>.",
     "name": "<mine></mine> Golem Mine"
   },
@@ -6153,7 +6153,7 @@
   },
   {
     "id": "COLONYUPGRADES_STRATEGIC@SHRINE_OF_THE_WARGOD",
-    "domain_effect": "During combat in this city's <hyperlink>Domain</hyperlink>, all friendly units gain +<eventColor>{morale}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.",
+    "domain_effect": "During combat in this city's <hyperlink>Domain</hyperlink>, all friendly units gain +<eventColor>10</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.",
     "domain_effect_name": "Wargod's Spirit",
     "effect_description": "+000004930000071 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>",
     "name": "Shrine of the Wargod",
@@ -6348,7 +6348,7 @@
   },
   {
     "id": "COLONYUPGRADES_STRATEGIC@WIZARDS_TOWER_LEVEL_II_UPGRADE_II_NATURE",
-    "description": "Nature Buff and Healing <hyperlink>Spell</hyperlink> heal for +10 <hyperlink>{<temphp></temphp>}</hyperlink>.",
+    "description": "Nature Buff and Healing <hyperlink>Spell</hyperlink> dispell enemy <hyperlink>Negative Status Effect</hyperlink> (1).",
     "name": "Nature Bolstering Matrix"
   },
   {
@@ -8175,8 +8175,8 @@
   {
     "id": "CULTURE_BARB@INVIGORATE",
     "description": "Grants friendly units in a <eventColor>{INVIGORATE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet><eventColor>{INVIGORATE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink></bullet><bullet><hyperlink>Strengthened</hyperlink></bullet><bullet><hyperlink>Regeneration</hyperlink></bullet></bulletlist>",
-    "description_2": "Grants friendly units in a <eventColor>{INVIGORATE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet><eventColor>{INVIGORATE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink></bullet><bullet><eventColor>{strengthAmount}</eventColor> <hyperlink>Strengthened</hyperlink></bullet><bullet><eventColor>{regenAmount}</eventColor> <hyperlink>Regeneration</hyperlink></bullet></bulletlist>",
-    "description_champion": "Invigorate:<bulletlist><bullet>Grants an additional <eventColor>{stregnthAmount}</eventColor> <hyperlink>Strengthened</hyperlink>.</bullet><bullet>Grants an additional <eventColor>{regenAmount}</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>{cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
+    "description_2": "Grants friendly units in a <eventColor>{INVIGORATE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet><eventColor>{INVIGORATE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink></bullet><bullet><eventColor>2</eventColor> <hyperlink>Strengthened</hyperlink></bullet><bullet><eventColor>2</eventColor> <hyperlink>Regeneration</hyperlink></bullet></bulletlist>",
+    "description_champion": "Invigorate:<bulletlist><bullet>Grants an additional <eventColor>1</eventColor> <hyperlink>Strengthened</hyperlink>.</bullet><bullet>Grants an additional <eventColor>1</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
     "name": "Invigorate",
     "name_champion": "Champion Invigorate"
   },
@@ -11278,7 +11278,7 @@
   },
   {
     "id": "CULTURE_FEUDAL@SUBCULTURE@ARISTOCRACY",
-    "description": "Your cities form powerful Houses, able to field efficient armies when led by their Liege Lords:<bulletlist><bullet>Each city has a <hyperlink>Feudal House</hyperlink> led by its governor, who becomes the House's <hyperlink>Liege lord</hyperlink>.<Bullet></Bullet>Units produced in Feudal cities become part of that city's <hyperlink>Feudal House</hyperlink>, gaining <hyperlink><xp></xp> Experience</hyperlink> as their Liege Lord gains <renown></renown> <hyperlink>Renown</hyperlink>.<Bullet></Bullet>Certain units can promote into higher Tier units on attaining Legendary Rank.</bullet></bulletlist><br><br>In RbBP, House units gain 5 experience per 10 Renown earned by their Liege Lord. The Liege Lord bonus applies only to units in their army.",
+    "description": "Your cities form powerful Houses, able to field efficient armies when led by their Liege Lords:<bulletlist><bullet>Each city has a <hyperlink>Feudal House</hyperlink> led by its governor, who becomes the House's <hyperlink>Liege lord</hyperlink>.<Bullet></Bullet>Units produced in Feudal cities become part of that city's <hyperlink>Feudal House</hyperlink>, gaining <hyperlink><xp></xp> Experience</hyperlink> as their Liege Lord gains <renown></renown> <hyperlink>Renown</hyperlink>.<Bullet></Bullet>Certain units can promote into higher Tier units on attaining Legendary Rank.</bullet></bulletlist>",
     "lorename": "Aristocracy",
     "name": "Aristocracy",
     "tome_name": "Feudal - Aristocracy"
@@ -11301,7 +11301,7 @@
   },
   {
     "id": "CULTURE_FEUDAL@SUBCULTURE@MONARCHY@UNIT_PROPERTY@MONARCHS_DOMINION",
-    "description": "The unit is the absolute Monarch of their faction:<bulletlist><bullet>In combat, activates <hyperlink>For the monarch</hyperlink> on friendly units.</bullet><bullet>While army leader, all units in the army with <hyperlink>For the monarch</hyperlink> cost -<eventColor>{FEUDAL_MONARCHS_DOMINION_UPKEEP_MOD>ResolvedUpkeepModifier}</eventColor>% <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>This unit gains: +<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>, +<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>, +<eventColor>{LED_BY_MONARCH_MOD>ResolvedMultiplier}</eventColor>% damage, and +<eventColor>{LED_BY_MONARCH_MORALE>MoraleBonus}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist>",
+    "description": "The unit is the absolute Monarch of their faction:<bulletlist><bullet>In combat, activates <hyperlink>For the monarch</hyperlink> on friendly units.</bullet><bullet>While army leader, all units in the army with <hyperlink>For the monarch</hyperlink> cost -<eventColor>100</eventColor>% <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>This unit gains: +<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>, +<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>, +<eventColor>{LED_BY_MONARCH_MOD>ResolvedMultiplier}</eventColor>% damage, and +<eventColor>{LED_BY_MONARCH_MORALE>MoraleBonus}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist>",
     "name": "Monarch's Dominion",
     "property_name": "Defending the Monarchy",
     "unit_prop_description": "This unit is fighting in their Domain or alongside their <hyperlink>Ruler</hyperlink>, granting this unit:<bulletlist><bullet>+<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> and +<eventColor>{LED_BY_MONARCH_STAT>BONUS>DEFENSE>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+<eventColor>{LED_BY_MONARCH_MOD>ResolvedMultiplier}</eventColor>% damage</bullet><bullet>+<eventColor>{LED_BY_MONARCH_MORALE>MoraleBonus}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink></bullet></bulletlist>"
@@ -12186,7 +12186,7 @@
     "id": "CULTURE_HIGH@HIGH",
     "bio": "They take great pride in their refined traditions and wish for others to reach similar heights.",
     "description": "<bulletlist><bullet>Has higher <happiness></happiness> <hyperlink>City Stability</hyperlink> and <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet><bullet>Units are strengthened with <hyperlink>Awakened</hyperlink>, revealing their hidden potential.</bullet><bullet><hyperlink>Alignment Agenda</hyperlink>.</bullet></bulletlist>",
-    "description_alignment": "<eventColor>{alignmentbonus}</eventColor> <relation5></relation5> <hyperlink>Alignment</hyperlink>.",
+    "description_alignment": "<eventColor>+10</eventColor> <relation5></relation5> <hyperlink>Alignment</hyperlink>.",
     "lore": "<br><helpcolor>A highly developed society whose members strive for harmony. When threatened, however, they wield their guiding light as a weapon.</helpcolor>",
     "name": "High",
     "tome_description": "This research is available to rulers with the <hyperlink>High</hyperlink> culture. They specialize in buffing allies and diplomacy."
@@ -13129,7 +13129,7 @@
   {
     "id": "CULTURE_INDUSTRIOUS@INDUSTRIOUS",
     "bio": "They have respect for smiths and other artisans, preferring a strong wall over a decorated palace.",
-    "description": "<bulletlist><bullet>Has higher <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>Through <hyperlink>Bolstering</hyperlink>, units get sturdier as they get hit in battle.</bullet><bullet><hyperlink>Scout Prospecting</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>Has higher <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>Through <hyperlink>Indestructible</hyperlink>, units get sturdier as they get hit in battle.</bullet><bullet><hyperlink>Scout Prospecting</hyperlink>.</bullet></bulletlist>",
     "lore": "<br><helpcolor>Master builders who value grand cities and strong armor, preferring a defensive attitude over an aggressive one.</helpcolor>",
     "name": "Industrious",
     "tome_description": "This research is available to rulers with the <hyperlink>Industrious</hyperlink> culture. They specialize in defenses and exploiting natural resources."
@@ -13178,8 +13178,8 @@
   {
     "id": "CULTURE_INDUSTRIOUS@TRANSFER_ARMOR",
     "description": "Target friendly unit:<bulletlist><bullet>Gains 2 <hyperlink>Bolstered defense</hyperlink></bullet></bulletlist>",
-    "description_2": "Target friendly unit:<bulletlist><bullet>Gains 2 <hyperlink>Bolstered defense</hyperlink></bullet><bullet>Gains <eventColor>{resistAmount}</eventColor> <hyperlink>Bolstered resistance</hyperlink></bullet></bulletlist>",
-    "description_champion": "Grant Defense:<bulletlist><bullet>Grants <eventColor>{resistAmount}</eventColor> <hyperlink>Bolstered resistance</hyperlink>.</bullet></bulletlist>",
+    "description_2": "Target friendly unit:<bulletlist><bullet>Gains 2 <hyperlink>Bolstered defense</hyperlink></bullet><bullet>Gains <eventColor>2</eventColor> <hyperlink>Bolstered resistance</hyperlink></bullet></bulletlist>",
+    "description_champion": "Grant Defense:<bulletlist><bullet>Grants <eventColor>2</eventColor> <hyperlink>Bolstered resistance</hyperlink>.</bullet></bulletlist>",
     "name": "Grant Defense",
     "name_champion": "Champion Grant Defense"
   },
@@ -13245,7 +13245,7 @@
   },
   {
     "id": "CULTURE_MYSTIC@ARCANE_STUDIES",
-    "description": "For 10 <turn></turn> <hyperlink>Turn</hyperlink>, target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "Target owned city:<bulletlist><bullet>Contributes 1 <hyperlink>Arcane Inspiration</hyperlink> to a random spell each Turn.</bullet></bulletlist>",
     "spell_name": "Arcane Studies"
   },
   {
@@ -13523,7 +13523,7 @@
   },
   {
     "id": "CULTURE_MYSTIC@COSMIC_BOLTS_DISPEL",
-    "description": "Base <eventColor>{SPELLBREAKER_COSMIC_BOLTS_RESISTANCE>ResolvedStrength}</eventColor>% chance of removing <eventColor>{amount}</eventColor> <hyperlink>Positive Status Effect</hyperlink>.",
+    "description": "Base <eventColor>{SPELLBREAKER_COSMIC_BOLTS_RESISTANCE>ResolvedStrength}</eventColor>% chance of removing <eventColor>1</eventColor> <hyperlink>Positive Status Effect</hyperlink>.",
     "name": "Dispel"
   },
   {
@@ -13536,7 +13536,7 @@
     "description": "Target enemy unit sustains damage. This effect then cascades to adjacent units and is repeated.",
     "enhanced_description": "Dissonant Weave:<bulletlist><bullet>Deals an additional <eventColor>{DISSONANT_WEAVE_ENHANCED_DAMAGE>DAMAGE>Frost}</eventColor><damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and <eventColor>{DISSONANT_WEAVE_ENHANCED_DAMAGE>DAMAGE>Shock}</eventColor><damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Inflicts +1 stack of <hyperlink>Dissonance</hyperlink>.</bullet></bulletlist>",
     "enhanced_name": "Enhanced Dissonant Weave",
-    "master_description": "Dissonant Weave:<bulletlist><bullet>Deals an additional <eventColor>{DISSONANT_WEAVE_MASTER_DAMAGE>DAMAGE>Frost}</eventColor><damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and <eventColor>{DISSONANT_WEAVE_MASTER_DAMAGE>DAMAGE>Shock}</eventColor><damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Inflicts +1 stack of <hyperlink>Dissonance</hyperlink>.</bullet></bulletlist>",
+    "master_description": "Dissonant Weave:<bulletlist><bullet>Deals an additional <eventColor>2</eventColor><damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and <eventColor>2</eventColor><damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Inflicts +1 stack of <hyperlink>Dissonance</hyperlink>.</bullet></bulletlist>",
     "master_name": "Champion Dissonant Weave",
     "name": "Dissonant Weave"
   },
@@ -14214,7 +14214,7 @@
   {
     "id": "CULTURE_MYSTIC@SOOTHING_BREEZE",
     "description": "Target friendly unit and another within <eventColor>{SOOTHING_BREEZE_JUMP>MaxDistance}</eventColor> hexes heal +<eventColor>{SOOTHING_BREEZE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.",
-    "description_champion": "Soothing Breeze:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>{cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Soothing Breeze:<bulletlist><bullet>Heals an additional <eventColor>10</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Soothing Breeze",
     "name_champion": "Champion Soothing Breeze"
   },
@@ -14236,7 +14236,7 @@
   },
   {
     "id": "CULTURE_MYSTIC@SPIRIT_SUMMON@ASTRAL",
-    "ability_description": "Summon a <hyperlink>Lesser storm spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>{Cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
+    "ability_description": "Summon a <hyperlink>Lesser storm spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
     "ability_name": "Spirit Summon: Astral",
     "ability_name_champion": "Champion Spirit Summon: Astral"
   },
@@ -14248,7 +14248,7 @@
   },
   {
     "id": "CULTURE_MYSTIC@SPIRIT_SUMMON@CHAOS",
-    "ability_description": "Summon a <hyperlink>Lesser magma spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>{Cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
+    "ability_description": "Summon a <hyperlink>Lesser magma spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
     "ability_name": "Spirit Summon: Chaos",
     "ability_name_champion": "Champion Spirit Summon: Chaos"
   },
@@ -14266,13 +14266,13 @@
   },
   {
     "id": "CULTURE_MYSTIC@SPIRIT_SUMMON@MATERIUM",
-    "ability_description": "Summon a <hyperlink>Lesser stone spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>{Cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
+    "ability_description": "Summon a <hyperlink>Lesser stone spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
     "ability_name": "Spirit Summon: Materium",
     "ability_name_champion": "Champion Spirit Summon: Materium"
   },
   {
     "id": "CULTURE_MYSTIC@SPIRIT_SUMMON@NATURE",
-    "ability_description": "Summon a <hyperlink>Lesser tide spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>{Cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
+    "ability_description": "Summon a <hyperlink>Lesser tide spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
     "ability_name": "Spirit Summon: Nature",
     "ability_name_champion": "Champion Spirit Summon: Nature"
   },
@@ -14284,7 +14284,7 @@
   },
   {
     "id": "CULTURE_MYSTIC@SPIRIT_SUMMON@SHADOW",
-    "ability_description": "Summon a <hyperlink>Lesser snow spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>{Cooldown}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
+    "ability_description": "Summon a <hyperlink>Lesser snow spirit</hyperlink> onto the target hex. <br>Spirit Summons have a shared <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> cooldown.",
     "ability_name": "Spirit Summon: Shadow",
     "ability_name_champion": "Champion Spirit Summon: Shadow"
   },
@@ -14460,7 +14460,7 @@
     "description": "When this unit lands an attack, it gains a stack of <hyperlink>Strengthened</hyperlink>.<br> ",
     "name": "Frenzy",
     "prop_description": "Gains a stack of <hyperlink>Strengthened</hyperlink> when landing a hit.",
-    "prop_description_double": "Gains <eventColor>{amount}</eventColor> <hyperlink>Strengthened</hyperlink> when landing a hit."
+    "prop_description_double": "Gains <eventColor>2</eventColor> <hyperlink>Strengthened</hyperlink> when landing a hit."
   },
   {
     "id": "CULTURE_SAVAGE@FRENZY_BASE",
@@ -15105,7 +15105,7 @@
     "trade_tooltip": "The <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink> and its effects on your relations will be removed for the given price.",
     "usageblocked": "[fireCol]Due to ongoing effects, you cannot currently make use of your <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink>.[/fireCol]",
     "war_justification": "War Justification",
-    "war_justification_description": "War Justification is the balance of <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink> between two <hyperlink>Ruler</hyperlink> and is used to determine the impact of declaring <rs_war></rs_war> <hyperlink>War</hyperlink>.<br><br>When starting a <rs_war></rs_war> <hyperlink>War</hyperlink>:<bulletlist><bullet><hyperlink>Alignment</hyperlink> may be affected.</bullet><bullet><influence></influence> <hyperlink>Imperium</hyperlink> income may be affected.</bullet><bullet>Non-allied rulers can receive <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink>.</bullet><bullet><hyperlink>Empire Relations</hyperlink> with other Rulers as well as <hyperlink>relations</hyperlink> with ([hyperlink,GLOBAL.PactOfVassalageConcept]Vassal[/hyperlink])<hyperlink>Cities</hyperlink> may be affected.</bullet></bulletlist><br><br>The following War Justification levels can be reached:<bulletlist><bullet><hyperlink>Major</hyperlink> (51+<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Moderate</hyperlink> (50<casusBelli></casusBelli> to 26<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Minor</hyperlink> (25<casusBelli></casusBelli> to 1<casusBelli></casusBelli>)</bullet><bullet><hyperlink>None</hyperlink> (<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Unjust</hyperlink> (<eventColor>{LVL-1Max}</eventColor><casusBelli></casusBelli> to <eventColor>{LVL-1Min}</eventColor><casusBelli></casusBelli>)</bullet><bullet><hyperlink>Very unjust</hyperlink> (<eventColor>{LVL-2Max}</eventColor><casusBelli></casusBelli> to <eventColor>{LVL-2Min}</eventColor><casusBelli></casusBelli>)</bullet><bullet><hyperlink>Completely unjust</hyperlink> (<eventColor>{LVL-3Min}</eventColor><casusBelli></casusBelli>)</bullet></bulletlist>",
+    "war_justification_description": "War Justification is the balance of <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink> between two <hyperlink>Ruler</hyperlink> and is used to determine the impact of declaring <rs_war></rs_war> <hyperlink>War</hyperlink>.<br><br>When starting a <rs_war></rs_war> <hyperlink>War</hyperlink>:<bulletlist><bullet><hyperlink>Alignment</hyperlink> may be affected.</bullet><bullet><influence></influence> <hyperlink>Imperium</hyperlink> income may be affected.</bullet><bullet>Non-allied rulers can receive <casusBelli></casusBelli> <hyperlink>Grievance</hyperlink>.</bullet><bullet><hyperlink>Empire Relations</hyperlink> with other Rulers as well as <hyperlink>relations</hyperlink> with ([hyperlink,GLOBAL.PactOfVassalageConcept]Vassal[/hyperlink])<hyperlink>Cities</hyperlink> may be affected.</bullet></bulletlist><br><br>The following War Justification levels can be reached:<bulletlist><bullet><hyperlink>Major</hyperlink> (51+<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Moderate</hyperlink> (50<casusBelli></casusBelli> to 26<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Minor</hyperlink> (25<casusBelli></casusBelli> to 1<casusBelli></casusBelli>)</bullet><bullet><hyperlink>None</hyperlink> (<casusBelli></casusBelli>)</bullet><bullet><hyperlink>Unjust</hyperlink> (<eventColor>-1</eventColor><casusBelli></casusBelli> to <eventColor>-25</eventColor><casusBelli></casusBelli>)</bullet><bullet><hyperlink>Very unjust</hyperlink> (<eventColor>-26</eventColor><casusBelli></casusBelli> to <eventColor>-50</eventColor><casusBelli></casusBelli>)</bullet><bullet><hyperlink>Completely unjust</hyperlink> (<eventColor>-51</eventColor><casusBelli></casusBelli>)</bullet></bulletlist>",
     "war_justification_hyperlink": "<hyperlink>War Justification</hyperlink>",
     "war_justification_incomeeffectexplanation": "When you are involved in multiple wars which you declared, only the income effect of the war with the worst War Justification will be applied.",
     "war_justification_level_0_description": "With no <hyperlink>War Justification</hyperlink> (0<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> becomes more damaging to your <hyperlink>Empire</hyperlink>.<br><br>Unjustified wars are considered an <evilact></evilact><hyperlink>evil</hyperlink> act, affect all of your relations negatively, and impact your -80% income by <eventColor>{ResourcePenaltyValue}</eventColor> while the war lasts.  ",
@@ -15114,10 +15114,10 @@
     "war_justification_level_1_description": "Having only minor <hyperlink>War Justification</hyperlink> (-26<casusBelli></casusBelli> to -51<casusBelli></casusBelli>), means that declaring <rs_war></rs_war> <hyperlink>War</hyperlink> is justified but still frowned upon by other <hyperlink>Ruler</hyperlink>.<br><br>Wars are still considered an <evilact></evilact><hyperlink>evil</hyperlink> act and your <hyperlink>Empire Relations</hyperlink> with other Rulers will suffer a penalty.",
     "war_justification_level_1_hyperlink": "<hyperlink>Minor</hyperlink>",
     "war_justification_level_1_title": "War Justification: Minor",
-    "war_justification_level_2_description": "With Moderate <hyperlink>War Justification</hyperlink> (-26<casusBelli></casusBelli> to -51<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> is now supported by your <hyperlink>Vassal</hyperlink> [hyperlink,GLOBAL.IndependentCityConcept]Cities[/hyperlink] as they gain a <hyperlink>Relations</hyperlink> bonus, and your 10 income increases by <eventColor>{ResourceBonusValue}</eventColor> while the war lasts.  ",
+    "war_justification_level_2_description": "With Moderate <hyperlink>War Justification</hyperlink> (-26<casusBelli></casusBelli> to -51<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> is now supported by your <hyperlink>Vassal</hyperlink> [hyperlink,GLOBAL.IndependentCityConcept]Cities[/hyperlink] as they gain a <hyperlink>Relations</hyperlink> bonus, and your 10 income increases by <eventColor>10</eventColor> while the war lasts.  ",
     "war_justification_level_2_hyperlink": "<hyperlink>Moderate</hyperlink>",
     "war_justification_level_2_title": "War Justification: Moderate",
-    "war_justification_level_3_description": "With Major <hyperlink>War Justification</hyperlink> (-26+<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> is fully justified. Your <hyperlink>Vassal</hyperlink> [hyperlink,GLOBAL.IndependentCityConcept]Cities[/hyperlink] gain a <hyperlink>Relations</hyperlink> bonus, and your 10 income increases by <eventColor>{ResourceBonusValue}</eventColor> while the war lasts.  ",
+    "war_justification_level_3_description": "With Major <hyperlink>War Justification</hyperlink> (-26+<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> is fully justified. Your <hyperlink>Vassal</hyperlink> [hyperlink,GLOBAL.IndependentCityConcept]Cities[/hyperlink] gain a <hyperlink>Relations</hyperlink> bonus, and your 10 income increases by <eventColor>20</eventColor> while the war lasts.  ",
     "war_justification_level_3_hyperlink": "<hyperlink>Major</hyperlink>",
     "war_justification_level_3_title": "War Justification: Major",
     "war_justification_level_n1_description": "With negative <hyperlink>War Justification</hyperlink> (-26<casusBelli></casusBelli> to -51<casusBelli></casusBelli>), declaring <rs_war></rs_war> <hyperlink>War</hyperlink> becomes even more damaging to your <hyperlink>Empire</hyperlink>!<br><br>Unjustified wars are considered an <evilact></evilact><hyperlink>evil</hyperlink> act, affect all of your relations negatively and, impact your -80% income by <eventColor>{ResourcePenaltyValue}</eventColor> while the war lasts.  ",
@@ -15442,7 +15442,7 @@
     "high": "The unit is in high spirits and confident of victory.<br><br>Effects:<bulletlist><bullet>20% <hyperlink>Criticalhitchanceconcept</hyperlink></bullet></bulletlist>",
     "low": "The unit is wavering and doubtful of victory.<br><br>Effects:<bulletlist><bullet>Fumble Chance: 20%.</bullet></bulletlist>",
     "normal": "The unit is content and ready for battle.<br><br>Effects:<bulletlist><bullet>None.</bullet></bulletlist>",
-    "routing": "The unit is terrified and is fleeing for its life!<br><br>Effects:<bulletlist><bullet>Ignores zones of control and attacks of opportunity.</bullet><bullet>25% harder to hit with ranged attacks.</bullet><bullet>Moves toward nearest <hyperlink>Retreat Point.</hyperlink></bullet></bulletlist>",
+    "routing": "The unit is terrified and is fleeing for its life!<br><br>Effects:<bulletlist><bullet>Ignores zones of control and attacks of opportunity.</bullet><bullet>Can safely move past most other units and obstacles in combat.</bullet><bullet>25% harder to hit with ranged attacks.</bullet><bullet>Moves toward nearest <hyperlink>Retreat Point.</hyperlink></bullet></bulletlist>",
     "very_low": "The unit is despairing and close to breaking.<br><br>Effects:<bulletlist><bullet>Fumble Chance: 40%.</bullet></bulletlist>"
   },
   {
@@ -18267,18 +18267,21 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@ASTRAL",
-    "description": "Your people are Architects predisposed to Astral:<bulletlist><bullet>Start with +2 <arcana></arcana> <hyperlink>Astral Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Astral:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.AstralConcept]Astral[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Astral"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@CHAOS",
-    "description": "Your people are Architects predisposed to Chaos:<bulletlist><bullet>Start with +2 <chaos></chaos> <hyperlink>Chaos Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Chaos:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.ChaosConcept]Chaos[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Chaos"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@MATERIUM",
-    "description": "Your people are Architects predisposed to Materium:<bulletlist><bullet>Start with +2 <matter></matter> <hyperlink>Materium Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Materium:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.MateriumConcept]Materium[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Materium"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY",
@@ -18287,18 +18290,21 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@NATURE",
-    "description": "Your people are Architects predisposed to Nature:<bulletlist><bullet>Start with +2 <nature></nature> <hyperlink>Nature Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Nature:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.NatureConcept]Nature[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Nature"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@ORDER",
-    "description": "Your people are Architects predisposed to Order:<bulletlist><bullet>Start with +2 <order></order> <hyperlink>Order Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Order:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.OrderConcept]Order[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Order"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@SHADOW",
-    "description": "Your people are Architects predisposed to Shadow:<bulletlist><bullet>Start with +2 <shadow></shadow> <hyperlink>Shadow Affinity</hyperlink></bullet></bulletlist>",
-    "DLC": "ARCHONPROPHECY"
+    "description": "Your people are Architects predisposed to Shadow:<bulletlist><bullet>Start with +2 [hyperlink,GLOBAL.ShadowConcept]Shadow[/hyperlink]</bullet></bulletlist>",
+    "DLC": "ARCHONPROPHECY",
+    "name": "Architects of Shadow"
   },
   {
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@UNIT_01",
@@ -18373,7 +18379,7 @@
     "id": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@UNIT_ABILITY@CULTIVATE_AFFINITY",
     "description": "Link to target friendly unit and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.<br><br>While linked:<bulletlist><bullet>Target unit gains +2 <hyperlink>Affinity incarnate unit property</hyperlink>.</bullet><bullet>At the start of their turn, both units heal for +10 <hyperlink>{<temphp></temphp>}</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY",
-    "description_champion": "Cultivate Affinity:<bulletlist><bullet>Grants an additional +<eventColor>{HealingAmount}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink> at the start of each <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
+    "description_champion": "Cultivate Affinity:<bulletlist><bullet>Grants an additional +<eventColor>10</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink> at the start of each <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
     "name": "Cultivate Affinity",
     "name_champion": "Champion Cultivate Affinity",
     "prop_description": "<bulletlist><bullet>Target unit gains +2 <hyperlink>Affinity incarnate unit property</hyperlink>.</bullet><bullet>At the start of their turn, both units heal for 10 <hyperlink>{<temphp></temphp>}</hyperlink> and dispel 1 <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>"
@@ -18740,7 +18746,7 @@
     "id": "DLC@ARCHONPROPHECY@HERO_SKILLS@BATTLESAINT@PURIFYING_FERVOR",
     "description": "Warrior's Fervor dispels <eventColor>{WARRIORS_FERVOR_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.",
     "DLC": "ARCHONPROPHECY",
-    "description_ability": "Caster loses all stacks of <hyperlink>Fervor</hyperlink> and gains:<bulletlist><bullet>+<eventColor>{value}</eventColor> <hyperlink>Strengthened</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet><bullet>+<eventColor>{WARRIORS_FERVOR_HEAL>NumHitpointsToRestore}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet><bullet>Dispels <eventColor>{WARRIORS_FERVOR_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet></bulletlist>",
+    "description_ability": "Caster loses all stacks of <hyperlink>Fervor</hyperlink> and gains:<bulletlist><bullet>+<eventColor>1</eventColor> <hyperlink>Strengthened</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet><bullet>+<eventColor>{WARRIORS_FERVOR_HEAL>NumHitpointsToRestore}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet><bullet>Dispels <eventColor>{WARRIORS_FERVOR_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink> per stack of <hyperlink>Fervor</hyperlink> consumed.</bullet></bulletlist>",
     "name": "Purifying Fervor"
   },
   {
@@ -19202,7 +19208,7 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@PROPHECY_TRAITS@VISION_OF_DESTINY@ORDER",
-    "objective_1": "Order Established<bulletlist><bullet><hyperlink>Vassalize</hyperlink> <hyperlink>City</hyperlink></bullet><bullet>Destroy <hyperlink>Infestation</hyperlink></bullet><bullet>Form a Diplomatic bond with another <hyperlink>Player</hyperlink><bulletlist></bullet><bullet><rs_defensivepact></rs_defensivepact> <hyperlink>Defensive Pact</hyperlink></bullet><bullet><rs_alliance></rs_alliance> <hyperlink>Alliance</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "objective_1": "Order Established<bulletlist><bullet><hyperlink>Vassalize</hyperlink> <hyperlink>City</hyperlink></bullet><bullet>Destroy <hyperlink>Infestation</hyperlink></bullet><bullet>Form a Diplomatic bond with another <hyperlink>Player</hyperlink><bulletlist><bullet><rs_defensivepact></rs_defensivepact> <hyperlink>Defensive Pact</hyperlink></bullet><bullet><rs_alliance></rs_alliance> <hyperlink>Alliance</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY"
   },
   {
@@ -19361,7 +19367,7 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@NATURE@MARK_OF_NATURE",
-    "description": "This unit bears the mark of Nature and gains:<bulletlist><bullet>Whenever a friendly unit dies, this unit gains:<br><hyperlink>Grace</hyperlink> for <eventColor>{GRACE_STATUS_EFFECT>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Whenever an enemy unit dies, this unit gains:<br><hyperlink>Strengthened</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit bears the mark of Nature and gains:<bulletlist><bullet>Whenever a friendly unit dies, this unit gains:<br><hyperlink>Grace</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Whenever an enemy unit dies, this unit gains:<br><hyperlink>Strengthened</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY",
     "name": "Mark of Nature"
   },
@@ -19379,7 +19385,7 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@RACETRAITS_WORLD@VISION_OF_PROMISE@SHADOW@MARK_OF_SHADOW",
-    "description": "This unit bears the mark of Shadow and gains:<bulletlist><bullet>Whenever an enemy unit dies, this unit heals for +<eventColor>{PROPHECY_MARK_OF_SHADOW_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink> and gains <hyperlink>Slippery</hyperlink> and <hyperlink>Flanker</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit bears the mark of Shadow and gains:<bulletlist><bullet>Whenever an enemy unit dies, this unit heals for +<eventColor>10</eventColor> <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and gains <hyperlink>Slippery</hyperlink> and <hyperlink>Flanker</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY",
     "name": "Mark of Shadow",
     "property_description": "An enemy was slain, granting this unit:<bulletlist><bullet><hyperlink>Slippery</hyperlink></bullet><bullet><hyperlink>Flanker</hyperlink></bullet></bulletlist>"
@@ -22893,7 +22899,7 @@
     "id": "DLC@ARCHONPROPHECY@TOME_PROPHECIES@UNIT@ABILITY1",
     "description": "Friendly units in a <eventColor>{HEALING_PORTENT_UNIT_TARGETER_SINGLE>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Heal <eventColor>{HEALING_PORTENT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gain <hyperlink>Precognition</hyperlink>.</bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY",
-    "description_champion": "Healing Portent:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Healing Portent:<bulletlist><bullet>Heals an additional <eventColor>20</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "name": "Healing Portent",
     "name_champion": "Champion Healing Portent"
   },
@@ -25283,7 +25289,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@COMET_BREATH@INFERNOBREATH",
-    "ability_description": "Ranged breath that deals damage to all units in a <eventColor>{COMET_BREATH_TARGETER>AREA>Radius}</eventColor>-hex radius, and sets these hexes <hyperlink>On Fire</hyperlink>.",
+    "ability_description": "Ranged breath that deals damage to all units in a <eventColor>2</eventColor>-hex radius, and sets these hexes <hyperlink>On Fire</hyperlink>.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25293,7 +25299,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@COMET_BREATH_MAJOR_NATURE",
-    "ability_description": "Ranged breath with a <eventColor>{COMET_BREATH_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
+    "ability_description": "Ranged breath with a <eventColor>2</eventColor>-hex radius:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25310,7 +25316,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@CONE_BREATH@INFERNOBREATH",
-    "ability_description": "Deals damage to all units in a <eventColor>{CONE_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone, and sets these hexes <hyperlink>On Fire</hyperlink>.",
+    "ability_description": "Deals damage to all units in a <eventColor>4</eventColor>-hex cone, and sets these hexes <hyperlink>On Fire</hyperlink>.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25320,7 +25326,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@CONE_BREATH_MAJOR_NATURE",
-    "ability_description": "Within a <eventColor>{CONE_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
+    "ability_description": "Within a <eventColor>4</eventColor>-hex cone:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25408,7 +25414,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@LIMITED_BREATH@INFERNOBREATH",
-    "ability_description": "Deals damage in a <eventColor>{LIMITED_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone, and sets these hexes <hyperlink>On Fire</hyperlink>.",
+    "ability_description": "Deals damage in a <eventColor>3</eventColor>-hex cone, and sets these hexes <hyperlink>On Fire</hyperlink>.",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -25418,7 +25424,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@HERO_SKILL@LIMITED_BREATH_MAJOR_NATURE",
-    "ability_description": "Within a <eventColor>{LIMITED_BREATH_TARGETER>AREA>Length}</eventColor>-hex cone:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
+    "ability_description": "Within a <eventColor>3</eventColor>-hex cone:<bulletlist><bullet>Friendly units:<bulletlist></bullet><bullet>Gain +<eventColor>{NATURE_BREATH_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Are revived with <eventColor>{NATURE_BREATH_RESURRECT>ResolvedHitPoints}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet><bullet>Don't receive any negative effects or damage from this attack.</bullet></bulletlist><bullet></bullet>Enemy units sustain damage.[/bulletlist]",
     "DLC": "DRAGONLORDS"
   },
   {
@@ -26953,7 +26959,7 @@
     "id": "DLC@ELDRITCHREALMS@COSMIC_HAPPENING@UNIT_CHANGE_01@PROPERTY_01",
     "description": "<hyperlink>Magic</hyperlink> and <hyperlink>Missile</hyperlink> attacks have +<eventColor>{SIGN_OF_THE_HUNTRESS_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage and <eventColor>{SIGN_OF_THE_HUNTRESS_RANGE_BOOST>ADD>MaxRange}</eventColor><hyperlink><range></range>Range</hyperlink>.",
     "DLC": "ELDRITCHREALMS",
-    "modifier": "+<eventColor>{SIGN_OF_THE_HUNTRESS_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage and <eventColor>{SIGN_OF_THE_HUNTRESS_RANGE_BOOST>ADD>MaxRange}</eventColor><hyperlink><range></range>Range</hyperlink>."
+    "modifier": "+<eventColor>{SIGN_OF_THE_HUNTRESS_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage and <eventColor>1</eventColor><hyperlink><range></range>Range</hyperlink>."
   },
   {
     "id": "DLC@ELDRITCHREALMS@COSMIC_HAPPENING@UNIT_CHANGE_02",
@@ -27351,9 +27357,9 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@ELDRITCHLEADER@ABILTIY03",
-    "description": "Target enemy unit has a base 1% chance of becoming <hyperlink>Mind controlled</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.<br><br>If unsuccessful, reduces their action points to <eventColor>{amount}</eventColor> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "description": "Target enemy unit has a base 1% chance of becoming <hyperlink>Mind controlled</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.<br><br>If unsuccessful, reduces their action points to <eventColor>1</eventColor> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
     "DLC": "ELDRITCHREALMS",
-    "mod_description": "Target enemy unit has a base 1% chance of becoming <hyperlink>Dominated</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.<br><br>If unsuccessful, reduces their action points to <eventColor>{amount}</eventColor> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "mod_description": "Target enemy unit has a base 1% chance of becoming <hyperlink>Dominated</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.<br><br>If unsuccessful, reduces their action points to <eventColor>1</eventColor> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Eldritch Mind Control"
   },
   {
@@ -29323,19 +29329,19 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@ELDRITCH_SPECIALIZATION@MADCASTER@ABILITY01",
-    "description": "Enemies in a 1-hex radius have <eventColor>{amount}</eventColor> of these effects occur to them at random:<bulletlist><bullet>Turn into a random Tier I <hyperlink>Animal</hyperlink> for  <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Sustain <eventColor>{firedamage}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gain <hyperlink>Insanity</hyperlink> for <eventColor>{InsaneDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Become <hyperlink>Blinded</hyperlink> until the end of combat.</bullet><bullet>5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Suffer <eventColor>{frostdamage}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and become <hyperlink>Frozen</hyperlink> for <eventColor>{frozenDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain <hyperlink>Infernal rebirth</hyperlink> until the end of combat.</bullet><bullet>Gain <eventColor>{electrifyAmount}</eventColor> <hyperlink>Electrified</hyperlink>.</bullet><bullet>Heal  <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description": "Enemies in a 1-hex radius have <eventColor>1</eventColor> of these effects occur to them at random:<bulletlist><bullet>Turn into a random Tier I <hyperlink>Animal</hyperlink> for  <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Sustain <eventColor>{firedamage}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gain <hyperlink>Insanity</hyperlink> for <eventColor>{InsaneDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Become <hyperlink>Blinded</hyperlink> until the end of combat.</bullet><bullet>5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Suffer <eventColor>{frostdamage}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and become <hyperlink>Frozen</hyperlink> for <eventColor>{frozenDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain <hyperlink>Infernal rebirth</hyperlink> until the end of combat.</bullet><bullet>Gain <eventColor>5</eventColor> <hyperlink>Electrified</hyperlink>.</bullet><bullet>Heal  <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "name": "Chaos Pulse"
   },
   {
     "id": "DLC@ELDRITCHREALMS@ELDRITCH_SPECIALIZATION@MADCASTER@ABILITY02",
-    "description": "Enemies in a 2-hex radius have <eventColor>{amount}</eventColor> of these effects occur to them at random:<bulletlist><bullet>Turn into a random Tier I <hyperlink>Animal</hyperlink> for  <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Sustain <eventColor>{firedamage}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gain <hyperlink>Insanity</hyperlink> for <eventColor>{InsaneDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Become <hyperlink>Blinded</hyperlink> until the end of combat.</bullet><bullet>5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Suffer <eventColor>{frostdamage}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and become <hyperlink>Frozen</hyperlink> for <eventColor>{frozenDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain <hyperlink>Infernal rebirth</hyperlink> until the end of combat.</bullet><bullet>Gain <eventColor>{electrifyAmount}</eventColor> <hyperlink>Electrified</hyperlink>.</bullet><bullet>Heal  <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description": "Enemies in a 2-hex radius have <eventColor>2</eventColor> of these effects occur to them at random:<bulletlist><bullet>Turn into a random Tier I <hyperlink>Animal</hyperlink> for  <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Sustain <eventColor>{firedamage}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Gain <hyperlink>Insanity</hyperlink> for <eventColor>{InsaneDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Become <hyperlink>Blinded</hyperlink> until the end of combat.</bullet><bullet>5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Suffer <eventColor>{frostdamage}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and become <hyperlink>Frozen</hyperlink> for <eventColor>{frozenDuration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain <hyperlink>Infernal rebirth</hyperlink> until the end of combat.</bullet><bullet>Gain <eventColor>5</eventColor> <hyperlink>Electrified</hyperlink>.</bullet><bullet>Heal  <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "name": "Havoc Pulse"
   },
   {
     "id": "DLC@ELDRITCHREALMS@ELDRITCH_SPECIALIZATION@MADCASTER@ABILITY03",
-    "description": "Enemies in a 1-hex radius have <eventColor>{amount}</eventColor> of these effects occur to them at random:<bulletlist><bullet>Sustain 3 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> and gain 3 <hyperlink>Burning</hyperlink>.</bullet><bullet>Sustain <eventColor>{amountFrost}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and have a base <eventColor>{chanceFrost}</eventColor>% chance of becoming <hyperlink>Frozen</hyperlink>.</bullet><bullet>Sustain <eventColor>{amountLightning}</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> and gain <eventColor>{amountElectrified}</eventColor> <hyperlink>Electrified</hyperlink>.</bullet></bulletlist>",
+    "description": "Enemies in a 1-hex radius have <eventColor>1</eventColor> of these effects occur to them at random:<bulletlist><bullet>Sustain 3 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> and gain 3 <hyperlink>Burning</hyperlink>.</bullet><bullet>Sustain <eventColor>{amountFrost}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> and have a base <eventColor>{chanceFrost}</eventColor>% chance of becoming <hyperlink>Frozen</hyperlink>.</bullet><bullet>Sustain <eventColor>{amountLightning}</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> and gain <eventColor>3</eventColor> <hyperlink>Electrified</hyperlink>.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "name": "Cosmic Pulse"
   },
@@ -29513,7 +29519,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@FORBIDDEN_TOME@ARCFIRE@ABILITY01",
-    "description": "Target enemy unit and up to 3 other enemy units within <eventColor>{hex}</eventColor> hexes:<bulletlist><bullet>Sustain damage.</bullet><bullet>Gain <eventColor>{amountBurning}</eventColor> <hyperlink>Burning</hyperlink> for <eventColor>{BURNING_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain 3 <hyperlink>Electrified</hyperlink> for <eventColor>{ELECTRIFIED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "Target enemy unit and up to 3 other enemy units within <eventColor>{hex}</eventColor> hexes:<bulletlist><bullet>Sustain damage.</bullet><bullet>Gain <eventColor>3</eventColor> <hyperlink>Burning</hyperlink> for <eventColor>{BURNING_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Gain 3 <hyperlink>Electrified</hyperlink> for <eventColor>{ELECTRIFIED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "name": "Blazing Chain Lightning"
   },
@@ -29577,13 +29583,13 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@FORBIDDEN_TOME@PESTILENCE@ABILITY01",
-    "description": "Target unit:<bulletlist><bullet>Sustains Damage</bullet><bullet>Gains for 4 <turn></turn> <hyperlink>Turn</hyperlink>:<bulletlist></bullet><bullet><eventColor>{amountDecay}</eventColor> <hyperlink>Decaying</hyperlink></bullet><bullet><hyperlink>Poisoned</hyperlink></bullet><bullet><hyperlink>Diseased</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Target unit:<bulletlist><bullet>Sustains Damage</bullet><bullet>Gains for 4 <turn></turn> <hyperlink>Turn</hyperlink>:<bulletlist></bullet><bullet><eventColor>4</eventColor> <hyperlink>Decaying</hyperlink></bullet><bullet><hyperlink>Poisoned</hyperlink></bullet><bullet><hyperlink>Diseased</hyperlink></bullet></bulletlist>[/bulletlist]",
     "DLC": "ELDRITCHREALMS",
     "name": "Rot Away"
   },
   {
     "id": "DLC@ELDRITCHREALMS@FORBIDDEN_TOME@PESTILENCE@ABILITY02",
-    "description": "Enemy units in a <eventColor>{hex}</eventColor>-hex radius gain for 1 <turn></turn> <hyperlink>Turn</hyperlink>:<bulletlist><bullet><eventColor>{amount1}</eventColor> <hyperlink>Sundered defense</hyperlink></bullet><bullet>3 <hyperlink>Sundered resistance</hyperlink></bullet><bullet>3 <hyperlink>Weakened</hyperlink></bullet></bulletlist>",
+    "description": "Enemy units in a <eventColor>{hex}</eventColor>-hex radius gain for 1 <turn></turn> <hyperlink>Turn</hyperlink>:<bulletlist><bullet><eventColor>3</eventColor> <hyperlink>Sundered defense</hyperlink></bullet><bullet>3 <hyperlink>Sundered resistance</hyperlink></bullet><bullet>3 <hyperlink>Weakened</hyperlink></bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "name": "Debilitation"
   },
@@ -32891,7 +32897,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@TOME_CLEANSING_FLAME@TOME@SKILL5",
-    "description": "In target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy units sustain 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>The province gains <hyperlink>Consecrating firestorm</hyperlink> for <eventColor>{CONSECRATING_FIRESTORM_SPELL>Duration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet><bullet>If it has an enemy owned <hyperlink>Province Improvement</hyperlink>, it is <hyperlink>Pillaged</hyperlink>.</bullet></bulletlist>",
+    "description": "In target <hyperlink>Province</hyperlink>:<bulletlist><bullet>Enemy units sustain 20 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</bullet><bullet>The province gains <hyperlink>Consecrating firestorm</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet><bullet>If it has an enemy owned <hyperlink>Province Improvement</hyperlink>, it is <hyperlink>Pillaged</hyperlink>.</bullet></bulletlist>",
     "DLC": "ELDRITCHREALMS",
     "display_property_description": "Combat in this <hyperlink>Province</hyperlink>:<bulletlist><bullet>Has the <hyperlink>Cleansing flameherald combat property</hyperlink> combat enchantment.</bullet><bullet>At the start of combat, <hyperlink>Cleansing Flames</hyperlink> appear on random hexes.</bullet></bulletlist>",
     "name": "Consecrating Firestorm"
@@ -33046,7 +33052,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@TOME_TENTACLE@TOME@SKILL3",
-    "description": "Base <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +<eventColor>{TENTACLES_CONSTRICTING_FOCUS_DAMAGE>DAMAGE>Physical}</eventColor> <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet><bullet>Gain base <eventColor>{CONSTRICTED_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Constricted</hyperlink> for <eventColor>{CONSTRICTED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Chance increased to 60% against <hyperlink>Marked</hyperlink> or <hyperlink>Slowed</hyperlink> units.</bullet></bulletlist><br> ",
+    "description": "Base <hyperlink>Magic</hyperlink> attacks of enchanted units:<bulletlist><bullet>Deal +<eventColor>1</eventColor> <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet><bullet>Gain base <eventColor>{CONSTRICTED_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Constricted</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Chance increased to 60% against <hyperlink>Marked</hyperlink> or <hyperlink>Slowed</hyperlink> units.</bullet></bulletlist><br> ",
     "DLC": "ELDRITCHREALMS",
     "modifier_description": "<bulletlist><bullet>Base <eventColor>{CONSTRICTED_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Constricted</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>60% chance against <hyperlink>Marked</hyperlink> or <hyperlink>Slowed</hyperlink> units.</bullet></bulletlist>",
     "modifier_description_simple": "Base <eventColor>{CONSTRICTED_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Constricted</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.",
@@ -33108,7 +33114,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@TOME_UMBRAL_ABYSS@SKILL3",
-    "description": "Target unit has a base <eventColor>{UMBRAL_EXILE_RESIST>ResolvedStrength}</eventColor>% chance of:<bulletlist><bullet>Being immediately removed from combat.</bullet><bullet>Appearing at a random location in the Umbral Abyss after battle.</bullet><bullet>If unsuccessful, inflicts <hyperlink>Stunned</hyperlink> for <eventColor>{STUNNED_EFFECT_DESCRIPTION>NumTurns}</eventColor><eventColor>{GLOBAL.TurnConcept.Name}</eventColor> instead.</bullet></bulletlist><br><br>Cannot be used in Water Combat.",
+    "description": "Target unit has a base <eventColor>{UMBRAL_EXILE_RESIST>ResolvedStrength}</eventColor>% chance of:<bulletlist><bullet>Being immediately removed from combat.</bullet><bullet>Appearing at a random location in the Umbral Abyss after battle.</bullet><bullet>If unsuccessful, inflicts <hyperlink>Stunned</hyperlink> for <eventColor>6</eventColor><eventColor>{GLOBAL.TurnConcept.Name}</eventColor> instead.</bullet></bulletlist><br><br>Cannot be used in Water Combat.",
     "DLC": "ELDRITCHREALMS",
     "log_message": "Exiled",
     "name": "Umbral Exile"
@@ -33828,7 +33834,7 @@
   },
   {
     "id": "DLC@ELDRITCHREALMS@WILDLIFE@FLESHLING@ABILITY01",
-    "description": "This unit explodes. Adjacent enemy units:<bulletlist><bullet>Sustain damage.</bullet><bullet>For 2 <turn></turn> <hyperlink>Turn</hyperlink> gain:<bulletlist></bullet><bullet><eventColor>{amountBleed}</eventColor> stacks of <hyperlink>Bleeding</hyperlink>.</bullet><bullet><hyperlink>Status vulnerability</hyperlink>.</bullet></bulletlist>[/bulletlist]",
+    "description": "This unit explodes. Adjacent enemy units:<bulletlist><bullet>Sustain damage.</bullet><bullet>For 2 <turn></turn> <hyperlink>Turn</hyperlink> gain:<bulletlist></bullet><bullet><eventColor>2</eventColor> stacks of <hyperlink>Bleeding</hyperlink>.</bullet><bullet><hyperlink>Status vulnerability</hyperlink>.</bullet></bulletlist>[/bulletlist]",
     "DLC": "ELDRITCHREALMS",
     "name": "Flesh Explosion"
   },
@@ -34084,7 +34090,7 @@
     "description": "Target friendly unit:<bulletlist><bullet>Heals <eventColor>{RESTORATION_HEAL>NumHitpointsToRestore}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist><br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
     "DLC": "EMPIRESANDASHES",
     "description_2": "Target friendly unit:<bulletlist><bullet>Heals <eventColor>{RESTORATION_HEAL>NumHitpointsToRestore}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Loses <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist><br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
-    "description_champion": "Patch Up:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Removes <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Patch Up:<bulletlist><bullet>Heals an additional <eventColor>15</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Removes <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink>.</bullet></bulletlist>",
     "name": "Patch Up",
     "name_champion": "Champion Patch Up"
   },
@@ -38649,7 +38655,7 @@
     "id": "DLC@EMPIRESANDASHES@TOME_DREADNAUGHT@OVERCHARGED",
     "description": "This unit has:<bulletlist><bullet>+30% damage on attacks.</bullet><bullet>A <eventColor>{Stunchance}</eventColor>% chance of suffering <hyperlink>Stunned</hyperlink> for 2 <turn></turn> <hyperlink>Turn</hyperlink> after completing an attack action.</bullet></bulletlist>",
     "DLC": "EMPIRESANDASHES",
-    "modifier_description": "<bulletlist><bullet>+30% damage.</bullet><bullet><eventColor>{Stunchance}</eventColor>% chance of this unit suffering <hyperlink>Stunned</hyperlink> for 2 <turn></turn> <hyperlink>Turn</hyperlink> after completing this attack.</bullet></bulletlist>",
+    "modifier_description": "<bulletlist><bullet>+30% damage.</bullet><bullet><eventColor>30</eventColor>% chance of this unit suffering <hyperlink>Stunned</hyperlink> for 2 <turn></turn> <hyperlink>Turn</hyperlink> after completing this attack.</bullet></bulletlist>",
     "name": "Overcharged"
   },
   {
@@ -42813,7 +42819,7 @@
     "id": "DLC@GIANTKINGS@HERO_SKILL@FORGE_PATH@SKILL09@FROST",
     "description": "<bulletlist><bullet>Gain +<eventColor>{RUNE_OF_COMMAND_SHARED>Resistance}</eventColor> <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet><bullet>Gain access to the <hyperlink>Rune of command frost</hyperlink> infusion in the <hyperlink>Item Forge</hyperlink>. Applies to Trinkets.</bullet></bulletlist>",
     "DLC": "GIANTKINGS",
-    "leader_prop_description": "While army leader, all non-hero units in army have 1 <hyperlink>Negative Status Effect</hyperlink> dispelled at the start of the turn in combat.",
+    "leader_prop_description": "While army leader, all non-hero units in army gains +2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.",
     "name": "Rune of Command: Frost",
     "prop_description": "At the start of the turn, dispel 1 <hyperlink>Negative Status Effect</hyperlink>."
   },
@@ -45587,7 +45593,7 @@
     "id": "DLC@GIANTKINGS@TSR_SECTOR_PROPERTY@CRYSTAL_STORM",
     "description": "During all combats in this sector, <hyperlink>Tsr crystal storm auto spell</hyperlink> will be active.",
     "DLC": "GIANTKINGS",
-    "description_tc": "<bulletlist><bullet>Every <eventColor>{IntTurns}</eventColor> turns in combat, a random enemy is hit by the <hyperlink>Crystal crash</hyperlink> spell.</bullet></bulletlist>",
+    "description_tc": "<bulletlist><bullet>Every <eventColor>2</eventColor> turns in combat, a random enemy is hit by the <hyperlink>Crystal crash</hyperlink> spell.</bullet></bulletlist>",
     "name": "Raging Crystal Storms",
     "name_tc": "Crystal Storms"
   },
@@ -46336,7 +46342,7 @@
     "champion_description": "Target unit:<bulletlist><bullet>Heals for <eventColor>{SPIRITUAL_HEALING_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>For each <hyperlink>Primal fury stack</hyperlink> the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra <eventColor>{SPIRITUAL_HEALING_HEAL_PER_STACK>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Remove a negative status effect from the target.</bullet></bulletlist>[/bulletlist]",
     "DLC": "PRIMALFURY",
     "description": "Target unit:<bulletlist><bullet>Heals for <eventColor>{SPIRITUAL_HEALING_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>For each <hyperlink>Primal fury stack</hyperlink> the caster has, spend them and:<bulletlist></bullet><bullet>Heal an extra <eventColor>{SPIRITUAL_HEALING_HEAL_PER_STACK>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>[/bulletlist]",
-    "description_champion": "Spiritual Healing:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Each stack of <hyperlink>Primal fury stack</hyperlink> now also dispels a negative status effect.</bullet></bulletlist>",
+    "description_champion": "Spiritual Healing:<bulletlist><bullet>Heals an additional <eventColor>10</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Each stack of <hyperlink>Primal fury stack</hyperlink> now also dispels a negative status effect.</bullet></bulletlist>",
     "name": "Spiritual Healing",
     "name_champion": "Champion Spiritual Healing"
   },
@@ -48086,7 +48092,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@CROCODILE",
-    "description": "Unit is blessed by the Mire Crocodile:<bulletlist><bullet>It gains a <hyperlink>Primal fury crocodile</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury crocodile</hyperlink>. The unit's base attacks:<bulletlist></bullet><bullet>Gain +<eventColor>{FURY_CROCODILE_EXTRA_DAMAGE>DAMAGE>Blight}</eventColor> <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Inflict <hyperlink>Diseased</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury crocodile</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Mire Crocodile:<bulletlist><bullet>It gains a <hyperlink>Primal fury crocodile</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury crocodile</hyperlink>. The unit's base attacks:<bulletlist></bullet><bullet>Gain +<eventColor>3</eventColor> <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet>Inflict <hyperlink>Diseased</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury crocodile</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Mire Crocodile's Boon"
   },
@@ -48103,7 +48109,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@CROW",
-    "description": "Unit is blessed by the Storm Crow:<bulletlist><bullet>It gains a <hyperlink>Primal fury crow</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these turn into stacks of <hyperlink>Fury crow</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>{FURY_CROW_EXTRA_DAMAGE>DAMAGE>Shock}</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal <eventColor>{FURY_CROW_ADJACENT_DAMAGE>DAMAGE>Shock}</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to adjacent enemy units.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury crow</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Storm Crow:<bulletlist><bullet>It gains a <hyperlink>Primal fury crow</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these turn into stacks of <hyperlink>Fury crow</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>3</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet><bullet>Deal <eventColor>4</eventColor> <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to adjacent enemy units.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury crow</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Storm Crow's Boon"
   },
@@ -48116,7 +48122,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@MAMMOTH",
-    "description": "Unit is blessed by the Glacial Mammoth:<bulletlist><bullet>It gains a <hyperlink>Primal fury mammoth</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury mammoth</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>{FURY_MAMMOTH_EXTRA_DAMAGE>DAMAGE>Frost}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting <hyperlink>Frozen</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury mammoth</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Glacial Mammoth:<bulletlist><bullet>It gains a <hyperlink>Primal fury mammoth</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury mammoth</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>4</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting <hyperlink>Frozen</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury mammoth</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Glacial Mammoth's Boon"
   },
@@ -48128,7 +48134,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@SABERTOOTH",
-    "description": "Unit is blessed by the Ash Sabertooth:<bulletlist><bullet>It gains a <hyperlink>Primal fury sabertooth</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these turn into stacks of <hyperlink>Fury sabertooth</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>{FURY_SABERTOOTH_EXTRA_DAMAGE>DAMAGE>Fire}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal <eventColor>{FURY_SABERTOOTH_JUMP_DAMAGE>DAMAGE>Fire}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to another unit up to <eventColor>{FURY_SABERTOOTH_JUMP_TARGETER>MaxDistance}</eventColor> hexes away.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury sabertooth</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Ash Sabertooth:<bulletlist><bullet>It gains a <hyperlink>Primal fury sabertooth</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these turn into stacks of <hyperlink>Fury sabertooth</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>3</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Deal <eventColor>4</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to another unit up to <eventColor>2</eventColor> hexes away.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury sabertooth</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Ash Sabertooth's Boon"
   },
@@ -48142,7 +48148,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@SERPENT",
-    "description": "Unit is blessed by the Dune Serpent:<bulletlist><bullet>It gains a <hyperlink>Primal fury serpent</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury serpent</hyperlink>. The unit's base attacks:<bulletlist></bullet><bullet>Gain +<eventColor>{FURY_SERPENT_EXTRA_DAMAGE>DAMAGE>Physical}</eventColor> <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Inflict <hyperlink>Blinded</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury serpent</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Dune Serpent:<bulletlist><bullet>It gains a <hyperlink>Primal fury serpent</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks, these turn into stacks of <hyperlink>Fury serpent</hyperlink>. The unit's base attacks:<bulletlist></bullet><bullet>Gain +<eventColor>4</eventColor> <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Inflict <hyperlink>Blinded</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury serpent</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Dune Serpent's Boon"
   },
@@ -48166,7 +48172,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@PRIMAL_FURY_ABILITY@SPIDER",
-    "description": "Unit is blessed by the Tunneling Spider:<bulletlist><bullet>It gains a <hyperlink>Primal fury spider</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these, turn into stacks of <hyperlink>Fury spider</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>{FURY_SPIDER_EXTRA_DAMAGE>DAMAGE>Blight}</eventColor> <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet><hyperlink>New life steal</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury spider</hyperlink>.[/bulletlist]",
+    "description": "Unit is blessed by the Tunneling Spider:<bulletlist><bullet>It gains a <hyperlink>Primal fury spider</hyperlink> stack when attacking.</bullet><bullet>At 3 stacks these, turn into stacks of <hyperlink>Fury spider</hyperlink>. The unit's base attacks gain:<bulletlist></bullet><bullet>+<eventColor>3</eventColor> <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet><bullet><hyperlink>New life steal</hyperlink>.</bullet></bulletlist><bullet></bullet>Each attack removes a stack of <hyperlink>Fury spider</hyperlink>.[/bulletlist]",
     "DLC": "PRIMALFURY",
     "name": "Tunneling Spider's Boon"
   },
@@ -48736,14 +48742,14 @@
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@CROCODILE",
-    "description": "Your people worship the Mire Crocodile, bestowing benefits to your culture:<bulletlist><bullet>Start in the Swamp.</bullet><bullet>Swamp provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal crocodile</hyperlink> summon<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Disease immunity</hyperlink></bullet><bullet><hyperlink>Swamp walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group crocodile</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Mire Crocodile, bestowing benefits to your culture:<bulletlist><bullet>Start in the Swamp.</bullet><bullet>Swamp provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+3 <food></food> <hyperlink>Food</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal crocodile</hyperlink> summon</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Disease immunity</hyperlink></bullet><bullet><hyperlink>Swamp walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group crocodile</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Deep-Maw",
     "name": "Mire Crocodile"
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@CROW",
-    "description": "Your people worship the Storm Crow, bestowing benefits to your culture:<bulletlist><bullet>Start in the Grasslands.</bullet><bullet>Grassland provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+2 <mana></mana> <hyperlink>Mana</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal crow</hyperlink> summon.<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Grassland walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group crow</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Storm Crow, bestowing benefits to your culture:<bulletlist><bullet>Start in the Grasslands.</bullet><bullet>Grassland provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+2 <mana></mana> <hyperlink>Mana</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal crow</hyperlink> summon.</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Grassland walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group crow</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "High-Squall",
     "name": "Storm Crow"
@@ -48792,35 +48798,35 @@
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@MAMMOTH",
-    "description": "Your people worship the Glacial Mammoth, bestowing benefits to your culture:<bulletlist><bullet>Start in the Arctic.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Snow terrain.</bullet><bullet>Snow provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+3 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal mammoth</hyperlink> summon.<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Arctic walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group mammoth</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Glacial Mammoth, bestowing benefits to your culture:<bulletlist><bullet>Start in the Arctic.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Snow terrain.</bullet><bullet>Snow provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+3 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal mammoth</hyperlink> summon.</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Arctic walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group mammoth</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Loom-Frost",
     "name": "Glacial Mammoth"
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SABERTOOTH",
-    "description": "Your people worship the Ash Sabertooth, bestowing benefits to your culture:<bulletlist><bullet>Start in the Ashlands.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Ashlands terrain.</bullet><bullet>Cities ignore the <happiness></happiness> <hyperlink>City Stability</hyperlink> penalty from Lava and Chasm terrain in their <hyperlink>Domain</hyperlink>.</bullet><bullet>Ashland provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+3 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal sabertooth</hyperlink> summon.<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Desolate walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group sabertooth</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Ash Sabertooth, bestowing benefits to your culture:<bulletlist><bullet>Start in the Ashlands.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Ashlands terrain.</bullet><bullet>Cities ignore the <happiness></happiness> <hyperlink>City Stability</hyperlink> penalty from Lava and Chasm terrain in their <hyperlink>Domain</hyperlink>.</bullet><bullet>Ashland provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+3 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal sabertooth</hyperlink> summon.</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Desolate walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group sabertooth</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Fell-Fang",
     "name": "Ash Sabertooth"
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SERPENT",
-    "description": "Your people worship the Dune Serpent, bestowing benefits to your culture:<bulletlist><bullet>Start in the Desert.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Sand terrain.</bullet><bullet>Sand provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+2 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal serpent</hyperlink> summon<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Sand walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group serpent</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Dune Serpent, bestowing benefits to your culture:<bulletlist><bullet>Start in the Desert.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Sand terrain.</bullet><bullet>Sand provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+2 <gold></gold> <hyperlink>Gold</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal serpent</hyperlink> summon</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Sand walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group serpent</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Earth-Coil",
     "name": "Dune Serpent"
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@SPIDER",
-    "description": "Your people worship the Tunneling Spider, bestowing benefits on your culture:<bulletlist><bullet>Start in the Underground and with <hyperlink>Excavation</hyperlink>.</bullet><bullet><hyperlink>Underground</hyperlink> Cities gain +1 Province Annex Range.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Cavern terrain.</bullet><bullet>Cities ignore the <happiness></happiness> <hyperlink>City Stability</hyperlink> penalty from Lava and Chasm terrain in their <hyperlink>Domain</hyperlink>.</bullet><bullet>Mushroom Forest provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal spider</hyperlink> summon<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Cave walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group spider</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Tunneling Spider, bestowing benefits on your culture:<bulletlist><bullet>Start in the Underground and with <hyperlink>Excavation</hyperlink>.</bullet><bullet><hyperlink>Underground</hyperlink> Cities gain +1 Province Annex Range.</bullet><bullet>Able to build <farm></farm> <hyperlink>Farm</hyperlink> on Cavern terrain.</bullet><bullet>Cities ignore the <happiness></happiness> <hyperlink>City Stability</hyperlink> penalty from Lava and Chasm terrain in their <hyperlink>Domain</hyperlink>.</bullet><bullet>Mushroom Forest provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+2 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal spider</hyperlink> summon</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Cave walk</hyperlink></bullet><bullet><hyperlink>Primal fury mod group spider</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Under-Atter",
     "name": "Tunneling Spider"
   },
   {
     "id": "DLC@PRIMALFURY@SUBCULTURE_PRIMAL@WOLF",
-    "description": "Your people worship the Sylvan Wolf, bestowing benefits to your culture:<bulletlist><bullet>Start in the Forest.</bullet><bullet>Forest provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist></bullet><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist><bullet></bullet>Access to the <hyperlink>Primal wolf</hyperlink> summon<bullet></bullet>Units have:<bulletlist><bullet><hyperlink>Expedited forest</hyperlink></bullet><bullet><hyperlink>Primal fury mod group wolf</hyperlink></bullet></bulletlist>[/bulletlist]",
+    "description": "Your people worship the Sylvan Wolf, bestowing benefits to your culture:<bulletlist><bullet>Start in the Forest.</bullet><bullet>Forest provinces are <hyperlink>Favored Terrain</hyperlink> and gain:<bulletlist><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist></bullet><bullet>Access to the <hyperlink>Primal wolf</hyperlink> summon</bullet><bullet>Units have:<bulletlist><bullet><hyperlink>Expedited forest</hyperlink></bullet><bullet><hyperlink>Primal fury mod group wolf</hyperlink></bullet></bulletlist></bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "lorename": "Oath-Mother",
     "name": "Sylvan Wolf"
@@ -48870,7 +48876,7 @@
   },
   {
     "id": "DLC@PRIMALFURY@TOME_FEY_MIST@SKILL3",
-    "description": "In a 2-hex radius:<bulletlist><bullet>Place <hyperlink>Mist</hyperlink> clouds.</bullet><bullet>Friendly units gain <eventColor>{amount2}</eventColor> random <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist>",
+    "description": "In a 2-hex radius:<bulletlist><bullet>Place <hyperlink>Mist</hyperlink> clouds.</bullet><bullet>Friendly units gain <eventColor>2</eventColor> random <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist>",
     "DLC": "PRIMALFURY",
     "name": "Fey Embrace"
   },
@@ -50693,7 +50699,7 @@
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@NOMAD",
     "bio": "They are prone to wandering, either to conquer the lands beyond the horizon or to extract potent essences from magical sources.",
     "DLC": "RISEFROMRUIN",
-    "description": "<bulletlist><bullet>Mobile units that focus on maneuvering and flanking.</bullet><bullet>Nomad Cities are able to pack up into a <hyperlink>Nomad City Barge</hyperlink> and relocate.</bullet><bullet>Nodes in domain of their Cities are <hyperlink>Overharvested</hyperlink> over time, exhausting the Nodes to gain <hyperlink>Essence</hyperlink> in that city.</bullet><bullet>Nomad Cities require 50% more <food></food> <hyperlink>Food</hyperlink> to gain <population></population> <hyperlink>Population</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>Mobile units that focus on maneuvering and flanking.</bullet><bullet>Nomad Cities are able to pack up into a [hyperlink,GLOBAL.NomadSettlerConcept]Nomad City Barge[/hyperlink] and relocate.</bullet><bullet>Nodes in domain of their Cities are [hyperlink,GLOBAL.OverharvestingConcept]Overharvested[/hyperlink] over time, exhausting the Nodes to gain [hyperlink,GLOBAL.EssenceConcept]Essence[/hyperlink] in that city.</bullet></bulletlist>",
     "hyperlink": "<hyperlink>Nomad</hyperlink>",
     "lore": "<br><helpcolor>A resourceful people that migrate to thrive. They steer their land barges across the realm to settle in new lands.</helpcolor>",
     "lorename": "Nomad",
@@ -50725,7 +50731,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@SUBCULTURE@CONQUERERS",
-    "description": "To your people, survival is an eternal conflict, one they excel at:<bulletlist><bullet>Annex pillaged enemy provinces to gain <unitprod></unitprod> <hyperlink>Draft</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, and <gold></gold> <hyperlink>Gold</hyperlink> through <hyperlink>Aggressive Expansion</hyperlink>.</bullet><bullet>Pillaging provinces provides <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet>Movement grants units <hyperlink>Empowering momentum</hyperlink>.</bullet><bullet><hyperlink>Total War</hyperlink></bullet></bulletlist><br><br>In RbBP, Momentum grants +20% damage. Aggressive Annexation grants 5 Gold and 5 Knowledge, plus 5 of each per Population.",
+    "description": "To your people, survival is an eternal conflict, one they excel at:<bulletlist><bullet>Nomad Cities require 50% more <food></food> [hyperlink,GLOBAL.FoodConcept]Food[/hyperlink] to gain <population></population> [hyperlink,GLOBAL.PopulationConcept]Population[/hyperlink].</bullet><bullet>Annex pillaged enemy provinces to gain <unitprod></unitprod> [hyperlink,GLOBAL.UnitProductionConcept]Draft[/hyperlink], <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink], <knowledge></knowledge> [hyperlink,GLOBAL.KnowledgeConcept]Knowledge[/hyperlink], and <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink] through [hyperlink,GLOBAL.AggressiveExpansionConcept]Aggressive Expansion[/hyperlink].</bullet><bullet>Pillaging provinces provides <food></food> [hyperlink,GLOBAL.FoodConcept]Food[/hyperlink].</bullet><bullet>Movement grants units <hyperlink>Empowering Momentum</hyperlink>.</bullet><bullet>[hyperlink,GLOBAL.TotalWarConcept]Total War[/hyperlink]</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
     "fpg_description": "<bulletlist><bullet>Mobile cities that favor aggressive settlement near hostile domains.</bullet><bullet>Empowered by movement in combat.</bullet></bulletlist>",
     "lorename": "Conquerors",
@@ -50759,7 +50765,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@SUBCULTURE@SCAVENGERS",
-    "description": "Survival is measured in what can be scavenged from the ruined world, your people know this well:<bulletlist><bullet>Use <hyperlink>Wonder Scavenging</hyperlink> to extract unique <hyperlink>Essence</hyperlink> from <hyperlink>Ancient Wonder</hyperlink>, further empowering your cities as they collect Essence.</bullet><bullet>In combat, pickup loot from defeated units to heal and gain <hyperlink>Looted power</hyperlink>.</bullet></bulletlist><br><br>In RbBP, restoring depleted sources costs half as much. Looted Power grants up to 3 effects, and Improvised Remedy removes up to 2 negative status effects.",
+    "description": "Survival is measured in what can be scavenged from the ruined world, your people know this well:<bulletlist><bullet>Use [hyperlink,GLOBAL.WonderScavengingConcept]Wonder Scavenging[/hyperlink] to extract unique [hyperlink,GLOBAL.EssenceConcept]Essence[/hyperlink] from [hyperlink,GLOBAL.AncientWonderConcept]Ancient Wonder[/hyperlink], further empowering your cities as they collect Essence.</bullet><bullet>Restoration of [hyperlink,GLOBAL.RuinedNodeConcept]ruined nodes[/hyperlink] is cheaper.</bullet><bullet>[hyperlink,GLOBAL.EssenceConcept]Essence[/hyperlink] extraction takes less time.</bullet><bullet>In combat, pickup loot from defeated units to heal and gain <hyperlink>Looted Power</hyperlink>.</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
     "fpg_description": "<bulletlist><bullet>Mobile cities that favor settlement near Ancient Wonders to extract their Essence.</bullet><bullet>Empowered by picking up loot dropped by slain units in combat.</bullet></bulletlist>",
     "lorename": "Scavengers",
@@ -50889,7 +50895,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@UNIT_PROPERTY@EMPOWERING_MOMENTUM",
-    "description": "After moving at least <eventColor>{EMPOWERING_MOMENTUM>MinMovedDistance}</eventColor> hexes, gain <hyperlink>Momentum</hyperlink> until the end of the <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "description": "After moving at least <eventColor>3</eventColor> hexes, gain <hyperlink>Momentum</hyperlink> until the end of the <turn></turn> <hyperlink>Turn</hyperlink>.",
     "DLC": "RISEFROMRUIN",
     "name": "Empowering Momentum"
   },
@@ -50914,13 +50920,13 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@UNIT_PROPERTY@LOOTED_POWER",
-    "description": "<bulletlist><bullet>+<eventColor>{LOOTED_POWER_STAT_BONUS>BONUS>DEFENSE>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> and +<eventColor>{LOOTED_POWER_STAT_BONUS>BONUS>DEFENSE>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +<eventColor>{LOOTED_POWER_DAMAGE_MOD>ResolvedMultiplier}</eventColor>% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +<eventColor>{LOOTED_POWER_HEAL_MOD>ResolvedMultiplier}</eventColor>% <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+<eventColor>1</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> and +<eventColor>1</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +<eventColor>20</eventColor>% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +<eventColor>20</eventColor>% <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
     "name": "Looted Power"
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@UNIT_PROPERTY@MOMENTUM",
-    "description": "<bulletlist><bullet>+<eventColor>{MOMENTUM_STATS>BONUS>DEFENSE>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>+<eventColor>{MOMENTUM_STATS>BONUS>DEFENSE>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +<eventColor>{MOMENTUM_DAMAGE>ResolvedMultiplier}</eventColor>% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +<eventColor>{MOMENTUM_HEAL>ResolvedMultiplier}</eventColor>% <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+<eventColor>1</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>+<eventColor>1</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Attacks inflict +<eventColor>20</eventColor>% damage.</bullet><bullet><hyperlink>Support</hyperlink> abilities heal +<eventColor>30</eventColor>% <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
     "name": "Momentum"
   },
@@ -50940,7 +50946,7 @@
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@UNIT_PROPERTY@RECOVERING_WINDPULL",
     "description": "Target friendly unit:<bulletlist><bullet>Heals for <eventColor>{RECOVERING_WINDPULL_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Loses all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Teleports to an adjacent space.</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
-    "description_champion": "Recovering Windpull:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>{cooldownAmount}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Recovering Windpull:<bulletlist><bullet>Heals an additional <eventColor>+10</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>-1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Recovering Windpull",
     "name_champion": "Champion Recovering Windpull",
     "popup_desc": "Pull to adjacent space"
@@ -50979,7 +50985,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@CULTURE_NOMAD@UNIT_PROPERTY@WEAVE_MOMENTUM",
-    "description": "Target friendly unit that has action points remaining gains:<bulletlist><bullet><hyperlink>Empowering momentum</hyperlink> for <eventColor>{MOMENTUM_STATUS_EFFECT>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "Target friendly unit that has action points remaining gains:<bulletlist><bullet><hyperlink>Empowering momentum</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "DLC": "RISEFROMRUIN",
     "name": "Weave Momentum"
   },
@@ -53820,7 +53826,7 @@
   },
   {
     "id": "DLC@RISEFROMRUIN@TSR_SECTOR_PROPERTY@IRRADIANT_FLARE",
-    "description": "The area is heavily contaminated. At the beginning of each strategic turn, every non-<hyperlink>Marauder</hyperlink> <hyperlink>Army</hyperlink> in this sector has a <eventColor>{IntChance}</eventColor>% chance of being hit by the <hyperlink>Irradiant flare</hyperlink> <hyperlink>Spell</hyperlink>.",
+    "description": "The area is heavily contaminated. At the beginning of each strategic turn, every non-<hyperlink>Marauder</hyperlink> <hyperlink>Army</hyperlink> in this sector has a <eventColor>33</eventColor>% chance of being hit by the <hyperlink>Irradiant flare</hyperlink> <hyperlink>Spell</hyperlink>.",
     "DLC": "RISEFROMRUIN",
     "name": "Irradiant Flare"
   },
@@ -60277,7 +60283,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@TOME_COSMOS@ABILITY02",
-    "description": "Units in a <eventColor>{COSMOS_BEAM_UNIT_TARGETER_LINE>AREA>Length}</eventColor>-hex long and <eventColor>{COSMOS_BEAM_UNIT_TARGETER_LINE>AREA>Width}</eventColor>-hex wide line sustain damage. This ability deals damage according to the affinity points its controller has:<bulletlist><bullet>+2 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> per <arcana></arcana> <hyperlink>Astral Affinity</hyperlink></bullet><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per <chaos></chaos> <hyperlink>Chaos Affinity</hyperlink></bullet><bullet>+2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> per <matter></matter> <hyperlink>Materium Affinity</hyperlink></bullet><bullet>+2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per <nature></nature> <hyperlink>Nature Affinity</hyperlink></bullet><bullet>+2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per <order></order> <hyperlink>Order Affinity</hyperlink></bullet><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> per <shadow></shadow> <hyperlink>Shadow Affinity</hyperlink></bullet></bulletlist>",
+    "description": "Units in a <eventColor>{COSMOS_BEAM_UNIT_TARGETER_LINE>AREA>Length}</eventColor>-hex long and <eventColor>3</eventColor>-hex wide line sustain damage. This ability deals damage according to the affinity points its controller has:<bulletlist><bullet>+2 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> per <arcana></arcana> <hyperlink>Astral Affinity</hyperlink></bullet><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per <chaos></chaos> <hyperlink>Chaos Affinity</hyperlink></bullet><bullet>+2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> per <matter></matter> <hyperlink>Materium Affinity</hyperlink></bullet><bullet>+2 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per <nature></nature> <hyperlink>Nature Affinity</hyperlink></bullet><bullet>+2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> per <order></order> <hyperlink>Order Affinity</hyperlink></bullet><bullet>+2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> per <shadow></shadow> <hyperlink>Shadow Affinity</hyperlink></bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "name": "Cosmos Beam"
   },
@@ -60872,7 +60878,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@VISITSITES_STRATEGIC@MOVE_PORTAL_OPERATION",
-    "description": "Move this structure to an unoccupied target position within your empire's <hyperlink>Domain</hyperlink>.<br>Requires the <hyperlink>Empire</hyperlink> to own and have bound this structure.",
+    "description": "Move this structure to an unoccupied target position within the province containing your city.<br>Requires the <hyperlink>Empire</hyperlink> to own and have bound this structure.",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "name": "Move Portal"
   },
@@ -61262,7 +61268,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@HERO_SKILL@VAMPIRE@SKILL14",
-    "description": "When not mounted this unit gains:<bulletlist><bullet><hyperlink>Flying movement</hyperlink> movement.</bullet><bullet><hyperlink>Fast movement</hyperlink></bullet><bullet><eventColor>{VAMPIRIC_FLIGHT_ACCURACY>ResolvedAccuracyModifier}</eventColor>% evasion against <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks.</bullet></bulletlist>",
+    "description": "When not mounted this unit gains:<bulletlist><bullet><hyperlink>Flying movement</hyperlink> movement.</bullet><bullet><hyperlink>Fast movement</hyperlink></bullet><bullet><eventColor>30</eventColor>% evasion against <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks.</bullet></bulletlist>",
     "DLC": "THRONESOFBLOOD",
     "name": "Vampiric Flight",
     "prop_description": "Unit has:<bulletlist><bullet><hyperlink>Flying movement</hyperlink>.</bullet><bullet><eventColor>{VAMPIRIC_FLIGHT_ACCURACY>ResolvedAccuracyModifier}</eventColor>% evasion against <hyperlink>Missile</hyperlink> and <hyperlink>Magic</hyperlink> attacks.</bullet></bulletlist>"
@@ -64209,7 +64215,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@VAMPIRE_LORD",
-    "description": " <br><bulletlist><bullet>An <hyperlink>Undead</hyperlink> unit with an <hyperlink>aversion to light</hyperlink>.</bullet><bullet>Has access to <hyperlink>Lord castle foundation</hyperlink> which replaces the <hyperlink>Wizard tower foundation</hyperlink> and grants the use of <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Drains 20% of the combat <hyperlink><xp></xp> Experience</hyperlink> earned by Turned Vampire heroes.</bullet><bullet>Faction is immune to Sunless terrain's penalties to <happiness></happiness> <hyperlink>City Stability</hyperlink> and <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Elder Vampires are <hyperlink>Herotrait governance vampire governor</hyperlink>.</bullet><bullet>Elder Vampires have a 5 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>An <hyperlink>Undead</hyperlink> unit with an <hyperlink>aversion to light</hyperlink>.</bullet><bullet>Has access to <hyperlink>Lord castle foundation</hyperlink> which replaces the <hyperlink>Wizard tower foundation</hyperlink> and grants the use of <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Drains 20% of the combat <hyperlink><xp></xp> Experience</hyperlink> earned by Turned Vampire heroes.</bullet><bullet>Faction is immune to Sunless terrain's penalties to <happiness></happiness> <hyperlink>City Stability</hyperlink> and <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Elder Vampires are <hyperlink>Elder Vampire Governor</hyperlink>.</bullet><bullet>Elder Vampires have a 5 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
     "DLC": "THRONESOFBLOOD",
     "description_short": "<helpcolor>A deathless Vampire who drains the life from enemies under cover of night.</helpcolor>",
     "hyperlink": "<hyperlink>Elder Vampire</hyperlink>"
@@ -66278,7 +66284,7 @@
     "id": "DLC@WAYSOFWAR@ACCURSED_TRICKSTER@TRICKY_ESCAPE",
     "description": "<bulletlist><bullet>Inflict <eventColor>{TRICKY_ESCAPE_REPEATER>Count}</eventColor> <hyperlink>Ghostfire</hyperlink> for <eventColor>{GHOSTFIRE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> to target unit.</bullet><bullet>Teleport back 4 hexes.</bullet></bulletlist>",
     "DLC": "WAYSOFWAR",
-    "description_2": "<bulletlist><bullet>Inflict <eventColor>{TRICKY_ESCAPE_REPEATER>Count}</eventColor> <hyperlink>Ghostfire</hyperlink> for <eventColor>{GHOSTFIRE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> on target unit.</bullet><bullet>Teleport back 4 hexes and gain <hyperlink>Astral refuge</hyperlink> for <eventColor>{duration}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_2": "<bulletlist><bullet>Inflict <eventColor>{TRICKY_ESCAPE_REPEATER>Count}</eventColor> <hyperlink>Ghostfire</hyperlink> for <eventColor>{GHOSTFIRE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> on target unit.</bullet><bullet>Teleport back 4 hexes and gain <hyperlink>Astral refuge</hyperlink> for <eventColor>1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "description_master": "Tricky Escape:<bulletlist><bullet>Grants the caster <hyperlink>Astral refuge</hyperlink> for <eventColor>{ASTRA_REFUGE_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Tricky Escape",
     "name_master": "Champion Tricky Escape"
@@ -66287,7 +66293,7 @@
     "id": "DLC@WAYSOFWAR@BLESSED_DRAGON@REJUVENATING_RAIN",
     "description": "Friendly units in a <eventColor>{REJUVENATING_RAIN_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Heal <eventColor>{GRACEFUL_RAIN_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gain <eventColor>{REJUVENATING_RAIN_GRACE_REPEATER>Count}</eventColor> <hyperlink>Grace</hyperlink>.</bullet></bulletlist>",
     "DLC": "WAYSOFWAR",
-    "description_champion": "Graceful Rain:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gives an additional <eventColor>{graceAmount}</eventColor> stack of grace.</bullet></bulletlist>",
+    "description_champion": "Graceful Rain:<bulletlist><bullet>Heals an additional <eventColor>5</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gives an additional <eventColor>1</eventColor> stack of grace.</bullet></bulletlist>",
     "name": "Graceful Rain",
     "name_champion": "Champion Graceful Rain"
   },
@@ -68478,7 +68484,7 @@
     "id": "DLC@WAYSOFWAR@INTERFACE@DIPLOMACY",
     "devotion": "Devotion",
     "DLC": "WAYSOFWAR",
-    "devotion_description": "Reflects how devoted to its oath your empire is based on its actions. Devotion influences:<bulletlist><bullet>The strength of the <hyperlink>Harmonize</hyperlink>, <hyperlink>Nobility</hyperlink> and <hyperlink>Warriors soul</hyperlink> culture unit abilities.</bullet><bullet><happiness></happiness> <hyperlink>City Stability</hyperlink> in your cities.</bullet></bulletlist><br><br>Levels of Devotion:<bulletlist><bullet>120 to 130: <hyperlink>Devotion3concept</hyperlink></bullet><bullet>70 to 119: <hyperlink>Devotion2concept</hyperlink></bullet><bullet>20 to 69: <hyperlink>Devotion1concept</hyperlink></bullet><bullet> to 19: <hyperlink>Devotion0concept</hyperlink></bullet><bullet><eventColor>{Devo-1Min}</eventColor> to <eventColor>{Devo-1Max}</eventColor>: <hyperlink>Devotion-1concept</hyperlink></bullet></bulletlist>",
+    "devotion_description": "Reflects how devoted to its oath your empire is based on its actions. Devotion influences:<bulletlist><bullet>The strength of the <hyperlink>Harmonize</hyperlink>, <hyperlink>Nobility</hyperlink> and <hyperlink>Warriors soul</hyperlink> culture unit abilities.</bullet><bullet><happiness></happiness> <hyperlink>City Stability</hyperlink> in your cities.</bullet></bulletlist><br><br>Levels of Devotion:<bulletlist><bullet>120 to 130: <hyperlink>Devotion3concept</hyperlink></bullet><bullet>70 to 119: <hyperlink>Devotion2concept</hyperlink></bullet><bullet>20 to 69: <hyperlink>Devotion1concept</hyperlink></bullet><bullet> to 19: <hyperlink>Devotion0concept</hyperlink></bullet><bullet><eventColor>-1</eventColor> to <eventColor>-40</eventColor>: <hyperlink>Devotion-1concept</hyperlink></bullet></bulletlist>",
     "devotion_hyperlink": "<hyperlink>Devotion</hyperlink>"
   },
   {
@@ -70660,7 +70666,7 @@
   },
   {
     "id": "DLC@WAYSOFWAR@TOME_SHADES@RENDING_SHADOWS",
-    "description": "Enemy units in a <eventColor>{RENDING_SHADOWS_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Sustain <eventColor>{RENDING_SHADOWS_DAMAGE>DAMAGE>Physical}</eventColor><damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Have a base <eventColor>{BLINDED_RESISTANCE>ResolvedStrength}</eventColor>% chance of becoming <hyperlink>Blinded</hyperlink> for <eventColor>{BLINDED_EFFECT_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Have a base <eventColor>{SUNDERED_DEFENSE_RESISTANCE>ResolvedStrength}</eventColor>% chance of gaining <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "Enemy units in a <eventColor>{RENDING_SHADOWS_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Sustain <eventColor>{RENDING_SHADOWS_DAMAGE>DAMAGE>Physical}</eventColor><damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Have a base <eventColor>{BLINDED_RESISTANCE>ResolvedStrength}</eventColor>% chance of becoming <hyperlink>Blinded</hyperlink> for <eventColor>1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Have a base <eventColor>{SUNDERED_DEFENSE_RESISTANCE>ResolvedStrength}</eventColor>% chance of gaining <hyperlink>Sundered defense</hyperlink> for <eventColor>3</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "DLC": "WAYSOFWAR",
     "name": "Rending Shadows"
   },
@@ -70915,7 +70921,7 @@
     "description": "Deals damage and inflicts <hyperlink>Remorseful seal debuff group</hyperlink>, a link effect that lasts for <eventColor>{REMORSEFUL_SEAL_LINK>Duration}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "DLC": "WAYSOFWAR",
     "description_generic_enhanced": "The Sealbearer's seals become more powerful.",
-    "description_generic_master": "<oathswornHarmony></oathswornHarmony>Resonance Seal:<bulletlist><bullet>Does an additional <eventColor>{resonance}</eventColor><damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per attack.</bullet></bulletlist><br><oathswornStrife></oathswornStrife>Fire Seal:<bulletlist><bullet>Does an additional <eventColor>{fire}</eventColor><damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per turn.</bullet><bullet>Does an additional <eventColor>{fire2}</eventColor><damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> when the target dies.</bullet></bulletlist><br><oathswornRighteousness></oathswornRighteousness>Transference Seal:<bulletlist><bullet>Heals an addition <eventColor>{trans}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink> per attack.</bullet></bulletlist>",
+    "description_generic_master": "<oathswornHarmony></oathswornHarmony>Resonance Seal:<bulletlist><bullet>Does an additional <eventColor>2</eventColor><damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> per attack.</bullet></bulletlist><br><oathswornStrife></oathswornStrife>Fire Seal:<bulletlist><bullet>Does an additional <eventColor>5</eventColor><damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> per turn.</bullet><bullet>Does an additional <eventColor>10</eventColor><damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> when the target dies.</bullet></bulletlist><br><oathswornRighteousness></oathswornRighteousness>Transference Seal:<bulletlist><bullet>Heals an addition <eventColor>3</eventColor><hyperlink>{<temphp></temphp>}</hyperlink> per attack.</bullet></bulletlist>",
     "enhanced_name": "Enhanced Resonance Seal",
     "master_name": "Champion Resonance Seal",
     "name": "Resonance Seal",
@@ -71013,7 +71019,7 @@
     "id": "DLC@WAYSOFWAR@UNITS_OATHSWORN@ABILITY17",
     "description": "Friendly units in a <eventColor>{VOW_OF_HEALING_TARGETER>AREA>Radius}</eventColor>-hex radius heal for <eventColor>{VOW_OF_HEALING_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.",
     "DLC": "WAYSOFWAR",
-    "description_champion": "Vow of Healing:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Vow of Healing:<bulletlist><bullet>Heals an additional <eventColor>15</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "name": "Vow of Healing",
     "name_champion": "Champion Vow of Healing"
   },
@@ -72512,7 +72518,7 @@
   },
   {
     "id": "EQUIPMENT@SECONDARY@FANGIR_DEFENDER",
-    "description": "<eventColor>{ITEM-NON_FLANKING_DEFENSE_AND_RESISTANCE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> and <eventColor>{ITEM-NON_FLANKING_DEFENSE_AND_RESISTANCE>DEF_MOD>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink> against non-<hyperlink><flank></flank> Flanking</hyperlink> attacks.",
+    "description": "<eventColor>4</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> and <eventColor>2</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink> against non-<hyperlink><flank></flank> Flanking</hyperlink> attacks.",
     "description2": "1 <hyperlink>Fangirs defense</hyperlink> when sustaining damage.",
     "name": "Fangir's Defender"
   },
@@ -74700,7 +74706,7 @@
     "id": "FORM_TRAITS@28",
     "bio": "Their skin is cold to the touch, causing frostbite to those who get too close.",
     "description": "<bulletlist><bullet> </bullet><bullet> </bullet></bulletlist>",
-    "description_01": "+<eventColor>{INNER_FROST_RESISTANCE>REDUCTION>Frost}</eventColor> <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>.",
+    "description_01": "+<eventColor>4</eventColor> <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>.",
     "description_02": "Melee attackers sustain <eventColor>{INNER_FROST_DAMAGE>DAMAGE>Frost}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.",
     "lore": "<helpcolor>Melee attackers sustain <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</helpcolor>",
     "name": "Inner Frost"
@@ -74718,7 +74724,7 @@
     "id": "FORM_TRAITS@30",
     "bio": "Their bodies can barely contain their divine origin, sacred light radiates from within them like a purifying flame.",
     "description": "<bulletlist><bullet> </bullet><bullet> </bullet></bulletlist>",
-    "description_01": "+<eventColor>{INNER_RADIANCE_RESISTANCE>REDUCTION>Spirit}</eventColor> <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>.",
+    "description_01": "+<eventColor>4</eventColor> <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>.",
     "description_02": "Melee attackers sustain <eventColor>{INNER_LIGHTNING_DAMAGE>DAMAGE>Spirit}</eventColor> <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.",
     "lore": "<helpcolor>Melee attackers sustain <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</helpcolor>",
     "name": "Inner Radiance"
@@ -75373,7 +75379,7 @@
   },
   {
     "id": "HERO@AMBITION@COLLECTOR_MAJOR",
-    "reward": "<eventColor>{RenownReward}</eventColor> <renown></renown> <hyperlink>Renown</hyperlink><br><eventColor>{amount1}</eventColor> <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink><br><eventColor>{UnitPropertyReward1}</eventColor>"
+    "reward": "<eventColor>{RenownReward}</eventColor> <renown></renown> <hyperlink>Renown</hyperlink><br><eventColor>600</eventColor> <bindingfragments></bindingfragments> <hyperlink>Binding Fragments</hyperlink><br><eventColor>{UnitPropertyReward1}</eventColor>"
   },
   {
     "id": "HERO@AMBITION@GENERIC_MAJOR",
@@ -75904,7 +75910,7 @@
   },
   {
     "id": "HERO_ITEM@MISC16",
-    "description": "When this unit's total <hyperlink>{<hp></hp>}</hyperlink> reach <eventColor>{BERSERKERS_RAGE_THRESHOLD_EVENT>ResolvedTriggerProportion}</eventColor>% or lower, grants this unit:<bulletlist><bullet>3 <hyperlink>Strengthened</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Berserk</hyperlink> for <eventColor>{BERSERK_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Steadfast</hyperlink> for <eventColor>{STEADFAST_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "When this unit's total <hyperlink>{<hp></hp>}</hyperlink> reach <eventColor>{BERSERKERS_RAGE_THRESHOLD_EVENT>ResolvedTriggerProportion}</eventColor>% or lower, grants this unit:<bulletlist><bullet>3 <hyperlink>Strengthened</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Berserk</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Steadfast</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Belt of the Berserker"
   },
   {
@@ -76461,7 +76467,7 @@
   },
   {
     "id": "HERO_SKILLS@BRACED_DEFENSE",
-    "description": "While in <hyperlink>Defense Mode</hyperlink>, this unit gains <hyperlink>Charge resistance</hyperlink>.",
+    "description": "Hero gains:<bulletlist><bullet><hyperlink>Charge Resistance</hyperlink></bullet></bulletlist><br>When the unit enters Defense Mode these bonuses are given to adjacent allies.",
     "name": "Braced Defense"
   },
   {
@@ -76612,7 +76618,7 @@
   },
   {
     "id": "HERO_SKILLS@DEFENDER@SHIELDBEARER",
-    "description": "When entering <hyperlink>Defense Mode</hyperlink>, this unit and all adjacent allies receive +<eventColor>{HS_DEFENDER_SHIELDBEARER_PROP_DEFENSE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink> until the start of the next turn.",
+    "description": "When entering <hyperlink>Defense Mode</hyperlink>, this unit and all adjacent allies receive +2 <defense></defense> <hyperlink>Defense</hyperlink> until the start of the next turn.<br><br>While in <hyperlink>Defense Mode</hyperlink>, this unit gains <hyperlink>Charge Resistance</hyperlink>.",
     "name": "Shieldbearer"
   },
   {
@@ -76864,7 +76870,7 @@
   {
     "id": "HERO_SKILLS@MAGE@ELEMENTAL_MASTERY",
     "description": "The hero gains <hyperlink>Elemental mastery property group storms</hyperlink>.<br><br>Damage channel is based on your chosen discipline.",
-    "description_group": "Discipline of Storms gains:<bulletlist><bullet>+3 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink></bullet><bullet>Base attacks gain +2 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Flames gains:<bulletlist><bullet>+3 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Earth gains:<bulletlist><bullet>+<eventColor>{EarthValue}</eventColor> <defensephysical></defensephysical> <hyperlink>Physical Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Frost gains:<bulletlist><bullet>+3 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist><br> ",
+    "description_group": "Discipline of Storms gains:<bulletlist><bullet>+3 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink></bullet><bullet>Base attacks gain +2 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Flames gains:<bulletlist><bullet>+3 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Earth gains:<bulletlist><bullet>+<eventColor>4</eventColor> <defensephysical></defensephysical> <hyperlink>Physical Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet></bulletlist><br>Discipline of Frost gains:<bulletlist><bullet>+3 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>.</bullet><bullet>Base attacks gain +2 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist><br> ",
     "name": "Elemental Mastery"
   },
   {
@@ -76952,7 +76958,7 @@
   {
     "id": "HERO_SKILLS@MAGE@MASTERED_FOCUS",
     "description": "Improve <hyperlink>Ritual of elements</hyperlink>:<bulletlist><bullet>Now grants <hyperlink>Mage mastered focus</hyperlink> instead.</bullet></bulletlist>",
-    "modifier_description": "This hero gains +<eventColor>{MAGE_MASTERED_FOCUS_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage and +<eventColor>{MAGE_MASTERED_FOCUS_RANGE_BOOST>ADD>MaxRange}</eventColor> <hyperlink><range></range>Range</hyperlink> on its <hyperlink>Magic</hyperlink> attacks and abilities until it moves.",
+    "modifier_description": "This hero gains +<eventColor>{MAGE_MASTERED_FOCUS_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage and +<eventColor>1</eventColor> <hyperlink><range></range>Range</hyperlink> on its <hyperlink>Magic</hyperlink> attacks and abilities until it moves.",
     "plugin_description": "The caster:<bulletlist><bullet>Refreshes all ability cooldowns.</bullet><bullet>Gains <hyperlink>Mage mastered focus</hyperlink>.</bullet></bulletlist>"
   },
   {
@@ -77027,7 +77033,7 @@
   {
     "id": "HERO_SKILLS@MAGE@WILDFIRE",
     "description": "Base attacks gain:<bulletlist><bullet><eventColor>{MAGE_WILDFIRE_DAMAGE>DAMAGE>Fire}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to the target and adjacent enemies.</bullet><bullet><eventColor>{BURNING_RESISTANCE>ResolvedStrength}</eventColor>% base chance of inflicting <hyperlink>Burning</hyperlink> on the target and adjacent enemies.</bullet></bulletlist><br><br> ",
-    "description_elementalist": "Deals damage to target enemy unit:<bulletlist><bullet>Inflicts <eventColor>{value}</eventColor> <hyperlink>Burning</hyperlink> for <eventColor>{BURNING_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>This effect cascades to adjacent enemy units and repeats.</bullet></bulletlist><br><br>Requires Discipline of Flames",
+    "description_elementalist": "Deals damage to target enemy unit:<bulletlist><bullet>Inflicts <eventColor>4</eventColor> <hyperlink>Burning</hyperlink> for <eventColor>{BURNING_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>This effect cascades to adjacent enemy units and repeats.</bullet></bulletlist><br><br>Requires Discipline of Flames",
     "elementalist_name": "Wildfire",
     "modifier_description": "<bulletlist><bullet>Base attacks deal <eventColor>{MAGE_WILDFIRE_DAMAGE>DAMAGE>Fire}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> to the target and adjacent enemies.</bullet><bullet>Base attacks gain <eventColor>{BURNING_RESISTANCE>ResolvedStrength}</eventColor>% base chance of inflicting <hyperlink>Burning</hyperlink> on the target and adjacent enemies.<br><br> </bullet></bulletlist>",
     "mod_description": "+<eventColor>{MAGE_WILDFIRE_DAMAGE>DAMAGE>Fire}</eventColor> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> and <eventColor>{BURNING_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Burning</hyperlink> on the target and adjacent enemies.",
@@ -77388,7 +77394,7 @@
     "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink> attacks grant <hyperlink>Prepared shot</hyperlink> for <eventColor>{PREPARED_SHOT_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Missile</hyperlink> attacks grant <hyperlink>Prepared strike</hyperlink> for <eventColor>{PREPARED_STRIKE_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "melee_modifier_description": "Grants <hyperlink>Prepared shot</hyperlink> for <eventColor>{PREPARED_SHOT_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>",
     "name": "Versatile Skirmisher",
-    "ranged_modifier_description": "Grants <hyperlink>Prepared strike</hyperlink> for <eventColor>{PREPARED_STRIKE_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>."
+    "ranged_modifier_description": "Grants <hyperlink>Prepared Strike</hyperlink> and <hyperlink>Prepared Shot</hyperlink> for 2 <turn></turn> <hyperlink>Turn</hyperlink>."
   },
   {
     "id": "HERO_SKILLS@RANGER@VERSATILE_SKIRMISHER@PREPARED_SHOT",
@@ -77818,7 +77824,7 @@
   },
   {
     "id": "HERO_SKILLS@SPELLBLADE@VERSATILE_SKIRMISHER",
-    "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink> attacks grant <hyperlink>Prepared spell</hyperlink> for <eventColor>{PREPARED_SPELL_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Magic</hyperlink> attacks grant <hyperlink>Prepared strike</hyperlink> for <eventColor>{PREPARED_STRIKE_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink> attacks grant <hyperlink>Prepared spell</hyperlink> for <eventColor>2</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Magic</hyperlink> attacks grant <hyperlink>Prepared strike</hyperlink> for <eventColor>2</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "magic_modifier_description": "Grants <hyperlink>Prepared spell</hyperlink> for <eventColor>{PREPARED_SPELL_DESCRIPTION>NumTurns}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>"
   },
   {
@@ -78187,16 +78193,16 @@
   },
   {
     "id": "HERO_SKILLS@WARRIOR@SECOND_WIND",
-    "ability_description": "<bulletlist><bullet>+1 hex of movement for <eventColor>{SECOND_WIND_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Slippery</hyperlink> for <eventColor>{SECOND_WIND_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Heal for <eventColor>{SECOND_WIND_EFFECT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist><br><br>This ability is reusable after each kill.",
+    "ability_description": "<bulletlist><bullet>+1 hex of movement for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Slippery</hyperlink> for <eventColor>1</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Heal for <eventColor>{SECOND_WIND_EFFECT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist><br><br>This ability is reusable after each kill.",
     "name": "Second Wind",
     "reset": "Recharged on kill."
   },
   {
     "id": "HERO_SKILLS@WARRIOR@SPIRITBREAKER",
     "description": "Gain:<bulletlist><bullet><hyperlink>Vicious killer</hyperlink></bullet><bullet><hyperlink>Hs spiritbreaker mod</hyperlink></bullet></bulletlist>",
-    "modifier_description": "On Kill, enemies in range <eventColor>{HS_SPIRITBREAKER_UNIT_TARGETER_CIRCLE>AREA>Radius}</eventColor> of the target suffer:<bulletlist><bullet>2 <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet><bullet><hyperlink>Remorse</hyperlink> for <eventColor>{REMORSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
+    "modifier_description": "On Kill, enemies in range <eventColor>{HS_SPIRITBREAKER_UNIT_TARGETER_CIRCLE>AREA>Radius}</eventColor> of the target suffer:<bulletlist><bullet>2 <hyperlink>Weakened</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet><bullet><hyperlink>Remorse</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink></bullet></bulletlist>",
     "name": "Willbreaker",
-    "property_description": "When this unit kills, enemies within <eventColor>{HS_SPIRITBREAKER_UNIT_TARGETER_CIRCLE>AREA>Radius}</eventColor> hexes of the target suffer:<bulletlist><bullet>2 <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Remorse</hyperlink> for <eventColor>{REMORSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>"
+    "property_description": "When this unit kills, enemies within <eventColor>{HS_SPIRITBREAKER_UNIT_TARGETER_CIRCLE>AREA>Radius}</eventColor> hexes of the target suffer:<bulletlist><bullet>2 <hyperlink>Weakened</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet><hyperlink>Remorse</hyperlink> for <eventColor>3</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>"
   },
   {
     "id": "HERO_SKILLS@WARRIOR@SWEEPING_CHARGE",
@@ -78238,7 +78244,7 @@
   },
   {
     "id": "HERO_SKILLS@WEAVER",
-    "ability_description": "<bulletlist><bullet>Refresh all your ability cooldowns and once-per-combat abilities.</bullet><bullet>Enter <hyperlink>Defense Mode</hyperlink>.</bullet></bulletlist>",
+    "ability_description": "<bulletlist><bullet>Refresh all your ability cooldowns and once-per-combat abilities.</bullet></bulletlist>",
     "description": "Gain the <hyperlink>Weaver</hyperlink> ability.",
     "name": "Weaver"
   },
@@ -78625,7 +78631,7 @@
   },
   {
     "id": "HERO_TRAIT@GOVERNANCE@RECRUITING_GOVERNOR",
-    "description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet>[white]Renown level 1[/white]<br>+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>[white]Renown level 2[/white]<br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit.</bullet><bullet>[white]Renown level 3[/white]<br>Tier I and II <hyperlink>Unit</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet><bullet>[white]Renown level 4[/white]<br>Tier III, IV and V <hyperlink>Unit</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet></bulletlist>",
+    "description": "While Governor, the governed city gains benefits based on the Renown level of this Hero:<bulletlist><bullet><white>Renown level 1</white><br>+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet><white>Renown level 2</white><br>Tier I and II <hyperlink>Unit</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet><bullet><white>Renown level 3</white><br>Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit.</bullet><bullet><white>Renown level 4</white><br>Tier III, IV and V <hyperlink>Unit</hyperlink> are recruited at +1<medalGold></medalGold> Rank.</bullet></bulletlist>",
     "lvl0": "+30<unitprod></unitprod> <hyperlink>Draft</hyperlink>",
     "lvl1": "Units cost -20% less <gold></gold> <hyperlink>Gold</hyperlink> to recruit",
     "lvl2": "Tier I and II <hyperlink>Unit</hyperlink> are recruited at +1<medalGold></medalGold> Rank",
@@ -88771,7 +88777,7 @@
   },
   {
     "id": "MAGICMATERIALS@SILVERTONGUE_FRUIT",
-    "description": "Unique global effect: <bulletlist><bullet><whisperingStone></whisperingStone> <hyperlink>Whispering Stones</hyperlink> grant +1 <hyperlink><allegiance></allegiance>Allegiance</hyperlink>.</bullet></bulletlist>",
+    "description": "Unique global effect: <bulletlist><bullet><whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink> grant +1 <hyperlink>Allegiance</hyperlink></bullet><bullet>You gain +1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>.</bullet></bulletlist>",
     "lore": "\"An enchanting bloom that, upon consumption, encourages cooperation in those who indulge in its succulent harvest. Often used as a treat during negotiations, to bring about a fruitful outcome for all.\"<br><br>— Julia of House Inioch, Personal Journal from the First Age",
     "name": "Silvertongue Fruits"
   },
@@ -88828,7 +88834,7 @@
     "attackers_spawned": "Invaders spawned",
     "await_countdown": "Count/Total <turn></turn> Turns of Bound Gold <sitegold></sitegold> <hyperlink>Ancient Wonder</hyperlink> Defended",
     "build_upgrades": "Value/Required Gold <sitegold></sitegold> <hyperlink>Ancient Wonder</hyperlink> Bound",
-    "description": "To achieve the Magic Victory, an <hyperlink>Empire</hyperlink> needs to cast and sustain a number of Bind <siteGold></siteGold> Gold <hyperlink>Ancient Wonder</hyperlink> spells, unlocked when you choose a Tier III <hyperlink>Tome</hyperlink>.<br><br>When you choose a Tier V <hyperlink>Tome</hyperlink>, you unlock the Magic Victory Spell of the same affinity as the tome. You may cast it when having enough Bound Ancient Wonders.<br><br>Channeling the spell takes 15 <turn></turn> <hyperlink>Turn</hyperlink> until victory is achieved. If you lose a bound Ancient Wonder and would no longer have a sufficient amount, the spell will be canceled.",
+    "description": "To achieve the Magic Victory, an <hyperlink>Empire</hyperlink> needs to cast and sustain a number of Bind <siteGold></siteGold> Gold <hyperlink>Ancient Wonder</hyperlink> spells, unlocked when you choose a Tier III <hyperlink>Tome</hyperlink>.<br><br>When you choose a Tier III <hyperlink>Tome</hyperlink>, you unlock the Magic Victory Spell of the same affinity as the tome. You may cast it when having enough Bound Ancient Wonders.<br><br>Channeling the spell takes 15 <turn></turn> <hyperlink>Turn</hyperlink> until victory is achieved. If you lose a bound Ancient Wonder and would no longer have a sufficient amount, the spell will be canceled.",
     "finisher_unlocked_self": "<eventColor>{Finisher.Name}</eventColor> ready to research",
     "increase_tome_tier": "Research a Tier 3 Tome and unlock the Bind Gold Ancient Wonder spell",
     "initial_event": "Root Nodes discovered!",
@@ -90167,7 +90173,7 @@
   },
   {
     "id": "META_EMPIRE@PROGRESSION_ITEM@NULLIFY_ABILITY",
-    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>{SHIELD_DEFENSE_DEFENSE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Enemy units adjacent to this unit suffer <hyperlink>Disruption tooltip property</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>2</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>2</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>3</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Enemy units adjacent to this unit suffer <hyperlink>Disruption tooltip property</hyperlink> for 1 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "hyperlink": "<hyperlink>Nullify wall</hyperlink>",
     "name": "Defense Mode: Nullify"
   },
@@ -90193,7 +90199,7 @@
   },
   {
     "id": "META_EMPIRE@PROGRESSION_ITEM@STONE_WALL_ABILITY",
-    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>{SHIELD_DEFENSE_DEFENSE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>The unit gains <hyperlink>Stone skin</hyperlink> until the end of the turn.</bullet><bullet>The unit heals 15 <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>2</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>2</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>3</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>The unit gains <hyperlink>Stone skin</hyperlink> until the end of the turn.</bullet><bullet>The unit heals 15 <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "hyperlink": "<hyperlink>Stone wall</hyperlink>",
     "name": "Defense Mode: Stone Wall"
   },
@@ -94431,9 +94437,9 @@
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@MISFORTUNE",
     "description": "<bulletlist><bullet>+<eventColor>{MISFORTUNE_CRITICAL>ResolvedFumbleChanceBonus}</eventColor>% <hyperlink>Fumble</hyperlink> chance.</bullet><bullet>Take <eventColor>{MISFORTUNE_DAMAGE>DAMAGE>Physical}</eventColor><damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> when fumbling.</bullet><bullet>Stacks up to 3 times.</bullet></bulletlist><br><br>Misfortune <hyperlink>counters</hyperlink> <hyperlink>Fortune</hyperlink>.",
     "mark_mod": "Inflicts <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "mark_mod_count": "Inflicts <eventColor>{count}</eventColor>x <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "mark_mod_count": "Inflicts <eventColor>2</eventColor>x <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "modifier_description": "Base <eventColor>{MISFORTUNE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "modifier_description_2": "Base <eventColor>{MISFORTUNE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>{count}</eventColor> <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "modifier_description_2": "Base <eventColor>{MISFORTUNE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>2</eventColor> <hyperlink>Misfortune</hyperlink> for <eventColor>{MISFORTUNE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Misfortune"
   },
   {
@@ -94602,7 +94608,7 @@
     "description": "<bulletlist><bullet>Gains <eventColor>{STATUS_VULNERABILITY_STATUS_RES>Resistance}</eventColor> <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br><br>Status Vulnerability <hyperlink>counters</hyperlink> <hyperlink>Status protection</hyperlink>.",
     "modifier_description": "Base <eventColor>{STATUS_VULNERABILITY_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Status vulnerability</hyperlink> for <eventColor>{STATUS_VULNERABILITY_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "modifier_description_guaranteed": "Inflicts <hyperlink>Status vulnerability</hyperlink> for <eventColor>{STATUS_VULNERABILITY_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "modifier_description_guaranteed_double": "Inflicts <eventColor>{Sundercount}</eventColor> <hyperlink>Status vulnerability</hyperlink> for <eventColor>{STATUS_VULNERABILITY_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "modifier_description_guaranteed_double": "Inflicts <eventColor>2</eventColor> <hyperlink>Status vulnerability</hyperlink> for <eventColor>{STATUS_VULNERABILITY_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Status Vulnerability"
   },
   {
@@ -94634,7 +94640,7 @@
     "description": "<bulletlist><bullet><eventColor>{SUNDERED_DEFENSE_DEFENSE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>Stacks up to 10 times.</bullet></bulletlist><br><br>Sundered Defense <hyperlink>counters</hyperlink> <hyperlink>Bolstered defense</hyperlink>.",
     "guaranteed_mod": "Attacks inflict <hyperlink>Sundered defense</hyperlink>",
     "modifier_description": "Base <eventColor>{SUNDERED_DEFENSE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "modifier_description_2": "Base <eventColor>{SUNDERED_DEFENSE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>{count}</eventColor> <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "modifier_description_2": "Base <eventColor>{SUNDERED_DEFENSE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>2</eventColor> <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_description": "Inflict <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_double_description": "Inflict 2 <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_double_description_if_moved": "If the unit moved, inflict 2 <hyperlink>Sundered defense</hyperlink> for <eventColor>{SUNDERED_DEFENSE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
@@ -94644,7 +94650,7 @@
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@SUNDERED_RESISTANCE",
     "description": "<bulletlist><bullet><eventColor>{SUNDERED_RESISTANCE_DEFENSE>DEF_MOD>Resistance}</eventColor><resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>Stacks up to 10 times.</bullet></bulletlist><br><br>Sundered Resistance <hyperlink>counters</hyperlink> <hyperlink>Bolstered resistance</hyperlink>.",
     "modifier_description": "Base <eventColor>{SUNDERED_RESISTANCE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Sundered resistance</hyperlink> for <eventColor>{SUNDERED_RESISTANCE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "modifier_description_2": "Base <eventColor>{SUNDERED_RESISTANCE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>{count}</eventColor> <hyperlink>Sundered resistance</hyperlink> for <eventColor>{SUNDERED_RESISTANCE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "modifier_description_2": "Base <eventColor>{SUNDERED_RESISTANCE_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>2</eventColor> <hyperlink>Sundered resistance</hyperlink> for <eventColor>{SUNDERED_RESISTANCE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_description": "Inflict <hyperlink>Sundered resistance</hyperlink> for <eventColor>{SUNDERED_RESISTANCE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_double_description": "Inflict 2 <hyperlink>Sundered resistance</hyperlink> for <eventColor>{SUNDERED_RESISTANCE_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Sundered Resistance"
@@ -94662,7 +94668,7 @@
   {
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@TRUESTRIKE",
     "description": "Attacks cannot miss.<br><br>True Strike <hyperlink>counters</hyperlink> <hyperlink>Blinded</hyperlink>.",
-    "mod_description": "Attacks cannot miss.",
+    "mod_description": "+30% <hyperlink>Accuracy</hyperlink> to attacks.",
     "name": "True Strike"
   },
   {
@@ -94698,7 +94704,7 @@
     "id": "SHAREDMODIFIERS_UNITPROPERTIES@WEAKENED",
     "description": "<bulletlist><bullet>Deals -<eventColor>{WEAKENED_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist><br><br>Weakened <hyperlink>counters</hyperlink> <hyperlink>Strengthened</hyperlink>.",
     "modifier_description": "Base <eventColor>{WEAKENED_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
-    "modifier_description_2": "Base <eventColor>{WEAKENED_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>{count}</eventColor> <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
+    "modifier_description_2": "Base <eventColor>{WEAKENED_RESISTANCE>ResolvedStrength}</eventColor>% chance of inflicting <eventColor>2</eventColor> <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_description": "Inflict <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_double_description": "Inflict 2 <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
     "mod_guarantee_double_description_if_moved": "If the unit moved, inflict 2 <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.",
@@ -94854,7 +94860,7 @@
   },
   {
     "id": "SIGNATURE_HS@S03",
-    "ability_description": "Target empty hex:<bulletlist><bullet>Summons a random Tier III Undead unit. </bullet><bullet>Adjacent enemies suffer <hyperlink>Soulbound</hyperlink> and <eventColor>{amount1}</eventColor> <hyperlink>Remorse</hyperlink>.</bullet></bulletlist>",
+    "ability_description": "Target empty hex:<bulletlist><bullet>Summons a random Tier III Undead unit. </bullet><bullet>Adjacent enemies suffer <hyperlink>Soulbound</hyperlink> and <eventColor>2</eventColor> <hyperlink>Remorse</hyperlink>.</bullet></bulletlist>",
     "description": "Gains the <hyperlink>Summon undead</hyperlink> ability.",
     "name": "Exhume Undead"
   },
@@ -106587,7 +106593,7 @@
   },
   {
     "id": "TOME_ARTIFICING@ABILITY1",
-    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>{PROTECTIVE_WALL_DEFENSE_INCREASE>DEF_MOD>Resistance}</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>{SHIELD_DEFENSE_DEFENSE>DEF_MOD>Armor}</eventColor> <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>All adjacent friendly units gain +<eventColor>{PROTECTIVE_WALL_STATUS_RESISTANCE>Resistance}</eventColor> <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit ends its turn and goes into a defensive mode:<bulletlist><bullet>Extends its <hyperlink>Zone of Control</hyperlink> to all adjacent hexes.</bullet><bullet>Gains +<eventColor>2</eventColor> <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>Gains +<eventColor>2</eventColor> <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet><bullet>Immune to <hyperlink><flank></flank> Flanking</hyperlink>.</bullet><bullet>All adjacent friendly units gain +<eventColor>3</eventColor> <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>All adjacent friendly units gain +<eventColor>3</eventColor> <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet></bulletlist>",
     "hyperlink": "<hyperlink>Protective wall</hyperlink>",
     "name": "Defense Mode: Protective Wall",
     "prop_name": "Protective Wall"
@@ -106929,7 +106935,7 @@
     "description": "Whenever another unit dies in battle, enchanted unit gains:<bulletlist><bullet><hyperlink>Infernal might</hyperlink> for <eventColor>{INFERNAL_BLAZE_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>+<eventColor>{DEMONIC_SIPHON_MORALE>Morale Change}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist><br>Does not trigger on the death of <hyperlink>Combat summon</hyperlink>, <hyperlink>Tower unit</hyperlink>, and <hyperlink>Siegecraft unit</hyperlink> units.",
     "name": "Demonic Siphon",
     "property_description": "Whenever another unit dies in battle, this unit gains:<bulletlist><bullet><hyperlink>Infernal might</hyperlink> for <eventColor>{INFERNAL_BLAZE_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>+<eventColor>{DEMONIC_SIPHON_MORALE>Morale Change}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>.<br><br>Does not trigger on the death of <hyperlink>Combat summon</hyperlink>, <hyperlink>Tower unit</hyperlink>, and <hyperlink>Siegecraft unit</hyperlink> units.</bullet></bulletlist>",
-    "prop_description": "<bulletlist><bullet>Attacks have +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet><hyperlink>Fiend</hyperlink> units gain +<eventColor>{INFERNAL_BLAZE_FIEND_CRIT>ResolvedCritChanceBonus}</eventColor>% critical chance.</bullet><bullet>Can stack up to <eventColor>{amountStacks}</eventColor> times.</bullet></bulletlist><br> ",
+    "prop_description": "<bulletlist><bullet>Attacks have +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet><hyperlink>Fiend</hyperlink> units gain +<eventColor>{INFERNAL_BLAZE_FIEND_CRIT>ResolvedCritChanceBonus}</eventColor>% critical chance.</bullet><bullet>Can stack up to <eventColor>5</eventColor> times.</bullet></bulletlist><br> ",
     "prop_name": "Infernal Might"
   },
   {
@@ -107263,7 +107269,7 @@
   {
     "id": "TOME_CYCLES@ABILITY_3",
     "description": "Target friendly unit:<bulletlist><bullet>If alive, heals +<eventColor>{RESTART_THE_CYCLE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>If dead, is brought back to life with <eventColor>{RESTART_THE_CYCLE_RESSURECT>ResolvedHitPoints}</eventColor>% of its total <hyperlink>{<hp></hp>}</hyperlink>.</bullet></bulletlist>",
-    "description_champion": "Restart the Cycle: <bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Resurrects units with an additional <eventColor>{resurrectPercentage}</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Restart the Cycle: <bulletlist><bullet>Heals an additional <eventColor>30</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Resurrects units with an additional <eventColor>30</eventColor>% of their total <hyperlink>{<hp></hp>}</hyperlink>.</bullet></bulletlist>",
     "error_message": "Requires <hyperlink>Life from death ability modifier</hyperlink> to be used.",
     "name": "Restart the Cycle",
     "name_champion": "Champion Restart the Cycle"
@@ -107481,7 +107487,7 @@
     "description": "Grants attacks of enchanted units:<bulletlist><bullet>+% damage against <hyperlink>Magic origin</hyperlink> units.</bullet><bullet>Base 1% chance of removing 2 <hyperlink>Positive Status Effect</hyperlink> from the target.</bullet></bulletlist><br> ",
     "mod_description": "Base 1% chance of removing 2 <hyperlink>Positive Status Effect</hyperlink>.",
     "name": "Purging Arrows",
-    "prop_description": "Unit's attacks:<bulletlist><bullet>Deal +2% damage against <hyperlink>Magic origin</hyperlink> units.</bullet><bullet>Have a base 1% chance of removing <eventColor>{amount2}</eventColor> <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist><br> "
+    "prop_description": "Unit's attacks:<bulletlist><bullet>Deal +2% damage against <hyperlink>Magic origin</hyperlink> units.</bullet><bullet>Have a base 1% chance of removing <eventColor>1</eventColor> <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist><br> "
   },
   {
     "id": "TOME_ENCHANTMENT@TOME",
@@ -107741,7 +107747,7 @@
     "id": "TOME_FAITH@UNIT_1@ABILITY_2",
     "description": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{HEALING_PRAYER_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Has their <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
     "description_2": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{HEALING_PRAYER_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Has their <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist><br><br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
-    "description_champion": "Healing Prayer:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Puts the unit into <hyperlink>Defense Mode</hyperlink> after use.</bullet></bulletlist>",
+    "description_champion": "Healing Prayer:<bulletlist><bullet>Heals an additional <eventColor>15</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Puts the unit into <hyperlink>Defense Mode</hyperlink> after use.</bullet></bulletlist>",
     "name": "Healing Prayer",
     "name_champion": "Champion Healing Prayer"
   },
@@ -107796,7 +107802,7 @@
   {
     "id": "TOME_FERTILITY@UNIT1@ABILITY1",
     "description": "Friendly units in a <eventColor>{REVITALIZE_UNIT_TARGETER_CIRCLE>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Gain 2 <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Have <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
-    "description_champion": "Revitalize:<bulletlist><bullet>Gives an additional <eventColor>{regenAmount}</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Reduced cooldown by <eventColor>{cooldown}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Revitalize:<bulletlist><bullet>Gives an additional <eventColor>2</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Reduced cooldown by <eventColor>1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Revitalize",
     "name_champion": "Champion Revitalize"
   },
@@ -108631,9 +108637,9 @@
   },
   {
     "id": "TOME_PANDEMONIUM@UNIT1@ABILITY1",
-    "description": "Targets all adjacent enemies:<bulletlist><bullet>Removes all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Deals <eventColor>{CONSUME_CHAOS_EXTRA_DAMAGE>DAMAGE>Fire}</eventColor> random elemental damage for each status effect removed.</bullet></bulletlist>",
+    "description": "Targets all adjacent enemies:<bulletlist><bullet>Removes all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Deals <eventColor>12</eventColor> random elemental damage for each status effect removed.</bullet></bulletlist>",
     "description_bigger": "Targets all enemies within <eventColor>{CONSUME_CHAOS_UNIT_TARGETER_CIRCLE_AROUND_CASTER_MASTER>AREA>Rad}</eventColor> hexes:<bulletlist><bullet>Removes all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Deals <eventColor>{CONSUME_CHAOS_EXTRA_DAMAGE>DAMAGE>Fire}</eventColor> random elemental damage for each status effect removed.</bullet></bulletlist>",
-    "description_master": "Targets all adjacent enemies:<bulletlist><bullet>Removes all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Deals <eventColor>{CONSUME_CHAOS_EXTRA_DAMAGE>DAMAGE>Fire}</eventColor> random elemental damage for each status effect removed.</bullet></bulletlist><br>The unit enters <hyperlink>Defense Mode</hyperlink> after use.",
+    "description_master": "Targets all adjacent enemies:<bulletlist><bullet>Removes all <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Deals <eventColor>12</eventColor> random elemental damage for each status effect removed.</bullet></bulletlist><br>The unit enters <hyperlink>Defense Mode</hyperlink> after use.",
     "enhanced_description": "Consume Chaos:<bulletlist><bullet>Deals an additional <eventColor>{amount}</eventColor> damage per status effect removed.</bullet></bulletlist>",
     "enhanced_name": "Enhanced Consume Chaos",
     "master_description": "Consume Chaos:<bulletlist><bullet>Puts the unit into <hyperlink>Defense Mode</hyperlink> after use.</bullet><bullet>Has no cooldown.</bullet></bulletlist>",
@@ -108774,7 +108780,7 @@
   },
   {
     "id": "TOME_REAPER@ABILITY_1",
-    "description": "Target non-<hyperlink>Hero</hyperlink> enemy unit has a base <eventColor>{FINGER_OF_DEATH_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of dying.<bulletlist><bullet>If a non-<hyperlink>Undead</hyperlink> unit dies this way, it transforms into a <hyperlink>Decaying zombie</hyperlink> under your control until the end of the battle.</bullet><bullet>If resisted, the unit sustains <eventColor>{FINGER_OF_DEATH_UNIT_DAMAGE>DAMAGE>Frost}</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> that ignores <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
+    "description": "Target non-<hyperlink>Hero</hyperlink> enemy unit has a base <eventColor>{FINGER_OF_DEATH_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of dying.<bulletlist><bullet>If a non-<hyperlink>Undead</hyperlink> unit dies this way, it transforms into a <hyperlink>Decaying zombie</hyperlink> under your control until the end of the battle.</bullet><bullet>If resisted, the unit sustains <eventColor>45</eventColor> <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> that ignores <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
     "name": "Finger of Death"
   },
   {
@@ -109303,7 +109309,7 @@
   },
   {
     "id": "TOME_SUBJUGATION@UNIT1@ABILITY2",
-    "description": "Target enemy unit has a base <eventColor>{OPPRESS_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of losing <eventColor>{mor1}</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>. On failure, loses 10 <happiness></happiness> <hyperlink>Morale</hyperlink> instead.",
+    "description": "Target enemy unit has a base <eventColor>{OPPRESS_RESISTANCE_CHECK>ResolvedStrength}</eventColor>% chance of losing <eventColor>25</eventColor> <happiness></happiness> <hyperlink>Morale</hyperlink>. On failure, loses 10 <happiness></happiness> <hyperlink>Morale</hyperlink> instead.",
     "name": "Oppress"
   },
   {
@@ -109314,8 +109320,8 @@
   {
     "id": "TOME_SUMMONING@ABILITY_02",
     "description": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{ASTRAL_BLESSING_UNIT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gains <hyperlink>Static charge</hyperlink> for <eventColor>{STATIC_CHARGE_STATUS_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
-    "description_2": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{ASTRAL_BLESSING_UNIT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Loses <eventColor>{dispelAmount}</eventColor> <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Gains <hyperlink>Static charge</hyperlink> for <eventColor>{STATIC_CHARGE_STATUS_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
-    "description_champion": "Astral Blessing:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink></bullet><bullet>Removes <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink></bullet></bulletlist>",
+    "description_2": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{ASTRAL_BLESSING_UNIT_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Loses <eventColor>1</eventColor> <hyperlink>Negative Status Effect</hyperlink>.</bullet><bullet>Gains <hyperlink>Static charge</hyperlink> for <eventColor>{STATIC_CHARGE_STATUS_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Astral Blessing:<bulletlist><bullet>Heals an additional <eventColor>15</eventColor><hyperlink>{<temphp></temphp>}</hyperlink></bullet><bullet>Removes <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> <hyperlink>Negative Status Effect</hyperlink></bullet></bulletlist>",
     "name": "Astral Blessing",
     "name_champion": "Champion Astral Blessing"
   },
@@ -109751,7 +109757,7 @@
   {
     "id": "TOME_WILD@SKILL2@PROPERTY",
     "animal_description_buff": "This unit is adjacent to a friendly unit with <hyperlink>Animal kinship</hyperlink> and gains:<bulletlist><bullet>+<eventColor>{ANIMAL_KINSHIP_DAMAGE>ResolvedMultiplier}</eventColor>% damage</bullet><bullet>+<eventColor>{ANIMAL_KINSHIP_CRIT_CHANCE>ResolvedCritChanceBonus}</eventColor>% <eventColor>{GLOBAL.CriticalHitChanceConcept}</eventColor></bullet></bulletlist>",
-    "description": "When adjacent to a friendly <hyperlink>Animal</hyperlink>, both units gain:<bulletlist><bullet>+<eventColor>{Damage}</eventColor>% damage</bullet><bullet>+10% <eventColor>{GLOBAL.CriticalHitChanceConcept}</eventColor></bullet></bulletlist>",
+    "description": "When adjacent to a friendly <hyperlink>Animal</hyperlink>, both units gain:<bulletlist><bullet>+<eventColor>10</eventColor>% damage</bullet><bullet>+10% <eventColor>{GLOBAL.CriticalHitChanceConcept}</eventColor></bullet></bulletlist>",
     "description_buff": "This unit is adjacent to a friendly <hyperlink>Animal</hyperlink> unit and gains:<bulletlist><bullet>+<eventColor>{ANIMAL_KINSHIP_DAMAGE>ResolvedMultiplier}</eventColor>% damage</bullet><bullet>+<eventColor>{ANIMAL_KINSHIP_CRIT_CHANCE>ResolvedCritChanceBonus}</eventColor>% <eventColor>{GLOBAL.CriticalHitChanceConcept}</eventColor></bullet></bulletlist>"
   },
   {
@@ -112554,7 +112560,7 @@
   },
   {
     "id": "UNITPROPERTIES@CLINGING_MIST",
-    "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink>, <hyperlink>Missile</hyperlink>, and <hyperlink>Magic</hyperlink> attacks targeting this unit suffer -3% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet>Can stack up to <eventColor>{stacks}</eventColor> times.</bullet></bulletlist><br><br>Clinging Mist <hyperlink>counters</hyperlink> <hyperlink>Marked</hyperlink>",
+    "description": "<bulletlist><bullet><hyperlink>Melee</hyperlink>, <hyperlink>Missile</hyperlink>, and <hyperlink>Magic</hyperlink> attacks targeting this unit suffer -3% <hyperlink><accuracy></accuracy> Accuracy</hyperlink>.</bullet><bullet>Can stack up to <eventColor>3</eventColor> times.</bullet></bulletlist><br><br>Clinging Mist <hyperlink>counters</hyperlink> <hyperlink>Marked</hyperlink>",
     "mod_description": "Target gains <hyperlink>Clinging mist</hyperlink> for 3 <turn></turn> <hyperlink>Turn</hyperlink>.",
     "name": "Clinging Mist"
   },
@@ -114057,7 +114063,7 @@
   },
   {
     "id": "UNIT_UPGRADES_CORE@FLYING",
-    "description": "This unit is Flying:<bulletlist><bullet>It has +<eventColor>{FLYING_MOVEMENT_VISION>BONUS>SightRange}</eventColor> Vision Range</bullet><bullet>Can move in any terrain at a movement cost of <eventColor>{FLYING_MOVEMENT_MOVEMENT>CostOverride}</eventColor></bullet><bullet>Requires Seafaring to traverse Water hexes</bullet><bullet>Can safely move past most other units and obstacles in combat.</bullet></bulletlist>",
+    "description": "This unit is Flying:<bulletlist><bullet>It has +<eventColor>{FLYING_MOVEMENT_VISION>BONUS>SightRange}</eventColor> Vision Range</bullet><bullet>Can move in any terrain at a movement cost of <eventColor>6</eventColor></bullet><bullet>Requires Seafaring to traverse Water hexes</bullet><bullet>Can safely move past most other units and obstacles in combat.</bullet></bulletlist>",
     "name": "Flying"
   },
   {
@@ -114329,7 +114335,7 @@
   },
   {
     "id": "UPGRADES@LINE_ATTACK",
-    "description": "Base attacks deal -<eventColor>{LINE_ATTACK_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage, but deal damage to units in a <eventColor>{LINE_ATTACK_UNIT_TARGETER_LINE>AREA>Length}</eventColor>-hex line.",
+    "description": "Base attacks deal -<eventColor>{LINE_ATTACK_DAMAGE_MULTIPLIER>ResolvedMultiplier}</eventColor>% damage, but deal damage to units in a <eventColor>3</eventColor>-hex line.",
     "name": "Area Damage - Line"
   },
   {
@@ -114376,7 +114382,7 @@
   },
   {
     "id": "UPGRADES_BASE_ABILITY_MODIFIER@MOMENTUM",
-    "description": "+<eventColor>{MOMENTUM>ResolvedDamageMultiplier}</eventColor>% damage per hex traveled, up to <eventColor>{MOMENTUM>MaxCount}</eventColor> hexes.",
+    "description": "+<eventColor>20</eventColor>% damage per hex traveled, up to <eventColor>3</eventColor> hexes.",
     "name": "Momentum"
   },
   {
@@ -114892,7 +114898,7 @@
   {
     "id": "UPGRADES_TEST_UNITPROPERTIES@MENDING_AWAKENING",
     "description": "Target friendly unit:<bulletlist><bullet>Heals +<eventColor>{MENDING_AWAKENING_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Becomes <hyperlink>Awakened</hyperlink> for <eventColor>{AWAKEN_STATUS_DESCRIPTION>NumTurns}</eventColor> <turn></turn>.</bullet></bulletlist>",
-    "description_champion": "Mending Awakening:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>{cooldownAmount}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Mending Awakening:<bulletlist><bullet>Heals an additional <eventColor>15</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Mending Awakening",
     "name_champion": "Champion Mending Awakening"
   },
@@ -115437,8 +115443,8 @@
   {
     "id": "WILDLIFE_UNITPROPERTIES@BLOOMING_LIFE",
     "description": "Friendly units in a <eventColor>{BLOOMING_LIFE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Heal +<eventColor>{BLOOMING_LIFE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gain <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Have their <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
-    "description_2": "Friendly units in a <eventColor>{BLOOMING_LIFE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Heal +<eventColor>{BLOOMING_LIFE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gain <eventColor>{regenAmount}</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Have their <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
-    "description_champion": "Blooming Life:<bulletlist><bullet>Grants an additional <eventColor>{regenAmount}</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>{cooldown}</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
+    "description_2": "Friendly units in a <eventColor>{BLOOMING_LIFE_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Heal +<eventColor>{BLOOMING_LIFE_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Gain <eventColor>3</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Have their <hyperlink>Negative Status Effect</hyperlink> removed.</bullet></bulletlist>",
+    "description_champion": "Blooming Life:<bulletlist><bullet>Grants an additional <eventColor>2</eventColor> <hyperlink>Regeneration</hyperlink>.</bullet><bullet>Cooldown reduced by <eventColor>1</eventColor><turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
     "name": "Blooming Life",
     "name_champion": "Champion Blooming Life"
   },
@@ -115460,7 +115466,7 @@
   {
     "id": "WILDLIFE_UNITPROPERTIES@BUDDING_STRENGTH",
     "description": "Friendly units in a <eventColor>{BUDDING_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius gain:<bulletlist><bullet>2 <hyperlink>Strengthened</hyperlink></bullet><bullet><hyperlink>True strike</hyperlink></bullet></bulletlist>",
-    "description_2": "Friendly units in a <eventColor>{BUDDING_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius gain:<bulletlist><bullet>2 <hyperlink>Strengthened</hyperlink></bullet><bullet><hyperlink>True strike</hyperlink></bullet><bullet><eventColor>{randomAmount}</eventColor> random <hyperlink>Positive Status Effect</hyperlink></bullet></bulletlist>",
+    "description_2": "Friendly units in a <eventColor>{BUDDING_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius gain:<bulletlist><bullet>2 <hyperlink>Strengthened</hyperlink></bullet><bullet><hyperlink>True strike</hyperlink></bullet><bullet><eventColor>3</eventColor> random <hyperlink>Positive Status Effect</hyperlink></bullet></bulletlist>",
     "description_champion": "Budding Strength:<bulletlist><bullet>Grants an additional 2 random <hyperlink>Positive Status Effect</hyperlink>.</bullet></bulletlist>",
     "name": "Budding Strength",
     "name_champion": "Champion Budding Strength"
@@ -115729,7 +115735,7 @@
   {
     "id": "WILDLIFE_UNITPROPERTIES@LESSER_HEAL",
     "description": "Target friendly unit:<bulletlist><bullet>Heals for <eventColor>{LESSER_HEAL_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Has <eventColor>{GENERAL_DISPEL_NEGATIVE>NumThingsToDispel}</eventColor> Negative Status Effects removed.</bullet></bulletlist>",
-    "description_champion": "Lesser Heal:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Lesser Heal:<bulletlist><bullet>Heals an additional <eventColor>20</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "name": "Lesser Heal",
     "name_champion": "Champion Lesser Heal"
   },
@@ -115749,7 +115755,7 @@
   {
     "id": "WILDLIFE_UNITPROPERTIES@LIGHT_HEAL",
     "description": "Target friendly unit:<bulletlist><bullet>Heals for <eventColor>{LIGHT_HEAL_HEAL>NumHitpointsToRestore}</eventColor> <hyperlink>{<temphp></temphp>}</hyperlink>.</bullet><bullet>Has all Negative Status Effects removed.</bullet></bulletlist>",
-    "description_champion": "Heal:<bulletlist><bullet>Heals an additional <eventColor>{healAmount}</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
+    "description_champion": "Heal:<bulletlist><bullet>Heals an additional <eventColor>30</eventColor><hyperlink>{<temphp></temphp>}</hyperlink>.</bullet></bulletlist>",
     "name": "Heal",
     "name_champion": "Champion Heal"
   },
@@ -115852,7 +115858,7 @@
   },
   {
     "id": "WILDLIFE_UNITPROPERTIES@QUILLSHOT",
-    "description": "Shoots razor-sharp quills at the target.",
+    "description": "Shoots razor-sharp quills at the target. Units behind the target suffer a third of the base damage.",
     "name": "Quillshot"
   },
   {
@@ -115877,8 +115883,8 @@
   {
     "id": "WILDLIFE_UNITPROPERTIES@SAP_STRENGTH",
     "description": "Enemy units in a <eventColor>{SAP_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Have a base <eventColor>{chance}</eventColor>% chance of receiving 2 stacks of <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><br>The caster gains:<bulletlist><bullet><hyperlink>Strengthened</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> for each enemy affected.</bullet></bulletlist>",
-    "description_2": "Enemy units in a <eventColor>{SAP_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Have a base <eventColor>{chance}</eventColor>% chance of receiving 2 stacks of <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><br>The caster gains:<bulletlist><bullet><hyperlink>Strengthened</hyperlink> and <hyperlink>Fortune</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> for each enemy affected.</bullet></bulletlist>",
-    "description_master": "Sap Strength:<bulletlist><bullet>Has a base <eventColor>{chance}</eventColor>% chance of inflicting <hyperlink>Weakened</hyperlink>.</bullet><bullet>Also grants <hyperlink>Fortune</hyperlink> to the caster.</bullet></bulletlist>",
+    "description_2": "Enemy units in a <eventColor>{SAP_STRENGTH_TARGETER>AREA>Radius}</eventColor>-hex radius:<bulletlist><bullet>Have a base <eventColor>120</eventColor>% chance of receiving 2 stacks of <hyperlink>Weakened</hyperlink> for <eventColor>{WEAKENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist><br>The caster gains:<bulletlist><bullet><hyperlink>Strengthened</hyperlink> and <hyperlink>Fortune</hyperlink> for <eventColor>{STRENGTHENED_EFFECT_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink> for each enemy affected.</bullet></bulletlist>",
+    "description_master": "Sap Strength:<bulletlist><bullet>Has a base <eventColor>120</eventColor>% chance of inflicting <hyperlink>Weakened</hyperlink>.</bullet><bullet>Also grants <hyperlink>Fortune</hyperlink> to the caster.</bullet></bulletlist>",
     "name": "Sap Strength",
     "name_master": "Champion Sap Strength"
   },
@@ -115974,7 +115980,7 @@
   },
   {
     "id": "WILDLIFE_UNITPROPERTIES@TIDAL_WAVE",
-    "description": "Deals damage and pushes units away in a <eventColor>{TIDAL_WAVE_TARGETER>AREA>Length}</eventColor>-hex cone.",
+    "description": "Deals damage and pushes units away in a 2-hex cone. Enter <hyperlink>Defense Mode</hyperlink>.",
     "name": "Tidal Wave"
   },
   {

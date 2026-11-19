@@ -92,7 +92,7 @@ function sortDivs(sortType, savedOrder) {
         container = document.getElementById(currentView);
     }
 
-    let element = [...container.querySelectorAll(".mod_card")];
+    let element = [...container.querySelectorAll(".mod_card:not([data-subculture-card])")];
 
     let selector = (element) => element.querySelector(".mod_name").innerHTML;
     if (sortType === "tier") {
