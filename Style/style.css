@@ -274,6 +274,13 @@ a:hover {
     color: #eee;
 }
 @media (hover: hover) and (width > 800px) {
+    #menu {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        min-width: 0;
+    }
+
     #menu li:hover > a,
     #menu li a:hover {
         background: #111;
@@ -2346,4 +2353,212 @@ span.number-highlight {
 .catalog-tree-scroll {
     max-width: 100%;
     overflow-x: auto;
+}
+
+
+.subsection-layout {
+    display: grid;
+    grid-template-columns: min(260px, 30vw) minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+}
+
+.subsection-layout > .w3-bar {
+    display: grid !important;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-height: min(800px, 100dvh);
+    overflow: auto;
+}
+
+.subsection-layout > [id^="dataHolder"] {
+    min-width: 0;
+    margin: 0 !important;
+    container: subsection-content / inline-size;
+}
+
+.subsection-layout > [id^="dataHolder"] > .city {
+    margin-inline-start: 0 !important;
+}
+
+.subsection-toggle {
+    display: none;
+}
+
+@media (hover: none) and (max-width: 640px) {
+    .subsection-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .subsection-toggle {
+        display: block;
+        min-height: 44px;
+        padding: 8px 12px;
+        border: 1px solid #927d56;
+        background: #14242f;
+        color: #f1e4cb;
+        font: inherit;
+        text-align: left;
+    }
+
+    .subsection-toggle::after {
+        content: "▾";
+        float: right;
+    }
+
+    .subsection-layout > .w3-bar {
+        position: static;
+        max-height: 45dvh;
+    }
+
+    .subsection-layout > .subsection-toggle[aria-expanded="false"] + .w3-bar {
+        display: none !important;
+    }
+}
+
+@container subsection-content (max-width: 900px) {
+    .city.w3-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_name,
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_ability_holder {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_name {
+        order: -1;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_image_holder {
+        display: flow-root;
+        float: none;
+        max-width: 100%;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_preview_vid {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .medals {
+        top: 0;
+        right: 0;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card #activeEnchants {
+        right: 0 !important;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card #enchantButton,
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_image_holder > .contentLevelup {
+        left: auto !important;
+        right: 0 !important;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_stats,
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_abilityslot,
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_passiveslot,
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_elite_skill {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin-inline: 0;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_stats {
+        left: 0;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .subsection-layout > [id^="dataHolder"] .unit_card .unit_ability_holder {
+        border-inline-width: 10px;
+    }
+}
+
+
+.tome_card {
+    color: white;
+    box-sizing: border-box;
+    width: min(1093px, 100%);
+    border-style: solid;
+    border-image: url(/rbbp/Icons/Interface/Background_Unitpanel.png);
+    border-image-slice: 2;
+    border-width: 4px;
+    background-image: url(/rbbp/Icons/Interface/Background_Unitpanel.png);
+    background-size: cover;
+    padding: 5px;
+    display: block;
+    overflow-wrap: anywhere;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tome-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+}
+
+.tome-overview > * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-inline: 0;
+}
+
+@container subsection-content (max-width: 600px) {
+    .tome-overview > .InitialBonus {
+        grid-column: 1 / -1;
+    }
+}
+
+.tome-unlocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr));
+    gap: 12px;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.tome-unlocks > .mod_card,
+.tome-unlocks .mod_image_holder {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.tome-unlocks .spellStatsHighLighter > div {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.tome-unlocks #affectUnitTypes {
+    float: none !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)) !important;
+    width: 100%;
 }

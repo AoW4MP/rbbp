@@ -12,7 +12,7 @@
         <div class="topbar">
             <div style="display: flex">
                 <div class="dropdown">
-                    <div class="dropdown-title">Settings ▼</div>
+                    <div id="menu-settings" class="dropdown-title">Settings ▼</div>
                     <div class="dropdown-content">
                         <label>
                             Selectable Tooltips:
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <label style="display: block; position: relative; left: -86px">
+            <label style="display: block">
               
                 <select id="languageSelect" style="display:block" class="button-random" onchange="SwitchToBeta()">
                     <option value="EN">English</option>
@@ -39,12 +39,12 @@
                 </select>
             </label>
             <div class="donate" >
-                <a class="prett" href="/rbbp/HTML/Donate.html">
+                <a id="menu-donate" class="prett" href="/rbbp/HTML/Donate.html">
                     Donate<img src="/rbbp/Icons/Text/health.png" width="20px" />
                 </a>
             </div>
 
-            <a class="prett" href="https://minionsart.github.io/aow4db/" target="_blank" rel="noopener noreferrer">Original Wiki ↗</a>
+            <a id="menu-original-wiki" class="prett" href="https://minionsart.github.io/aow4db/" target="_blank" rel="noopener noreferrer">Original Wiki ↗</a>
         </div>
         <div class="header-img">
             <div id="topButtonContainer" style="display: none">
@@ -608,7 +608,7 @@
                             >
                         </li>
                           <li>
-                            <a id="hero-skill" href="/rbbp/HTML/Infusions.html"
+                            <a id="hero-infusions" href="/rbbp/HTML/Infusions.html"
                                 ><img src="/rbbp/Icons/Interface/Header/piercing_shot.png" width="20px" />Item Forge Infusions</a
                             >
                         </li>
@@ -774,7 +774,6 @@
 
         .donate {
           
-    right: -152px;
     position: relative;
     display: inline-block;
     background-color: #4b1d63;

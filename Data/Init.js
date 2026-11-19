@@ -125,3 +125,37 @@ function GetHamburgerMenu(){
 function requireAjax(file, callback) {
     jQuery.getScript(file, callback);
 }
+
+function setupSubsectionLists() {
+    if (location.pathname.endsWith("/Search.html")) return;
+    for (const list of document.querySelectorAll(".w3-bar:has(+ [id^='dataHolder'])")) {
+        if (!list.id || !list.children.length || list.previousElementSibling?.classList.contains("subsection-toggle")) continue;
+
+        const toggle = document.createElement("button");
+        const russian = languageSelect.value === "RU";
+        const label = russian ? "Подразделы" : "Subsections";
+        toggle.type = "button";
+        toggle.className = "subsection-toggle";
+        toggle.setAttribute("aria-controls", list.id);
+        list.parentElement.classList.add("subsection-layout");
+        list.before(toggle);
+
+        function update(open) {
+            const selected = list.querySelector(".w3-red");
+            toggle.textContent = selected?.getAttribute("aria-label") || selected?.textContent.trim() || label;
+            toggle.setAttribute("aria-expanded", String(open));
+        }
+
+        update(!list.querySelector(".w3-red"));
+        toggle.addEventListener("click", () => update(toggle.getAttribute("aria-expanded") !== "true"));
+        list.addEventListener("subsectionchange", (event) => {
+            if (event.detail.focusToggle && toggle.getClientRects().length) toggle.focus();
+            update(false);
+        });
+        list.addEventListener("keydown", (event) => {
+            if (event.key !== "Escape" || !toggle.getClientRects().length) return;
+            toggle.focus();
+            update(false);
+        });
+    }
+}

@@ -267,8 +267,6 @@ async function SetLevelUpStuff() {
         let splits = product.split("&");
         const tabButton = document.getElementById(splits[0] + "-button");
         if (!tabButton) return;
-        closeTabLinks(product);
-        tabButton.classList.add("w3-red");
         // grab the subculture if available
 
         let subCulture = splits[0].split(/(?=[A-Z])/);
@@ -277,7 +275,7 @@ async function SetLevelUpStuff() {
             await showSubDiv(null, test);
         }
         // open div with type
-        await openDiv(event, splits[0]);
+        await openDiv(null, splits[0]);
     }
 }
 

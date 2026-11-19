@@ -1,32 +1,156 @@
 {
   "submenu-class": {
-    "label": "Classes"
+    "label": "Классы"
   },
   "tomes-dual": {
-    "label": "Dual"
+    "label": "Двойная приверженность"
   },
   "tomes-general": {
-    "label": "General & Culture"
+    "label": "Общие исследования и культура"
   },
   "menu-abilities": {
-  "label": "Ability"
+    "label": "Способности"
   },
   "abilities-passive": {
-    "label": "Passives"
+    "label": "Пассивные способности"
   },
   "abilities-status": {
-    "label": "Status Effects"
+    "label": "Эффекты состояния"
   },
   "menu-builder": {
-    "label": "Builds/Planners"
+    "label": "Конструкторы и сборки"
   },
   "builder-faction": {
-    "label": "Faction Builder"
+    "label": "Конструктор фракций"
   },
   "builder-hero": {
-    "label": "Hero Builder"
+    "label": "Конструктор героя"
   },
-  "buils-list": {
-    "label": "Faction List"
+  "build-list": {
+    "label": "Сборки сообщества"
+  },
+  "world-spawner": {
+    "label": "Логова"
+  },
+  "empire-pantheon": {
+    "label": "Награды Пантеона"
+  },
+  "empire-relics": {
+    "label": "Артефакты и тайные заклинания"
+  },
+  "class-magicfighter": {
+    "label": "Магический боец"
+  },
+  "tomesU-tob": {
+    "label": "Троны крови"
+  },
+  "tomesU-sota": {
+    "label": "Секреты архимагов"
+  },
+  "tomesU-ss": {
+    "label": "Серебряные моря"
+  },
+  "hero-infusions": {
+    "label": "Усиления предметов"
+  },
+  "spells-combat": {
+    "label": "Боевые заклинания"
+  },
+  "spells-strategic": {
+    "label": "Глобальные заклинания"
+  },
+  "world-cosmic": {
+    "label": "Космические события"
+  },
+  "sectionTabs": {
+    "Healing Spells": "Лечащие заклинания",
+    "Buff Spells": "Заклинания усиления",
+    "Damage Spells": "Наносящие урон заклинания",
+    "Combat Enchantments": "Боевые чары",
+    "Combat Summons": "Боевые призывы",
+    "Debuff Spells": "Заклинания ослабления",
+    "Generic Research": "Общие исследования",
+    "Cultures": "Культуры",
+    "Order": "Порядок",
+    "Chaos": "Хаос",
+    "Nature": "Природа",
+    "Astral": "Астрал",
+    "Shadow": "Тьма",
+    "Materium": "Материя",
+    "Other Enchantments": "Прочие чары",
+    "Bronze": "Бронза",
+    "Silver": "Серебро",
+    "Gold": "Золото",
+    "Minor": "Малые",
+    "Major": "Великие",
+    "Primary Weapon": "Основное оружие",
+    "Secondary Weapon": "Дополнительное оружие",
+    "Head": "Голова",
+    "Torso": "Торс",
+    "Legs": "Ноги",
+    "Ring": "Кольцо",
+    "Mount": "Ездовое животное",
+    "Trinket": "Аксессуар",
+    "Miscellaneous": "Разное",
+    "Giants": "Артефакты королей великанов",
+    "Giant Kings Artifacts": "Артефакты королей великанов",
+    "Fractured Artifacts": "Расколотые артефакты",
+    "Secret Spells": "Тайные заклинания",
+    "Pirate & Ocean": "Пираты и океан",
+    "Minor Race Transformations": "Малые трансформации народа",
+    "Major Race Transformations": "Великие трансформации народа",
+    "Summon Spells": "Заклинания призыва",
+    "Terraforming Spells": "Заклинания преобразования местности",
+    "Enemy Army Spells": "Заклинания для вражеских армий",
+    "World Spells": "Заклинания для мира",
+    "City Spells": "Заклинания для городов",
+    "Victory Spells": "Заклинания победы",
+    "Friendly Army Spells": "Заклинания для союзных армий",
+    "Foresters": "Лесопилки",
+    "Conduits": "Проводники",
+    "Farms": "Фермы",
+    "Mines": "Шахты",
+    "Research Posts": "Исследовательские станции",
+    "Quarry": "Каменоломни",
+    "Teleporters": "Телепорты",
+    "Landmarks": "Достопримечательности",
+    "Minor Happenings": "Малые события",
+    "Major Happenings": "Великие события",
+    "Hero Ambitions": "Стремления героя",
+    "Hero Governance": "Бонусы губернатора",
+    "Pantheon Ascended Hero Skills": "Особенности вознесения",
+    "Destiny Trait": "Особенность судьбы",
+    "Mounts": "Ездовые животные",
+    "Rings": "Кольца",
+    "Form Trait": "Особенность облика",
+    "Order Society Traits": "Социальные особенности порядка",
+    "Chaos Society Traits": "Социальные особенности хаоса",
+    "Nature Society Traits": "Социальные особенности природы",
+    "Shadow Society Traits": "Социальные особенности тьмы",
+    "Materium Society Traits": "Социальные особенности материи",
+    "Astral Society Traits": "Социальные особенности астрала",
+    "Prophecy Traits": "Особенности пророчества",
+    "Ruler Origins": "Происхождение правителей",
+    "Subcultures": "Подкультуры",
+    "Monuments": "Монументы",
+    "Ruins": "Руины"
+  },
+  "tomesU-pf": {
+    "label": "Первобытная ярость"
+  },
+  "tomesU-gk": {
+    "label": "Короли великанов"
+  },
+  "tomesU-ap": {
+    "label": "Пророчество архонтов"
+  },
+  "menu-donate": {
+    "label": "Поддержать проект"
+  },
+  "menu-original-wiki": {
+    "label": "Оригинальная вики ↗"
+  },
+  "menu-settings": {
+    "label": "Настройки ▼"
   }
 }
