@@ -6366,7 +6366,7 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
                 descriptionDiv.innerHTML += valueLookup.lore;
             }
             if ("bio" in valueLookup) {
-                descriptionDiv.innerHTML += valueLookup.bio;
+                descriptionDiv.innerHTML += (originalTrait.type === "Culture" ? " " : "") + valueLookup.bio;
             }
             if (originalTrait.type === "SubCulture" && valueLookup.description) {
                 descriptionDiv.innerHTML += valueLookup.description;
@@ -6431,18 +6431,20 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
         descriptionDiv.innerHTML += "</bulletlist>";
     }
 
+    const ru = getUserSettings().language === "RU";
     if ("objective" in currentTrait) {
-        descriptionDiv.innerHTML += "<br><hr><span style='color:beige'>Objective: </span><br>";
-        const valueLookup = findBy(jsonAllFromPOLocalized, "id", currentTrait.objective);
-        if (valueLookup) {
-            descriptionDiv.innerHTML += valueLookup.objective_1 + "<br>";
-            descriptionDiv.innerHTML += valueLookup.objective_2 ? valueLookup.objective_2 + "<br>" : "";
-            descriptionDiv.innerHTML += valueLookup.objective_3 ? valueLookup.objective_3 + "<br>" : "";
+        const objective = findBy(jsonAllFromPOLocalized, "id", currentTrait.objective);
+        if (objective) {
+            if (objective.wiki_title) modName.textContent = objective.wiki_title;
+            const goals = [objective.objective_1, objective.objective_2, objective.objective_3].filter(Boolean);
+            if (goals.length) {
+                descriptionDiv.innerHTML += `<br><hr><span style="color:beige">${ru ? "Цели" : "Objectives"}</span><br>` + goals.join("<br>");
+            }
         }
     }
 
     if ("rewards" in currentTrait) {
-        descriptionDiv.innerHTML += "<br><hr><span style='color:beige'>Rewards: </span><br>";
+        descriptionDiv.innerHTML += `<br><hr><span style="color:beige">${ru ? "Награды" : "Rewards"}</span><br>`;
         for (let i = 0; i < currentTrait.rewards.length; i++) {
             //console.log(currentTrait.rewards[i]);
             const valueLookup = findBy(jsonAllFromPOLocalized, "id", currentTrait.rewards[i]);
@@ -6461,14 +6463,14 @@ function showTraitSetup(currentTrait, divOrigin, loc) {
                 descriptionDiv.innerHTML += valueLookup.war_houses
                     ? "<bullet>" + valueLookup.war_houses + "</bullet>"
                     : "";
-                descriptionDiv.innerHTML += valueLookup.name ? "<bullet>" + valueLookup.name + "<br>" : "";
-                descriptionDiv.innerHTML += valueLookup.description ? valueLookup.description + "</bullet>" : "";
+                const reward = [valueLookup.name, valueLookup.description].filter(Boolean);
+                if (reward.length) descriptionDiv.innerHTML += "<bullet>" + reward.join("<br>") + "</bullet>";
             }
         }
     }
 
     if ("unit_unlocks" in currentTrait) {
-        descriptionDiv.innerHTML += "<br><span style='color:beige'>Rally Units:</span><br>";
+        descriptionDiv.innerHTML += `<br><span style="color:beige">${ru ? "Подкрепления" : "Rally Units"}</span><br>`;
 
         for (let x = 0; x < currentTrait.unit_unlocks.length; x++) {
             let div = document.createElement("DIV");

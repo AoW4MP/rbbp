@@ -137,8 +137,7 @@
         "name": "Giant King",
         "icon": "giant_king",
         "DLC": "GIANTKINGS ",
-        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING",
-        "extraLookup2" : "INTERFACE@LORE_CONCEPT@GIANT_KING"
+        "extraLookup": "DLC@GIANTKINGS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@GIANT_KING"
         
     },
     {
@@ -180,6 +179,7 @@
         "id": "architect",
         "icon": "architect",
         "name": "Architect",
+        "DLC": "ARCHONPROPHECY",
         "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT"
     },
     {
@@ -769,7 +769,7 @@
         "affinity": "<empireshadow></empireshadow>, <empireshadow></empireshadow>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@SHADOW"
     },
     {
         "type": "SubCulture",
@@ -778,7 +778,7 @@
         "affinity": "<empireorder></empireorder>, <empireorder></empireorder>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@ORDER"
     },
     {
         "type": "SubCulture",
@@ -787,7 +787,7 @@
         "affinity": "<empirechaos></empirechaos>, <empirechaos></empirechaos>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@CHAOS"
     },
     {
         "type": "SubCulture",
@@ -796,7 +796,7 @@
         "affinity": "<empirenature></empirenature>, <empirenature></empirenature>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@NATURE"
     },
     {
         "type": "SubCulture",
@@ -805,7 +805,7 @@
         "affinity": "<empirematter></empirematter>, <empirematter></empirematter>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@MATERIUM"
     },
     {
         "type": "SubCulture",
@@ -814,7 +814,7 @@
         "affinity": "<empirearcana></empirearcana>, <empirearcana></empirearcana>",
         "requirement": "Architect",
         "DLC": "ARCHONPROPHECY ",
-        "description": ""
+        "extraLookup": "DLC@ARCHONPROPHECY@CULTURE_ARCHITECT@STARTING_AFFINITY@ASTRAL"
     },
     {
         "type": "SubCulture",

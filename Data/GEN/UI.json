@@ -94,7 +94,7 @@
   },
   
   "empire-faction": {
-  "lookup": "INTERFACE@REPORT_FEEDBACK@CATEGORIES&faction_creation"
+  "label": "Особенности фракции"
   },
   "types-fey": {
     "unit": "Fey"
