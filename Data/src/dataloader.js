@@ -520,7 +520,9 @@ async function CheckData() {
         HandlePage();
         if (languageSelect.value != "EN") {
             LocalizeUI();
+            localizeSectionHeadings();
         }
+        setupSubsectionLists();
     }
 }
 
@@ -677,3 +679,42 @@ function LocalizeUI(specific) {
     }
 }
 
+
+
+function localizeSectionHeadings() {
+    document.documentElement.lang = "ru";
+    const route = location.pathname;
+    const link = [...document.querySelectorAll("#menu a[href], #menu-donate")]
+        .find((anchor) => new URL(anchor.href).pathname === route);
+    let section = link?.textContent.trim();
+    if (link?.id.startsWith("tomesU-")) {
+        section = "Воины из книг — " + section;
+    } else if (/\/(Astral|Nature|Shadow|Order|Chaos|Materium)Tomes\.html$/.test(route)) {
+        section = "Книги — " + section;
+    } else if (link?.id.startsWith("culture-")) {
+        section = "Воины культуры «" + section + "»";
+    }
+    const heading = document.querySelector(".textblocktitle, body > .tome_name, #unitS h1");
+    if (section && /[а-яё]/i.test(section)) {
+        if (heading && !/[а-яё]/i.test(heading.textContent)) {
+            const text = [...heading.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+            if (text) text.nodeValue = " " + section + " ";
+        }
+        if (!/[а-яё]/i.test(document.title) && document.title.includes(" - ")) {
+            document.title = document.title.split(" - ")[0] + " - " + section;
+        }
+    }
+
+    const labels = jsonUILocalized.sectionTabs ?? {};
+    for (const tab of document.querySelectorAll(".w3-bar .tablink")) {
+        const text = [...tab.childNodes].find((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+        if (!text) continue;
+        const [, name, count = ""] = text.textContent.trim().match(/^(.*?)( \(\d+\))?$/);
+        if (Object.hasOwn(labels, name)) text.nodeValue = " " + labels[name] + count + " ";
+    }
+
+    const initialBonus = findBy(jsonAllFromPOLocalized, "id", "INTERFACE@RESEARCH")?.initial_bonus;
+    for (const heading of document.querySelectorAll(".initialBonusHeaderText")) {
+        heading.textContent = initialBonus || "Первоначальный бонус";
+    }
+}

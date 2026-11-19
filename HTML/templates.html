@@ -318,34 +318,18 @@
         <div class="tome_card">
             <p class="tome_name" id="tomename">Tome of Evocation</p>
             <p style="text-align: center; font-size: 15px; max-width: 900px" id="tomedescription">Mod Descripiton</p>
-            <div style="width: 150px; float: left">
+            <div class="tome-overview">
                 <img class="tome_image" id="tomeicon" src="/rbbp/Icons/TomeIcons/.png" />
-            </div>
-            <div class="tome-summary-grid"
-                style="
-                    display: grid;
-                    grid-template-columns: 500px 500px;
-                    width: auto;
-                    justify-content: start;
-                    align-content: center;
-                    align-items: stretch;
-                    justify-items: center;
-                ">
-                <div style="float: left">
-                    <p class="tome_description" id="tomeloredescription">Lore Description</p>
-                </div>
+                <p class="tome_description" id="tomeloredescription">Lore Description</p>
 
                 <div class="InitialBonus">
                     <span class="initialBonusHeaderText">INITIAL BONUS</span>
                     <div
                         id="initialBonusList"
-                        style="display: grid; grid-template-columns: 200px; font-size: 15px"></div>
+                        style="display: grid; font-size: 15px"></div>
                 </div>
             </div>
-            <div style="clear: both"></div>
         </div>
-        <div
-            id="tome_unlocks"
-            style="display: grid; grid-template-columns: auto auto; justify-content: center; width: auto"></div>
+        <div id="tome_unlocks" class="tome-unlocks"></div>
     </div>
 </template>

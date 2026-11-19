@@ -504,6 +504,7 @@ function AddListView(list, parent) {
 
     btn.className = "w3-bar-item w3-button tablink";
     btn.type = "button";
+    btn.setAttribute("aria-label", languageSelect.value === "RU" ? "Показать все" : "Show all");
     btn.innerHTML = "&#9776";
     btn.setAttribute("onclick", 'openDiv(event, "' + list + '")');
 
@@ -789,17 +790,20 @@ async function openDiv(evt, cityName, search) {
         currentView = cityName;
     }
 
-    let i, x, tablinks;
+    let i, x;
     x = document.getElementsByClassName("city");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
 
-    closeTabLinks(cityName);
-
-    if (evt != null) {
-        evt.currentTarget.className += " w3-red";
+    const selected = evt?.currentTarget || document.getElementById(cityName + "-button");
+    for (const tab of document.querySelectorAll(".tablink")) {
+        tab.classList.toggle("w3-red", tab === selected);
+        tab.setAttribute("aria-pressed", String(tab === selected));
     }
+    selected?.closest(".w3-bar")?.dispatchEvent(new CustomEvent("subsectionchange", {
+        detail: { focusToggle: evt?.isTrusted === true }
+    }));
     if (cityName.indexOf(",") != -1) {
         console.log("is array");
         let parentDiv = document.getElementById("dataHolder");
@@ -839,14 +843,6 @@ async function openDiv(evt, cityName, search) {
     }
 }
 
-function closeTabLinks(cityName) {
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        if (tablinks[i].id != cityName + "-button") {
-            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-        }
-    }
-}
 
 function CheckIfOptionalCavalry(name) {
     let optional = false;
@@ -936,7 +932,61 @@ function addUnitTypeIcon(a, holder, origin) {
     return unitType;
 }
 
-function addAbilityslot(a, holder, list, enchant, uniqueMedal) {
+function getChampionAbilityBonuses(ability, rewards = []) {
+    const tags = (ability.requisites || []).map(({ requisite }) => requisite.replace(/<[^>]+>/g, ""));
+    return rewards.flatMap(({ slug }) => {
+        const reward = findBy(jsonUnitAbilities, "slug", slug);
+        if (!reward) return [];
+
+        let applies;
+        // The export lists reward slugs but does not identify their target abilities.
+        switch (slug) {
+            case "0000048d00002113": // Inversion Potion
+                applies = ability.slug.startsWith("curse_inversion_");
+                break;
+            case "0000048d00001721": // Conjure Affinity Tesseract
+                applies = ability.slug.startsWith("conjure_affinity_tesseract_");
+                break;
+            case "0000048b00000ab5": // Champion Seals
+                applies = ability.slug.startsWith("magic_seal_");
+                break;
+            case "0000048b00000c4c": // Spirit Summon
+                applies = ability.slug.startsWith("spirit_summon_dormant_");
+                break;
+            case "0000048b00000c35": // Champion Songs
+                applies = /^song_of_(revelry|carnage)_/.test(ability.slug);
+                break;
+            case "0000049700004751": // Range
+                applies = tags.includes("Magic");
+                break;
+            case "000003e300006289": // Eagle Eye
+                applies = tags.includes("Missile");
+                break;
+            case "0000049700002d58": // Extra Range
+                applies = tags.includes("Base");
+                break;
+            case "0000049700001549": // Retaliation Damage
+                applies = tags.includes("Base") && tags.includes("Melee");
+                break;
+            case "000003e300006280": // Exalted Defense
+            case "000003e300006281": // Exalted Resistance
+                applies = /^Defense Mode(?:$|:)/.test(ability.name);
+                break;
+            case "0000049700003954": // Arcanist
+            case "000003e30000628a": // Evoker
+            case "000003e300006284": // Critical
+            case "0000048b00000c1f": // +10% damage
+                applies = Boolean(ability.damage);
+                break;
+            default:
+                applies = reward.name === "Champion " + ability.name;
+        }
+
+        return applies ? [findBy(jsonUnitAbilitiesLocalized, "slug", slug) || reward] : [];
+    });
+}
+
+function addAbilityslot(a, holder, list, enchant, championRewards = []) {
     let abilityName,
         abilityIcon,
         abilityDam,
@@ -964,13 +1014,9 @@ function addAbilityslot(a, holder, list, enchant, uniqueMedal) {
 
     abilityName = abilityLoc.name;
 
-    let abilityHasMedal = false;
-    if (uniqueMedal != null) {
-        if (uniqueMedal.name.split("Champion ")[1] == abilityEn.name) {
-            abilityName += " <champion></champion>";
-            // add note about the levelup change
-            abilityHasMedal = true;
-        }
+    const championBonuses = getChampionAbilityBonuses(abilityEn, championRewards);
+    if (championBonuses.length) {
+        abilityName += " <champion></champion>";
     }
 
     abilityIcon = abilityLoc.icon;
@@ -1246,7 +1292,7 @@ function addAbilityslot(a, holder, list, enchant, uniqueMedal) {
         btn.append(imageExtra);
     }
 
-    let spa = GetAbilityToolTip(abilityLoc, uniqueMedal);
+    let spa = GetAbilityToolTip(abilityLoc, championBonuses);
 
     if (abilityEn.name.indexOf("Defense Mode") > -1) {
         spa.innerHTML =
@@ -1336,7 +1382,7 @@ function IncreaseDamageValue(input, percentage) {
     return newString;
 }
 
-function GetAbilityToolTip(ability, uniqueMedal) {
+function GetAbilityToolTip(ability, championBonuses = []) {
     // get template
     const abiltyTemplate = ability_slot_template.content.cloneNode(true);
     const element = abiltyTemplate.firstElementChild;
@@ -1386,26 +1432,11 @@ function GetAbilityToolTip(ability, uniqueMedal) {
         }
     }
 
-    if (uniqueMedal != undefined) {
-        // uniqueMedal (the Champion-medal ability) is always looked up from
-        // the EN data (see the medal_rewards_5 lookup that produces it), so
-        // its name only ever splits on the English "Champion " prefix.
-        // Comparing that against `ability.name` (localized) never matched
-        // on non-EN languages - resolve the current ability's own EN name
-        // via its slug instead, so the comparison stays EN-to-EN regardless
-        // of the site's selected language.
-        const abilityEN = findBy(jsonUnitAbilities, "slug", ability.slug);
-        if (abilityEN && uniqueMedal.name.split("Champion ")[1] == abilityEN.name) {
-            // Show the medal bonus text in the selected language too, not
-            // just the raw EN description.
-            const uniqueMedalLoc = findBy(jsonUnitAbilitiesLocalized, "slug", uniqueMedal.slug) || uniqueMedal;
-            let championMedal = uniqueMedalLoc.description;
-
-            abilityMod +=
-                '<br><span style="color:yellow"><medal_champion></medal_champion> Champion Medal ' +
-                championMedal +
-                "</span><br>";
-        }
+    for (const bonus of championBonuses) {
+        const label = getUserSettings().language === "RU" ? "Медаль чемпиона" : "Champion Medal";
+        abilityMod +=
+            '<br><span style="color:yellow"><medal_champion></medal_champion> ' +
+            label + " — " + AddTagIconsForStatusEffects(bonus.description) + "</span><br>";
     }
     // modifiers
     if (abilityMod != "") {
@@ -2960,17 +2991,8 @@ function showUnit(unitID, subcultureCheck, resID, divOrigin) {
     let unitTabHolder = unitCard.querySelector("div#unitabholder");
     unitTabHolder.innerHTML = "";
 
-    const ab = jsonUnitAbilities.find((entry) => entry.slug === unitEN.medal_rewards_5[0].slug);
-    // champion upgrade
-    let splitName = null;
-    if (ab.name.indexOf("Champion") != -1) {
-        splitName = ab;
-    }
-
-    for (let k = 0; k < unitLoc.abilities.length; k++) {
-        // check if its got a unique medal
-
-        addAbilityslot(unitEN.abilities[k].slug, unitTabHolder, activeEnchantList, null, splitName);
+    for (const ability of unitEN.abilities) {
+        addAbilityslot(ability.slug, unitTabHolder, activeEnchantList, null, unitEN.medal_rewards_5);
     }
 
     if (unitEN.status_resistance != "0") {
