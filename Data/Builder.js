@@ -5130,39 +5130,39 @@ function showWorldStructure(a, divOrigin) {
 
     let spellDesc = "";
     const extraSpellsDiv = document.createElement("div");
-    if ("spell_unlocks" in structure) {
-        // if a lookup link
-        if (structure.spell_unlocks.indexOf("@") != -1) {
-            const valueLookup = findBy(jsonAllFromPOLocalized, "id", structure.spell_unlocks) ?? {};
+    const enchantmentKey = structure.combat_enchantment ??
+        (typeof structure.spell_unlocks === "string" ? structure.spell_unlocks : null);
+    if (enchantmentKey) {
+        const valueLookup = findBy(jsonAllFromPOLocalized, "id", enchantmentKey) ?? {};
 
-            const div = document.createElement("span");
+        const div = document.createElement("span");
 
-            div.className = "worldStructureEnchantment";
-            div.setAttribute("style", "color:white; text-decoration:underline");
-            spellDesc = valueLookup.description ?? valueLookup.display_description ?? "";
-            if (valueLookup.name) {
-                div.innerHTML = valueLookup.name;
-                description = description.replaceAll(
-                    /(<hyperlink>Чары для битвы<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Чары для битвы\[\/hyperlink\]) «»/g,
-                    (_, label) => label + " «" + div.outerHTML + "»"
-                );
-                description = description.replaceAll(
-                    /<casttactical><\/casttactical> (?:<hyperlink>Combat Enchantment<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Combat Enchantment\[\/hyperlink\])/g,
-                    (label) => div.outerHTML + " " + label
-                );
+        div.className = "worldStructureEnchantment";
+        div.setAttribute("style", "color:white; text-decoration:underline");
+        spellDesc = valueLookup.description ?? valueLookup.display_description ?? "";
+        if (valueLookup.name) {
+            div.innerHTML = valueLookup.name;
+            description = description.replaceAll(
+                /(<hyperlink>Чары для битвы<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Чары для битвы\[\/hyperlink\]) «»/g,
+                (_, label) => label + " «" + div.outerHTML + "»"
+            );
+            description = description.replaceAll(
+                /<casttactical><\/casttactical> (?:<hyperlink>Combat Enchantment<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Combat Enchantment\[\/hyperlink\])/g,
+                (label) => div.outerHTML + " " + label
+            );
+        }
+    }
+    if (Array.isArray(structure.spell_unlocks)) {
+        for (const spell of structure.spell_unlocks) {
+            if (structure.type === "Landmark" && !findBy(jsonSpells, "id", spell.id)) continue;
+            const fragment = spell_card_template.content.cloneNode(true);
+            const element = fragment.firstElementChild;
+            if (element) {
+                element.style.left = "-40px";
+                element.style.position = "relative";
             }
-        } else {
-            for (const spell of structure.spell_unlocks) {
-                if (structure.type === "Landmark" && !findBy(jsonSpells, "id", spell.id)) continue;
-                const fragment = spell_card_template.content.cloneNode(true);
-                const element = fragment.firstElementChild;
-                if (element) {
-                    element.style.left = "-40px";
-                    element.style.position = "relative";
-                }
-                extraSpellsDiv.appendChild(element);
-                showSpell(spell.id, false, element);
-            }
+            extraSpellsDiv.appendChild(element);
+            showSpell(spell.id, false, element);
         }
     }
 
