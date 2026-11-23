@@ -5139,7 +5139,7 @@ function showWorldStructure(a, divOrigin) {
 
         div.className = "worldStructureEnchantment";
         div.setAttribute("style", "color:white; text-decoration:underline");
-        spellDesc = valueLookup.description ?? valueLookup.display_description ?? "";
+        spellDesc = valueLookup.combat_property_description ?? valueLookup.description ?? valueLookup.display_description ?? "";
         if (valueLookup.name) {
             div.innerHTML = valueLookup.name;
             description = description.replaceAll(
@@ -5171,7 +5171,7 @@ function showWorldStructure(a, divOrigin) {
     descriptionDiv.append(extraSpellsDiv);
     if (structure.type === "Landmark") {
         const unitUnlocks = structure.unit_unlocks ?? [];
-        descriptionDiv.querySelectorAll('[data-kind="spellref"][data-key^="GLOBAL.UNITS."]').forEach((reference) => {
+        descriptionDiv.querySelectorAll('[data-key^="GLOBAL.UNITS."]').forEach((reference) => {
             const slug = reference.dataset.key.slice("GLOBAL.UNITS.".length).toLowerCase();
             if (!unitUnlocks.some((unit) => unit.slug === slug)) return;
 

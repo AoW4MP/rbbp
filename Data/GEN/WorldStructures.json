@@ -1112,6 +1112,7 @@
         "name": "Volcano",
         "extraLookup": "DLC@GIANTKINGS@MEGAWONDERS_STRATEGIC@RAGING_VOLCANO",
         "type": "Landmark",
+          "combat_enchantment": "META_EMPIRE@TRAIT_VOLCANIC_ERUPTIONS",
           "spell_unlocks": [{"id" : "call_volcanic_eruptions"}],
         "unit_unlocks": [
             {
