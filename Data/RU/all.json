@@ -16809,7 +16809,7 @@
   },
   {
     "id": "DLC@ARCHONPROPHECY@COMBATPROPERTIES_TACTICAL@CELESTIAL_RAIN",
-    "description": "Каждые 3 <turn></turn><hyperlink>х.</hyperlink>:<bulletlist><bullet>ко всем воинам на 3 <turn></turn> х. применяется эффект «<hyperlink>Wet</hyperlink>»;</bullet><bullet>все воины со свойствами «<hyperlink>Faithful</hyperlink>», «<hyperlink>Zeal</hyperlink>» или «<hyperlink>Celestial</hyperlink>» избавляются от отрицательных эффектов.</bullet></bulletlist>",
+    "description": "Каждые 3 <turn></turn><hyperlink>х.</hyperlink>:<bulletlist><bullet>ко всем воинам на 3 <turn></turn> х. применяется эффект «<hyperlink>Мокрая кожа</hyperlink>»;</bullet><bullet>все воины со свойствами «<hyperlink>Верный</hyperlink>», «<hyperlink>Рвение</hyperlink>» или «<hyperlink>Ангел</hyperlink>» избавляются от отрицательных эффектов.</bullet></bulletlist>",
     "DLC": "ARCHONPROPHECY",
     "name": "Небесный дождь"
   },
@@ -39470,13 +39470,13 @@
   },
   {
     "id": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@ANCIENT_DRACONIC_INSTINCT",
-    "description": "Все <<cm:<hyperlink>Воинl</hyperlink>>>-<<cm:<hyperlink>Dragon</hyperlink>>> получают эффект «<hyperlink>Frenzy</hyperlink>» до конца боя.",
+    "description": "Все <<cm:<hyperlink>Воинl</hyperlink>>>-<<cm:<hyperlink>драконы</hyperlink>>> получают эффект «<hyperlink>Буйство</hyperlink>» до конца боя.",
     "DLC": "GIANTKINGS",
     "name": "Первобытное буйство драконов"
   },
   {
     "id": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@BEHEMOTHS_DREADFUL_PRESENCE",
-    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> ко всем воинам с вероятностью 90% может быть применён эффект «<hyperlink>Remorse</hyperlink>».",
+    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> ко всем воинам с вероятностью 90% может быть применён эффект «<hyperlink>Сожаление</hyperlink>».",
     "DLC": "GIANTKINGS",
     "name": "Пугающее присутствие колосса"
   },
@@ -39542,7 +39542,7 @@
   },
   {
     "id": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@ELEMENTAL_ATTUNEMENT",
-    "description": "Все <<cm:<hyperlink>Воинl</hyperlink>>>-<<cm:<hyperlink>Elemental</hyperlink>>> получают эффект «<hyperlink>Elemental attunement unitprop</hyperlink>» до конца боя.",
+    "description": "Все <hyperlink>воины-элементали</hyperlink> получают эффект «<hyperlink>Стихийная гармония</hyperlink>» до конца боя.",
     "DLC": "GIANTKINGS",
     "name": "Стихийная гармония",
     "property_description": "При использовании <<gen,c:<hyperlink>Заклинание</hyperlink>>> базовая атака воина дополнительно наносит 1 ед. урона. Тип урона зависит от <<gen,c:<hyperlink>Приверженность</hyperlink>>> заклинания:<bulletlist><bullet><<c:<order></order> <hyperlink>Приверженность порядкуn{1}x{2}</hyperlink>>> — <<c:<damageSpirit></damageSpirit> <hyperlink>Урон магией духаn{1}x{2}x{3}</hyperlink>>>;</bullet><bullet><<c:<chaos></chaos> <hyperlink>Приверженность хаосуn{1}x{2}</hyperlink>>> — <<c:<damageFire></damageFire> <hyperlink>Урон от огняn{1}x{2}x{3}</hyperlink>>>;</bullet><bullet><<c:<arcana></arcana> <hyperlink>Приверженность астралуn{1}x{2}</hyperlink>>> — <<c:<damageLightning></damageLightning> <hyperlink>Электрический уронa{1}n{2}</hyperlink>>>;</bullet><bullet><<c:<matter></matter> <hyperlink>Приверженность материиn{1}x{2}</hyperlink>>> — <<c:<damagePhysical></damagePhysical> <hyperlink>Физический уронa{1}n{2}</hyperlink>>>;</bullet><bullet><<c:<nature></nature> <hyperlink>Приверженность природеn{1}x{2}</hyperlink>>> — <<c:<damageBlight></damageBlight> <hyperlink>Урон ядомn{1}x{2}</hyperlink>>>;</bullet><bullet><<c:<shadow></shadow> <hyperlink>Приверженность тениn{1}x{2}</hyperlink>>> — <<c:<damageFrost></damageFrost> <hyperlink>Урон от холодаn{1}x{2}x{3}</hyperlink>>>.</bullet></bulletlist><br>Может суммироваться до <eventColor>{STAR_BLADES_STATUS_DESCRIPTION>MaxStacks}</eventColor> р.<br> "
@@ -39644,7 +39644,7 @@
   },
   {
     "id": "DLC@GIANTKINGS@COMBATPROPERTIES_TACTICAL@UNDYING_BATTLEFIELD",
-    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> все присутствующие в бою трупы воскресают как случайные воины-скелеты со способностью «<hyperlink>Berserk</hyperlink>».<br><br>На самих скелетов эффект не действует, они считаются <<ins,cm:<hyperlink>Non vital</hyperlink>>> и погибают в конце боя.",
+    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> все присутствующие в бою трупы воскресают как случайные воины-скелеты со способностью «<hyperlink>Берсерк</hyperlink>».<br><br>На самих скелетов эффект не действует, они считаются <<ins,cm:<hyperlink>второстепенными</hyperlink>>> и погибают в конце боя.",
     "DLC": "GIANTKINGS",
     "name": "Неупокоенное поле боя"
   },
@@ -54615,7 +54615,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@COMBATPROPERTIES_TACTICAL@ELEMENTAL_DEFENSES",
-    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> случайный <<c:<hyperlink>Воинl</hyperlink>>> становится целью одного из следующих заклинаний, выбираемых случайно:<bulletlist><bullet><hyperlink>Ice coffin</hyperlink>;</bullet><bullet><hyperlink>Fireball</hyperlink>;</bullet><bullet><hyperlink>Fulmination</hyperlink>;</bullet><bullet><hyperlink>Rock blast</hyperlink>.</bullet></bulletlist>",
+    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> случайный <<c:<hyperlink>Воинl</hyperlink>>> становится целью одного из следующих заклинаний, выбираемых случайно:<bulletlist><bullet><hyperlink>Ледяной гроб</hyperlink>;</bullet><bullet><hyperlink>Воспламенение</hyperlink>;</bullet><bullet><hyperlink>Вспышка</hyperlink>;</bullet><bullet><hyperlink>Каменный взрыв</hyperlink>.</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "name": "Защита стихий"
   },
@@ -54686,7 +54686,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@COMBATPROPERTIES_TACTICAL@SCORCHING_STENCH_OF_SUFFERING",
-    "description": "Все <<cm:<hyperlink>Воинl</hyperlink>>>, кроме <hyperlink>демонов</hyperlink>, теряют -5 от <<gen,c:<statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектамn{1}x{2}</hyperlink>>> и -2 от <<gen,c:<defensefire></defensefire> <hyperlink>Защита от огняn{1}x{2}x{3}</hyperlink>>>.<br>Кроме того, каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>>:<bulletlist><bullet><<c:<happiness></happiness> <hyperlink>Боевой духa{1}n{2}</hyperlink>>> всех <<gen,cm:<hyperlink>Воинl</hyperlink>>> снижается на 5 за каждый уровень эффекта «<hyperlink>Burning</hyperlink>», который на них действует.</bullet></bulletlist>",
+    "description": "Все <<cm:<hyperlink>воины</hyperlink>>>, кроме <hyperlink>демонов</hyperlink>, теряют -5 от <<gen,c:<statuseffectresistance></statuseffectresistance> <hyperlink>Сопротивление эффектамn{1}x{2}</hyperlink>>> и -2 от <<gen,c:<defensefire></defensefire> <hyperlink>Защита от огняn{1}x{2}x{3}</hyperlink>>>.<br>Кроме того, каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>>:<bulletlist><bullet><<c:<happiness></happiness> <hyperlink>Боевой духa{1}n{2}</hyperlink>>> всех <hyperlink>воинов</hyperlink> снижается на 5 за каждый уровень эффекта «<hyperlink>Горение</hyperlink>», который на них действует.</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "name": "Обжигающий смрад страданий"
   },
@@ -55457,7 +55457,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@BROKEN_WIZARD_TOWER",
-    "description": "<<Cm:<hyperlink>Провинция</hyperlink>>> по соседству с этой достопримечательностью получают:<bulletlist><bullet>+5 к <<dat,cm:<knowledge></knowledge> <hyperlink>Знанияn</hyperlink>>>.</bullet><bullet><researchpost></researchpost> <hyperlink>Исследовательская станцияa{1}n{2}</hyperlink> в провинции получает +10 к доходу <<gen,c:<mana></mana> <hyperlink>Мана</hyperlink>>>.</bullet><bullet><casttactical></casttactical> <hyperlink>Чары для битвыn{1}x{2}x{3}</hyperlink> «<hyperlink>Elemental defenses</hyperlink>».</bullet></bulletlist><br>Если по соседству с этой достопримечательностью расположено не менее 3 <<gen,cm:<hyperlink>Провинция</hyperlink>>> одного <<gen,c:<hyperlink>Город</hyperlink>>>, город получает:<bulletlist><bullet>Вражеские <<cm:<hyperlink>Заклинание</hyperlink>>>, применяемые во владениях города, имеют 33% вероятность <<gen,c:<hyperlink>Осечка</hyperlink>>>.</bullet><bullet>Владелец города получает 15 к очкам <caststrategic></caststrategic><hyperlink>глобальных</hyperlink> и <optactical></optactical> [hyperlink,GLOBAL.CombatCastingPointConcept]боевых заклинаний[/hyperlink].</bullet><bullet>Открывает <<c:<caststrategic></caststrategic> <hyperlink>Заклинание для городаn{1}x{2}x{3}</hyperlink>>> «<hyperlink>Broken wizard tower spell</hyperlink>».</bullet></bulletlist>",
+    "description": "<hyperlink>Провинции</hyperlink> по соседству с этой достопримечательностью получают:<bulletlist><bullet>+5 к <<dat,cm:<knowledge></knowledge> <hyperlink>Знанияn</hyperlink>>>.</bullet><bullet><researchpost></researchpost> <hyperlink>Исследовательская станцияa{1}n{2}</hyperlink> в провинции получает +10 к доходу <<gen,c:<mana></mana> <hyperlink>маны</hyperlink>>>.</bullet><bullet><casttactical></casttactical> <hyperlink>Чары для битвыn{1}x{2}x{3}</hyperlink> «».</bullet></bulletlist><br>Если по соседству с этой достопримечательностью расположено не менее 3 <<gen,cm:<hyperlink>провинций</hyperlink>>> одного <<gen,c:<hyperlink>города</hyperlink>>>, город получает:<bulletlist><bullet>Вражеские <<cm:<hyperlink>Заклинание</hyperlink>>>, применяемые во владениях города, имеют 33% вероятность <<gen,c:<hyperlink>Осечка</hyperlink>>>.</bullet><bullet>Владелец города получает 15 к очкам <caststrategic></caststrategic><hyperlink>глобальных</hyperlink> и <optactical></optactical> [hyperlink,GLOBAL.CombatCastingPointConcept]боевых заклинаний[/hyperlink].</bullet><bullet>Открывает <<c:<caststrategic></caststrategic> <hyperlink>Заклинание для городаn{1}x{2}x{3}</hyperlink>>> «<hyperlink>Космическое вдохновение</hyperlink>».</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "lore": "«Вообразите собравшихся под сводами одной башни повелителей магии, силы которых находятся в непримиримом противостоянии. Они могут ненавидеть друг друга до глубины души, но всё же понимают, что в мире должно быть место для всех магических приверженностей, иначе его равновесие будет нарушено. Трон Мудрых — гарант баланса в <hyperlink>Круге Деогаи</hyperlink>. Он напоминает каждому волшебнику о том, насколько тот ничтожен на фоне грандиозных замыслов космоса».<br><br>Габриэль, «Хроники Вечного края»",
     "name": "Разбитый Трон Мудрых"
@@ -55470,7 +55470,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@CHAINED_DEMON",
-    "description": "<<Cm:<hyperlink>Провинция</hyperlink>>> по соседству с этой достопримечательностью получают:<bulletlist><bullet>+5 к <<dat,c:<mana></mana> <hyperlink>Мана</hyperlink>>> и +10 к очкам <<gen,c:<unitprod></unitprod> <hyperlink>Наём</hyperlink>>>.</bullet><bullet><casttactical></casttactical> <hyperlink>Чары для битвыn{1}x{2}x{3}</hyperlink> «<hyperlink>Scorching stench of suffering</hyperlink>».</bullet></bulletlist><br>Если по соседству с этой достопримечательностью расположено не менее 3 <<gen,cm:<hyperlink>Провинция</hyperlink>>> одного <<gen,c:<hyperlink>Город</hyperlink>>>, город получает:<bulletlist><bullet>+2 к <<dat,c:<mana></mana> <hyperlink>Мана</hyperlink>>> и +5 к очкам <<gen,c:<unitprod></unitprod> <hyperlink>Наём</hyperlink>>> за каждую провинцию с <<ins,c:<hyperlink>Пропасть</hyperlink>>> или <<ins,c:<hyperlink>Лава</hyperlink>>> во <<pre,c:<hyperlink>Владенияn</hyperlink>>>.</bullet><bullet>Владелец города получает <<acc,c:<casttactical></casttactical> <hyperlink>Заклинание ослабленияn{1}x{2}</hyperlink>>> «<hyperlink>Chained demon spell</hyperlink>».</bullet></bulletlist>",
+    "description": "<hyperlink>Провинции</hyperlink> по соседству с этой достопримечательностью получают:<bulletlist><bullet>+5 к <mana></mana> <hyperlink>мане</hyperlink> и +10 к очкам <<gen,c:<unitprod></unitprod> <hyperlink>найма</hyperlink>>>.</bullet><bullet><casttactical></casttactical> <hyperlink>Чары для битвыn{1}x{2}x{3}</hyperlink> «».</bullet></bulletlist><br>Если по соседству с этой достопримечательностью расположено не менее 3 <<gen,cm:<hyperlink>провинций</hyperlink>>> одного <<gen,c:<hyperlink>города</hyperlink>>>, город получает:<bulletlist><bullet>+2 к <mana></mana> <hyperlink>мане</hyperlink> и +5 к очкам <<gen,c:<unitprod></unitprod> <hyperlink>найма</hyperlink>>> за каждую провинцию с <<ins,c:<hyperlink>пропастью</hyperlink>>> или <<ins,c:<hyperlink>лавой</hyperlink>>> во <<pre,c:<hyperlink>владениях</hyperlink>>>.</bullet><bullet>Владелец города получает <<acc,c:<casttactical></casttactical> <hyperlink>Заклинание ослабленияn{1}x{2}</hyperlink>>> «<hyperlink>Серное усмирение</hyperlink>».</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "lore": "Реют знамёна, что ночи черней, над <hyperlink>Багровой землёю</hyperlink>,<br>Крепко титаны стоят, повелители инферионов,<br>Орды <hyperlink>Подземного царства</hyperlink>, рыча, подымаются в небо,<br>Стены и башни не сдержат напора и мощи <hyperlink>Престола</hyperlink>,<br>Демоны рвутся вперёд, и Старейшие сгинут навеки.<br><br>Лицтия, Великий скальд Псевмодии, «Песнь о победе в Войне инферионов»",
     "name": "Поверженный Архиврагla<eventColor>{1}</eventColor>n<eventColor>{2}</eventColor>"
@@ -61400,7 +61400,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@COMBATPROPERTIES_TACTICAL@PARASITIC_INFECTION",
-    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> ко всем вражеским воинам под воздействием эффекта «<hyperlink>Bleeding</hyperlink>» с вероятностью 60% может быть применён эффект «<hyperlink>Blood parasite</hyperlink>».",
+    "description": "Каждый <<acc,c:<turn></turn> <hyperlink>Ход</hyperlink>>> ко всем вражеским воинам под воздействием эффекта «<hyperlink>Кровотечение</hyperlink>» с вероятностью 60% может быть применён эффект «<hyperlink>Паразит крови</hyperlink>».",
     "DLC": "THRONESOFBLOOD",
     "name": "Заражение паразитами"
   },

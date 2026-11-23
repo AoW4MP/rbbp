@@ -1277,7 +1277,8 @@
       {
         "id": "chained_demon",
         "DLC": "SECRETSOFTHEARCHMAGES ",
-           "spell_unlocks": [{"id" : "brimstone_bind"}],
+           "combat_enchantment": "DLC@SECRETSOFTHEARCHMAGES@COMBATPROPERTIES_TACTICAL@SCORCHING_STENCH_OF_SUFFERING",
+          "spell_unlocks": [{"id" : "brimstone_bind"}],
         "name": "Chained Demon",
         "extraLookup": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@CHAINED_DEMON",
         "type": "Landmark"
@@ -1317,6 +1318,7 @@
         "id": "broken_wizard_throne",
         "DLC": "SECRETSOFTHEARCHMAGES ",
        
+          "combat_enchantment": "DLC@SECRETSOFTHEARCHMAGES@COMBATPROPERTIES_TACTICAL@ELEMENTAL_DEFENSES",
           "spell_unlocks": [{"id" : "cosmic_inspiration"}],
         "name": "Broken Wizard Throne",
         "extraLookup": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@BROKEN_WIZARD_TOWER",
