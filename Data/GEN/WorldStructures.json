@@ -36,11 +36,7 @@
   {
     "id": "tempestuous_vortex",
     "DLC": "SILVERSEAS ",
-    "spell_unlocks": [
-      {
-        "id": "vortex_storm"
-      }
-    ],
+    "spell_unlocks": "DLC@SILVERSEAS@COMBATPROPERTIES_TACTICAL@VORTEX_STORM",
     "unit_unlocks": [
       {
         "slug": "lightning_rune_crab"
@@ -53,11 +49,7 @@
   {
     "id": "armadas_fall",
     "DLC": "SILVERSEAS ",
-    "spell_unlocks": [
-      {
-        "id": "rampant_debris"
-      }
-    ],
+    "spell_unlocks": "DLC@SILVERSEAS@COMBATPROPERTIES_TACTICAL@RAMPANT_DEBRIS",
     "name": "Armada's Fall",
     "extraLookup": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@ARMADAS_FALL",
     "type": "Landmark"
