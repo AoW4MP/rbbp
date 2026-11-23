@@ -5105,7 +5105,10 @@ function showWorldStructure(a, divOrigin) {
     );
 
     if ("unit_unlocks" in structure) {
-        if ("other_unlock" in structure || structure.type == "Landmark") {
+        if (structure.type === "Landmark") {
+            const russian = getUserSettings().language === "RU";
+            description += russian ? "<br>Доступные для найма войска:<br>" : "<br>Recruitable Units:<br>";
+        } else if ("other_unlock" in structure) {
             description += "<br>Unit Unlock:<br>";
         } else {
             description += "<br><hyperlink><rally></rally>Rally Units:</hyperlink><br>";
@@ -5130,24 +5133,27 @@ function showWorldStructure(a, divOrigin) {
     if ("spell_unlocks" in structure) {
         // if a lookup link
         if (structure.spell_unlocks.indexOf("@") != -1) {
-            const valueLookup = findBy(jsonAllFromPOLocalized, "id", structure.spell_unlocks);
+            const valueLookup = findBy(jsonAllFromPOLocalized, "id", structure.spell_unlocks) ?? {};
 
             const div = document.createElement("span");
 
-            div.setAttribute("id", "test");
+            div.className = "worldStructureEnchantment";
             div.setAttribute("style", "color:white; text-decoration:underline");
-            if ("description" in valueLookup) {
-                spellDesc = valueLookup.description;
-            }
-            if ("name" in valueLookup) {
+            spellDesc = valueLookup.description ?? valueLookup.display_description ?? "";
+            if (valueLookup.name) {
                 div.innerHTML = valueLookup.name;
                 description = description.replaceAll(
-                    "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>",
-                    div.outerHTML + "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>"
+                    /(<hyperlink>Чары для битвы<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Чары для битвы\[\/hyperlink\]) «»/g,
+                    (_, label) => label + " «" + div.outerHTML + "»"
+                );
+                description = description.replaceAll(
+                    /<casttactical><\/casttactical> (?:<hyperlink>Combat Enchantment<\/hyperlink>|\[hyperlink,GLOBAL\.CombatEnchantmentConcept\]Combat Enchantment\[\/hyperlink\])/g,
+                    (label) => div.outerHTML + " " + label
                 );
             }
         } else {
             for (const spell of structure.spell_unlocks) {
+                if (structure.type === "Landmark" && !findBy(jsonSpells, "id", spell.id)) continue;
                 const fragment = spell_card_template.content.cloneNode(true);
                 const element = fragment.firstElementChild;
                 if (element) {
@@ -5163,12 +5169,25 @@ function showWorldStructure(a, divOrigin) {
     descriptionDiv.innerHTML = AddTagIconsForStatusEffects(description);
     descriptionDiv.innerHTML = descriptionDiv.innerHTML.replaceAll("{LOC.CONCEPT@HITPOINTS@NAME}", "<hp></hp>");
     descriptionDiv.append(extraSpellsDiv);
-    const insertDiv = divOrigin.querySelector("#test");
-    const spaDes2 = document.createElement("span");
+    if (structure.type === "Landmark") {
+        const unitUnlocks = structure.unit_unlocks ?? [];
+        descriptionDiv.querySelectorAll('[data-kind="spellref"][data-key^="GLOBAL.UNITS."]').forEach((reference) => {
+            const slug = reference.dataset.key.slice("GLOBAL.UNITS.".length).toLowerCase();
+            if (!unitUnlocks.some((unit) => unit.slug === slug)) return;
 
-    if (insertDiv != undefined && spellDesc != "") {
-        spaDes2.innerHTML = insertDiv.innerHTML + "<br>" + spellDesc;
-        addTooltipListeners(insertDiv, spaDes2);
+            const link = document.createElement("a");
+            link.href = "/rbbp/HTML/Units.html?unit=" + encodeURIComponent(slug);
+            link.append(...reference.childNodes);
+            reference.replaceChildren(link);
+        });
+    }
+
+    if (spellDesc) {
+        descriptionDiv.querySelectorAll(".worldStructureEnchantment").forEach((enchantment) => {
+            const content = document.createElement("span");
+            content.innerHTML = enchantment.innerHTML + "<br>" + AddTagIconsForStatusEffects(spellDesc);
+            addTooltipListeners(enchantment, content);
+        });
     }
 
     //insertDiv =
