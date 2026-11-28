@@ -455,13 +455,10 @@
             // LinkRbbpEntitiesByEnglishName), их первым ребёнком всегда стоит .rbbp-inline-icon,
             // а .rbbp-entity-icon внутри них попросту не будет найден.
             function MoveRbbpTitleIconsToFront(article) {
-                const titles = article.querySelectorAll(
-                    'h2, h3, h4, p:has(> a:is([href="/rbbp/HTML/AncientWonders.html"], [href="/rbbp/HTML/Landmarks.html"]))'
-                );
-                titles.forEach((title) => {
+                MoveRbbpWorldIconsToFront(article);
+                article.querySelectorAll("h2, h3, h4").forEach((title) => {
                     const icon = title.querySelector("img.rbbp-entity-icon");
-                    if (!icon || title.firstChild === icon) return;
-                    title.prepend(icon);
+                    if (icon && title.firstChild !== icon) title.prepend(icon);
                 });
             }
 
@@ -755,7 +752,7 @@
                 // страницу HeroEquipment.html нужного слота (см. RBBP_ITEM_SLOT_LABEL).
                 // Чтобы добавить предмет - дописать его EN-имя сюда (имя должно быть
                 // уникальным среди HeroItems.json, проверять по данным).
-                const RBBP_ITEM_NAMES = new Set(["Cryptblade", "Druid's Staff", "Relic of Mind", "White Wolf Mount"]);
+                const RBBP_ITEM_NAMES = new Set(["Cryptblade", "Druid's Staff", "Relic of Mind", "White Wolf Mount", "Murder Ring", "Slayer Sword"]);
                 const RBBP_ITEM_SLOT_LABEL = {
                     Primary: "Primary Weapon",
                     Secondary: "Secondary Weapon",

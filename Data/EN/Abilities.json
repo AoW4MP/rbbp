@@ -1117,12 +1117,15 @@
     "requisite": "<hyperlink>Missile</hyperlink>"
    },
    {
+    "requisite": "<hyperlink>Base</hyperlink>"
+   },
+   {
     "requisite": "<hyperlink>Single Shot</hyperlink>"
    }
   ],
   "accuracy": "80%",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "range": "5",
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
@@ -5199,7 +5202,7 @@
     "count": 1
    }
   ],
-  "description": "Target enemy unit:<bulletlist><bullet>Sustains damage.</bullet><bullet>Has a base 90% chance of becoming Immobilized for 1 <turn></turn> Turn. Chance is guaranteed against Wet targets.</bullet></bulletlist>",
+  "description": "Target enemy unit:<bulletlist><bullet>Sustains damage.</bullet><bullet>Has a base 90% chance of becoming Immobilized for 1 <turn></turn> Turn.</bullet></bulletlist>",
   "name": "Waterbind Arrow",
   "slug": "waterbind_arrow_ability_0000049700004247",
   "damage": "30<damagephysical></damagephysical> ",
@@ -5487,7 +5490,7 @@
     "note": "Cooldown: 1 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit:<bulletlist><bullet>Gains Regeneration for 3 <turn></turn> Turns.</bullet><bullet>Gains Strengthened for 3 <turn></turn> Turns.</bullet><bullet>Has 1 Negative Status Effect removed.</bullet></bulletlist>",
+  "description": "Target friendly unit:<bulletlist><bullet>Gains Grace</bullet><bullet>Gains 2 Regeneration for 3 <turn></turn> Turns.</bullet><bullet>Gains Strengthened for 3 <turn></turn> Turns.</bullet><bullet>Has 1 Negative Status Effect removed.</bullet></bulletlist>",
   "name": "Morning Boon",
   "slug": "morning_boon_ability_0000049700003B6F",
   "damage": "",
@@ -8023,7 +8026,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain Precognition.</bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 40 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain Precognition.</bullet></bulletlist>",
   "name": "Healing Portent",
   "slug": "healing_portent_ability_00000490000028E0",
   "damage": "",
@@ -8052,9 +8055,9 @@
     "requisite": "<hyperlink>Support</hyperlink>"
    }
   ],
-  "accuracy": "85%",
+  "accuracy": "Always Hits",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "0",
+  "range": "4",
   "icon": "0000049700002AD0"
  },
  {
@@ -16793,7 +16796,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain 1 Grace.</bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal 25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain 1 Grace.</bullet></bulletlist>",
   "name": "Graceful Rain",
   "slug": "graceful_rain_ability_0000048900001228",
   "damage": "",
@@ -20209,7 +20212,7 @@
     "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
+  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 4 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Conjure Animal",
   "slug": "conjure_animal_ability_0000041B000003A5",
   "damage": "",
@@ -22027,7 +22030,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal +15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain Regeneration.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
+  "description": "Friendly units in a 1-hex radius:<bulletlist><bullet>Heal +25 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain Regeneration.</bullet><bullet>Have 2 negative status effects dispelled.</bullet></bulletlist>",
   "name": "Blooming Life",
   "slug": "blooming_life_ability_000003EC000008CB",
   "damage": "",
@@ -22040,6 +22043,12 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "000003E30000529B"
+ },
+ {
+  "description": "At the end of this unit's turn, gain Obscured until moved and create <hyperlink>Obscuring</hyperlink> flora in adjacent spaces.<br></br>Does not work in water battles.",
+  "name": "Feygrowth",
+  "slug": "000004c0000006ba",
+  "icon": "000004C0000006B9"
  },
  {
   "description": "Blooming Life:<bulletlist><bullet>Grants an additional 2 Regeneration.</bullet><bullet>Cooldown reduced by 1<turn></turn> <hyperlink>Turn</hyperlink>.</bullet></bulletlist>",
@@ -22102,12 +22111,6 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "000003E300005291"
- },
- {
-  "description": "At the end of this unit's turn, gain Obscured until moved and create <hyperlink>Obscuring</hyperlink> flora in adjacent spaces.<br></br>Does not work in water battles.",
-  "name": "Feygrowth",
-  "slug": "000004c0000006ba",
-  "icon": "000004C0000006B9"
  },
  {
   "description": "Budding Strength:<bulletlist><bullet>Grants an additional 3 random <hyperlink>Positive Status Effects</hyperlink>.</bullet></bulletlist>",
@@ -33158,7 +33161,7 @@
   "description": "Deal damage to target unit.",
   "name": "Draining Bite",
   "slug": "draining_bite_ability_hs_draining_bite",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Melee</hyperlink>"
@@ -34010,7 +34013,7 @@
   "icon": "0000049700003524"
  },
  {
-  "description": "Upkeep increases by 10 <gold></gold> <hyperlink>Gold</hyperlink>.",
+  "description": "Upkeep increases by 25 <gold></gold> <hyperlink>Gold</hyperlink>.",
   "name": "Increased Upkeep",
   "slug": "0000049700003214",
   "icon": "0000049700003611"
@@ -34050,7 +34053,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target friendly unit and the caster:<bulletlist><bullet>Heal 30 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 3 negative status effects removed.</bullet></bulletlist>",
+  "description": "Target friendly unit and the caster:<bulletlist><bullet>Heal 20 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Have 2 negative status effects removed.</bullet></bulletlist>",
   "name": "Blood Communion",
   "slug": "blood_communion_ability_vampire_signature_blood_communion",
   "damage": "",
@@ -34098,7 +34101,7 @@
   "icon": "0000049700002F3F"
  },
  {
-  "description": "Upkeep increases by 20 <gold></gold> <hyperlink>Gold</hyperlink>.",
+  "description": "Upkeep increases by 45 <gold></gold> <hyperlink>Gold</hyperlink>.",
   "name": "Increased Upkeep",
   "slug": "0000049700003215",
   "icon": "0000049700003612"
@@ -43393,10 +43396,17 @@
   "icon": "0000048B00000BAB"
  },
  {
-  "modifiers": [],
-  "description": "Fire Heavy Magelock at target enemy unit.",
-  "name": "Fire Heavy Magelock",
-  "slug": "fire_heavy_magelocks_(item_forge)_ability_equipment_item_carbine_base",
+  "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
+  "description": "Fires ranged projectiles at target enemy unit.",
+  "name": "Shoot Crossbow",
+  "slug": "shoot_crossbow_(item_forge)_ability_equipment_item_carbine_base",
   "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
@@ -43409,47 +43419,29 @@
     "requisite": "<hyperlink>Single Shot</hyperlink>"
    }
   ],
-  "accuracy": "100%",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "5",
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
-  "icon": "000004A60000089C"
+  "accuracy": "90%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "icon": "000003BD00002EA7"
  },
  {
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
-  "description": "Quickly fire Heavy Magelock at target enemy unit, with reduced accuracy and effectiveness.",
-  "name": "Snapshot Heavy Magelock",
-  "slug": "fire_heavy_magelocks_snap_shot_(item_forge)_ability_equipment_item_carbine_base",
-  "damage": "25<damagephysical></damagephysical> ",
+  "notes": [],
+  "description": "Single Melee Strike.",
+  "name": "Quick Stab",
+  "slug": "quick_stab_ability_equipment_item_carbine_base",
+  "damage": "16<damagephysical></damagephysical> ",
   "requisites": [
    {
-    "requisite": "<hyperlink>Missile</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Base</hyperlink>"
+    "requisite": "<hyperlink>Melee</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Single Shot</hyperlink>"
    }
   ],
-  "accuracy": "80%",
+  "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
-  "icon": "0000048B00000BAB"
+  "range": "1",
+  "icon": "000003E3000057D6"
  },
  {
   "modifiers": [],
@@ -44001,76 +43993,52 @@
   "icon": "000003BD000020C9"
  },
  {
-  "modifiers": [
+  "notes": [
    {
-    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
-    "name": "Piercing",
-    "count": 1
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    }
   ],
-  "description": "Fire Heavy Magelock at target enemy unit.",
-  "name": "Fire Heavy Magelock",
-  "slug": "fire_heavy_magelocks_(item_forge)_ability_mercantile_carbine_item_tier_1",
-  "damage": "38<damagephysical></damagephysical> ",
+  "description": "Fires ranged projectiles at target enemy unit.",
+  "name": "Shoot Carbine",
+  "slug": "shoot_crossbow_(item_forge)_ability_mercantile_carbine_item_tier_1",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Missile</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Base</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Single Shot</hyperlink>"
+   }
+  ],
+  "accuracy": "90%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "icon": "000003BD00002EA7"
+ },
+ {
+  "notes": [],
+  "description": "Single Melee Strike.",
+  "name": "Quick Stab",
+  "slug": "quick_stab_ability_mercantile_carbine_item_tier_1",
+  "damage": "16<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Melee</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Single Shot</hyperlink>"
    }
   ],
   "accuracy": "100%",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "5",
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
-  "icon": "000004A60000089C"
- },
- {
-  "modifiers": [
-   {
-    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
-    "name": "Piercing",
-    "count": 1
-   }
-  ],
-  "description": "Quickly fire Heavy Magelock at target enemy unit, with reduced accuracy and effectiveness.",
-  "name": "Snapshot Heavy Magelock",
-  "slug": "fire_heavy_magelocks_snap_shot_(item_forge)_ability_mercantile_carbine_item_tier_1",
-  "damage": "25<damagephysical></damagephysical> ",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Missile</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Base</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Single Shot</hyperlink>"
-   }
-  ],
-  "accuracy": "80%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
-  "icon": "0000048B00000BAB"
+  "range": "1",
+  "icon": "000003E3000057D6"
  },
  {
   "modifiers": [
@@ -44334,12 +44302,12 @@
  {
   "notes": [],
   "description": "Strikes target enemy unit.",
-  "name": "Melee Strike",
-  "slug": "melee_strike_(item_forge_dual)_ability_breachgun_and_axe_tier_i",
-  "damage": "12<damagephysical></damagephysical> ",
+  "name": "Magic Strike",
+  "slug": "magic_strike_(base)_ability_breachgun_and_axe_tier_i",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
-    "requisite": "<hyperlink>Melee</hyperlink>"
+    "requisite": "<hyperlink>Magic</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Base</hyperlink>"
@@ -44348,7 +44316,7 @@
   "accuracy": "100%",
   "actionPoints": "<repeatingaction></repeatingaction>",
   "range": "1",
-  "icon": "000003BD000020C9"
+  "icon": "0000048B0000131E"
  },
  {
   "notes": [
@@ -54161,7 +54129,7 @@
   "icon": "000003E3000049ED"
  },
  {
-  "description": "Non-Hero adjacent attackers have a base 30% chance of becoming Stunned.",
+  "description": "Adjacent attackers have a base 30% chance of becoming Stunned.",
   "name": "Static Shield",
   "slug": "0000048b00000ca4",
   "icon": "0000049700002E01"
@@ -55370,7 +55338,7 @@
   "icon": "0000048D00000134"
  },
  {
-  "description": "When this unit dies:<bulletlist><bullet>Has a 25% chance of summoning an <hyperlink>Accursed Wisp</hyperlink> for 3 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Chance increases by 15% for each stack of Ghostfire the unit has.</bullet></bulletlist><br></br><br></br>Cannot affect Infernal Fiends and Accursed Fiends.",
+  "description": "When this unit dies:<bulletlist><bullet>Has a 25% chance of summoning an <hyperlink>Accursed Wisp</hyperlink> for 3 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Chance increases by 5% for each stack of Ghostfire the unit has.</bullet></bulletlist><br></br><br></br>Cannot affect Infernal Fiends and Accursed Fiends.",
   "name": "Damned",
   "slug": "000004970000472a",
   "icon": "0000048B000017E6"
@@ -57934,7 +57902,7 @@
     "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
+  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 4 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Conjure Animal",
   "slug": "conjure_animal_ability_equipment_upgrade_active_staff_conjure_animal",
   "damage": "",
@@ -58380,7 +58348,7 @@
     "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
+  "description": "Summon a random Tier I animal unit.<br></br>This summon lasts for 4 <turn></turn> Turns.<br></br><br></br>Enter <hyperlink>Defense Mode</hyperlink> after use.",
   "name": "Conjure Animal",
   "slug": "conjure_animal_ability_equipment_upgrade_active_wand_conjure_animal",
   "damage": "",

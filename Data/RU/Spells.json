@@ -826,7 +826,7 @@
   "id": "Проклятые_течения",
   "DLC": "SILVERSEAS ",
   "tactical": true,
-  "description": "Вражеские воины в радиусе 2 кл.:<bulletlist><bullet>получают 8 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>получают 8 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>получают эффект «Призрачный огонь»;</bullet><bullet>притягиваются к выбранной клетке.</bullet></bulletlist>",
+  "description": "Вражеские воины в радиусе 1 кл.:<bulletlist><bullet>получают 8 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>;</bullet><bullet>получают 8 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>;</bullet><bullet>получают эффект «Призрачный огонь»;</bullet><bullet>притягиваются к выбранной клетке.</bullet></bulletlist>",
   "name": "Проклятые течения",
   "operation_point_cost": 30,
   "icon": "000004970000425E"
@@ -854,7 +854,7 @@
   "id": "Разрывное_течение",
   "DLC": "SILVERSEAS ",
   "tactical": true,
-  "description": "Воины в радиусе 1 кл.:<bulletlist><bullet>получают 12 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Мокрая кожа»;</bullet><bullet>если находятся на примыкающих клетках, то их отбрасывает на 1 кл. от центра;</bullet><bullet>если цель к этому моменту уже находилась под действием эффекта «Мокрая кожа», то все указанные эффекты удваиваются.</bullet></bulletlist>",
+  "description": "Воины в радиусе 1 кл.:<bulletlist><bullet>получают 12 ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>на 3 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Мокрая кожа»;</bullet><bullet>если находятся на примыкающих клетках, то их отбрасывает на 1 кл. от центра.</bullet></bulletlist>",
   "name": "Разрывное течение",
   "operation_point_cost": 25,
   "icon": "00000497000041F9"
@@ -866,7 +866,7 @@
   "id": "Живительное_ускорение",
   "DLC": "SILVERSEAS ",
   "tactical": false,
-  "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают 10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>в начале следующего боя на 3 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Ускорение».</bullet></bulletlist>",
+  "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают 20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>в начале следующего боя на 1 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Ускорение».</bullet></bulletlist>",
   "name": "Живительное ускорение",
   "operation_point_cost": 45,
   "icon": "00000497000041FD"
@@ -1225,7 +1225,7 @@
   ]
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "10<mana></mana> ",
   "resid": 5046586588002,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>",
   "id": "Завораживающие_огоньки",
@@ -1233,7 +1233,7 @@
   "tactical": true,
   "description": "Выбранный вражеский воин:<bulletlist><bullet>получает эффект «Рассеянный» на 1 <turn></turn> х.;</bullet><bullet>теряет <hyperlink>защитную позицию</hyperlink>;</bullet><bullet>лишается <hyperlink>ответных ударов</hyperlink>.</bullet></bulletlist>",
   "name": "Завораживающие огоньки",
-  "operation_point_cost": 20,
+  "operation_point_cost": 15,
   "icon": "0000049700003B2F"
  },
  {
@@ -1243,7 +1243,7 @@
   "id": "Живительный_сон",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Выбранная дружественная армия теряет все очки передвижения и восстанавливает по 1 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за каждое потерянное очко.",
+  "description": "Выбранная дружественная армия теряет все очки передвижения и восстанавливает по 2 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за каждое потерянное очко.",
   "name": "Живительный сон",
   "operation_point_cost": 30,
   "icon": "0000049700003B33"
@@ -1275,7 +1275,7 @@
   "id": "Связь_фей",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Воины под действием чар:<bulletlist><bullet>в начале боя получают +10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>при нейтральном боевом духе получают +2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>при высоком боевом духе получают +4 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
+  "description": "Воины под действием чар:<bulletlist><bullet>в начале боя получают +15 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>при нейтральном боевом духе получают +2 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>;</bullet><bullet>при высоком боевом духе получают +4 к <statuseffectresistance></statuseffectresistance> <hyperlink>сопротивлению эффектам</hyperlink>.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Воин со щитом"
@@ -1657,7 +1657,7 @@
   "id": "График_тренировок",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Выбранный принадлежащий вам город:<bulletlist><bullet>получает 40 оч. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный принадлежащий вам город:<bulletlist><bullet>получает 30 оч. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist>",
   "name": "График тренировок",
   "operation_point_cost": 45,
   "icon": "0000049700003778"
@@ -3281,7 +3281,7 @@
   "id": "Ритуал_гипнотизирующего_найма",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Выбранный принадлежащий вам город на 3 <turn></turn> х. получает +50 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.",
+  "description": "Выбранный принадлежащий вам город на 3 <turn></turn> х. получает +30 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.",
   "name": "Ритуал гипнотизирующего найма",
   "operation_point_cost": 45,
   "icon": "0000049700000BDE"
@@ -4554,7 +4554,7 @@
   "icon": "0000048D00001B34"
  },
  {
-  "casting_cost": "60<mana></mana> 2<embalmedsacrifice></embalmedsacrifice> ",
+  "casting_cost": "60<mana></mana> 1<embalmedsacrifice></embalmedsacrifice> ",
   "resid": 5003636906629,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для дружественной армии</hyperlink>",
   "id": "Мрачное_жертвоприношение",
@@ -5838,7 +5838,7 @@
   "icon": "0000044500000057"
  },
  {
-  "casting_cost": "150<mana></mana> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 2<secretscrolls></secretscrolls> ",
   "resid": 4694399254676,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание исцеления</hyperlink>",
   "id": "Массовое_восстановление",
@@ -5872,7 +5872,7 @@
   "icon": "0000044000000079"
  },
  {
-  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4672924418199,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Демонический_натиск",
@@ -5916,7 +5916,7 @@
   "icon": "0000041B000019D1"
  },
  {
-  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010634979,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Благородный_воитель",
@@ -5927,7 +5927,7 @@
   "icon": "0000041B000019C9"
  },
  {
-  "casting_cost": "200<mana></mana> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 2<secretscrolls></secretscrolls> ",
   "resid": 4514010634969,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Массовое_воскрешение",
@@ -6047,10 +6047,11 @@
  {
   "casting_cost": "45<mana></mana> ",
   "resid": 4514010634776,
+  "upkeep": "10<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для города</hyperlink>",
   "id": "Фанатичные_рабочие",
   "tactical": false,
-  "description": "Выбранный принадлежащий вам город на 3 <turn></turn> х.:<bulletlist><bullet>получает +60 оч. <structureprod></structureprod> <hyperlink>производства</hyperlink>;</bullet><bullet>теряет -20 ед. <food></food> <hyperlink>пищи</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 оч. <structureprod></structureprod> <hyperlink>производства</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet></bulletlist>",
   "name": "Фанатичные рабочие",
   "operation_point_cost": 45,
   "icon": "0000041B00001935"
@@ -6092,7 +6093,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Вдохновляющий_псалом",
   "tactical": true,
-  "description": "Дружественные воины в радиусе 2 кл. получают:<bulletlist><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>эффект «Дополнительная сила» (2), если они обладают способностью «Рвение».</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 2 кл. получают:<bulletlist><bullet>+10 к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>эффект «Дополнительная сила» (1), если они обладают способностью «Рвение».</bullet></bulletlist>",
   "name": "Вдохновляющий псалом",
   "operation_point_cost": 25,
   "icon": "0000041B00001939"
@@ -6128,7 +6129,7 @@
   "icon": "0000041B0000176C"
  },
  {
-  "casting_cost": "50<souls></souls> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "50<souls></souls> 2<secretscrolls></secretscrolls> ",
   "resid": 4514010634391,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание призыва для битвы</hyperlink>",
   "id": "Реанимация_на_поле_боя",
@@ -6325,7 +6326,7 @@
   "icon": "0000041B00001721"
  },
  {
-  "casting_cost": "100<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "100<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010634103,
   "spellType": "<casttactical></casttactical> <hyperlink>Чары для битвы</hyperlink>",
   "id": "Иссушающий_туман",
@@ -6447,7 +6448,7 @@
   "icon": "0000041B000012D2"
  },
  {
-  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010633542,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание ослабления</hyperlink>",
   "id": "Остановка_времени",
@@ -6458,7 +6459,7 @@
   "icon": "0000041B000012CE"
  },
  {
-  "casting_cost": "300<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "300<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010633535,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления и ослабления</hyperlink>",
   "id": "Прерывающая_волна",
@@ -6671,7 +6672,7 @@
   "icon": "0000041B00001100"
  },
  {
-  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010632479,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание урона и ослабления</hyperlink>",
   "id": "Тектонический_обвал",
@@ -6753,7 +6754,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Постоянное заклинание для города</hyperlink>",
   "id": "Ожившие_инструменты",
   "tactical": false,
-  "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+20 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.</bullet></bulletlist>",
+  "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+10 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.</bullet></bulletlist>",
   "name": "Ожившие инструменты",
   "operation_point_cost": 45,
   "icon": "000003BD00002E9E"
@@ -7541,6 +7542,12 @@
     "slug": "КракенКракены"
    },
    {
+    "slug": "Штормовой_рунный_краб"
+   },
+   {
+    "slug": "Морская_кобылица"
+   },
+   {
     "slug": "Расколотый_червьРасколотые_черви"
    },
    {
@@ -7679,6 +7686,15 @@
    },
    {
     "slug": "Отродье_кракенаОтродья_кракена"
+   },
+   {
+    "slug": "Морозный_скат"
+   },
+   {
+    "slug": "Грозовой_рунный_краб"
+   },
+   {
+    "slug": "Бешеный_косяк"
    },
    {
     "slug": "Кровавая_личинка"
@@ -8245,7 +8261,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>",
   "id": "Самонаводящиеся_снаряды",
   "tactical": false,
-  "description": "Базовые атаки воинов под действием чар:<bulletlist><bullet>игнорируют штрафы к <accuracy></accuracy> <hyperlink>точности</hyperlink> при увеличении расстояния до цели на 1 кл.;</bullet><bullet>игнорируют штрафы к <accuracy></accuracy> <hyperlink>точности</hyperlink>, вызванные тем, что цель <hyperlink>частично скрыта</hyperlink> другими воинами и элементами ландшафта.</bullet></bulletlist>",
+  "description": "Базовые атаки воинов под действием чар:<bulletlist><bullet>игнорируют штрафы к <accuracy></accuracy> <hyperlink>точности</hyperlink> при увеличении расстояния до цели на 2 кл.;</bullet><bullet>игнорируют штрафы к <accuracy></accuracy> <hyperlink>точности</hyperlink>, вызванные тем, что цель <hyperlink>частично скрыта</hyperlink> другими воинами и элементами ландшафта.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Стрелок"
@@ -8400,7 +8416,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>",
   "id": "Плодовитость",
   "tactical": false,
-  "description": "Выбранный народ уменьшается в размерах и становится более многочисленным. Он получает следующие особенности:<bulletlist><bullet>больше воинов в отряде;</bullet><bullet>+20% к урону для всех воинов, кроме героев;</bullet><bullet>+10% к <hyperlink>уклонению</hyperlink> для героев.</bullet><bullet>Несовместимо со способностью «Интенсивный рост».</bullet></bulletlist>",
+  "description": "Выбранный народ уменьшается в размерах и становится более многочисленным. Он получает следующие особенности:<bulletlist><bullet>больше воинов в отряде;</bullet><bullet>+15% к урону для всех воинов, кроме героев;</bullet><bullet>+10% к <hyperlink>уклонению</hyperlink> для героев.</bullet><bullet>Несовместимо со способностью «Интенсивный рост».</bullet></bulletlist>",
   "name": "Плодовитость",
   "operation_point_cost": 150,
   "icon": "000003E300005A18"
@@ -8566,14 +8582,14 @@
   "icon": "000003BD00002E6A"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4273492484295,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для дружественной армии</hyperlink>",
   "id": "Исцеление_армии",
   "tactical": false,
-  "description": "Воины в выбранной армии восстанавливают 25 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.",
+  "description": "Воины в выбранной армии восстанавливают 30 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.",
   "name": "Исцеление армии",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "000003BD00002E6C"
  },
  {
@@ -9331,14 +9347,14 @@
   "icon": "000003E300005A20"
  },
  {
-  "casting_cost": "10<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4273492482607,
   "spellType": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>",
   "id": "Ярость_орды",
   "tactical": true,
-  "description": "Дружественные воины ранга I и II в радиусе 2 кл. получают:<bulletlist><bullet>2 ур. способности «Дополнительная сила».</bullet></bulletlist>",
+  "description": "Дружественные воины ранга I и II в радиусе 2 кл. получают:<bulletlist><bullet>1 ур. способности «Дополнительная сила»</bullet><bullet>1 ур. способности «Удача».</bullet></bulletlist>",
   "name": "Ярость орды",
-  "operation_point_cost": 15,
+  "operation_point_cost": 25,
   "icon": "000003E3000059C3"
  },
  {
@@ -9964,6 +9980,225 @@
   "name": "Избранник Иландры",
   "operation_point_cost": 300,
   "icon": "000003DF000016E0"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273344,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Логово_Великого_червя",
+  "tactical": false,
+  "description": "",
+  "name": "Логово Великого червя",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273347,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Забытая_бухта",
+  "tactical": false,
+  "description": "",
+  "name": "Забытая бухта",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273353,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Астральный_разлом",
+  "tactical": false,
+  "description": "",
+  "name": "Астральный разлом",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273356,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Логово_дракона",
+  "tactical": false,
+  "description": "",
+  "name": "Логово дракона",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273359,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Крупное_логово_чудовищ",
+  "tactical": false,
+  "description": "",
+  "name": "Крупное логово чудовищ",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273362,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Расселина",
+  "tactical": false,
+  "description": "",
+  "name": "Расселина",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273365,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Лагерь_туманных_ходоков",
+  "tactical": false,
+  "description": "",
+  "name": "Лагерь туманных ходоков",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273368,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Гнездо_мрака",
+  "tactical": false,
+  "description": "",
+  "name": "Гнездо мрака",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273371,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Колыбель_литориновКолыбели_литоринов",
+  "tactical": false,
+  "description": "",
+  "name": "Колыбель литориновКолыбели литоринов",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273374,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Заброшенная_мастерская",
+  "tactical": false,
+  "description": "",
+  "name": "Заброшенная мастерская",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273377,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Огромное_птичье_гнездо",
+  "tactical": false,
+  "description": "",
+  "name": "Огромное птичье гнездо",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273380,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Ритуальный_круг",
+  "tactical": false,
+  "description": "",
+  "name": "Ритуальный круг",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273383,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Воинство_крестоносцев",
+  "tactical": false,
+  "description": "",
+  "name": "Воинство крестоносцев",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273386,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Временная_расселина",
+  "tactical": false,
+  "description": "",
+  "name": "Временная расселина",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273389,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Пиратская_бухта",
+  "tactical": false,
+  "description": "",
+  "name": "Пиратская бухта",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273392,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Неспокойное_кладбище",
+  "tactical": false,
+  "description": "",
+  "name": "Неспокойное кладбище",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273396,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Небольшое_логово_чудовищ",
+  "tactical": false,
+  "description": "",
+  "name": "Небольшое логово чудовищ",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "80<mana></mana> ",
+  "resid": -3753916818180273409,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Заклинание для изменения ландшафта</hyperlink>",
+  "id": "Раскопки",
+  "tactical": false,
+  "description": "Выбранная обитаемая или непригодная для жизни <hyperlink>провинция</hyperlink> теряет особенности ландшафта «<hyperlink>Горы</hyperlink>» и «<hyperlink>Сталагмиты</hyperlink>».<br><br>После применения заклинание недоступно 1 <turn></turn> ход.",
+  "name": "Раскопки",
+  "operation_point_cost": 80,
+  "icon": "CBE7688B00000B00"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273432,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Глобальное заклинание</hyperlink>",
+  "id": "Лагерь_разбойников",
+  "tactical": false,
+  "description": "",
+  "name": "Лагерь разбойников",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273488,
+  "spellType": "",
+  "id": "",
+  "tactical": false,
+  "description": "",
+  "name": "",
+  "operation_point_cost": 0
  },
  {
   "casting_cost": "150<gold></gold> ",

@@ -320,7 +320,7 @@
     "level": 1
    },
    {
-    "effect_description": "Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>",
+    "effect_description": "Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +3 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>",
     "level": 2
    },
    {
@@ -332,7 +332,7 @@
     "level": 4
    }
   ],
-  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <knowledge></knowledge> <hyperlink>знаний</hyperlink>.</bullet></bulletlist>",
+  "screen_description": "Если герой назначен губернатором, его город получает преимущества в зависимости от уровня славы героя:<bulletlist><bullet><white>Уровень славы 1</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +5 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet><bullet><white>Уровень славы 2</white><br></br>Каждая <researchpost></researchpost> <hyperlink>исследовательская станция</hyperlink> даёт +3 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>.</bullet><bullet><white>Уровень славы 3: </white><br></br>Каждая единица <population></population> <hyperlink>населения</hyperlink> приносит +2 к <knowledge></knowledge> знания.</bullet><bullet><white>Уровень славы 4</white><br></br>+10% к доходу <knowledge></knowledge> <hyperlink>знаний</hyperlink>.</bullet></bulletlist>",
   "icon": "0000048D00000B22"
  },
  {

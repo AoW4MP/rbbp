@@ -1529,23 +1529,24 @@ function GetAbilityToolTip(ability, championBonuses = []) {
 
 function LookUpActionPointsName(string) {
     if (string != undefined) {
+        const labels = findBy(jsonAllFromPOLocalized, "id", "INTERFACE@ABILITY");
         if (string.indexOf("<repeatingaction>") != -1) {
-            return "Repeating";
+            return labels?.ability_repeating || "Repeating";
         }
         if (string.indexOf("<fullaction>") != -1) {
-            return "Full Action";
+            return labels?.full_action || "Full Action";
         }
         if (string.indexOf("<fullactioncontinue>") != -1) {
-            return "Full Action Continue";
+            return labels?.full_action_continue || "Full Action Continue";
         }
         if (string.indexOf("<freeaction>") != -1) {
-            return "Free Action";
+            return labels?.free_action || "Free Action";
         }
         if (string.indexOf("<leaveoneaction>") != -1) {
-            return "Leave One";
+            return labels?.leave_one_action_point || "Leave One";
         }
         if (string.indexOf("<singleuseaction>") != -1) {
-            return "Single Action";
+            return labels?.single_action || "Single Action";
         }
     }
 }
@@ -6824,7 +6825,8 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name, 
     descriptionDiv.innerHTML = "";
     if ("group_name" in skillLoc) {
         let span = document.createElement("span");
-        span.innerHTML = skillLoc.group_name;
+        span.innerHTML = languageSelect.value === "RU" && skillEN.group_name === "Pantheon Hero Skills" ?
+            "Навыки героев Пантеона" : skillLoc.group_name;
         //  console.log(span.innerHeight);
         descriptionDiv.append(span);
     }
@@ -6907,7 +6909,16 @@ function showSkill(a, checkInAbilities, icon_slug, category, level, group_name, 
             descriptionDiv.appendChild(element);
             showSpell(ascendedInfo.extraspell, false, element);
         }
-        descriptionDiv.innerHTML += "One of Following Tomes Researched : <br>" + ascendedInfo.description;
+        const russian = languageSelect.value === "RU";
+        const tomes = ascendedInfo.description.split(",").map(name => {
+            const english = name.trim();
+            const tome = findBy(jsonTomes, "name", english);
+            return (tome && findBy(jsonTomesLocalized, "resid", tome.resid)?.name) || english;
+        });
+        const requirement = document.createElement("div");
+        requirement.append(russian ? "Требуется изучить одну из книг:" : "Requires researching one of the following tomes:",
+            document.createElement("br"), tomes.join(", "));
+        descriptionDiv.append(requirement);
     }
 
     if (found === false) {

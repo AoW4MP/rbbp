@@ -845,7 +845,7 @@
  },
  {
   "biography_description": "От их божественных тел исходит священный свет, который испепеляет врагов, словно очистительный огонь.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageSpirit></damageSpirit> <hyperlink>урон магией духа</hyperlink>.</helpcolor>",
   "point_cost": 1,
   "id": "Внутренний_свет",
   "name": "Внутренний свет",
@@ -866,7 +866,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 к <defensespirit></defensespirit> <hyperlink>защите от магии духа</hyperlink>."
+    "name": "+3 к <defensespirit></defensespirit> <hyperlink>защите от магии духа</hyperlink>."
+   },
+   {
+    "name": "При атаке в ближнем бою противник получает 3 ед. <damageSpirit></damageSpirit> <hyperlink>урона магией духа</hyperlink>."
    }
   ],
   "enabled": true,
@@ -905,8 +908,8 @@
  },
  {
   "biography_description": "Вместо крови в их жилах энергия молнии, и горе тем, кто осмелится ранить их!",
-  "lore_description": "",
-  "point_cost": 2,
+  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageLightning></damageLightning> <hyperlink>электрический урон</hyperlink>.</helpcolor>",
+  "point_cost": 1,
   "id": "Внутренний_заряд",
   "name": "Внутренний заряд",
   "incompatible_society_traits": [
@@ -926,13 +929,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 к <defenselightning></defenselightning> <hyperlink>защите от молнии</hyperlink>."
+    "name": "+3 к <defenselightning></defenselightning> <hyperlink>защите от молнии</hyperlink>."
    },
    {
-    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Наэлектризованность»."
-   },
-   {
-    "name": "Невосприимчивость к эффекту «Наэлектризованность»."
+    "name": "При атаке в ближнем бою противник получает 3 ед. <damageLightning></damageLightning> <hyperlink>электрического урона</hyperlink>."
    }
   ],
   "enabled": true,
@@ -944,7 +944,7 @@
  },
  {
   "biography_description": "Их кожа обжигающе холодна, и тот, кто подойдёт слишком близко, рискует получить обморожение.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFrost></damageFrost> <hyperlink>урон от холода</hyperlink>.</helpcolor>",
   "point_cost": 1,
   "id": "Внутренний_холод",
   "name": "Внутренний холод",
@@ -965,7 +965,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 к <defensefrost></defensefrost> <hyperlink>защите от холода</hyperlink>."
+    "name": "+3 к <defensefrost></defensefrost> <hyperlink>защите от холода</hyperlink>."
+   },
+   {
+    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFrost></damageFrost> <hyperlink>урона от холода</hyperlink>."
    }
   ],
   "enabled": true,
@@ -977,8 +980,8 @@
  },
  {
   "biography_description": "Их огненная кровь обжигает любого, кто рискнет нанести им раны.",
-  "lore_description": "",
-  "point_cost": 2,
+  "lore_description": "<helpcolor>При атаке в ближнем бою противник получает <damageFire></damageFire> <hyperlink>урон от огня</hyperlink>.</helpcolor>",
+  "point_cost": 1,
   "id": "Внутренний_огонь",
   "name": "Внутренний огонь",
   "incompatible_society_traits": [
@@ -998,13 +1001,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 к <defensefire></defensefire> <hyperlink>защите от огня</hyperlink>."
+    "name": "+3 к <defensefire></defensefire> <hyperlink>защите от огня</hyperlink>."
    },
    {
-    "name": "К атакующим в ближнем бою с базовой вероятностью 60% применяется эффект «Горение»."
-   },
-   {
-    "name": "Невосприимчивость к эффекту «Горение»."
+    "name": "При атаке в ближнем бою противник получает 3 ед. <damageFire></damageFire> <hyperlink>урона от огня</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2001,7 +2001,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают:<bulletlist><bullet>+20% к <food></food> <hyperlink>пище</hyperlink>, если в центральной провинции города есть луга, грибные поля или болото;</bullet><bullet>+20% к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>, если в центральной провинции города есть леса, скалы или горы;</bullet><bullet>+10% к <gold></gold> <hyperlink>золоту</hyperlink>, если в центральной провинции города есть пепелища;</bullet><bullet>+10% к <mana></mana> <hyperlink>мане</hyperlink>, если в центральной провинции города есть снега, лёд или пески.</bullet></bulletlist>"
+    "name": "<hyperlink>Города</hyperlink> получают:<bulletlist><bullet>+20% к <food></food> <hyperlink>пище</hyperlink>, если в центральной провинции города есть луга, грибные поля или болото;</bullet><bullet>+20% к очкам <structureprod></structureprod> <hyperlink>производства</hyperlink>, если в центральной провинции города есть леса, скалы или горы;</bullet><bullet>+10% к <gold></gold> <hyperlink>золоту</hyperlink>, если в центральной провинции города есть пепелища или пески;</bullet><bullet>+10% к <mana></mana> <hyperlink>мане</hyperlink>, если в центральной провинции города есть снега, лёд или вода.</bullet></bulletlist>"
    },
    {
     "name": "Стоимость заклинаний для изменения ландшафта снижается на 25% ед. <mana></mana> <hyperlink>маны</hyperlink> и <caststrategic></caststrategic> <hyperlink>очков глобальных заклинаний</hyperlink>."
@@ -2104,7 +2104,7 @@
  {
   "starting_bonuses": [
    {
-    "description": "100<influence></influence> "
+    "description": "50<influence></influence> "
    }
   ],
   "affinities": [
@@ -2120,10 +2120,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +10% к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, +20% к <food></food> <hyperlink>пище</hyperlink>, +15% к <structureprod></structureprod> <hyperlink>производству</hyperlink> и +20 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>, если их <hyperlink>владения</hyperlink> не граничат с <hyperlink>владениями</hyperlink> других <hyperlink>городов</hyperlink> или <hyperlink>форпостов</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +10% к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>, +20% к <food></food> <hyperlink>пище</hyperlink> и +20 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>, если их <hyperlink>владения</hyperlink> не граничат с <hyperlink>владениями</hyperlink> других <hyperlink>городов</hyperlink> или <hyperlink>форпостов</hyperlink>."
    },
    {
-    "name": "Поводы к войне с другими империями, покушающимися на вашу территорию, возрастают на +100%."
+    "name": "Поводы к войне с другими империями, покушающимися на вашу территорию, возрастают на +50%."
    }
   ],
   "enabled": true,
@@ -2412,7 +2412,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Города</hyperlink> получают +10 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
+    "name": "<hyperlink>Города</hyperlink> получают +7 к <gold></gold> <hyperlink>золоту</hyperlink>, <mana></mana> <hyperlink>мане</hyperlink>, <food></food> <hyperlink>пище</hyperlink>, очкам <structureprod></structureprod> <hyperlink>производству</hyperlink> и <unitprod></unitprod> <hyperlink>на́йму</hyperlink> за каждый <hyperlink>магический материал</hyperlink> в пределах своих <hyperlink>владений</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2501,7 +2501,7 @@
     "name": "Стоимость <hyperlink>заявлений</hyperlink> снижается на -50%."
    },
    {
-    "name": "<hyperlink>Торговля</hyperlink> со <minorcity></minorcity> <hyperlink>свободными городами</hyperlink> стоит на 100% меньше ресурсов. (Не влияет на другие факторы, повышающие стоимость!)"
+    "name": "Полученные благодаря <hyperlink>торговле со свободным городом</hyperlink> возможности увеличить доход от <hyperlink>торговых путей</hyperlink> в <minorcity></minorcity> <hyperlink>Свободные города</hyperlink> больше не требуют ресурсов."
    }
   ],
   "enabled": true,
@@ -3501,6 +3501,9 @@
    },
    {
     "name": "-10<evilact></evilact> очк. <hyperlink>мировоззрения</hyperlink>"
+   },
+   {
+    "name": "Воины, не являющиеся <hyperlink>героями</hyperlink>, получают на +20%<xp></xp> больше опыта в бою."
    }
   ],
   "enabled": true,
@@ -4320,11 +4323,25 @@
   "display_order": -1
  },
  {
+  "starting_bonuses": [],
   "lore_description": "",
   "biography_description": "",
   "point_cost": 0,
-  "id": "Наблюдатель",
-  "name": "Наблюдатель",
+  "id": "Вечные_прислужники",
+  "name": "Вечные прислужники",
+  "screen_description": "",
+  "enabled": false,
+  "front_end": true,
+  "type": "society",
+  "display_order": -1
+ },
+ {
+  "starting_bonuses": [],
+  "lore_description": "",
+  "biography_description": "",
+  "point_cost": 0,
+  "id": "Вечные_прислужники",
+  "name": "Вечные прислужники",
   "screen_description": "",
   "enabled": false,
   "front_end": true,

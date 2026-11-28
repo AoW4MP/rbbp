@@ -46,6 +46,7 @@ import sys
 
 # ---------- маленькие инлайн-CSS-теги сайта (Style/icons.css): [code] -> <code></code> ----------
 INLINE_TAG_CODES = {
+    "secretscrolls": "secretscrolls", "combatsummons": "combatsummons",
     # ресурсы
     "gold": "gold", "mana": "mana", "food": "food", "draft": "draft",
     "production": "production", "happiness": "happiness", "influence": "influence",
@@ -87,6 +88,11 @@ INLINE_TAG_CODES = {
 # ---------- полноразмерные "портретные" иконки (правители/классы/губернаторы/ ----------
 # ---------- стремления героев/культуры/субкультуры) - <img class="rbbp-inline-icon"> ----------
 PORTRAIT_CODES = {
+    "untouched": "/rbbp/Icons/RealmTraits/untouched.png",
+    "victoryseals": "/rbbp/Icons/Text/victory_seals.png",
+    "victorymagic": "/rbbp/Icons/Text/victory_magic.png",
+    "victoryexpansion": "/rbbp/Icons/Text/victory_expansion.png",
+    "secretscrollsheading": "/rbbp/Icons/Text/secret_scrolls.png",
     "pale_tidebloom": "/rbbp/Icons/WorldStructures/pale_tidebloom.png",
     "mercantile": "/rbbp/Icons/FactionCreation/mercantile.png",
     "mercantile_cartel": "/rbbp/Icons/Text/mercantile_cartel.png",

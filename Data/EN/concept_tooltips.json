@@ -1313,7 +1313,7 @@
     "icon": null,
     "globalName": "GLOBAL.LandmarkConcept",
     "displayHtml": "Landmark",
-    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <span style=\"\">Province</span>.<br><br>If a <span style=\"\">City</span> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>Landmarks count as <span style=\"\">Handcrafted Region</span>, meaning they can be disabled with the Untouched Realm Trait."
+    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <span style=\"\">Province</span>.<br><br>If a <span style=\"\">City</span> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>The Untouched Realm Trait leaves Landmarks enabled."
   },
   "GLOBAL.FireGiantKingConcept": {
     "name": "Fire Giant King",

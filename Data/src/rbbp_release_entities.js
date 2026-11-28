@@ -1,3 +1,15 @@
+function MoveRbbpWorldIconsToFront(article) {
+    const links = article.querySelectorAll(
+        'p > a:is([href="/rbbp/HTML/AncientWonders.html"], [href="/rbbp/HTML/Landmarks.html"])'
+    );
+    for (const link of links) {
+        const icon = link.querySelector("img.rbbp-entity-icon");
+        if (!icon) continue;
+        icon.classList.add("rbbp-world-icon");
+        link.parentElement.prepend(icon);
+    }
+}
+
 async function AddRbbpReleaseEntities(index, lang, abilitiesEN, abilitiesLoc, skillsEN, skillsLoc, includeGuide) {
     const path = "/rbbp/";
     const unitIcon = (icon) => "Icons/UnitIcons/" + icon + ".png";
@@ -56,6 +68,22 @@ async function AddRbbpReleaseEntities(index, lang, abilitiesEN, abilitiesLoc, sk
         if (obj) set(name, icon, { ...obj, name: obj.name || name }, findBy(poLoc, "id", id), link);
     }
     fromPO("Taunted", "STATUSEFFECTS_UNITPROPERTIES@TAUNTED", "Icons/StatusEffects/taunted.png");
+    for (const [name, id] of Object.entries({
+        "Tempestuous Vortex": "tempestuous_vortex",
+        "Armada's Fall": "armadas_fall",
+        "Perishing Archnemesis": "chained_demon",
+        "Mistflow Gardens": "misflow_gardens",
+        "Broken Wizard's Throne": "broken_wizard_throne"
+    })) {
+        const structure = findBy(jsonWorldStructures, "id", id);
+        if (structure) fromPO(name, structure.extraLookup, "Icons/StructurePics/" + id + ".png",
+            "HTML/Landmarks.html");
+    }
+
+    fromPO("Infernal Blaze", "DLC@WAYSOFWAR@UNITS_OATHSWORN@ABILITY14",
+        unitIcon("00000497000010C6"));
+    fromPO("Corpse Eating", "RACETRAITS_WORLD@RITUALIST_CANNIBALS@BONUS1",
+        unitIcon("0000041B00001C8E"));
     if (!includeGuide) return;
 
     index.delete("Lost Soul");

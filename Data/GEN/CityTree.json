@@ -336,18 +336,6 @@
             }]
     },
     {
-        "id": "necrotic_spires",
-        "connectTo": [ {
-                "id": "stone_walls"
-            }]
-    },
-    {
-        "id": "healing_spires",
-        "connectTo": [ {
-                "id": "stone_walls"
-            }]
-    },
-    {
         "id": "catapult_towers",
         "connectTo": [ {
                 "id": "ballista_towers"
@@ -355,7 +343,7 @@
     }, {
         "id": "beacon_of_valor",
         "connectTo": [ {
-                "id": "ballista_towers"
+                "id": "stone_walls"
             }]
     },
      {

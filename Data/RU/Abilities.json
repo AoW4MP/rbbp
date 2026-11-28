@@ -1117,12 +1117,15 @@
     "requisite": "<hyperlink>Стрельба^F</hyperlink>"
    },
    {
+    "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
+   },
+   {
     "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
    }
   ],
   "accuracy": "80%",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "range": "5",
   "notes": [
    {
     "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
@@ -5199,7 +5202,7 @@
     "count": 1
    }
   ],
-  "description": "Выбранный вражеский воин:<bulletlist><bullet>получает урон;</bullet><bullet>с базовой вероятностью 90% на 1 <hyperlink>х.</hyperlink> получает эффект «Обездвижен». Если цель уже находится под действием эффекта «Мокрая кожа», то указанный эффект применяется гарантированно.</bullet></bulletlist>",
+  "description": "Выбранный вражеский воин:<bulletlist><bullet>получает урон;</bullet><bullet>с базовой вероятностью 90% на 1 <hyperlink>х.</hyperlink> получает эффект «Обездвижен».</bullet></bulletlist>",
   "name": "Водобойная стрела",
   "slug": "waterbind_arrow_ability_0000049700004247",
   "damage": "30<damagephysical></damagephysical> ",
@@ -5487,7 +5490,7 @@
     "note": "Перезарядка: 1 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин:<bulletlist><bullet>получает эффект «Регенерация» на 3 <turn></turn> х.;</bullet><bullet>получает эффект «Дополнительная сила» на 3 <turn></turn> х.;</bullet><bullet>избавляется от отрицательных эффектов (1).</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин:<bulletlist><bullet>получает эффект «Благодать»;</bullet><bullet>получает эффект «Регенерация» (2) на 3 <turn></turn> х.;</bullet><bullet>получает эффект «Дополнительная сила» на 3 <turn></turn> х.;</bullet><bullet>избавляется от отрицательных эффектов (1).</bullet></bulletlist>",
   "name": "Утренний дар",
   "slug": "morning_boon_ability_0000049700003B6F",
   "damage": "",
@@ -8023,7 +8026,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают способность «Предвидение».</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 40 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают способность «Предвидение».</bullet></bulletlist>",
   "name": "Знамение исцеления",
   "slug": "healing_portent_ability_00000490000028E0",
   "damage": "",
@@ -8052,9 +8055,9 @@
     "requisite": "<hyperlink>Поддержка^F</hyperlink>"
    }
   ],
-  "accuracy": "85%",
+  "accuracy": "Всегда попадает в цель",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "0",
+  "range": "4",
   "icon": "0000049700002AD0"
  },
  {
@@ -16793,7 +16796,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Благодать» (1).</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают 25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Благодать» (1).</bullet></bulletlist>",
   "name": "Милостивый дождь",
   "slug": "graceful_rain_ability_0000048900001228",
   "damage": "",
@@ -20209,7 +20212,7 @@
     "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
-  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 4 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Призыв животных",
   "slug": "conjure_animal_ability_0000041B000003A5",
   "damage": "",
@@ -22027,7 +22030,7 @@
     "note": "Перезарядка: 3 <turn></turn>"
    }
   ],
-  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают +15 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Регенерация»;</bullet><bullet>избавляются от 2 отрицательных эффектов.</bullet></bulletlist>",
+  "description": "Дружественные воины в радиусе 1 кл.:<bulletlist><bullet>восстанавливают +25 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>получают эффект «Регенерация»;</bullet><bullet>избавляются от 2 отрицательных эффектов.</bullet></bulletlist>",
   "name": "Цветущая жизнь",
   "slug": "blooming_life_ability_000003EC000008CB",
   "damage": "",
@@ -22040,6 +22043,12 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "000003E30000529B"
+ },
+ {
+  "description": "В конце хода этого воина создаёт на соседних клетках <hyperlink>укрытия</hyperlink> из растений. Воин получает свойство «В сумерках», которое будет действовать, пока он не двинется с места.<br></br>Не действует в битвах на воде.",
+  "name": "Саженцы фей",
+  "slug": "000004c0000006ba",
+  "icon": "000004C0000006B9"
  },
  {
   "description": "Цветущая жизнь:<bulletlist><bullet>дополнительно даёт 2 ур. эффекта «Регенерация».</bullet><bullet>Длительность перезарядки сокращается на 1 <turn></turn> х.</bullet></bulletlist>",
@@ -22102,12 +22111,6 @@
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
   "icon": "000003E300005291"
- },
- {
-  "description": "В конце хода этого воина создаёт на соседних клетках <hyperlink>укрытия</hyperlink> из растений. Воин получает свойство «В сумерках», которое будет действовать, пока он не двинется с места.<br></br>Не действует в битвах на воде.",
-  "name": "Саженцы фей",
-  "slug": "000004c0000006ba",
-  "icon": "000004C0000006B9"
  },
  {
   "description": "Бутоны силы:<bulletlist><bullet>дополнительно даёт 3 случайный <hyperlink>положительный эффект</hyperlink>.</bullet></bulletlist>",
@@ -33158,7 +33161,7 @@
   "description": "Наносит урон выбранному воину.",
   "name": "Иссушающий укус",
   "slug": "draining_bite_ability_hs_draining_bite",
-  "damage": "18<damagephysical></damagephysical> ",
+  "damage": "24<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
@@ -34010,7 +34013,7 @@
   "icon": "0000049700003524"
  },
  {
-  "description": "Содержание увеличивается на 10 ед. <gold></gold> <hyperlink>золота</hyperlink>.",
+  "description": "Содержание увеличивается на 25 ед. <gold></gold> <hyperlink>золота</hyperlink>.",
   "name": "Повышенная стоимость содержания",
   "slug": "0000049700003214",
   "icon": "0000049700003611"
@@ -34050,7 +34053,7 @@
     "note": "Перезарядка: 2 <turn></turn>"
    }
   ],
-  "description": "Выбранный дружественный воин и заклинатель:<bulletlist><bullet>восстанавливают 30 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляются от отрицательных эффектов (3).</bullet></bulletlist>",
+  "description": "Выбранный дружественный воин и заклинатель:<bulletlist><bullet>восстанавливают 20 ед. <temphp></temphp> <hyperlink>временного здоровья</hyperlink>;</bullet><bullet>избавляются от отрицательных эффектов (2).</bullet></bulletlist>",
   "name": "Кровавое причастие",
   "slug": "blood_communion_ability_vampire_signature_blood_communion",
   "damage": "",
@@ -34098,7 +34101,7 @@
   "icon": "0000049700002F3F"
  },
  {
-  "description": "Содержание увеличивается на 20 ед. <gold></gold> <hyperlink>золота</hyperlink>.",
+  "description": "Содержание увеличивается на 45 ед. <gold></gold> <hyperlink>золота</hyperlink>.",
   "name": "Повышенная стоимость содержания",
   "slug": "0000049700003215",
   "icon": "0000049700003612"
@@ -34428,7 +34431,7 @@
   "icon": "000004970000312B"
  },
  {
-  "description": "Атаки этого воина снижают acc,c1 цели на 4 ед. Эффект удваивается, если у цели высокий боевой дух.<br></br><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
+  "description": "Атаки этого воина снижают <happiness></happiness> <hyperlink>боевой дух</hyperlink> цели на 4 ед. Эффект удваивается, если у цели высокий боевой дух.<br></br><br></br>Эффекты <hyperlink>усиливаются</hyperlink> для однократных атак.",
   "name": "Сеятель отчаяния",
   "slug": "0000049700004175",
   "icon": "0000049700004176"
@@ -43393,10 +43396,17 @@
   "icon": "0000048B00000BAB"
  },
  {
-  "modifiers": [],
-  "description": "Выстрел из тяжёлого магострела в выбранного вражеского воина.",
-  "name": "Залп из тяжёлого магострела",
-  "slug": "fire_heavy_magelocks_(item_forge)_ability_equipment_item_carbine_base",
+  "notes": [
+   {
+    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
+   },
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
+   }
+  ],
+  "description": "Выпускает стрелы в выбранного вражеского воина.",
+  "name": "Выстрел из арбалета",
+  "slug": "shoot_crossbow_(item_forge)_ability_equipment_item_carbine_base",
   "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
@@ -43409,47 +43419,29 @@
     "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
    }
   ],
-  "accuracy": "100%",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "5",
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
-  "icon": "000004A60000089C"
+  "accuracy": "90%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "icon": "000003BD00002EA7"
  },
  {
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
-  "description": "Неприцельный выстрел из тяжёлого магострела в выбранного вражеского воина. Точность и эффективность такого выстрела снижена.",
-  "name": "Выстрел навскидку из тяж. Магострела",
-  "slug": "fire_heavy_magelocks_snap_shot_(item_forge)_ability_equipment_item_carbine_base",
-  "damage": "25<damagephysical></damagephysical> ",
+  "notes": [],
+  "description": "Один удар в рукопашной.",
+  "name": "Быстрый укол",
+  "slug": "quick_stab_ability_equipment_item_carbine_base",
+  "damage": "16<damagephysical></damagephysical> ",
   "requisites": [
    {
-    "requisite": "<hyperlink>Стрельба^F</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
    }
   ],
-  "accuracy": "80%",
+  "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
-  "icon": "0000048B00000BAB"
+  "range": "1",
+  "icon": "000003E3000057D6"
  },
  {
   "modifiers": [],
@@ -44001,76 +43993,52 @@
   "icon": "000003BD000020C9"
  },
  {
-  "modifiers": [
+  "notes": [
    {
-    "description": "Игнорирует 50% от <defense></defense> <hyperlink>защиты</hyperlink> цели.",
-    "name": "Бронебойная атака",
-    "count": 1
+    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
+   },
+   {
+    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
    }
   ],
-  "description": "Выстрел из тяжёлого магострела в выбранного вражеского воина.",
-  "name": "Залп из тяжёлого магострела",
-  "slug": "fire_heavy_magelocks_(item_forge)_ability_mercantile_carbine_item_tier_1",
-  "damage": "38<damagephysical></damagephysical> ",
+  "description": "Выпускает стрелы в выбранного вражеского воина.",
+  "name": "Выстрел из карабина",
+  "slug": "shoot_crossbow_(item_forge)_ability_mercantile_carbine_item_tier_1",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "<hyperlink>Стрельба^F</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
+   },
+   {
+    "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
+   }
+  ],
+  "accuracy": "90%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "icon": "000003BD00002EA7"
+ },
+ {
+  "notes": [],
+  "description": "Один удар в рукопашной.",
+  "name": "Быстрый укол",
+  "slug": "quick_stab_ability_mercantile_carbine_item_tier_1",
+  "damage": "16<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
    }
   ],
   "accuracy": "100%",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "5",
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
-  "icon": "000004A60000089C"
- },
- {
-  "modifiers": [
-   {
-    "description": "Игнорирует 50% от <defense></defense> <hyperlink>защиты</hyperlink> цели.",
-    "name": "Бронебойная атака",
-    "count": 1
-   }
-  ],
-  "description": "Неприцельный выстрел из тяжёлого магострела в выбранного вражеского воина. Точность и эффективность такого выстрела снижена.",
-  "name": "Выстрел навскидку из тяж. Магострела",
-  "slug": "fire_heavy_magelocks_snap_shot_(item_forge)_ability_mercantile_carbine_item_tier_1",
-  "damage": "25<damagephysical></damagephysical> ",
-  "requisites": [
-   {
-    "requisite": "<hyperlink>Стрельба^F</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
-   },
-   {
-    "requisite": "<hyperlink>Однократная атака^Fa{1}n{2}</hyperlink>"
-   }
-  ],
-  "accuracy": "80%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "4",
-  "notes": [
-   {
-    "note": "Действует правило <hyperlink>прямой видимости</hyperlink>."
-   },
-   {
-    "note": "Нельзя использовать в пределах вражеской <hyperlink>зоны контроля</hyperlink>."
-   }
-  ],
-  "icon": "0000048B00000BAB"
+  "range": "1",
+  "icon": "000003E3000057D6"
  },
  {
   "modifiers": [
@@ -44334,12 +44302,12 @@
  {
   "notes": [],
   "description": "Бьёт выбранного вражеского воина.",
-  "name": "Удар в рукопашной",
-  "slug": "melee_strike_(item_forge_dual)_ability_breachgun_and_axe_tier_i",
-  "damage": "12<damagephysical></damagephysical> ",
+  "name": "Магический удар",
+  "slug": "magic_strike_(base)_ability_breachgun_and_axe_tier_i",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
-    "requisite": "<hyperlink>Ближний бой^Ma{1}n{2}</hyperlink>"
+    "requisite": "<hyperlink>Магия^F</hyperlink>"
    },
    {
     "requisite": "<hyperlink>Базовые^Pa{1}</hyperlink>"
@@ -44348,7 +44316,7 @@
   "accuracy": "100%",
   "actionPoints": "<repeatingaction></repeatingaction>",
   "range": "1",
-  "icon": "000003BD000020C9"
+  "icon": "0000048B0000131E"
  },
  {
   "notes": [
@@ -54161,7 +54129,7 @@
   "icon": "000003E3000049ED"
  },
  {
-  "description": "Соседние атакующие воины, не являющиеся <hyperlink>героями</hyperlink>, с базовой вероятностью 30% могут получить эффект «Оглушение».",
+  "description": "Соседние атакующие воины, с базовой вероятностью 30% могут получить эффект «Оглушение».",
   "name": "Статический щит",
   "slug": "0000048b00000ca4",
   "icon": "0000049700002E01"
@@ -55370,7 +55338,7 @@
   "icon": "0000048D00000134"
  },
  {
-  "description": "Если этот воин погибнет:<bulletlist><bullet>с вероятностью 25% призывает <hyperlink>проклятого огонька</hyperlink> на 3 <turn></turn> <hyperlink>х.</hyperlink></bullet><bullet>За каждый уровень эффекта «Призрачный огонь» вероятность возрастает на 15%.</bullet></bulletlist><br></br><br></br>Не действует на типы воинов «Чудовищный демон» и «Проклятый демон».",
+  "description": "Если этот воин погибнет:<bulletlist><bullet>с вероятностью 25% призывает <hyperlink>проклятого огонька</hyperlink> на 3 <turn></turn> <hyperlink>х.</hyperlink></bullet><bullet>За каждый уровень эффекта «Призрачный огонь» вероятность возрастает на 5%.</bullet></bulletlist><br></br><br></br>Не действует на типы воинов «Чудовищный демон» и «Проклятый демон».",
   "name": "Адовы муки",
   "slug": "000004970000472a",
   "icon": "0000048B000017E6"
@@ -57934,7 +57902,7 @@
     "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
-  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 4 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Призыв животных",
   "slug": "conjure_animal_ability_equipment_upgrade_active_staff_conjure_animal",
   "damage": "",
@@ -58380,7 +58348,7 @@
     "note": "Перезарядка: 4 <turn></turn>"
    }
   ],
-  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 3 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
+  "description": "Призывает случайное животное ранга I.<br></br>Призванный воин остаётся в бою на 4 <hyperlink>х.</hyperlink>.<br></br><br></br>После использования воин встаёт в <hyperlink>защитную позицию</hyperlink>.",
   "name": "Призыв животных",
   "slug": "conjure_animal_ability_equipment_upgrade_active_wand_conjure_animal",
   "damage": "",
