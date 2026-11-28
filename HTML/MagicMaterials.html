@@ -25,6 +25,24 @@
                 showWorldStructuresWithArgument("Liquids", "liquid", null, "Liquids");
                 showWorldStructuresWithArgument("Plants", "plant", null, "Plants");
                 SetLevelUpStuff();
+                renderMaterialCollections();
+            }
+
+            function renderMaterialCollections() {
+                const lookup = id => findBy(jsonAllFromPOLocalized, "id", id) || findBy(jsonAllFromPO, "id", id);
+                const collectionLabel = lookup("INTERFACE@TEXT").collection_effect;
+                for (const card of document.querySelectorAll("[data-collection]")) {
+                    const { collection, effect } = card.dataset;
+                    const group = lookup(collection);
+                    const bonus = lookup(effect);
+                    card.querySelector("h2").textContent = group.name;
+                    card.querySelector(".collection-label").textContent = collectionLabel;
+                    card.querySelector("h3").textContent = bonus.name;
+                    card.querySelector(".collection-description").innerHTML = AddTagIconsForStatusEffects(
+                        bonus.description.replaceAll("++", "+").replace(/<hyperlink>Void stones<\/hyperlink>/gi,
+                            "<hyperlink>" + group.name + "</hyperlink>")
+                    );
+                }
             }
         </script>
 
@@ -39,75 +57,52 @@
         <div class="w3-container">
             <div class="w3-bar w3-black" id="buttonHolder"></div>
 
-            <div class="mod_card">
-                <div class="structure_image_holder" style="align-content: center">
-                    <div class="mod_name">VOID STONES (Needs 3)</div>
-                    <div class="mod_description" style="float: left">
-                        Collection Effect:<br />
-                        <div class="mod_name">Void Ink:</div>
-                        <br />
-
-                        <bulletlist>
-                            <bullet
-                                >Umbral Dwellings with an Eldritch Pact grant +30 <knowledge></knowledge> Knowledge.
-                            </bullet>
-                            <bullet>Vassals grant +30 <knowledge></knowledge> Knowledge. </bullet>
-                        </bulletlist>
+            <section class="mod_card" data-collection="DLC@ELDRITCHREALMS@NODES_STRATEGIC@VOID_STONES" data-effect="DLC@ELDRITCHREALMS@NODES_STRATEGIC@VOID_STONES_SET_BONUS">
+                <div class="structure_image_holder">
+                    <h2 class="mod_name"></h2>
+                    <div class="mod_description">
+                        <div class="collection-label"></div>
+                        <h3 class="mod_name"></h3>
+                        <div class="collection-description"></div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div id="Void Stones"></div>
 
-            <div class="mod_card">
-                <div class="structure_image_holder" style="align-content: center">
-                    <div class="mod_name">ORES</div>
-                    <div class="mod_description" style="float: left">
-                        Collection Effect:<br />
-                        <div class="mod_name">Rings of Binding:</div>
-                        <br />
-
-                        <bulletlist>
-                            Heroes gain:
-                            <bullet>+1 <defense></defense> Defense </bullet>
-                            <bullet>+1 <resistance></resistance> Resistance </bullet>
-                            <bullet>+10% Bonus Damage </bullet>
-                        </bulletlist>
+            <section class="mod_card" data-collection="MAGICMATERIALS@ORES" data-effect="MAGICMATERIALS@RINGS_OF_BINDING">
+                <div class="structure_image_holder">
+                    <h2 class="mod_name"></h2>
+                    <div class="mod_description">
+                        <div class="collection-label"></div>
+                        <h3 class="mod_name"></h3>
+                        <div class="collection-description"></div>
                     </div>
                 </div>
-            </div>
-
+            </section>
             <div id="Ores"></div>
-            <div class="mod_card">
-                <div class="structure_image_holder" style="align-content: center">
-                    <div class="mod_name">LIQUIDS</div>
-                    <div class="mod_description" style="float: left">
-                        Collection Effect:<br />
-                        <div class="mod_name">Cosmuflux Elixir:</div>
-                        <bulletlist>
-                            <bullet
-                                >Mana Resource Nodes grant +10 <knowledge></knowledge>
-                                <hyperlink>Knowledge</hyperlink> and +10 <mana></mana>
-                                <hyperlink>Mana</hyperlink>
-                            </bullet>
-                        </bulletlist>
+
+            <section class="mod_card" data-collection="MAGICMATERIALS@LIQUIDS" data-effect="MAGICMATERIALS@COSMICFLUX_ELIXIR">
+                <div class="structure_image_holder">
+                    <h2 class="mod_name"></h2>
+                    <div class="mod_description">
+                        <div class="collection-label"></div>
+                        <h3 class="mod_name"></h3>
+                        <div class="collection-description"></div>
                     </div>
                 </div>
-            </div>
-
+            </section>
             <div id="Liquids"></div>
-            <div class="mod_card">
-                <div class="structure_image_holder" style="align-content: center">
-                    <div class="mod_name">PLANTS</div>
-                    <div class="mod_description" style="float: left">
-                        Collection Effect:<br />
-                        <div class="mod_name">Imperial Essence:</div>
 
-                        <bulletlist>
-                            <bullet>+15 <influence></influence> <hyperlink>Imperium</hyperlink> income </bullet>
-                        </bulletlist>
+            <section class="mod_card" data-collection="MAGICMATERIALS@PLANTS" data-effect="MAGICMATERIALS@IMPERIAL_ESSENCE">
+                <div class="structure_image_holder">
+                    <h2 class="mod_name"></h2>
+                    <div class="mod_description">
+                        <div class="collection-label"></div>
+                        <h3 class="mod_name"></h3>
+                        <div class="collection-description"></div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div id="Plants"></div>
         </div>
     </body>

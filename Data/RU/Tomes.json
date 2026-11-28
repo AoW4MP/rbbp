@@ -344,14 +344,14 @@
   "icon": "00000497000041E6",
   "skills": [
    {
-    "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают 10 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>в начале следующего боя на 3 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Ускорение».</bullet></bulletlist>",
+    "description": "Воины в выбранной дружественной армии:<bulletlist><bullet>восстанавливают 20 ед. <hp></hp> <hyperlink>здоровья</hyperlink>;</bullet><bullet>в начале следующего боя на 1 <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Ускорение».</bullet></bulletlist>",
     "name": "Живительное ускорение",
     "spell_slug": "Живительное_ускорение",
     "tier": 2,
     "type": "<caststrategic></caststrategic> <hyperlink>Заклинание для дружественной армии</hyperlink>"
    },
    {
-    "description": "Воины в радиусе  кл.:<bulletlist><bullet>получают  ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>на <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Мокрая кожа»;</bullet><bullet>если находятся на примыкающих клетках, то их отбрасывает на  кл. от центра;</bullet><bullet>если цель к этому моменту уже находилась под действием эффекта «Мокрая кожа», то все указанные эффекты удваиваются.</bullet></bulletlist>",
+    "description": "Воины в радиусе  кл.:<bulletlist><bullet>получают  ед. <damagePhysical></damagePhysical> <hyperlink>физического урона</hyperlink>;</bullet><bullet>на <turn></turn> <hyperlink>х.</hyperlink> получают эффект «Мокрая кожа»;</bullet><bullet>если находятся на примыкающих клетках, то их отбрасывает на  кл. от центра.</bullet></bulletlist>",
     "name": "Разрывное течение",
     "spell_slug": "Разрывное_течение",
     "tier": 1,
@@ -440,7 +440,7 @@
   "icon": "0000049700003B20",
   "skills": [
    {
-    "description": "Выбранная дружественная армия теряет все очки передвижения и восстанавливает по 1 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за каждое потерянное очко.",
+    "description": "Выбранная дружественная армия теряет все очки передвижения и восстанавливает по 2 ед. <hp></hp> <hyperlink>здоровья</hyperlink> за каждое потерянное очко.",
     "name": "Живительный сон",
     "spell_slug": "Живительный_сон",
     "tier": 1,
@@ -690,7 +690,7 @@
     "type": "<hyperlink>Бонус империи</hyperlink>"
    },
    {
-    "description": "Выбранный принадлежащий вам город:<bulletlist><bullet>получает 40 оч. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранный принадлежащий вам город:<bulletlist><bullet>получает 30 оч. <unitprod></unitprod> <hyperlink>на́йма</hyperlink>.</bullet></bulletlist>",
     "name": "График тренировок",
     "spell_slug": "График_тренировок",
     "tier": 2,
@@ -2177,7 +2177,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>+10 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink>;</bullet><bullet>+10 к <knowledge></knowledge> <hyperlink>знаниям</hyperlink> за каждый не принадлежащий вам город, чьи владения граничат с этим <hyperlink>городом</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+10 ед. <knowledge></knowledge> <hyperlink>знаний</hyperlink>.</bullet><bullet>+5 ед. <knowledge></knowledge> <hyperlink>знаний</hyperlink> за каждый проложенный из этого города <hyperlink>торговый путь</hyperlink>.</bullet></bulletlist>",
     "name": "Сеть теней",
     "tier": 5,
     "type": "<hyperlink>Городское сооружение</hyperlink>",
@@ -3785,14 +3785,14 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Чары для воинов</hyperlink>"
    },
    {
-    "description": "Дружественные воины в радиусе  кл. получают:<bulletlist><bullet>+ к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>эффект «Дополнительная сила» (2), если они обладают способностью «Рвение».</bullet></bulletlist>",
+    "description": "Дружественные воины в радиусе  кл. получают:<bulletlist><bullet>+ к <happiness></happiness> <hyperlink>боевому духу</hyperlink>;</bullet><bullet>эффект «Дополнительная сила» (1), если они обладают способностью «Рвение».</bullet></bulletlist>",
     "name": "Вдохновляющий псалом",
     "spell_slug": "Вдохновляющий_псалом",
     "tier": 2,
     "type": "<casttactical></casttactical> <hyperlink>Заклинание усиления</hyperlink>"
    },
    {
-    "description": "Выбранный принадлежащий вам город на 3 <turn></turn> х.:<bulletlist><bullet>получает +60 оч. <structureprod></structureprod> <hyperlink>производства</hyperlink>;</bullet><bullet>теряет -20 ед. <food></food> <hyperlink>пищи</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 оч. <structureprod></structureprod> <hyperlink>производства</hyperlink>;</bullet><bullet>+10 к <happiness></happiness> <hyperlink>стабильности города</hyperlink>.</bullet></bulletlist>",
     "name": "Фанатичные рабочие",
     "spell_slug": "Фанатичные_рабочие",
     "tier": 2,
@@ -4416,7 +4416,7 @@
   "icon": "0000041B00001261",
   "skills": [
    {
-    "description": "<bulletlist><bulletlist><bullet>+15 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet>+4 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую станцию астрального обмена, построенную в вашей империи.</bullet></bulletlist></bulletlist>",
+    "description": "<bulletlist><bulletlist><bullet>+10 к <gold></gold> <hyperlink>золоту</hyperlink>.</bullet><bullet>+5 к <gold></gold> <hyperlink>золоту</hyperlink> за каждую станцию астрального обмена, построенную в вашей империи.</bullet></bulletlist></bulletlist>",
     "name": "Станция астрального обмена",
     "tier": 6,
     "type": "<hyperlink>Городское сооружение</hyperlink>",
@@ -5804,7 +5804,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Незначительная трансформация народа</hyperlink>"
    },
    {
-    "description": "Дружественные воины ранга I и II в радиусе  кл. получают:<bulletlist><bullet>2 ур. способности «Дополнительная сила».</bullet></bulletlist>",
+    "description": "Дружественные воины ранга I и II в радиусе  кл. получают:<bulletlist><bullet>1 ур. способности «Дополнительная сила»</bullet><bullet>1 ур. способности «Удача».</bullet></bulletlist>",
     "name": "Ярость орды",
     "spell_slug": "Ярость_орды",
     "tier": 1,
@@ -6138,7 +6138,7 @@
   "icon": "0000042A0000060D",
   "skills": [
    {
-    "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+20 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.</bullet></bulletlist>",
+    "description": "Выбранный принадлежащий вам город получает:<bulletlist><bullet>+20 к <structureprod></structureprod> <hyperlink>производству</hyperlink>;</bullet><bullet>+10 к <unitprod></unitprod> <hyperlink>на́йму</hyperlink>.</bullet></bulletlist>",
     "name": "Ожившие инструменты",
     "spell_slug": "Ожившие_инструменты",
     "tier": 2,
@@ -6191,7 +6191,7 @@
   "icon": "000003BD00002DFC",
   "skills": [
    {
-    "description": "Воины в выбранной армии восстанавливают 25 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.",
+    "description": "Воины в выбранной армии восстанавливают 30 ед. <hp></hp> <hyperlink>здоровья</hyperlink>.",
     "name": "Исцеление армии",
     "spell_slug": "Исцеление_армии",
     "tier": 2,

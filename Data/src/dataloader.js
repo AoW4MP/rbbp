@@ -141,7 +141,16 @@ function fetchTextShared(url) {
 }
 
 function fetchJsonShared(url) {
-    return fetchTextShared(url).then((text) => JSON.parse(text));
+    return fetchTextShared(url).then((text) => {
+        // RbBP uses 64-bit resource IDs. Preserve unsafe integers before JSON.parse
+        // rounds them, and skip strings that merely contain JSON-like text.
+        const resourceIds = /"resid"\s*:\s*(-?\d{16,})(?=\s*[,}])|"(?:[^"\\]|\\.)*"/g;
+        return JSON.parse(text.replace(resourceIds, (token, id) =>
+            id !== undefined && !Number.isSafeInteger(Number(id))
+                ? token.slice(0, -id.length) + JSON.stringify(id)
+                : token
+        ));
+    });
 }
 
 function fetchJsonFiles(filePaths) {

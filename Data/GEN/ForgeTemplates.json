@@ -1,0 +1,926 @@
+[
+  {
+    "id": "0x48f00000334",
+    "source": "quests",
+    "name": {
+      "RU": "Кровопускатель",
+      "EN": "Bloodgutter"
+    },
+    "itemType": 4801773440871,
+    "infusions": [
+      4801773439503,
+      4801773439884
+    ]
+  },
+  {
+    "id": "0x48f0000033d",
+    "source": "quests",
+    "name": {
+      "RU": "Алое Перо",
+      "EN": "Bloodquill"
+    },
+    "itemType": 4801773440945,
+    "infusions": [
+      4801773439884,
+      4801773439539
+    ]
+  },
+  {
+    "id": "0x4c80000002f",
+    "source": "quests",
+    "name": {
+      "RU": "Маяк Бурь",
+      "EN": "Breeze Beacon"
+    },
+    "itemType": 4801773439782,
+    "infusions": [
+      5046586578901
+    ]
+  },
+  {
+    "id": "0x4c80000002e",
+    "source": "quests",
+    "name": {
+      "RU": "Глашатай Мороза",
+      "EN": "Cold Caller"
+    },
+    "itemType": 4801773440989,
+    "infusions": [
+      5046586582559
+    ]
+  },
+  {
+    "id": "0x4c800000037",
+    "source": "quests",
+    "name": {
+      "RU": "Ярость Циклона",
+      "EN": "Cyclone Fury"
+    },
+    "itemType": 4801773440356,
+    "infusions": [
+      4801773439499,
+      4801773439787
+    ]
+  },
+  {
+    "id": "0x48f00000362",
+    "source": "quests",
+    "name": {
+      "RU": "Сборщик Долгов",
+      "EN": "Debt Collector"
+    },
+    "itemType": 5046586578148,
+    "infusions": [
+      4801773439986,
+      4801773440614,
+      5111011083217
+    ]
+  },
+  {
+    "id": "0x48f0000033e",
+    "source": "quests",
+    "name": {
+      "RU": "Алчущая Крови",
+      "EN": "Deep-Drinker"
+    },
+    "itemType": 4801773440909,
+    "infusions": [
+      5111011083201,
+      5111011082790
+    ]
+  },
+  {
+    "id": "0x48f0000033f",
+    "source": "quests",
+    "name": {
+      "RU": "Дарующий Сон",
+      "EN": "Deliverer of Dreams"
+    },
+    "itemType": 4801773440955,
+    "infusions": [
+      4801773439557,
+      5111011082805
+    ]
+  },
+  {
+    "id": "0x4c800000041",
+    "source": "quests",
+    "name": {
+      "RU": "Землетрясение",
+      "EN": "Earth Quake"
+    },
+    "itemType": 5046586578148,
+    "infusions": [
+      4801773439503,
+      5111011082976,
+      5046586578835
+    ]
+  },
+  {
+    "id": "0x4c800000036",
+    "source": "quests",
+    "name": {
+      "RU": "Сотрясатель Земли",
+      "EN": "Earth Rumbler"
+    },
+    "itemType": 4801773441021,
+    "infusions": [
+      5046586578883,
+      5111011083013
+    ]
+  },
+  {
+    "id": "0x4cd000008ac",
+    "source": "quests",
+    "name": {
+      "RU": "Пылающий снаряд",
+      "EN": "Emberblaze Cannonball"
+    },
+    "itemType": 5029406706868,
+    "infusions": [
+      4801773439583,
+      4801773439886,
+      5111011082941
+    ]
+  },
+  {
+    "id": "0x4c80000003f",
+    "source": "quests",
+    "name": {
+      "RU": "Скипетр Вечной зимы",
+      "EN": "Everwinter Scepter"
+    },
+    "itemType": 4801773440973,
+    "infusions": [
+      4801773439625,
+      5046586582538,
+      4801773440036
+    ]
+  },
+  {
+    "id": "0x4c80000003c",
+    "source": "quests",
+    "name": {
+      "RU": "Око Бури",
+      "EN": "Eye of the Storm"
+    },
+    "itemType": 4801773441053,
+    "infusions": [
+      4801773440487,
+      4801773440011,
+      4801773439672
+    ]
+  },
+  {
+    "id": "0x4c800000030",
+    "source": "quests",
+    "name": {
+      "RU": "Пламенный Взор",
+      "EN": "Fire Gaze"
+    },
+    "itemType": 4801773440809,
+    "infusions": [
+      5046586578869
+    ]
+  },
+  {
+    "id": "0x4c8000000e7",
+    "source": "quests",
+    "name": {
+      "RU": "Плащ Прародителя",
+      "EN": "Forefather's Cloak"
+    },
+    "itemType": 5257039971038,
+    "infusions": [
+      5046586586239,
+      4801773440477
+    ]
+  },
+  {
+    "id": "0x4c800000031",
+    "source": "quests",
+    "name": {
+      "RU": "Ледяной Покров",
+      "EN": "Freezing Fold"
+    },
+    "itemType": 4801773440757,
+    "infusions": [
+      5046586582543
+    ]
+  },
+  {
+    "id": "0x4c80000003e",
+    "source": "quests",
+    "name": {
+      "RU": "Осколок Ледника",
+      "EN": "Glacier Shard"
+    },
+    "itemType": 4801773441051,
+    "infusions": [
+      4801773439668,
+      4801773439677
+    ]
+  },
+  {
+    "id": "0x48f0000035f",
+    "source": "quests",
+    "name": {
+      "RU": "Молот Богов",
+      "EN": "Hammer of the Gods"
+    },
+    "itemType": 4801773440879,
+    "infusions": [
+      4801773439993,
+      4801773439499
+    ]
+  },
+  {
+    "id": "0x4c8000000e9",
+    "source": "quests",
+    "name": {
+      "RU": "Голова безголового всадника",
+      "EN": "Head of the Headless Horseman"
+    },
+    "itemType": 4801773441019,
+    "infusions": [
+      4995046968734,
+      4995046968733
+    ]
+  },
+  {
+    "id": "0x4c800000035",
+    "source": "quests",
+    "name": {
+      "RU": "Иллюзия Льда",
+      "EN": "Ice Illusion"
+    },
+    "itemType": 4801773441007,
+    "infusions": [
+      5046586582549,
+      5111011082273
+    ]
+  },
+  {
+    "id": "0x4c8000000ed",
+    "source": "quests",
+    "name": {
+      "RU": "Камень бессмертия",
+      "EN": "Immortality Stone"
+    },
+    "itemType": 5257039971040,
+    "infusions": [
+      5111011083012
+    ]
+  },
+  {
+    "id": "0x4c80000003b",
+    "source": "quests",
+    "name": {
+      "RU": "Нерушимый панцирь",
+      "EN": "Immovable Plate"
+    },
+    "itemType": 4801773440745,
+    "infusions": [
+      5046586578864,
+      4801773440348
+    ]
+  },
+  {
+    "id": "0x4c800000044",
+    "source": "quests",
+    "name": {
+      "RU": "Пылающий доспех",
+      "EN": "Incandescent Armor"
+    },
+    "itemType": 4801773440713,
+    "infusions": [
+      4801773440477,
+      5111011083031,
+      4801773439666
+    ]
+  },
+  {
+    "id": "0x4c80000003d",
+    "source": "quests",
+    "name": {
+      "RU": "Несгибаемый Дух",
+      "EN": "Indomitable Spirit"
+    },
+    "itemType": 4801773441003,
+    "infusions": [
+      5046586578890,
+      5111011083011
+    ]
+  },
+  {
+    "id": "0x4c800000029",
+    "source": "quests",
+    "name": {
+      "RU": "Обитатель Лавы",
+      "EN": "Lava Lurker"
+    },
+    "itemType": 4801773439782,
+    "infusions": [
+      5046586578926
+    ]
+  },
+  {
+    "id": "0x4c800000038",
+    "source": "quests",
+    "name": {
+      "RU": "Метеоритный Мандат",
+      "EN": "Meteor Mandate"
+    },
+    "itemType": 4801773440899,
+    "infusions": [
+      4801773439527,
+      5111011082938
+    ]
+  },
+  {
+    "id": "0x4c800000039",
+    "source": "quests",
+    "name": {
+      "RU": "Лук Северного ветра",
+      "EN": "Northwind Bow"
+    },
+    "itemType": 4801773440941,
+    "infusions": [
+      4801773439542,
+      5111011082941
+    ]
+  },
+  {
+    "id": "0x4c800000043",
+    "source": "quests",
+    "name": {
+      "RU": "Грядущая Буря",
+      "EN": "Oncoming Storm"
+    },
+    "itemType": 4801773440965,
+    "infusions": [
+      4801773439624,
+      5046586578816,
+      4801773440035
+    ]
+  },
+  {
+    "id": "0x4cd00000718",
+    "source": "quests",
+    "name": {
+      "RU": "Цепь идущего по доске",
+      "EN": "Plankwalker's Bond"
+    },
+    "itemType": 4801773441053,
+    "infusions": [
+      4801773440009
+    ]
+  },
+  {
+    "id": "0x4cd000008ab",
+    "source": "quests",
+    "name": {
+      "RU": "Колокол грабителя",
+      "EN": "Plunderchime Bell"
+    },
+    "itemType": 4801773441031,
+    "infusions": [
+      4801773440379,
+      5111011082276
+    ]
+  },
+  {
+    "id": "0x4c800000033",
+    "source": "quests",
+    "name": {
+      "RU": "Крылья Ветра",
+      "EN": "Pushing Wind"
+    },
+    "itemType": 4801773440830,
+    "infusions": [
+      4801773440478
+    ]
+  },
+  {
+    "id": "0x4c800000032",
+    "source": "quests",
+    "name": {
+      "RU": "Мститель",
+      "EN": "Retributor"
+    },
+    "itemType": 4801773440866,
+    "infusions": [
+      4801773439790
+    ]
+  },
+  {
+    "id": "0x48f00000365",
+    "source": "quests",
+    "name": {
+      "RU": "Мантия Вечности",
+      "EN": "Robe of the Ageless"
+    },
+    "itemType": 4801773440755,
+    "infusions": [
+      4801773440351,
+      5111011083024
+    ]
+  },
+  {
+    "id": "0x4c80000002d",
+    "source": "quests",
+    "name": {
+      "RU": "Творец Скал",
+      "EN": "Rock Raiser"
+    },
+    "itemType": 4801773440997,
+    "infusions": [
+      5046586578912
+    ]
+  },
+  {
+    "id": "0x48f00000364",
+    "source": "quests",
+    "name": {
+      "RU": "Триумф Обманщика",
+      "EN": "Rogue's Triumph"
+    },
+    "itemType": 4801773441049,
+    "infusions": [
+      4801773440016,
+      4801773440486,
+      4801773440485
+    ]
+  },
+  {
+    "id": "0x48f00000363",
+    "source": "quests",
+    "name": {
+      "RU": "Паршивая Удача",
+      "EN": "Rotten Luck"
+    },
+    "itemType": 4801773440809,
+    "infusions": [
+      4801773440000,
+      4801773439678
+    ]
+  },
+  {
+    "id": "0x4cd000008a8",
+    "source": "quests",
+    "name": {
+      "RU": "Сабля утопленника",
+      "EN": "Saber of the Drowned"
+    },
+    "itemType": 5003636908946,
+    "infusions": [
+      4801773439935,
+      4801773439944,
+      5111011083217
+    ]
+  },
+  {
+    "id": "0x4cd0000087b",
+    "source": "quests",
+    "name": {
+      "RU": "Рассекатель парусов",
+      "EN": "Sailcutter"
+    },
+    "itemType": 4801773441005,
+    "infusions": [
+      5046586590657
+    ]
+  },
+  {
+    "id": "0x4c8000000ee",
+    "source": "quests",
+    "name": {
+      "RU": "Кровь неизвестного",
+      "EN": "Someone's Blood"
+    },
+    "itemType": 4801773439778,
+    "infusions": [
+      5111011082276
+    ]
+  },
+  {
+    "id": "0x48f00000366",
+    "source": "quests",
+    "name": {
+      "RU": "Проклятие Целителя душ",
+      "EN": "Soulmender's Curse"
+    },
+    "itemType": 4801773440436,
+    "infusions": [
+      4801773440439,
+      4801773439887,
+      4801773439886,
+      4801773439944
+    ]
+  },
+  {
+    "id": "0x4cd000008a9",
+    "source": "quests",
+    "name": {
+      "RU": "Сладкая парочка сорвиголовы",
+      "EN": "Swashbuckler's Twins"
+    },
+    "itemType": 4801773441237,
+    "infusions": [
+      5111011083304,
+      4801773439983
+    ]
+  },
+  {
+    "id": "0x4c800000034",
+    "source": "quests",
+    "name": {
+      "RU": "Орудие Предателя",
+      "EN": "Traitor's Tool"
+    },
+    "itemType": 4801773439481,
+    "infusions": [
+      4801773439533,
+      4801773439993
+    ]
+  },
+  {
+    "id": "0x4c80000003a",
+    "source": "quests",
+    "name": {
+      "RU": "Неудержимый Шаг",
+      "EN": "Unstoppable Step"
+    },
+    "itemType": 4801773440834,
+    "infusions": [
+      4801773440481,
+      4801773440482,
+      4801773440484
+    ]
+  },
+  {
+    "id": "0x4cd0000087a",
+    "source": "quests",
+    "name": {
+      "RU": "Вода откровений",
+      "EN": "Water of Revelations"
+    },
+    "itemType": 4801773441013,
+    "infusions": [
+      5029406707132,
+      5111011082273
+    ]
+  },
+  {
+    "id": "0x4cd00000717",
+    "source": "quests",
+    "name": {
+      "RU": "Маска созерцателя волн",
+      "EN": "Wavewatcher's Mask"
+    },
+    "itemType": 4801773440818,
+    "infusions": [
+      4801773439675,
+      4801773440452
+    ]
+  },
+  {
+    "id": "0x4c8000000e8",
+    "source": "quests",
+    "name": {
+      "RU": "Обручальное кольцо",
+      "EN": "Wedding Ring"
+    },
+    "itemType": 4801773441041,
+    "infusions": [
+      4801773439669,
+      4801773439681
+    ]
+  },
+  {
+    "id": "0x48f00000361",
+    "source": "quests",
+    "name": {
+      "RU": "Корчеватель Сорняков",
+      "EN": "Weed-Culler"
+    },
+    "itemType": 4801773439483,
+    "infusions": [
+      4801773440090,
+      4801773439529
+    ]
+  },
+  {
+    "id": "0x4c800000045",
+    "source": "quests",
+    "name": {
+      "RU": "Самоцвет Дикого огня",
+      "EN": "Wildfire Gem"
+    },
+    "itemType": 4801773439615,
+    "infusions": [
+      4801773439583,
+      5111011082977,
+      4801773439886
+    ]
+  },
+  {
+    "id": "0x4c800000040",
+    "source": "quests",
+    "name": {
+      "RU": "Благословение Ветра",
+      "EN": "Wind's Blessing"
+    },
+    "itemType": 4801773441013,
+    "infusions": [
+      5046586578873,
+      5111011082276
+    ]
+  },
+  {
+    "id": "0x49700003dd5",
+    "source": "pantheon",
+    "name": {
+      "RU": "Расколотая сфера",
+      "EN": "Fractured Orb"
+    },
+    "itemType": 5046586587526,
+    "infusions": [
+      5046586588630
+    ]
+  },
+  {
+    "id": "0x49300000c96",
+    "source": "pantheon",
+    "name": {
+      "RU": "Литоритовая сфера",
+      "EN": "Lithorite Orb"
+    },
+    "itemType": 5029406706841,
+    "infusions": [
+      5029406706839
+    ]
+  },
+  {
+    "id": "0x49300000c6d",
+    "source": "pantheon",
+    "name": {
+      "RU": "Копьё убийцы великанов",
+      "EN": "Giantslayer's Spear"
+    },
+    "itemType": 5029406706814,
+    "infusions": [
+      5029406706808
+    ]
+  },
+  {
+    "id": "0x49300000c60",
+    "source": "pantheon",
+    "name": {
+      "RU": "Осколочные клинки",
+      "EN": "Shatterblades"
+    },
+    "itemType": 5029406706788,
+    "infusions": [
+      5029406706793
+    ]
+  },
+  {
+    "id": "0x49300000c84",
+    "source": "pantheon",
+    "name": {
+      "RU": "Лук титана",
+      "EN": "Titan's Greatbow"
+    },
+    "itemType": 5029406706824,
+    "infusions": [
+      5029406706821
+    ]
+  },
+  {
+    "id": "0x49300000c8d",
+    "source": "pantheon",
+    "name": {
+      "RU": "Кирка золотоискателя",
+      "EN": "Goldseeker's Pickaxe"
+    },
+    "itemType": 5029406706832,
+    "infusions": [
+      5029406706830
+    ]
+  },
+  {
+    "id": "0x49300000cb1",
+    "source": "pantheon",
+    "name": {
+      "RU": "Сфера магмы",
+      "EN": "Magma Orb"
+    },
+    "itemType": 5029406706868,
+    "infusions": [
+      5029406706866
+    ]
+  },
+  {
+    "id": "0x493000008c9",
+    "source": "pantheon",
+    "name": {
+      "RU": "Меч убийцы",
+      "EN": "Slayer Sword"
+    },
+    "itemType": 5111011084474,
+    "infusions": [
+      5111011082790
+    ]
+  },
+  {
+    "id": "0x493000008c4",
+    "source": "pantheon",
+    "name": {
+      "RU": "Боевой цестус",
+      "EN": "Martial Cestus"
+    },
+    "itemType": 5111011084461,
+    "infusions": [
+      5029406705861
+    ]
+  },
+  {
+    "id": "0x4a60000094b",
+    "source": "pantheon",
+    "name": {
+      "RU": "Двуручный топор берсерка",
+      "EN": "Berserker's Greataxe"
+    },
+    "itemType": 4801773439483,
+    "infusions": [
+      5111011082790,
+      5111011084620
+    ]
+  },
+  {
+    "id": "0x4a60000095a",
+    "source": "pantheon",
+    "name": {
+      "RU": "Щит капитана",
+      "EN": "Captain's Shield"
+    },
+    "itemType": 4801773440856,
+    "infusions": [
+      5111011084635
+    ]
+  },
+  {
+    "id": "0x4a60000095c",
+    "source": "pantheon",
+    "name": {
+      "RU": "Лук повелителя воронов",
+      "EN": "Crowmaster's Bow"
+    },
+    "itemType": 4801773440945,
+    "infusions": [
+      5111011084637
+    ]
+  },
+  {
+    "id": "0x4a60000094f",
+    "source": "pantheon",
+    "name": {
+      "RU": "Посох криоманта",
+      "EN": "Cryomancer's Staff"
+    },
+    "itemType": 4801773439498,
+    "infusions": [
+      5111011082800,
+      5111011084624,
+      4801773439625
+    ]
+  },
+  {
+    "id": "0x4a60000094d",
+    "source": "pantheon",
+    "name": {
+      "RU": "Посох друида",
+      "EN": "Druid's Staff"
+    },
+    "itemType": 4801773440977,
+    "infusions": [
+      5111011084622,
+      5111011082804,
+      4801773439626
+    ]
+  },
+  {
+    "id": "0x4a600000954",
+    "source": "pantheon",
+    "name": {
+      "RU": "Молот Сотрясателя земли",
+      "EN": "Earthshaker's Hammer"
+    },
+    "itemType": 4801773440889,
+    "infusions": [
+      5111011084629
+    ]
+  },
+  {
+    "id": "0x4a600000958",
+    "source": "pantheon",
+    "name": {
+      "RU": "Арбалет охотника",
+      "EN": "Hunter's Crossbow"
+    },
+    "itemType": 4801773439495,
+    "infusions": [
+      4801773439993
+    ]
+  },
+  {
+    "id": "0x4a600000951",
+    "source": "pantheon",
+    "name": {
+      "RU": "Посох некроманта",
+      "EN": "Staff of Necromancy"
+    },
+    "itemType": 4801773440965,
+    "infusions": [
+      4801773440443,
+      4801773440030
+    ]
+  },
+  {
+    "id": "0x4a60000094a",
+    "source": "pantheon",
+    "name": {
+      "RU": "Щит тирана",
+      "EN": "Tyrant's Shield"
+    },
+    "itemType": 4801773440846,
+    "infusions": [
+      5111011084617
+    ]
+  },
+  {
+    "id": "0x4a60000096c",
+    "source": "pantheon",
+    "name": {
+      "RU": "Лук мрака",
+      "EN": "Umbral Bow"
+    },
+    "itemType": 5111011084655,
+    "infusions": [
+      5111011084653,
+      4801773440088
+    ]
+  },
+  {
+    "id": "0x4a600000963",
+    "source": "pantheon",
+    "name": {
+      "RU": "Двуручный топор мрака",
+      "EN": "Umbral Greataxe"
+    },
+    "itemType": 5111011084646,
+    "infusions": [
+      5111011084644,
+      5111011084647,
+      5111011082790
+    ]
+  },
+  {
+    "id": "0x4a600000968",
+    "source": "pantheon",
+    "name": {
+      "RU": "Посох мрака",
+      "EN": "Umbral Staff"
+    },
+    "itemType": 5111011084651,
+    "infusions": [
+      5111011084649,
+      4801773439625
+    ]
+  },
+  {
+    "id": "0x4a60000095e",
+    "source": "pantheon",
+    "name": {
+      "RU": "Меч мрака",
+      "EN": "Umbral Sword"
+    },
+    "itemType": 5111011084642,
+    "infusions": [
+      5111011084639
+    ]
+  },
+  {
+    "id": "0x4a600000956",
+    "source": "pantheon",
+    "name": {
+      "RU": "Пика ветерана",
+      "EN": "Veteran's Pike"
+    },
+    "itemType": 4801773439481,
+    "infusions": [
+      4801773439986
+    ]
+  }
+]

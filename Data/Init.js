@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.insertAdjacentHTML("afterbegin", html);
             GetHamburgerMenu();
             requireAjax("/rbbp/Data/src/settings.js", function () {
+                setupBackToTop();
                 requireAjax("/rbbp/Data/src/dataloader.js", function () {
                     requireAjax("/rbbp/Data/src/tooltips.js", function () {
                         requireAjax("/rbbp/Data/src/lookuputils.js", function () {
@@ -158,4 +159,28 @@ function setupSubsectionLists() {
             update(false);
         });
     }
+}
+
+
+function setupBackToTop() {
+    const button = document.createElement("button");
+    const label = languageSelect.value === "RU" ? "В начало страницы" : "Back to top";
+    button.type = "button";
+    button.className = "back-to-top";
+    button.textContent = "↑";
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    document.body.appendChild(button);
+
+    function updateVisibility() {
+        button.hidden = window.scrollY < window.innerHeight * 0.75;
+    }
+
+    button.addEventListener("click", () => window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
+    }));
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    window.addEventListener("resize", updateVisibility);
+    updateVisibility();
 }

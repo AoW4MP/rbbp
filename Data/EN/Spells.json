@@ -826,7 +826,7 @@
   "id": "accursed_undertow",
   "DLC": "SILVERSEAS ",
   "tactical": true,
-  "description": "Enemy units in a 2 hex radius:<bulletlist><bullet>Sustain 8 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Sustain 8 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Suffer Ghostfire.</bullet><bullet>Are pulled towards the target location.</bullet></bulletlist>",
+  "description": "Enemy units in a 1 hex radius:<bulletlist><bullet>Sustain 8 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Sustain 8 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet><bullet>Suffer Ghostfire.</bullet><bullet>Are pulled towards the target location.</bullet></bulletlist>",
   "name": "Accursed Undertow",
   "operation_point_cost": 30,
   "icon": "000004970000425E"
@@ -854,7 +854,7 @@
   "id": "riptide",
   "DLC": "SILVERSEAS ",
   "tactical": true,
-  "description": "Units in a 1-hex radius:<bulletlist><bullet>Sustain 12 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Become Wet for 3 <turn></turn> Turns.</bullet><bullet>If on the outer radius, they are pushed 1-hex away from the center.</bullet><bullet>Targets that were already Wet have the above effects doubled.</bullet></bulletlist>",
+  "description": "Units in a 1-hex radius:<bulletlist><bullet>Sustain 12 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Become Wet for 3 <turn></turn> Turns.</bullet><bullet>If on the outer radius, they are pushed 1-hex away from the center.</bullet></bulletlist>",
   "name": "Riptide",
   "operation_point_cost": 25,
   "icon": "00000497000041F9"
@@ -866,7 +866,7 @@
   "id": "revitalizing_rush",
   "DLC": "SILVERSEAS ",
   "tactical": false,
-  "description": "Units in target friendly army:<bulletlist><bullet>Heal 10 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>At the start of the next combat, units are Hastened for 3 <turn></turn> Turns.</bullet></bulletlist>",
+  "description": "Units in target friendly army:<bulletlist><bullet>Heal 20 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>At the start of the next combat, units are Hastened for 1 <turn></turn> Turn.</bullet></bulletlist>",
   "name": "Revitalizing Rush",
   "operation_point_cost": 45,
   "icon": "00000497000041FD"
@@ -1225,7 +1225,7 @@
   ]
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "10<mana></mana> ",
   "resid": 5046586588002,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "captivating_lights",
@@ -1233,7 +1233,7 @@
   "tactical": true,
   "description": "Target enemy unit:<bulletlist><bullet>Becomes Distracted for 1 <turn></turn> Turn.</bullet><bullet>Has its <hyperlink>Defense Mode</hyperlink> canceled.</bullet><bullet>Has its <hyperlink>Retaliation Attacks</hyperlink> removed.</bullet></bulletlist>",
   "name": "Captivating Lights",
-  "operation_point_cost": 20,
+  "operation_point_cost": 15,
   "icon": "0000049700003B2F"
  },
  {
@@ -1243,7 +1243,7 @@
   "id": "catnap",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Target friendly army loses all their movement points then heals by 1 <hyperlink><hp></hp> Hit Point</hyperlink> per movement point lost.",
+  "description": "Target friendly army loses all their movement points then heals by 2 <hyperlink><hp></hp> Hit Points</hyperlink> per movement point lost.",
   "name": "Catnap",
   "operation_point_cost": 30,
   "icon": "0000049700003B33"
@@ -1275,7 +1275,7 @@
   "id": "fey_bond",
   "DLC": "SECRETSOFTHEARCHMAGES ",
   "tactical": false,
-  "description": "Enchanted units:<bulletlist><bullet>On combat start, gain +10 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>When at neutral morale, gain +2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet><bullet>When at high morale, gain +4 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet></bulletlist>",
+  "description": "Enchanted units:<bulletlist><bullet>On combat start, gain +15 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>When at neutral morale, gain +2 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet><bullet>When at high morale, gain +4 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink>.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -1657,7 +1657,7 @@
   "id": "training_regimen",
   "DLC": "RISEFROMRUIN ",
   "tactical": false,
-  "description": "Target owned city:<bulletlist><bullet>Gains 40 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet></bulletlist>",
+  "description": "Target owned city:<bulletlist><bullet>Gains 30 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet></bulletlist>",
   "name": "Training Regimen",
   "operation_point_cost": 45,
   "icon": "0000049700003778"
@@ -3281,7 +3281,7 @@
   "id": "mesmerizing_draft_ritual",
   "DLC": "ELDRITCHREALMS ",
   "tactical": false,
-  "description": "Target owned city gains +50 <unitprod></unitprod> <hyperlink>Draft</hyperlink> for 3 <turn></turn> Turns.",
+  "description": "Target owned city gains +30 <unitprod></unitprod> <hyperlink>Draft</hyperlink> for 3 <turn></turn> Turns.",
   "name": "Mesmerizing Draft Ritual",
   "operation_point_cost": 45,
   "icon": "0000049700000BDE"
@@ -4554,7 +4554,7 @@
   "icon": "0000048D00001B34"
  },
  {
-  "casting_cost": "60<mana></mana> 2<embalmedsacrifice></embalmedsacrifice> ",
+  "casting_cost": "60<mana></mana> 1<embalmedsacrifice></embalmedsacrifice> ",
   "resid": 5003636906629,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "morbid_sacrifice",
@@ -5838,7 +5838,7 @@
   "icon": "0000044500000057"
  },
  {
-  "casting_cost": "150<mana></mana> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 2<secretscrolls></secretscrolls> ",
   "resid": 4694399254676,
   "spellType": "<casttactical></casttactical> <hyperlink>Healing Spell</hyperlink>",
   "id": "mass_rejuvenation",
@@ -5872,7 +5872,7 @@
   "icon": "0000044000000079"
  },
  {
-  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4672924418199,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "demonic_onslaught",
@@ -5916,7 +5916,7 @@
   "icon": "0000041B000019D1"
  },
  {
-  "casting_cost": "150<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "150<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010634979,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "exalted_champion",
@@ -5927,7 +5927,7 @@
   "icon": "0000041B000019C9"
  },
  {
-  "casting_cost": "200<mana></mana> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 2<secretscrolls></secretscrolls> ",
   "resid": 4514010634969,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "mass_revive",
@@ -6047,10 +6047,11 @@
  {
   "casting_cost": "45<mana></mana> ",
   "resid": 4514010634776,
+  "upkeep": "10<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>City Spell</hyperlink>",
   "id": "fanatical_workforce",
   "tactical": false,
-  "description": "For 3 <turn></turn> Turns, target owned city:<bulletlist><bullet>Gains +60 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>Loses -20 <food></food> <hyperlink>Food</hyperlink> income.</bullet></bulletlist>",
+  "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet></bulletlist>",
   "name": "Fanatical Workforce",
   "operation_point_cost": 45,
   "icon": "0000041B00001935"
@@ -6092,7 +6093,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "inspiring_chant",
   "tactical": true,
-  "description": "Friendly units in a 2-hex radius:<bulletlist><bullet>Gain +10 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Become 2 Strengthened if they have Zeal.</bullet></bulletlist>",
+  "description": "Friendly units in a 2-hex radius:<bulletlist><bullet>Gain +10 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Become 1 Strengthened if they have Zeal.</bullet></bulletlist>",
   "name": "Inspiring Chant",
   "operation_point_cost": 25,
   "icon": "0000041B00001939"
@@ -6128,7 +6129,7 @@
   "icon": "0000041B0000176C"
  },
  {
-  "casting_cost": "50<souls></souls> 2<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "50<souls></souls> 2<secretscrolls></secretscrolls> ",
   "resid": 4514010634391,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "battlefield_reanimation",
@@ -6325,7 +6326,7 @@
   "icon": "0000041B00001721"
  },
  {
-  "casting_cost": "100<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "100<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010634103,
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>",
   "id": "withering_mist",
@@ -6447,7 +6448,7 @@
   "icon": "0000041B000012D2"
  },
  {
-  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010633542,
   "spellType": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>",
   "id": "time_stop",
@@ -6458,7 +6459,7 @@
   "icon": "0000041B000012CE"
  },
  {
-  "casting_cost": "300<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "300<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010633535,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff/Debuff Spell</hyperlink>",
   "id": "disruption_wave",
@@ -6671,7 +6672,7 @@
   "icon": "0000041B00001100"
  },
  {
-  "casting_cost": "200<mana></mana> 1<personalityAstral03></personalityAstral03> ",
+  "casting_cost": "200<mana></mana> 1<secretscrolls></secretscrolls> ",
   "resid": 4514010632479,
   "spellType": "<casttactical></casttactical> <hyperlink>Damage/Debuff Spell</hyperlink>",
   "id": "tectonic_shatter",
@@ -6753,7 +6754,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Sustained City Spell</hyperlink>",
   "id": "awakened_tools",
   "tactical": false,
-  "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist>",
+  "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet><bullet>+10 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist>",
   "name": "Awakened Tools",
   "operation_point_cost": 45,
   "icon": "000003BD00002E9E"
@@ -7541,6 +7542,12 @@
     "slug": "kraken"
    },
    {
+    "slug": "storm_rune_crab"
+   },
+   {
+    "slug": "seamare"
+   },
+   {
     "slug": "fractured_worm"
    },
    {
@@ -7679,6 +7686,15 @@
    },
    {
     "slug": "kraken_spawn"
+   },
+   {
+    "slug": "hoarfrost_manta"
+   },
+   {
+    "slug": "lightning_rune_crab"
+   },
+   {
+    "slug": "frenzied_fish_swarm"
    },
    {
     "slug": "blood_maggot"
@@ -8245,7 +8261,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "guided_projectiles",
   "tactical": false,
-  "description": "Makes base attacks of enchanted units:<bulletlist><bullet>Fire 1 hex further without Long Range <hyperlink><accuracy></accuracy> Accuracy</hyperlink> penalties.</bullet><bullet>Ignore <hyperlink><accuracy></accuracy> Accuracy</hyperlink> penalties from the <hyperlink>Obscuring</hyperlink> condition caused by units that are in the way and certain terrain.</bullet></bulletlist>",
+  "description": "Makes base attacks of enchanted units:<bulletlist><bullet>Fire 2 hex further without Long Range <hyperlink><accuracy></accuracy> Accuracy</hyperlink> penalties.</bullet><bullet>Ignore <hyperlink><accuracy></accuracy> Accuracy</hyperlink> penalties from the <hyperlink>Obscuring</hyperlink> condition caused by units that are in the way and certain terrain.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -8400,7 +8416,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "spawnkin",
   "tactical": false,
-  "description": "Makes the target race smaller and more numerous, granting them:<bulletlist><bullet>Increased number of units in formation.</bullet><bullet>+20% damage for non-hero units.</bullet><bullet>+10% <hyperlink>Evasion</hyperlink> for hero units. </bullet><bullet>Incompatible with Supergrowth.</bullet></bulletlist>",
+  "description": "Makes the target race smaller and more numerous, granting them:<bulletlist><bullet>Increased number of units in formation.</bullet><bullet>+15% damage for non-hero units.</bullet><bullet>+10% <hyperlink>Evasion</hyperlink> for hero units. </bullet><bullet>Incompatible with Supergrowth.</bullet></bulletlist>",
   "name": "Spawnkin",
   "operation_point_cost": 150,
   "icon": "000003E300005A18"
@@ -8566,14 +8582,14 @@
   "icon": "000003BD00002E6A"
  },
  {
-  "casting_cost": "80<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4273492484295,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "army_heal",
   "tactical": false,
-  "description": "Units in target army heal 25<hyperlink><hp></hp> Hit Points</hyperlink>.",
+  "description": "Units in target army heal 30<hyperlink><hp></hp> Hit Points</hyperlink>.",
   "name": "Army Heal",
-  "operation_point_cost": 80,
+  "operation_point_cost": 45,
   "icon": "000003BD00002E6C"
  },
  {
@@ -9331,14 +9347,14 @@
   "icon": "000003E300005A20"
  },
  {
-  "casting_cost": "10<mana></mana> ",
+  "casting_cost": "30<mana></mana> ",
   "resid": 4273492482607,
   "spellType": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>",
   "id": "fury_of_the_horde",
   "tactical": true,
-  "description": "Tier I and Tier II friendly units in a 2-hex radius gain:<bulletlist><bullet>2 stacks of Strengthened.</bullet></bulletlist>",
+  "description": "Tier I and Tier II friendly units in a 2-hex radius gain:<bulletlist><bullet>1 stacks of Strengthened</bullet><bullet>1 stacks of Fortune.</bullet></bulletlist>",
   "name": "Fury of the Horde",
-  "operation_point_cost": 15,
+  "operation_point_cost": 25,
   "icon": "000003E3000059C3"
  },
  {
@@ -9964,6 +9980,225 @@
   "name": "Ilandra's Chosen",
   "operation_point_cost": 300,
   "icon": "000003DF000016E0"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273344,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "great_worm_infestation",
+  "tactical": false,
+  "description": "",
+  "name": "Great Worm Infestation",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273347,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "forsaken_cove",
+  "tactical": false,
+  "description": "",
+  "name": "Forsaken Cove",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273353,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "astral_rift",
+  "tactical": false,
+  "description": "",
+  "name": "Astral Rift",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273356,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "dragons_lair",
+  "tactical": false,
+  "description": "",
+  "name": "Dragon's Lair",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273359,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "large_monster_den",
+  "tactical": false,
+  "description": "",
+  "name": "Large Monster Den",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B45"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273362,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "fractured_infestation",
+  "tactical": false,
+  "description": "",
+  "name": "Fractured Infestation",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273365,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "mistwalker_camp",
+  "tactical": false,
+  "description": "",
+  "name": "Mistwalker Camp",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273368,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "umbral_nest",
+  "tactical": false,
+  "description": "",
+  "name": "Umbral Nest",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273371,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "lithorine_cradle",
+  "tactical": false,
+  "description": "",
+  "name": "Lithorine Cradle",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273374,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "derelict_workshop",
+  "tactical": false,
+  "description": "",
+  "name": "Derelict Workshop",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273377,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "great_bird_nest",
+  "tactical": false,
+  "description": "",
+  "name": "Great Bird Nest",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273380,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "ritual_circle",
+  "tactical": false,
+  "description": "",
+  "name": "Ritual Circle",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273383,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "crusader_host",
+  "tactical": false,
+  "description": "",
+  "name": "Crusader Host",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B44"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273386,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "fleeting_fractured_infestation",
+  "tactical": false,
+  "description": "",
+  "name": "Fleeting Fractured Infestation",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273389,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "pirate_cove",
+  "tactical": false,
+  "description": "",
+  "name": "Pirate Cove",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273392,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "haunted_graveyard",
+  "tactical": false,
+  "description": "",
+  "name": "Haunted Graveyard",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273396,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "small_monster_den",
+  "tactical": false,
+  "description": "",
+  "name": "Small Monster Den",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "80<mana></mana> ",
+  "resid": -3753916818180273409,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
+  "id": "excavation",
+  "tactical": false,
+  "description": "Removes the <hyperlink>Mountain</hyperlink> and <hyperlink>Stalagmites</hyperlink> terrain features from the target habitable or uninhabitable <hyperlink>Province</hyperlink>.<br><br>This spell cannot be cast again for 1 <turn></turn> turn.",
+  "name": "Excavation",
+  "operation_point_cost": 80,
+  "icon": "CBE7688B00000B00"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273432,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
+  "id": "brigand_camp",
+  "tactical": false,
+  "description": "",
+  "name": "Brigand Camp",
+  "operation_point_cost": 0,
+  "icon": "CBE7688B00000B43"
+ },
+ {
+  "casting_cost": "",
+  "resid": -3753916818180273488,
+  "spellType": "",
+  "id": "",
+  "tactical": false,
+  "description": "",
+  "name": "",
+  "operation_point_cost": 0
  },
  {
   "casting_cost": "150<gold></gold> ",

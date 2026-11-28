@@ -845,7 +845,7 @@
  },
  {
   "biography_description": "Their bodies can barely contain their divine origin, sacred light radiates from within them like a purifying flame.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>Melee attackers sustain <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>.</helpcolor>",
   "point_cost": 1,
   "id": "inner_radiance",
   "name": "Inner Radiance",
@@ -866,7 +866,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>."
+    "name": "+3 <defensespirit></defensespirit> <hyperlink>Spirit Protection</hyperlink>."
+   },
+   {
+    "name": "Melee attackers sustain 3 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -905,8 +908,8 @@
  },
  {
   "biography_description": "Lightning runs through their veins, zapping those who dare to harm them.",
-  "lore_description": "",
-  "point_cost": 2,
+  "lore_description": "<helpcolor>Melee attackers sustain <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>.</helpcolor>",
+  "point_cost": 1,
   "id": "inner_lightning",
   "name": "Inner Lightning",
   "incompatible_society_traits": [
@@ -926,13 +929,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink>."
+    "name": "+3 <defenselightning></defenselightning> <hyperlink>Lightning Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers have a base 60% chance of becoming Electrified."
-   },
-   {
-    "name": "Immunity to becoming Electrified."
+    "name": "Melee attackers sustain 3 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -944,7 +944,7 @@
  },
  {
   "biography_description": "Their skin is cold to the touch, causing frostbite to those who get too close.",
-  "lore_description": "",
+  "lore_description": "<helpcolor>Melee attackers sustain <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</helpcolor>",
   "point_cost": 1,
   "id": "inner_frost",
   "name": "Inner Frost",
@@ -965,7 +965,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
+    "name": "+3 <defensefrost></defensefrost> <hyperlink>Frost Protection</hyperlink>."
+   },
+   {
+    "name": "Melee attackers sustain 3 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -977,8 +980,8 @@
  },
  {
   "biography_description": "Their boiling blood scorches anyone who dares to wound them.",
-  "lore_description": "",
-  "point_cost": 2,
+  "lore_description": "<helpcolor>Melee attackers sustain <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</helpcolor>",
+  "point_cost": 1,
   "id": "inner_fire",
   "name": "Inner Fire",
   "incompatible_society_traits": [
@@ -998,13 +1001,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+2 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>."
+    "name": "+3 <defensefire></defensefire> <hyperlink>Fire Protection</hyperlink>."
    },
    {
-    "name": "Melee attackers have a base 60% chance of becoming Burning."
-   },
-   {
-    "name": "Immunity to becoming Burning."
+    "name": "Melee attackers sustain 3 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2001,7 +2001,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain <bulletlist><bullet>+20% <food></food> <hyperlink>Food</hyperlink> if the city core province contains Grasslands, Fungus Fields or Swamp.</bullet><bullet>+20% <structureprod></structureprod> <hyperlink>Production</hyperlink> if the city core province contains Forest, Rocky or Mountains.</bullet><bullet>+10% <gold></gold> <hyperlink>Gold</hyperlink> if the city core province contains Ashlands.</bullet><bullet>+10% <mana></mana> <hyperlink>Mana</hyperlink> if the city core province contains Snow, Ice or Sand.</bullet></bulletlist>"
+    "name": "<hyperlink>Cities</hyperlink> gain <bulletlist><bullet>+20% <food></food> <hyperlink>Food</hyperlink> if the city core province contains Grasslands, Fungus Fields, or Swamp.</bullet><bullet>+20% <structureprod></structureprod> <hyperlink>Production</hyperlink> if the city core province contains Forest, Rocky, or Mountains.</bullet><bullet>+10% <gold></gold> <hyperlink>Gold</hyperlink> if the city core province contains Ashlands or Sand.</bullet><bullet>+10% <mana></mana> <hyperlink>Mana</hyperlink> if the city core province contains Snow, Ice, or Water.</bullet></bulletlist>"
    },
    {
     "name": "Terraforming spells cost -25% less <mana></mana> <hyperlink>Mana</hyperlink> and <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink> to cast."
@@ -2104,7 +2104,7 @@
  {
   "starting_bonuses": [
    {
-    "description": "100<influence></influence> "
+    "description": "50<influence></influence> "
    }
   ],
   "affinities": [
@@ -2120,10 +2120,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +10% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, +20% <food></food> <hyperlink>Food</hyperlink>, +15% <structureprod></structureprod> <hyperlink>Production</hyperlink>, and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any other <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +10% <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>, +20% <food></food> <hyperlink>Food</hyperlink> and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any other <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>."
    },
    {
-    "name": "Grievances inflicted by other empires encroaching on your territory are increased by +100%."
+    "name": "Grievances inflicted by other empires encroaching on your territory are increased by +50%."
    }
   ],
   "enabled": true,
@@ -2412,7 +2412,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +10 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +7 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2501,7 +2501,7 @@
     "name": "<hyperlink>Pronouncements</hyperlink> cost -50% less"
    },
    {
-    "name": "<hyperlink>Trade</hyperlink> with <minorcity></minorcity><hyperlink>Free Cities</hyperlink> costs you -100% resources. (Cost increases from other sources still apply!)"
+    "name": "<hyperlink>Trade</hyperlink> options with <minorcity></minorcity><hyperlink>Free Cities</hyperlink> to increase income from <hyperlink>Trade Routes</hyperlink> no longer cost resources."
    }
   ],
   "enabled": true,
@@ -3501,6 +3501,9 @@
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>."
+   },
+   {
+    "name": "Non-Hero gain +20%<xp></xp> experience from combat."
    }
   ],
   "enabled": true,
@@ -4320,11 +4323,25 @@
   "display_order": -1
  },
  {
+  "starting_bonuses": [],
   "lore_description": "",
   "biography_description": "",
   "point_cost": 0,
-  "id": "observer",
-  "name": "Observer",
+  "id": "eternal_attendants",
+  "name": "Eternal Attendants",
+  "screen_description": "",
+  "enabled": false,
+  "front_end": true,
+  "type": "society",
+  "display_order": -1
+ },
+ {
+  "starting_bonuses": [],
+  "lore_description": "",
+  "biography_description": "",
+  "point_cost": 0,
+  "id": "eternal_attendants",
+  "name": "Eternal Attendants",
   "screen_description": "",
   "enabled": false,
   "front_end": true,

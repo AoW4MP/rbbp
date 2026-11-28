@@ -344,14 +344,14 @@
   "icon": "00000497000041E6",
   "skills": [
    {
-    "description": "Units in target friendly army:<bulletlist><bullet>Heal 10 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>At the start of the next combat, units are Hastened for 3 <turn></turn> Turns.</bullet></bulletlist>",
+    "description": "Units in target friendly army:<bulletlist><bullet>Heal 20 <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>At the start of the next combat, units are Hastened for 1 <turn></turn> Turn.</bullet></bulletlist>",
     "name": "Revitalizing Rush",
     "spell_slug": "revitalizing_rush",
     "tier": 2,
     "type": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>"
    },
    {
-    "description": "Units in a -hex radius:<bulletlist><bullet>Sustain <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Become Wet for <turn></turn> Turns.</bullet><bullet>If on the outer radius, they are pushed -hex away from the center.</bullet><bullet>Targets that were already Wet have the above effects doubled.</bullet></bulletlist>",
+    "description": "Units in a -hex radius:<bulletlist><bullet>Sustain <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Become Wet for <turn></turn> Turns.</bullet><bullet>If on the outer radius, they are pushed -hex away from the center.</bullet></bulletlist>",
     "name": "Riptide",
     "spell_slug": "riptide",
     "tier": 1,
@@ -440,7 +440,7 @@
   "icon": "0000049700003B20",
   "skills": [
    {
-    "description": "Target friendly army loses all their movement points then heals by 1 <hyperlink><hp></hp> Hit Point</hyperlink> per movement point lost.",
+    "description": "Target friendly army loses all their movement points then heals by 2 <hyperlink><hp></hp> Hit Points</hyperlink> per movement point lost.",
     "name": "Catnap",
     "spell_slug": "catnap",
     "tier": 1,
@@ -690,7 +690,7 @@
     "type": "<hyperlink>Empire Bonus</hyperlink>"
    },
    {
-    "description": "Target owned city:<bulletlist><bullet>Gains 40 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet></bulletlist>",
+    "description": "Target owned city:<bulletlist><bullet>Gains 30 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet></bulletlist>",
     "name": "Training Regimen",
     "spell_slug": "training_regimen",
     "tier": 2,
@@ -2177,7 +2177,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> for each non-owned city that shares a border with this <hyperlink>City</hyperlink>.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>+10 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> income.</bullet><bullet>+5 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink> for <hyperlink>Trade Routes</hyperlink> originating from this city.</bullet></bulletlist>",
     "name": "Shade Network",
     "tier": 5,
     "type": "<hyperlink>City Structure</hyperlink>",
@@ -3785,14 +3785,14 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>"
    },
    {
-    "description": "Friendly units in a -hex radius:<bulletlist><bullet>Gain + <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Become 2 Strengthened if they have Zeal.</bullet></bulletlist>",
+    "description": "Friendly units in a -hex radius:<bulletlist><bullet>Gain + <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Become 1 Strengthened if they have Zeal.</bullet></bulletlist>",
     "name": "Inspiring Chant",
     "spell_slug": "inspiring_chant",
     "tier": 2,
     "type": "<casttactical></casttactical> <hyperlink>Buff Spell</hyperlink>"
    },
    {
-    "description": "For 3 <turn></turn> Turns, target owned city:<bulletlist><bullet>Gains +60 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>Loses -20 <food></food> <hyperlink>Food</hyperlink> income.</bullet></bulletlist>",
+    "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.</bullet><bullet>+10 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet></bulletlist>",
     "name": "Fanatical Workforce",
     "spell_slug": "fanatical_workforce",
     "tier": 2,
@@ -4416,7 +4416,7 @@
   "icon": "0000041B00001261",
   "skills": [
    {
-    "description": "<bulletlist><bulletlist><bullet>+15 <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet><bullet>+4 <gold></gold> <hyperlink>Gold</hyperlink> income for each Astral Trade Relay built in your empire.</bullet></bulletlist></bulletlist>",
+    "description": "<bulletlist><bulletlist><bullet>+10 <gold></gold> <hyperlink>Gold</hyperlink> income.</bullet><bullet>+5 <gold></gold> <hyperlink>Gold</hyperlink> income for each Astral Trade Relay built in your empire.</bullet></bulletlist></bulletlist>",
     "name": "Astral Trade Relay",
     "tier": 6,
     "type": "<hyperlink>City Structure</hyperlink>",
@@ -5804,7 +5804,7 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
    },
    {
-    "description": "Tier I and Tier II friendly units in a -hex radius gain:<bulletlist><bullet>2 stacks of Strengthened.</bullet></bulletlist>",
+    "description": "Tier I and Tier II friendly units in a -hex radius gain:<bulletlist><bullet>1 stacks of Strengthened</bullet><bullet>1 stacks of Fortune.</bullet></bulletlist>",
     "name": "Fury of the Horde",
     "spell_slug": "fury_of_the_horde",
     "tier": 1,
@@ -6138,7 +6138,7 @@
   "icon": "0000042A0000060D",
   "skills": [
    {
-    "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet><bullet>+20 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist>",
+    "description": "Target owned city has:<bulletlist><bullet>+20 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet><bullet>+10 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist>",
     "name": "Awakened Tools",
     "spell_slug": "awakened_tools",
     "tier": 2,
@@ -6191,7 +6191,7 @@
   "icon": "000003BD00002DFC",
   "skills": [
    {
-    "description": "Units in target army heal 25<hyperlink><hp></hp> Hit Points</hyperlink>.",
+    "description": "Units in target army heal 30<hyperlink><hp></hp> Hit Points</hyperlink>.",
     "name": "Army Heal",
     "spell_slug": "army_heal",
     "tier": 2,

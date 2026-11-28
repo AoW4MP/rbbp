@@ -13492,35 +13492,6 @@
   "icon": "00000493000008C6"
  },
  {
-  "abilities": [
-   {
-    "slug": "000003e300005582"
-   }
-  ],
-  "tag_filter": {
-   "condition": "All of the following must be True",
-   "children": [
-    {
-     "condition": "Contains inherited ItemTypeWeapon.MagicMeleeRanged "
-    }
-   ]
-  },
-  "resid": 4995046971408,
-  "point_cost": 2,
-  "id": "equipment_upgrade_passive_melee_mage",
-  "description": "Unit can use <hyperlink>Magic</hyperlink> and <hyperlink>Support</hyperlink> abilities while <hyperlink>Engaged in Melee</hyperlink>.",
-  "name": "Melee Mage",
-  "tags": [
-   {
-    "tag": "ItemTypeWeapon.MagicMeleeRanged"
-   },
-   {
-    "tag": "ItemPassive.MeleeMage"
-   }
-  ],
-  "icon": "000003E300005580"
- },
- {
   "tag_filter": {
    "condition": "All of the following must be True",
    "children": [

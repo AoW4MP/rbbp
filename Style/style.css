@@ -2562,3 +2562,32 @@ span.number-highlight {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)) !important;
     width: 100%;
 }
+
+
+#rbbpContent .rbbp-world-icon {
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    margin-inline-end: 8px;
+}
+
+.back-to-top {
+    position: fixed;
+    inset-inline-end: max(12px, env(safe-area-inset-right));
+    inset-block-end: max(14px, env(safe-area-inset-bottom));
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #8e7959;
+    border-radius: 6px;
+    background: #17141a;
+    color: #f0deb3;
+    font: 24px / 1 sans-serif;
+    cursor: pointer;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+    background: #35283d;
+}

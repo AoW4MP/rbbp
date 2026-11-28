@@ -1527,3 +1527,19 @@ summonspell {
 pale_tidebloom {
     content: url(/rbbp/Icons/WorldStructures/pale_tidebloom.png);
 }
+
+
+secretscrolls,
+combatsummons {
+    max-width: 20px;
+    top: 4px;
+    position: relative;
+}
+
+secretscrolls {
+    content: url(/rbbp/Icons/Text/secret_scrolls.png);
+}
+
+combatsummons {
+    content: url(/rbbp/Icons/Text/combat_summons.png);
+}

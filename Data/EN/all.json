@@ -91,14 +91,14 @@
   },
   {
     "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@ARMADAS_FALL",
-    "description": "[hyperlink,GLOBAL.ProvinceConcept]Provinces[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>+2 <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink], +2 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink], and +1 <souls></souls> [hyperlink,GLOBAL.SoulConcept]Soul[/hyperlink] income if available.</bullet><bullet>A <quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] or <mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] can be constructed in this province.</bullet><bullet>Every 10 <turn></turn> [hyperlink,GLOBAL.TurnConcept]turns[/hyperlink], a random water [hyperlink,GLOBAL.PickupConcept]Pickup[/hyperlink] spawns in this province if able.</bullet><bullet>The  <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]provinces[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet><quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] in the [hyperlink,GLOBAL.DomainConcept]Domain[/hyperlink] grant +5 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink] income.</bullet><bullet><mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] in the Domain grant +5 <unitprod></unitprod> [hyperlink,GLOBAL.UnitProductionConcept]Draft[/hyperlink] income.</bullet></bulletlist>",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Provinces[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>+2 <gold></gold> [hyperlink,GLOBAL.GoldConcept]Gold[/hyperlink], +2 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink], and +1 <souls></souls> [hyperlink,GLOBAL.SoulConcept]Soul[/hyperlink] income if available.</bullet><bullet>A <quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] or <mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] can be constructed in this province.</bullet><bullet>Every 10 <turn></turn> [hyperlink,GLOBAL.TurnConcept]turns[/hyperlink], a random water [hyperlink,GLOBAL.PickupConcept]Pickup[/hyperlink] spawns in this province if able.</bullet><bullet>The  <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]provinces[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet><quarry></quarry> [hyperlink,GLOBAL.QuarryConcept]Quarry[/hyperlink] in the [hyperlink,GLOBAL.DomainConcept]Domain[/hyperlink] grant +2 <structureprod></structureprod> [hyperlink,GLOBAL.StructureProductionConcept]Production[/hyperlink] income.</bullet><bullet><mine></mine> [hyperlink,GLOBAL.MineConcept]Mine[/hyperlink] in the Domain grant +2 <unitprod></unitprod> [hyperlink,GLOBAL.UnitProductionConcept]Draft[/hyperlink] income.</bullet></bulletlist>",
     "DLC": "SILVERSEAS",
     "lore": "\"When I first saw the Armada's Fall, I understood where all the treasures lost at sea end up. Swept away by a Tempestuous Vortex, the graveyard of ships and treasures is a blessing to the pockets of whoever finds it. For uncontested gold is the most profitable of all.\"<br><br>—Marinus Lord of the Waters, Ventures in the Seas.",
     "name": "Armada's Fall"
   },
   {
     "id": "DLC@SILVERSEAS@MEGAWONDERS_STRATEGIC@TEMPESTUOUS_VORTEX",
-    "description": "[hyperlink,GLOBAL.ProvinceConcept]Provinces[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>Allows the construction of a <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province.</bullet><bullet>A <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province grants +5 <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink] income.</bullet><bullet>The  <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet><bullet>[hyperlink,GLOBAL.UnitConcept]Units[/hyperlink] starting their <turn></turn> [hyperlink,GLOBAL.TurnConcept]turn[/hyperlink] in this Province gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 3 <turn></turn> [hyperlink,GLOBAL.TurnConcept]turns[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]provinces[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet>The ability to draft [spellref,GLOBAL.UNITS.LIGHTNING_RUNE_CRAB]Lightning Rune Crab[/spellref] in the City for <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink].</bullet><bullet>Friendly Units starting their <turn></turn> Turn in the Domain gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 3 <turn></turn> Turns.</bullet></bulletlist>",
+    "description": "[hyperlink,GLOBAL.ProvinceConcept]Provinces[/hyperlink] adjacent to this Landmark gain:<bulletlist><bullet>Allows the construction of a <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province.</bullet><bullet>A <conduit></conduit> [hyperlink,GLOBAL.ConduitConcept]Conduit[/hyperlink] in this province grants +2 <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink] income.</bullet><bullet>The  <casttactical></casttactical> [hyperlink,GLOBAL.CombatEnchantmentConcept]Combat Enchantment[/hyperlink].</bullet><bullet>[hyperlink,GLOBAL.UnitConcept]Units[/hyperlink] starting their <turn></turn> [hyperlink,GLOBAL.TurnConcept]turn[/hyperlink] in this Province gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 1 <turn></turn> [hyperlink,GLOBAL.TurnConcept]turn[/hyperlink].</bullet></bulletlist><br>A [hyperlink,GLOBAL.CityConcept]City[/hyperlink] with 3 [hyperlink,GLOBAL.ProvinceConcept]provinces[/hyperlink] adjacent to this Landmark gains:<bulletlist><bullet>The ability to draft [spellref,GLOBAL.UNITS.LIGHTNING_RUNE_CRAB]Lightning Rune Crab[/spellref] in the City for <mana></mana> [hyperlink,GLOBAL.ManaConcept]Mana[/hyperlink].</bullet><bullet>Friendly Units starting their <turn></turn> Turn in the Domain gain [spellref,GLOBAL.PROPERTIES.ACCELERATED_MOVEMENT]Accelerated Movement[/spellref] for 1 <turn></turn> Turn.</bullet></bulletlist>",
     "DLC": "SILVERSEAS",
     "lore": "\"Half of the king's fleet was behind us when we heard the cry from the crow's nest: 'The sea has opened to swallow us! A maelstrom as vast as an empire!' With death behind us, we set sail for the vortex, to ride its current and escape our fate. But our ship cracked, the helm broke, and the sea swallowed us whole.\"<br><br>—Amaro Arieta, ghost of the Haunted Armada, Wisdom of the Fallen: As cited by Noctus.",
     "name": "Tempestuous Vortex"
@@ -26524,7 +26524,7 @@
   },
   {
     "id": "DLC@DRAGONLORDS@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@DRAGON_LEADER",
-    "description": " <br><bulletlist><bullet>Dragon Lords have access to unique combat Hero Skills.</bullet><bullet>Dragon Lords gain powerful transformation <hyperlink>Hero Signature Skills</hyperlink> based on empire <hyperlink>Affinity</hyperlink>.</bullet><bullet>Gain extra <gold></gold> <hyperlink>Gold</hyperlink> through their <hyperlink>Dragon hoard</hyperlink>.</bullet><bullet>Dragon Lords are <hyperlink>Dragon governor</hyperlink>.</bullet><bullet>Dragon Lords have a 8 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> per level and cannot equip most Hero Items.</bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>Dragon Lords have access to unique combat Hero Skills.</bullet><bullet>Dragon Lords gain powerful transformation <hyperlink>Hero Signature Skills</hyperlink> based on empire <hyperlink>Affinity</hyperlink>.</bullet><bullet>Gain extra <gold></gold> <hyperlink>Gold</hyperlink> through their <hyperlink>Dragon hoard</hyperlink>.</bullet><bullet>Dragon Lords are <hyperlink>Dragon governor</hyperlink>.</bullet><bullet>Dragon Lords have 6 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink> per level and cannot equip most Hero Items.</bullet></bulletlist>",
     "DLC": "DRAGONLORDS",
     "description_short": "<helpcolor>A mighty Dragon seeking new realms to shape in their vision.</helpcolor>",
     "hyperlink": "<hyperlink>Dragon Lord</hyperlink>"
@@ -39987,7 +39987,7 @@
   },
   {
     "id": "DLC@GIANTKINGS@EMPIRE_CORE@REALM_TRAIT@UNTOUCHED",
-    "description": "This realm has had no meddling from outside creators.<bulletlist><bullet>No <hyperlink>Handcrafted Region</hyperlink> will be present in this realm's surface and underground.</bullet><bullet>Does not affect Handcrafted Regions from other Realm Traits or Story Realms.</bullet></bulletlist>",
+    "description": "This realm has had no meddling from outside creators.<bulletlist><bullet>No <hyperlink>Handcrafted Region</hyperlink> will be present in this realm’s surface, underground, or waters.</bullet><bullet>Does not affect Landmarks or Handcrafted Regions from other Realm Traits or Story Realms.</bullet></bulletlist>",
     "DLC": "GIANTKINGS",
     "name": "Untouched Realm"
   },
@@ -45146,7 +45146,7 @@
   },
   {
     "id": "DLC@GIANTKINGS@TOOLTIP@LANDMARK",
-    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <hyperlink>Province</hyperlink>.<br><br>If a <hyperlink>City</hyperlink> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>Landmarks count as <hyperlink>Handcrafted Region</hyperlink>, meaning they can be disabled with the Untouched Realm Trait.",
+    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <hyperlink>Province</hyperlink>.<br><br>If a <hyperlink>City</hyperlink> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>The Untouched Realm Trait leaves Landmarks enabled.",
     "DLC": "GIANTKINGS",
     "hyperlink": "<hyperlink>Landmark</hyperlink>",
     "title": "Landmark"
@@ -55144,7 +55144,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@BROKEN_WIZARD_TOWER",
-    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+5 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet>A <researchpost></researchpost> <hyperlink>Research Post</hyperlink> in the Province gains +10 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>The <casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>Enemy <hyperlink>Spell</hyperlink> have 33% chance of <hyperlink>Backfiring</hyperlink> within the domain.</bullet><bullet>The City's owner gains 15 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink> and <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink>.</bullet><bullet>Unlocks the <hyperlink>Cosmic Inspiration</hyperlink> <caststrategic></caststrategic> <hyperlink>City Spell</hyperlink>.</bullet></bulletlist>",
+    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+1 <knowledge></knowledge> <hyperlink>Knowledge</hyperlink>.</bullet><bullet>A <researchpost></researchpost> <hyperlink>Research Post</hyperlink> in the Province gains +2 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>The <casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>Enemy <hyperlink>Spell</hyperlink> have 33% chance of <hyperlink>Backfiring</hyperlink> within the domain.</bullet><bullet>The City's owner gains 15 <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink> and <optactical></optactical> <hyperlink>Combat Casting Point</hyperlink>.</bullet><bullet>Unlocks the <hyperlink>Cosmic Inspiration</hyperlink> <caststrategic></caststrategic> <hyperlink>City Spell</hyperlink>.</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "lore": "\"Imagine the masters of strongly opposing magics all gathered within a single tower. They may hate each other to oblivion, but they have learned to respect that every affinity must seep through a world for it to be in equilibrium. The Wizard's Throne is the ultimate guarantor of a <hyperlink>Circle of Deogai's</hyperlink> balance. For it reminds all Wizards of their own diminutiveness within the vast schemes of the cosmos.\"<br><br>— Gabriel, Chronicles of Evermore",
     "name": "Broken Wizard's Throne"
@@ -55157,7 +55157,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@CHAINED_DEMON",
-    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+5 <mana></mana> <hyperlink>Mana</hyperlink> and +10 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>The <casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>+2 <mana></mana> <hyperlink>Mana</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per Province with <hyperlink>Chasm</hyperlink> or <hyperlink>Lava</hyperlink> in the <hyperlink>Domain</hyperlink>.</bullet><bullet>The City's owner gains the <hyperlink>Brimstone Bind</hyperlink> <casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>.</bullet></bulletlist>",
+    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+2 <mana></mana> <hyperlink>Mana</hyperlink> and +3 <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>The <casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>+2 <mana></mana> <hyperlink>Mana</hyperlink> and +5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per Province with <hyperlink>Chasm</hyperlink> or <hyperlink>Lava</hyperlink> in the <hyperlink>Domain</hyperlink>.</bullet><bullet>The City's owner gains the <hyperlink>Brimstone Bind</hyperlink> <casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>.</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "lore": "Black banners billowed above <hyperlink>The Carnage Bounds</hyperlink>.<br>Hellions held hard; their titan-lords roared.<br>Yet hosts of <hyperlink>The Nether Prime</hyperlink> came clawing skyward fiercely, while <hyperlink>The Future Throne</hyperlink> broke gates and bulwark.<br>Thus Demon-kind surged forth; the elder breed perished.<br><br>—Liztia Great Skald of Pseumodius, Victory Poem of the Hellion Wars",
     "name": "Perishing Archnemesis"
@@ -55217,7 +55217,7 @@
   },
   {
     "id": "DLC@SECRETSOFTHEARCHMAGES@MEGAWONDERS_STRATEGIC@MISTFLOW_GARDENS",
-    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> and +3 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>A <conduit></conduit> <hyperlink>Conduit</hyperlink> in the Province grants +5 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +5 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><hyperlink>Misty</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>Allows recruitment of Tier I, II, and III <hyperlink>Fey</hyperlink> <hyperlink>Unit</hyperlink>.</bullet></bulletlist>",
+    "description": "<hyperlink>Province</hyperlink> adjacent to this Landmark gain:<bulletlist><bullet>+2 <food></food> <hyperlink>Food</hyperlink> and +1 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>A <conduit></conduit> <hyperlink>Conduit</hyperlink> in the Province grants +5 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +2 <food></food> <hyperlink>Food</hyperlink>.</bullet><bullet><hyperlink>Misty</hyperlink>.</bullet></bulletlist><br>A <hyperlink>City</hyperlink> with 3 <hyperlink>Province</hyperlink> adjacent to this Landmark gains:<bulletlist><bullet>Allows recruitment of Tier I, II, and III <hyperlink>Fey</hyperlink> <hyperlink>Unit</hyperlink>.</bullet></bulletlist>",
     "DLC": "SECRETSOFTHEARCHMAGES",
     "name": "Mistflow Gardens"
   },
@@ -64227,7 +64227,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@TRAITS_BACKGROUND_CHARACTERS@MAIN_TYPE@VAMPIRE_LORD",
-    "description": " <br><bulletlist><bullet>An <hyperlink>Undead</hyperlink> unit with an <hyperlink>aversion to light</hyperlink>.</bullet><bullet>Has access to <hyperlink>Lord castle foundation</hyperlink> which replaces the <hyperlink>Wizard tower foundation</hyperlink> and grants the use of <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Drains 20% of the combat <hyperlink><xp></xp> Experience</hyperlink> earned by Turned Vampire heroes.</bullet><bullet>Faction is immune to Sunless terrain's penalties to <happiness></happiness> <hyperlink>City Stability</hyperlink> and <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Elder Vampires are <hyperlink>Elder Vampire Governor</hyperlink>.</bullet><bullet>Elder Vampires have a 5 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
+    "description": " <br><bulletlist><bullet>An <hyperlink>Undead</hyperlink> unit with an <hyperlink>aversion to light</hyperlink>.</bullet><bullet>Has access to <hyperlink>Lord castle foundation</hyperlink> which replaces the <hyperlink>Wizard tower foundation</hyperlink> and grants the use of <thralls></thralls> <hyperlink>Thrall</hyperlink> to cast powerful ritual <hyperlink>Spell</hyperlink>.</bullet><bullet>Drains 10% of the combat <hyperlink><xp></xp> Experience</hyperlink> earned by Turned Vampire heroes.</bullet><bullet>Faction is immune to Sunless terrain's penalties to <happiness></happiness> <hyperlink>City Stability</hyperlink> and <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet><bullet>Elder Vampires are <hyperlink>Elder Vampire Governor</hyperlink>.</bullet><bullet>Elder Vampires have a 5 <gold></gold> <hyperlink>Gold</hyperlink> <hyperlink>Unit Upkeep</hyperlink></bullet></bulletlist>",
     "DLC": "THRONESOFBLOOD",
     "description_short": "<helpcolor>A deathless Vampire who drains the life from enemies under cover of night.</helpcolor>",
     "hyperlink": "<hyperlink>Elder Vampire</hyperlink>"
@@ -65490,7 +65490,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@VAMPIRE_LORD@EXPERIENCE_DRAIN_LEADER",
-    "description": "The Elder Vampire steals 20% of all the <hyperlink><xp></xp> Experience</hyperlink> gained in combat from their Turned Vampires.",
+    "description": "The Elder Vampire steals 10% of all the <hyperlink><xp></xp> Experience</hyperlink> gained in combat from their Turned Vampires.",
     "DLC": "THRONESOFBLOOD",
     "name": "Experience Drain"
   },
@@ -65501,7 +65501,7 @@
   },
   {
     "id": "DLC@THRONESOFBLOOD@VAMPIRE_LORD@TURNED_VAMPIRE",
-    "description": "This unit has been turned into a Vampire and has:<bulletlist><bullet>Their Mortal Champion origin skill replaced with the Vampire origin skill.</bullet><bullet>The <hyperlink>Undead</hyperlink> type.</bullet><bullet><hyperlink>Sunlight weakness</hyperlink>.</bullet><bullet><hyperlink>Vampiric regeneration</hyperlink>.</bullet><bullet>20% of the <hyperlink><xp></xp> Experience</hyperlink> earned in combat by this unit is given to the Elder Vampire that turned them.</bullet><bullet>When the Elder Vampire that turned them gains a signature skill, this unit gains +5 <hyperlink>{<hp></hp>}</hyperlink> and +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
+    "description": "This unit has been turned into a Vampire and has:<bulletlist><bullet>Their Mortal Champion origin skill replaced with the Vampire origin skill.</bullet><bullet>The <hyperlink>Undead</hyperlink> type.</bullet><bullet><hyperlink>Sunlight weakness</hyperlink>.</bullet><bullet><hyperlink>Vampiric regeneration</hyperlink>.</bullet><bullet>10% of the <hyperlink><xp></xp> Experience</hyperlink> earned in combat by this unit is given to the Elder Vampire that turned them.</bullet><bullet>When the Elder Vampire that turned them gains a signature skill, this unit gains +5 <hyperlink>{<hp></hp>}</hyperlink> and +1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>",
     "DLC": "THRONESOFBLOOD",
     "embraced_header": "Hero Embraced Vampirism",
     "embrace_name": "Embrace",
@@ -71006,7 +71006,7 @@
   },
   {
     "id": "DLC@WAYSOFWAR@UNITS_OATHSWORN@ABILITY14",
-    "description": "<bulletlist><bullet>Gain 3 <hyperlink>Infernal might</hyperlink> for <eventColor>{INFERNAL_BLAZE_DESCRIPTION>NumTurns}</eventColor> <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Adjacent enemies sustain damage.</bullet></bulletlist>",
+    "description": "<bulletlist><bullet>Gain 3 <hyperlink>Infernal might</hyperlink> for 3 <turn></turn> <hyperlink>Turn</hyperlink>.</bullet><bullet>Adjacent enemies sustain damage.</bullet></bulletlist>",
     "DLC": "WAYSOFWAR",
     "name": "Infernal Blaze"
   },
@@ -71142,7 +71142,7 @@
   },
   {
     "id": "EMPIRE_CORE@REALM_TRAIT@UNTOUCHED",
-    "description": "This realm has had no meddling from outside creators.<bulletlist><bullet>No <hyperlink>Handcrafted Region</hyperlink> will be present in this realm's surface and underground.</bullet><bullet>Does not affect Handcrafted Regions from other Realm Traits or Story Realms.</bullet></bulletlist>",
+    "description": "This realm has had no meddling from outside creators.<bulletlist><bullet>No <hyperlink>Handcrafted Region</hyperlink> will be present in this realm’s surface, underground, or waters.</bullet><bullet>Does not affect Landmarks or Handcrafted Regions from other Realm Traits or Story Realms.</bullet></bulletlist>",
     "name": "Untouched"
   },
   {
@@ -93190,7 +93190,7 @@
   },
   {
     "id": "RACETRAITS_WORLD@RITUALIST_CANNIBALS@BONUS1",
-    "description": "Destroy target corpses to heal 15 <hyperlink>{<temphp></temphp>}</hyperlink>.",
+    "description": "Destroys the target corpse to heal 15 <temphp></temphp> <hyperlink>Temporary Hit Points</hyperlink>.<br><br>Cannot target the corpses of Constructs or Siegecraft units.",
     "name": "Corpse Eating"
   },
   {
@@ -109984,7 +109984,7 @@
   },
   {
     "id": "TOOLTIP@LANDMARK",
-    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <hyperlink>Province</hyperlink>.<br><br>If a <hyperlink>City</hyperlink> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>Landmarks count as <hyperlink>Handcrafted Region</hyperlink>, meaning they can be disabled with the Untouched Realm Trait.",
+    "description": "Landmarks are a type of location the size of an entire region. Landmarks themselves cannot be annexed or claimed. Instead, landmarks grant effects to all adjacent <hyperlink>Province</hyperlink>.<br><br>If a <hyperlink>City</hyperlink> has a certain amount of provinces in their domain adjacent to one Landmark, they gain an additional bonus effect depending on the type of landmark.<br><br>The Untouched Realm Trait leaves Landmarks enabled.",
     "hyperlink": "<hyperlink>Landmark</hyperlink>",
     "name": "Landmark"
   },
