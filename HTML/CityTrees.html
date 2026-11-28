@@ -127,7 +127,8 @@
                 const svg = document.getElementById("SVGHolder");
                 const origin = svg.getBoundingClientRect();
                 svg.insertAdjacentHTML("afterbegin",
-                    '<defs><marker id="city-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#ced8ea"/></marker></defs>');
+                    '<defs><marker id="city-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#ced8ea"/></marker>' +
+                    '<marker id="city-choice-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#d7c297"/></marker></defs>');
 
                 const nodes = [...document.querySelectorAll(".tree-grid2 .entry")];
                 const measured = new Map(nodes.map(node => [node, node.firstElementChild.getBoundingClientRect()]));
@@ -146,6 +147,20 @@
                     return targets.filter(Boolean).map(target => [target, rule.connectTo]);
                 }));
                 const lanes = new Map();
+                const alternatives = new Map();
+                function drawArrow(d, target, source, optional = false) {
+                    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    path.setAttribute("d", d);
+                    path.setAttribute("fill", "none");
+                    path.setAttribute("stroke", optional ? "#d7c297" : "#ced8ea");
+                    path.setAttribute("stroke-width", "2");
+                    if (target) {
+                        path.setAttribute("marker-end", optional ? "url(#city-choice-arrow)" : "url(#city-arrow)");
+                        path.dataset.from = source;
+                        path.dataset.to = target.id;
+                    }
+                    svg.append(path);
+                }
                 const hallOne = structureElement("town_hall_i_town_center");
                 const hallTwo = structureElement("town_hall_ii");
                 for (const node of nodes) {
@@ -170,21 +185,27 @@
                         const sameSection = others.filter(provider => sectionOf(provider) === sectionOf(node));
                         const sources = sameSection.length ? sameSection : others;
                         if (!sources.length || sources.every(source => connected.has(source))) continue;
+                        if (sameSection.length > 1 && sameSection.length === others.length) {
+                            const boxes = sources.map(source => measured.get(source));
+                            const target = measured.get(node);
+                            const sourceRight = boxes[0].right;
+                            const gap = target.left - sourceRight;
+                            if (gap >= 8 && gap <= 60 && boxes.every(box => Math.abs(box.right - sourceRight) <= 1)) {
+                                const key = sources.map(source => source.id).sort().join("|");
+                                if (!alternatives.has(key)) {
+                                    const x = sourceRight - origin.left;
+                                    const y = boxes.map(box => box.top + box.height / 2 + 12 - origin.top);
+                                    alternatives.set(key, { x, y, lane: x + gap * .35, targets: [] });
+                                }
+                                alternatives.get(key).targets.push(node);
+                                sources.forEach(provider => connected.add(provider));
+                                continue;
+                            }
+                        }
                         const source = sources.length === 1 ? sources[0] : null;
                         const route = source && sameSection.length && cityArrow(source, node, measured, origin, lanes);
-                        if (route) {
-                            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                            path.setAttribute("d", route);
-                            path.setAttribute("fill", "none");
-                            path.setAttribute("stroke", "#ced8ea");
-                            path.setAttribute("stroke-width", "2");
-                            path.setAttribute("marker-end", "url(#city-arrow)");
-                            path.dataset.from = source.id;
-                            path.dataset.to = node.id;
-                            svg.append(path);
-                        } else {
-                            pending.push(sources);
-                        }
+                        if (route) drawArrow(route, node, source.id);
+                        else pending.push(sources);
                         sources.forEach(provider => connected.add(provider));
                     }
                     if (pending.length) addCityRequirementLabel(node, pending);
@@ -192,34 +213,90 @@
                         const link = document.createElement("a");
                         link.className = "city-requirement-link";
                         link.href = "/rbbp/HTML/Spells.html?tome=" + encodeURIComponent(node.dataset.tome);
-                        link.textContent = "↳ " + node.dataset.tomeName;
-                        link.title = cityText("Research: ", "Изучить книгу: ") + node.dataset.tomeName;
+                        const caption = document.createElement("span");
+                        caption.textContent = node.dataset.tomeName;
+                        link.append(caption);
+                        const preview = document.createElement("div");
+                        const heading = document.createElement("div");
+                        heading.className = "city-requirement-heading";
+                        heading.textContent = cityText("Required tome", "Требуемая книга");
+                        const row = document.createElement("div");
+                        row.className = "city-requirement-preview";
+                        const icon = document.createElement("img");
+                        icon.className = "structureNodeIcon";
+                        icon.src = "/rbbp/Icons/TomeIcons/" + node.dataset.tomeIcon + ".png";
+                        icon.alt = "";
+                        const name = document.createElement("strong");
+                        name.textContent = node.dataset.tomeName;
+                        row.append(icon, name);
+                        preview.append(heading, row);
+                        addTooltipListeners(link, preview);
                         link.addEventListener("click", event => event.stopPropagation());
                         node.append(link);
                     }
+                }
+                for (const [sources, { x, y, lane, targets }] of alternatives) {
+                    const outgoing = targets.map(node => {
+                        const box = measured.get(node);
+                        return { node, y: box.top + box.height / 2 + 15 - origin.top, end: box.left - origin.left - 2 };
+                    });
+                    const heights = [...y, ...outgoing.map(target => target.y)];
+                    drawArrow(`M ${lane},${Math.min(...heights)} V ${Math.max(...heights)}`, null, null, true);
+                    for (const height of y) drawArrow(`M ${x},${height} H ${lane}`, null, null, true);
+                    for (const target of outgoing) {
+                        drawArrow(`M ${lane},${target.y} H ${target.end}`, target.node, sources, true);
+                    }
+                    const choiceY = (y[0] + y[1]) / 2;
+                    const badge = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                    badge.setAttribute("class", "city-choice");
+                    badge.setAttribute("transform", `translate(${lane} ${choiceY})`);
+                    badge.innerHTML = '<rect x="-16" y="-8" width="32" height="16" rx="3"/>' +
+                        '<text text-anchor="middle" dominant-baseline="central">' + cityText("OR", "ИЛИ") + '</text>';
+                    svg.append(badge);
                 }
             }
 
             function cityArrow(source, target, measured, origin, lanes) {
                 const from = measured.get(source);
                 const to = measured.get(target);
+                if (target.dataset.tradeParent === source.id) {
+                    const x1 = from.left + from.width / 2 - origin.left;
+                    const x2 = to.left + to.width / 2 - origin.left;
+                    const y1 = from.bottom - origin.top;
+                    const y2 = to.top - origin.top - 2;
+                    return `M ${x1},${y1} V ${(y1 + y2) / 2} H ${x2} V ${y2}`;
+                }
                 const gap = to.left - from.right;
+                const isHall = node => node.id.startsWith("town_hall_");
+                if (Math.abs(to.left - from.left) <= 1) {
+                    const down = to.top > from.bottom;
+                    const start = down ? from.bottom : from.top;
+                    const end = down ? to.top : to.bottom;
+                    const clearance = Math.abs(end - start);
+                    if (clearance > 0 && clearance <= 50) {
+                        const x = from.left + from.width / 2 - origin.left;
+                        return `M ${x},${start - origin.top} V ${end - origin.top + (down ? -2 : 2)}`;
+                    }
+                    if (source.id === "wizard_tower_apex" && down) {
+                        const x = from.right - origin.left;
+                        const lane = x + 16;
+                        const y1 = from.top + from.height / 2 - origin.top + 15;
+                        const y2 = to.top + to.height / 2 - origin.top;
+                        return `M ${x},${y1} H ${lane} V ${y2} H ${x + 2}`;
+                    }
+                }
+                if (isHall(source) && !isHall(target)) return null;
                 const y1 = from.top + from.height / 2;
                 const y2 = to.top + to.height / 2;
                 if (gap < 8) return null;
 
-                const isHall = node => node.id.startsWith("town_hall_");
-                if (isHall(source) && !isHall(target)) return null;
-
                 // A long connection is readable only across an empty, straight corridor.
-                if (gap > 45) {
+                if (gap > 60) {
                     if (Math.abs(y2 - y1) > 1) return null;
                     for (const box of measured.values()) {
                         if (box.left < to.left - 1 && box.right > from.right + 1 &&
                             y1 > box.top && y1 < box.bottom) return null;
                     }
-                } else if (Math.abs(y2 - y1) > 480) {
-                    return null;
                 }
 
                 const x1 = from.right - origin.left;
@@ -230,6 +307,9 @@
                 const range = [Math.min(y1, y2), Math.max(y1, y2)];
                 for (const lane of [middle, middle - 5, middle + 5]) {
                     if (lane <= x1 + 2 || lane >= x2 - 2) continue;
+                    const screenX = lane + origin.left;
+                    if ([...measured.values()].some(box => box.left < screenX && screenX < box.right &&
+                        box.top < range[1] && range[0] < box.bottom)) continue;
                     const key = Math.round(lane);
                     const routes = lanes.get(key) || [];
                     if (routes.some(route => route.source !== source && range[0] < route.bottom && range[1] > route.top)) continue;
@@ -240,24 +320,58 @@
                 return null;
             }
 
+            const cityBuildingDescriptions = new WeakMap();
+
             function addCityRequirementLabel(node, groups) {
                 const name = entry => entry.querySelector(".structureNodeTitle").textContent.trim();
-                const text = groups.map(group => group.map(name).join(cityText(" or ", " или "))).join(" · ");
-                const source = groups.length === 1 && groups[0].length === 1 ? groups[0][0] : null;
-                const label = document.createElement(source ? "button" : "span");
+                const label = document.createElement("button");
+                label.type = "button";
+                label.setAttribute("aria-haspopup", "dialog");
                 label.className = "city-requirement-link";
-                label.textContent = "↳ " + text;
-                label.title = cityText("Requires: ", "Требуется: ") + text;
+                const shortText = groups.map(group => {
+                    if (group.length > 1 && group.every(entry => entry.id.endsWith("_bolstering_matrix"))) {
+                        return cityText("Any Bolstering Matrix", "Любая укрепляющая матрица");
+                    }
+                    return group.map(name).join(cityText(" or ", " или "));
+                }).join(" + ");
+                const caption = document.createElement("span");
+                caption.textContent = shortText;
+                label.append(caption);
                 label.dataset.requires = groups.map(group => group.map(entry => entry.id).join("|")).join(",");
-                if (source) {
-                    label.type = "button";
-                    label.addEventListener("click", event => {
-                        event.stopPropagation();
-                        closeTooltips();
-                        source.scrollIntoView({ block: "nearest", inline: "center" });
-                        source.focus({ preventScroll: true });
-                    });
+                const preview = document.createElement("div");
+                for (const group of groups) {
+                    const heading = document.createElement("div");
+                    heading.className = "city-requirement-heading";
+                    heading.textContent = group.length > 1
+                        ? cityText("Requires one of these buildings", "Требуется одна из этих построек")
+                        : cityText("Required building", "Требуемая постройка");
+                    preview.append(heading);
+                    for (const entry of group) {
+                        const row = document.createElement("div");
+                        row.className = "city-requirement-preview";
+                        const icon = entry.querySelector(".structureNodeIcon").cloneNode();
+                        const details = document.createElement("div");
+                        const title = document.createElement("strong");
+                        title.textContent = name(entry);
+                        const description = document.createElement("div");
+                        description.innerHTML = cityBuildingDescriptions.get(entry);
+                        details.append(title, description);
+                        row.append(icon, details);
+                        preview.append(row);
+                    }
                 }
+                addTooltipListeners(label, preview);
+                label.addEventListener("keydown", event => {
+                    if (event.key === "Enter" || event.key === " ") event.stopPropagation();
+                });
+                label.addEventListener("click", event => {
+                    event.stopPropagation();
+                    TurnOnTooltip(preview);
+                    const dialog = document.getElementById("hoverDiv");
+                    if (!dialog.open) dialog.show();
+                    const rect = label.getBoundingClientRect();
+                    updateHoverDivPosition({ target: label, clientX: rect.right, clientY: rect.top });
+                });
                 node.append(label);
             }
 
@@ -280,10 +394,11 @@
                     "wizard_tower_foundation",
                     "wizard_tower_chambers",
                     "wizard_tower_high_halls",
+                    "empty",
                     "wizard_tower_apex",
                     "wizard_tower_arcane_observatory"
                 ],
-                secondLine: ["empty*2", "wizard_tower_crypts", "wizard_tower_item_forge"],
+                secondLine: ["empty", "wizard_tower_item_forge", "wizard_tower_crypts"],
                 thirdLine: [
                     "empty*2",
                     "wizard_tower_prison_cells",
@@ -303,14 +418,14 @@
                     "vampire_castle_stygian_observers"
                 ],
                 secondLine: [
-                    "empty","desecration_chambers",
-                    "vampire_castle_deep_crypts",
+                    "empty",
+                    "vampire_castle_soul_forge",
                     "vampire_castle_laboratory",
                     "vampire_castle_ritual_chamber",
                     "vampire_castle_teleportation_circle"
                 ],
-                thirdLine: ["empty*2", "vampire_castle_abattoir", "vampire_castle_room_of_recall"],
-                fourthLine: ["empty*2", "vampire_castle_soul_forge"]
+                thirdLine: ["empty*2", "vampire_castle_deep_crypts", "vampire_castle_room_of_recall"],
+                fourthLine: ["empty", "desecration_chambers", "vampire_castle_abattoir"]
             };
 
             const affinity = {
@@ -335,30 +450,55 @@
                     "town_hall_iv"
                 ],
                 specialLine: [
-                    "empty*2",
-                    "iii_unlock",
-                    "iii_unlock_2",
-                    "iii_unlock_3"
-                ]
+                    "empty", "tavern", "iii_unlock", "iii_unlock_2", "iii_unlock_3"
+                ],
+                stabilityLine: ["empty", "bathhouse"]
+            };
+            // The game records these exclusions as structure properties, not building resource IDs.
+            const tradeBuildingsByProperty = {
+                "5003636908646": "outpost_supply_hub",
+                "5003636908652": "diplomatic_embassy",
+                "5003636908661": "food_importers",
+                "5003636908666": "wizards_exchange",
+                "5003636908673": "taxation_offices",
+                "5003636908713": "caravaneers_guild"
+            };
+            const tradeForks = [
+                ["trade_post", "outpost_supply_hub", "diplomatic_embassy"],
+                ["trade_quarters", "food_importers", "wizards_exchange"],
+                ["trade_bazaar", "caravaneers_guild", "taxation_offices"]
+            ];
+            const TradeRoute = {
+                tradeLine: tradeForks.map(([parent]) => parent),
+                tradeOptions: tradeForks.flatMap(([, left, right]) => [left, right])
             };
 
-            const Bath = {
-                stabilityLine: ["empty", "tavern", "bathhouse"]
-            };
-            const TradeRoute = {
-                tradeLine: [
-                    "empty", "trade_post", "outpost_supply_hub", "empty",
-                    "trade_quarters", "food_importers", "empty*2",
-                    "trade_bazaar", "caravaneers_guild"
-                ],
-                tradeLine1: [
-                    "empty", "empty", "diplomatic_embassy", "empty*2",
-                    "wizards_exchange", "empty*3", "taxation_offices"
-                ]
-            };
+            function layoutTradeForks(holder) {
+                tradeForks.forEach(([parentId, leftId, rightId], stage) => {
+                    const parent = holder.querySelector("#" + parentId);
+                    const left = holder.querySelector("#" + leftId);
+                    const right = holder.querySelector("#" + rightId);
+                    if (!parent || !left || !right) return;
+                    const stageStart = stage * 536;
+                    left.style.left = stageStart + "px";
+                    parent.style.left = stageStart + 144 + "px";
+                    right.style.left = stageStart + 288 + "px";
+                    left.dataset.tradeParent = right.dataset.tradeParent = parentId;
+
+                    const label = document.createElement("span");
+                    label.className = "city-trade-choice";
+                    label.textContent = cityText("Choose one", "На выбор");
+                    label.style.left = stageStart + 236 + "px";
+                    label.style.top = parseFloat(left.style.top) + 48 + "px";
+                    holder.append(label);
+                });
+            }
+
             const Fortifications = {
-                walls: ["palisade_walls", "stone_walls", "ballista_towers", "catapult_towers"],
-                towers: ["empty", "caltrop_stash", "beacon_of_valor"],
+                towers: ["beacon_of_valor"],
+                walls: ["stone_walls", "ballista_towers", "catapult_towers"],
+                palisade: ["palisade_walls"],
+                supplies: ["empty", "caltrop_stash"],
                 battlements: ["empty", "arcane_battlements"],
                 archers: ["empty", "archer_battlements"]
             };
@@ -390,7 +530,7 @@
                 // parent base
                 const parentBase = document.createElement("div");
                 treespace.appendChild(parentBase);
-                GetTree("City", {...TownHalls, ...TestBase, ...Bath}, parentBase, buildingMap);
+                GetTree("City", {...TownHalls, ...TestBase}, parentBase, buildingMap);
                 GetTree("Trade", TradeRoute, parentBase, buildingMap);
                 const parentWizard = document.createElement("div");
                 treespace.appendChild(parentWizard);
@@ -474,7 +614,7 @@
                     subcultureLabel: cityText("Subculture", "Субкультура"),
                     vampireLabel: cityText("Elder Vampire", "Древний вампир"),
                     tomeLabel: cityText("Tome Buildings", "Постройки книг"),
-                    scrollHint: cityText("Arrows show nearby prerequisites. Links below buildings lead to other prerequisites.", "Стрелки показывают ближайшие связи. Ссылки под постройками ведут к другим требованиям.")
+                    scrollHint: cityText("Arrows point from prerequisites to buildings. An OR junction means any one of its incoming buildings.", "Стрелки ведут от требований к постройкам. У узла «ИЛИ» достаточно одной из входящих построек.")
                 };
                 for (const [id, text] of Object.entries(labels)) document.getElementById(id).textContent = text;
                 document.querySelector(".catalog-tree-scroll").setAttribute("aria-label", labels.cityTreeTitle);
@@ -776,8 +916,10 @@
                 // Remove columns left empty by the old full-culture comparison layout.
                 const nodes = [...holder.querySelectorAll(".entry")];
                 const columns = [...new Set(nodes.map((node) => parseFloat(node.style.left)))].sort((a, b) => a - b);
-                for (const node of nodes) node.style.left = columns.indexOf(parseFloat(node.style.left)) * 210 + "px";
+                const spacing = ["Fortifications", "Wizard Tower"].includes(nameOverride) ? 236 : 210;
+                for (const node of nodes) node.style.left = columns.indexOf(parseFloat(node.style.left)) * spacing + "px";
                 if (!nodes.length) return;
+                if (nameOverride === "Trade") layoutTradeForks(holder);
                 parent.append(holder);
                 resizeParentToFitChildren(holder);
             }
@@ -825,7 +967,7 @@
             }
 
             function SetUpStructureNodeNew(structureInfo, rowIndex, columnIndex, holder, override, tomeID, lineName) {
-                var nodeHeight = 124;
+                var nodeHeight = 142;
                 var nodeWidth = 210;
 
                 var structureInfoLoc = jsonStructureUpgradesLocalized.find(
@@ -835,7 +977,7 @@
                     structureInfoLoc = structureInfo;
                 }
                 var newNode = CreateStructureNode(structureInfo, structureInfoLoc, override, tomeID, lineName);
-                const top = 36 + rowIndex * nodeHeight;
+                const top = 62 + rowIndex * nodeHeight;
                 const left = columnIndex * nodeWidth;
 
                 newNode.style.position = "absolute";
@@ -951,7 +1093,6 @@
                     spa2.innerHTML += "<br>" + label + (content.startsWith("<bulletlist>")
                         ? content : "<bulletlist><bullet>" + content + "</bullet></bulletlist>");
                 };
-                spa2.innerHTML = '<span style="color: #d7c297;">' + name + "</span><br>";
                 if (description) spa2.innerHTML += cleanText(description) + "<br>";
 
                 // The hand-written descriptions of these buildings already list their effects.
@@ -965,23 +1106,44 @@
                     spa2.innerHTML += cityText("Unlocks T2 Culture Units", "Открывает войска культуры II ранга") + "<br>";
                 }
 
+                cityBuildingDescriptions.set(newNode, spa2.innerHTML);
+                spa2.insertAdjacentHTML("afterbegin", '<span style="color: #d7c297;">' + name + "</span><br>");
+
                 const requirements = cityText("Requirements:", "Требования:");
                 const requiredBuildings = liveCityRules?.buildings[structureInfo.resid]?.required_structure || [];
                 const localName = (row) => findBy(jsonStructureUpgradesLocalized, "resid", row.resid)?.name || row.name;
-                const requiredNames = requiredBuildings.map(({ providers }) => providers
-                    .map((id) => {
-                        const number = Number(id);
-                        return findBy(jsonStructureUpgrades, "resid", Number.isSafeInteger(number) ? number : id);
-                    })
-                    .filter(Boolean)
-                    .map(localName)
-                    .join(cityText(" or ", " или ")))
-                    .filter(Boolean);
+                const overrides = selectedOverrides();
+                const requiredNames = requiredBuildings.map(({ providers }) => {
+                    const buildings = providers.map(id => findBy(jsonStructureUpgrades, "resid", Number(id)))
+                        .filter(Boolean);
+                    if (buildings.length > 1 && buildings.every(building => building.id.endsWith("_bolstering_matrix"))) {
+                        return cityText("Any Bolstering Matrix", "Любая укрепляющая матрица");
+                    }
+                    const hall = buildings[0]?.id.match(/^(town_hall_(?:ii|iii|iv))_/);
+                    if (hall && buildings.every(building => building.id.startsWith(hall[1] + "_"))) {
+                        const selected = buildings.find(building => building.id === overrides.get(hall[1])?.id);
+                        if (selected) return localName(selected);
+                        const tier = hall[1].slice("town_hall_".length).toUpperCase();
+                        return cityText("Town Hall ", "Городской центр ") + tier;
+                    }
+                    return [...new Set(buildings.map(localName))].join(cityText(" or ", " или "));
+                }).filter(Boolean);
+                const tradeConflicts = lineName.startsWith("trade") ?
+                    (liveCityRules?.buildings[structureInfo.resid]?.forbidden_structure || [])
+                        .map(id => findBy(jsonStructureUpgrades, "id", tradeBuildingsByProperty[id]))
+                        .filter(Boolean)
+                        .map(localName) : [];
+                if (tradeConflicts.length) {
+                    const conflict = cityText("Cannot be built together with ", "Несовместимо с постройкой «") +
+                        tradeConflicts.join(cityText(" or ", "» или «")) + cityText("", "»");
+                    requiredNames.push(conflict);
+                }
                 const tomeName = tomeID && (findBy(jsonTomesLocalized, "resid", tomeID.resid)?.name || tomeID.name);
                 if (tomeName) {
                     requiredNames.unshift(cityText("Research ", "Изучить книгу: ") + tomeName);
                     newNode.dataset.tome = tomeID.id;
                     newNode.dataset.tomeName = tomeName;
+                    newNode.dataset.tomeIcon = tomeID.icon;
                 }
                 const requirementDetails = cleanText(requirement_description);
                 if (requiredNames.length || requirementDetails) {
@@ -999,7 +1161,7 @@
                 cost.setAttribute("style", "position:absolute; bottom:0px; right:0px");
                 cost.innerHTML = structureInfo.cost;
 
-                newNode.appendChild(newNodeBackground);
+                newNode.prepend(newNodeBackground);
                 if (override) {
                     newNodeBackground.style.backgroundImage = 'url("/rbbp/Icons/Text/' + override + '.png")';
                     newNodeBackground.style.backgroundRepeat = "no-repeat";
@@ -1039,7 +1201,7 @@
 
                 newNodeBackground.append(img);
 
-                addTooltipListeners(newNode, spa2);
+                addTooltipListeners(newNodeBackground, spa2);
                 newNode.tabIndex = 0;
                 newNode.setAttribute("role", "button");
                 newNode.setAttribute("aria-label", name.replace(/<[^>]*>/g, ""));
@@ -1073,7 +1235,7 @@
                 <label class="switch"><input type="checkbox" id="tomeCheck" onchange="reDrawAll()" /><span id="tomeLabel">Tome Buildings</span></label>
             </div>
             <p id="scrollHint" class="city-tree-hint"></p>
-            <div class="catalog-tree-scroll" tabindex="0" role="region" aria-label="City tree">
+            <div class="catalog-tree-scroll" data-city-tree-scroll tabindex="0" role="region" aria-label="City tree">
                 <div class="tree-space" id="treespacegeneral">
                     <svg id="SVGHolder" aria-hidden="true"></svg>
                 </div>
@@ -1165,14 +1327,13 @@
 
     .city-requirement-link {
         position: absolute;
-        inset-block-start: calc(100% + 2px);
-        inset-inline-start: 3px;
+        inset-block-end: calc(100% + 8px);
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
+        width: max-content;
         z-index: 2;
         max-width: calc(100% - 6px);
         padding: 1px 4px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         color: #cbdcf1;
         background: #192529;
         border: 1px solid #454e56;
@@ -1181,6 +1342,71 @@
         font-size: 11px;
         line-height: 1.3;
         text-align: start;
+    }
+
+    .city-requirement-link > span {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .city-requirement-link::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 5px solid transparent;
+        border-top: 8px solid #ced8ea;
+    }
+
+    .city-trade-choice {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        padding: 2px 6px;
+        color: #f0d9a5;
+        background: #28221c;
+        border: 1px solid #826744;
+        border-radius: 3px;
+        font-size: 11px;
+        line-height: 1.3;
+    }
+
+    .city-choice rect {
+        fill: #192529;
+        stroke: #d7c297;
+    }
+
+    .city-choice text {
+        fill: #f0d9a5;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .city-requirement-heading {
+        margin: .4em 0;
+        color: #d7c297;
+    }
+
+    .city-requirement-preview {
+        display: grid;
+        grid-template-columns: 40px minmax(0, 1fr);
+        align-items: start;
+        gap: .6em;
+        padding: .45em 0;
+    }
+
+    .city-requirement-preview .structureNodeIcon {
+        position: static;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .city-requirement-preview strong {
+        color: #d7c297;
     }
 
     .city-requirement-link:is(button, a) {

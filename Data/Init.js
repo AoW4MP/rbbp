@@ -163,6 +163,7 @@ function setupSubsectionLists() {
 
 
 function setupBackToTop() {
+    const cityTree = document.querySelector("[data-city-tree-scroll]");
     const button = document.createElement("button");
     const label = languageSelect.value === "RU" ? "В начало страницы" : "Back to top";
     button.type = "button";
@@ -173,13 +174,15 @@ function setupBackToTop() {
     document.body.appendChild(button);
 
     function updateVisibility() {
-        button.hidden = window.scrollY < window.innerHeight * 0.75;
+        button.hidden = window.scrollY < window.innerHeight * 0.75 && !(cityTree?.scrollLeft > 0);
     }
 
-    button.addEventListener("click", () => window.scrollTo({
-        top: 0,
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
-    }));
+    button.addEventListener("click", () => {
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+        window.scrollTo({ top: 0, behavior });
+        cityTree?.scrollTo({ left: 0, behavior });
+    });
+    cityTree?.addEventListener("scroll", updateVisibility, { passive: true });
     window.addEventListener("scroll", updateVisibility, { passive: true });
     window.addEventListener("resize", updateVisibility);
     updateVisibility();
